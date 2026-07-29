@@ -1198,19 +1198,19 @@ function toggleSwitch(el) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'CRAFT: Exploring Wearable Creative AI on Smart Glasses for Fiction Writing in Real-World Contexts',
-  authors: 'Runze Cai, Yuxuan Huang, Lin-Ping Yuan, Kexin Xiang, David Hsu, Collier Nogues, Jussi Holopainen, Shenghong Zhao',
-  venue: 'PACM IMWUT, Vol. 10, No. 3, 2026',
-  link: 'https://arxiv.org/abs/2607.21394',
-  date: '2026-07-24',
-  abstract: '本文探索了智能眼镜上的可穿戴式创意 AI 如何辅助小说写作。研究团队设计了 CRAFT 系统，让写作者在日常环境中通过语音与 AI 协作，实时获取创作灵感与叙事建议。',
+  title: 'Assistant or Actor? Student Trust, Control, and Delegation Regret When Using a General-Purpose AI Agent',
+  authors: 'Shiva Pochampally, Shengwei An, Yan Chen',
+  venue: 'arXiv:2607.18257, 2026',
+  link: 'https://arxiv.org/abs/2607.18257',
+  date: '2026-07-29',
+  abstract: '当 AI Agent 从回答问题转向执行行动，用户面临一个全新问题：如何决定将什么委托给一个行为空间无法完全预知的系统？研究者提出"委托后悔"（delegation regret）概念——用户后悔的不是 Agent 犯了错，而是它超出了自己本该授权的范围。',
   keyPoints: [
-    '研究问题：可穿戴 AI 能否在真实场景中辅助创意写作？如何影响写作流程和产出质量？',
-    '方法：基于智能眼镜的语音交互系统，12 名写作者参与为期两周的田野实验',
-    '核心发现：① 环境感知的 AI 提示显著激发创作灵感；② 语音交互减少了"从思维到文字"的摩擦；③ 写作者更倾向于将 AI 视为"创作伙伴"而非工具',
-    '对 HCI 的启示：创意写作是情境嵌入活动，AI 需理解物理和社交语境才能有效辅助'
+    '研究问题：用户如何对不同任务校准对 AI Agent 的信任？什么因素导致信任撤回？',
+    '方法：20 名大学生使用通用 AI Agent 完成 5 个日常任务，测量信任、感知控制、透明度等变量',
+    '核心发现：① 用户按"任务"而非"Agent"校准信任；② 不可逆性+外部可见性是信任撤回的核心驱动因素；③ 即使输出被评为成功，Agent 未经预览直接执行仍会引发"委托后悔"',
+    '对 HCI 的启示：Agent 设计需暴露行为边界，支持按任务的自主策略，将"建议输出"与"Agent 执行"分开'
   ],
-  takeaway: '这篇论文将 HCI、创造力和可穿戴计算三个领域巧妙结合。对 Emma 来说，关注点可以放在：AI 如何理解用户情境（context-awareness）来提升创意产出——这与应用心理学的用户研究视角高度契合。思考：如果你设计一个"AI 写作助手"，你会如何捕捉用户的情绪和环境线索？'
+  takeaway: '这篇论文对 AI 产品设计的启示非常直接：用户的信任不是一刀切的，而是随任务的风险属性动态调整。不可逆+对外可见的操作（如发邮件、发消息）是信任崩塌的高危区。对产品经理来说，关键设计启示是：给用户提供"确认边界"的机制，让 Agent 在执行前展示"我打算做什么"。思考：你在用 AI 工具时，有没有过"它做了我不想让它做的事"的体验？'
 };
 
 function renderPaper() {
@@ -1238,35 +1238,35 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和' },
-  { word: 'empirical', pos: 'adj.', def: '经验主义的，实证的' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利' },
-  { word: 'intrinsic', pos: 'adj.', def: '固有的，内在的' },
-  { word: 'ambiguous', pos: 'adj.', def: '模糊的，含糊的' },
-  { word: 'comprehensive', pos: 'adj.', def: '全面的，综合的' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，退化' },
-  { word: 'exacerbate', pos: 'v.', def: '加剧，使恶化' },
-  { word: 'feasible', pos: 'adj.', def: '可行的，可能的' },
-  { word: 'hierarchy', pos: 'n.', def: '等级制度，层级' },
-  { word: 'inevitable', pos: 'adj.', def: '不可避免的' },
-  { word: 'profound', pos: 'adj.', def: '深刻的，意义深远的' },
-  { word: 'resilience', pos: 'n.', def: '韧性，恢复力' }
+  { word: 'delegate', pos: 'v.', def: '委托，授权（任务给他人）' },
+  { word: 'autonomy', pos: 'n.', def: '自主权，自治' },
+  { word: 'irreversible', pos: 'adj.', def: '不可逆的' },
+  { word: 'calibrate', pos: 'v.', def: '校准，调整（程度或精确度）' },
+  { word: 'perceive', pos: 'v.', def: '感知，察觉' },
+  { word: 'transparency', pos: 'n.', def: '透明度，公开性' },
+  { word: 'supervision', pos: 'n.', def: '监督，管理' },
+  { word: 'preference', pos: 'n.', def: '偏好，优先选择' },
+  { word: 'threshold', pos: 'n.', def: '阈值，门槛' },
+  { word: 'anticipate', pos: 'v.', def: '预期，预见' },
+  { word: 'consent', pos: 'n./v.', def: '同意，许可' },
+  { word: 'trajectory', pos: 'n.', def: '轨迹，发展路径' },
+  { word: 'stakeholder', pos: 'n.', def: '利益相关者' },
+  { word: 'benchmark', pos: 'n./v.', def: '基准，标杆' },
+  { word: 'nuance', pos: 'n.', def: '细微差别，微妙之处' }
 ];
 
 const ieltsSpeaking = {
-  part: 'Part 2',
-  topic: 'Describe a book that had a major influence on you.',
-  bullet: 'You should say: what the book was, when you read it, what it was about, and explain how it influenced you.',
-  sample: "I'd like to talk about a book called 'The Vegetarian' by Han Kang, which I read last year. It's a novel about a woman who decides to stop eating meat, and this seemingly simple choice triggers a cascade of events that transform her entire family. What struck me most was how the author used food as a metaphor for control, identity, and resistance. It made me reflect on how small personal decisions can carry enormous social weight — something I now think about constantly in user research, where individual behaviors often reveal deeper cultural patterns.",
+  part: 'Part 3 Discussion',
+  topic: 'How does trust in technology differ from trust in people?',
+  bullet: 'Discuss: What factors influence trust in AI? Should AI systems have different levels of autonomy? How can designers build trust with users?',
+  sample: "I think trust in technology is fundamentally different from interpersonal trust. With people, trust is built through repeated interactions and emotional bonding. But with AI, it's more about predictability and transparency — you need to see what it's doing and why. The concept of 'delegation regret' is really interesting here: users don't regret that the AI made a mistake, they regret giving it too much authority in the first place. So I'd argue that good AI design should expose its action boundaries clearly and let users calibrate autonomy on a per-task basis.",
   expressions: [
-    'had a major influence on me — 对我产生了重大影响',
-    'a cascade of events — 一连串事件',
-    'What struck me most was... — 最让我触动的是……',
-    'used ... as a metaphor for — 将……用作……的隐喻',
-    'reflect on — 反思，深入思考',
-    'carry enormous social weight — 承载巨大的社会分量'
+    'fundamentally different from — 从根本上不同于',
+    'built through repeated interactions — 通过反复互动建立',
+    'predictability and transparency — 可预测性和透明度',
+    'delegation regret — 委托后悔',
+    'expose action boundaries — 暴露行为边界',
+    'calibrate autonomy on a per-task basis — 按任务校准自主程度'
   ]
 };
 
@@ -1298,13 +1298,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '我拒绝吃肉，并不是因为肉不好，而是因为我终于明白——一个人如果连自己的身体都无法主宰，又谈什么自由呢？',
-  source: '韩江《素食者》，2016',
+  quote: '只要活着，就难免想象着希望。痛苦与美丽本就是生命的一体两面，而连接二者的，是人心中不曾熄灭的爱与希望。',
+  source: '韩江《光与线》，2026（诺奖后首部散文集）',
   analysis: [
-    '<b>主题内核</b>：这段话以"拒绝"为起点，揭示了个体自主权的深层焦虑。素食在这里不是饮食习惯，而是一种对身体主权的宣示。',
-    '<b>叙事策略</b>：韩江用第一人称独白，让读者直接进入主人公英惠的内心世界。句式从否定（"不是因为肉不好"）转向肯定（"我终于明白"），呈现出一种觉醒式的顿悟。',
-    '<b>与心理学的关联</b>：这段话触及了自我决定理论（Self-Determination Theory）的核心——自主性（autonomy）是人类基本心理需求。当个体感到对生活的控制感被剥夺时，哪怕是最微小的选择（如饮食）也可能成为反抗的符号。',
-    '<b>延伸思考</b>：在做用户研究时，用户的"非理性行为"背后往往隐藏着类似的心理需求——不是行为本身重要，而是行为所代表的意义重要。'
+    '<b>主题内核</b>：韩江在2024年获得诺贝尔文学奖后，首次以散文形式直面自我与世界。"光"是刺穿暴力黑暗的文学力量，"线"是串联生死、记忆与爱的坚韧纽带。这段话是她对"世界满是痛苦，为何依然美丽"这个终极问题的回答。',
+    '<b>叙事策略</b>：不同于小说的冷峻叙事，散文中的韩江更加坦诚。她用童年诗集中"连接心灵的金线"为起点，回溯三十余年创作初心——面对无处不在的暴力，写作不是逃避，而是以文字为光，照亮被历史掩埋的无名创伤。',
+    '<b>与心理学的关联</b>：韩江的创作轨迹完美诠释了"创伤后成长"（Post-Traumatic Growth）理论。她不是简单地控诉暴力，而是在承认生命脆弱之后，依然选择在微小生机中积蓄前行力量——这正是积极心理学中"意义建构"的核心。',
+    '<b>延伸思考</b>：从《素食者》到《光与线》，韩江完成了从"个体反抗"到"普遍连接"的蜕变。这提醒我们：最好的心理干预不是消除痛苦，而是帮人在痛苦中找到意义和连接。'
   ]
 };
 
@@ -1325,16 +1325,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年7月27日 星期日',
+  date: '2026年7月29日 星期三',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '国务院成立广西六蓝水库"7·6"溃坝灾害调查评估组', desc: '对广西南宁横州市六蓝水库溃坝灾害进行全面调查评估。' },
-    { tag: '国际', cls: 'news-intl', title: '美伊暂停相互袭击，国际油价大幅下跌超6%', desc: '伊朗军方称美国过去两晚停止对伊袭击，伊方也暂停报复性打击，国际原油期货价格应声下跌。' },
-    { tag: '国内', cls: 'news-domestic', title: '上半年入境外国人达2291.4万人次，免签入境同比增30.6%', desc: '公安部数据显示，入境外国人免签入境1781.5万人次，同比增长30.6%。' },
-    { tag: '科技', cls: 'news-tech', title: '机器人入选中国外贸"新新三样"，企业注册量同比涨19.24%', desc: '机器人与人工智能、创新药一同被列为中国外贸"新新三样"，国内现存机器人相关企业119.94万家。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普与泽连斯基将于7月28日在华盛顿会晤', desc: '白宫官员确认，美国总统特朗普与乌克兰总统泽连斯基将于明日在华盛顿举行会晤。' },
-    { tag: '国内', cls: 'news-domestic', title: '渝厦高铁重庆菜园坝长江铁路隧道顺利贯通', desc: '隧道全长11942米，是国内首条穿越长江实现贯通的高铁隧道。' },
-    { tag: '国际', cls: 'news-intl', title: '台风"红霞"登陆广东，超75万人预防性撤离', desc: '台风"红霞"在广东沿海登陆，风速超160公里/小时， authorities 已组织大规模人员转移。' },
-    { tag: '科技', cls: 'news-tech', title: '中国智能算力规模达2185 EFLOPS，同比增长177%', desc: '截至6月底，我国智能算力规模达2185 EFLOPS（FP16），AI算力基础设施快速扩张。' }
+    { tag: '国际', cls: 'news-intl', title: '特朗普今日会晤内塔尼亚胡，中东局势迎"分水岭"', desc: '以色列总理内塔尼亚胡访问白宫，与特朗普举行会谈。这是美伊冲突以来两国领导人首次面对面会晤，伊朗核问题走向成焦点。' },
+    { tag: '国际', cls: 'news-intl', title: '乌克兰总统泽连斯基今日访美，与特朗普白宫会晤', desc: '正值美国参议院审议对俄新制裁法案之际，法案若通过将对中国、印度等俄能源买家征收100%关税。' },
+    { tag: '国内', cls: 'news-domestic', title: '上半年全国税收收入突破10万亿元，同比增长4.9%', desc: '超1.26亿人享受个税专项附加扣除，惠民税收减免同比增长11.8%，民生减税红利持续释放。' },
+    { tag: '科技', cls: 'news-tech', title: '中央网信办推动AI大模型全面适配IPv6', desc: '专项行动推动国内头部AI大模型升级新一代互联网协议，提升网络传输效率与数字安全能力。' },
+    { tag: '国内', cls: 'news-domestic', title: '2026暑期档总票房突破60亿元，超去年同期', desc: '影视、文旅联动消费活力持续释放，带动线下消费市场升温。' },
+    { tag: '国内', cls: 'news-domestic', title: '全国充电桩总量达2305.7万个，同比增长43.2%', desc: '截至6月底，新能源汽车充电基础设施建设持续提速，城乡充电网络覆盖度大幅提升。' },
+    { tag: '科技', cls: 'news-tech', title: '中欧班列累计开行突破13万列，运送货值超5200亿美元', desc: '成为丝绸之路经济带上驰而不息的"钢铁驼队"，持续推动中欧贸易往来。' },
+    { tag: '国际', cls: 'news-intl', title: '俄罗斯总统普京签署总统令，将武装力量扩充至242万人', desc: '俄方持续扩大军队规模，地缘紧张局势未见缓和迹象。' }
   ]
 };
 
