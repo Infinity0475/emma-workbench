@@ -1198,19 +1198,19 @@ function toggleSwitch(el) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Assistant or Actor? Student Trust, Control, and Delegation Regret When Using a General-Purpose AI Agent',
-  authors: 'Shiva Pochampally, Shengwei An, Yan Chen',
-  venue: 'arXiv:2607.18257, 2026',
-  link: 'https://arxiv.org/abs/2607.18257',
-  date: '2026-07-29',
-  abstract: '当 AI Agent 从回答问题转向执行行动，用户面临一个全新问题：如何决定将什么委托给一个行为空间无法完全预知的系统？研究者提出"委托后悔"（delegation regret）概念——用户后悔的不是 Agent 犯了错，而是它超出了自己本该授权的范围。',
+  title: 'Personality Without Persons? A Psychometric Critique of Big Five Testing in Large Language Models',
+  authors: 'Kim Zierahn, Cristina Cachero, Anna Korhonen, Nuria Oliver',
+  venue: 'arXiv:2607.02325, 2026',
+  link: 'https://arxiv.org/abs/2607.02325',
+  date: '2026-07-30',
+  abstract: '越来越多的研究用"大五人格"量表来给大语言模型（LLM）测人格——但人类的人格测量工具真的适用于 AI 吗？研究者对 244 个模型（覆盖 49 个模型家族）进行了系统心理测量学评估，发现大五量表在 LLM 上存在严重效度问题。',
   keyPoints: [
-    '研究问题：用户如何对不同任务校准对 AI Agent 的信任？什么因素导致信任撤回？',
-    '方法：20 名大学生使用通用 AI Agent 完成 5 个日常任务，测量信任、感知控制、透明度等变量',
-    '核心发现：① 用户按"任务"而非"Agent"校准信任；② 不可逆性+外部可见性是信任撤回的核心驱动因素；③ 即使输出被评为成功，Agent 未经预览直接执行仍会引发"委托后悔"',
-    '对 HCI 的启示：Agent 设计需暴露行为边界，支持按任务的自主策略，将"建议输出"与"Agent 执行"分开'
+    '研究问题：大五人格量表能否有效描述 LLM？能否捕捉模型间差异？是否反映了与人类人格一致的内部结构？',
+    '方法：评估 5 种大五量表的内容效度，对 N=244 个 LLM（49 个模型家族）施测最佳量表，分析因子结构与方差',
+    '核心发现：① 人类版本题目内容效度不足，需针对 LLM 改编才能达标；② 模型间差异极小，人格分数仅解释 3% 的总方差；③ 大五的五因子结构在 LLM 中崩塌——四个维度塌缩为一个（r≥.92）；④ 对齐训练（alignment training）系统性地将模型推向"社会期望"人格方向',
+    '对 HCI 的启示：用人类心理构念直接套用于 AI 系统会产生误导性描述，影响基准比较和治理决策；需要开发专为 LLM 设计的评估框架'
   ],
-  takeaway: '这篇论文对 AI 产品设计的启示非常直接：用户的信任不是一刀切的，而是随任务的风险属性动态调整。不可逆+对外可见的操作（如发邮件、发消息）是信任崩塌的高危区。对产品经理来说，关键设计启示是：给用户提供"确认边界"的机制，让 Agent 在执行前展示"我打算做什么"。思考：你在用 AI 工具时，有没有过"它做了我不想让它做的事"的体验？'
+  takeaway: '这篇论文直击当前 AI 评估的一个盲区：我们太习惯把人类的心理学概念"平移"到 AI 上了。作为应用心理背景的准研究者，这恰恰提醒我们——心理测量学的核心不是"有个量表就能测"，而是必须验证构念效度。对 AI 产品经理来说，启示更直接：不要用拟人化标签（"这个模型很友善""那个模型很创造力"）来做产品决策，这些"人格"可能只是对齐训练的社会期望效应。思考：当你说一个 AI"有个性"时，你测到的是真实的内部状态，还是只是你作为人类的投射？'
 };
 
 function renderPaper() {
@@ -1238,35 +1238,35 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'delegate', pos: 'v.', def: '委托，授权（任务给他人）' },
-  { word: 'autonomy', pos: 'n.', def: '自主权，自治' },
-  { word: 'irreversible', pos: 'adj.', def: '不可逆的' },
-  { word: 'calibrate', pos: 'v.', def: '校准，调整（程度或精确度）' },
-  { word: 'perceive', pos: 'v.', def: '感知，察觉' },
-  { word: 'transparency', pos: 'n.', def: '透明度，公开性' },
-  { word: 'supervision', pos: 'n.', def: '监督，管理' },
-  { word: 'preference', pos: 'n.', def: '偏好，优先选择' },
-  { word: 'threshold', pos: 'n.', def: '阈值，门槛' },
-  { word: 'anticipate', pos: 'v.', def: '预期，预见' },
-  { word: 'consent', pos: 'n./v.', def: '同意，许可' },
-  { word: 'trajectory', pos: 'n.', def: '轨迹，发展路径' },
-  { word: 'stakeholder', pos: 'n.', def: '利益相关者' },
-  { word: 'benchmark', pos: 'n./v.', def: '基准，标杆' },
-  { word: 'nuance', pos: 'n.', def: '细微差别，微妙之处' }
+  { word: 'psychometric', pos: 'adj.', def: '心理测量的（/ˌsaɪkoʊˈmetrɪk/）' },
+  { word: 'inventory', pos: 'n.', def: '量表，清单（/ˈɪnvəntɔːri/）' },
+  { word: 'validity', pos: 'n.', def: '效度，有效性（/vəˈlɪdəti/）' },
+  { word: 'construct', pos: 'n.', def: '构念，概念（/ˈkɒnstrʌkt/）' },
+  { word: 'variance', pos: 'n.', def: '方差，变异（/ˈveəriəns/）' },
+  { word: 'anthropomorphize', pos: 'v.', def: '赋予人性/人格（/ænˈθrɒpəmɔːfaɪz/）' },
+  { word: 'alignment', pos: 'n.', def: '对齐，校准（/əˈlaɪnmənt/）' },
+  { word: 'desirability', pos: 'n.', def: '合意性，期望度（/dɪˌzaɪərəˈbɪləti/）' },
+  { word: 'facet', pos: 'n.', def: '层面，方面（/ˈfæsɪt/）' },
+  { word: 'collapse', pos: 'v.', def: '崩塌，坍缩（/kəˈlæps/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验性的，实证的（/ɪmˈpɪrɪkəl/）' },
+  { word: 'governance', pos: 'n.', def: '治理，管控（/ˈɡʌvərnəns/）' },
+  { word: 'extrapolate', pos: 'v.', def: '推断，外推（/ɪkˈstræpəleɪt/）' },
+  { word: 'bias', pos: 'n./v.', def: '偏差，偏见（/ˈbaɪəs/）' },
+  { word: 'replicable', pos: 'adj.', def: '可复制的（/rɪˈplɪkəbl/）' }
 ];
 
 const ieltsSpeaking = {
-  part: 'Part 3 Discussion',
-  topic: 'How does trust in technology differ from trust in people?',
-  bullet: 'Discuss: What factors influence trust in AI? Should AI systems have different levels of autonomy? How can designers build trust with users?',
-  sample: "I think trust in technology is fundamentally different from interpersonal trust. With people, trust is built through repeated interactions and emotional bonding. But with AI, it's more about predictability and transparency — you need to see what it's doing and why. The concept of 'delegation regret' is really interesting here: users don't regret that the AI made a mistake, they regret giving it too much authority in the first place. So I'd argue that good AI design should expose its action boundaries clearly and let users calibrate autonomy on a per-task basis.",
+  part: 'Part 2 Cue Card',
+  topic: 'Describe a time when you realized technology was not as smart as you thought it was.',
+  bullet: 'You should say: what the technology was, what you expected it to do, what actually happened, and explain how you felt about the experience.',
+  sample: "I'd like to talk about an experience I had with a personality quiz app that claimed to analyze your character using AI. I was fascinated by psychology, so I downloaded it expecting sophisticated insights. The app asked me 50 questions — things like 'Do you enjoy parties?' and 'Do you plan ahead?' — and then gave me a detailed personality profile. At first, I was impressed by how accurate it seemed. But then I gave the same answers as my introverted friend, and it gave me completely different results. That's when I realized the AI wasn't actually measuring anything — it was just generating plausible-sounding descriptions based on vague inputs. This experience taught me to be more critical about anthropomorphizing technology. We tend to assume that if something talks like a person, it thinks like a person. But as recent research shows, even sophisticated language models don't have genuine personality traits — they're pattern-matching machines that reflect their training data.",
   expressions: [
-    'fundamentally different from — 从根本上不同于',
-    'built through repeated interactions — 通过反复互动建立',
-    'predictability and transparency — 可预测性和透明度',
-    'delegation regret — 委托后悔',
-    'expose action boundaries — 暴露行为边界',
-    'calibrate autonomy on a per-task basis — 按任务校准自主程度'
+    'claimed to analyze — 声称能分析',
+    'sophisticated insights — 深度洞察',
+    'plausible-sounding — 听起来合理的',
+    'anthropomorphizing technology — 将技术拟人化',
+    'pattern-matching machines — 模式匹配机器',
+    'reflect their training data — 反映其训练数据'
   ]
 };
 
@@ -1298,13 +1298,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '只要活着，就难免想象着希望。痛苦与美丽本就是生命的一体两面，而连接二者的，是人心中不曾熄灭的爱与希望。',
-  source: '韩江《光与线》，2026（诺奖后首部散文集）',
+  quote: '要是有些事我没说，你别以为是我忘了，我什么也没忘，但是有些事只适合收藏。不能说，也不能想，却又不能忘。它们是一片朦胧的温馨与寂寥，是一片成熟的希望与绝望。',
+  source: '史铁生《我与地坛》',
   analysis: [
-    '<b>主题内核</b>：韩江在2024年获得诺贝尔文学奖后，首次以散文形式直面自我与世界。"光"是刺穿暴力黑暗的文学力量，"线"是串联生死、记忆与爱的坚韧纽带。这段话是她对"世界满是痛苦，为何依然美丽"这个终极问题的回答。',
-    '<b>叙事策略</b>：不同于小说的冷峻叙事，散文中的韩江更加坦诚。她用童年诗集中"连接心灵的金线"为起点，回溯三十余年创作初心——面对无处不在的暴力，写作不是逃避，而是以文字为光，照亮被历史掩埋的无名创伤。',
-    '<b>与心理学的关联</b>：韩江的创作轨迹完美诠释了"创伤后成长"（Post-Traumatic Growth）理论。她不是简单地控诉暴力，而是在承认生命脆弱之后，依然选择在微小生机中积蓄前行力量——这正是积极心理学中"意义建构"的核心。',
-    '<b>延伸思考</b>：从《素食者》到《光与线》，韩江完成了从"个体反抗"到"普遍连接"的蜕变。这提醒我们：最好的心理干预不是消除痛苦，而是帮人在痛苦中找到意义和连接。'
+    '<b>主题内核</b>：史铁生用"收藏"重新定义了记忆的归宿。那些无法言说的心事，不是被遗忘，而是被安放到了语言无法抵达的地方。这段话揭示了人类情感最根本的困境：有些体验如此私密，一旦变成语言就会失真，但它们又真实地存在着，如鲠在喉。',
+    '<b>语言艺术</b>：注意他如何用否定来建构意义——"不能说，也不能想，却又不能忘"，三重否定构成一个无解的情感漩涡。紧接着用"朦胧的温馨与寂寥""成熟的希望与绝望"两组对立意象，将不可言说之物赋予了可感的质地。这不是修辞技巧，而是一个长期与命运对话的人，对语言边界的精确勘探。',
+    '<b>与心理学的关联</b>：这段话精确描述了心理学中的"内隐记忆"（implicit memory）——那些无法用语言提取、却持续影响行为和情绪的经验。史铁生比任何心理学家都更早地触及了这个命题：人的核心情感体验往往存在于语言之外，它们不是"创伤"这个标签能概括的，而是一种弥散的、矛盾的生命底色。',
+    '<b>延伸思考</b>：作为学心理的人，我们习惯于用术语定义情绪——焦虑、抑郁、创伤后应激……但史铁生提醒我们，语言既是理解的工具，也是理解的牢笼。真正深入一个人的内心，需要的不是更多的诊断标签，而是承认有些东西"只适合收藏"——在沉默中尊重它的完整。'
   ]
 };
 
@@ -1325,16 +1325,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年7月29日 星期三',
+  date: '2026年7月30日 星期四',
   items: [
-    { tag: '国际', cls: 'news-intl', title: '特朗普今日会晤内塔尼亚胡，中东局势迎"分水岭"', desc: '以色列总理内塔尼亚胡访问白宫，与特朗普举行会谈。这是美伊冲突以来两国领导人首次面对面会晤，伊朗核问题走向成焦点。' },
-    { tag: '国际', cls: 'news-intl', title: '乌克兰总统泽连斯基今日访美，与特朗普白宫会晤', desc: '正值美国参议院审议对俄新制裁法案之际，法案若通过将对中国、印度等俄能源买家征收100%关税。' },
-    { tag: '国内', cls: 'news-domestic', title: '上半年全国税收收入突破10万亿元，同比增长4.9%', desc: '超1.26亿人享受个税专项附加扣除，惠民税收减免同比增长11.8%，民生减税红利持续释放。' },
-    { tag: '科技', cls: 'news-tech', title: '中央网信办推动AI大模型全面适配IPv6', desc: '专项行动推动国内头部AI大模型升级新一代互联网协议，提升网络传输效率与数字安全能力。' },
-    { tag: '国内', cls: 'news-domestic', title: '2026暑期档总票房突破60亿元，超去年同期', desc: '影视、文旅联动消费活力持续释放，带动线下消费市场升温。' },
-    { tag: '国内', cls: 'news-domestic', title: '全国充电桩总量达2305.7万个，同比增长43.2%', desc: '截至6月底，新能源汽车充电基础设施建设持续提速，城乡充电网络覆盖度大幅提升。' },
-    { tag: '科技', cls: 'news-tech', title: '中欧班列累计开行突破13万列，运送货值超5200亿美元', desc: '成为丝绸之路经济带上驰而不息的"钢铁驼队"，持续推动中欧贸易往来。' },
-    { tag: '国际', cls: 'news-intl', title: '俄罗斯总统普京签署总统令，将武装力量扩充至242万人', desc: '俄方持续扩大军队规模，地缘紧张局势未见缓和迹象。' }
+    { tag: '国内', cls: 'news-domestic', title: '《反网络暴力法（征求意见稿）》公布，拟将反网暴纳入学校课程体系', desc: '国家网信办等部门起草征求意见稿，煽动网暴将被列入失信黑名单，压实平台治理主体责任，征求意见截至8月28日。' },
+    { tag: '科技', cls: 'news-tech', title: '月之暗面宣布Kimi K3全量开源，2.8万亿参数全球最大', desc: '国内AI企业月之暗面正式将最新旗舰大模型Kimi K3全量开源，总参数达2.8万亿，为目前全球参数规模最大的开源大模型。' },
+    { tag: '科技', cls: 'news-tech', title: 'C919高原型首架机完成首次飞行试验全部科目', desc: '国产大飞机C919高原型在上海浦东首飞成功，专为海拔四五千米高原机场设计，标志着国产大飞机进入"高原时代"。' },
+    { tag: '国际', cls: 'news-intl', title: '日本熊本县6.8级地震已致14人遇难，基础设施严重受损', desc: '日本九州岛熊本县强震后续救援持续进行，多地道路、供水设施受损，余震不断加剧居民恐慌。' },
+    { tag: '国际', cls: 'news-intl', title: '美联储维持利率不变，纽约股市全线下跌', desc: '美联储以9:3投票维持基准利率3.5%-3.75%不变，三名委员因通胀担忧投反对票，长期国债收益率急升拖累美股。' },
+    { tag: '国际', cls: 'news-intl', title: '宝马集团计划2027年底前全球裁员约8000人', desc: '德国汽车制造商宝马宣布大规模裁员计划以降低成本，传统汽车行业转型压力持续加大。' },
+    { tag: '国内', cls: 'news-domestic', title: '2026年度电影总票房突破220亿元', desc: '《飞驰人生3》《功夫女足》《给阿嬷的情书》暂列年度票房榜前三，暑期档持续升温。' },
+    { tag: '国内', cls: 'news-domestic', title: '国家防总维持粤川甘防汛四级响应，多地暴雨预警', desc: '四川中东部局地大暴雨，吉林汪清防汛提升至一级启动"五停"，中央气象台继续发布强对流蓝色预警。' }
   ]
 };
 
