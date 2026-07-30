@@ -1198,19 +1198,19 @@ function toggleSwitch(el) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Personality Without Persons? A Psychometric Critique of Big Five Testing in Large Language Models',
-  authors: 'Kim Zierahn, Cristina Cachero, Anna Korhonen, Nuria Oliver',
-  venue: 'arXiv:2607.02325, 2026',
-  link: 'https://arxiv.org/abs/2607.02325',
-  date: '2026-07-30',
-  abstract: '越来越多的研究用"大五人格"量表来给大语言模型（LLM）测人格——但人类的人格测量工具真的适用于 AI 吗？研究者对 244 个模型（覆盖 49 个模型家族）进行了系统心理测量学评估，发现大五量表在 LLM 上存在严重效度问题。',
+  title: 'Affective Tools for Thought: Towards Shared Attention and Affective Reorienting in AI-Supported Thinking',
+  authors: 'Yifu Liu, Raffaele Andrea Buono, Nadia Bianchi-Berthouze',
+  venue: 'arXiv:2607.26731, CHI 2026 Workshop on Tools for Thought',
+  link: 'https://arxiv.org/abs/2607.26731',
+  date: '2026-07-31',
+  abstract: '当前的"思维工具"（Tools for Thought）要么把情感视为阻碍认知效率的摩擦力，要么将其当作优化认知速度的信号。本文从具身认知科学出发，提出情感是认知的构成要素——它重塑思维的轨迹，而不仅仅是速度。研究识别了情感化思维工具的两大设计障碍：缺乏"共享注意"（Shared Attention）和缺乏"情感重定向"（Affective Reorienting），并提出三种设计策略。',
   keyPoints: [
-    '研究问题：大五人格量表能否有效描述 LLM？能否捕捉模型间差异？是否反映了与人类人格一致的内部结构？',
-    '方法：评估 5 种大五量表的内容效度，对 N=244 个 LLM（49 个模型家族）施测最佳量表，分析因子结构与方差',
-    '核心发现：① 人类版本题目内容效度不足，需针对 LLM 改编才能达标；② 模型间差异极小，人格分数仅解释 3% 的总方差；③ 大五的五因子结构在 LLM 中崩塌——四个维度塌缩为一个（r≥.92）；④ 对齐训练（alignment training）系统性地将模型推向"社会期望"人格方向',
-    '对 HCI 的启示：用人类心理构念直接套用于 AI 系统会产生误导性描述，影响基准比较和治理决策；需要开发专为 LLM 设计的评估框架'
+    '核心问题：当前 AI 思维工具将情感视为"噪音"或"加速器"，忽略了情感在认知过程中的建构性角色——情感不只影响思考的速度，更决定了思考的方向',
+    '两大设计障碍：① 缺乏共享注意（Shared Attention）——AI 无法感知用户当前的情绪投入状态；② 缺乏情感重定向（Affective Reorienting）——AI 倾向于强化预设路径，而非利用情感时刻打开新的思考方向',
+    '三种设计策略：① 情感链×思维链（Chain of Emotion × Chain of Thought）：将情感变化嵌入推理过程；② 情感镜像（Affective Mirror）：让 AI 反射用户的情绪状态而非内容；③ 提示性重定向（Prompted Reorienting）：在情感转折点引入开放性提示',
+    '实证基础：基于一个触觉感知对话智能体在手工艺学习中的研究，发现当 AI 能感知用户的触摸压力变化并调整回应方式时，学习者展现出更丰富的创造性探索'
   ],
-  takeaway: '这篇论文直击当前 AI 评估的一个盲区：我们太习惯把人类的心理学概念"平移"到 AI 上了。作为应用心理背景的准研究者，这恰恰提醒我们——心理测量学的核心不是"有个量表就能测"，而是必须验证构念效度。对 AI 产品经理来说，启示更直接：不要用拟人化标签（"这个模型很友善""那个模型很创造力"）来做产品决策，这些"人格"可能只是对齐训练的社会期望效应。思考：当你说一个 AI"有个性"时，你测到的是真实的内部状态，还是只是你作为人类的投射？'
+  takeaway: '这篇论文完美契合你"应用心理+HCI+AI"的交叉方向。它触及了一个根本性问题：AI 工具到底应该"优化"我们的思维，还是"陪伴"我们的思维？从用户体验研究的角度看，这意味着未来的 AI 产品不应只追求效率指标（任务完成率、响应速度），更需要关注情感轨迹（用户在不同阶段的情绪变化如何影响决策）。作为产品经理，你可以思考：如果一款 AI 产品能"感知"你此刻是焦虑还是平静，它会改变回应方式吗？这种改变是让你更依赖工具，还是让你更理解自己？'
 };
 
 function renderPaper() {
@@ -1238,35 +1238,35 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'psychometric', pos: 'adj.', def: '心理测量的（/ˌsaɪkoʊˈmetrɪk/）' },
-  { word: 'inventory', pos: 'n.', def: '量表，清单（/ˈɪnvəntɔːri/）' },
-  { word: 'validity', pos: 'n.', def: '效度，有效性（/vəˈlɪdəti/）' },
-  { word: 'construct', pos: 'n.', def: '构念，概念（/ˈkɒnstrʌkt/）' },
-  { word: 'variance', pos: 'n.', def: '方差，变异（/ˈveəriəns/）' },
-  { word: 'anthropomorphize', pos: 'v.', def: '赋予人性/人格（/ænˈθrɒpəmɔːfaɪz/）' },
-  { word: 'alignment', pos: 'n.', def: '对齐，校准（/əˈlaɪnmənt/）' },
-  { word: 'desirability', pos: 'n.', def: '合意性，期望度（/dɪˌzaɪərəˈbɪləti/）' },
-  { word: 'facet', pos: 'n.', def: '层面，方面（/ˈfæsɪt/）' },
-  { word: 'collapse', pos: 'v.', def: '崩塌，坍缩（/kəˈlæps/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验性的，实证的（/ɪmˈpɪrɪkəl/）' },
-  { word: 'governance', pos: 'n.', def: '治理，管控（/ˈɡʌvərnəns/）' },
-  { word: 'extrapolate', pos: 'v.', def: '推断，外推（/ɪkˈstræpəleɪt/）' },
-  { word: 'bias', pos: 'n./v.', def: '偏差，偏见（/ˈbaɪəs/）' },
-  { word: 'replicable', pos: 'adj.', def: '可复制的（/rɪˈplɪkəbl/）' }
+  { word: 'constitutive', pos: 'adj.', def: '构成性的，组成必要的（/ˈkɒnstɪtjuːtɪv/）' },
+  { word: 'reorient', pos: 'v.', def: '重新定向，调整方向（/ˌriːˈɔːrient/）' },
+  { word: 'traject', pos: 'v.', def: '穿越，经过（/trəˈdʒekt/）' },
+  { word: 'enactive', pos: 'adj.', def: '具身实践的， enacted的（/ɪˈneɪktɪv/）' },
+  { word: 'embodied', pos: 'adj.', def: '具身的，体现的（/ɪmˈbɒdid/）' },
+  { word: 'affordance', pos: 'n.', def: '可供性，环境赋予的功能线索（/əˈfɔːdəns/）' },
+  { word: 'modality', pos: 'n.', def: '模态，感知通道（/moʊˈdæləti/）' },
+  { word: 'provocation', pos: 'n.', def: '激发，挑衅性设计（/ˌprɒvəˈkeɪʃn/）' },
+  { word: 'trajectory', pos: 'n.', def: '轨迹，发展路径（/trəˈdʒektəri/）' },
+  { word: 'perturbation', pos: 'n.', def: '扰动，干扰（/ˌpɜːtɜːˈbeɪʃn/）' },
+  { word: 'scaffold', pos: 'v./n.', def: '搭建支架，脚手架式支持（/ˈskæfoʊld/）' },
+  { word: 'attunement', pos: 'n.', def: '调谐，协调一致（/əˈtjuːnmənt/）' },
+  { word: 'proprioception', pos: 'n.', def: '本体感觉，自我感知（/ˌproʊpriəˈsɛpʃən/）' },
+  { word: 'contingency', pos: 'n.', def: '偶然性，应急性（/kənˈtɪndʒənsi/）' },
+  { word: 'intersubjective', pos: 'adj.', def: '主体间的，共感的（/ˌɪntərsubˈdʒektɪv/）' }
 ];
 
 const ieltsSpeaking = {
-  part: 'Part 2 Cue Card',
-  topic: 'Describe a time when you realized technology was not as smart as you thought it was.',
-  bullet: 'You should say: what the technology was, what you expected it to do, what actually happened, and explain how you felt about the experience.',
-  sample: "I'd like to talk about an experience I had with a personality quiz app that claimed to analyze your character using AI. I was fascinated by psychology, so I downloaded it expecting sophisticated insights. The app asked me 50 questions — things like 'Do you enjoy parties?' and 'Do you plan ahead?' — and then gave me a detailed personality profile. At first, I was impressed by how accurate it seemed. But then I gave the same answers as my introverted friend, and it gave me completely different results. That's when I realized the AI wasn't actually measuring anything — it was just generating plausible-sounding descriptions based on vague inputs. This experience taught me to be more critical about anthropomorphizing technology. We tend to assume that if something talks like a person, it thinks like a person. But as recent research shows, even sophisticated language models don't have genuine personality traits — they're pattern-matching machines that reflect their training data.",
+  part: 'Part 3 Discussion',
+  topic: 'Some people believe that AI tools can enhance human creativity, while others worry they will make us less creative. To what extent do you agree or disagree?',
+  bullet: 'This is a Part 3 abstract discussion topic. Examiners expect you to explore both sides, give reasons, and support with examples.',
+  sample: "I think this is a genuinely nuanced question. On the one hand, AI tools can definitely scaffold the creative process — they can generate initial ideas, suggest alternative perspectives, or handle tedious tasks so that humans can focus on higher-order thinking. For instance, a designer might use AI to rapidly prototype layouts, then spend more time refining the emotional tone of the work. On the other hand, there's a real risk of cognitive offloading — if we always let AI generate the first draft, we might lose the ability to tolerate the discomfort of starting from scratch, which is actually where the most original ideas emerge. My view is that the key factor is intentionality. If we use AI as a thinking partner rather than a thinking substitute, it can genuinely enhance creativity. But we need to be mindful of when we're outsourcing our cognitive struggle — because that struggle is often where breakthroughs happen. This connects to what researchers call 'desirable difficulty' — the idea that some friction in the learning process actually strengthens long-term retention and creative problem-solving.",
   expressions: [
-    'claimed to analyze — 声称能分析',
-    'sophisticated insights — 深度洞察',
-    'plausible-sounding — 听起来合理的',
-    'anthropomorphizing technology — 将技术拟人化',
-    'pattern-matching machines — 模式匹配机器',
-    'reflect their training data — 反映其训练数据'
+    'scaffold the creative process — 为创造过程搭建支架',
+    'higher-order thinking — 高阶思维',
+    'cognitive offloading — 认知卸载',
+    'thinking partner vs thinking substitute — 思维伙伴 vs 思维替代',
+    'desirable difficulty — 合意困难',
+    'outsourcing our cognitive struggle — 外包认知挣扎'
   ]
 };
 
@@ -1298,13 +1298,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '要是有些事我没说，你别以为是我忘了，我什么也没忘，但是有些事只适合收藏。不能说，也不能想，却又不能忘。它们是一片朦胧的温馨与寂寥，是一片成熟的希望与绝望。',
-  source: '史铁生《我与地坛》',
+  quote: '凡事都有偶然的凑巧，结果却又如宿命的必然。我慢慢意识到，我所经历的孤独，并不完全是因为远离人群，而是因为我内心深处有一种无法与他人分享的东西。那种东西，它不是痛苦，也不是欢乐，而是一种对生命本身的困惑。',
+  source: '沈从文《边城》',
   analysis: [
-    '<b>主题内核</b>：史铁生用"收藏"重新定义了记忆的归宿。那些无法言说的心事，不是被遗忘，而是被安放到了语言无法抵达的地方。这段话揭示了人类情感最根本的困境：有些体验如此私密，一旦变成语言就会失真，但它们又真实地存在着，如鲠在喉。',
-    '<b>语言艺术</b>：注意他如何用否定来建构意义——"不能说，也不能想，却又不能忘"，三重否定构成一个无解的情感漩涡。紧接着用"朦胧的温馨与寂寥""成熟的希望与绝望"两组对立意象，将不可言说之物赋予了可感的质地。这不是修辞技巧，而是一个长期与命运对话的人，对语言边界的精确勘探。',
-    '<b>与心理学的关联</b>：这段话精确描述了心理学中的"内隐记忆"（implicit memory）——那些无法用语言提取、却持续影响行为和情绪的经验。史铁生比任何心理学家都更早地触及了这个命题：人的核心情感体验往往存在于语言之外，它们不是"创伤"这个标签能概括的，而是一种弥散的、矛盾的生命底色。',
-    '<b>延伸思考</b>：作为学心理的人，我们习惯于用术语定义情绪——焦虑、抑郁、创伤后应激……但史铁生提醒我们，语言既是理解的工具，也是理解的牢笼。真正深入一个人的内心，需要的不是更多的诊断标签，而是承认有些东西"只适合收藏"——在沉默中尊重它的完整。'
+    '<b>主题内核</b>：沈从文写的不是爱情的孤独，而是存在性孤独——一种人之所以为人的根本处境。翠翠的等待不仅是等待一个人回来，更是等待自己理解"为什么活着"这个没有标准答案的问题。这种孤独不是病理性的，而是健康的——它标志着一个人开始真正地面对自己的内心。',
+    '<b>语言艺术</b>：注意"偶然的凑巧"与"宿命的必然"这对矛盾的并置。沈从文用最朴素的语言说出了最深奥的哲学命题：生命中看似随机的相遇，事后回头看，都像是一条无法更改的路线。这种"事后必然性"恰恰是人类认知的一种特征——我们总是 retrospective 地赋予混沌以意义。',
+    '<b>与心理学的关联</b>：这段话触及了发展心理学中"自我同一性"（ego identity）的核心议题。埃里克森认为，青少年期的核心任务是回答"我是谁"这个问题，而这个过程必然伴随着深刻的孤独感。翠翠的困惑不是因为她缺少社交支持，而是因为没有人能替她完成这个自我发现的旅程。从用户研究的角度看，这提醒我们：最深层的用户需求往往不是功能性需求，而是存在性需求——人们使用某些产品，是为了对抗或安放这种存在性孤独。',
+    '<b>延伸思考</b>：沈从文的小说总是结束于"也许"和"等待"——没有确定答案，没有大团圆。这恰恰是最诚实的文学态度：真正重要的人生问题本来就没有答案。作为学心理的人，我们需要学会与不确定性共处，而不是急于给每个现象贴上标签。翠翠的故事告诉我们：有些等待本身就是意义。'
   ]
 };
 
@@ -1325,16 +1325,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年7月30日 星期四',
+  date: '2026年7月31日 星期五',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '《反网络暴力法（征求意见稿）》公布，拟将反网暴纳入学校课程体系', desc: '国家网信办等部门起草征求意见稿，煽动网暴将被列入失信黑名单，压实平台治理主体责任，征求意见截至8月28日。' },
-    { tag: '科技', cls: 'news-tech', title: '月之暗面宣布Kimi K3全量开源，2.8万亿参数全球最大', desc: '国内AI企业月之暗面正式将最新旗舰大模型Kimi K3全量开源，总参数达2.8万亿，为目前全球参数规模最大的开源大模型。' },
-    { tag: '科技', cls: 'news-tech', title: 'C919高原型首架机完成首次飞行试验全部科目', desc: '国产大飞机C919高原型在上海浦东首飞成功，专为海拔四五千米高原机场设计，标志着国产大飞机进入"高原时代"。' },
-    { tag: '国际', cls: 'news-intl', title: '日本熊本县6.8级地震已致14人遇难，基础设施严重受损', desc: '日本九州岛熊本县强震后续救援持续进行，多地道路、供水设施受损，余震不断加剧居民恐慌。' },
-    { tag: '国际', cls: 'news-intl', title: '美联储维持利率不变，纽约股市全线下跌', desc: '美联储以9:3投票维持基准利率3.5%-3.75%不变，三名委员因通胀担忧投反对票，长期国债收益率急升拖累美股。' },
-    { tag: '国际', cls: 'news-intl', title: '宝马集团计划2027年底前全球裁员约8000人', desc: '德国汽车制造商宝马宣布大规模裁员计划以降低成本，传统汽车行业转型压力持续加大。' },
-    { tag: '国内', cls: 'news-domestic', title: '2026年度电影总票房突破220亿元', desc: '《飞驰人生3》《功夫女足》《给阿嬷的情书》暂列年度票房榜前三，暑期档持续升温。' },
-    { tag: '国内', cls: 'news-domestic', title: '国家防总维持粤川甘防汛四级响应，多地暴雨预警', desc: '四川中东部局地大暴雨，吉林汪清防汛提升至一级启动"五停"，中央气象台继续发布强对流蓝色预警。' }
+    { tag: '国内', cls: 'news-domestic', title: '中共中央政治局会议确定10月召开二十届五中全会，部署下半年经济工作', desc: '会议提出实施更加积极的财政政策与适度宽松货币政策，适时出台增量政策，着力扩大内需、保障民生。' },
+    { tag: '科技', cls: 'news-tech', title: '谷歌DeepMind发布Gemini Robotics 2，实现人形机器人全身控制', desc: '新一代机器人AI模型实现对整个人形机器人从头到脚的全身控制，同步发布ER 2与On-Device 2两款协同模型，支持多步骤任务规划。' },
+    { tag: '科技', cls: 'news-tech', title: 'OpenAI推出GPT-5.6促销：Luna降价80%，Sol首推2.5倍速模式', desc: 'Terra模型降价20%，Sol模型新增Fast模式速度提升2.5倍；OpenAI年化收入提速，7月单月新增ARR超整个二季度。' },
+    { tag: '国际', cls: 'news-intl', title: '日本正式成立国家情报局，统筹自卫队、警方、外交情报资源', desc: '7月31日日本国家情报局正式挂牌，直接隶属首相，打破战后情报分权格局，引发周边国家关注。' },
+    { tag: '国际', cls: 'news-intl', title: '欧足联与55个成员协会宣布抵制国际足联世界杯私有化方案', desc: '因凡蒂诺计划向私人投资者出售世界杯逾20%股权融资42亿美元，欧足联斥为"秘密推进"与"胁迫行为"。' },
+    { tag: '科技', cls: 'news-tech', title: '马斯克宣布Grok 4.6将于一周后发布', desc: '马斯克在社交平台发文透露下一代大模型Grok 4.6发布时间，AI大模型竞争持续白热化。' },
+    { tag: '国内', cls: 'news-domestic', title: '国内成品油年内第十次上调，50升92号加满多花27元', desc: '今日24时调价窗口开启，油价迎来年内第十次上涨，出行成本进一步增加。' },
+    { tag: '国内', cls: 'news-domestic', title: '上交所收盘后永久关闭量化高速局域网通道', desc: '下一交易日起统一行情传输延迟标准，消除高频量化机构交易通道优势，被市场解读为重要公平性改革。' }
   ]
 };
 
