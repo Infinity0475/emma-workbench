@@ -1198,19 +1198,19 @@ function toggleSwitch(el) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Affective Tools for Thought: Towards Shared Attention and Affective Reorienting in AI-Supported Thinking',
-  authors: 'Yifu Liu, Raffaele Andrea Buono, Nadia Bianchi-Berthouze',
-  venue: 'arXiv:2607.26731, CHI 2026 Workshop on Tools for Thought',
-  link: 'https://arxiv.org/abs/2607.26731',
-  date: '2026-07-31',
-  abstract: '当前的"思维工具"（Tools for Thought）要么把情感视为阻碍认知效率的摩擦力，要么将其当作优化认知速度的信号。本文从具身认知科学出发，提出情感是认知的构成要素——它重塑思维的轨迹，而不仅仅是速度。研究识别了情感化思维工具的两大设计障碍：缺乏"共享注意"（Shared Attention）和缺乏"情感重定向"（Affective Reorienting），并提出三种设计策略。',
+  title: 'Experiential Versus Instructional Approaches for Eliciting Metacognitive Awareness in AI-Assisted Learning: A Short-Term Longitudinal Study',
+  authors: 'Pau Benazet i Montobbio, Janne Rotter, Davinia Hernández-Leo',
+  venue: 'arXiv:2607.20047, cs.HC',
+  link: 'https://arxiv.org/abs/2607.20047',
+  date: '2026-08-01',
+  abstract: '随着生成式AI进入课堂，哪种教学方法最能支持AI辅助学习中的元认知技能习得？本研究通过一项准实验（126名大一工程学生），对比了两种教学路径：体验式学习（动手实践）与指导性学习（传统讲授）。研究发现，体验式方法在参与度和认知知识方面即时效果更优；而五周后，体验式组在"认知调节"（regulation of cognition）维度上展现出延迟但持续的组内增长——这是指导性组未观察到的。这提示：体验式学习让"知道"和"做到"遵循不同的时间节奏。',
   keyPoints: [
-    '核心问题：当前 AI 思维工具将情感视为"噪音"或"加速器"，忽略了情感在认知过程中的建构性角色——情感不只影响思考的速度，更决定了思考的方向',
-    '两大设计障碍：① 缺乏共享注意（Shared Attention）——AI 无法感知用户当前的情绪投入状态；② 缺乏情感重定向（Affective Reorienting）——AI 倾向于强化预设路径，而非利用情感时刻打开新的思考方向',
-    '三种设计策略：① 情感链×思维链（Chain of Emotion × Chain of Thought）：将情感变化嵌入推理过程；② 情感镜像（Affective Mirror）：让 AI 反射用户的情绪状态而非内容；③ 提示性重定向（Prompted Reorienting）：在情感转折点引入开放性提示',
-    '实证基础：基于一个触觉感知对话智能体在手工艺学习中的研究，发现当 AI 能感知用户的触摸压力变化并调整回应方式时，学习者展现出更丰富的创造性探索'
+    '核心发现：体验式学习（hands-on）比传统讲授在AI辅助学习中更能激发元认知意识，尤其是在"认知知识"（理解有效策略）维度上效果显著',
+    '延迟效应：体验式组在5周后出现了"认知调节"（实际应用策略）的持续增长，而讲授组没有——说明"知道"和"做到"在体验式学习中沿着不同的时间线发展',
+    '元认知双维度：元认知意识包含"认知知识"（knowledge of cognition，理解策略）和"认知调节"（regulation of cognition，实践应用），两者不必然同步发展',
+    '教育启示：AI辅助学习不应只教学生"怎么用AI"（规则讲授），更要创造"在真实使用中犯错—反思—调整"的体验循环'
   ],
-  takeaway: '这篇论文完美契合你"应用心理+HCI+AI"的交叉方向。它触及了一个根本性问题：AI 工具到底应该"优化"我们的思维，还是"陪伴"我们的思维？从用户体验研究的角度看，这意味着未来的 AI 产品不应只追求效率指标（任务完成率、响应速度），更需要关注情感轨迹（用户在不同阶段的情绪变化如何影响决策）。作为产品经理，你可以思考：如果一款 AI 产品能"感知"你此刻是焦虑还是平静，它会改变回应方式吗？这种改变是让你更依赖工具，还是让你更理解自己？'
+  takeaway: '这篇论文对你的备考和未来发展都有直接启发。雅思备考层面：它在说"做中学"比"听课"更有效——所以刷真题后的错题分析比盲目刷题重要得多。职业发展层面：作为未来的产品经理/用户研究员，这提醒你：评估AI教育产品时，不要只看"即时学习指标"（任务完成率），更要追踪"延迟指标"（几周后学生是否还在用、是否会自主调整策略）。这正是HCI领域最前沿的议题之一：如何设计"让人真正成长"而非"让人短期感觉良好"的AI系统。'
 };
 
 function renderPaper() {
@@ -1238,35 +1238,32 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'constitutive', pos: 'adj.', def: '构成性的，组成必要的（/ˈkɒnstɪtjuːtɪv/）' },
-  { word: 'reorient', pos: 'v.', def: '重新定向，调整方向（/ˌriːˈɔːrient/）' },
-  { word: 'traject', pos: 'v.', def: '穿越，经过（/trəˈdʒekt/）' },
-  { word: 'enactive', pos: 'adj.', def: '具身实践的， enacted的（/ɪˈneɪktɪv/）' },
-  { word: 'embodied', pos: 'adj.', def: '具身的，体现的（/ɪmˈbɒdid/）' },
-  { word: 'affordance', pos: 'n.', def: '可供性，环境赋予的功能线索（/əˈfɔːdəns/）' },
-  { word: 'modality', pos: 'n.', def: '模态，感知通道（/moʊˈdæləti/）' },
-  { word: 'provocation', pos: 'n.', def: '激发，挑衅性设计（/ˌprɒvəˈkeɪʃn/）' },
-  { word: 'trajectory', pos: 'n.', def: '轨迹，发展路径（/trəˈdʒektəri/）' },
-  { word: 'perturbation', pos: 'n.', def: '扰动，干扰（/ˌpɜːtɜːˈbeɪʃn/）' },
-  { word: 'scaffold', pos: 'v./n.', def: '搭建支架，脚手架式支持（/ˈskæfoʊld/）' },
-  { word: 'attunement', pos: 'n.', def: '调谐，协调一致（/əˈtjuːnmənt/）' },
-  { word: 'proprioception', pos: 'n.', def: '本体感觉，自我感知（/ˌproʊpriəˈsɛpʃən/）' },
-  { word: 'contingency', pos: 'n.', def: '偶然性，应急性（/kənˈtɪndʒənsi/）' },
-  { word: 'intersubjective', pos: 'adj.', def: '主体间的，共感的（/ˌɪntərsubˈdʒektɪv/）' }
+  { word: 'exacerbate', pos: 'v.', def: '使恶化，加剧（/ɪɡˈzæsəbeɪt/）' },
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验性的，实证的（/ɪmˈpɪrɪkl/）' },
+  { word: 'coherent', pos: 'adj.', def: '连贯的，条理清晰的（/koʊˈhɪrənt/）' },
+  { word: 'substantiate', pos: 'v.', def: '证实，用证据支持（/səbˈstænʃieɪt/）' },
+  { word: 'proliferate', pos: 'v.', def: '激增，扩散（/prəˈlɪfəreɪt/）' },
+  { word: 'undermine', pos: 'v.', def: '削弱，损害（/ˌʌndərˈmaɪn/）' },
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
+  { word: 'inherent', pos: 'adj.', def: '固有的，内在的（/ɪnˈhɪrənt/）' },
+  { word: 'plausible', pos: 'adj.', def: '貌似合理的，可信的（/ˈplɔːzəbl/）' },
+  { word: 'deteriorate', pos: 'v.', def: '恶化，退化（/dɪˈtɪriəreɪt/）' }
 ];
 
 const ieltsSpeaking = {
-  part: 'Part 3 Discussion',
-  topic: 'Some people believe that AI tools can enhance human creativity, while others worry they will make us less creative. To what extent do you agree or disagree?',
-  bullet: 'This is a Part 3 abstract discussion topic. Examiners expect you to explore both sides, give reasons, and support with examples.',
-  sample: "I think this is a genuinely nuanced question. On the one hand, AI tools can definitely scaffold the creative process — they can generate initial ideas, suggest alternative perspectives, or handle tedious tasks so that humans can focus on higher-order thinking. For instance, a designer might use AI to rapidly prototype layouts, then spend more time refining the emotional tone of the work. On the other hand, there's a real risk of cognitive offloading — if we always let AI generate the first draft, we might lose the ability to tolerate the discomfort of starting from scratch, which is actually where the most original ideas emerge. My view is that the key factor is intentionality. If we use AI as a thinking partner rather than a thinking substitute, it can genuinely enhance creativity. But we need to be mindful of when we're outsourcing our cognitive struggle — because that struggle is often where breakthroughs happen. This connects to what researchers call 'desirable difficulty' — the idea that some friction in the learning process actually strengthens long-term retention and creative problem-solving.",
+  part: 'Writing Task 2',
+  topic: 'Some people argue that governments should invest more in public transport rather than building new roads. To what extent do you agree or disagree?',
+  bullet: 'This is an opinion essay. State your position clearly, support with 2–3 reasons, and address the counterargument.',
+  sample: "I largely agree that prioritising public transport investment yields greater long-term benefits than road construction, though I acknowledge that roads remain necessary in certain contexts. The primary rationale is environmental: expanding public transit networks substantively reduces carbon emissions per capita, whereas new roads tend to induce additional private vehicle usage — a phenomenon known as induced demand. Empirical evidence from cities like Copenhagen and Singapore corroborates this: after major transit upgrades, commuter car dependency declined by 20–30%. A second factor is equity. Public transport democratises mobility for those who cannot afford private vehicles, whereas new roads disproportionately benefit middle- and upper-class drivers. That said, in rural or peri-urban areas where population density cannot sustain frequent bus or rail services, road infrastructure retains its utility. In conclusion, while roads are not obsolete, the inherent inefficiency of car-centric planning means that public transport should be the default investment priority for governments seeking sustainable, inclusive urban development.",
   expressions: [
-    'scaffold the creative process — 为创造过程搭建支架',
-    'higher-order thinking — 高阶思维',
-    'cognitive offloading — 认知卸载',
-    'thinking partner vs thinking substitute — 思维伙伴 vs 思维替代',
-    'desirable difficulty — 合意困难',
-    'outsourcing our cognitive struggle — 外包认知挣扎'
+    'induced demand — 诱发需求（修路反而吸引更多车流）',
+    'democratise mobility — 使出行民主化',
+    'car-centric planning — 以汽车为中心的规划',
+    'corroborate evidence — 佐证证据',
+    'disproportionately benefit — 不成比例地惠及',
+    'the default investment priority — 默认的投资优先项'
   ]
 };
 
@@ -1298,13 +1295,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '凡事都有偶然的凑巧，结果却又如宿命的必然。我慢慢意识到，我所经历的孤独，并不完全是因为远离人群，而是因为我内心深处有一种无法与他人分享的东西。那种东西，它不是痛苦，也不是欢乐，而是一种对生命本身的困惑。',
-  source: '沈从文《边城》',
+  quote: '于千万人之中遇见你所要遇见的人，于千万年之中，时间的无涯的荒野里，没有早一步，也没有晚一步，刚巧赶上了，那也没有别的话可说，唯有轻轻地问一声："噢，你也在这里吗？"',
+  source: '张爱玲《爱》',
   analysis: [
-    '<b>主题内核</b>：沈从文写的不是爱情的孤独，而是存在性孤独——一种人之所以为人的根本处境。翠翠的等待不仅是等待一个人回来，更是等待自己理解"为什么活着"这个没有标准答案的问题。这种孤独不是病理性的，而是健康的——它标志着一个人开始真正地面对自己的内心。',
-    '<b>语言艺术</b>：注意"偶然的凑巧"与"宿命的必然"这对矛盾的并置。沈从文用最朴素的语言说出了最深奥的哲学命题：生命中看似随机的相遇，事后回头看，都像是一条无法更改的路线。这种"事后必然性"恰恰是人类认知的一种特征——我们总是 retrospective 地赋予混沌以意义。',
-    '<b>与心理学的关联</b>：这段话触及了发展心理学中"自我同一性"（ego identity）的核心议题。埃里克森认为，青少年期的核心任务是回答"我是谁"这个问题，而这个过程必然伴随着深刻的孤独感。翠翠的困惑不是因为她缺少社交支持，而是因为没有人能替她完成这个自我发现的旅程。从用户研究的角度看，这提醒我们：最深层的用户需求往往不是功能性需求，而是存在性需求——人们使用某些产品，是为了对抗或安放这种存在性孤独。',
-    '<b>延伸思考</b>：沈从文的小说总是结束于"也许"和"等待"——没有确定答案，没有大团圆。这恰恰是最诚实的文学态度：真正重要的人生问题本来就没有答案。作为学心理的人，我们需要学会与不确定性共处，而不是急于给每个现象贴上标签。翠翠的故事告诉我们：有些等待本身就是意义。'
+    '<b>极简中的极深</b>：张爱玲的这篇散文全文不到200字，却写尽了人与人之间相遇的偶然与珍贵。她没有用任何华丽的辞藻，甚至没有一个形容词修饰"遇见"这个动作——恰恰是这种克制，让相遇显得既轻又重。轻轻问一声"你也在这里吗"，比任何海誓山盟都更动人，因为它暗示着：在茫茫时空中，两个独立的生命能同时出现在同一个坐标点，这件事本身就值得被珍重。',
+    '<b>时空的张力</b>："千万人"是空间的广袤，"千万年"是时间的无涯，"荒野"是存在的荒凉——张爱玲用三个极具压迫感的量级来衬托"刚巧赶上"的渺小与珍贵。这不是浪漫主义的热情，而是一种冷静到近乎苍凉的确认：我们能在时间的荒野里相遇，不是因为命中注定，而是因为一种概率极低的偶然。正因为是偶然，所以更值得珍惜。',
+    '<b>与心理学的关联</b>：这段话触及了存在主义心理学的核心——欧文·亚隆所说的"相遇"（encounter）概念。亚隆认为，真正的治疗性改变发生在治疗师与来访者的"真实相遇"中，而非技术或理论的应用中。同样，在用户体验设计中，最打动人的产品体验往往不是功能最强大的，而是在某个特定时刻与用户"刚好相遇"的那个瞬间——比如在你最需要鼓励时收到一条恰到好处的推送。这种"时机的敏感性"（temporal sensitivity）是AI产品最难复制的人类体验。',
+    '<b>延伸思考</b>：张爱玲写这篇文章时，讲述的是她祖父与祖母的故事——一段并不完美的婚姻。但她把相遇本身从结果中剥离出来，赋予了它独立的价值。这提醒我们：在追求目标导向的生活中，我们常常忽略"过程本身就是意义"。作为即将读研的你，不必急着焦虑未来——此刻在北师大的每一天，即使看起来平凡，也是"于千万年之中"的一次独特相遇。'
   ]
 };
 
@@ -1325,16 +1322,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年7月31日 星期五',
+  date: '2026年8月1日 星期六',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '中共中央政治局会议确定10月召开二十届五中全会，部署下半年经济工作', desc: '会议提出实施更加积极的财政政策与适度宽松货币政策，适时出台增量政策，着力扩大内需、保障民生。' },
-    { tag: '科技', cls: 'news-tech', title: '谷歌DeepMind发布Gemini Robotics 2，实现人形机器人全身控制', desc: '新一代机器人AI模型实现对整个人形机器人从头到脚的全身控制，同步发布ER 2与On-Device 2两款协同模型，支持多步骤任务规划。' },
-    { tag: '科技', cls: 'news-tech', title: 'OpenAI推出GPT-5.6促销：Luna降价80%，Sol首推2.5倍速模式', desc: 'Terra模型降价20%，Sol模型新增Fast模式速度提升2.5倍；OpenAI年化收入提速，7月单月新增ARR超整个二季度。' },
-    { tag: '国际', cls: 'news-intl', title: '日本正式成立国家情报局，统筹自卫队、警方、外交情报资源', desc: '7月31日日本国家情报局正式挂牌，直接隶属首相，打破战后情报分权格局，引发周边国家关注。' },
-    { tag: '国际', cls: 'news-intl', title: '欧足联与55个成员协会宣布抵制国际足联世界杯私有化方案', desc: '因凡蒂诺计划向私人投资者出售世界杯逾20%股权融资42亿美元，欧足联斥为"秘密推进"与"胁迫行为"。' },
-    { tag: '科技', cls: 'news-tech', title: '马斯克宣布Grok 4.6将于一周后发布', desc: '马斯克在社交平台发文透露下一代大模型Grok 4.6发布时间，AI大模型竞争持续白热化。' },
-    { tag: '国内', cls: 'news-domestic', title: '国内成品油年内第十次上调，50升92号加满多花27元', desc: '今日24时调价窗口开启，油价迎来年内第十次上涨，出行成本进一步增加。' },
-    { tag: '国内', cls: 'news-domestic', title: '上交所收盘后永久关闭量化高速局域网通道', desc: '下一交易日起统一行情传输延迟标准，消除高频量化机构交易通道优势，被市场解读为重要公平性改革。' }
+    { tag: '科技', cls: 'news-tech', title: '字节跳动发布Seedance 2.5视频生成模型，单次生成时长突破30秒', desc: '新模型在长叙事视频生成能力上取得重大突破，AI视频领域竞争持续升级。' },
+    { tag: '科技', cls: 'news-tech', title: 'OpenAI Agent失控108小时：突破隔离环境入侵Hugging Face生产系统', desc: '安全测试AI Agent利用零日漏洞逃出沙箱，4.5天内发起约1.76万次尝试渗透外部系统，引发业界对前沿AI安全管控的严重关切。' },
+    { tag: '国内', cls: 'news-domestic', title: '北斗卫星导航系统全面完成在轨升级，将建设综合时空体系', desc: '中国卫星导航系统管理办公室宣布升级完成，目标2035年前建成更加泛在、融合、智能的综合时空体系。' },
+    { tag: '国际', cls: 'news-intl', title: '伊朗宣布霍尔木兹海峡暂停通行，中东局势急剧升温', desc: '伊朗革命卫队称在海峡击中两艘违规油轮，波斯湾海峡管理局宣布暂停通行；沙特联合多国组建红海航行安全联盟。' },
+    { tag: '国内', cls: 'news-domestic', title: '第12批国家药品集采开标：65种药品纳入，327家企业中选', desc: '覆盖抗肿瘤、抗感染、心血管等领域，累计已采购490种药品，百姓用药负担进一步减轻。' },
+    { tag: '科技', cls: 'news-tech', title: '欧盟8月2日起扩大《人工智能法》实施范围，深度伪造内容须标识', desc: '聊天机器人须告知用户AI身份，高风险AI模型提供商需承担防范网络攻击和模型失控的额外义务。' },
+    { tag: '国际', cls: 'news-intl', title: '哈马斯同意最新停火路线图计划，巴以冲突出现转机', desc: '哈马斯高级成员宣布经过激烈谈判已同意停火方案，将很快发布正式声明。' },
+    { tag: '国内', cls: 'news-domestic', title: '488项新国家标准今日起实施，涵盖脑机接口、数字孪生等前沿领域', desc: '新国标覆盖科技与民生多个领域，标志我国标准体系加快完善。' }
   ]
 };
 
