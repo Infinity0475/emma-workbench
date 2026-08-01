@@ -499,6 +499,22 @@ img{max-width:100%;display:block}
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar{width:0;height:0}
+
+/* ===== HISTORY NAVIGATION ===== */
+.history-bar{display:flex;align-items:center;gap:8px;margin-bottom:14px;padding:4px 0}
+.history-label{font-size:12px;color:var(--text-sec);font-weight:600;white-space:nowrap}
+.history-nav{display:flex;gap:6px;overflow-x:auto;padding:4px 0;-webkit-overflow-scrolling:touch;flex:1;scrollbar-width:none}
+.history-nav::-webkit-scrollbar{display:none}
+.history-chip{display:flex;flex-direction:column;align-items:center;padding:5px 10px;border-radius:10px;
+  background:#fff;border:1.5px solid var(--border);font-size:11px;font-weight:600;color:var(--text-sec);
+  white-space:nowrap;flex-shrink:0;cursor:pointer;transition:all .2s;min-width:46px;gap:1px}
+.history-chip:active{transform:scale(.95)}
+.history-chip .chip-date{font-size:13px;font-weight:700;color:var(--text);line-height:1.2}
+.history-chip.active{background:var(--accent);border-color:var(--accent)}
+.history-chip.active .chip-date{color:#fff}
+.history-chip.active span:first-child{color:rgba(255,255,255,.8)}
+.history-chip.today{border-color:var(--accent);border-style:dashed}
+.history-empty{text-align:center;color:var(--text-sec);font-size:13px;padding:24px 16px;line-height:1.7}
 </style>
 </head>
 <body>
@@ -556,6 +572,7 @@ img{max-width:100%;display:block}
         <h1>论文精读 📚</h1>
         <p>每日一篇，深度学习</p>
       </div>
+      <div class="history-bar"><span class="history-label">📅 历史回顾</span><div class="history-nav" id="paperHistory"></div></div>
       <div id="paperContent"></div>
     </div>
 
@@ -566,7 +583,8 @@ img{max-width:100%;display:block}
         <h1>雅思备考 🎯</h1>
         <p>单词 + 口语，每天进步一点点</p>
       </div>
-      <h3 style="font-size:14px;color:var(--accent);margin-bottom:10px;">📝 今日单词（15词）</h3>
+      <div class="history-bar"><span class="history-label">📅 历史回顾</span><div class="history-nav" id="ieltsHistory"></div></div>
+      <h3 id="ieltsVocabTitle" style="font-size:14px;color:var(--accent);margin-bottom:10px;">📝 今日单词</h3>
       <div id="ieltsVocab"></div>
       <h3 style="font-size:14px;color:var(--accent-pink);margin:16px 0 10px;">🎤 口语练习</h3>
       <div id="ieltsSpeaking"></div>
@@ -579,6 +597,7 @@ img{max-width:100%;display:block}
         <h1>文学赏析 📖</h1>
         <p>在文字中寻找力量</p>
       </div>
+      <div class="history-bar"><span class="history-label">📅 历史回顾</span><div class="history-nav" id="litHistory"></div></div>
       <div id="litContent"></div>
     </div>
 
@@ -612,6 +631,7 @@ img{max-width:100%;display:block}
         <h1>热点日报 🌍</h1>
         <p>看看世界新鲜事</p>
       </div>
+      <div class="history-bar"><span class="history-label">📅 历史回顾</span><div class="history-nav" id="newsHistory"></div></div>
       <div class="news-date" id="newsDate"></div>
       <div id="newsContent"></div>
     </div>
@@ -1196,6 +1216,78 @@ function toggleSwitch(el) {
   if (key) DB.set('setting_'+key, el.classList.contains('on'));
 }
 
+
+// ===== CONTENT HISTORY =====
+let paperViewDate = null;
+let ieltsViewDate = null;
+let litViewDate = null;
+let newsViewDate = null;
+
+function getHistory() { return DB.get('contentHistory', {}); }
+
+function archiveCurrentContent() {
+  const today = todayStr();
+  const history = getHistory();
+  if (history[today]) return; // already archived today
+  history[today] = {
+    paper: { ...paperData },
+    ielts: { vocab: [...ieltsVocab], speaking: { ...ieltsSpeaking } },
+    lit: { ...litData },
+    news: { ...newsData, items: [...newsData.items] }
+  };
+  DB.set('contentHistory', history);
+}
+
+function renderHistoryNav(containerId, dates, viewDate, onSelect) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const today = todayStr();
+  const sortedDates = [...dates].sort((a, b) => b.localeCompare(a));
+  
+  if (sortedDates.length === 0) {
+    container.innerHTML = '<div class="history-empty" style="width:100%">暂无历史内容，明天再来回顾吧 ✨</div>';
+    return;
+  }
+  
+  container.innerHTML = sortedDates.map(date => {
+    const d = new Date(date + 'T00:00:00');
+    const weekdays = ['日','一','二','三','四','五','六'];
+    const wd = '周' + weekdays[d.getDay()];
+    const isActive = date === viewDate;
+    const isToday = date === today;
+    let cls = 'history-chip';
+    if (isActive) cls += ' active';
+    else if (isToday) cls += ' today';
+    return `<div class="${cls}" onclick="${onSelect}('${date}')">
+      <span>${wd}</span><span class="chip-date">${d.getDate()}</span>
+    </div>`;
+  }).join('');
+}
+
+function navigatePaperHistory(date) {
+  paperViewDate = date;
+  renderPaper();
+  renderHistoryNav('paperHistory', Object.keys(getHistory()).filter(d => getHistory()[d]?.paper), paperViewDate, 'navigatePaperHistory');
+}
+
+function navigateIeltsHistory(date) {
+  ieltsViewDate = date;
+  renderIelts();
+  renderHistoryNav('ieltsHistory', Object.keys(getHistory()).filter(d => getHistory()[d]?.ielts), ieltsViewDate, 'navigateIeltsHistory');
+}
+
+function navigateLitHistory(date) {
+  litViewDate = date;
+  renderLiterature();
+  renderHistoryNav('litHistory', Object.keys(getHistory()).filter(d => getHistory()[d]?.lit), litViewDate, 'navigateLitHistory');
+}
+
+function navigateNewsHistory(date) {
+  newsViewDate = date;
+  renderNews();
+  renderHistoryNav('newsHistory', Object.keys(getHistory()).filter(d => getHistory()[d]?.news), newsViewDate, 'navigateNewsHistory');
+}
+
 // ===== PAPER MODULE =====
 const paperData = {
   title: 'Experiential Versus Instructional Approaches for Eliciting Metacognitive Awareness in AI-Assisted Learning: A Short-Term Longitudinal Study',
@@ -1215,25 +1307,36 @@ const paperData = {
 
 function renderPaper() {
   const el = document.getElementById('paperContent');
+  let data = paperData;
+  let displayDate = paperData.date;
+  let isHistory = false;
+  if (paperViewDate && paperViewDate !== todayStr()) {
+    const h = getHistory();
+    if (h[paperViewDate]?.paper) { data = h[paperViewDate].paper; displayDate = paperViewDate; isHistory = true; }
+  }
   el.innerHTML = `
     <div class="content-card">
-      <span class="card-tag tag-paper">今日论文 · ${paperData.date}</span>
-      <h3>${paperData.title}</h3>
-      <p class="meta">${paperData.authors}<br>${paperData.venue}</p>
+      <span class="card-tag tag-paper">${isHistory ? '📅 回顾 · ' : ''}${displayDate}</span>
+      <h3>${data.title}</h3>
+      <p class="meta">${data.authors}<br>${data.venue}</p>
       <div class="body">
-        <p>${paperData.abstract}</p>
-        <a href="${paperData.link}" target="_blank" style="color:var(--accent);font-size:13px;">🔗 查看原文</a>
+        <p>${data.abstract}</p>
+        ${data.link ? `<a href="${data.link}" target="_blank" style="color:var(--accent);font-size:13px;">🔗 查看原文</a>` : ''}
       </div>
     </div>
     <div class="paper-section">
       <div class="paper-section-title">📌 核心要点</div>
-      ${paperData.keyPoints.map(p => `<div class="paper-highlight">${p}</div>`).join('')}
+      ${data.keyPoints.map(p => `<div class="paper-highlight">${p}</div>`).join('')}
     </div>
     <div class="paper-section">
       <div class="paper-section-title">💡 读后思考</div>
-      <div class="paper-takeaway">${paperData.takeaway}</div>
+      <div class="paper-takeaway">${data.takeaway}</div>
     </div>
   `;
+  // Render history nav
+  const historyDates = Object.keys(getHistory()).filter(d => getHistory()[d]?.paper);
+  if (!paperViewDate) paperViewDate = todayStr();
+  renderHistoryNav('paperHistory', historyDates, paperViewDate, 'navigatePaperHistory');
 }
 
 // ===== IELTS MODULE =====
@@ -1268,9 +1371,20 @@ const ieltsSpeaking = {
 };
 
 function renderIelts() {
+  let vocab = ieltsVocab;
+  let speaking = ieltsSpeaking;
+  let isHistory = false;
+  if (ieltsViewDate && ieltsViewDate !== todayStr()) {
+    const h = getHistory();
+    if (h[ieltsViewDate]?.ielts) { vocab = h[ieltsViewDate].ielts.vocab; speaking = h[ieltsViewDate].ielts.speaking; isHistory = true; }
+  }
+  // Update vocab title
+  const vocabTitle = document.getElementById('ieltsVocabTitle');
+  if (vocabTitle) vocabTitle.innerHTML = `📝 ${isHistory ? '回顾 · ' + ieltsViewDate + ' · ' : ''}单词（${vocab.length}词）`;
+
   const vocabEl = document.getElementById('ieltsVocab');
   vocabEl.innerHTML = `<div class="vocab-grid">${
-    ieltsVocab.map(v => `
+    vocab.map(v => `
       <div class="vocab-item">
         <div><span class="word">${v.word}</span><span class="pos">${v.pos}</span></div>
         <div class="def">${v.def}</div>
@@ -1281,16 +1395,20 @@ function renderIelts() {
   const speakEl = document.getElementById('ieltsSpeaking');
   speakEl.innerHTML = `
     <div class="speaking-card">
-      <div class="q-type">${ieltsSpeaking.part}</div>
-      <div class="question">${ieltsSpeaking.topic}</div>
-      <div style="font-size:13px;color:var(--text-sec);margin-bottom:10px;">${ieltsSpeaking.bullet}</div>
-      <div class="sample">${ieltsSpeaking.sample}</div>
+      <div class="q-type">${speaking.part}</div>
+      <div class="question">${speaking.topic}</div>
+      <div style="font-size:13px;color:var(--text-sec);margin-bottom:10px;">${speaking.bullet}</div>
+      <div class="sample">${speaking.sample}</div>
       <div class="expressions">
         <div style="font-size:13px;font-weight:600;margin-bottom:6px;">🌟 地道表达积累</div>
-        ${ieltsSpeaking.expressions.map(e => `<div class="expr-item">${e}</div>`).join('')}
+        ${speaking.expressions.map(e => `<div class="expr-item">${e}</div>`).join('')}
       </div>
     </div>
   `;
+  // Render history nav
+  const historyDates = Object.keys(getHistory()).filter(d => getHistory()[d]?.ielts);
+  if (!ieltsViewDate) ieltsViewDate = todayStr();
+  renderHistoryNav('ieltsHistory', historyDates, ieltsViewDate, 'navigateIeltsHistory');
 }
 
 // ===== LITERATURE MODULE =====
@@ -1307,17 +1425,28 @@ const litData = {
 
 function renderLiterature() {
   const el = document.getElementById('litContent');
+  let data = litData;
+  let isHistory = false;
+  if (litViewDate && litViewDate !== todayStr()) {
+    const h = getHistory();
+    if (h[litViewDate]?.lit) { data = h[litViewDate].lit; isHistory = true; }
+  }
   el.innerHTML = `
+    ${isHistory ? `<div style="font-size:12px;color:var(--accent);font-weight:600;margin-bottom:10px;">📅 回顾 · ${litViewDate}</div>` : ''}
     <div class="quote-block">
       <div class="quote-mark">"</div>
-      <div class="quote-text">${litData.quote}</div>
-      <div class="quote-source">—— ${litData.source}</div>
+      <div class="quote-text">${data.quote}</div>
+      <div class="quote-source">—— ${data.source}</div>
     </div>
     <div class="analysis-card">
       <h4>📝 赏析</h4>
-      ${litData.analysis.map(a => `<p>${a}</p>`).join('')}
+      ${data.analysis.map(a => `<p>${a}</p>`).join('')}
     </div>
   `;
+  // Render history nav
+  const historyDates = Object.keys(getHistory()).filter(d => getHistory()[d]?.lit);
+  if (!litViewDate) litViewDate = todayStr();
+  renderHistoryNav('litHistory', historyDates, litViewDate, 'navigateLitHistory');
 }
 
 // ===== NEWS MODULE =====
@@ -1336,18 +1465,30 @@ const newsData = {
 };
 
 function renderNews() {
-  document.getElementById('newsDate').textContent = newsData.date;
-  document.getElementById('newsContent').innerHTML = newsData.items.map(n => `
+  let data = newsData;
+  let isHistory = false;
+  if (newsViewDate && newsViewDate !== todayStr()) {
+    const h = getHistory();
+    if (h[newsViewDate]?.news) { data = h[newsViewDate].news; isHistory = true; }
+  }
+  const dateLabel = isHistory ? `📅 回顾 · ${newsViewDate}` : data.date;
+  document.getElementById('newsDate').textContent = dateLabel;
+  document.getElementById('newsContent').innerHTML = data.items.map(n => `
     <div class="news-item">
       <span class="news-tag ${n.cls}">${n.tag}</span>
       <span class="news-title">${n.title}</span>
       <div class="news-desc">${n.desc}</div>
     </div>
   `).join('');
+  // Render history nav
+  const historyDates = Object.keys(getHistory()).filter(d => getHistory()[d]?.news);
+  if (!newsViewDate) newsViewDate = todayStr();
+  renderHistoryNav('newsHistory', historyDates, newsViewDate, 'navigateNewsHistory');
 }
 
 // ===== INIT =====
 function init() {
+  archiveCurrentContent(); // auto-archive today's content on first visit
   renderSidebar();
   renderHome();
 }
