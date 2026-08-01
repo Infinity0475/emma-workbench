@@ -909,10 +909,10 @@ function navigate(page) {
   if (page === 'todo') renderTodoPage();
   if (page === 'mood') renderCalendar();
   if (page === 'home') renderHome();
-  if (page === 'paper') renderPaper();
-  if (page === 'ielts') renderIelts();
-  if (page === 'literature') renderLiterature();
-  if (page === 'news') renderNews();
+  if (page === 'paper') { paperViewDate = todayStr(); renderPaper(); }
+  if (page === 'ielts') { ieltsViewDate = todayStr(); renderIelts(); }
+  if (page === 'literature') { litViewDate = todayStr(); renderLiterature(); }
+  if (page === 'news') { newsViewDate = todayStr(); renderNews(); }
 }
 
 // ===== HOME PAGE =====
@@ -1488,12 +1488,4 @@ function renderNews() {
 
 // ===== INIT =====
 function init() {
-  archiveCurrentContent(); // auto-archive today's content on first visit
-  renderSidebar();
-  renderHome();
-}
-
-init();
-</script>
-</body>
-</html>
+  archiveCurrentConte
