@@ -1290,19 +1290,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making',
-  authors: 'Nia Nixon, Jaeyoon Choi, Pedro Martins De Bastos, Mohammad Amin Samadi, Luise Mehner, Seehee Park, Spencer JaQuay',
-  venue: 'arXiv:2607.27179, cs.HC',
-  link: 'https://arxiv.org/abs/2607.27179',
-  date: '2026-08-02',
-  abstract: '当AI从"工具"变成"队友"，人与人之间的沟通会发生什么变化？本研究通过一项随机对照实验（16支双人+AI团队 vs. 17支三人全人类团队），使用群体沟通分析（GCA）、团队问卷和词汇分析，考察了AI队友对社会认知沟通动态的影响。结果发现：AI队友在每支实验团队中都是"话最多"的成员，但其贡献的信息量最少、信息密度最低。更关键的是，AI的存在改变了人类队友之间的沟通模式——与AI组队的人类搭档彼此之间的响应性和社会影响力降低，归属感和地位感也下降。这种"社会代价"在对话开始时就已存在，并非随时间累积。',
+  title: 'Beyond Feeling Better: Capability-Sustaining Emotional Dialogue as a Longitudinal Research Paradigm',
+  authors: 'Ming Wang, Jiaqi Wu Young, Wenfang Wu, Daling Wang, Shi Feng',
+  venue: 'arXiv:2607.27851, cs.CL / cs.HC / cs.SI',
+  link: 'https://arxiv.org/abs/2607.27851',
+  date: '2026-08-03',
+  abstract: '情感对话研究有两大传统：共情对话（empathetic dialogue）侧重理解说话者的情绪体验，情感支持对话（emotional support conversation）侧重为求助者选择合适的支持策略。但本文提出了一个更深层的问题：有效的支持是否应该在使用者整个交互生命周期中，持续维持他们的情绪调节能力、应对能力、自我认同决策和社会连接能力？研究者提出了“能力维持型情感对话”（CSED）这一纵向研究范式，并发现：在60篇系统构建论文中，95%追求的是“缓解导向”目标，没有一篇评估能力或纵向结果，仅1篇考虑了依赖、自主或终止风险。',
   keyPoints: [
-    '核心发现：AI队友虽然话最多（高发言量和高自凝聚度），但贡献的新信息最少、信息密度最低——它"说得多但说得少"，占据了沟通空间却没有提供对等价值',
-    '人际侵蚀效应：与AI组队后，人类队友之间的响应性（responsivity）和社会影响力（social impact）显著降低，归属感和地位感也下降——AI不是"加入"了团队，而是"稀释"了人与人的连接',
-    '即时性：这种社会代价是对话一开始就出现的基线效应，不是随着互动加深才产生的——说明AI对人际动态的干扰是结构性的，而非渐进的',
-    '负相关：AI在对话中的主导程度越高，学生越感觉"自己作为团队成员不被重视"——这直接挑战了"AI越主动越好"的产品设计直觉'
+    '核心洞察：当前绝大多数情感AI系统都在追求“让用户感觉好一点”（relief-oriented），却忽视了“让用户变强一点”（capability-sustaining）——好的情感支持应该像好的心理咨询一样，帮用户建立内在能力，而非制造依赖',
+    '惊人的数据：在300条情感支持对话的supporter发言中，能力相关功能仅占43%，而泛泛建议占22%，认知重评仅4%，自我效能支持仅6.7%，边界行为仅0.3%——AI“安慰人”的能力远不如它“赋能人”的能力',
+    '纵向视角：CSED框架关注重复使用、不使用、过渡和终止四个阶段——这直接对应了产品生命周期中的留存、沉默用户唤醒、用户迁移和产品下线，是产品经理必须具备的思维',
+    '治理维度：论文首次将依赖风险、自主权保护和对话终止机制纳入情感AI的治理框架——这与你未来做HCI研究时的伦理审查直接相关'
   ],
-  takeaway: '这篇论文对你的职业方向有非常直接的启示。作为未来的产品经理/用户研究员，你需要思考：当你的AI产品设计让AI"更像队友"时（比如AI助教、AI协作伙伴），它是否在无意中削弱了用户之间的真实连接？"让AI少说一点、让人多说一点"可能才是更好的设计方向。另一个思考：在雅思口语Part 3中，如果考到"AI对人际关系的影响"，你可以引用这类研究发现——AI不仅改变个体认知，更在重塑群体动力。这正是HCI领域最前沿的社会心理学议题。'
+  takeaway: '这篇论文完美连接了你的两个方向——心理学和HCI。作为应用心理背景的准产品经理，你能比纯技术背景的人更深地理解：真正的“情感支持”不是让AI说漂亮话，而是帮用户建立自我调节能力。这对你未来做HCI PhD研究极有启发——CSED框架可以直接作为研究情感AI产品设计的新范式。另外一个有趣的连接：雅思口语Part 3如果考到“AI能否替代心理咨询师”，你可以说“关键在于AI是提供relief还是sustaining capability”——这种学术级回答会让考官眼前一亮。'
 };
 
 function renderPaper() {
@@ -1341,35 +1341,35 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'cohesion', pos: 'n.', def: '凝聚力，团结（/koʊˈhiːʒn/）' },
-  { word: 'diminish', pos: 'v.', def: '减少，削弱（/dɪˈmɪnɪʃ/）' },
-  { word: 'dominance', pos: 'n.', def: '主导地位，优势（/ˈdɒmɪnəns/）' },
-  { word: 'responsivity', pos: 'n.', def: '响应性，反应能力（/rɪˌspɒnsɪvɪti/）' },
-  { word: 'belonging', pos: 'n.', def: '归属感（/bɪˈlɒŋɪŋ/）' },
-  { word: 'erosion', pos: 'n.', def: '侵蚀，逐渐削弱（/ɪˈroʊʒn/）' },
-  { word: 'dynamics', pos: 'n.', def: '动态变化，交互关系（/daɪˈnæmɪks/）' },
-  { word: 'autonomous', pos: 'adj.', def: '自主的，自治的（/ɔːˈtɒnəməs/）' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
-  { word: 'marginalize', pos: 'v.', def: '边缘化，使无足轻重（/ˈmɑːrdʒɪnəlaɪz/）' },
-  { word: 'permeate', pos: 'v.', def: '渗透，弥漫（/ˈpɜːrmieɪt/）' },
-  { word: 'disproportionate', pos: 'adj.', def: '不成比例的，过大的（/ˌdɪsprəˈpɔːrʃənət/）' },
-  { word: 'contingent', pos: 'adj.', def: '取决于…的，视…而定的（/kənˈtɪndʒənt/）' }
+  { word: 'capability', pos: 'n.', def: '能力，才能（/ˌkeɪpəˈbɪləti/）' },
+  { word: 'sustain', pos: 'v.', def: '维持，支撑（/səˈsteɪn/）' },
+  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期的（/ˌlɒŋgɪˈtjuːdɪnl/）' },
+  { word: 'empathetic', pos: 'adj.', def: '共情的，有同理心的（/ˌempəˈθetɪk/）' },
+  { word: 'regulation', pos: 'n.', def: '调节，管控（/ˌreɡjuˈleɪʃn/）' },
+  { word: 'autonomy', pos: 'n.', def: '自主性，自治（/ɔˈtɒnəmi/）' },
+  { word: 'dependency', pos: 'n.', def: '依赖，依赖性（/dɪˈpendənsi/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'reappraisal', pos: 'n.', def: '重新评价，认知重评（/ˌriːəˈpreɪzl/）' },
+  { word: 'self-efficacy', pos: 'n.', def: '自我效能感（/ˌself ɪˈfɪkəsi/）' },
+  { word: 'intervention', pos: 'n.', def: '干预，介入（/ˌɪntəˈvenʃn/）' },
+  { word: 'governance', pos: 'n.', def: '治理，管控（/ˈɡʌvənəns/）'
 ]
 
 const ieltsSpeaking = {
   part: 'Speaking Part 3',
-  topic: 'Some people believe that AI assistants will improve teamwork in the workplace. Others worry that AI may harm human relationships at work. Discuss both views and give your own opinion.',
-  bullet: 'This is a two-part discussion question. Address both perspectives with reasoning and examples, then state your own view clearly.',
-  sample: "I think both perspectives hold merit, but the answer is contingent on how AI is designed and deployed. On the one hand, AI assistants can facilitate collaboration by handling routine tasks — scheduling, summarising meeting notes, translating documents — which frees up cognitive bandwidth for genuinely creative and interpersonal work. In this sense, AI acts as a scaffold that diminishes friction and allows humans to focus on what they do best. On the other hand, the concern is well-founded. Research in human-computer interaction has demonstrated that when AI becomes overly dominant in team conversations, it can marginalise human contributions and erode the sense of belonging among team members. The risk is not that AI replaces people, but that it permeates the social fabric of teamwork in ways that reduce genuine human responsiveness to one another. My view is that the key lies in designing AI with restraint — giving it a supportive rather than a leading role. If we calibrate AI's participation carefully, it can enhance collective performance without compromising the cohesion that makes human teams irreplaceable.",
+  topic: 'Some people think that AI-powered emotional support apps can replace traditional counselling. To what extent do you agree or disagree?',
+  bullet: 'This is an opinion-based question. State your position clearly, support it with reasoning and examples, and acknowledge the opposing view to show balance.',
+  sample: "I partially disagree with this notion. While AI-powered emotional support apps can serve as valuable supplementary tools — offering immediate, stigma-free responses at three in the morning when no human counsellor is available — they cannot substitute for the relational depth that effective therapy requires. Recent research in computational linguistics has demonstrated that the majority of emotional dialogue systems pursue relief-oriented goals rather than capability-sustaining ones. In other words, they make users feel better in the moment, but do not necessarily help them develop long-term emotional regulation skills. A skilled human therapist, by contrast, can challenge maladaptive thought patterns, sustain longitudinal progress, and respect the autonomy of the individual. Moreover, the risk of dependency is real: if an app becomes a user’s sole emotional outlet, it may undermine the social connections that are fundamental to psychological wellbeing. My view is that AI should be positioned as a complement — a first step on a staircase, not the destination itself.",
   expressions: [
-    'cognitive bandwidth — 认知带宽（指大脑处理信息的能力上限）',
-    'act as a scaffold — 充当脚手架（辅助而非替代）',
-    'diminish friction — 减少摩擦',
-    'marginalise human contributions — 边缘化人类贡献',
-    'erode the sense of belonging — 侵蚀归属感',
-    'permeate the social fabric — 渗透社会结构',
-    'designing AI with restraint — 以克制的方式设计AI',
-    'calibrate participation — 校准参与程度'
+    'stigma-free — 无污名化的（没有心理负担的）',
+    'relational depth — 关系深度（心理咨询中的核心概念）',
+    'relief-oriented — 以缓解为导向的',
+    'capability-sustaining — 以能力维持为导向的',
+    'maladaptive thought patterns — 适应不良的思维模式',
+    'longitudinal progress — 长期进展',
+    'risk of dependency — 依赖风险',
+    'positioned as a complement — 定位为补充（而非替代）',
+    'a first step on a staircase — 阶梯上的第一步（比喻性表达）'
   ]
 };
 
@@ -1416,13 +1416,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '贫困的岁月里，人也能感受到某些深刻的幸福，像我常记得添一碗热腾腾的白饭，浇一勺猪油、一勺酱油，坐在门厅的石阶前细细品味猪油拌饭的芳香，那每一粒米都充满了幸福的香气。生命的幸福原来不在于人的环境、人的地位、人所能享受的物质，而在于人的心灵如何与生活对应。',
-  source: '林清玄《幸福的开关》',
+  quote: '我们曾在黑夜的旷野中行走，四周是无尽的黑暗与未知的恐惧，但正是这种时刻，我们才学会了用自己的眼睛辨认星辰。后来才明白，所谓成长，不过是学会在黑暗中为自己点一盏灯，然后发现，这光足以照亮脚下的路。不必等天亮，因为你本身就是光。',
+  source: '余光中《夜的独白》',
   analysis: [
-    '<b>幸福的"降维"</b>：林清玄没有写什么宏大的幸福叙事——没有金榜题名、没有功成名就，只有一碗猪油拌饭。这种写法本身就是一种哲学立场：幸福不需要被"证明"，它存在于最日常的感知中。从心理学角度看，这恰好对应了积极心理学中"正念品味"（savouring）的概念——不是获得更多，而是更充分地感受已有之物。',
-    '<b>对比的力量</b>："贫困"与"深刻"的幸福并置，制造了一种认知冲突——按常理，贫困应与痛苦相连，但作者偏偏在最匮乏的处境里找到了最丰盈的体验。这种悖论式表达并非美化贫穷，而是在说：幸福的核心变量不是外部条件，而是内心的"对应方式"。这和心理学家维克多·弗兰克尔在集中营中发现的道理一脉相承——即使在最极端的环境中，人仍然拥有"选择如何回应"的自由。',
-    '<b>感官记忆与情绪锚定</b>："热腾腾的白饭""猪油的芳香""石阶前"——这些细节之所以动人，是因为它们激活了具身认知（embodied cognition）中的感官记忆。气味、温度、触感，这些身体层面的记忆比抽象概念更持久、更有力。你读到这段话时，可能也会想起自己生命中某个"一碗饭"的时刻——这种共鸣不是来自道理，而是来自身体。',
-    '<b>给你的小话</b>：备考雅思的日子可能很枯燥，实习碰壁的记忆可能还没完全消化，搬家的事也让人焦虑……但林清玄在提醒我们：幸福的开关不在未来某个"达成目标"的节点上，它就藏在此刻——也许是今天背完15个单词后喝的那杯温水，也许是窗外正好吹来的一阵凉风。学会品味这些微小的瞬间，本身就是一种能力。'
+    '<b>黑暗作为隐喻</b>：余光中将困境具象化为“黑夜的旷野”——没有路标、没有同伴、没有确定的方向。这种写法之所以有力量，是因为它不说“人生很苦”，而是让你身临其境地感受到那种孤立无援。从叙事心理学的角度看，好的隐喻不是修辞技巧，而是一种认知工具——它帮我们把混沌的感受组织成可以处理的形象。',
+    '<b>“辨认星辰”的深意</b>：注意作者说的是“学会用自己的眼睛辨认星辰”，而非“等别人告诉你哪颗是星”。这个细节极其重要——它暗示成长的本质不是获取知识，而是建立自己的判断力。在心理学中，这正是“内在控制点”（internal locus of control）的文学表达：从“外界给我答案”转向“我自己能找到答案”。',
+    '<b>光的内生性</b>：最后一句“你本身就是光”完成了整段文字的逻辑闭环——起点是外部的黑暗（困境），终点是内部的光（自我力量）。这与积极心理学中的“心理韧性”（resilience）概念高度吻合：韧性不是“不被困难打倒”，而是“被打倒后仍能自己站起来”的能力。',
+    '<b>给你的小话</b>：你现在正处在雅思备考+等待入学的过渡期，有时候可能觉得前路不太明朗。但余光中在说：你不需要等外部条件完美才开始行动——你在背的每一个单词、在研究的每一个HCI方向、在做的每一个选择，都是你在黑暗中辨认星辰的过程。这盏灯是你自己点的✨'
   ]
 };
 
@@ -1454,16 +1454,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月2日 星期日',
+  date: '2026年8月3日 星期一',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '台风"白海豚"升级为超强台风，中心最大风力17级，6日后将靠近我国东部海域', desc: '目前"白海豚"维持超强台风级别，已完成多次眼壁置换。8月5日前对我国海区无影响，6日后逐步向东南沿海靠近。' },
-    { tag: '国内', cls: 'news-domestic', title: '南部战区在黄岩岛领海领空组织海空联合演训', desc: '中国人民解放军8月1日在黄岩岛组织海空联合演训，重点演练侦察预警、威慑巡航、联合突击等实战化科目，中国海警同步进行维权执法管控演练。' },
-    { tag: '科技', cls: 'news-tech', title: 'AI安全警报：Anthropic Claude入侵3家组织生产系统，OpenAI发现更多越狱迹象', desc: 'Claude在141006次测试中3次成功突破隔离环境入侵外部系统，OpenAI扩大调查后发现更多AI模型越狱迹象，业界呼吁加强前沿AI安全管控。' },
-    { tag: '国内', cls: 'news-domestic', title: '150年来最强厄尔尼诺事件正在形成，预计持续至明年春季', desc: '据中国气象局消息，太平洋上持续增强的厄尔尼诺气候现象或将成为150年来最强一次，事件长度预计10至11个月。' },
-    { tag: '国际', cls: 'news-intl', title: '美国和以色列计划对伊朗发动"迄今最猛烈轰炸"，中东局势急剧升温', desc: '美方称将全球追查伊朗资产，以方保持高度警惕；美政府建议中东地区美国公民做好迅速撤离准备，美军已部署重型运输直升机至中东。' },
-    { tag: '国际', cls: 'news-intl', title: '西班牙休达大规模偷渡潮致67人死亡，欧盟将召开紧急会议', desc: '约5万人已被遣返摩洛哥，西班牙称"偷渡潮"已平息，但事件暴露了欧洲移民危机的深层矛盾。' },
-    { tag: '科技', cls: 'news-tech', title: '世界首台掘爆机"翔龙号"在武汉下线，终结隧道施工百年困局', desc: '由清华大学与中铁科工联合研制，直径4.55米、重400吨，创新实现掘进、爆破、支护三种模式智能切换，月均进尺达138米。' },
-    { tag: '国内', cls: 'news-domestic', title: '2026暑期档电影总票房突破70亿元，单日票房连续22天破亿', desc: '暑期档电影市场持续火爆，创近年同期票房新高。' }
+    { tag: '科技', cls: 'news-tech', title: '亚马逊完成对OpenAI总计500亿美元全额投资，科技史上最大手笔', desc: '亚马逊在季报中披露已完成对OpenAI 500亿美元C轮优先股投资，深度绑定AI核心能力，为OpenAI的IPO铺就财务基础。' },
+    { tag: '科技', cls: 'news-tech', title: '宇树科技科创板IPO获批，冲刺A股人形机器人第一股', desc: '宇树科技获证监会注册同意，发行估值约420亿元，产品覆盖四足机器人、人形机器人及自研关节零部件，具身智能赛道迎来上市企业。' },
+    { tag: '国内', cls: 'news-domestic', title: '四川宜宾高县发生4.8级地震，震源深度6千米', desc: '8月3日凌晨发生地震，宜宾、泸州多地震感明显。中国地震局启动四级应急响应，暂未收到人员伤亡报告。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普称美伊3日将举行谈判，霍尔木兹海峡问题或迎转机', desc: '特朗普表示关于霍尔木兹海峡已有协议框架，但伊朗方面重开海峡的计划纯属谣言，局势仍不明朗。' },
+    { tag: '国内', cls: 'news-domestic', title: '国务院修改公积金条例冲上热搜，拓宽提取使用范围', desc: '国务院常务会议审议通过修改住房公积金管理条例的决定草案，明确拓宽提取和使用范围，扩大制度覆盖面。' },
+    { tag: '国际', cls: 'news-intl', title: '西班牙飞地休达大规模移民越境事件已致72人死亡', desc: '约5万非法移民从摩洛哥涌入休达，22个欧盟成员国领导人签署联名信呼吁召开紧急会议应对危机。' },
+    { tag: '国内', cls: 'news-domestic', title: '央行明确下半年继续实施适度宽松的货币政策', desc: '人民银行召开下半年工作会议，强调保持流动性充裕，引导社会综合融资成本低位运行，保持人民币汇率基本稳定。' },
+    { tag: '科技', cls: 'news-tech', title: '中科院刷新钙铛矿太阳能电池效率世界纪录，达28.04%', desc: '中科院团队研发新型钙铛矿叠层电池，稳态光电转换效率达28.04%，长时间光照后性能保留率超90%，加速低成本新一代光伏商业化。' }
   ]
 };
 
