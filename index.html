@@ -1298,15 +1298,14 @@ function renderHistoryNav(containerId, dates, viewDate, onSelect) {
 
 function renderHomeHistory() {
   const history = getHistory();
-  const dates = Object.keys(history).filter(d => d !== todayStr()).sort((a,b) => b.localeCompare(a));
+  const allDates = Object.keys(history).sort((a,b) => b.localeCompare(a));
   const bar = document.getElementById('homeHistoryBar');
-  if (dates.length === 0) {
+  if (allDates.length === 0) {
     if (bar) bar.style.display = 'none';
     return;
   }
   if (bar) bar.style.display = 'flex';
-  const allDates = [todayStr(), ...dates];
-  if (!homeViewDate) homeViewDate = todayStr();
+  if (!homeViewDate || !allDates.includes(homeViewDate)) homeViewDate = todayStr();
   renderHistoryNav('homeHistory', allDates, homeViewDate, 'navigateHomeHistory');
 }
 
