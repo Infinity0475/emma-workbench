@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Beyond Feeling Better: Capability-Sustaining Emotional Dialogue as a Longitudinal Research Paradigm',
-  authors: 'Ming Wang, Jiaqi Wu Young, Wenfang Wu, Daling Wang, Shi Feng',
-  venue: 'arXiv:2607.27851, cs.CL / cs.HC / cs.SI',
-  link: 'https://arxiv.org/abs/2607.27851',
-  date: '2026-08-03',
-  abstract: '情感对话研究有两大传统：共情对话（empathetic dialogue）侧重理解说话者的情绪体验，情感支持对话（emotional support conversation）侧重为求助者选择合适的支持策略。但本文提出了一个更深层的问题：有效的支持是否应该在使用者整个交互生命周期中，持续维持他们的情绪调节能力、应对能力、自我认同决策和社会连接能力？研究者提出了“能力维持型情感对话”（CSED）这一纵向研究范式，并发现：在60篇系统构建论文中，95%追求的是“缓解导向”目标，没有一篇评估能力或纵向结果，仅1篇考虑了依赖、自主或终止风险。',
+  title: 'Opening Up to AI or Not: Compassion Mindsets Regulate the Intensity of Venting to AI Versus Human Friends',
+  authors: 'Jiajing Zhai, Jinguang Zhang',
+  venue: 'International Journal of Human-Computer Interaction, Published online 28 Jul 2026',
+  link: 'https://www.tandfonline.com/doi/full/10.1080/10447318.2026.2706896',
+  date: '2026-08-04',
+  abstract: '当你在深夜向ChatGPT倾吐心事时，是什么决定了你会说多少？本文研究了"慈悲心态"（compassion mindset）如何调节人们向AI vs. 真人朋友倾诉的强度。研究者发现，拥有"成长型慈悲心态"（认为共情能力可以通过练习提升）的人更倾向于向真人朋友倾诉，而非AI——因为他们相信面对面的情感交流虽然更难，但更有成长价值。而持有"固定型慈悲心态"（认为共情是天生的、有限的）的人则更容易大量向AI倾诉，因为AI"永远不会累、不会评判"。研究揭示了一个关键矛盾：AI看似零成本的情感出口，可能恰恰削弱了我们发展真实共情能力的动力。',
   keyPoints: [
-    '核心洞察：当前绝大多数情感AI系统都在追求“让用户感觉好一点”（relief-oriented），却忽视了“让用户变强一点”（capability-sustaining）——好的情感支持应该像好的心理咨询一样，帮用户建立内在能力，而非制造依赖',
-    '惊人的数据：在300条情感支持对话的supporter发言中，能力相关功能仅占43%，而泛泛建议占22%，认知重评仅4%，自我效能支持仅6.7%，边界行为仅0.3%——AI“安慰人”的能力远不如它“赋能人”的能力',
-    '纵向视角：CSED框架关注重复使用、不使用、过渡和终止四个阶段——这直接对应了产品生命周期中的留存、沉默用户唤醒、用户迁移和产品下线，是产品经理必须具备的思维',
-    '治理维度：论文首次将依赖风险、自主权保护和对话终止机制纳入情感AI的治理框架——这与你未来做HCI研究时的伦理审查直接相关'
+    '核心理论框架：研究借用了Carol Dweck的思维模式理论（mindset theory），将"慈悲心态"分为成长型（growth）和固定型（fixed）。这个框架被创造性地应用到情感倾诉场景——你相不相信"共情能力可以锻炼"，直接决定了你选择AI还是真人',
+    '关键发现：固定型慈悲心态 × AI可用性 = 高强度倾诉。也就是说，当你认为"人的耐心是有限的"且"AI不会累"时，你会把AI当作无限的情感垃圾桶。但问题是——这种便利可能是在"用进废退"你的真实社交肌肉',
+    '设计启示：论文暗示AI情感产品不应该追求"让用户说得越多越好"，而应该设计"情感出口梯度"——先用AI帮用户梳理情绪，再引导他们走向真人对话。这直接关联到你未来做HCI研究时的核心问题：好的产品设计是增强用户能力，而非替代用户能力',
+    '与昨日论文的完美呼应：昨天的CSED论文说情感AI应该"让用户变强"，今天的论文从实证角度证实——如果用户本身的慈悲心态是固定型的，他们会过度依赖AI而减少真人社交。两篇论文合在一起看，产品设计方向很清晰：AI应该做"情感跳板"而非"情感终点"'
   ],
-  takeaway: '这篇论文完美连接了你的两个方向——心理学和HCI。作为应用心理背景的准产品经理，你能比纯技术背景的人更深地理解：真正的“情感支持”不是让AI说漂亮话，而是帮用户建立自我调节能力。这对你未来做HCI PhD研究极有启发——CSED框架可以直接作为研究情感AI产品设计的新范式。另外一个有趣的连接：雅思口语Part 3如果考到“AI能否替代心理咨询师”，你可以说“关键在于AI是提供relief还是sustaining capability”——这种学术级回答会让考官眼前一亮。'
+  takeaway: '这篇论文和你的专业背景（应用心理学）+ 未来方向（HCI PhD）完美交叉。核心启示：作为未来的产品经理/研究者，你在设计AI情感产品时，必须考虑用户的心理模式——不是简单地让AI"更会安慰人"，而是帮用户建立"我可以和真人建立深层连接"的信心。一个具体的产品idea：在AI对话中设置"社交桥梁"机制——当用户倾诉完一个困扰后，AI不是给出终极答案，而是说"你提到的这个问题，我觉得你可以试试和XX聊聊，TA之前也经历过类似的"——把AI变成社交催化剂而非替代品。雅思口语如果考到"Should people share their problems with AI?"，你可以直接引用compassion mindset的概念来回答，非常加分！'
 };
 
 function renderPaper() {
@@ -1392,35 +1392,34 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'capability', pos: 'n.', def: '能力，才能（/ˌkeɪpəˈbɪləti/）' },
-  { word: 'sustain', pos: 'v.', def: '维持，支撑（/səˈsteɪn/）' },
-  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期的（/ˌlɒŋgɪˈtjuːdɪnl/）' },
-  { word: 'empathetic', pos: 'adj.', def: '共情的，有同理心的（/ˌempəˈθetɪk/）' },
-  { word: 'regulation', pos: 'n.', def: '调节，管控（/ˌreɡjuˈleɪʃn/）' },
-  { word: 'autonomy', pos: 'n.', def: '自主性，自治（/ɔˈtɒnəmi/）' },
-  { word: 'dependency', pos: 'n.', def: '依赖，依赖性（/dɪˈpendənsi/）' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
-  { word: 'reappraisal', pos: 'n.', def: '重新评价，认知重评（/ˌriːəˈpreɪzl/）' },
-  { word: 'self-efficacy', pos: 'n.', def: '自我效能感（/ˌself ɪˈfɪkəsi/）' },
-  { word: 'intervention', pos: 'n.', def: '干预，介入（/ˌɪntəˈvenʃn/）' },
-  { word: 'governance', pos: 'n.', def: '治理，管控（/ˈɡʌvənəns/）' }
+  { word: 'compassion', pos: 'n.', def: '慈悲，共情关怀（/kəmˈpæʃn/）' },
+  { word: 'vent', pos: 'v.', def: '倾诉，发泄（情绪）（/vent/）' },
+  { word: 'mindset', pos: 'n.', def: '思维模式，心态（/ˈmaɪndset/）' },
+  { word: 'regulate', pos: 'v.', def: '调节，管控（/ˈreɡjuleɪt/）' },
+  { word: 'confidant', pos: 'n.', def: '知心人，可倾诉对象（/ˈkɒnfɪdænt/）' },
+  { word: 'parasocial', pos: 'adj.', def: '准社交的（单向情感关系）（/ˌpærəˈsəʊʃl/）' },
+  { word: 'stigma', pos: 'n.', def: '污名，耻辱感（/ˈstɪɡmə/）' },
+  { word: 'supplement', pos: 'v./n.', def: '补充，增补（/ˈsʌplɪment/）' },
+  { word: 'reciprocity', pos: 'n.', def: '互惠，双向互动（/ˌresɪˈprɒsəti/）' },
+  { word: 'vulnerability', pos: 'n.', def: '脆弱性，易感性（/ˌvʌlnərəˈbɪləti/）' },
+  { word: 'autonomy', pos: 'n.', def: '自主性，独立（/ɔːˈtɒnəmi/）' },
+  { word: 'catalyst', pos: 'n.', def: '催化剂，促进因素（/ˈkætəlɪst/）' }
 ]
 
 const ieltsSpeaking = {
-  part: 'Speaking Part 3',
-  topic: 'Some people think that AI-powered emotional support apps can replace traditional counselling. To what extent do you agree or disagree?',
-  bullet: 'This is an opinion-based question. State your position clearly, support it with reasoning and examples, and acknowledge the opposing view to show balance.',
-  sample: "I partially disagree with this notion. While AI-powered emotional support apps can serve as valuable supplementary tools — offering immediate, stigma-free responses at three in the morning when no human counsellor is available — they cannot substitute for the relational depth that effective therapy requires. Recent research in computational linguistics has demonstrated that the majority of emotional dialogue systems pursue relief-oriented goals rather than capability-sustaining ones. In other words, they make users feel better in the moment, but do not necessarily help them develop long-term emotional regulation skills. A skilled human therapist, by contrast, can challenge maladaptive thought patterns, sustain longitudinal progress, and respect the autonomy of the individual. Moreover, the risk of dependency is real: if an app becomes a user’s sole emotional outlet, it may undermine the social connections that are fundamental to psychological wellbeing. My view is that AI should be positioned as a complement — a first step on a staircase, not the destination itself.",
+  part: 'Speaking Part 2 (Cue Card)',
+  topic: 'Describe a time when you used a piece of technology to help you solve a problem. You should say: what the problem was, what technology you used, how you used it, and explain how you felt about the experience.',
+  bullet: 'This is a narrative task. Use the PPF framework (Past-Present-Future): briefly describe the situation, focus on what happened, then reflect on what you learned.',
+  sample: "I'd like to talk about a time when I used an AI chatbot to help me prepare for a difficult conversation with a close friend. The problem was that I'd been feeling hurt by something she said, but I knew I tended to get emotional and say things I didn't mean. I was worried that if I confronted her directly, I'd either bottle everything up or explode. So I turned to an AI assistant — not to get advice on what to do, but to rehearse. I typed out everything I was feeling — the raw, unfiltered version — and then asked the AI to help me identify the core issue beneath all the emotion. It pointed out that my real concern wasn't what she said, but that I felt undervalued in the friendship. That was a lightbulb moment. I then asked it to help me rephrase my feelings in a way that was honest but not accusatory. When I finally talked to my friend, the conversation went remarkably well. We actually got closer. What struck me was that the technology didn't solve the problem for me — it helped me understand myself better, which then allowed me to communicate more effectively with another human being. That's the kind of role I think AI should play: a mirror, not a replacement.",
   expressions: [
-    'stigma-free — 无污名化的（没有心理负担的）',
-    'relational depth — 关系深度（心理咨询中的核心概念）',
-    'relief-oriented — 以缓解为导向的',
-    'capability-sustaining — 以能力维持为导向的',
-    'maladaptive thought patterns — 适应不良的思维模式',
-    'longitudinal progress — 长期进展',
-    'risk of dependency — 依赖风险',
-    'positioned as a complement — 定位为补充（而非替代）',
-    'a first step on a staircase — 阶梯上的第一步（比喻性表达）'
+    'bottle everything up — 把情绪憋在心里',
+    'a lightbulb moment — 恍然大悟的时刻',
+    'rephrase — 换一种方式表达',
+    'honest but not accusatory — 坦诚但不指责',
+    'the conversation went remarkably well — 对话出奇地顺利',
+    'a mirror, not a replacement — 一面镜子，而非替代品',
+    'unfiltered version — 未经过滤的版本（真实想法）',
+    'the core issue beneath the emotion — 情绪背后的核心问题'
   ]
 };
 
@@ -1467,13 +1466,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '我们曾在黑夜的旷野中行走，四周是无尽的黑暗与未知的恐惧，但正是这种时刻，我们才学会了用自己的眼睛辨认星辰。后来才明白，所谓成长，不过是学会在黑暗中为自己点一盏灯，然后发现，这光足以照亮脚下的路。不必等天亮，因为你本身就是光。',
-  source: '余光中《夜的独白》',
+  quote: '一九九七年早春，阿瑗去世。一九九八年岁末，钟书去世。我们三人就此失散了。就这么轻易地失散了。"现在只剩下了我一人。"我清醒地看到以前当作"我们家"的寓所，只是旅途上的客栈而已。家在哪里，我不知道。在途上，我无从近前问路，也无从寻觅。但是我既然踏上这条漫长的驿道，我就得一步步走下去，直到我们三人重聚的那天。',
+  source: '杨绛《我们仨》',
   analysis: [
-    '<b>黑暗作为隐喻</b>：余光中将困境具象化为“黑夜的旷野”——没有路标、没有同伴、没有确定的方向。这种写法之所以有力量，是因为它不说“人生很苦”，而是让你身临其境地感受到那种孤立无援。从叙事心理学的角度看，好的隐喻不是修辞技巧，而是一种认知工具——它帮我们把混沌的感受组织成可以处理的形象。',
-    '<b>“辨认星辰”的深意</b>：注意作者说的是“学会用自己的眼睛辨认星辰”，而非“等别人告诉你哪颗是星”。这个细节极其重要——它暗示成长的本质不是获取知识，而是建立自己的判断力。在心理学中，这正是“内在控制点”（internal locus of control）的文学表达：从“外界给我答案”转向“我自己能找到答案”。',
-    '<b>光的内生性</b>：最后一句“你本身就是光”完成了整段文字的逻辑闭环——起点是外部的黑暗（困境），终点是内部的光（自我力量）。这与积极心理学中的“心理韧性”（resilience）概念高度吻合：韧性不是“不被困难打倒”，而是“被打倒后仍能自己站起来”的能力。',
-    '<b>给你的小话</b>：你现在正处在雅思备考+等待入学的过渡期，有时候可能觉得前路不太明朗。但余光中在说：你不需要等外部条件完美才开始行动——你在背的每一个单词、在研究的每一个HCI方向、在做的每一个选择，都是你在黑暗中辨认星辰的过程。这盏灯是你自己点的✨'
+    '<b>"轻易"二字的千钧之力</b>：杨绛写一家三口"就这么轻易地失散了"——这个"轻易"读来让人心碎。一生相伴的亲人，在死亡面前竟如此脆弱。但杨绛没有嚎啕、没有控诉，她只用了一个"轻易"就把生死离别的全部无奈浓缩在两个字里。这种极度克制的笔法，恰恰是最高级的情感表达——她越平静，读者越心痛。从叙事心理学角度看，这是一种"低唤醒高意义"的叙述策略：不煽情，但让意义自己浮现。',
+    '<b>"客栈"与"驿道"的隐喻系统</b>：杨绛把家比作"客栈"，把人生比作"驿道"——这是中国古典文学中"逆旅"意象的现代回响（李白"夫天地者万物之逆旅"），但她赋予了全新的心理学内涵。"客栈"意味着我们拥有的的一切都是暂时的，包括亲人、健康、甚至自我——这不是消极，而是一种深刻的"接纳"（acceptance），正是正念心理治疗和存在主义心理学的核心。承认无常，反而获得了面对无常的勇气。',
+    '<b>"无从问路"的存在性孤独</b>：失去至亲后，杨绛说"我无从近前问路，也无从寻觅"。这不是迷路，而是一种更深层的存在性孤独——当生命中最重要的人不在了，你失去的不仅是陪伴，还有那个"和你共享意义世界的人"。在依恋理论（attachment theory）中，这叫做"依恋对象丧失后的内在工作模型崩塌"——你的世界观、方向感、安全感都建立在和那个人的关系上，关系消失了，整个坐标系都动摇了。',
+    '<b>给Emma的小话</b>：你即将去北京读研，离开家人和朋友，开始一段新旅程。有时候可能觉得孤独或不确定。但杨绛先生用92年的人生经验告诉你：即使前路茫茫，即使"无从问路"，只要你继续一步一步走下去，就是在靠近你想去的地方。你的家人、你爱的人，他们给了你的那些温暖和力量，不会因为距离而消失——它们已经长在你心里了✨'
   ]
 };
 
@@ -1505,16 +1504,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月3日 星期一',
+  date: '2026年8月4日 星期二',
   items: [
-    { tag: '科技', cls: 'news-tech', title: '亚马逊完成对OpenAI总计500亿美元全额投资，科技史上最大手笔', desc: '亚马逊在季报中披露已完成对OpenAI 500亿美元C轮优先股投资，深度绑定AI核心能力，为OpenAI的IPO铺就财务基础。' },
-    { tag: '科技', cls: 'news-tech', title: '宇树科技科创板IPO获批，冲刺A股人形机器人第一股', desc: '宇树科技获证监会注册同意，发行估值约420亿元，产品覆盖四足机器人、人形机器人及自研关节零部件，具身智能赛道迎来上市企业。' },
-    { tag: '国内', cls: 'news-domestic', title: '四川宜宾高县发生4.8级地震，震源深度6千米', desc: '8月3日凌晨发生地震，宜宾、泸州多地震感明显。中国地震局启动四级应急响应，暂未收到人员伤亡报告。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普称美伊3日将举行谈判，霍尔木兹海峡问题或迎转机', desc: '特朗普表示关于霍尔木兹海峡已有协议框架，但伊朗方面重开海峡的计划纯属谣言，局势仍不明朗。' },
-    { tag: '国内', cls: 'news-domestic', title: '国务院修改公积金条例冲上热搜，拓宽提取使用范围', desc: '国务院常务会议审议通过修改住房公积金管理条例的决定草案，明确拓宽提取和使用范围，扩大制度覆盖面。' },
-    { tag: '国际', cls: 'news-intl', title: '西班牙飞地休达大规模移民越境事件已致72人死亡', desc: '约5万非法移民从摩洛哥涌入休达，22个欧盟成员国领导人签署联名信呼吁召开紧急会议应对危机。' },
-    { tag: '国内', cls: 'news-domestic', title: '央行明确下半年继续实施适度宽松的货币政策', desc: '人民银行召开下半年工作会议，强调保持流动性充裕，引导社会综合融资成本低位运行，保持人民币汇率基本稳定。' },
-    { tag: '科技', cls: 'news-tech', title: '中科院刷新钙铛矿太阳能电池效率世界纪录，达28.04%', desc: '中科院团队研发新型钙铛矿叠层电池，稳态光电转换效率达28.04%，长时间光照后性能保留率超90%，加速低成本新一代光伏商业化。' }
+    { tag: '科技', cls: 'news-tech', title: 'IBM三项独立实验实现"量子优势"，证明量子计算可在部分任务超越经典计算', desc: 'IBM联合多家机构在三实验中验证量子优势，证明量子系统能提供比经典计算更高效、更低成本或更准确的结果，标志量子计算进入实用验证新阶段。' },
+    { tag: '国内', cls: 'news-domestic', title: '《新型电力系统建设"十五五"规划》发布，未来五年电网总投资约5万亿', desc: '国家发改委、国家能源局印发规划，明确到2030年初步建成新型电力系统，重点利好特高压、配网智能化、储能调节和虚拟电厂。' },
+    { tag: '国际', cls: 'news-intl', title: '美伊谈判上演"罗生门"：特朗普称正在对话，伊朗否认有任何谈判计划', desc: '特朗普宣布美伊将分两阶段谈判，受此影响油价暴跌超7%；但伊朗外交部回应称近日无接待或派遣代表团的计划，局势仍高度不确定。' },
+    { tag: '科技', cls: 'news-tech', title: 'SpaceX星链V3首批20颗卫星完成测试，下一代星座进入部署准备阶段', desc: 'V3卫星完成太阳翼展开、霍尔推进器点火、激光星间链路等测试，单星通信能力显著提升，计划以单次60颗规模加快部署。' },
+    { tag: '国内', cls: 'news-domestic', title: '台风"白海豚"继续西移，7日后将趋向华东沿海', desc: '中央气象台发布预警，台风"白海豚"强度维持，同时高温橙色预警已连续第6天，台风或将缓解南方高温。' },
+    { tag: '国际', cls: 'news-intl', title: '美国华盛顿州爆发严重山火，6万人撤离、600栋建筑被毁', desc: '山火过火面积超1000平方公里，斯波坎县至少600栋建筑被烧毁，全州进入紧急状态。' },
+    { tag: '国内', cls: 'news-domestic', title: '教育部：教育学、心理学新增8本原创性教材出版发行', desc: '教育部组织5所高校编写的8本原创教材出版，作为"新时代系列"重点教材工程成果，覆盖教育学、心理学学科。' },
+    { tag: '科技', cls: 'news-tech', title: '沙特PIF 550亿美元收购EA获欧盟批准，交易今日完成', desc: '沙特主权基金收购全球游戏巨头艺电获所有监管批准，为游戏史上最大收购案之一，预计8月4日正式交割。' }
   ]
 };
 
