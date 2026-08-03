@@ -550,6 +550,11 @@ img{max-width:100%;display:block}
 
       <div class="overview-grid" id="overviewGrid"></div>
 
+      <div class="history-bar" id="homeHistoryBar" style="display:none">
+        <span class="history-label">📅 历史回顾</span>
+        <div class="history-nav" id="homeHistory"></div>
+      </div>
+
       <div class="stats-row" id="statsRow"></div>
     </div>
 
@@ -908,7 +913,7 @@ function navigate(page) {
   // page-specific renders
   if (page === 'todo') renderTodoPage();
   if (page === 'mood') renderCalendar();
-  if (page === 'home') renderHome();
+  if (page === 'home') { homeViewDate = null; renderHome(); }
   if (page === 'paper') { paperViewDate = todayStr(); renderPaper(); }
   if (page === 'ielts') { ieltsViewDate = todayStr(); renderIelts(); }
   if (page === 'literature') { litViewDate = todayStr(); renderLiterature(); }
@@ -920,6 +925,7 @@ function renderHome() {
   renderGreeting();
   renderHomeReminders();
   renderOverviewGrid();
+  renderHomeHistory();
   renderStatsRow();
 }
 
@@ -953,16 +959,41 @@ function renderOverviewGrid() {
   const moods = getMoods();
   const todayMood = moods[today];
 
+  const vd = homeViewDate || today;
+  const isHistory = vd !== today;
+  const h = getHistory();
+  const hd = h[vd];
+
+  // Paper card
+  const paperVal = (hd && hd.paper) ? '已存档' : (vd === today ? '待更新' : '无记录');
+  const paperSub = (hd && hd.paper) ? (hd.paper.title.length > 15 ? hd.paper.title.substring(0,15)+'…' : hd.paper.title) : (vd === today ? '明早8:00推送' : '');
+
+  // IELTS card
+  const vocabVal = (hd && hd.ielts && hd.ielts.vocab) ? hd.ielts.vocab.length + '词' : (vd === today ? '0/15' : '无记录');
+  const vocabSub = (hd && hd.ielts && hd.ielts.vocab) ? (hd.ielts.vocab[0]?.word || '') : (vd === today ? '今日单词' : '');
+
+  // Literature card
+  const litVal = (hd && hd.lit) ? '已存档' : (vd === today ? '待更新' : '无记录');
+  const litSub = (hd && hd.lit) ? (hd.lit.source.length > 12 ? hd.lit.source.substring(0,12)+'…' : hd.lit.source) : (vd === today ? '明早8:00推送' : '');
+
+  // News card
+  const newsVal = (hd && hd.news && hd.news.items) ? hd.news.items.length + '条' : (vd === today ? '待更新' : '无记录');
+  const newsSub = (hd && hd.news) ? '热点' : (vd === today ? '明早8:00推送' : '');
+
+  const dateLabel = isHistory ? `📅 ${vd}` : '';
+
   const cards = [
-    { icon:'📚', title:'论文精读', value:'待更新', sub:'明早8:00推送', bg:'var(--bg-card)', page:'paper' },
-    { icon:'🎯', title:'雅思备考', value:'0/15', sub:'今日单词', bg:'var(--bg-card-warm)', page:'ielts' },
-    { icon:'📖', title:'文学赏析', value:'待更新', sub:'明早8:00推送', bg:'var(--bg-card-alt)', page:'literature' },
-    { icon:'🌍', title:'热点日报', value:'待更新', sub:'明早8:00推送', bg:'var(--bg-card-green)', page:'news' },
+    { icon:'📚', title:'论文精读', value:paperVal, sub:paperSub, bg:'var(--bg-card)', page:'paper' },
+    { icon:'🎯', title:'雅思备考', value:vocabVal, sub:vocabSub, bg:'var(--bg-card-warm)', page:'ielts' },
+    { icon:'📖', title:'文学赏析', value:litVal, sub:litSub, bg:'var(--bg-card-alt)', page:'literature' },
+    { icon:'🌍', title:'热点日报', value:newsVal, sub:newsSub, bg:'var(--bg-card-green)', page:'news' },
     { icon:'🌤️', title:'今日心情', value:todayMood ? todayMood.emoji : '去记录', sub:todayMood ? todayMood.label : '点击记录今天的心情', bg:'var(--bg-card-yellow)', page:'mood' },
     { icon:'✅', title:'今日待办', value:`${doneTodos.length}/${todayTodos.length}`, sub:todayTodos.length ? '项已完成' : '暂无待办', bg:'var(--bg-card)', page:'todo' }
   ];
 
-  document.getElementById('overviewGrid').innerHTML = cards.map(c => `
+  document.getElementById('overviewGrid').innerHTML =
+    (isHistory ? `<div style="grid-column:1/-1;font-size:13px;color:var(--accent);font-weight:600;margin-bottom:4px;">📅 回顾 · ${vd}</div>` : '') +
+    cards.map(c => `
     <div class="overview-card" style="background:${c.bg}" onclick="navigate('${c.page}')">
       <div class="ov-icon">${c.icon}</div>
       <div class="ov-title">${c.title}</div>
@@ -1218,6 +1249,7 @@ function toggleSwitch(el) {
 
 
 // ===== CONTENT HISTORY =====
+let homeViewDate = null;
 let paperViewDate = null;
 let ieltsViewDate = null;
 let litViewDate = null;
@@ -1262,6 +1294,26 @@ function renderHistoryNav(containerId, dates, viewDate, onSelect) {
       <span>${wd}</span><span class="chip-date">${d.getDate()}</span>
     </div>`;
   }).join('');
+}
+
+function renderHomeHistory() {
+  const history = getHistory();
+  const dates = Object.keys(history).filter(d => d !== todayStr()).sort((a,b) => b.localeCompare(a));
+  const bar = document.getElementById('homeHistoryBar');
+  if (dates.length === 0) {
+    if (bar) bar.style.display = 'none';
+    return;
+  }
+  if (bar) bar.style.display = 'flex';
+  const allDates = [todayStr(), ...dates];
+  if (!homeViewDate) homeViewDate = todayStr();
+  renderHistoryNav('homeHistory', allDates, homeViewDate, 'navigateHomeHistory');
+}
+
+function navigateHomeHistory(date) {
+  homeViewDate = date;
+  renderOverviewGrid();
+  renderHomeHistory();
 }
 
 function navigatePaperHistory(date) {
