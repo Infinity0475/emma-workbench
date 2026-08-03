@@ -126,6 +126,7 @@ img{max-width:100%;display:block}
   min-height:100vh;min-height:100dvh;
   max-width:100%;
 }
+.sidebar.open ~ .main{margin-left:var(--sidebar-w-open)}
 
 /* ===== PAGE TRANSITIONS ===== */
 .page{display:none;animation:fadeSlideIn .35s ease}
@@ -1491,6 +1492,7 @@ function renderNews() {
 
 // ===== INIT =====
 function init() {
+  closeSidebar(); // ensure sidebar starts closed
   archiveCurrentContent(); // auto-archive today's content on first visit
   renderSidebar();
   renderHome();
