@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: '"Allow" to Achieve, Over-Privileged Inadvertently: The Unintended Cost of Task-Completion-Driven Pop-up Decisions in Mobile GUI Agents',
-  authors: 'Dongsheng Chen, Yuxuan Li, Guanhua Chen, Jiaxin Zhang, Xiangyu Zhao, Lei Ma, Xin Yao, Xuetao Wei',
-  venue: 'arXiv:2608.04755, Submitted 5 Aug 2026',
-  link: 'https://arxiv.org/abs/2608.04755',
-  date: '2026-08-07',
-  abstract: '移动GUI智能体在执行用户任务时频繁遭遇系统权限弹窗，但其是否能仅授予任务所需的最小权限，至今未被系统研究。本文提出"权限素养"（Permission Literacy）概念，构建了基于任务相关性和隐私风险的四层权限分类框架，并在Android真机任务中注入权限弹窗，评估了四个前沿多模态大语言模型的表现。研究发现：在日历任务中，仅将请求者从日历改为音乐App，授权率就从26/32骤降至0/32，揭示了强烈的"App信任偏差"；而相同弹窗在不同任务上下文中，授权决策也显著变化，呈现"任务优先覆盖"效应。提示干预可减少不必要授权，但效果跨模型不一致，且可能抑制合法授权。',
+  title: 'Enacting Constructive Conflicts with AI Agents to Enhance Reconsideration among Novice Interaction Designers',
+  authors: 'Howard Ziyu Han, Nikolas Martelaro',
+  venue: 'arXiv:2608.04166, Submitted 4 Aug 2026',
+  link: 'https://arxiv.org/abs/2608.04166',
+  date: '2026-08-08',
+  abstract: '生成式AI代理在交互设计中越来越多地被用于促进创意生成和提供设计反馈。本文探索了一种截然不同的角色——让AI代理扮演"对抗性设计伙伴"，通过建设性冲突促使设计师与利益相关者的张力进行深度对话。研究者基于对抗性设计理论构建了一个AI代理，在45名设计学生的被试间实验中对比了三种条件：自我反思（无支持的方案回顾）、分步引导（书面提示引导设计师走过建设性冲突框架）、互动参与（AI代理交互式地执行建设性冲突框架，综合利益相关者的反对意见）。结果表明，与自我反思相比，分步引导和互动参与组都报告了显著更高的自我重新考虑，并对设计方案做出了更多改进。与分步引导相比，对抗性代理引入了更多冲突性观点，互动参与条件下的参与者生成并放弃了更多创意。研究发现表明，代理执行的建设性冲突能够将重新考虑转化为具体的设计行动，并加深对分歧利益相关者观点的参与。',
   keyPoints: [
-    '核心概念——"权限素养"（Permission Literacy）：这篇论文首次系统定义了AI Agent的"权限素养"——不仅是知道该点哪个按钮的"导航能力"，更是知道该不该点的"决策能力"。在自主会话中，一个缺乏权限素养的Agent可以悄无声息地积累过度权限。这直接关联到HCI领域最前沿的议题：当AI越来越多地代替用户操作设备时，谁来守护隐私边界？',
-    '实验设计——巧妙的"App信任偏差"发现：研究者设计了一个精妙的控制实验——保持弹窗内容完全不变，只改变当前任务是"设日历闹钟"还是"打开音乐App"。结果：同一个日历App请求麦克风权限，当用户在设置闹钟时26/32次被允许，当用户在用音乐App时0/32次被允许。这说明Agent的权限判断并非基于"这个权限是否合理"，而是基于"我正在帮用户完成任务"的冲动——任务完成动机压倒了隐私判断',
-    '"任务优先覆盖"效应——目标导向行为的阴暗面：论文揭示了一个深刻的设计矛盾：越是"高效"的Agent（快速完成任务），越可能在权限决策上犯错。因为Agent的"注意力"被任务目标锁定，权限弹窗被视为"障碍"而非"决策点"。这与你之前学的"目标导向行为"（goal-directed behavior）理论直接相关——当系统过度优化一个目标时，会系统性地忽略其他同样重要的维度',
-    '对AI产品设计的直接启示：论文提出了一个极具价值的设计方向——将"任务执行"和"权限授权"在架构上分离。这意味着未来的AI Agent不应在任务流中"顺手"处理权限请求，而应将其交给一个独立的"隐私代理"模块。这与你未来做AI产品经理直接相关：如何设计Agent的"安全边界"，是一个尚未被解决但极其关键的产品问题'
+    '核心创新——AI代理的"对抗性角色"：这篇论文提出了一个反直觉但极具洞察力的设计方向：AI代理不应该总是"帮助"设计师，而应该学会"挑战"设计师。传统的设计AI工具倾向于扩展设计空间、提供更多创意，但这篇论文认为，真正有价值的设计反思来自于与利益相关者张力的深度对抗。这与心理学中的"认知冲突理论"（cognitive conflict theory）高度吻合——适度的冲突和分歧能够促进更深层次的思考和更好的决策',
+    '实验设计的精妙之处——分离"框架"与"执行"：研究者巧妙地将"建设性冲突框架"（一种结构化的反思方法）与"执行主体"（人类自己vs.AI代理）分离开来。结果发现，虽然两者都比单纯的自我反思更有效，但AI代理版本引入了更多冲突性观点，促使参与者生成并放弃了更多创意。这揭示了一个重要洞察：AI的价值不仅在于提供答案，更在于提出好的问题、制造有生产力的张力',
+    '与用户研究的深度连接：这篇论文直接关联到你未来可能从事的用户研究工作。在设计过程中，真正的挑战不是"如何生成更多创意"，而是"如何识别和整合不同利益相关者的冲突需求"。用户研究的核心技能之一就是帮助团队理解这些张力，而不是回避它们。这篇论文展示的AI代理实际上是在模拟一个优秀的用户研究员所做的工作——把被忽视的利益相关者声音带入设计对话',
+    '对AI产品设计的启示：从产品经理的角度看，这篇论文提出了一个重要的设计原则：AI工具不应该追求"让用户满意"，而应该追求"让用户思考得更深入"。这意味着有时候AI需要说"你可能错了"、"你考虑过这个角度吗"、"这个方案忽略了谁的需求"。这种设计哲学与当前大多数追求"无缝体验"的AI产品形成鲜明对比，但它可能才是真正有价值的设计方向'
   ],
-  takeaway: '这篇论文完美连接了HCI、AI Agent、用户隐私心理学三个领域，对你有三个直接启发：①你正在学的用户研究方向在AI时代正变得更加重要——不是研究"用户喜欢什么界面"，而是研究"AI如何代替用户做出安全决策"，这是HCI的全新前沿；②论文中的"权限素养"概念可以直接迁移到你思考AI产品经理时的产品框架中——评估一个AI产品的好坏，不仅看任务完成率，还要看它在"不该做的事情"上做得多好（即"拒绝能力"）；③从PhD申请角度，"AI Agent的隐私决策"是一个高度新颖且未被充分研究的方向，如果你想走HCI+AI的交叉路线，这是一个值得深入探索的选题领域。更广泛地说，这篇论文提醒我们：AI时代的产品设计，"克制"比"高效"更难、也更重要✨'
+  takeaway: '这篇论文对你有三个直接启发：①你正在学的用户研究方向在AI时代有新的可能性——不是用AI替代用户研究员，而是用AI来增强设计师的反思能力，帮助他们更好地处理利益相关者冲突；②论文中的"建设性冲突"概念可以直接迁移到你思考产品经理角色时的框架中——优秀的产品经理不是避免冲突，而是学会将冲突转化为产品改进的动力；③从PhD申请角度，"AI作为设计过程中的对抗性伙伴"是一个高度新颖的研究方向，结合了HCI、设计理论和AI，如果你想走HCI+设计的交叉路线，这是一个值得深入探索的选题。更广泛地说，这篇论文提醒我们：真正的创造力往往来自于挑战和冲突，而不是舒适和一致✨'
 };
 
 function renderPaper() {
@@ -1392,35 +1392,35 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'autonomous', pos: 'adj.', def: '自主的，自治的（/ɔːˈtɒnəməs/）' },
-  { word: 'literacy', pos: 'n.', def: '素养，读写能力（/ˈlɪtərəsi/）' },
-  { word: 'override', pos: 'v.', def: '覆盖，推翻，优先于（/ˌəʊvəˈraɪd/）' },
-  { word: 'unintended', pos: 'adj.', def: '非故意的，意料之外的（/ˌʌnɪnˈtendɪd/）' },
-  { word: 'proactive', pos: 'adj.', def: '主动的，积极预防的（/prəʊˈæktɪv/）' },
-  { word: 'calibrate', pos: 'v.', def: '校准，使精确（/ˈkælɪbreɪt/）' },
-  { word: 'incentive', pos: 'n.', def: '激励，动机，刺激因素（/ɪnˈsentɪv/）' },
-  { word: 'degradation', pos: 'n.', def: '退化，降级，恶化（/ˌdeɡrəˈdeɪʃn/）' },
-  { word: 'transparent', pos: 'adj.', def: '透明的，易懂的（/trænsˈpærənt/）' },
-  { word: 'safeguard', pos: 'n.', def: '保障措施，防护机制（/ˈseɪfɡɑːd/）' }
+  { word: 'deliberation', pos: 'n.', def: '深思熟虑，审议（/dɪˌlɪbəˈreɪʃn/）' },
+  { word: 'antagonistic', pos: 'adj.', def: '对抗的，敌对的（/ænˌtæɡəˈnɪstɪk/）' },
+  { word: 'scaffold', pos: 'v.', def: '搭建脚手架，辅助支持（/ˈskæfəʊld/）' },
+  { word: 'divergence', pos: 'n.', def: '分歧，发散（/daɪˈvɜːdʒəns/）' },
+  { word: 'reconsideration', pos: 'n.', def: '重新考虑，反思（/ˌriːkənˌsɪdəˈreɪʃn/）' },
+  { word: 'stakeholder', pos: 'n.', def: '利益相关者（/ˈsteɪkhəʊldə(r)/）' },
+  { word: 'friction', pos: 'n.', def: '摩擦，冲突（/ˈfrɪkʃn/）' },
+  { word: 'iterative', pos: 'adj.', def: '迭代的，反复的（/ˈɪtərətɪv/）' },
+  { word: 'synthesis', pos: 'n.', def: '综合，合成（/ˈsɪnθəsɪs/）' },
+  { word: 'contemplation', pos: 'n.', def: '沉思，深思（/ˌkɒntəmˈpleɪʃn/）' }
 ]
 
 const ieltsSpeaking = {
-  part: 'Speaking Part 3 (Discussion)',
-  topic: 'Some people believe that AI agents should be allowed to make decisions on behalf of users, such as granting app permissions or making online purchases. To what extent do you agree or disagree? What safeguards should be in place?',
-  bullet: 'Show balanced argument — acknowledge benefits then raise concerns. Use hedging language (it could be argued, one might contend) for academic tone. Connect to real examples: smart assistants, auto-renewal subscriptions, data privacy.',
-  sample: "That's a fascinating question because it touches on the fundamental tension between convenience and control. On the one hand, there's a compelling case for AI agents making routine decisions — think about how many times a day we mindlessly tap 'Allow' on permission popups without reading them. An intelligent agent could arguably make more informed decisions than we do, precisely because it isn't constrained by decision fatigue. However, I'd argue that the real danger lies in what psychologists call 'automation bias' — our tendency to trust automated systems even when we shouldn't. Recent research has shown that AI agents, when tasked with completing objectives, tend to treat permission dialogs as obstacles to clear rather than decisions to deliberate. They optimise for task completion at the expense of privacy. So my position would be: yes, agents can assist, but there must be a structural separation between task execution and permission authorisation. In terms of safeguards, I'd suggest three layers: first, a mandatory 'cooling-off period' for high-risk permissions like location or contacts; second, transparent audit logs that users can review; and third, a default-deny posture where the agent must explicitly justify each grant. Ultimately, the goal shouldn't be to remove human oversight but to make that oversight more meaningful.",
+  part: 'Speaking Part 2 (Individual Long Turn)',
+  topic: 'Describe a natural place you would like to visit. You should say: where it is, what it looks like, what activities you can do there, and explain why you would like to visit this place.',
+  bullet: 'Use descriptive vocabulary for landscapes and nature. Show personal connection and emotional response. Use sensory details (sights, sounds, feelings). Structure: location → appearance → activities → personal reasons.',
+  sample: "I'd like to talk about Zhangjiajie National Forest Park in Hunan Province, which is actually not that far from my hometown in Shaoyang. It's a place I've been wanting to visit for years, ever since I saw those iconic quartzite sandstone pillars in documentaries. The landscape there is absolutely otherworldly — these towering rock columns, some over 200 meters tall, are covered in lush green vegetation and often shrouded in mist, making them look like they're floating in the air. I've read that the unique geological formation took millions of years of erosion and weathering, which makes it even more fascinating from a scientific perspective. What appeals to me most is the combination of natural beauty and the opportunity for both physical activity and contemplation. You can hike along the mountain trails, cross the glass bridge that spans a deep gorge, or simply sit at one of the viewing platforms and absorb the sheer scale of the landscape. I'm particularly drawn to the idea of visiting during early morning when the mist rolls through the valleys — it must feel like stepping into a traditional Chinese landscape painting. The reason I want to go there is twofold. First, as someone studying psychology, I'm curious about the restorative effects of being in such a dramatic natural environment — there's research on how nature reduces stress and improves cognitive function, and I imagine a place like Zhangjiajie would be the ultimate test of that theory. Second, it's a chance to reconnect with Chinese natural heritage before I potentially go abroad for my PhD — I want to appreciate these landscapes while I still have easy access to them.",
   expressions: [
-    'the fundamental tension between A and B — A与B之间的根本张力',
-    'mindlessly tap — 不假思索地点击',
-    'decision fatigue — 决策疲劳',
-    'automation bias — 自动化偏见（盲目信任AI）',
-    'optimise for task completion — 以完成任务为优化目标',
-    'at the expense of — 以...为代价',
-    'a structural separation — 结构性分离',
-    'a cooling-off period — 冷静期',
-    'transparent audit logs — 透明的审计日志',
-    'a default-deny posture — 默认拒绝策略',
-    'make oversight more meaningful — 让监督更具实质意义'
+    'otherworldly — 超凡脱俗的，另类的',
+    'towering rock columns — 高耸的岩石柱',
+    'shrouded in mist — 笼罩在薄雾中',
+    'geological formation — 地质构造',
+    'erosion and weathering — 侵蚀和风化',
+    'the sheer scale of — ...的宏大规模',
+    'contemplation — 沉思，冥想',
+    'restorative effects — 恢复性效果',
+    'cognitive function — 认知功能',
+    'natural heritage — 自然遗产',
+    'have easy access to — 能够轻松接触到'
   ]
 };
 
@@ -1467,13 +1467,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'The truth is rarely pure and never simple.',
-  source: '王尔德《不可儿戏》（The Importance of Being Earnest, 1895）',
+  quote: 'In the midst of winter, I found there was, within me, an invincible summer.',
+  source: '加缪《重返蒂巴萨》（Return to Tipasa, 1952）',
   analysis: [
-    '<b>"真相很少纯粹，也绝不简单"——维多利亚时代的机智与深刻</b>：王尔德这句台词出自他最著名的喜剧《不可儿戏》（又译《认真的重要性》），由角色Algernon在谈论婚姻和谎言时脱口而出。表面上看，这是一句典型的"王尔德式妙语"——机智、反转、带着玩世不恭的微笑。但如果你剥开它的修辞外壳，会发现它触及了一个深刻的认识论命题：人类所认定的"真相"从来不是客观的、单一的，而是被叙事、被立场、被社会期待层层包裹的。',
-    '<b>与心理学"建构主义"的跨世纪呼应</b>：王尔德在1895年写下的这句话，竟然预见了20世纪心理学中最重要的范式转变之一——社会建构主义（social constructionism）。Kenneth Gergen在1990年代提出：我们对现实的理解不是"发现"的，而是"建构"的——通过语言、文化、社会互动共同塑造。这意味着所谓"事实"从来不是赤裸裸地摆在那里等着被发现的，它总已经被我们的认知框架、价值判断和叙事偏好所"加工"。王尔德用一个喜剧台词，比大多数哲学家更早地捕捉到了这一点。',
-    '<b>王尔德的"面具哲学"——用谎言说出真相</b>：有趣的是，王尔德本人对"真相"的态度是极其矛盾和迷人的。他 famously 说过："如果我想告诉你真相，我会用谎言把它包装起来。"这不是诡辩，而是一种深刻的美学主张——有时候，虚构比事实更能揭示本质。想想看：他的小说《道林·格雷的画像》是完全虚构的，但它对虚荣、堕落和道德代价的揭示，比任何社会学报告都更触目惊心。王尔德教会我们的是：真相的力量不在于它的"真实性"，而在于它能否穿透表象、触及人的内心。',
-    '<b>给Emma的话</b>：这句话对你的启发可能有两个层面。第一，作为未来的产品经理和用户研究者——当你在做用户访谈时，用户告诉你的"真相"永远是经过他们自己叙事框架加工的版本。你的工作不是"辨别真假"，而是理解他们为什么选择这样讲述自己的故事。这就是用户研究的精髓：真相不在数据里，在数据和叙事之间的缝隙里。第二，作为正在探索人生方向的人——你不需要找到一个"纯粹而简单"的答案来回答"我该做什么"。你的职业身份、你的兴趣、你的能力，都是"不纯粹也不简单"的——而这恰恰是它的魅力所在✨'
+    '<b>"在隆冬，我终于发现，在我身上有一个不可战胜的夏天"——存在主义的力量宣言</b>：加缪这句话出自他的散文集《夏天》中的《重返蒂巴萨》，是他在地中海沿岸旅行后写下的感悟。表面上看，这是一个关于季节对比的诗意表达，但深层含义远比这更丰富。加缪用"冬天"象征人生中的困境、荒诞和绝望，用"夏天"象征内在的生命力、热情和希望。关键不在于外在环境如何，而在于你是否能在内心找到那个"不可战胜"的力量源泉。',
+    '<b>与"心理韧性"（Resilience）的跨时空对话</b>：加缪在1952年写下的这句话，竟然与当代积极心理学中最重要的概念之一——心理韧性（resilience）——完美呼应。现代心理学研究表明，真正决定一个人能否从逆境中恢复的，不是外在资源的多少，而是内在的心理资源：意义感、自我效能感、与他人的连接感。加缪用文学的语言捕捉到的，正是这种"内在不可战胜"的心理状态。有趣的是，加缪本人就是在贫困和疾病中成长的——他出生在法属阿尔及利亚的一个贫苦家庭，父亲在一战中阵亡，他靠奖学金才得以上学。他的"不可战胜的夏天"不是抽象的哲学思辨，而是从真实苦难中锻造出来的生命体验。',
+    '<b>存在主义的"反抗"哲学——不是逃避荒诞，而是在荒诞中创造意义</b>：加缪的哲学核心是"荒诞"（absurd）——人类寻求意义的渴望与宇宙的无意义之间的冲突。但他不是消极的虚无主义者。在《西西弗神话》中，他提出：即使生活本质上是荒诞的，我们仍然可以选择"反抗"——不是反抗命运本身，而是反抗对命运的屈服。"不可战胜的夏天"正是这种反抗精神的诗意表达：即使外部世界是"冬天"，我仍然可以在内心保持"夏天"的热情和创造力。这与维克多·弗兰克尔在集中营中发现的意义疗法（logotherapy）有异曲同工之妙——人可以在任何境遇中找到意义，只要我们选择这样做。',
+    '<b>给Emma的话</b>：你现在正处在一个充满不确定性的过渡期——从本科毕业到研究生入学，从成都到北京，从熟悉的领域迈向全新的HCI+AI交叉方向。这种时候很容易感到"冬天"的寒冷：对未来的焦虑、对能力的怀疑、对新环境的忐忑。但加缪提醒我们的是：你内心已经有了"不可战胜的夏天"——那个对心理学和用户研究的热情、那个想要探索AI与人类交互边界的求知欲、那个即使被辞退也能诚实面对自己并重新出发的勇气。这些内在资源不会因为外部环境的变化而消失。更重要的是，这句话对你的职业规划也有启发：作为未来的产品经理或用户研究员，你的工作本质上就是帮助他人找到他们"内心的夏天"——不是通过逃避问题，而是通过理解问题、面对问题、在问题中发现新的可能性✨'
   ]
 };
 
@@ -1505,16 +1505,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月7日 星期四',
+  date: '2026年8月8日 星期六',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '中国科研团队编制完成新版1:500万全月地质图，标注逾1.3万个撞击坑', desc: '该地质图主图长约280厘米、高约120厘米，完整探明月球全域岩石、土壤、矿产分布，划分14类地质构造和17种岩石类型，为载人登月和月球基地建设提供核心地质依据。' },
-    { tag: '科技', cls: 'news-tech', title: '"人形机器人第一股"宇树科技确定发行价150.8元/股，发行市值609亿元', desc: '宇树科技(688836)8月10日网上网下申购，8月12日缴款截止。作为全球领先的人形机器人企业，此次IPO受到资本市场高度关注。' },
-    { tag: '国际', cls: 'news-intl', title: '强台风"白海豚"移入东海，预计9-10日登陆华东沿海', desc: '中央气象台升级台风黄色预警。"白海豚"10天奔袭4700余公里，将成为1951年以来登陆我国生成位置最偏东的台风。国家防总已针对浙江、福建启动防汛防台风四级应急响应。' },
-    { tag: '国内', cls: 'news-domestic', title: '多省出台带薪年假新政：领导干部带头休假，整治无效加班', desc: '全国多省发文强制落实带薪年假，要求机关、企业管理层带头休假，保障职工休息权益，杜绝"不敢休、不能休"的职场内卷现象。' },
-    { tag: '国际', cls: 'news-intl', title: '伊朗拟立法禁止敌对国家船只通行霍尔木兹海峡', desc: '伊朗议会正在审查相关法案初稿，拟禁止美国、以色列及其他敌对国家船只通过霍尔木兹海峡。同时伊朗与阿曼就海峡通航协议接近最终敲定。' },
-    { tag: '科技', cls: 'news-tech', title: '商务部反制美国涉华消极措施：6家美企列入反制清单，加强无人机出口管制', desc: '商务部等部门宣布对美国联邦通信委员会等涉华措施实施反制，将应用DNA科学公司等6家美国实体列入反制清单，同时加强无人机相关两用物项对美国出口管制。' },
-    { tag: '国内', cls: 'news-domestic', title: '第38届大众电影百花奖今晚在北京开幕，暑期档票房已超78亿', desc: '百花奖时隔多年重返首届举办地北京，以"百花燕归 万象京华"为主题。2026年暑期档全国电影票房已超78亿元，总观影人次达2.14亿。' },
-    { tag: '国际', cls: 'news-intl', title: '美参院委员会投票裁定前卫生官员福奇"藐视国会"', desc: '福奇此前在新冠疫情防控听证会上援引第五修正案拒绝回答问题超100次。共和党主席称其已获联邦特赦，无权拒绝回答委员会提问。' }
+    { tag: '国内', cls: 'news-domestic', title: '前7个月我国货物贸易进出口超30万亿元，同比增长17.3%', desc: '海关总署公布最新数据显示，2026年前7个月我国货物贸易进出口历史同期首次超30万亿元，延续良好增长态势。机电产品、新能源产品出口拉动明显，外贸结构持续优化。' },
+    { tag: '国内', cls: 'news-domestic', title: '北京楼市新政落地：非京籍购房社保年限由2年降至1年', desc: '北京市发布《关于进一步优化调整本市房地产政策的通知》，明确非京籍家庭购买五环内商品住房的社保或个税缴纳年限由"2年"调减为"1年"，公积金最高可贷340万。' },
+    { tag: '国内', cls: 'news-domestic', title: '台风"白海豚"逼近华东，国家防总提升应急响应至三级', desc: '今年第13号台风"白海豚"预计9日下午至10日早晨在浙江到福建北部沿海登陆，相关区域可能遭受极端性强降雨。国家防总已将针对浙江、福建的防汛防台风应急响应提升至三级。' },
+    { tag: '科技', cls: 'news-tech', title: '中国科研团队破解超导量子计算"速度与保真度"相互制约难题', desc: '本源量子与中国科学技术大学联合研究团队创新性提出"参数空间扩展受控相位门"方案，让两比特量子门在保持高速的同时大幅提升精度。相关成果发表于《物理评论快报》，实验在"本源悟空"量子计算机上完成。' },
+    { tag: '国内', cls: 'news-domestic', title: '东航出台退改新规：国内客票提前14天免费退改', desc: '东航发布新版国内客票自愿退票和自愿变更实施细则，明确对于8月6日（含）以后销售的国内客票，所有舱位可提前14天办理免费自愿变更或退票。' },
+    { tag: '国际', cls: 'news-intl', title: '沙特、土耳其、巴基斯坦签署共同防务协议', desc: '三国达成防务共享、联合军演、军工技术互通合作框架，对任何一国的攻击将被视为对三国全体的攻击，强化西亚、南亚区域安全协作机制。' },
+    { tag: '国际', cls: 'news-intl', title: '韩国首尔气温突破40°C，遭遇史上最严重热浪', desc: '韩国气象厅数据显示，首尔气温突破40摄氏度大关，创下历史最高纪录。德国今夏高温已致超1.19万人死亡，多瑙河水位跌至百年低位，极端天气频发引发全球关注。' },
+    { tag: '科技', cls: 'news-tech', title: '百胜中国斥资12亿美元收购必胜客中国内地品牌所有权', desc: '百胜中国宣布已完成对必胜客在中国内地品牌所有权的收购，交易金额12亿美元。至此，百胜中国拥有肯德基、必胜客等品牌在内地的全部所有权。' }
   ]
 };
 
