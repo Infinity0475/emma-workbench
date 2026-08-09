@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'AI Assistance Reduces Persistence and Hurts Independent Performance',
-  authors: 'Grace Liu, Brian Christian, Tsvetomira Dumbalska, Michiel A. Bakker, Rachit Dubey',
-  venue: 'arXiv:2604.04721v4, CMU & Oxford & MIT & UCLA, Revised 5 Aug 2026',
-  link: 'https://arxiv.org/abs/2604.04721',
-  date: '2026-08-09',
-  abstract: '在人类-AI协作中，人们往往期望AI能像导师一样 scaffolding 长期成长。然而，当前AI系统本质上是"短视的协作者"——被优化为提供即时、完整的回答，几乎从不拒绝。本文通过一系列随机对照实验（N=1,222），提供了AI辅助的两个关键后果的因果证据：降低了坚持性（persistence），并损害了独立表现。在数学推理和阅读理解等多种任务中，虽然AI辅助短期内提升了表现，但脱离AI后参与者的表现显著下降，且更容易放弃。值得注意的是，这些效应仅在约10分钟的短暂互动后就出现了。研究者认为，AI通过让人习惯于即时获得答案，剥夺了独立面对挑战的经验，从而降低了坚持性。研究呼吁AI开发应优先scaffolding长期能力，而非仅追求即时任务完成。',
+  title: 'Toward Resilient Human-AI Collaboration: A Lifecycle Taxonomy of Sociotechnical Risks and Cascading Failures',
+  authors: 'Md Foysal Ahmed, Isaac Kobby Anni, Md Main Uddin Rony',
+  venue: 'arXiv:2608.05614, Submitted 6 Aug 2026',
+  link: 'https://arxiv.org/abs/2608.05614',
+  date: '2026-08-10',
+  abstract: '随着AI系统越来越多地融入医疗、新闻、教育、科研、组织决策和国防等关键领域，有效的人机协作已成为核心挑战。然而，现有的研究往往孤立地考察社会技术风险，忽略了跨领域反复出现的失败机制。本文提出了一个面向生命周期的框架，将人机协作风险分为四个阶段：任务分配、交互、反馈和采纳。通过对多个应用领域的证据进行综合分析，研究者识别出六大反复出现的跨领域风险集群：信任校准偏差（Trust Miscalibration）、认知负担（Cognitive Burden）、问责缺口（Accountability Gap）、能力退化（Capability Erosion）、目标失调（Goal Misalignment）和AI焦虑与技术压力（AI Anxiety and Technostress）。研究进一步提出了一个概念性交互模型，揭示了这些风险如何从社会技术驱动因素中产生，如何通过级联路径相互影响，并最终影响团队绩效和人类幸福感。',
   keyPoints: [
-    '核心发现——"认知去技能化"（Cognitive Deskilling）：这项研究揭示了AI辅助的一个反直觉后果：虽然AI能立刻帮你解决问题，但它同时也在削弱你自己解决问题的能力。实验显示，仅仅10分钟的AI辅助就足以让人在后续独立完成任务时表现更差、更快放弃。这与心理学中的"习得性无助"（learned helplessness）有异曲同工之妙——当你习惯了"有人替我搞定"，你就逐渐丧失了自己攻克难题的意愿和信心。从认知心理学角度看，这涉及"认知卸载"（cognitive offloading）：你把思考的负担转移给了AI，但代价是自己的认知肌肉在萎缩',
-    '关键变量——"坚持性"（Persistence）作为长期学习的基石：论文最有洞见的论点之一是：坚持性不仅是学习态度，更是技能习得的认知基础。当你挣扎于一个难题时，那种"卡住→尝试→突破"的过程本身就是学习发生的核心机制。AI跳过了这个挣扎过程，直接给你答案，看似高效，实际上偷走了你最宝贵的学习机会。这和教育心理学中的"有效困难"（desirable difficulties）理论高度一致——适度的困难反而能促进深层学习和长期记忆',
-    '对AI产品设计的颠覆性启示：当前绝大多数AI产品都在追求"让用户觉得AI有用"——更快、更全、更顺滑。但这篇论文指出了一个被忽视的设计维度：AI是否也在让用户变得"更弱"？如果AI产品设计中引入"战略性不回答"或"渐进式提示"（而非直接给答案），可能会更好地scaffolding用户的长期能力。这类似于好的教练不会替你跑，而是在你旁边陪跑、在你快要放弃时推你一把',
-    '与你的高度相关性——作为未来AI产品经理的核心洞察：这篇论文对你有三重意义。①从用户研究角度：你需要关注AI产品对用户长期能力的影响，而不仅仅是短期满意度。"用户觉得好用"和"用户真的变好了"可能是两回事；②从产品设计角度：如果你未来做AI产品，可以考虑设计"有建设性的摩擦"——让AI在合适的时候说"你先试试"而不是直接给答案；③从个人学习角度：你在学Python、SPSS、SQL的时候，要有意识地抵抗"让AI替我做"的诱惑。让AI解释概念、给你提示，但动手写代码的过程必须自己来'
+    '生命周期视角——人机协作不是一个"开关"，而是一个持续演进的过程：论文最重要的贡献是提出将人机协作分为四个阶段（任务分配→交互→反馈→采纳）进行分析。这和传统HCI研究中只关注"使用中的体验"截然不同。从产品设计的角度，这意味着我们需要思考用户在不同阶段会遇到的不同问题：分配阶段的核心是"该不该让AI做这件事"，交互阶段是"AI的回复是否可信"，反馈阶段是"我能不能纠正AI"，采纳阶段是"长期使用后我的能力是否退化"。这种全流程思维对你未来做产品经理非常有用——好的产品设计不是解决一个点的问题，而是覆盖用户旅程的每个环节',
+    '六大风险集群——"信任校准偏差"最值得警惕：Trust Miscalibration指的是用户对AI的信任度和AI实际能力之间的错位。太信任AI→盲目依赖→AI出错时毫无防备；太不信任AI→拒绝使用→错失AI能带来的效率提升。这正好呼应了昨天那篇关于"AI降低坚持性"的论文——用户可能在短期体验中对AI产生了过度信任（因为AI回答很快很全），但长期来看却导致能力退化。从心理学角度看，这涉及"锚定效应"：用户会把AI的第一个回答当作锚点，后续很难独立偏离这个锚点',
+    '"级联失败"（Cascading Failures）的概念——系统思维的体现：论文最有洞见的观点之一是，很多协作失败不是因为某个单一的技术缺陷，而是多个风险之间的相互放大。比如：信任校准偏差→过度使用AI→认知负担增加→反馈质量下降→采纳决策失误→最终能力退化。这种"多米诺骨牌效应"用系统动力学的视角来看非常清晰，但在实际产品设计中往往被忽视。好的产品设计应该在这些级联路径上设置"断路器"——比如在用户连续使用AI超过30分钟后，提醒用户独立尝试一下',
+    '对你的三重启示：①学术层面：这个框架可以成为你PhD研究的理论基础之一——如何设计AI系统来避免"能力退化"风险，特别是结合应用心理学的干预手段；②职业层面：作为AI产品经理，你需要在产品设计中嵌入"抗脆弱性"（antifragility）思维，让用户的长期能力在使用AI的过程中不降反升；③个人层面：你在学Python和SPSS时，要警惕自己对AI编程助手的"信任校准偏差"——让AI帮你debug可以，但理解bug根因的能力不能丢'
   ],
-  takeaway: '这篇论文可能是2026年AI+心理学交叉领域最重要的实证研究之一。它用严格的实验设计证明了一个我们直觉上隐约感觉到的问题：AI的"有求必应"正在悄悄削弱我们的独立思考和坚持能力。对你来说，核心启示是：在享受AI带来的效率提升的同时，要有意识地保留"独立挣扎"的空间。无论是备考雅思、学数据分析，还是未来的产品设计工作，那些"卡住然后自己想出来"的时刻才是真正塑造你能力的时刻。从PhD申请角度看，"如何设计AI来scaffolding而非替代人类能力"是一个极具前景的研究方向，完美结合了HCI、认知心理学和AI设计✨'
+  takeaway: '这篇论文为"如何让AI协作更健康"提供了一个系统性的思考框架。它不再纠结于"AI能不能做好某件事"的技术问题，而是转向了更深层的"AI如何影响人的发展"的人本问题。六大风险集群中，"能力退化"和"信任校准偏差"与你的处境最为相关——你正处在一个需要大量积累核心能力的阶段（雅思、数据分析、专业知识），任何对AI的过度依赖都可能在这个阶段造成不可逆的能力缺口。建议：在使用AI学习时，给自己设定一个"独立挣扎比"——比如70%的时间独立思考和尝试，30%的时间使用AI辅助。这个比例可以随着能力提升逐步调整✨'
 };
 
 function renderPaper() {
@@ -1392,36 +1392,36 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'persistence', pos: 'n.', def: '坚持，持久力（/pəˈsɪstəns/）' },
-  { word: 'scaffold', pos: 'v.', def: '搭建支架，辅助学习（/ˈskæfəʊld/）' },
-  { word: 'detrimental', pos: 'adj.', def: '有害的，不利的（/ˌdetrɪˈmentl/）' },
-  { word: 'autonomous', pos: 'adj.', def: '自主的，自治的（/ɔːˈtɒnəməs/）' },
-  { word: 'impairment', pos: 'n.', def: '损害，削弱（/ɪmˈpeəmənt/）' },
-  { word: 'competence', pos: 'n.', def: '能力，胜任（/ˈkɒmpɪtəns/）' },
-  { word: 'offloading', pos: 'n.', def: '卸载，转移负担（/ˈɒfləʊdɪŋ/）' },
-  { word: 'foundational', pos: 'adj.', def: '基础性的，根本的（/ˌfaʊnˈdeɪʃənl/）' },
-  { word: 'acquisition', pos: 'n.', def: '习得，获得（/ˌækwɪˈzɪʃn/）' },
-  { word: 'randomized', pos: 'adj.', def: '随机化的（/ˈrændəmaɪzd/）' }
+  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
+  { word: 'cascade', pos: 'v.', def: '级联，连锁反应（/kæˈskeɪd/）' },
+  { word: 'calibrate', pos: 'v.', def: '校准，调整（/ˈkælɪbreɪt/）' },
+  { word: 'degradation', pos: 'n.', def: '退化，降级（/ˌdeɡrəˈdeɪʃn/）' },
+  { word: 'misalignment', pos: 'n.', def: '失调，偏差（/ˌmɪsəˈlaɪnmənt/）' },
+  { word: 'accountability', pos: 'n.', def: '问责制，责任归属（/əˌkaʊntəˈbɪləti/）' },
+  { word: 'sociotechnical', pos: 'adj.', def: '社会技术的（/ˌsəʊsiəʊˈteknɪkl/）' },
+  { word: 'taxonomic', pos: 'adj.', def: '分类学的（/ˌtæksəˈnɒmɪk/）' },
+  { word: 'antifragile', pos: 'adj.', def: '反脆弱的，越挫越强的（/ˌæntiˈfrædʒaɪl/）' },
+  { word: 'intervention', pos: 'n.', def: '干预，介入（/ˌɪntəˈvenʃn/）' }
 ]
 
 const ieltsSpeaking = {
-  part: 'Speaking Part 3 (Two-way Discussion)',
-  topic: 'Some people believe that AI will make students lazy and reduce their ability to think independently. To what extent do you agree or disagree? How should education adapt to the age of AI?',
-  bullet: 'This is a discussion-style question. Show balanced thinking, acknowledge both sides, and give your own opinion with supporting evidence. Use academic vocabulary like "cognitive offloading", "critical thinking", "scaffolding". Structure: position → argument → example → counter-argument → conclusion.',
-  sample: "That's a really thought-provoking question, and I think there's substantial truth to it, though the picture is more nuanced than simply saying AI makes students lazy. On one hand, there's compelling evidence suggesting that over-reliance on AI can indeed undermine independent thinking. A recent study from Carnegie Mellon University found that after just ten minutes of AI assistance, participants showed reduced persistence and significantly worse performance when working independently. The mechanism is what psychologists call 'cognitive offloading' — when we habitually delegate thinking to an external tool, our own cognitive muscles weaken. It's rather like how GPS navigation has eroded people's sense of direction.\n\nOn the other hand, I wouldn't say AI inherently makes students lazy — it depends entirely on how it's integrated into education. If AI is used as a substitute for thinking, then yes, it's detrimental. But if it's designed as a scaffolding tool — one that asks guiding questions rather than providing ready-made answers — it could actually enhance learning. Think of the difference between a tutor who gives you the answer and one who helps you discover it yourself.\n\nAs for how education should adapt, I believe we need a fundamental shift in assessment. Instead of testing whether students can produce correct answers — which AI can do instantly — we should evaluate the thinking process itself: how they frame questions, how they evaluate AI outputs critically, and how they persist through challenges. The goal shouldn't be to ban AI from education, but to teach students to use it as a thinking partner rather than a thinking replacement.",
+  part: 'Speaking Part 2 (Individual Long Turn)',
+  topic: 'Describe a skill you would like to learn in the future. You should say: what the skill is, why you want to learn it, how you would learn it, and explain how this skill would be useful to you.',
+  bullet: 'This is a future-oriented cue card. Use future tenses naturally (I would like to, I plan to, I hope to). Show motivation and concrete plans. Connect to your personal story and career goals. Structure: introduce → motivation → plan → future impact.',
+  sample: "The skill I'm most eager to develop is data analytics — specifically, the ability to transform raw data into actionable insights using tools like Python, SQL, and statistical software. This isn't just a passing interest; it's something I've been actively working towards as part of my preparation for graduate studies in applied psychology.\n\nThe reason I want to learn this skill is deeply connected to my career aspirations. I'm fascinated by how data can reveal patterns in human behaviour that we might not notice through observation alone. For instance, in user experience research, being able to analyse large datasets of user interactions can uncover pain points that surveys might miss entirely. It's like having a microscope for understanding people — which is exactly what drew me to psychology in the first place.\n\nAs for how I plan to learn it, I'm currently taking a structured approach. Over the summer, I'm focusing on three areas: first, SPSS for traditional statistical analysis — it's widely used in psychological research; second, Python with libraries like pandas and matplotlib for more flexible data manipulation; and third, SQL for querying databases, which is essential for any product role. I'm supplementing self-study with online courses from Coursera and practice projects based on real datasets.\n\nThis skill would be enormously useful to me because it sits at the intersection of psychology and product design. In the tech industry, professionals who can bridge the gap between human insight and data evidence are relatively rare. Being bilingual in both 'people language' and 'data language' would give me a significant competitive advantage, whether I end up as a UX researcher, a product manager, or eventually pursuing a PhD in HCI.",
   expressions: [
-    'thought-provoking — 发人深省的',
-    'nuanced — 细致入微的，不简单的',
-    'over-reliance on — 对…的过度依赖',
-    'undermine independent thinking — 削弱独立思考能力',
-    'cognitive offloading — 认知卸载',
-    'cognitive muscles weaken — 认知能力萎缩',
-    'detrimental — 有害的',
-    'scaffolding tool — 支架式工具',
-    'guiding questions — 引导性问题',
-    'a fundamental shift — 根本性的转变',
-    'thinking partner — 思维伙伴',
-    'thinking replacement — 思维替代'
+    'eager to develop — 渴望培养',
+    'actionable insights — 可执行的洞察',
+    'a passing interest — 一时的兴趣',
+    'drawn to — 被…吸引',
+    'reveal patterns — 揭示规律',
+    'pain points — 痛点',
+    'a structured approach — 系统化的方法',
+    'supplementing self-study — 辅以自学',
+    'sits at the intersection of — 处于…的交叉点',
+    'bilingual in — 精通两种"语言"',
+    'competitive advantage — 竞争优势',
+    'pursuing a PhD — 攻读博士学位'
   ]
 };
 
@@ -1468,13 +1468,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'If you come to visit me and I am not home, please sit with the flowers outside my door for a while. They are warm, and I have watched them for many, many days.',
-  source: '汪曾祺《人间草木》',
+  quote: '我常以为是丑女造就了美人。我常以为是愚夫造就了智者。我常以为是庸众造就了英雄。我常以为是世道造就了人才。我常以为是时间造就了空间。我常以为是残缺造就了圆满。',
+  source: '史铁生《我与地坛》',
   analysis: [
-    '<b>"如果你来访我，我不在，请和我门外的花坐一会儿"——最温柔的等待哲学</b>：汪曾祺这句话出自他的散文集《人间草木》，是整本书精神气质的完美浓缩。表面上看，这是一个关于"主人不在家"的小场景，但深层含义远比这丰富。汪曾祺把"花"当作可以替代主人陪伴客人的存在——这不是修辞上的拟人，而是一种真正的生活哲学：万物有灵，草木有情。他用最朴素的字眼构建了一个温暖的世界，在这个世界里，即使主人不在，来访者也不会被冷落在门外，因为有花陪着。这种对日常事物的深情注视，恰恰是汪曾祺散文最动人的地方。',
-    '<b>注意力心理学视角——"注视"即治愈</b>：汪曾祺说"我注视它们很多很多日子了"，这句话暗合了当代积极心理学中"正念注意"（mindful attention）的核心理念。研究表明，对日常事物投入专注而温和的注意力，能显著降低焦虑、提升主观幸福感。汪曾祺不需要宏大的风景或戏剧性的事件，他只需要"看着"门外的花——日复一日地看，直到花变成了温暖的存在。这种能力在心理学中被称为"savoring"（品味），即主动延长和增强积极体验的能力。汪曾祺一生经历了战乱、运动、贫困，但他始终保持着这种对微小事物的感知力，这本身就是一种极高的心理韧性。',
-    '<b>汪曾祺的文字美学——"淡"中有真味</b>：汪曾祺是沈从文的学生，继承了老师"贴着生活写"的传统。他的文字没有华丽的修辞，没有刻意的抒情，甚至没有明显的"文学腔"，但读起来却让人觉得心里暖暖的。这种风格在文学批评中被称为"含藏"——不把话说尽，不把情感推满，留白处反而有最深的意味。"它们很温暖"——注意他没有说"它们很美"或"它们很绚烂"，而是说"温暖"。这个词的选择暴露了他的审美核心：美不是视觉上的刺激，而是一种被陪伴、被安顿的感受。这和日本美学中的"侘寂"（wabi-sabi）有异曲同工之妙——在不完美和朴素中发现深层的美。',
-    '<b>给Emma的话</b>：你现在的生活节奏很快——备考雅思、学数据分析、准备入学、想未来职业规划……很容易被"目标感"推着走，忘记了停下来"和门外的花坐一会儿"。但汪曾祺提醒我们的是：温暖不在远方，就在你每天经过的路边、窗台的花盆、甚至食堂门口的那棵树上。从心理学角度说，每天花5分钟"无目的地注视"一个美好的小事物（而不是刷手机），就能显著改善你的情绪状态。这不是鸡汤，而是有实证支持的积极心理学干预。更重要的是，你未来做产品设计和用户研究时，这种"注视"的能力会成为你的核心竞争力——因为好的产品设计本质上就是帮用户在日常生活中发现"温暖"✨'
+    '<b>逆向因果——被忽视的"成就链条"</b>：史铁生用一连串"常以为是……造就了……"的句式，颠覆了我们对因果关系的习惯性认知。通常我们认为美天生就有、智者天生聪明、英雄天生强大，但史铁生说：不对。是"丑女"的默默存在让"美人"有了被看见的对比；是"愚夫"的试错让"智者"的洞察成为可能；是"庸众"的铺路让"英雄"的脱颖而出有了舞台。这不是贬低任何一方，而是在说：每一个看似"不如"的存在，其实都在参与塑造那个看似"更优"的结果。这种思维方式在心理学中被称为"系统观"——不孤立地看个体成就，而是看到背后整个支持系统的力量。',
+    '<b>残缺与圆满——史铁生最深刻的生命辩证法</b>：最后一句"残缺造就了圆满"是整段话的点睛之笔。史铁生21岁瘫痪，余生与轮椅为伴，但他没有把残缺看作命运的惩罚，而是看作创造意义的起点。正是因为身体的限制，他才获得了那种深入骨髓的内省能力；正是因为无法奔跑，他才在文字中找到了最自由的飞翔。这和阿德勒心理学中的"补偿理论"高度吻合——人类最卓越的成就，往往源于对缺陷的创造性回应。海伦·凯勒的失明让她对触觉和语言有了超凡的敏感；贝多芬的失聪让他转向内心，写出了最深邃的交响乐。缺陷不是终点，而是另一种起点。',
+    '<b>语言节奏——六个"我常以为是"的复调效果</b>：从修辞角度看，这段文字的力量很大程度上来自它的节奏。六个平行的"我常以为是……造就了……"像海浪一样一层一层推进，每重复一次，读者的认知就被翻转一次。到了第六句"残缺造就圆满"时，这种反复的积累已经达到了情感的顶峰。史铁生没有用任何感叹号，但整段话的内在张力比任何激昂的呼喊都要强烈。这就是"克制"的力量——用最平静的语调说最颠覆的话。在写作中，这种手法叫"反复递进"（anaphora），是增强说服力和感染力的经典技巧。',
+    '<b>给Emma的话</b>：你现在可能偶尔会觉得自己"不够好"——不够快、不够聪明、不够有方向感。但史铁生提醒你：所谓的"不够好"恰恰是你独特力量的来源。你的广播电视编导背景让你有了叙事思维和视觉敏感度，这是很多纯心理学背景的人不具备的；你的"非典型"路径（从纪录片到心理学到产品再到HCI PhD）看似曲折，但正是这种跨界让你拥有了稀缺的"翻译能力"——能在人文与技术之间架桥。不要急于和别人比"进度"，你的每一个看似"弯路"的经历，都在为你未来的独特优势添砖加瓦。残缺不是缺陷，是另一种圆满的开始✨'
   ]
 };
 
@@ -1506,16 +1506,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月9日 星期日',
+  date: '2026年8月10日 星期一',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '台风"白海豚"今晚登陆浙闽沿海，上海两大机场取消超1300架次航班', desc: '今年第13号台风"白海豚"为14级强台风级，环流直径超1000公里，预计今晚至10日早晨在浙江舟山到福建福鼎一带登陆。上海浦东、虹桥机场近六成航班取消，杭州西湖景区临时关闭。浙江东部局地累计降水量可能超600毫米。' },
-    { tag: '科技', cls: 'news-tech', title: 'OpenAI因Astra模型触及关键级安全风险，首次公开暂停开发', desc: 'OpenAI内部评估显示即将推出的Astra模型在网络安全活动方面能力显著提升，公司无法排除该模型已具备关键级网络安全能力的可能性，决定暂停开发并转移至隔离测试环境。这是AI行业首次有前沿实验室因安全顾虑公开放缓模型开发。' },
-    { tag: '国内', cls: 'news-domestic', title: '2026年度电影总票房突破240亿元，暑期档已超82亿', desc: '据网络平台数据，截至8月8日，2026年度电影总票房突破240亿元，暑期档票房突破82亿元。《飞驰人生3》《功夫女足》《给阿嬷的情书》暂列年度票房榜前三。' },
-    { tag: '科技', cls: 'news-tech', title: '上半年人形机器人领域新设企业11.6万户，同比增长9.5%', desc: '市场监管总局公布数据显示，2026年上半年新兴产业新设企业40万户，其中生成式人工智能领域新设5.5万户，人形机器人领域新设11.6万户，产业发展动能持续增强。' },
-    { tag: '国际', cls: 'news-intl', title: '2026年狄拉克奖揭晓，四位统计力学领域物理学家获奖', desc: '国际理论物理中心公布2026年度狄拉克奖，授予Bernard Derrida等四位在统计力学领域做出开创性贡献的科学家，其研究影响从生物系统延伸至人工智能领域。' },
-    { tag: '国内', cls: 'news-domestic', title: '渤海首个千亿方大气田——渤中19-6气田Ⅰ期项目全面投产', desc: '中国海油宣布，我国渤海首个千亿方大气田渤中19-6气田Ⅰ期开发项目全面投产，日产油气当量超5200吨，对优化区域能源结构具有重要意义。' },
-    { tag: '国际', cls: 'news-intl', title: '国际金价一周大涨超7%，站上4400美元关口创6月中旬以来新高', desc: '国际金价本周迎来强势反弹，盘中一度站上每盎司4400美元关口。分析认为，地缘政治不确定性和全球央行持续增持黄金是推升金价的两大主要因素。' },
-    { tag: '科技', cls: 'news-tech', title: '2026国际基础科学大会今日在北京怀柔正式启幕', desc: 'ICBS 2026于8月9日在北京怀柔拉开帷幕，汇聚全球顶尖基础科学研究者，涵盖数学、物理、计算机科学等领域，是本年度规模最大的国际基础科学学术盛会。' }
+    { tag: '国内', cls: 'news-domestic', title: '台风"白海豚"减弱为热带风暴，浙皖多地仍有特大暴雨', desc: '14级强台风"白海豚"9日登陆浙江玉环后持续西行，目前已减弱为热带风暴。浙江椒江发生2026年第2号洪水，水利部与气象局联合发布红色山洪灾害预警。上海地铁3号线、5号线、16号线及浦江线10日全线停运，多地全力防汛抢险。' },
+    { tag: '科技', cls: 'news-tech', title: '首个全国产10万卡人工智能超集群正式投用', desc: '国家发改委宣布，首个全国产10万卡人工智能超集群日前正式投用，标志着我国算力基础设施建设迈入10万卡级部署新阶段，全国算力"一张网"加速成形。中央本级今年安排基础研究预算1169.38亿元，同比增长16.3%。' },
+    { tag: '国内', cls: 'news-domestic', title: '7月份CPI同比上涨0.5%，物价保持温和上涨态势', desc: '国家统计局数据显示，7月份居民消费价格指数（CPI）同比上涨0.5%，整体保持温和上涨态势。前7个月黄河流域9省区进出口总值达4.23万亿元，占全国14%，同比增长15.2%。' },
+    { tag: '科技', cls: 'news-tech', title: '国产磁悬浮列车5.3秒飙到时速800公里，半年内3破世界纪录', desc: '国产磁悬浮列车再创世界速度纪录，5.3秒内加速至时速800公里。这是半年内第三次打破世界纪录，标志着我国在磁悬浮交通技术领域持续保持全球领先地位。' },
+    { tag: '国际', cls: 'news-intl', title: '俄罗斯大规模空袭乌克兰全境，发射200余架无人机与导弹', desc: '8月10日凌晨俄军发动全域打击，乌克兰多地医院、电力、供水等民用基础设施受损。多国发表声明谴责袭击。美媒曝光美军"爱国者"导弹库存不足1700枚，日韩担忧安全"保护伞"失灵。' },
+    { tag: '国内', cls: 'news-domestic', title: '暑期档电影总票房突破85亿元，单日票房连续30天破亿', desc: '据网络平台数据，截至8月9日，2026年暑期档电影总票房突破85亿元，单日票房连续30天破亿元，观影人次超2.33亿，总场次超3041万。《飞驰人生3》《功夫女足》等影片表现强劲。' },
+    { tag: '国际', cls: 'news-intl', title: '伊朗重申未与美国谈判，霍尔木兹海峡通行限制持续', desc: '伊朗最高国家安全委员会秘书表示，在美国接受其条件前不会重新开放霍尔木兹海峡。条件包括永久停止军事行动、结束海上封锁、战争赔偿及解除制裁等。国际油价应声小幅上涨。' },
+    { tag: '科技', cls: 'news-tech', title: '《2026中国AI盛典》播出，年度AI人物同步揭晓', desc: '8月9日晚《2026中国AI盛典》播出，通过人机共舞、智能装置舞蹈等多元跨界节目呈现科技与艺术盛宴。"2026年度AI人物"同步揭晓，表彰在AI领域做出突出贡献的个人和团队。' }
   ]
 };
 
