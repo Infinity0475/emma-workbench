@@ -1341,19 +1341,20 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'The Transparency Trap: How AI Disclaimers Create Overconfidence in High-Stakes Decisions',
-  authors: 'Neil Todkar',
-  venue: 'arXiv:2608.07493, Submitted 16 Jun 2026',
-  link: 'https://arxiv.org/abs/2608.07493',
-  date: '2026-08-12',
-  abstract: '当前AI免责声明往往因"警告习惯化"和"透明度悖论"而无法达到预期效果。随着AI生成信息在日常决策中日益普遍，有效的风险沟通对负责任的设计愈发关键。本探索性研究考察了免责声明的放置位置和说服性线索如何影响用户在金融、医疗和AI生成内容三个高风险领域的信任、感知准确性和免责声明参与度。采用混合被试内-被试间实验设计，收集了52名参与者的378个刺激级别响应。结果发现：咨询内容在大多数条件下普遍受到信任，即使免责声明存在；医疗内容获得了最高信任评分；在AI领域存在"透明度悖论"——部分参与者将免责声明解读为系统自我意识和诚实的标志，反而提高了感知可信度。此外，"横幅盲区"效应的证据表明，标准化的AI免责声明不足以防止过度依赖。',
+  title: 'When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews',
+  authors: 'He Zhang, Kambinachi Chukwuma, ChanMin Kim, John M. Carroll',
+  venue: 'arXiv:2608.10412, Submitted 11 Aug 2026 | ACM HCOMP 2026',
+  link: 'https://arxiv.org/abs/2608.10412',
+  date: '2026-08-13',
+  abstract: '半结构化访谈是定性研究的核心方法，但一直以来都依赖人工、耗时耗力。这篇论文构建了一个基于实时多模态大语言模型（MLLM）的语音访谈系统 InterviewBot，并招募15名参与者完成了Bot主导的访谈与人工反思环节。通过对428轮对话的精细行为分析，研究揭示了当前LLM在访谈中的关键问题：系统以"确认性回应"为主、深入追问仅占4.9%；28.7%含问题的轮次中塞入了多个问题；此外还识别出信息损失、过早终止、延迟、打断四类数据收集失效。研究进一步从参与者的反思中归纳出三个社会动态：披露校准（AI降低社会压力导致回答更浅）、制度合法性（对AI访谈的信任取决于感知到的机构风险而非对话能力）、以及会话基础（用户将"基于内容的改述"而非"通用社交填充"视为被倾听的信号）。',
   keyPoints: [
-    '"透明度悖论"（Transparency Paradox）——当诚实反而制造盲目：论文最核心的发现是，AI系统越是声明"我是AI，可能出错"，部分用户反而越信任它。这是因为免责声明被解读为"系统有自我意识、很诚实"的信号。这对AI产品经理的启示是：合规性的免责声明可能适得其反——用户把"风险提示"当成了"质量保证"。设计负责任的AI产品，不能只靠加一行免责声明',
-    '"横幅盲区"（Banner Blindness）效应——用户会自动忽略标准化的警告：就像用户对网页上的广告横幅视而不见一样，标准化的AI免责声明也会被大脑"过滤掉"。研究证明，仅仅在界面上加一个统一的AI标识，并不能有效防止用户在高风险场景下过度依赖AI。从产品设计角度看，这意味着风险沟通需要更具上下文感知性，比如根据具体场景动态调整警告的呈现方式',
-    '领域差异显著——同一警告在不同场景效果迥异：研究发现，医疗内容获得了最高的用户信任（即使有免责声明），金融领域次之，AI领域最低。这说明用户对不同领域的"风险感知"差异巨大。对产品经理的启示：不能采用"一刀切"的风险沟通策略，需要根据用户在不同场景下的心理预期，定制差异化的风险提示方案',
-    '对Emma的三重启示：①学术层面：这篇论文展示了HCI研究中"透明度"这一经典议题的新发现——透明不等于理解，声明不等于警示。这对未来做AI信任相关研究非常有价值；②职业层面：作为AI产品经理，你需要思考的不只是"如何让AI更好用"，还有"如何让用户正确理解AI的局限"。这是AI产品设计中最难也最重要的问题之一；③个人层面：你正在备考雅思、学习数据分析——保持对信息的批判性思维，不要因为某个信息看起来很"专业"或"透明"就全盘接受✨'
+    'MLLM面试官的"确认多、追问少"问题：系统对用户回答给予大量"嗯嗯""我理解了"这样的确认性回应，但真正深入挖掘的追问仅占4.9%。这意味着当前LLM在定性访谈中的"信息获取效率"远低于人类访谈员。对于AI辅助研究工具的设计，这是一个核心挑战——不是技术能力不足，而是交互策略需要专门优化',
+    '多问题堆积（28.7%）：尽管明确要求"每次只问一个问题"，MLLM在28.7%含问题的轮次中仍然将多个问题打包发送。这对用户体验的影响是巨大的——用户被迫处理多个认知任务，回答负担增加，信息质量反而下降。这提示AI产品设计需要更强的指令遵循能力，尤其在专业场景下',
+    '四类"数据收集失效"：论文识别了真实部署而非模拟场景下的四种失效模式：信息损失（LLM遗漏关键信息）、过早终止（访谈在信息尚未充分展开时就结束）、延迟（等待时间打断思路）、打断（系统打断用户正在进行的叙述）。这对AI访谈工具的开发是重要的工程与设计参考',
+    '"披露校准"现象——AI降低社会压力但导致回答变浅：与传统假设相反，参与者在面对AI而非人类访谈员时，反而给出了更浅层的自我披露。这可能是因为AI降低了社会压力，但也减少了用户深入叙述的动力。这对用研工作有深刻启示：在某些敏感或深度话题上，人类访谈员仍然是不可替代的',
+    '对Emma的三重启示：①学术价值：这篇论文是HCI与心理学交叉的绝佳范例——用行为数据量化LLM作为"研究工具"的有效性，并发现了人的认知与社会反应的新规律；②方法论启发：定性研究AI化是一个重要趋势，但AI不是人类访谈员的简单替代品，而是需要重新设计交互策略；③产品思维：理解"系统在交互中扮演的角色"——不只是工具属性，还涉及信任建立、社会规范，这正是你心理学背景能发挥作用的地方✨'
   ],
-  takeaway: '这篇论文揭示了一个反直觉的真相：在AI设计中，"透明"可能是一种陷阱。当我们给AI加上免责声明时，用户的大脑可能把它解读为"这个系统很诚实，所以可信"——这与设计初衷完全相反。对你来说，这篇论文的最大价值在于思维升级：未来做AI产品时，不能停留在"加个免责声明"这种表面功夫上，而要深入理解用户的认知过程，设计更有层次、更上下文感知的风险沟通方案。这也是HCI与心理学交叉的魅力所在——理解人的认知偏差，才能设计出真正负责任的产品✨'
+  takeaway: '这篇论文对Emma来说尤为珍贵，因为它直接涉及她未来的职业方向：AI产品经理 + 用户研究。它告诉我们，当前LLM在定性研究场景下的核心问题不是"不够聪明"，而是"交互策略"不对——确认太多、追问太少、问题堆积。对于AI产品的设计者来说，这意味着我们不能简单地将LLM包装成"AI访谈工具"，而要深入理解人在特定场景下的认知与社会需求。作为应用心理学的准研究生，你的心理学背景恰恰能让你看到这些LLM工程师可能忽略的"人"的维度——这也是你未来在AI产品领域最重要的差异化竞争力之一✨'
 };;
 
 function renderPaper() {
@@ -1392,39 +1393,45 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'scrutinize', pos: 'v.', def: '\u4ed4\u7ec6\u5ba1\u67e5\uff0c\u7ec6\u5bdf\uff08/\u02c8skru\u02d0t\u0259na\u026az/\uff09' },
-  { word: 'exacerbate', pos: 'v.', def: '\u4f7f\u6076\u5316\uff0c\u52a0\u5267\uff08/\u0259\u02c8s\u00e6s\u0259be\u026at/\uff09' },
-  { word: 'substantiate', pos: 'v.', def: '\u8bc1\u5b9e\uff0c\u7528\u8bc1\u636e\u652f\u6301\uff08/s\u0259b\u02c8st\u00e6n\u0283ie\u026at/\uff09' },
-  { word: 'paradigm', pos: 'n.', def: '\u8303\u5f0f\uff0c\u5178\u8303\uff08/\u02c8p\u00e6r\u0259da\u026am/\uff09' },
-  { word: 'empirical', pos: 'adj.', def: '\u7ecf\u9a8c\u7684\uff0c\u4ee5\u89c2\u5bdf\u4e3a\u4f9d\u636e\u7684\uff08/\u026am\u02c8p\u026ar\u026akl/\uff09' },
-  { word: 'corroborate', pos: 'v.', def: '\u8bc1\u5b9e\uff0c\u652f\u6301\uff08/k\u0259\u02c8r\u0252b\u0259re\u026at/\uff09' },
-  { word: 'ambiguous', pos: 'adj.', def: '\u6a21\u68f1\u4e24\u53ef\u7684\uff0c\u542b\u7cca\u7684\uff08/\u00e6m\u02c8b\u026a\u0261ju\u0259s/\uff09' },
-  { word: 'propensity', pos: 'n.', def: '\u503e\u5411\uff0c\u4e60\u6027\uff08/pr\u0259\u02c8pens\u0259ti/\uff09' },
-  { word: 'heterogeneous', pos: 'adj.', def: '\u5f02\u8d28\u7684\uff0c\u591a\u79cd\u591a\u6837\u7684\uff08/\u02cchet\u0259r\u0259\u02c8d\u0292i\u02d0ni\u0259s/\uff09' },
-  { word: 'provisional', pos: 'adj.', def: '\u4e34\u65f6\u7684\uff0c\u6682\u5b9a\u7684\uff08/pr\u0259\u02c8v\u026a\u0283\u0259nl/\uff09' }
+  { word: 'scrutinize', pos: 'v.', def: '仔细检查，细致审查（/ˈskruːtənaɪz/）' },
+  { word: 'exacerbate', pos: 'v.', def: '使恶化，使加剧（/ɪɡˈzæsəbeɪt/）' },
+  { word: 'substantiate', pos: 'v.', def: '证实，用证据支持（/səbˈstænʃieɪt/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验的，以观察为依据的（/emˈpɪrɪkl/）' },
+  { word: 'corroborate', pos: 'v.', def: '证实，印证（/kəˈrɒbəreɪt/）' },
+  { word: 'ambiguous', pos: 'adj.', def: '模棱两可的，含糊的（/æmˈbɪɡjuəs/）' },
+  { word: 'propensity', pos: 'n.', def: '倾向，习性（/prəˈpensəti/）' },
+  { word: 'heterogeneous', pos: 'adj.', def: '异质的，多种多样的（/ˌhetərəˈdʒiːniəs/）' },
+  { word: 'provisional', pos: 'adj.', def: '临时的，暂定的（/prəˈvɪʒənl/）' }
 ]
 
 const ieltsSpeaking = {
-  topic: 'Describe a person you admire',
-  bullet: 'You should say: who the person is, what kind of person they are, what their special abilities are, and explain why you admire them.',
-  sample: `I'd like to talk about my grandmother, who is undoubtedly the person I admire most in this world. She's in her late seventies now, but she still has this incredible vitality that inspires everyone around her.
+  topic: 'Describe a piece of advice you gave to a friend',
+  bullet: 'You should say: who the friend is, what the situation was, what advice you gave, and explain how useful the advice was.',
+  sample: `I'd like to share an experience from about a year ago when my best friend Li Hua was really struggling with her postgraduate application.
 
-What makes her truly remarkable is her resilience. She grew up in a small village in Hunan province with very limited access to education. Despite that, she taught herself to read and write by listening to her older brother's lessons through the window. That determination has defined her entire life.
+She had excellent grades and had done some solid research, but she was completely paralyzed by anxiety about whether she was "good enough" for top programs. She kept comparing herself to other applicants she found online and feeling inadequate.
 
-Her special ability, if I had to name one, would be her emotional intelligence. She has this extraordinary gift for making everyone feel heard and valued. Whenever family members face dilemmas, she never imposes her views. Instead, she asks thoughtful questions that help you arrive at your own conclusions. I've seen her diffuse tense situations with nothing but a well-timed joke or a gentle touch on the shoulder.
+What struck me most was that her anxiety was actually preventing her from putting together her best application. She was spending so much time worrying that she had almost no energy left for the actual work.
 
-The reason I admire her so deeply goes beyond these qualities. She represents a kind of quiet strength that doesn't need external validation. She never went to university, never held an official position, yet she's the most influential person in our family. She taught me that true impact comes not from titles or achievements, but from the consistency of your character and the warmth you bring to people's lives. In a world that constantly pressures us to prove ourselves, she embodies the wisdom that being genuinely kind and present is already extraordinary.`,
+The key piece of advice I gave her was this: "Stop comparing your behind-the-scenes with everyone else's highlight reel." I told her that the people who get into top programs aren't necessarily the ones with perfect profiles — they're often the ones who can articulate their story most authentically and clearly.
+
+I suggested she spend one week just writing honestly about her journey — her motivations, her struggles, what she had genuinely learned — without worrying about whether it sounded "impressive enough." Once she had that raw material, we could refine the narrative together.
+
+She took my advice, and it completely changed her approach. Instead of trying to construct a perfect image, she focused on being genuine. She ended up getting into her top-choice program, and what moved the admissions committee most, she told me later, was exactly the honesty and vulnerability in her personal statement.
+
+Looking back, I think the advice was useful not just for her application, but for her whole approach to challenges. She later told me she now asks herself "Am I comparing again?" whenever she starts feeling anxious. That self-awareness is probably the most valuable thing she took away from that experience.`,
   expressions: [
-    '🌟 undoubtedly the person I admire most — 毫无疑问是我最钦佩的人',
-    '🌟 incredible vitality — 惊人的生命力',
-    '🌟 that determination has defined her entire life — 那种决心定义了她的一生',
-    '🌟 extraordinary gift for making everyone feel heard — 让每个人都感到被倾听的非凡天赋',
-    '🌟 diffuse tense situations — 化解紧张局面',
-    '🌟 quiet strength — 沉静的力量',
-    '🌟 doesn\'t need external validation — 不需要外部认可',
-    '🌟 the consistency of your character — 品格的一致性',
-    '🌟 embodies the wisdom that... — 体现了……的智慧',
-    '🌟 genuinely kind and present — 真诚善良且用心陪伴'
+    '🌟 be paralyzed by anxiety — 被焦虑所困，无法行动',
+    '🌟 compare yourself to others — 与他人比较',
+    '🌟 articulate your story — 清晰表达你的经历',
+    '🌟 authentically — 真实地，坦诚地',
+    '🌟 put together her best application — 打造出最出色的申请材料',
+    '🌟 highlight reel — 高光时刻集锦（指社交媒体上展示的最好一面）',
+    '🌟 raw material — 原始素材',
+    '🌟 vulnerability in her personal statement — 个人陈述中的真诚袒露',
+    '🌟 self-awareness — 自我觉察',
+    '🌟 move the admissions committee — 打动招生委员会'
   ]
 };;
 
@@ -1471,13 +1478,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '在人生的中场，我们终于明白：真正的勇气不是征服什么，而是承受什么。承受日常的琐碎，承受不被理解的孤独，承受理想与现实之间那道永远无法弥合的裂缝。而正是在这种承受中，我们发现了自己比想象中更坚韧的部分。',
-  source: 'Albert Camus《西西弗神话》（The Myth of Sisyphus, 1942）',
+  quote: '"We are all alone, born alone, die alone, and—in spite of two billion years of evolution—no one has yet managed to keep the experience of life inside us as a living thing. We have only managed to keep it as a dead thing, the way we preserve rare books and butterflies in_LIBRARIES—outside of life."',
+  source: 'Harold Pinter, "The Proust Screenplay" (1977)',
   analysis: [
-    '<b>"承受"的哲学——加缪的荒诞英雄主义</b>：阿尔贝·加缪是20世纪法国存在主义文学的核心人物。《西西弗神话》以希腊神话中被罚永远推巨石上山的西西弗为核心意象，探讨了一个根本性的哲学问题：当人生本质上是"荒诞"的——即人类的求义本能与世界的沉默无义之间永远存在矛盾——我们为何还要活下去？加缪的回答是：正view如这段文字所说，勇气不在于"征服"，而在于"承受"。这与心理学中的"心理韧性"（resilience）概念高度一致——韧性不是没有痛苦，而是在痛苦中依然能找到意义。',
-    '<b>"日常的琐碎"作为英雄主义</b>：加缪最具颠覆性的观点是，西西弗在下山的那一刻——当他意识到石头还会再滚下来，却依然选择走下山去——他是幸福的。这个"下山时刻"就是对日常重复生活的隐喻。从积极心理学的角度看，这与Viktor Frankl的意义疗法（logotherapy）异曲同工：意义不在远方，在此刻的态度中。对Emma来说，背单词、学Python、读论文——这些看似"琐碎"的日常，恰恰是加缪所说的"承受中的坚韧"。',
-    '<b>存在主义与心理学的交汇</b>：加缪的哲学与现代心理学的"接纳承诺疗法"（ACT, Acceptance and Commitment Therapy）有着深刻的共鸣。ACT的核心主张是：痛苦不可避免，但我们可以选择如何与痛苦共处，并在其中践行自己看重的价值。这与加缪的"承受中发现坚韧"几乎是对同一真理的不同表述。你即将学习的应用心理学，会越来越多地接触到这类哲学与科学的交汇点。',
-    '<b>给Emma的话</b>：你正站在人生的一个重要转折点上——从本科到研究生，从编导到心理学，从迷茫到逐渐清晰。这个过程中一定会有很多"推石上山"的时刻：雅思成绩不够理想的焦虑、编程学到崩溃的挫败、对未来不确定的恐惧。加缪告诉我们：这些时刻本身就是意义。不是因为你终将到达山顶，而是因为你在推的过程中，看到了自己比想象中更强大的样子。就像西西弗下山的那个瞬间——清醒、坚定、甚至带着微笑✨'
+    '<b>哈罗德·品特与"孤独"的存在主义书写</b>：品特是2005年诺贝尔文学奖得主，以"品特式戏剧"闻名——那种充满停顿、沉默与言外之意的独特戏剧风格。这段话出自他为普鲁斯特《追忆似水年华》改编的电影剧本，它用最直白的语言说出了存在主义最核心的命题：我们每个人在本质上都是孤独的。这种孤独不是"没有朋友"的孤独，而是"没有任何人能真正分享你的内在体验"的孤独——每一个人的生命经验，都是独一无二的、不可复制的、无法传递的。',
+    '<b>生命经验作为"死的知识"</b>：这段话最震撼的洞察是"no one has yet managed to keep the experience of life inside us as a living thing"——我们无法把活生生的生命经验保留在内心，只能把它"保存"为某种"死的东西"。就像图书馆里压平的蝴蝶、装订好的精装书——它们曾经是鲜活的生命，但一旦被"保存"，就失去了生命力。这不就是我们每天在做的事吗？背单词、背概念、背方法论——把鲜活的体验压缩成可以提取的"知识点"，却忘了体验本身才是最珍贵的。',
+    '<b>存在主义心理学视角</b>：品特的话与存在主义心理学的核心议题高度呼应——特别是Irvin Yalom的"死亡意识"理论。Yalom认为，正是人类对"存在性孤独"（existential isolation）的觉察，促使我们去建立连接、寻找意义。但品特在这里提出了一个更悲观的视角：连接是有限的，孤独是根本的。这不是消极，而是对人类存在处境的诚实描述。理解这一点，反而能让我们更珍惜那些真实的、不完美的连接——因为它们是真正珍贵的。',
+    '<b>给Emma的话</b>：你即将进入心理学研究生的学习，会接触大量的理论、模型、测量工具——这些是把"活生生的生命经验"转化为"可研究的数据"所必需的。但请记住品特的提醒：不要让这些框架和概念遮蔽了你对真实生命体验的感受力。做用户研究时，最有价值的不是你掌握的统计方法，而是你能否真正"听到"用户的内在体验；读文献时，最重要的不是记住了多少结论，而是你是否保持了那种对人类行为和心理现象的鲜活好奇。你是学广播电视编导出身的——纪录片训练了你对真实人物的观察力和共情能力，这是你心理学学习中最珍贵的东西之一。不要让它被"知识"压成标本。保持鲜活✨'
   ]
 };;
 
@@ -1509,16 +1516,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月12日 星期三',
+  date: '2026年8月13日 星期四',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '公安部发布打击侵犯公民个人信息犯罪10起典型案例', desc: '公安部网安局发布打击侵犯公民个人信息犯罪典型案例，涉及非法获取公民个人信息、倒卖数据等多种犯罪形式，彰显公安机关持续强化个人信息保护的决心。' },
-    { tag: '国内', cls: 'news-domestic', title: '暴雨橙色预警：河南、安徽等多地有大暴雨，北京启动防汛四级应急响应', desc: '受台风残余环流和冷空气共同影响，河南中北部、安徽中北部、河北中西部等地有大暴雨。国家防总针对北京、天津、山西启动防汛四级应急响应，水利部同步启动洪水防御响应。' },
-    { tag: '国际', cls: 'news-intl', title: '哥伦比亚强震死亡人数升至234人，救援持续进行', desc: '哥伦比亚8月10日发生的强烈地震已造成234人死亡，大量建筑、学校和医疗中心损毁。总统德拉埃斯普列亚宣布全国哀悼，联合国秘书长古特雷斯表示"悲痛"。' },
-    { tag: '科技', cls: 'news-tech', title: '宇树科技IPO中签率创科创板新低，"人形机器人第一股"引爆市场', desc: '宇树科技首次公开发行A股，中签率仅0.018%创科创板历史新低，有效申购户数约978万户创历史新高。发行价150.8元/股，多名90后初代员工身价或超千万。' },
-    { tag: '国际', cls: 'news-intl', title: '乌克兰称已向美方提交和平提案，呼吁加强防空与对俄施压', desc: '乌克兰总统泽连斯基在夜间视频讲话中表示已向美方提交和平提案，呼吁美国帮助加强防空并对俄罗斯施压以结束超过四年的战争。' },
-    { tag: '天文', cls: 'news-domestic', title: '今晚英仙座流星雨迎极大期，新月夜观赏条件极佳', desc: '8月12日深夜至13日凌晨，英仙座流星雨迎来极大期，恰逢新月几乎无月光干扰，是今年最佳观测时机。国内天文爱好者可在远离光污染的郊外朝东北方向观赏。' },
-    { tag: '科技', cls: 'news-tech', title: '阿里云Fluss跻身Apache顶级项目，实时数据基础设施获国际认可', desc: '阿里云开源流式存储项目Apache Fluss正式成为Apache顶级项目，为AI Agent提供秒级更新的上下文支撑。目前已在阿里、小红书、京东等企业生产环境落地。' },
-    { tag: '国内', cls: 'news-domestic', title: '著名歌剧表演艺术家郭兰英逝世，享年97岁', desc: '中国歌剧舞剧院发布讣告，"人民艺术家"国家荣誉称号获得者、著名歌剧表演艺术家郭兰英因病于8月11日在广州逝世，享年97岁。其代表作《我的祖国》等广为传唱。' }
+    { tag: '科技', cls: 'news-tech', title: '国产大飞机C919完成首次国际商业航班飞行，降落蒙古新乌兰巴托机场', desc: '8月12日，C919从北京首都国际机场起飞，平稳降落在蒙古国新乌兰巴托机场，标志着C919投入商业运营后开通的首条国际航线圆满完成。这是中国航空工业的重要里程碑。' },
+    { tag: '科技', cls: 'news-tech', title: '上海微系统所攻克"铜代银"关键技术，新型材料"蒙烯铜粉"填补产业化空白', desc: '中国科学院上海微系统与信息技术研究所于庆凯研究员团队成功制备新型材料"蒙烯铜粉"，相关成果发表于《材料科学技术》，为电子浆料"铜代银"开辟全新产业化路径，有望大幅降低光伏等电子产业成本。' },
+    { tag: '国际', cls: 'news-intl', title: 'WHO质疑美国疫苗政策变更，称防疫政策调整缺乏科学依据', desc: '世卫组织就美国在儿童疫苗接种政策上的重大调整表达关切，指出相关变化缺乏最新科学证据支撑，可能导致儿童群体暴露于可预防疾病风险之中，呼吁美国政府重新评估该政策。' },
+    { tag: '国内', cls: 'news-domestic', title: 'BBA在华销量大幅下滑，宝马、奔驰、奥迪均创近年跌幅纪录', desc: '今年上半年，宝马在华交付26.18万辆（同比-20.4%），奥迪23.22万辆（同比-19.3%），奔驰21.02万辆（同比-28%）。中国汽车市场格局正在深刻重塑，国产品牌崛起对传统豪华品牌形成强力冲击。' },
+    { tag: '国际', cls: 'news-intl', title: 'PSG赢得欧洲超级杯冠军，17岁小将刷新最年轻进球纪录', desc: '巴黎圣日耳曼在欧洲超级杯以2:1击败阿斯顿维拉，格鲁吉亚球星克瓦拉茨赫利亚首开纪录，17岁的麦克乔攻入一球成为该项赛事史上最年轻进球者。' },
+    { tag: '天文', cls: 'news-domestic', title: '欧洲迎来20年来首次日全食，西班牙数十万游客专程前往观测', desc: '日全食带从北冰洋掠过格陵兰岛和冰岛后进入欧洲大陆，西班牙和葡萄牙出现日全食，数10万欧洲及全球游客专程前往观测——欧洲大陆上一次出现日全食已是20年前。' },
+    { tag: '国内', cls: 'news-domestic', title: '伊拉克宣布美方 coalition 撤军最后期限为9月30日，态度坚决', desc: '伊拉克总理阿里·扎维迪与美国中央司令部司令布拉德·库珀会晤时表示，美方主导的联军在伊拉克的军事任务将于9月30日如期结束。伊方称这是"最终和最终的协议"。' },
+    { tag: '科技', cls: 'news-tech', title: '阿里云Fluss晋升Apache顶级项目，为AI Agent提供秒级实时数据支撑', desc: '阿里云开源流式存储项目Apache Fluss正式成为Apache顶级项目，为AI Agent提供秒级更新的上下文支撑，目前已在阿里、小红书、京东等企业生产环境落地，标志着中国开源项目在全球舞台取得重要突破。' }
   ]
 };;
 
