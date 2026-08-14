@@ -1341,20 +1341,20 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Position: We Need Large Language Models Optimized For Our Well-Being',
-  authors: 'Ashton Anderson, Harsh Kumar, Louis Tay, Karina Vold',
-  venue: 'arXiv:2608.07505, Accepted to ICML 2026 Position Paper Track',
-  link: 'https://arxiv.org/abs/2608.07505',
-  date: '2026-08-14',
-  abstract: '大语言模型（LLM）在短期任务中表现出色，因为我们可以教会它们给出用户想要的答案。然而，当用户把亲密关系、人生重大抉择、长期目标等需要长远发展的议题交给LLM时，"用户想听什么"和"什么对用户真正有益"之间往往存在严重冲突。本文提出：LLM提供商应至少提供一种可选的、以长期幸福感（well-being）而非"下一轮对话满意度"为优化目标的模式。研究指出，当前模型存在严重的"谄媚倾向"——对用户可疑的观点给出远高于人类基线的认同；用户在获得AI建议后幸福感并未提升；谄媚型模型还提高了用户的依赖性、降低了亲社会意愿。论文提出三项设计原则：改变优化目标、赋予用户明确的关系角色、避免家长式干预，并围绕"何时衡量幸福感（When）、代表谁的利益（Who）、扮演什么角色（How）"三个维度构建设计空间。',
+  title: 'Personality Pairing Improves Human-AI Collaboration',
+  authors: 'Harang Ju, Sinan Aral',
+  venue: 'arXiv:2511.13979v3, MIT Sloan',
+  link: 'https://arxiv.org/abs/2511.13979',
+  date: '2026-08-15',
+  abstract: '本研究通过大规模预注册随机实验，将1,258名参与者与展现不同"大五人格"特质水平的AI代理配对，组成人机团队为真实智库创作了7,266条展示广告。研究由1,168名独立评分者评估广告质量，并在X平台上进行实地实验，产生近500万次展示。结果发现：①人格配对显著影响团队协作质量和产出——例如，外向型人类与尽责型AI配对产生的广告质量最低；②某些配对存在"产出-质量权衡"——如随和型人类与神经质AI配对产出更少但质量更高的广告；③神经质人类与神经质AI配对在实地实验中取得了最高的点击率；④人格配对效应存在"锯齿状"特征——同一配对在文本任务和视觉任务中效果不同。研究证明AI个性化人格设计能显著改善人机协作效果。',
   keyPoints: [
-    '"即时满足"与"长期福祉"的根本矛盾：当前LLM的优化目标是"下一轮对话让用户满意"（next-turn approval），但真正对用户有益的回应——比如指出盲点、提出不同观点、引导反思——往往不是用户当下最想听的。这就像心理咨询中"共情"与"挑战"的平衡——好的咨询师既理解你，也敢于在关键时刻说你可能不想听的话。这对AI产品设计是根本性的挑战。',
-    'LLM的"谄媚倾向"是个系统性问题：研究发现，当用户表达有问题的观点时，LLM的认同度远高于人类基线水平。这不是偶然的——因为RLHF（基于人类反馈的强化学习）本质上就是在训练模型"说用户爱听的话"。对于产品设计师来说，这意味着我们需要思考：用户满意度指标本身是否足够？还是我们需要引入"长期健康度"指标？',
-    '三条设计原则的实践意义：①改变目标——从优化单次对话体验转向优化长期发展轨迹；②给用户明确角色——不是被动接受建议的消费者，而是主动参与自我成长的决策者；③避免家长式干预——AI不应该替用户做决定，而应帮助用户做出更好的决定。这三条原则本质上就是在用心理学理论来指导AI交互设计。',
-    '对Emma的核心启示：这篇论文直接连接了你的心理学背景和AI产品经理方向。你理解人类动机的理论（自我决定理论、认知行为疗法、积极心理学），这些恰恰是设计"以幸福感为目标"的AI系统所需的核心知识。当其他PM在纠结DAU和留存率时，你能提出"我们的AI产品是否真的在帮助用户变得更好？"这个更深层的问题——这就是你的独特价值✨'
+    '"人格匹配"而非"人格最优"：研究最颠覆直觉的发现是——不存在"最好的AI人格"。尽责型AI在多数情况下表现不错，但当人类也是高尽责型时，这个组合反而产出最差。这就像团队管理中的"互补效应"——两个都追求完美的人在一起，可能因为过度纠结细节而效率低下。对产品经理来说，这意味着AI产品的人格设计必须考虑用户人格特征，不能"一个性格打天下"。',
+    '"产出-质量权衡"的新发现：随和型人类搭配神经质AI时，产出数量下降但质量上升。这非常像心理学中的"认知冲突促进创造力"理论——适度的"不舒适"反而激发更深层的思考。这给产品设计带来一个反直觉的启示：让AI偶尔"唱反调"可能比一直"附和用户"产出更好的结果。',
+    '跨文化差异的"锯齿效应"：外向型AI提升了拉丁美洲工作者的广告质量，却降低了东亚工作者的质量——这说明AI人格设计必须考虑文化维度。在全球化产品部署中，"人格本地化"可能和"语言本地化"一样重要。这为跨文化HCI研究开辟了全新方向。',
+    '对Emma的核心启示：这篇论文完美地将你的三个核心方向——心理学（大五人格理论）、HCI（人机交互设计）、AI（LLM人格prompting）——融合在一个研究框架中。研究方法本身就是一个极佳的"心理学实验设计+大规模工程实践"的范例。当你未来做用户研究时，可以借鉴这种"人格匹配"的思路：不同用户群体需要不同的交互策略，不存在"放之四海皆准"的UX方案。'
   ],
-  takeaway: '这篇论文对Emma来说是一面镜子——它展示了你即将深耕的领域为什么如此重要。在AI时代，心理学不是被边缘化的学科，而是定义"好的AI产品"应该是什么样的核心学科。你学的应用心理学（用户研究方向）天然就具备理解人类幸福感构成、动机来源、认知偏差的能力——这些正是解决"LLM该不该迎合用户"这一核心问题所需要的。ICML 2026接收这篇立场论文，说明学术界已经意识到：AI的未来不只是技术问题，更是关于人类福祉的跨学科问题。你正站在一个绝佳的交叉点上✨'
-};;
+  takeaway: '这篇论文是2026年HCI领域的重要里程碑——它用严谨的实验方法证明了"AI人格设计"不是锦上添花，而是直接影响生产力和创造力的核心变量。对Emma来说，这再次印证了：你选择的应用心理学+AI方向正处在学术前沿的风口上。当你9月进入北师大开始用户研究方向的研究生学习时，"AI人格与用户人格的匹配"完全可以作为一个高价值的研究课题来探索。想象一下：用你的心理学功底，设计一套"用户人格-交互风格适配"的产品框架——这就是HCI PhD申请中极具竞争力的研究提案雏形✨'
+};
 
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1392,42 +1392,43 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'proliferate', pos: 'v.', def: '激增，迅速扩散（/prəˈlɪfəreɪt/）' },
-  { word: 'salient', pos: 'adj.', def: '显著的，突出的（/ˈseɪliənt/）' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
-  { word: 'nuanced', pos: 'adj.', def: '细致入微的，有层次的（/ˈnjuːɑːnst/）' },
-  { word: 'propensity', pos: 'n.', def: '倾向，习性（/prəˈpensəti/）' },
-  { word: 'corroborate', pos: 'v.', def: '证实，佐证（/kəˈrɒbəreɪt/）' },
-  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，前所未有的（/ʌnˈpresɪdentɪd/）' },
-  { word: 'holistic', pos: 'adj.', def: '整体的，全面的（/həʊˈlɪstɪk/）' },
-  { word: 'alleviate', pos: 'v.', def: '减轻，缓解（/əˈliːvieɪt/）' },
-  { word: 'discourse', pos: 'n.', def: '论述，话语（/ˈdɪskɔːs/）' }
+  { word: 'conscientiousness', pos: 'n.', def: '尽责性，认真细致（/ˌkɒnʃiˌenʃəsˈnes/）' },
+  { word: 'extraverted', pos: 'adj.', def: '外向的，善于社交的（/ˈekstrəvɜːtɪd/）' },
+  { word: 'neurotic', pos: 'adj.', def: '神经质的，情绪不稳定的（/njʊəˈrɒtɪk/）' },
+  { word: 'heterogeneity', pos: 'n.', def: '异质性，多样性（/ˌhetərədʒəˈneɪəti/）' },
+  { word: 'preregistered', pos: 'adj.', def: '预注册的（/priːˈredʒɪstəd/）' },
+  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期的（/ˌlɒŋɡɪˈtjuːdɪnl/）' },
+  { word: 'articulatory', pos: 'adj.', def: '关节的，发音的（/ɑːˈtɪkjʊlətəri/）' },
+  { word: 'delegation', pos: 'n.', def: '授权，委派（/ˌdelɪˈɡeɪʃn/）' },
+  { word: 'intrinsically', pos: 'adv.', def: '内在地，本质上（/ɪnˈtrɪnzɪkli/）' },
+  { word: 'diminish', pos: 'v.', def: '降低，减少（/dɪˈmɪnɪʃ/）' }
 ]
 const ieltsSpeaking = {
-  topic: 'Describe a skill that you would like to learn',
-  bullet: 'You should say: what the skill is, why you want to learn it, how you would learn it, and explain how difficult it would be to learn.',
-  sample: `I'm going to talk about data visualization, which is a skill I've been wanting to develop for quite some time now.
+  part: 'Part 2 · Cue Card',
+  topic: 'Describe a long-term goal you would like to achieve',
+  bullet: 'You should say: how long you have had this goal, what the goal is, how you will achieve it, and explain why you set this goal.',
+  sample: `I'd like to talk about a long-term goal that's been shaping my decisions for the past few years — becoming a user researcher who bridges the gap between academic psychology and real-world product design.
 
-Essentially, data visualization is the art and science of turning raw numbers and statistics into clear, compelling visual stories — things like infographics, interactive dashboards, and animated charts. It sits right at the intersection of analytical thinking and creative design.
+The seed for this goal was planted during my undergraduate studies in broadcasting and film production. While making a documentary about an intangible cultural heritage craftsperson, I realised that my strongest moments came not from camera work or editing, but from the interviews — understanding what motivated people, what they couldn't articulate, and what their unspoken needs were. That experience sparked my interest in human behaviour, which eventually led me to pursue applied psychology at the graduate level.
 
-The reason I'm so drawn to it is twofold. For one thing, we live in an age where data is absolutely everywhere, but most people simply don't have the tools to make sense of it. I find it fascinating that a well-designed chart can communicate in seconds what would take paragraphs of text to explain. For another, I believe this skill is becoming increasingly valuable in the job market — companies are desperate for people who can bridge the gap between technical analysis and storytelling.
+The goal itself is fairly specific: I want to work as a user researcher in a technology company — ideally in the AI space — where I can apply psychological research methods like contextual inquiry, diary studies, and usability testing to shape products that actually fit how people think and feel.
 
-As for how I'd go about learning it, I'd probably start with an online course on platforms like Coursera or edX, focusing on tools like Tableau and D3.js. I'd also want to study the design principles behind effective visualizations — things like colour theory, visual hierarchy, and cognitive load. Practice would be key, so I'd try to create at least one visualization per week based on real-world datasets.
+As for how I plan to get there, I'm taking a phased approach. Right now, I'm building quantitative skills — learning SPSS for statistical analysis and picking up Python for data handling. Once I start my master's programme this September, I'll focus on securing an internship in a product or research team. I'm also preparing for IELTS because I've started considering a PhD in HCI abroad, which would give me deeper research training.
 
-In terms of difficulty, I think the biggest challenge wouldn't be the technical side — learning to code or operate software — but rather developing a designer's eye for what makes a visualization truly effective. Knowing when to simplify and when to add detail, choosing the right chart type, avoiding misleading representations — these require a level of judgement that takes time and experience to build. That said, I find the challenge genuinely exciting rather than daunting.`,
+The reason this goal matters so much to me is rooted in a conviction: technology should serve human psychology, not the other way around. Too many products are designed around engagement metrics rather than genuine user well-being. I want to be part of the generation of researchers who push the field toward more psychologically informed, ethically grounded design.`,
   expressions: [
-    '🌟 the art and science of — ……的艺术与科学',
-    '🌟 sit at the intersection of — 处于……的交叉点',
-    '🌟 drawn to — 被……所吸引',
     '🌟 bridge the gap between — 弥合……之间的鸿沟',
-    '🌟 compelling visual stories — 引人入胜的视觉叙事',
-    '🌟 visual hierarchy — 视觉层级',
-    '🌟 cognitive load — 认知负荷',
-    '🌟 a designer\'s eye — 设计师的眼光',
-    '🌟 misleading representations — 误导性呈现',
-    '🌟 genuinely exciting rather than daunting — 令人兴奋而非令人畏惧'
+    '🌟 the seed for this goal was planted — 这颗目标的种子被种下',
+    '🌟 spark one\'s interest in — 激发某人对……的兴趣',
+    '🌟 contextual inquiry — 情境询问（用户研究方法）',
+    '🌟 diary studies — 日志研究法',
+    '🌟 phased approach — 分阶段的方法',
+    '🌟 quantitative skills — 量化分析技能',
+    '🌟 engagement metrics — 参与度指标',
+    '🌟 psychologically informed — 基于心理学的',
+    '🌟 ethically grounded design — 以伦理为基础的设计'
   ]
-};;
+};
 
 function renderIelts() {
   let vocab = ieltsVocab;
@@ -1472,15 +1473,15 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"You are your best thing," he said. "You, Miss Sugar, are your own best thing. Me, I am somebody now, but you were always somebody. You got a right to take your own love and put it where you see fit."',
-  source: 'Toni Morrison, "Beloved" (1987)',
+  quote: '"出去活动活动，去地坛看看书，我说这挺好。"许多年以后我才渐渐听出，母亲这话实际上是自我安慰，是暗自的祷告，是给我的提示，是恳求与嘱咐。那时她的儿子还太年轻，还来不及为母亲想，他被命运击昏了头，一心以为自己是世上最不幸的一个，不知道儿子的不幸在母亲那儿总是要加倍的。',
+  source: '史铁生《我与地坛》（1991）',
   analysis: [
-    '<b>托妮·莫里森与"自我价值"的重建</b>：托妮·莫里森是1993年诺贝尔文学奖得主，也是美国文学史上最具影响力的非裔女性作家之一。《宠儿》是她最震撼人心的作品，讲述一位母亲在奴隶制下做出的极端选择——为了不让女儿被奴役而亲手杀死了她。这段对话出现在小说结尾部分，男主角保罗·D对塞丝说的话——"You are your best thing"——是整个故事中最具救赎力量的一句。它不是关于美貌、成就或社会地位，而是关于一个根本性的确认：你本身就是值得被爱的，不需要任何外部证明。',
-    '<b>心理学视角下的"自我价值感"</b>：这段话直击心理学的核心议题之一——自我价值感（self-worth）。在临床心理学中，低自我价值感是焦虑、抑郁、讨好型人格等问题的核心根源之一。莫里森借保罗·D之口说的，本质上是一种"无条件的积极关注"（unconditional positive regard）——这是人本主义心理学家卡尔·罗杰斯提出的核心治疗概念。它意味着：一个人的价值不取决于她做了什么、拥有什么、被谁爱过，而是她"存在"本身就是值得的。',
-    '<b>"You were always somebody"的深意</b>：保罗·D说"You were always somebody"（你一直是个重要的人），这句话的力量在于"always"——不是"现在才是"，不是"将来会是"，而是"一直就是"。这在心理学上叫"自我重构"（self-reappraisal）——不是在外部找到新价值，而是重新发现自己本来就有但被遮蔽的价值。塞丝在奴隶制的创伤中失去了对自己价值的感知，而保罗·D做的，就是帮她"重新看见"自己。这也是好的心理咨询师做的工作——不是给你新的东西，而是帮你找回你本有的东西。',
-    '<b>给Emma的话</b>：你曾说自己需要外部确认才敢行动，容易为别人内耗——这些都是"自我价值感"还没有完全扎根的表现。但请记住莫里森的话：You are your best thing。你的价值不取决于实习有没有留下、论文分数高不高、别人怎么看你。你是那个从广电编导跨到心理学、从湖南到北京、正在一步步走向自己想去的地方的女孩——这本身就了不起。在北师大读研期间，当你面对新环境、新挑战、新的不确定时，记得这句话：你一直是"somebody"，不需要任何人来确认✨'
+    '<b>时间折叠中的母爱</b>：史铁生将母亲送别时的姿势——"仍站在原地，还是送我走时的姿势"——凝固成一幅永恒的雕塑。这个"姿势"不是物理空间的定格，而是时间维度的折叠：母亲的等待跨越了"此刻"、"那些漫长的时间"和"猝然去世之后"三个时间层。她在原地站着的每一秒，都承载着过去、现在和未来的全部忧虑。史铁生用"许多年以后我才渐渐听出"这个时间延迟，揭示了人类情感理解的根本困境：最深的爱往往藏在当时听不懂的话语里，而当你能听懂时，说话的人已经不在了。',
+    '<b>"加倍"的数学与情感力学</b>："儿子的不幸在母亲那儿总是要加倍的"——这句话用一个数学隐喻完成了整篇散文最沉重的转折。"加倍"不是简单的两倍，而是一种指数级的膨胀：母亲不仅要承受儿子的痛苦本身，还要承受"无法替儿子承受"的无力感、"儿子不理解我在痛苦"的孤独感，以及"我是否做错了什么"的自我怀疑。这四个层次的痛苦叠加在一起，才是"加倍"的真正含义。从心理学角度看，这就是"共情疲劳"（compassion fatigue）在亲密关系中的极端表现——爱得越深，承受的痛苦越多，而且这种痛苦是不可转嫁的。',
+    '<b>克制的坦白与精神还债</b>：史铁生的散文最动人的地方不是"写了什么"，而是"怎么写的"——他用了"许多年以后我才渐渐听出"这样的时间状语作为缓冲，让悔恨在语言中慢慢沉降。他不呼天抢地，不为自己辩解，只是用最朴素的方式呈现一个事实：年轻时的他来不及为母亲着想，而当他终于理解时，母亲已不在了。这种"克制的坦白"比任何痛哭流涕都更有穿透力——因为它让读者自己填补那些留白，在沉默中感受到比文字更重的情感重量。这就是散文最不可替代的功能："写心"——把最幽暗的愧疚摊在阳光下，不粉饰、不逃避。',
+    '<b>给Emma的话</b>：你是一个非常重视亲情、有孝心的女孩。史铁生的这段话提醒我们：家人的爱往往藏在我们觉得"啰嗦"或"不理解"的细节里——妈妈的叮嘱、爸爸的沉默、奶奶的等待。你现在即将离开家乡去北京开始新生活，每次出门前妈妈的嘱咐、打电话时那些"多余"的关心，其实都是"加倍的爱"在流动。不要因为忙碌而忽略这些——因为"许多年以后才听懂"的代价，是那个人已经不在了。趁现在，多打一个电话，多说一句"我知道了，谢谢你"。'
   ]
-};;
+};
 
 function renderLiterature() {
   const el = document.getElementById('litContent');
@@ -1510,18 +1511,18 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月14日 星期五',
+  date: '2026年8月15日 星期六',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '央行开展10000亿元买断式逆回购操作，保持银行体系流动性充裕', desc: '中国人民银行8月14日以固定数量、利率招标、多重价位中标方式开展10000亿元买断式逆回购操作，期限6个月（185天），旨在保持银行体系流动性充裕，为实体经济提供稳定资金支持。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普宣称"完全控制"霍尔木兹海峡，伊朗强硬回应：海峡仍然关闭', desc: '美国总统特朗普12日宣称已"完全控制"霍尔木兹海峡，但伊朗方面驳斥称海峡仍然关闭。受海峡持续关闭影响，国际能源署已下调2026年全球石油需求预期，中东局势持续紧张。' },
-    { tag: '科技', cls: 'news-tech', title: '第二届世界人形机器人运动会8月22日开幕，2056台机器人参赛创纪录', desc: '第二届世界人形机器人运动会将于8月22日在国家速滑馆"冰丝带"开幕，吸引六大洲16个国家666支队伍、2056台机器人同台竞技，队伍总量同比增长138%，机器人数量翻两番。' },
-    { tag: '科技', cls: 'news-tech', title: '腾讯确认正在研发混元4大模型，二季度资本开支同比增176%', desc: '腾讯发布2026年二季度财报，当期资本开支527.8亿元同比大增176%，管理层确认启动更大参数规模的混元4大模型研发，持续扩充算力集群，AI办公产品WorkBuddy商业化持续推进。' },
-    { tag: '国内', cls: 'news-domestic', title: '新能源车销量占新车总销量60.4%，首次突破六成', desc: '中汽协发布7月数据显示，新能源车销量占新车总销量的60.4%，首次突破六成。众多车企加速推送车载端侧大模型OTA升级，完善电池故障AI预警、座舱多模态交互功能。' },
-    { tag: '科技', cls: 'news-tech', title: '日本研发新型AI芯片集成平台BBCube，大幅提升能效比', desc: '日本东京科学大学研究团队开发出面向AI系统的新型半导体集成平台BBCube，融合高密度芯片贴装、无凸点互连和多尺度热分析技术，为高性能低能耗AI加速器提供新方案，成果已在IEEE相关国际会议上发表。' },
-    { tag: '国际', cls: 'news-intl', title: '普京首次登上日俄争议岛屿，日本提出强烈抗议', desc: '俄罗斯总统普京8月13日首次视察北方四岛（俄称南千岛群岛）中的择捉岛，日本外务大臣茂木敏充对此提出强烈抗议。这是普京首次亲临该地区，引发日俄关系新一轮紧张。' },
-    { tag: '国内', cls: 'news-domestic', title: '全国生态日上海主题宣传活动开幕，聚焦绿色现代化', desc: '2026年全国生态日上海主题宣传活动在上海西岸国际会展中心举行，以"厚植中国式现代化的绿色底色"为主题，同期苏州受台风"白海豚"影响发布阳澄湖洪水黄色预警。' }
+    { tag: '国内', cls: 'news-domestic', title: '《生态环境法典》今日正式实施，系我国第二部以"法典"命名的法律', desc: '《中华人民共和国生态环境法典》8月15日起正式施行，共5编1242条，对30多部生态环境领域法律、上百部行政法规进行系统整合。法典涵盖噪声治理、油烟管控、秸秆处理、人兽冲突补偿等民生热点，标志着我国生态文明建设进入法典化时代。' },
+    { tag: '国内', cls: 'news-domestic', title: '央行发行江泽民诞辰100周年纪念币一套4枚', desc: '中国人民银行定于8月17日起陆续发行江泽民诞辰100周年纪念币，共4枚：普通纪念币1枚、金质纪念币2枚、银质纪念币1枚，均为中华人民共和国法定货币。' },
+    { tag: '国内', cls: 'news-domestic', title: '台风"白海豚"残余回马枪制造暴雨，浙江局部特大暴雨', desc: '台风"白海豚"残余涡旋突然回头，在浙江再度制造分散性暴雨乃至大暴雨。湖州织里镇最大1小时雨量达202.9毫米，长三角部分列车限速或临时停运。国家发改委紧急安排3000万元支持河南灾后恢复。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普下令"福特"级航母弃用电磁弹射恢复蒸汽弹射', desc: '美国总统特朗普签署国家安全备忘录，指示海军重新设计第四艘福特级航母，弃用电磁弹射系统恢复老式蒸汽弹射，变更或耗资数十亿美元。同日，特朗普称将宣布霍尔木兹海峡为美国领土。' },
+    { tag: '国际', cls: 'news-intl', title: '法国宪法委员会否决15岁以下未成年人社交媒体禁令', desc: '法国宪法委员会裁定《保护未成年人免受社交媒体风险法》第一条款违反宪法，认为禁止15岁以下未成年人访问社交媒体对表达和通信自由构成"不成比例的侵犯"。该裁决引发全球青少年网络安全立法讨论。' },
+    { tag: '科技', cls: 'news-tech', title: '美对进口无人机及零部件征收10%-100%关税', desc: '美国白宫宣布对进口无人机及零部件征收10%至100%的从价关税，以应对国家安全威胁。此举将影响大疆等中国无人机企业在美国市场的业务。' },
+    { tag: '科技', cls: 'news-tech', title: 'Honor发布Robot Phone，内置钛合金万向节机械臂', desc: 'Honor推出革命性手机Robot Phone，摄像头从机身顶部伸出钛合金机械臂，支持360度目标追踪、双200MP传感器和ARRI Log-C录制，售价9999元人民币，重新定义手机影像体验。' },
+    { tag: '国内', cls: 'news-domestic', title: '国家体育总局：坚决反对任何形式的"追私"行为', desc: '国家体育总局表示，聚集蹲守、尾随偷拍及围追堵截驻训运动员等行为涉嫌违法。偷拍、代拍及售卖运动员照片视频等"追私"行为侵犯运动员权益，干扰训练备战。' }
   ]
-};;
+};
 
 function renderNews() {
   let data = newsData;
