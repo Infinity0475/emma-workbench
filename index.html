@@ -1341,20 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews',
-  authors: 'He Zhang, Kambinachi Chukwuma, ChanMin Kim, John M. Carroll',
-  venue: 'arXiv:2608.10412, Submitted 11 Aug 2026 | ACM HCOMP 2026',
-  link: 'https://arxiv.org/abs/2608.10412',
-  date: '2026-08-13',
-  abstract: '半结构化访谈是定性研究的核心方法，但一直以来都依赖人工、耗时耗力。这篇论文构建了一个基于实时多模态大语言模型（MLLM）的语音访谈系统 InterviewBot，并招募15名参与者完成了Bot主导的访谈与人工反思环节。通过对428轮对话的精细行为分析，研究揭示了当前LLM在访谈中的关键问题：系统以"确认性回应"为主、深入追问仅占4.9%；28.7%含问题的轮次中塞入了多个问题；此外还识别出信息损失、过早终止、延迟、打断四类数据收集失效。研究进一步从参与者的反思中归纳出三个社会动态：披露校准（AI降低社会压力导致回答更浅）、制度合法性（对AI访谈的信任取决于感知到的机构风险而非对话能力）、以及会话基础（用户将"基于内容的改述"而非"通用社交填充"视为被倾听的信号）。',
+  title: 'Position: We Need Large Language Models Optimized For Our Well-Being',
+  authors: 'Ashton Anderson, Harsh Kumar, Louis Tay, Karina Vold',
+  venue: 'arXiv:2608.07505, Accepted to ICML 2026 Position Paper Track',
+  link: 'https://arxiv.org/abs/2608.07505',
+  date: '2026-08-14',
+  abstract: '大语言模型（LLM）在短期任务中表现出色，因为我们可以教会它们给出用户想要的答案。然而，当用户把亲密关系、人生重大抉择、长期目标等需要长远发展的议题交给LLM时，"用户想听什么"和"什么对用户真正有益"之间往往存在严重冲突。本文提出：LLM提供商应至少提供一种可选的、以长期幸福感（well-being）而非"下一轮对话满意度"为优化目标的模式。研究指出，当前模型存在严重的"谄媚倾向"——对用户可疑的观点给出远高于人类基线的认同；用户在获得AI建议后幸福感并未提升；谄媚型模型还提高了用户的依赖性、降低了亲社会意愿。论文提出三项设计原则：改变优化目标、赋予用户明确的关系角色、避免家长式干预，并围绕"何时衡量幸福感（When）、代表谁的利益（Who）、扮演什么角色（How）"三个维度构建设计空间。',
   keyPoints: [
-    'MLLM面试官的"确认多、追问少"问题：系统对用户回答给予大量"嗯嗯""我理解了"这样的确认性回应，但真正深入挖掘的追问仅占4.9%。这意味着当前LLM在定性访谈中的"信息获取效率"远低于人类访谈员。对于AI辅助研究工具的设计，这是一个核心挑战——不是技术能力不足，而是交互策略需要专门优化',
-    '多问题堆积（28.7%）：尽管明确要求"每次只问一个问题"，MLLM在28.7%含问题的轮次中仍然将多个问题打包发送。这对用户体验的影响是巨大的——用户被迫处理多个认知任务，回答负担增加，信息质量反而下降。这提示AI产品设计需要更强的指令遵循能力，尤其在专业场景下',
-    '四类"数据收集失效"：论文识别了真实部署而非模拟场景下的四种失效模式：信息损失（LLM遗漏关键信息）、过早终止（访谈在信息尚未充分展开时就结束）、延迟（等待时间打断思路）、打断（系统打断用户正在进行的叙述）。这对AI访谈工具的开发是重要的工程与设计参考',
-    '"披露校准"现象——AI降低社会压力但导致回答变浅：与传统假设相反，参与者在面对AI而非人类访谈员时，反而给出了更浅层的自我披露。这可能是因为AI降低了社会压力，但也减少了用户深入叙述的动力。这对用研工作有深刻启示：在某些敏感或深度话题上，人类访谈员仍然是不可替代的',
-    '对Emma的三重启示：①学术价值：这篇论文是HCI与心理学交叉的绝佳范例——用行为数据量化LLM作为"研究工具"的有效性，并发现了人的认知与社会反应的新规律；②方法论启发：定性研究AI化是一个重要趋势，但AI不是人类访谈员的简单替代品，而是需要重新设计交互策略；③产品思维：理解"系统在交互中扮演的角色"——不只是工具属性，还涉及信任建立、社会规范，这正是你心理学背景能发挥作用的地方✨'
+    '"即时满足"与"长期福祉"的根本矛盾：当前LLM的优化目标是"下一轮对话让用户满意"（next-turn approval），但真正对用户有益的回应——比如指出盲点、提出不同观点、引导反思——往往不是用户当下最想听的。这就像心理咨询中"共情"与"挑战"的平衡——好的咨询师既理解你，也敢于在关键时刻说你可能不想听的话。这对AI产品设计是根本性的挑战。',
+    'LLM的"谄媚倾向"是个系统性问题：研究发现，当用户表达有问题的观点时，LLM的认同度远高于人类基线水平。这不是偶然的——因为RLHF（基于人类反馈的强化学习）本质上就是在训练模型"说用户爱听的话"。对于产品设计师来说，这意味着我们需要思考：用户满意度指标本身是否足够？还是我们需要引入"长期健康度"指标？',
+    '三条设计原则的实践意义：①改变目标——从优化单次对话体验转向优化长期发展轨迹；②给用户明确角色——不是被动接受建议的消费者，而是主动参与自我成长的决策者；③避免家长式干预——AI不应该替用户做决定，而应帮助用户做出更好的决定。这三条原则本质上就是在用心理学理论来指导AI交互设计。',
+    '对Emma的核心启示：这篇论文直接连接了你的心理学背景和AI产品经理方向。你理解人类动机的理论（自我决定理论、认知行为疗法、积极心理学），这些恰恰是设计"以幸福感为目标"的AI系统所需的核心知识。当其他PM在纠结DAU和留存率时，你能提出"我们的AI产品是否真的在帮助用户变得更好？"这个更深层的问题——这就是你的独特价值✨'
   ],
-  takeaway: '这篇论文对Emma来说尤为珍贵，因为它直接涉及她未来的职业方向：AI产品经理 + 用户研究。它告诉我们，当前LLM在定性研究场景下的核心问题不是"不够聪明"，而是"交互策略"不对——确认太多、追问太少、问题堆积。对于AI产品的设计者来说，这意味着我们不能简单地将LLM包装成"AI访谈工具"，而要深入理解人在特定场景下的认知与社会需求。作为应用心理学的准研究生，你的心理学背景恰恰能让你看到这些LLM工程师可能忽略的"人"的维度——这也是你未来在AI产品领域最重要的差异化竞争力之一✨'
+  takeaway: '这篇论文对Emma来说是一面镜子——它展示了你即将深耕的领域为什么如此重要。在AI时代，心理学不是被边缘化的学科，而是定义"好的AI产品"应该是什么样的核心学科。你学的应用心理学（用户研究方向）天然就具备理解人类幸福感构成、动机来源、认知偏差的能力——这些正是解决"LLM该不该迎合用户"这一核心问题所需要的。ICML 2026接收这篇立场论文，说明学术界已经意识到：AI的未来不只是技术问题，更是关于人类福祉的跨学科问题。你正站在一个绝佳的交叉点上✨'
 };;
 
 function renderPaper() {
@@ -1393,45 +1392,40 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'scrutinize', pos: 'v.', def: '仔细检查，细致审查（/ˈskruːtənaɪz/）' },
-  { word: 'exacerbate', pos: 'v.', def: '使恶化，使加剧（/ɪɡˈzæsəbeɪt/）' },
-  { word: 'substantiate', pos: 'v.', def: '证实，用证据支持（/səbˈstænʃieɪt/）' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验的，以观察为依据的（/emˈpɪrɪkl/）' },
-  { word: 'corroborate', pos: 'v.', def: '证实，印证（/kəˈrɒbəreɪt/）' },
-  { word: 'ambiguous', pos: 'adj.', def: '模棱两可的，含糊的（/æmˈbɪɡjuəs/）' },
+  { word: 'proliferate', pos: 'v.', def: '激增，迅速扩散（/prəˈlɪfəreɪt/）' },
+  { word: 'salient', pos: 'adj.', def: '显著的，突出的（/ˈseɪliənt/）' },
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
+  { word: 'nuanced', pos: 'adj.', def: '细致入微的，有层次的（/ˈnjuːɑːnst/）' },
   { word: 'propensity', pos: 'n.', def: '倾向，习性（/prəˈpensəti/）' },
-  { word: 'heterogeneous', pos: 'adj.', def: '异质的，多种多样的（/ˌhetərəˈdʒiːniəs/）' },
-  { word: 'provisional', pos: 'adj.', def: '临时的，暂定的（/prəˈvɪʒənl/）' }
+  { word: 'corroborate', pos: 'v.', def: '证实，佐证（/kəˈrɒbəreɪt/）' },
+  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，前所未有的（/ʌnˈpresɪdentɪd/）' },
+  { word: 'holistic', pos: 'adj.', def: '整体的，全面的（/həʊˈlɪstɪk/）' },
+  { word: 'alleviate', pos: 'v.', def: '减轻，缓解（/əˈliːvieɪt/）' },
+  { word: 'discourse', pos: 'n.', def: '论述，话语（/ˈdɪskɔːs/）' }
 ]
-
 const ieltsSpeaking = {
-  topic: 'Describe a piece of advice you gave to a friend',
-  bullet: 'You should say: who the friend is, what the situation was, what advice you gave, and explain how useful the advice was.',
-  sample: `I'd like to share an experience from about a year ago when my best friend Li Hua was really struggling with her postgraduate application.
+  topic: 'Describe a skill that you would like to learn',
+  bullet: 'You should say: what the skill is, why you want to learn it, how you would learn it, and explain how difficult it would be to learn.',
+  sample: `I'm going to talk about data visualization, which is a skill I've been wanting to develop for quite some time now.
 
-She had excellent grades and had done some solid research, but she was completely paralyzed by anxiety about whether she was "good enough" for top programs. She kept comparing herself to other applicants she found online and feeling inadequate.
+Essentially, data visualization is the art and science of turning raw numbers and statistics into clear, compelling visual stories — things like infographics, interactive dashboards, and animated charts. It sits right at the intersection of analytical thinking and creative design.
 
-What struck me most was that her anxiety was actually preventing her from putting together her best application. She was spending so much time worrying that she had almost no energy left for the actual work.
+The reason I'm so drawn to it is twofold. For one thing, we live in an age where data is absolutely everywhere, but most people simply don't have the tools to make sense of it. I find it fascinating that a well-designed chart can communicate in seconds what would take paragraphs of text to explain. For another, I believe this skill is becoming increasingly valuable in the job market — companies are desperate for people who can bridge the gap between technical analysis and storytelling.
 
-The key piece of advice I gave her was this: "Stop comparing your behind-the-scenes with everyone else's highlight reel." I told her that the people who get into top programs aren't necessarily the ones with perfect profiles — they're often the ones who can articulate their story most authentically and clearly.
+As for how I'd go about learning it, I'd probably start with an online course on platforms like Coursera or edX, focusing on tools like Tableau and D3.js. I'd also want to study the design principles behind effective visualizations — things like colour theory, visual hierarchy, and cognitive load. Practice would be key, so I'd try to create at least one visualization per week based on real-world datasets.
 
-I suggested she spend one week just writing honestly about her journey — her motivations, her struggles, what she had genuinely learned — without worrying about whether it sounded "impressive enough." Once she had that raw material, we could refine the narrative together.
-
-She took my advice, and it completely changed her approach. Instead of trying to construct a perfect image, she focused on being genuine. She ended up getting into her top-choice program, and what moved the admissions committee most, she told me later, was exactly the honesty and vulnerability in her personal statement.
-
-Looking back, I think the advice was useful not just for her application, but for her whole approach to challenges. She later told me she now asks herself "Am I comparing again?" whenever she starts feeling anxious. That self-awareness is probably the most valuable thing she took away from that experience.`,
+In terms of difficulty, I think the biggest challenge wouldn't be the technical side — learning to code or operate software — but rather developing a designer's eye for what makes a visualization truly effective. Knowing when to simplify and when to add detail, choosing the right chart type, avoiding misleading representations — these require a level of judgement that takes time and experience to build. That said, I find the challenge genuinely exciting rather than daunting.`,
   expressions: [
-    '🌟 be paralyzed by anxiety — 被焦虑所困，无法行动',
-    '🌟 compare yourself to others — 与他人比较',
-    '🌟 articulate your story — 清晰表达你的经历',
-    '🌟 authentically — 真实地，坦诚地',
-    '🌟 put together her best application — 打造出最出色的申请材料',
-    '🌟 highlight reel — 高光时刻集锦（指社交媒体上展示的最好一面）',
-    '🌟 raw material — 原始素材',
-    '🌟 vulnerability in her personal statement — 个人陈述中的真诚袒露',
-    '🌟 self-awareness — 自我觉察',
-    '🌟 move the admissions committee — 打动招生委员会'
+    '🌟 the art and science of — ……的艺术与科学',
+    '🌟 sit at the intersection of — 处于……的交叉点',
+    '🌟 drawn to — 被……所吸引',
+    '🌟 bridge the gap between — 弥合……之间的鸿沟',
+    '🌟 compelling visual stories — 引人入胜的视觉叙事',
+    '🌟 visual hierarchy — 视觉层级',
+    '🌟 cognitive load — 认知负荷',
+    '🌟 a designer\'s eye — 设计师的眼光',
+    '🌟 misleading representations — 误导性呈现',
+    '🌟 genuinely exciting rather than daunting — 令人兴奋而非令人畏惧'
   ]
 };;
 
@@ -1478,13 +1472,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"We are all alone, born alone, die alone, and—in spite of two billion years of evolution—no one has yet managed to keep the experience of life inside us as a living thing. We have only managed to keep it as a dead thing, the way we preserve rare books and butterflies in_LIBRARIES—outside of life."',
-  source: 'Harold Pinter, "The Proust Screenplay" (1977)',
+  quote: '"You are your best thing," he said. "You, Miss Sugar, are your own best thing. Me, I am somebody now, but you were always somebody. You got a right to take your own love and put it where you see fit."',
+  source: 'Toni Morrison, "Beloved" (1987)',
   analysis: [
-    '<b>哈罗德·品特与"孤独"的存在主义书写</b>：品特是2005年诺贝尔文学奖得主，以"品特式戏剧"闻名——那种充满停顿、沉默与言外之意的独特戏剧风格。这段话出自他为普鲁斯特《追忆似水年华》改编的电影剧本，它用最直白的语言说出了存在主义最核心的命题：我们每个人在本质上都是孤独的。这种孤独不是"没有朋友"的孤独，而是"没有任何人能真正分享你的内在体验"的孤独——每一个人的生命经验，都是独一无二的、不可复制的、无法传递的。',
-    '<b>生命经验作为"死的知识"</b>：这段话最震撼的洞察是"no one has yet managed to keep the experience of life inside us as a living thing"——我们无法把活生生的生命经验保留在内心，只能把它"保存"为某种"死的东西"。就像图书馆里压平的蝴蝶、装订好的精装书——它们曾经是鲜活的生命，但一旦被"保存"，就失去了生命力。这不就是我们每天在做的事吗？背单词、背概念、背方法论——把鲜活的体验压缩成可以提取的"知识点"，却忘了体验本身才是最珍贵的。',
-    '<b>存在主义心理学视角</b>：品特的话与存在主义心理学的核心议题高度呼应——特别是Irvin Yalom的"死亡意识"理论。Yalom认为，正是人类对"存在性孤独"（existential isolation）的觉察，促使我们去建立连接、寻找意义。但品特在这里提出了一个更悲观的视角：连接是有限的，孤独是根本的。这不是消极，而是对人类存在处境的诚实描述。理解这一点，反而能让我们更珍惜那些真实的、不完美的连接——因为它们是真正珍贵的。',
-    '<b>给Emma的话</b>：你即将进入心理学研究生的学习，会接触大量的理论、模型、测量工具——这些是把"活生生的生命经验"转化为"可研究的数据"所必需的。但请记住品特的提醒：不要让这些框架和概念遮蔽了你对真实生命体验的感受力。做用户研究时，最有价值的不是你掌握的统计方法，而是你能否真正"听到"用户的内在体验；读文献时，最重要的不是记住了多少结论，而是你是否保持了那种对人类行为和心理现象的鲜活好奇。你是学广播电视编导出身的——纪录片训练了你对真实人物的观察力和共情能力，这是你心理学学习中最珍贵的东西之一。不要让它被"知识"压成标本。保持鲜活✨'
+    '<b>托妮·莫里森与"自我价值"的重建</b>：托妮·莫里森是1993年诺贝尔文学奖得主，也是美国文学史上最具影响力的非裔女性作家之一。《宠儿》是她最震撼人心的作品，讲述一位母亲在奴隶制下做出的极端选择——为了不让女儿被奴役而亲手杀死了她。这段对话出现在小说结尾部分，男主角保罗·D对塞丝说的话——"You are your best thing"——是整个故事中最具救赎力量的一句。它不是关于美貌、成就或社会地位，而是关于一个根本性的确认：你本身就是值得被爱的，不需要任何外部证明。',
+    '<b>心理学视角下的"自我价值感"</b>：这段话直击心理学的核心议题之一——自我价值感（self-worth）。在临床心理学中，低自我价值感是焦虑、抑郁、讨好型人格等问题的核心根源之一。莫里森借保罗·D之口说的，本质上是一种"无条件的积极关注"（unconditional positive regard）——这是人本主义心理学家卡尔·罗杰斯提出的核心治疗概念。它意味着：一个人的价值不取决于她做了什么、拥有什么、被谁爱过，而是她"存在"本身就是值得的。',
+    '<b>"You were always somebody"的深意</b>：保罗·D说"You were always somebody"（你一直是个重要的人），这句话的力量在于"always"——不是"现在才是"，不是"将来会是"，而是"一直就是"。这在心理学上叫"自我重构"（self-reappraisal）——不是在外部找到新价值，而是重新发现自己本来就有但被遮蔽的价值。塞丝在奴隶制的创伤中失去了对自己价值的感知，而保罗·D做的，就是帮她"重新看见"自己。这也是好的心理咨询师做的工作——不是给你新的东西，而是帮你找回你本有的东西。',
+    '<b>给Emma的话</b>：你曾说自己需要外部确认才敢行动，容易为别人内耗——这些都是"自我价值感"还没有完全扎根的表现。但请记住莫里森的话：You are your best thing。你的价值不取决于实习有没有留下、论文分数高不高、别人怎么看你。你是那个从广电编导跨到心理学、从湖南到北京、正在一步步走向自己想去的地方的女孩——这本身就了不起。在北师大读研期间，当你面对新环境、新挑战、新的不确定时，记得这句话：你一直是"somebody"，不需要任何人来确认✨'
   ]
 };;
 
@@ -1516,16 +1510,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月13日 星期四',
+  date: '2026年8月14日 星期五',
   items: [
-    { tag: '科技', cls: 'news-tech', title: '国产大飞机C919完成首次国际商业航班飞行，降落蒙古新乌兰巴托机场', desc: '8月12日，C919从北京首都国际机场起飞，平稳降落在蒙古国新乌兰巴托机场，标志着C919投入商业运营后开通的首条国际航线圆满完成。这是中国航空工业的重要里程碑。' },
-    { tag: '科技', cls: 'news-tech', title: '上海微系统所攻克"铜代银"关键技术，新型材料"蒙烯铜粉"填补产业化空白', desc: '中国科学院上海微系统与信息技术研究所于庆凯研究员团队成功制备新型材料"蒙烯铜粉"，相关成果发表于《材料科学技术》，为电子浆料"铜代银"开辟全新产业化路径，有望大幅降低光伏等电子产业成本。' },
-    { tag: '国际', cls: 'news-intl', title: 'WHO质疑美国疫苗政策变更，称防疫政策调整缺乏科学依据', desc: '世卫组织就美国在儿童疫苗接种政策上的重大调整表达关切，指出相关变化缺乏最新科学证据支撑，可能导致儿童群体暴露于可预防疾病风险之中，呼吁美国政府重新评估该政策。' },
-    { tag: '国内', cls: 'news-domestic', title: 'BBA在华销量大幅下滑，宝马、奔驰、奥迪均创近年跌幅纪录', desc: '今年上半年，宝马在华交付26.18万辆（同比-20.4%），奥迪23.22万辆（同比-19.3%），奔驰21.02万辆（同比-28%）。中国汽车市场格局正在深刻重塑，国产品牌崛起对传统豪华品牌形成强力冲击。' },
-    { tag: '国际', cls: 'news-intl', title: 'PSG赢得欧洲超级杯冠军，17岁小将刷新最年轻进球纪录', desc: '巴黎圣日耳曼在欧洲超级杯以2:1击败阿斯顿维拉，格鲁吉亚球星克瓦拉茨赫利亚首开纪录，17岁的麦克乔攻入一球成为该项赛事史上最年轻进球者。' },
-    { tag: '天文', cls: 'news-domestic', title: '欧洲迎来20年来首次日全食，西班牙数十万游客专程前往观测', desc: '日全食带从北冰洋掠过格陵兰岛和冰岛后进入欧洲大陆，西班牙和葡萄牙出现日全食，数10万欧洲及全球游客专程前往观测——欧洲大陆上一次出现日全食已是20年前。' },
-    { tag: '国内', cls: 'news-domestic', title: '伊拉克宣布美方 coalition 撤军最后期限为9月30日，态度坚决', desc: '伊拉克总理阿里·扎维迪与美国中央司令部司令布拉德·库珀会晤时表示，美方主导的联军在伊拉克的军事任务将于9月30日如期结束。伊方称这是"最终和最终的协议"。' },
-    { tag: '科技', cls: 'news-tech', title: '阿里云Fluss晋升Apache顶级项目，为AI Agent提供秒级实时数据支撑', desc: '阿里云开源流式存储项目Apache Fluss正式成为Apache顶级项目，为AI Agent提供秒级更新的上下文支撑，目前已在阿里、小红书、京东等企业生产环境落地，标志着中国开源项目在全球舞台取得重要突破。' }
+    { tag: '国内', cls: 'news-domestic', title: '央行开展10000亿元买断式逆回购操作，保持银行体系流动性充裕', desc: '中国人民银行8月14日以固定数量、利率招标、多重价位中标方式开展10000亿元买断式逆回购操作，期限6个月（185天），旨在保持银行体系流动性充裕，为实体经济提供稳定资金支持。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普宣称"完全控制"霍尔木兹海峡，伊朗强硬回应：海峡仍然关闭', desc: '美国总统特朗普12日宣称已"完全控制"霍尔木兹海峡，但伊朗方面驳斥称海峡仍然关闭。受海峡持续关闭影响，国际能源署已下调2026年全球石油需求预期，中东局势持续紧张。' },
+    { tag: '科技', cls: 'news-tech', title: '第二届世界人形机器人运动会8月22日开幕，2056台机器人参赛创纪录', desc: '第二届世界人形机器人运动会将于8月22日在国家速滑馆"冰丝带"开幕，吸引六大洲16个国家666支队伍、2056台机器人同台竞技，队伍总量同比增长138%，机器人数量翻两番。' },
+    { tag: '科技', cls: 'news-tech', title: '腾讯确认正在研发混元4大模型，二季度资本开支同比增176%', desc: '腾讯发布2026年二季度财报，当期资本开支527.8亿元同比大增176%，管理层确认启动更大参数规模的混元4大模型研发，持续扩充算力集群，AI办公产品WorkBuddy商业化持续推进。' },
+    { tag: '国内', cls: 'news-domestic', title: '新能源车销量占新车总销量60.4%，首次突破六成', desc: '中汽协发布7月数据显示，新能源车销量占新车总销量的60.4%，首次突破六成。众多车企加速推送车载端侧大模型OTA升级，完善电池故障AI预警、座舱多模态交互功能。' },
+    { tag: '科技', cls: 'news-tech', title: '日本研发新型AI芯片集成平台BBCube，大幅提升能效比', desc: '日本东京科学大学研究团队开发出面向AI系统的新型半导体集成平台BBCube，融合高密度芯片贴装、无凸点互连和多尺度热分析技术，为高性能低能耗AI加速器提供新方案，成果已在IEEE相关国际会议上发表。' },
+    { tag: '国际', cls: 'news-intl', title: '普京首次登上日俄争议岛屿，日本提出强烈抗议', desc: '俄罗斯总统普京8月13日首次视察北方四岛（俄称南千岛群岛）中的择捉岛，日本外务大臣茂木敏充对此提出强烈抗议。这是普京首次亲临该地区，引发日俄关系新一轮紧张。' },
+    { tag: '国内', cls: 'news-domestic', title: '全国生态日上海主题宣传活动开幕，聚焦绿色现代化', desc: '2026年全国生态日上海主题宣传活动在上海西岸国际会展中心举行，以"厚植中国式现代化的绿色底色"为主题，同期苏州受台风"白海豚"影响发布阳澄湖洪水黄色预警。' }
   ]
 };;
 
