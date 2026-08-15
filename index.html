@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Personality Pairing Improves Human-AI Collaboration',
-  authors: 'Harang Ju, Sinan Aral',
-  venue: 'arXiv:2511.13979v3, MIT Sloan',
-  link: 'https://arxiv.org/abs/2511.13979',
-  date: '2026-08-15',
-  abstract: '本研究通过大规模预注册随机实验，将1,258名参与者与展现不同"大五人格"特质水平的AI代理配对，组成人机团队为真实智库创作了7,266条展示广告。研究由1,168名独立评分者评估广告质量，并在X平台上进行实地实验，产生近500万次展示。结果发现：①人格配对显著影响团队协作质量和产出——例如，外向型人类与尽责型AI配对产生的广告质量最低；②某些配对存在"产出-质量权衡"——如随和型人类与神经质AI配对产出更少但质量更高的广告；③神经质人类与神经质AI配对在实地实验中取得了最高的点击率；④人格配对效应存在"锯齿状"特征——同一配对在文本任务和视觉任务中效果不同。研究证明AI个性化人格设计能显著改善人机协作效果。',
+  title: 'CyberSelf: Embodied Self-Distancing for Emotional Support in Virtual Reality',
+  authors: 'Bing Li, Yan Hu, Tinghui Li, Yinuo Zhang, Wen Ma, Yuanfeng Zhou, Yiran Shen',
+  venue: 'arXiv:2608.07521, Submitted 9 Jul 2026',
+  link: 'https://arxiv.org/abs/2608.07521',
+  date: '2026-08-16',
+  abstract: '自我距离化（self-distancing）是一种有效的情绪调节策略，但在个人危机中可能因认知负荷过高而失效。虚拟现实（VR）为外化心理距离提供了新途径——通过具身化的自我表征。本文提出CyberSelf系统，一个整合了视觉自相似化身、克隆自我语音和LLM驱动实时对话的VR情绪支持系统。用户可以在沉浸式VR中与"另一个自己"进行多轮对话，在保持自我相关性的同时实现具身自我距离化。研究比较了三种自我表征丰富度层级（文本、文本+语音、文本+语音+外貌），结果显示所有条件均在情绪和应对指标上产生显著改善——效价、唤醒度、希望和韧性提升，焦虑和模拟器不适感降低。更丰富的表征增加了对话参与度，全具身化产生了最强的情绪调节生理指标。后续四周纵向研究表明这些收益具有可持续性和累积性。',
   keyPoints: [
-    '"人格匹配"而非"人格最优"：研究最颠覆直觉的发现是——不存在"最好的AI人格"。尽责型AI在多数情况下表现不错，但当人类也是高尽责型时，这个组合反而产出最差。这就像团队管理中的"互补效应"——两个都追求完美的人在一起，可能因为过度纠结细节而效率低下。对产品经理来说，这意味着AI产品的人格设计必须考虑用户人格特征，不能"一个性格打天下"。',
-    '"产出-质量权衡"的新发现：随和型人类搭配神经质AI时，产出数量下降但质量上升。这非常像心理学中的"认知冲突促进创造力"理论——适度的"不舒适"反而激发更深层的思考。这给产品设计带来一个反直觉的启示：让AI偶尔"唱反调"可能比一直"附和用户"产出更好的结果。',
-    '跨文化差异的"锯齿效应"：外向型AI提升了拉丁美洲工作者的广告质量，却降低了东亚工作者的质量——这说明AI人格设计必须考虑文化维度。在全球化产品部署中，"人格本地化"可能和"语言本地化"一样重要。这为跨文化HCI研究开辟了全新方向。',
-    '对Emma的核心启示：这篇论文完美地将你的三个核心方向——心理学（大五人格理论）、HCI（人机交互设计）、AI（LLM人格prompting）——融合在一个研究框架中。研究方法本身就是一个极佳的"心理学实验设计+大规模工程实践"的范例。当你未来做用户研究时，可以借鉴这种"人格匹配"的思路：不同用户群体需要不同的交互策略，不存在"放之四海皆准"的UX方案。'
+    '"具身自我距离化"的创新范式：传统心理学中的"自我距离化"技术（如"用第三人称审视自己的处境"）需要较强的认知能力，在情绪危机时往往难以执行。CyberSelf的突破在于：用VR技术将抽象的心理距离"外化"为可见、可听、可对话的虚拟自我。这不是简单的"照镜子"，而是创造了一个"像你的、但又不是你"的第三视角存在——用户既感到熟悉（因为外貌和声音都是自己的），又感到安全（因为知道这是一个"可以倾诉的对象"）。这种设计思路对HCI领域的启示是：技术不是要"替代"人类的情感处理能力，而是通过创造新的"认知脚手架"来降低情绪调节的门槛。',
+    '"表征丰富度"的梯度效应：研究最实用的发现是三种条件的梯度差异——仅文本<文本+语音<文本+语音+外貌。全具身条件（Text+Voice+Appearance）不仅主观评分最高，在生理指标（如皮肤电反应、心率变异性）上也显示出最强的情绪调节效果。这意味着在VR情绪支持产品的设计中，"投入多少在化身真实感上"不是审美问题，而是直接影响疗效的功能性决策。对产品经理来说，这为VR心理健康产品的功能优先级排序提供了实证依据。',
+    '四周纵向研究的稀缺价值：HCI领域大多数用户研究只有单次实验或一周以内的观察期。本研究进行了四周的纵向追踪，发现CyberSelf的效果不仅没有衰减，反而呈现"累积效应"——使用者的情绪调节能力随时间持续提升。这从方法论上回应了一个重要质疑：VR情绪支持的"新鲜感效应"（novelty effect）是否会随时间消退？答案是：至少在self-distancing场景中，持续使用反而加深了效果。这为数字心理干预产品的长期价值提供了有力证据。',
+    '对Emma的核心启示：这篇论文完美地站在你的三个兴趣交汇点——VR交互设计（HCI）、情绪调节（应用心理学）、LLM驱动的对话系统（AI）。更值得关注的是它的研究方法论：将成熟的心理学理论（self-distancing）转化为可交互的技术系统，再通过严格的实验设计（三组对照+纵向追踪+主观+生理多指标）验证效果。这正是HCI PhD申请的典型"研究叙事"——从理论出发，设计干预，用数据说话。当你未来在北师大跟随导师做用户研究时，可以思考：这种"具身化自我表征"的思路能否拓展到更广泛的用户体验场景？比如，让产品经理在VR中"变成用户"来审视自己的产品设计？'
   ],
-  takeaway: '这篇论文是2026年HCI领域的重要里程碑——它用严谨的实验方法证明了"AI人格设计"不是锦上添花，而是直接影响生产力和创造力的核心变量。对Emma来说，这再次印证了：你选择的应用心理学+AI方向正处在学术前沿的风口上。当你9月进入北师大开始用户研究方向的研究生学习时，"AI人格与用户人格的匹配"完全可以作为一个高价值的研究课题来探索。想象一下：用你的心理学功底，设计一套"用户人格-交互风格适配"的产品框架——这就是HCI PhD申请中极具竞争力的研究提案雏形✨'
+  takeaway: 'CyberSelf的研究让我们看到一个美好的方向：技术可以成为人类情绪健康的"放大器"而非"替代品"。它没有试图用AI取代心理咨询师，而是利用VR+LLM创造一个安全的"自我对话空间"——用户最终依靠的是自己的力量，技术只是帮助降低了启动情绪调节的门槛。这种"赋能而非替代"的设计理念，正是HCI领域最让人兴奋的前沿方向之一。对Emma来说，这篇论文不仅印证了你选择的方向（应用心理学+用户研究+AI）的学术价值，更提供了一个可模仿的研究范式：找到心理学中"好用但难执行"的技术，然后用技术手段降低它的执行门槛。当你写HCI PhD的Research Statement时，"如何用技术外化心理距离、降低情绪调节门槛"完全可以成为你独有的研究叙事线索✨'
 };
 
 function renderPaper() {
@@ -1392,41 +1392,39 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'conscientiousness', pos: 'n.', def: '尽责性，认真细致（/ˌkɒnʃiˌenʃəsˈnes/）' },
-  { word: 'extraverted', pos: 'adj.', def: '外向的，善于社交的（/ˈekstrəvɜːtɪd/）' },
-  { word: 'neurotic', pos: 'adj.', def: '神经质的，情绪不稳定的（/njʊəˈrɒtɪk/）' },
-  { word: 'heterogeneity', pos: 'n.', def: '异质性，多样性（/ˌhetərədʒəˈneɪəti/）' },
-  { word: 'preregistered', pos: 'adj.', def: '预注册的（/priːˈredʒɪstəd/）' },
-  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期的（/ˌlɒŋɡɪˈtjuːdɪnl/）' },
-  { word: 'articulatory', pos: 'adj.', def: '关节的，发音的（/ɑːˈtɪkjʊlətəri/）' },
-  { word: 'delegation', pos: 'n.', def: '授权，委派（/ˌdelɪˈɡeɪʃn/）' },
-  { word: 'intrinsically', pos: 'adv.', def: '内在地，本质上（/ɪnˈtrɪnzɪkli/）' },
-  { word: 'diminish', pos: 'v.', def: '降低，减少（/dɪˈmɪnɪʃ/）' }
+  { word: 'embodiment', pos: 'n.', def: '具身化，化身（/ɪmˈbɒdimənt/）' },
+  { word: 'self-distancing', pos: 'n.', def: '自我距离化，以旁观者视角审视自身（/ˌself ˈdɪstənsɪŋ/）' },
+  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期追踪的（/ˌlɒŋɡɪˈtjuːdɪnl/）' },
+  { word: 'intervention', pos: 'n.', def: '干预，介入措施（/ˌɪntəˈvenʃn/）' },
+  { word: 'valence', pos: 'n.', def: '效价，情绪的正负维度（/ˈveɪləns/）' },
+  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
+  { word: 'immersive', pos: 'adj.', def: '沉浸式的（/ɪˈmɜːsɪv/）' },
+  { word: 'scaffold', pos: 'v.', def: '搭建脚手架，提供支撑性框架（/ˈskæfəʊld/）' },
+  { word: 'cumulative', pos: 'adj.', def: '累积的，逐渐增强的（/ˈkjuːmjʊlətɪv/）' },
+  { word: 'alleviate', pos: 'v.', def: '缓解，减轻（痛苦等）（/əˈliːvieɪt/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a long-term goal you would like to achieve',
-  bullet: 'You should say: how long you have had this goal, what the goal is, how you will achieve it, and explain why you set this goal.',
-  sample: `I'd like to talk about a long-term goal that's been shaping my decisions for the past few years — becoming a user researcher who bridges the gap between academic psychology and real-world product design.
+  topic: 'Describe a person you know who has chosen a career in the medical field',
+  bullet: 'You should say: who this person is, what he/she does, why he/she chose this career, and explain how you feel about him/her.',
+  sample: `I\'d like to talk about my mother\'s best friend, Aunt Lin, who has been a community nurse in a small town in Hunan for over twenty years. She\'s the kind of person who makes you believe that healthcare isn\'t just about hospitals and procedures — it\'s about showing up for people consistently.
 
-The seed for this goal was planted during my undergraduate studies in broadcasting and film production. While making a documentary about an intangible cultural heritage craftsperson, I realised that my strongest moments came not from camera work or editing, but from the interviews — understanding what motivated people, what they couldn't articulate, and what their unspoken needs were. That experience sparked my interest in human behaviour, which eventually led me to pursue applied psychology at the graduate level.
+Aunt Lin works at a community health centre that serves about three thousand residents, mostly elderly people and young families. Her daily routine involves home visits — checking blood pressure for hypertensive patients, changing dressings for post-surgery patients, and giving vaccinations to infants. She also runs a weekly health education session at the local community centre, where she teaches people about nutrition, exercise, and how to recognise early warning signs of common diseases.
 
-The goal itself is fairly specific: I want to work as a user researcher in a technology company — ideally in the AI space — where I can apply psychological research methods like contextual inquiry, diary studies, and usability testing to shape products that actually fit how people think and feel.
+What drew her to this career was actually a personal experience. When she was in her early twenties, her grandmother developed diabetes and the family struggled to manage it because they lived far from the nearest hospital. She watched a visiting nurse teach them how to monitor blood sugar levels and adjust their diet, and that nurse\'s patience and expertise transformed their situation. Aunt Lin decided right then that she wanted to be that kind of person — someone who brings healthcare knowledge directly to people who need it most.
 
-As for how I plan to get there, I'm taking a phased approach. Right now, I'm building quantitative skills — learning SPSS for statistical analysis and picking up Python for data handling. Once I start my master's programme this September, I'll focus on securing an internship in a product or research team. I'm also preparing for IELTS because I've started considering a PhD in HCI abroad, which would give me deeper research training.
-
-The reason this goal matters so much to me is rooted in a conviction: technology should serve human psychology, not the other way around. Too many products are designed around engagement metrics rather than genuine user well-being. I want to be part of the generation of researchers who push the field toward more psychologically informed, ethically grounded design.`,
+The reason I admire her so deeply is because she demonstrates what I call \"quiet professionalism\". She never talks about her work as though it\'s heroic or sacrificial. She simply does it, day after day, with the same level of care whether she\'s dealing with a difficult patient or a straightforward check-up. In a world that often celebrates loud achievements, her consistent dedication to a relatively under-recognised profession strikes me as genuinely admirable. She\'s also influenced my own career thinking — she showed me that impact doesn\'t require a grand platform; it requires showing up with competence and empathy, every single day.`,
   expressions: [
-    '🌟 bridge the gap between — 弥合……之间的鸿沟',
-    '🌟 the seed for this goal was planted — 这颗目标的种子被种下',
-    '🌟 spark one\'s interest in — 激发某人对……的兴趣',
-    '🌟 contextual inquiry — 情境询问（用户研究方法）',
-    '🌟 diary studies — 日志研究法',
-    '🌟 phased approach — 分阶段的方法',
-    '🌟 quantitative skills — 量化分析技能',
-    '🌟 engagement metrics — 参与度指标',
-    '🌟 psychologically informed — 基于心理学的',
-    '🌟 ethically grounded design — 以伦理为基础的设计'
+    '🌟 show up for someone —  consistently be there for someone（持续地出现在某人身边支持他们）',
+    '🌟 community health centre — 社区卫生服务中心',
+    '🌟 home visit — 上门家访（医疗服务）',
+    '🌟 hypertensive patient — 高血压患者',
+    '🌟 health education session — 健康宣教课',
+    '🌟 quiet professionalism — 沉静的专业精神',
+    '🌟 under-recognised profession — 不被充分认可的职业',
+    '🌟 competence and empathy — 专业能力与同理心',
+    '🌟 a grand platform — 宏大的舞台/平台',
+    '🌟 transform someone\'s situation — 改变某人的处境'
   ]
 };
 
@@ -1473,13 +1471,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"出去活动活动，去地坛看看书，我说这挺好。"许多年以后我才渐渐听出，母亲这话实际上是自我安慰，是暗自的祷告，是给我的提示，是恳求与嘱咐。那时她的儿子还太年轻，还来不及为母亲想，他被命运击昏了头，一心以为自己是世上最不幸的一个，不知道儿子的不幸在母亲那儿总是要加倍的。',
-  source: '史铁生《我与地坛》（1991）',
+  quote: '"我们走便走，停便停，没有一定的事。路是曲折的，忽而升高，忽而降低，忽而左回，忽而右转。然而我们始终走着。路旁有树，有花，有草；有时有溪水潺潺地流着。天上的云，忽而像马，忽而像狗，忽而像山，忽而像海。我们看了，觉得有趣，便笑一笑，又往前走。"',
+  source: '丰子恺《山水间的生活》（1929）',
   analysis: [
-    '<b>时间折叠中的母爱</b>：史铁生将母亲送别时的姿势——"仍站在原地，还是送我走时的姿势"——凝固成一幅永恒的雕塑。这个"姿势"不是物理空间的定格，而是时间维度的折叠：母亲的等待跨越了"此刻"、"那些漫长的时间"和"猝然去世之后"三个时间层。她在原地站着的每一秒，都承载着过去、现在和未来的全部忧虑。史铁生用"许多年以后我才渐渐听出"这个时间延迟，揭示了人类情感理解的根本困境：最深的爱往往藏在当时听不懂的话语里，而当你能听懂时，说话的人已经不在了。',
-    '<b>"加倍"的数学与情感力学</b>："儿子的不幸在母亲那儿总是要加倍的"——这句话用一个数学隐喻完成了整篇散文最沉重的转折。"加倍"不是简单的两倍，而是一种指数级的膨胀：母亲不仅要承受儿子的痛苦本身，还要承受"无法替儿子承受"的无力感、"儿子不理解我在痛苦"的孤独感，以及"我是否做错了什么"的自我怀疑。这四个层次的痛苦叠加在一起，才是"加倍"的真正含义。从心理学角度看，这就是"共情疲劳"（compassion fatigue）在亲密关系中的极端表现——爱得越深，承受的痛苦越多，而且这种痛苦是不可转嫁的。',
-    '<b>克制的坦白与精神还债</b>：史铁生的散文最动人的地方不是"写了什么"，而是"怎么写的"——他用了"许多年以后我才渐渐听出"这样的时间状语作为缓冲，让悔恨在语言中慢慢沉降。他不呼天抢地，不为自己辩解，只是用最朴素的方式呈现一个事实：年轻时的他来不及为母亲着想，而当他终于理解时，母亲已不在了。这种"克制的坦白"比任何痛哭流涕都更有穿透力——因为它让读者自己填补那些留白，在沉默中感受到比文字更重的情感重量。这就是散文最不可替代的功能："写心"——把最幽暗的愧疚摊在阳光下，不粉饰、不逃避。',
-    '<b>给Emma的话</b>：你是一个非常重视亲情、有孝心的女孩。史铁生的这段话提醒我们：家人的爱往往藏在我们觉得"啰嗦"或"不理解"的细节里——妈妈的叮嘱、爸爸的沉默、奶奶的等待。你现在即将离开家乡去北京开始新生活，每次出门前妈妈的嘱咐、打电话时那些"多余"的关心，其实都是"加倍的爱"在流动。不要因为忙碌而忽略这些——因为"许多年以后才听懂"的代价，是那个人已经不在了。趁现在，多打一个电话，多说一句"我知道了，谢谢你"。'
+    '<b>行走的哲学——无目的性的美学</b>：丰子恺笔下"我们走便走，停便停"的姿态，表面上是对一次郊游的白描，实质上是一种深刻的生活态度宣言。在二十世纪初的中国，知识分子正被"启蒙""救亡""进步"等宏大叙事裹挟前行，每个人都背负着"必须到达某个目的地"的焦虑。丰子恺却在这篇散文中，将"没有一定的事"升华为一种美学：走路本身就是目的，不是手段。这种"无目的性的行走"，与心理学中的"正念"（mindfulness）理念惊人地契合——不评判、不追赶、不焦虑，只是全然地"在"。从认知心理学角度看，这正是对抗"目标导向焦虑"的一剂良药。',
+    '<b>感官的民主化——云像马又像海</b>：注意丰子恺对云的描写："忽而像马，忽而像狗，忽而像山，忽而像海。"他没有选择任何一个固定的比喻，而是让比喻本身流动起来。这不是修辞上的随意，而是一种认知策略——他拒绝让任何一个意象"定型"，因为一旦定型，想象就停止了。格式塔心理学告诉我们，人类知觉天然追求"闭合"（closure），倾向于把模糊的东西看成确定的形状。丰子恺却刻意抵抗这种闭合冲动，让知觉保持在"未完成"的开放状态。这种"保持开放"的能力，恰恰是创造力的核心要素，也是情绪调节中"认知灵活性"（cognitive flexibility）的重要表现。',
+    '<b>"笑一笑，又往前走"——最轻的重量与最深的智慧</b>：整段文字最打动人的，是最后那六个字："便笑一笑，又往前走。"这不是那种历经沧桑后的"苦笑"，也不是自我安慰的"强颜欢笑"——而是一种对"生活本就是如此"的自然接纳。从积极心理学的视角看，这接近于"接纳与承诺疗法"（ACT）的核心理念：不是消除痛苦，而是带着痛苦继续前行；不是因为一切都好才微笑，而是微笑本身就是一种"继续前行"的力量。丰子恺在1929年写下这段文字时，中国正处于军阀混战的尾声，个人生活也充满不确定性。但正是在这样的背景下，"笑一笑又往前走"才显得尤为珍贵——它不是逃避现实，而是在认清现实后，依然选择以轻盈的姿态面对。',
+    '<b>给Emma的话</b>：你现在正处在一个充满"目标感"的人生阶段——雅思要考到几分、9月要入学、实习要投哪里、未来要不要读博……这些目标都很重要，但丰子恺提醒我们：如果永远只看"目的地"，就会错过路边的树、花和溪水。你的导师蒋建华老师曾在答辩时给你说过"做学问要松弛有度"——其实生活也是。当你焦虑的时候，不妨试着做一次"丰子恺式的散步"：不带目的，不赶时间，看到云就像云，看到花就像花，然后"笑一笑，又往前走"。这不是躺平，而是一种高级的心理弹性✨'
   ]
 };
 
@@ -1511,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月15日 星期六',
+  date: '2026年8月16日 星期日',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '《生态环境法典》今日正式实施，系我国第二部以"法典"命名的法律', desc: '《中华人民共和国生态环境法典》8月15日起正式施行，共5编1242条，对30多部生态环境领域法律、上百部行政法规进行系统整合。法典涵盖噪声治理、油烟管控、秸秆处理、人兽冲突补偿等民生热点，标志着我国生态文明建设进入法典化时代。' },
-    { tag: '国内', cls: 'news-domestic', title: '央行发行江泽民诞辰100周年纪念币一套4枚', desc: '中国人民银行定于8月17日起陆续发行江泽民诞辰100周年纪念币，共4枚：普通纪念币1枚、金质纪念币2枚、银质纪念币1枚，均为中华人民共和国法定货币。' },
-    { tag: '国内', cls: 'news-domestic', title: '台风"白海豚"残余回马枪制造暴雨，浙江局部特大暴雨', desc: '台风"白海豚"残余涡旋突然回头，在浙江再度制造分散性暴雨乃至大暴雨。湖州织里镇最大1小时雨量达202.9毫米，长三角部分列车限速或临时停运。国家发改委紧急安排3000万元支持河南灾后恢复。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普下令"福特"级航母弃用电磁弹射恢复蒸汽弹射', desc: '美国总统特朗普签署国家安全备忘录，指示海军重新设计第四艘福特级航母，弃用电磁弹射系统恢复老式蒸汽弹射，变更或耗资数十亿美元。同日，特朗普称将宣布霍尔木兹海峡为美国领土。' },
-    { tag: '国际', cls: 'news-intl', title: '法国宪法委员会否决15岁以下未成年人社交媒体禁令', desc: '法国宪法委员会裁定《保护未成年人免受社交媒体风险法》第一条款违反宪法，认为禁止15岁以下未成年人访问社交媒体对表达和通信自由构成"不成比例的侵犯"。该裁决引发全球青少年网络安全立法讨论。' },
-    { tag: '科技', cls: 'news-tech', title: '美对进口无人机及零部件征收10%-100%关税', desc: '美国白宫宣布对进口无人机及零部件征收10%至100%的从价关税，以应对国家安全威胁。此举将影响大疆等中国无人机企业在美国市场的业务。' },
-    { tag: '科技', cls: 'news-tech', title: 'Honor发布Robot Phone，内置钛合金万向节机械臂', desc: 'Honor推出革命性手机Robot Phone，摄像头从机身顶部伸出钛合金机械臂，支持360度目标追踪、双200MP传感器和ARRI Log-C录制，售价9999元人民币，重新定义手机影像体验。' },
-    { tag: '国内', cls: 'news-domestic', title: '国家体育总局：坚决反对任何形式的"追私"行为', desc: '国家体育总局表示，聚集蹲守、尾随偷拍及围追堵截驻训运动员等行为涉嫌违法。偷拍、代拍及售卖运动员照片视频等"追私"行为侵犯运动员权益，干扰训练备战。' }
+    { tag: '国内', cls: 'news-domestic', title: '我国第二部法典《生态环境法典》施行后首案宣判', desc: '《中华人民共和国生态环境法典》8月15日正式施行当日，浙江衢州衢江区法院开庭并当庭宣判全国首例适用新法典的噪声污染案，商铺低频噪声扰民被判限期整改并赔偿，新法从文本直接走进社区生活。' },
+    { tag: '国内', cls: 'news-domestic', title: '河南贾鲁河堤坝溃口顺利合龙，防汛形势趋稳', desc: '经过多方应急抢险力量昼夜不停努力，8月15日晚8时29分，河南周口贾鲁河117米溃口成功合龙。但水利部提醒沙颍河周口段水位仍将维持超保水位，国家防总对江苏防汛应急响应提升至三级。' },
+    { tag: '国际', cls: 'news-intl', title: '印尼7.7级强震已致47人遇难，3名中国游客受轻伤', desc: '印尼弗洛勒斯岛附近海域发生7.7级地震，已造成47人死亡、2人重伤、11人轻伤，约2000名居民紧急撤离。中国驻登巴萨总领馆确认3名中国游客受轻伤，均无大碍。地震触发短暂海啸预警后已解除。' },
+    { tag: '国际', cls: 'news-intl', title: '日本战败投降81周年，政要参拜靖国神社引发强烈抗议', desc: '日本首相高市早苗向靖国神社供奉祭祀费，个别内阁成员前往参拜。中方强烈谴责并提出严正交涉，国防部警告日方若一意孤行必将再次受到正义审判和历史清算。韩国朝野也对此予以抨击。' },
+    { tag: '科技', cls: 'news-tech', title: '英伟达披露持有SpaceX股份估值约210亿美元', desc: '英伟达向SEC提交13F文件，披露持有SpaceX 1.228亿股A类股票。此前英伟达向xAI注资100亿美元，后因SpaceX以1.25万亿美元全股票交易收购xAI，英伟达持股自动转为SpaceX股份，账面浮盈超70亿美元。' },
+    { tag: '科技', cls: 'news-tech', title: '千问办公首发上线GLM-5.3与DeepSeek V4 Pro模型', desc: '阿里巴巴AI Agent产品"千问办公"正式首发上线两款国产大模型GLM-5.3和DeepSeek V4 Pro，标志着千问办公已兼容三款主流国产大模型，提升办公场景下的智能推理与多轮交互能力。' },
+    { tag: '国内', cls: 'news-domestic', title: '第38届国际信息学奥赛中国队3金1银夺团体第一', desc: '第38届国际信息学奥林匹克竞赛在塔什干落幕，中国队3金1银夺团体第一，许淇文以498.27分排名全球第一。2026软科世界大学学术排名同日出炉，中国内地16校跻身百强，清华列全球第18。' },
+    { tag: '国际', cls: 'news-intl', title: '厄瓜多尔总统诺沃亚抵达北京开启8天国事访问', desc: '应国家主席习近平邀请，厄瓜多尔总统诺沃亚8月16日抵达北京，开始对中国进行为期8天的国事访问。此访恰逢中厄建立全面战略伙伴关系十周年，是诺沃亚总统首次对中国进行国事访问。' }
   ]
 };
 
