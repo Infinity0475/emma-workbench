@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews',
-  authors: 'He Zhang, Kambinachi Chukwuma, ChanMin Kim, John M. Carroll',
-  venue: 'arXiv:2608.10412, Accepted at ACM HCOMP 2026',
-  link: 'https://arxiv.org/abs/2608.10412',
-  date: '2026-08-17',
-  abstract: '半结构化访谈是质性研究的基石，但始终高度依赖人力。本文报告了一项实证研究：当访谈者是一个现成的实时多模态大语言模型（MLLM）时，究竟会发生什么？研究者构建了InterviewBot——一个基于语音的访谈系统，以研究者编写的访谈提纲包裹实时MLLM，并将其作为观察默认MLLM访谈行为的研究工具而非新架构。在预研究（N=15）中，参与者先完成Bot主导的半结构化访谈，再参加关于该体验的人类主导反思环节。核心贡献包括：(i) 对MLLM访谈者的逐轮行为分析（N_turns=428），发现其确认过多但追问不足（深度追问仅占4.9%），且28.7%的提问轮次在一个turn中塞入了多个问题；(ii) 在真实部署系统中归纳出四类数据收集崩溃（信息丢失、过早终止、延迟、打断）；(iii) 从参与者反思中提炼出三个社会动力学主题：披露校准、制度合法性、对话接地。',
+  title: 'CyberSelf: Embodied Self-Distancing for Emotional Support in Virtual Reality',
+  authors: 'Bing Li, Yan Hu, Tinghui Li, Yinuo Zhang, Wen Ma, Yuanfeng Zhou, Yiran Shen',
+  venue: 'arXiv:2608.07521, Human-Computer Interaction (cs.HC)',
+  link: 'https://arxiv.org/abs/2608.07521',
+  date: '2026-08-18',
+  abstract: '自我疏离（self-distancing）是一种有效的情绪调节策略，但在个人危机中可能因认知负荷过高而失效。虚拟现实（VR）为心理距离的外化提供了新路径。本文提出CyberSelf系统——一个集成外貌相似化身、克隆自我声音和LLM驱动实时对话的VR情绪支持系统。用户可在沉浸式VR中与"自己的数字化身"进行多轮对话，在保持自我相关性的同时实现具身化自我疏离。研究通过短期实验比较了三种自我表征丰富度（文本、文本+声音、文本+声音+外貌），发现所有条件均带来情绪效价、唤醒度、希望和韧性的显著提升，以及焦虑的显著降低。完整具身化条件产生了最强的情绪调节生理指标，且四周期追踪研究表明效果可持续且累积。',
   keyPoints: [
-    '"确认过载、追问不足"的MLLM访谈者画像：MLLM在访谈中大量使用确认性回应，但真正推动对话深入的追问仅占4.9%。尽管明确指示"每次只问一个问题"，28.7%的提问轮次仍然塞入了多个问题。这对AI产品经理有极强的实践意义——在设计AI访谈助手时，"知道什么时候追问"比"知道什么时候确认"难得多，也重要得多。',
-    '四类数据收集崩溃的系统性归纳：信息丢失（MLLM遗漏关键信息）、过早终止（用户还没说完AI就开始总结）、延迟（响应时间过长破坏对话节奏）、打断（AI在用户说话时开始输出）。这是在实际部署中观察到的，不是理论推演。对产品经理来说，这是极其实用的"踩坑清单"。',
-    '"信任的制度性"而非"信任的能力性"：参与者对AI访谈者的信任，更多取决于"谁让我做这件事"（制度合法性），而不是"这个AI聊得好不好"（对话能力）。这验证了"信任转移"理论在人机交互中的适用性——AI产品的信任设计不能只看产品本身，还需考虑品牌背书、场景设置等外围因素。',
-    '对Emma的核心启示：论文展示了极具参考价值的研究范式——不是构建"更好的AI访谈系统"，而是将现成的AI系统作为"研究仪器"来观察其默认行为。当你未来在北师大的用户研究课程中学习质性研究方法时，可以直接引用这篇论文的框架。当你申请HCI PhD时，"AI辅助用户研究的方法论可靠性"本身就是一个极具潜力的研究方向✨'
+    '"自我疏离"的心理学机制在VR中的落地：自我疏离（self-distancing）是Kross等心理学家提出的情绪调节策略——从"第三人称视角"审视自己的困境。CyberSelf的创新在于将这一抽象策略变成了可触摸的VR体验：你看到的是一个长得像你的化身，听到的是克隆的你的声音，你在和"另一个自己"对话。这直接验证了 embodied cognition（具身认知）理论——身体的参与能增强认知加工深度。对Emma的启示：心理学理论+VR技术+交互设计，这就是HCI研究最典型的交叉点。',
+    '三种表征条件的递进实验设计：研究对比了Text、Text+Voice、Text+Voice+Appearance三个条件，发现"越丰富的自我表征→越强的情绪调节效果"。特别值得注意的是，外貌+声音的完整具身条件不仅带来主观报告的改善，还产生了最强的生理指标变化。这种递进式实验设计非常优雅——如果你未来在北师大做VR+心理健康的研究，这是一个值得参考的实验范式。',
+    '长期效果的可累积性：四周追踪研究发现CyberSelf的情绪调节效果不仅可持续，还会累积——这意味着VR自我对话可能具有类似"心理训练"的效果。这对数字心理健康干预的产品设计意义重大：如果一款VR应用能像"健身"一样训练你的情绪调节能力，它将具有极高的商业价值和社会价值。',
+    '对Emma的核心启示：这篇论文完美展示了"心理学+HCI"的交叉研究路径。作者团队来自计算机和心理学的交叉背景，研究对象是情绪调节（心理学核心课题），技术载体是VR系统（HCI前沿领域），评估方法既有主观量表又有生理指标（严谨的多模态评估）。当你准备HCI PhD申请材料时，这类"将经典心理学理论嵌入新技术载体"的研究框架，正是招生委员会最想看到的✨'
   ],
-  takeaway: '这篇论文揭示了AI访谈工具的深刻张力：效率上潜力巨大（7×24小时可用、无interviewer bias），但深度上存在结构性短板。最关键的设计洞察：用户感知的"倾听"不在于AI说了多少安慰话，而在于AI能否基于用户的具体内容进行精准复述（content-grounded paraphrase）。对AI产品经理的启示——不要追求让AI"更像人"，而要追求让AI"更懂你说的话"。对Emma来说，这篇论文提供了一个将心理学背景和产品设计能力完美结合的研究切入点✨'
+  takeaway: 'CyberSelf的核心贡献不在于"做了一个VR聊天机器人"，而在于证明了"具身化的自我表征能显著增强情绪调节效果"这一心理学假说。从产品角度看，这揭示了一个关键设计原则：在心理健康类AI产品中，"像不像我"比"聪不聪明"更重要。用户需要的不是一个完美的AI治疗师，而是一个能让他们"看见自己"的镜子。对Emma来说，这篇论文打开了一个极具想象力的研究方向——你是否可以探索"非VR环境下的自我疏离设计"？比如通过声音日记、AI信件等更低门槛的方式实现类似效果？这恰恰是HCI领域最需要的"从实验室走向日常"的转化研究✨'
 };
 
 function renderPaper() {
@@ -1392,39 +1392,39 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验性的，以观察或实验为依据的（/ɪmˈpɪrɪkl/）' },
-  { word: 'calibrate', pos: 'v.', def: '校准，调整以适应特定标准（/ˈkælɪbreɪt/）' },
-  { word: 'inductive', pos: 'adj.', def: '归纳的，从具体到一般的推理（/ɪnˈdʌktɪv/）' },
-  { word: 'delegation', pos: 'n.', def: '授权，委托（/ˌdelɪˈɡeɪʃn/）' },
-  { word: 'breakdown', pos: 'n.', def: '故障，崩溃；分类细目（/ˈbreɪkdaʊn/）' },
-  { word: 'grounding', pos: 'n.', def: '接地，基于事实的论证（/ˈɡraʊndɪŋ/）' },
-  { word: 'elaboration', pos: 'n.', def: '详尽阐述，精心制作（/ɪˌlæbəˈreɪʃn/）' },
-  { word: 'disclosure', pos: 'n.', def: '披露，透露信息（/dɪsˈkloʊʒər/）' },
-  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期追踪研究的（/ˌlɒndʒɪˈtjuːdɪnl/）' }
+  { word: 'embodied', pos: 'adj.', def: '具身的，以身体形式呈现的（/ɪmˈbɒdid/）' },
+  { word: 'distancing', pos: 'n.', def: '疏离，拉开心理距离的策略（/ˈdɪstənsɪŋ/）' },
+  { word: 'resilience', pos: 'n.', def: '韧性，从逆境中恢复的能力（/rɪˈzɪliəns/）' },
+  { word: 'valence', pos: 'n.', def: '效价，情绪的正负维度（/ˈveɪləns/）' },
+  { word: 'immersive', pos: 'adj.', def: '沉浸式的，使人深度投入的（/ɪˈmɜːsɪv/）' },
+  { word: 'cumulative', pos: 'adj.', def: '累积的，逐步增强的（/ˈkjuːmjʊlətɪv/）' },
+  { word: 'regulation', pos: 'n.', def: '调节，管控（情绪/行为的控制）（/ˌreɡjuˈleɪʃn/）' },
+  { word: 'avatar', pos: 'n.', def: '化身，虚拟世界中的用户表征（/ˈævətɑːr/）' },
+  { word: 'sustainable', pos: 'adj.', def: '可持续的，能长期维持的（/səˈsteɪnəbl/）' },
+  { word: 'externalise', pos: 'v.', def: '外化，使内在过程变为可观察的（/ekˈstɜːnəlaɪz/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a person who solved a problem in a clever way',
-  bullet: 'You should say: who this person is, what the problem was, how he or she solved it, and explain why you think it was a clever solution.',
-  sample: `I'd like to tell you about my university roommate, Xiao Chen, who came up with an extraordinarily creative solution to a problem that had been bothering our entire dormitory for months.
+  topic: 'Describe a quiet place you like to go to',
+  bullet: 'You should say: where it is, how you got to know it, what you do there, and explain why you like this place.',
+  sample: `I'd like to talk about a small reading nook tucked away on the top floor of my university library — a place that became my sanctuary during the most stressful semester of my life.
 
-The problem was essentially a scheduling conflict. We four roommates shared a single bathroom, and every morning between seven and eight, there was this chaotic bottleneck — everyone trying to get ready for their first class at roughly the same time. Arguments happened more often than you'd think, and it started affecting our friendships. We'd tried everything: a written rota, buying an extra mirror, even setting alarms fifteen minutes earlier. Nothing worked because everyone's class schedule changed weekly, making any fixed arrangement useless within days.
+It's a tiny corner on the seventh floor, right next to a floor-to-ceiling window that overlooks a garden of cherry trees. Most students don't bother going up there because it's far from the main study halls, which means it's almost always empty. I stumbled upon it by accident during my first week — I was wandering floor by floor looking for a seat, and when I pushed open the fire door to the top level, I found this peaceful alcove with two worn armchairs, a small bookshelf of poetry collections, and absolute silence except for the rustling of leaves outside.
 
-What Xiao Chen did was genuinely brilliant. She didn't just create another rigid timetable — instead, she built a shared digital spreadsheet where each person input their actual class schedule at the start of every week. Then she wrote a simple algorithm — nothing fancy, just basic logic — that automatically generated an optimal morning sequence based on three priorities: who had the earliest class, who needed the longest preparation time, and who had the shortest commute to their building. The system updated in real time and sent each person a personalised notification the night before telling them their suggested wake-up and bathroom time.
+I started going there almost every afternoon. I'd bring my laptop and my thermos of green tea, settle into the armchair, and spend two or three hours reading papers, writing essays, or simply staring out the window when my brain felt overloaded. The cherry trees below went through dramatic seasonal transformations — pale pink blossoms in spring, dense green canopy in summer, golden leaves in autumn, bare branches dusted with snow in winter. Watching that cycle gave me a strange sense of calm, as if time was moving at its own pace regardless of my deadlines.
 
-What made this solution so clever wasn't the technology itself — it was her way of thinking about the problem. Rather than trying to control people's behaviour through strict rules, she designed a flexible system that adapted to changing circumstances automatically. She understood something most of us miss: the real problem wasn't the bathroom queue, it was the unpredictability. By turning an unpredictable situation into a data-driven one, she eliminated the anxiety and frustration that came with not knowing when your turn would be. Within a week, morning conflicts dropped to zero, and she'd done it without spending a single yuan or imposing any restrictions on anyone. That's the kind of problem-solving I deeply admire — turning social friction into an elegant system.`,
+What I love most about this place is that it demands nothing from me. Unlike the crowded study halls where everyone is visibly stressed and the atmosphere is almost competitive, the top-floor nook feels like a different world. There's no pressure to look productive or to keep up with anyone. I can cry if I need to, laugh at something I've read, or just sit in complete stillness. It taught me that sometimes the most productive thing you can do is give yourself permission to be quiet — both externally and internally. That little corner of silence became the foundation of my mental health during an overwhelmingly difficult time.`,
   expressions: [
-    '🌟 scheduling conflict — 时间冲突/排期冲突',
-    '🌟 bottleneck — 瓶颈（指拥堵环节）',
-    '🌟 rigid timetable — 僵化的时间表',
-    '🌟 in real time — 实时地',
-    '🌟 personalised notification — 个性化通知',
-    '🌟 data-driven — 数据驱动的',
-    '🌟 social friction — 人际摩擦/社交摩擦',
-    '🌟 elegant system — 精妙的系统/体系',
-    '🌟 turn ... into ... — 把……转化为……',
-    '🌟 adapt to changing circumstances — 适应变化的情况'
+    '🌟 reading nook — 阅读角落/小阅读区',
+    '🌟 sanctuary — 避难所，心灵栖息地',
+    '🌟 floor-to-ceiling window — 落地窗',
+    '🌟 stumbled upon — 偶然发现',
+    '🌟 peaceful alcove — 宁静的小凹室',
+    '🌟 seasonal transformation — 季节变换',
+    '🌟 give yourself permission to — 允许自己……',
+    '🌟 in complete stillness — 完全静止中',
+    '🌟 mentally overwhelming — 精神上不堪重负的',
+    '🌟 the foundation of my mental health — 我心理健康的基石'
   ]
 };
 
@@ -1471,13 +1471,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"我在这园子里呆了十五年。十五年中，我在老柏树下坐着，躺着，看天上的云很快地飘过，就觉得这世界上的事情都不那么紧急了。园子里有两棵老柏树，每到秋天，树叶就开始变黄，一片片飘落下来，像是有人在上面写了什么字，又被风擦掉了。我就躺在那些落叶上，看它们在阳光里发出淡淡的香气，我觉得我也变成了其中的一片。"',
-  source: '史铁生《我与地坛》（1990）',
+  quote: '"凡事在大略就好，不在于精细。如果事事都要求精细，那活着就太累了。水里的鱼，空中的鸟，路边的草，各有各的活法，不必互相羡慕。人活一世，草木一秋，能把自己这一程走好，就已经很了不起了。你看那河边柳树，春天发芽，夏天浓荫，秋天落叶，冬天光秃——它从不着急，也不慌张，该绿就绿，该落就落。人也该像树一样，顺着时节活。"',
+  source: '汪曾祺《人间草木》（1983）',
   analysis: [
-    '<b>十五年的"呆"——被困之人的自我救赎</b>：史铁生21岁时双腿瘫痪，此后十五年间他几乎每天都在地坛公园里度过。这个"呆"字，初读是无所事事的廉价动词，细品却是极其沉重的。一个年轻人瘫痪后面对的不只是身体的困境，更是意义的崩塌——我还能做什么？我还值得活着吗？地坛成了他的"心理过渡空间"。从心理学角度看，这正是"丧失后的重建"过程：当一个人失去了以前身份认同的基础（"我是一个能走路的人"），他需要在废墟上重新建立一个新的"我是谁"。这个过程极其漫长、极其痛苦，而史铁生用了十五年。',
-    '<b>落叶上的字——模糊性与意义的张力</b>："像是有在上面写了什么字，又被风擦掉了"——这是整篇散文中最精妙的意象。落叶上"写了什么字"但看不清，这恰好映射了史铁生当时的内心状态：他隐约感到生命中有某种"意义"存在，但这个意义还没有足够清晰地显现。这与心理学中的"意义感觉知"（sense of coherence）概念相呼应——人在遭受重大挫折后，往往会感到世界是有意义的，但这个意义尚未被自己破译。史铁生没有急着去读懂那些"字"，而是躺在落叶上，等待它们自己显现。这种"不着急找答案"的姿态，本身就是一种深刻的心理智慧。',
-    '<b>"我也变成了其中的一片"——从分离到融合</b>：整段文字的精神拐点在最后这句话。注意史铁生的语态变化：开头是"我在这园子里"（"我"和"园子"是分离的，我是观察者），结尾却是"我也变成了其中的一片"（"我"融入了园子，我成为园子的一部分）。这是一个完整的心理转变过程：从"我在这里"到"我属于这里"，从"观察者"到"参与者"。用人本主义心理学的术语说，这是从"存在性孤独"走向"存在性归属"的过程。当一个人与某个场所、某种生活方式产生了"我属于这里"的感觉时，就找到了重新生活的支点。',
-    '<b>给Emma的话</b>：史铁生在地坛度过的十五年，本质上是一个"在废墟上重建意义"的过程。你现在也处在一个人生的过渡期——本科四年的结束、研究生阶段的开始、职业方向的探索。你也会有"像是有在前面写了什么字，但还看不清"的时刻。史铁生的智慧在于：他没有强迫自己立刻读懂那些字，而是允许自己呆在那里，躺在落叶上，等待时间。有时候，"耐心地呆着"本身就是最重要的事。✨'
+    '<b>"大略就好"——对完美主义的温柔反叛</b>：汪曾祺开篇就抛出了一个看似散漫、实则深刻的观点：凡事不必太精细。这句话如果出自一个"躺平"的年轻人之口，可能只是自我安慰；但汪曾祺不同——他经历了西南联大的战火、文革的批斗、被下放到牧场劳动，是真正经历过人生最粗糙、最不堪岁月的人。他说的"大略就好"不是放弃，而是看透了"精细执念"的虚妄。从心理学角度看，这恰恰对应了Emma可能面临的"全或无思维"（all-or-nothing thinking）——要么做到完美，要么干脆放弃。汪曾祺的智慧在于：完美不是前提，活着本身就是前提。',
+    '<b>"各有各的活法"——存在主义式的包容</b>：鱼在水里游，鸟在天上飞，路边的草就待在路边——它们从不互相比较。这段话暗合了人本主义心理学家罗杰斯的核心理念："无条件积极关注"。每个人都有自己的成长节奏，不必活在他人的标尺上。汪曾祺用极其朴素的语言传递了一个极其深刻的道理：你不需要变成别人，你只需要"把自己这一程走好"。这对正在探索职业方向的Emma来说，是一剂温柔的解药——你不必急着确定自己是不是"最好的那个"，你只需要走好自己的路。',
+    '<b>"顺着时节活"——自然节律与心理弹性</b>：柳树春天发芽、夏天浓荫、秋天落叶、冬天光秃——"它从不着急，也不慌张"。这段描写的美不仅在于它的画面感，更在于它传递了一种"顺应自然"的心理智慧。积极心理学中有一个概念叫"心理弹性"（psychological flexibility），指的是接纳当下状态、不与环境对抗的能力。柳树的智慧正是如此：冬天光秃不是失败，而是蓄力。那些看起来"什么都没在做"的日子，其实是生命必需的休眠期。你现在正处在人生的"冬季"——考研结束后的空档期、等待入学前的过渡阶段。这不是虚度，这是柳树在冬天的光秃——安静地积蓄下一个春天的力量。',
+    '<b>给Emma的话</b>：汪曾祺的文字有一种独特的治愈力量——他不讲大道理，只是平静地描述草木鱼鸟的日常，却让你在读完之后感到一种深深的安慰。他让你相信：活着这件事，不需要那么用力，也不需要那么完美。你现在正走在自己的季节里，不需要和任何人比较。该绿的时候就绿，该落的时候就落。✨'
   ]
 };
 
@@ -1509,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月17日 星期一',
+  date: '2026年8月18日 星期二',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '纪念江泽民同志诞辰100周年大会今日在人民大会堂隆重举行', desc: '纪念江泽民同志诞辰100周年大会8月17日上午10时在人民大会堂隆重举行，中共中央总书记、国家主席习近平将出席大会并发表重要讲话。' },
-    { tag: '国际', cls: 'news-intl', title: '印尼7.7级强震遇难人数升至53人，救援队仍无法抵达震中', desc: '印尼弗洛勒斯岛附近海域7.7级地震遇难人数升至53人、135人受伤，累计995次余震。山体滑坡阻断主干道，救援队仍无法抵达震中的纳格凯奥地区，超5000名居民已被紧急转移。' },
-    { tag: '国际', cls: 'news-intl', title: '伊朗军方宣布驱逐美军，不得进入霍尔木兹海峡', desc: '伊朗伊斯兰共和国军队总司令哈塔米公开表示"美国被驱逐已成事实"，今后美军不再获得进入波斯湾、阿曼湾和霍尔木兹海峡的许可。中东局势再度升温。' },
-    { tag: '科技', cls: 'news-tech', title: '中国成功发射卫星互联网低轨24组卫星，在轨总数达228颗', desc: '8月16日12时10分，长征十二号运载火箭在海南商业航天发射场成功发射卫星互联网低轨24组卫星，进一步扩充我国低轨卫星互联网在轨规模，验证了高密度常态化商业发射能力。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普要求"大幅缩减"美韩军演规模，半岛对峙风险上升', desc: '美韩"乙支自由之盾"军演正式开启，投入4.6万兵力。朝鲜将軍演定性为侵略战争预演。特朗普随后表示已指示国防部"大幅缩减"军演规模，但韩方尚未正式回应。' },
-    { tag: '国内', cls: 'news-domestic', title: '国家防总启动防汛四级应急响应，北方新一轮强降雨来临', desc: '针对8月18-19日北方新一轮强降雨，国家防总对北京、天津、河北、山西等9省区市启动防汛四级应急响应，重点防范中小河流洪水、山洪与城市内涝风险。' },
-    { tag: '科技', cls: 'news-tech', title: '前阿里千问大模型技术负责人林俊旸创办Agent公司，红杉+腾讯投资', desc: '前阿里千问大模型技术负责人林俊旸官宣在上海创办Pragmatik Labs（语用科技），研究方向为横跨数字与物理世界的下一代智能体（Agent），由高榕创投和红杉中国共同领投。' },
-    { tag: '国际', cls: 'news-intl', title: '埃及等8国外长联合谴责以色列拒绝加沙和平计划及巴勒斯坦建国', desc: '埃及、沙特、约旦、阿联酋等8国外长发表联合声明，强烈谴责以色列拒绝加沙停火第二阶段和和平计划以及巴勒斯坦建国方案，警告这将进一步破坏中东和平进程。' }
+    { tag: '科技', cls: 'news-tech', title: '宇树科技8月19日科创板上市，机器人跳高约2米引关注', desc: '国产机器人公司宇树科技正式公告将于8月19日在科创板上市，此前其"超人机器人"原地跳高约2米的视频引发全网热议。公司专注四足机器人和人形机器人研发，被视为中国具身智能领域标杆企业。' },
+    { tag: '科技', cls: 'news-tech', title: '英伟达为OpenAI俄亥俄州AI数据中心提供最高1050亿美元担保', desc: '英伟达宣布与SB Energy达成多年期合作，OpenAI将使用约4.25吉瓦IT负载容量部署英伟达全栈DSX AI工厂平台。英伟达已提供最高1050亿美元剩余价值担保，规模史无前例。' },
+    { tag: '科技', cls: 'news-tech', title: 'Nvidia联合微软、SpaceX成立开放安全AI联盟，应对AI安全挑战', desc: '在OpenAI遭遇重大网络安全事件后，英伟达、微软、SpaceX和Palantir联合成立"开放安全AI联盟"（Open Secure AI Alliance），旨在提升AI系统安全标准并建立行业协作机制。' },
+    { tag: '国内', cls: 'news-domestic', title: '8月18日起港珠澳大桥等三个口岸实施通关便利新措施', desc: '经出入境管理局批准，港珠澳大桥、横琴、青茂三个口岸正式实施优化"合作查验一次放行"三项便利措施，港澳居民可实现"一证通关"，外国人和台湾居民范围也大幅拓宽。' },
+    { tag: '国际', cls: 'news-intl', title: '库什纳与内塔尼亚胡会面，推动加沙"非军事化"和平计划', desc: '美国特使库什纳与以色列总理内塔尼亚胡会面，就哈马斯解除武装及以色列撤军达成共识，美军将领或将监督"非军事化"进程。内塔尼亚胡在寻求连任的同时对特朗普方案表达保留态度。' },
+    { tag: '国际', cls: 'news-intl', title: '民调显示特朗普支持率跌至33%，伊朗局势拖累选情', desc: '最新民调显示美国总统特朗普支持率降至33%。分析指伊朗战事持续拖累共和党中期选举前景，共和党高级顾问私下承认保住参众两院控制权的可能性正在变小。' },
+    { tag: '科技', cls: 'news-tech', title: '德国联合斯坦福开发混合能源系统，有望为AI数据中心供能', desc: '德国卡尔斯鲁厄理工学院与斯坦福大学合作开发出集光伏发电、太阳能热技术和被动式日间辐射冷却于一体的混合能源系统，可同时提供冷却、发电及加热功能，特别适合AI数据中心等高能耗场景。' },
+    { tag: '国内', cls: 'news-domestic', title: '全国铁路完成固定资产投资4406亿元，广湛高铁佛山站开通', desc: '全国铁路固定资产投资达4406亿元，广州至湛江高铁佛山站正式开通运营。铁路建设持续推进，为"十五五"开局之年经济社会发展提供基础设施保障。' }
   ]
 };
 
