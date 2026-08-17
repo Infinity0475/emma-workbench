@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'CyberSelf: Embodied Self-Distancing for Emotional Support in Virtual Reality',
-  authors: 'Bing Li, Yan Hu, Tinghui Li, Yinuo Zhang, Wen Ma, Yuanfeng Zhou, Yiran Shen',
-  venue: 'arXiv:2608.07521, Submitted 9 Jul 2026',
-  link: 'https://arxiv.org/abs/2608.07521',
-  date: '2026-08-16',
-  abstract: '自我距离化（self-distancing）是一种有效的情绪调节策略，但在个人危机中可能因认知负荷过高而失效。虚拟现实（VR）为外化心理距离提供了新途径——通过具身化的自我表征。本文提出CyberSelf系统，一个整合了视觉自相似化身、克隆自我语音和LLM驱动实时对话的VR情绪支持系统。用户可以在沉浸式VR中与"另一个自己"进行多轮对话，在保持自我相关性的同时实现具身自我距离化。研究比较了三种自我表征丰富度层级（文本、文本+语音、文本+语音+外貌），结果显示所有条件均在情绪和应对指标上产生显著改善——效价、唤醒度、希望和韧性提升，焦虑和模拟器不适感降低。更丰富的表征增加了对话参与度，全具身化产生了最强的情绪调节生理指标。后续四周纵向研究表明这些收益具有可持续性和累积性。',
+  title: 'When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews',
+  authors: 'He Zhang, Kambinachi Chukwuma, ChanMin Kim, John M. Carroll',
+  venue: 'arXiv:2608.10412, Accepted at ACM HCOMP 2026',
+  link: 'https://arxiv.org/abs/2608.10412',
+  date: '2026-08-17',
+  abstract: '半结构化访谈是质性研究的基石，但始终高度依赖人力。本文报告了一项实证研究：当访谈者是一个现成的实时多模态大语言模型（MLLM）时，究竟会发生什么？研究者构建了InterviewBot——一个基于语音的访谈系统，以研究者编写的访谈提纲包裹实时MLLM，并将其作为观察默认MLLM访谈行为的研究工具而非新架构。在预研究（N=15）中，参与者先完成Bot主导的半结构化访谈，再参加关于该体验的人类主导反思环节。核心贡献包括：(i) 对MLLM访谈者的逐轮行为分析（N_turns=428），发现其确认过多但追问不足（深度追问仅占4.9%），且28.7%的提问轮次在一个turn中塞入了多个问题；(ii) 在真实部署系统中归纳出四类数据收集崩溃（信息丢失、过早终止、延迟、打断）；(iii) 从参与者反思中提炼出三个社会动力学主题：披露校准、制度合法性、对话接地。',
   keyPoints: [
-    '"具身自我距离化"的创新范式：传统心理学中的"自我距离化"技术（如"用第三人称审视自己的处境"）需要较强的认知能力，在情绪危机时往往难以执行。CyberSelf的突破在于：用VR技术将抽象的心理距离"外化"为可见、可听、可对话的虚拟自我。这不是简单的"照镜子"，而是创造了一个"像你的、但又不是你"的第三视角存在——用户既感到熟悉（因为外貌和声音都是自己的），又感到安全（因为知道这是一个"可以倾诉的对象"）。这种设计思路对HCI领域的启示是：技术不是要"替代"人类的情感处理能力，而是通过创造新的"认知脚手架"来降低情绪调节的门槛。',
-    '"表征丰富度"的梯度效应：研究最实用的发现是三种条件的梯度差异——仅文本<文本+语音<文本+语音+外貌。全具身条件（Text+Voice+Appearance）不仅主观评分最高，在生理指标（如皮肤电反应、心率变异性）上也显示出最强的情绪调节效果。这意味着在VR情绪支持产品的设计中，"投入多少在化身真实感上"不是审美问题，而是直接影响疗效的功能性决策。对产品经理来说，这为VR心理健康产品的功能优先级排序提供了实证依据。',
-    '四周纵向研究的稀缺价值：HCI领域大多数用户研究只有单次实验或一周以内的观察期。本研究进行了四周的纵向追踪，发现CyberSelf的效果不仅没有衰减，反而呈现"累积效应"——使用者的情绪调节能力随时间持续提升。这从方法论上回应了一个重要质疑：VR情绪支持的"新鲜感效应"（novelty effect）是否会随时间消退？答案是：至少在self-distancing场景中，持续使用反而加深了效果。这为数字心理干预产品的长期价值提供了有力证据。',
-    '对Emma的核心启示：这篇论文完美地站在你的三个兴趣交汇点——VR交互设计（HCI）、情绪调节（应用心理学）、LLM驱动的对话系统（AI）。更值得关注的是它的研究方法论：将成熟的心理学理论（self-distancing）转化为可交互的技术系统，再通过严格的实验设计（三组对照+纵向追踪+主观+生理多指标）验证效果。这正是HCI PhD申请的典型"研究叙事"——从理论出发，设计干预，用数据说话。当你未来在北师大跟随导师做用户研究时，可以思考：这种"具身化自我表征"的思路能否拓展到更广泛的用户体验场景？比如，让产品经理在VR中"变成用户"来审视自己的产品设计？'
+    '"确认过载、追问不足"的MLLM访谈者画像：MLLM在访谈中大量使用确认性回应，但真正推动对话深入的追问仅占4.9%。尽管明确指示"每次只问一个问题"，28.7%的提问轮次仍然塞入了多个问题。这对AI产品经理有极强的实践意义——在设计AI访谈助手时，"知道什么时候追问"比"知道什么时候确认"难得多，也重要得多。',
+    '四类数据收集崩溃的系统性归纳：信息丢失（MLLM遗漏关键信息）、过早终止（用户还没说完AI就开始总结）、延迟（响应时间过长破坏对话节奏）、打断（AI在用户说话时开始输出）。这是在实际部署中观察到的，不是理论推演。对产品经理来说，这是极其实用的"踩坑清单"。',
+    '"信任的制度性"而非"信任的能力性"：参与者对AI访谈者的信任，更多取决于"谁让我做这件事"（制度合法性），而不是"这个AI聊得好不好"（对话能力）。这验证了"信任转移"理论在人机交互中的适用性——AI产品的信任设计不能只看产品本身，还需考虑品牌背书、场景设置等外围因素。',
+    '对Emma的核心启示：论文展示了极具参考价值的研究范式——不是构建"更好的AI访谈系统"，而是将现成的AI系统作为"研究仪器"来观察其默认行为。当你未来在北师大的用户研究课程中学习质性研究方法时，可以直接引用这篇论文的框架。当你申请HCI PhD时，"AI辅助用户研究的方法论可靠性"本身就是一个极具潜力的研究方向✨'
   ],
-  takeaway: 'CyberSelf的研究让我们看到一个美好的方向：技术可以成为人类情绪健康的"放大器"而非"替代品"。它没有试图用AI取代心理咨询师，而是利用VR+LLM创造一个安全的"自我对话空间"——用户最终依靠的是自己的力量，技术只是帮助降低了启动情绪调节的门槛。这种"赋能而非替代"的设计理念，正是HCI领域最让人兴奋的前沿方向之一。对Emma来说，这篇论文不仅印证了你选择的方向（应用心理学+用户研究+AI）的学术价值，更提供了一个可模仿的研究范式：找到心理学中"好用但难执行"的技术，然后用技术手段降低它的执行门槛。当你写HCI PhD的Research Statement时，"如何用技术外化心理距离、降低情绪调节门槛"完全可以成为你独有的研究叙事线索✨'
+  takeaway: '这篇论文揭示了AI访谈工具的深刻张力：效率上潜力巨大（7×24小时可用、无interviewer bias），但深度上存在结构性短板。最关键的设计洞察：用户感知的"倾听"不在于AI说了多少安慰话，而在于AI能否基于用户的具体内容进行精准复述（content-grounded paraphrase）。对AI产品经理的启示——不要追求让AI"更像人"，而要追求让AI"更懂你说的话"。对Emma来说，这篇论文提供了一个将心理学背景和产品设计能力完美结合的研究切入点✨'
 };
 
 function renderPaper() {
@@ -1392,39 +1392,39 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'embodiment', pos: 'n.', def: '具身化，化身（/ɪmˈbɒdimənt/）' },
-  { word: 'self-distancing', pos: 'n.', def: '自我距离化，以旁观者视角审视自身（/ˌself ˈdɪstənsɪŋ/）' },
-  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期追踪的（/ˌlɒŋɡɪˈtjuːdɪnl/）' },
-  { word: 'intervention', pos: 'n.', def: '干预，介入措施（/ˌɪntəˈvenʃn/）' },
-  { word: 'valence', pos: 'n.', def: '效价，情绪的正负维度（/ˈveɪləns/）' },
-  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
-  { word: 'immersive', pos: 'adj.', def: '沉浸式的（/ɪˈmɜːsɪv/）' },
-  { word: 'scaffold', pos: 'v.', def: '搭建脚手架，提供支撑性框架（/ˈskæfəʊld/）' },
-  { word: 'cumulative', pos: 'adj.', def: '累积的，逐渐增强的（/ˈkjuːmjʊlətɪv/）' },
-  { word: 'alleviate', pos: 'v.', def: '缓解，减轻（痛苦等）（/əˈliːvieɪt/）' }
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验性的，以观察或实验为依据的（/ɪmˈpɪrɪkl/）' },
+  { word: 'calibrate', pos: 'v.', def: '校准，调整以适应特定标准（/ˈkælɪbreɪt/）' },
+  { word: 'inductive', pos: 'adj.', def: '归纳的，从具体到一般的推理（/ɪnˈdʌktɪv/）' },
+  { word: 'delegation', pos: 'n.', def: '授权，委托（/ˌdelɪˈɡeɪʃn/）' },
+  { word: 'breakdown', pos: 'n.', def: '故障，崩溃；分类细目（/ˈbreɪkdaʊn/）' },
+  { word: 'grounding', pos: 'n.', def: '接地，基于事实的论证（/ˈɡraʊndɪŋ/）' },
+  { word: 'elaboration', pos: 'n.', def: '详尽阐述，精心制作（/ɪˌlæbəˈreɪʃn/）' },
+  { word: 'disclosure', pos: 'n.', def: '披露，透露信息（/dɪsˈkloʊʒər/）' },
+  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期追踪研究的（/ˌlɒndʒɪˈtjuːdɪnl/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a person you know who has chosen a career in the medical field',
-  bullet: 'You should say: who this person is, what he/she does, why he/she chose this career, and explain how you feel about him/her.',
-  sample: `I\'d like to talk about my mother\'s best friend, Aunt Lin, who has been a community nurse in a small town in Hunan for over twenty years. She\'s the kind of person who makes you believe that healthcare isn\'t just about hospitals and procedures — it\'s about showing up for people consistently.
+  topic: 'Describe a person who solved a problem in a clever way',
+  bullet: 'You should say: who this person is, what the problem was, how he or she solved it, and explain why you think it was a clever solution.',
+  sample: `I'd like to tell you about my university roommate, Xiao Chen, who came up with an extraordinarily creative solution to a problem that had been bothering our entire dormitory for months.
 
-Aunt Lin works at a community health centre that serves about three thousand residents, mostly elderly people and young families. Her daily routine involves home visits — checking blood pressure for hypertensive patients, changing dressings for post-surgery patients, and giving vaccinations to infants. She also runs a weekly health education session at the local community centre, where she teaches people about nutrition, exercise, and how to recognise early warning signs of common diseases.
+The problem was essentially a scheduling conflict. We four roommates shared a single bathroom, and every morning between seven and eight, there was this chaotic bottleneck — everyone trying to get ready for their first class at roughly the same time. Arguments happened more often than you'd think, and it started affecting our friendships. We'd tried everything: a written rota, buying an extra mirror, even setting alarms fifteen minutes earlier. Nothing worked because everyone's class schedule changed weekly, making any fixed arrangement useless within days.
 
-What drew her to this career was actually a personal experience. When she was in her early twenties, her grandmother developed diabetes and the family struggled to manage it because they lived far from the nearest hospital. She watched a visiting nurse teach them how to monitor blood sugar levels and adjust their diet, and that nurse\'s patience and expertise transformed their situation. Aunt Lin decided right then that she wanted to be that kind of person — someone who brings healthcare knowledge directly to people who need it most.
+What Xiao Chen did was genuinely brilliant. She didn't just create another rigid timetable — instead, she built a shared digital spreadsheet where each person input their actual class schedule at the start of every week. Then she wrote a simple algorithm — nothing fancy, just basic logic — that automatically generated an optimal morning sequence based on three priorities: who had the earliest class, who needed the longest preparation time, and who had the shortest commute to their building. The system updated in real time and sent each person a personalised notification the night before telling them their suggested wake-up and bathroom time.
 
-The reason I admire her so deeply is because she demonstrates what I call \"quiet professionalism\". She never talks about her work as though it\'s heroic or sacrificial. She simply does it, day after day, with the same level of care whether she\'s dealing with a difficult patient or a straightforward check-up. In a world that often celebrates loud achievements, her consistent dedication to a relatively under-recognised profession strikes me as genuinely admirable. She\'s also influenced my own career thinking — she showed me that impact doesn\'t require a grand platform; it requires showing up with competence and empathy, every single day.`,
+What made this solution so clever wasn't the technology itself — it was her way of thinking about the problem. Rather than trying to control people's behaviour through strict rules, she designed a flexible system that adapted to changing circumstances automatically. She understood something most of us miss: the real problem wasn't the bathroom queue, it was the unpredictability. By turning an unpredictable situation into a data-driven one, she eliminated the anxiety and frustration that came with not knowing when your turn would be. Within a week, morning conflicts dropped to zero, and she'd done it without spending a single yuan or imposing any restrictions on anyone. That's the kind of problem-solving I deeply admire — turning social friction into an elegant system.`,
   expressions: [
-    '🌟 show up for someone —  consistently be there for someone（持续地出现在某人身边支持他们）',
-    '🌟 community health centre — 社区卫生服务中心',
-    '🌟 home visit — 上门家访（医疗服务）',
-    '🌟 hypertensive patient — 高血压患者',
-    '🌟 health education session — 健康宣教课',
-    '🌟 quiet professionalism — 沉静的专业精神',
-    '🌟 under-recognised profession — 不被充分认可的职业',
-    '🌟 competence and empathy — 专业能力与同理心',
-    '🌟 a grand platform — 宏大的舞台/平台',
-    '🌟 transform someone\'s situation — 改变某人的处境'
+    '🌟 scheduling conflict — 时间冲突/排期冲突',
+    '🌟 bottleneck — 瓶颈（指拥堵环节）',
+    '🌟 rigid timetable — 僵化的时间表',
+    '🌟 in real time — 实时地',
+    '🌟 personalised notification — 个性化通知',
+    '🌟 data-driven — 数据驱动的',
+    '🌟 social friction — 人际摩擦/社交摩擦',
+    '🌟 elegant system — 精妙的系统/体系',
+    '🌟 turn ... into ... — 把……转化为……',
+    '🌟 adapt to changing circumstances — 适应变化的情况'
   ]
 };
 
@@ -1471,13 +1471,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"我们走便走，停便停，没有一定的事。路是曲折的，忽而升高，忽而降低，忽而左回，忽而右转。然而我们始终走着。路旁有树，有花，有草；有时有溪水潺潺地流着。天上的云，忽而像马，忽而像狗，忽而像山，忽而像海。我们看了，觉得有趣，便笑一笑，又往前走。"',
-  source: '丰子恺《山水间的生活》（1929）',
+  quote: '"我在这园子里呆了十五年。十五年中，我在老柏树下坐着，躺着，看天上的云很快地飘过，就觉得这世界上的事情都不那么紧急了。园子里有两棵老柏树，每到秋天，树叶就开始变黄，一片片飘落下来，像是有人在上面写了什么字，又被风擦掉了。我就躺在那些落叶上，看它们在阳光里发出淡淡的香气，我觉得我也变成了其中的一片。"',
+  source: '史铁生《我与地坛》（1990）',
   analysis: [
-    '<b>行走的哲学——无目的性的美学</b>：丰子恺笔下"我们走便走，停便停"的姿态，表面上是对一次郊游的白描，实质上是一种深刻的生活态度宣言。在二十世纪初的中国，知识分子正被"启蒙""救亡""进步"等宏大叙事裹挟前行，每个人都背负着"必须到达某个目的地"的焦虑。丰子恺却在这篇散文中，将"没有一定的事"升华为一种美学：走路本身就是目的，不是手段。这种"无目的性的行走"，与心理学中的"正念"（mindfulness）理念惊人地契合——不评判、不追赶、不焦虑，只是全然地"在"。从认知心理学角度看，这正是对抗"目标导向焦虑"的一剂良药。',
-    '<b>感官的民主化——云像马又像海</b>：注意丰子恺对云的描写："忽而像马，忽而像狗，忽而像山，忽而像海。"他没有选择任何一个固定的比喻，而是让比喻本身流动起来。这不是修辞上的随意，而是一种认知策略——他拒绝让任何一个意象"定型"，因为一旦定型，想象就停止了。格式塔心理学告诉我们，人类知觉天然追求"闭合"（closure），倾向于把模糊的东西看成确定的形状。丰子恺却刻意抵抗这种闭合冲动，让知觉保持在"未完成"的开放状态。这种"保持开放"的能力，恰恰是创造力的核心要素，也是情绪调节中"认知灵活性"（cognitive flexibility）的重要表现。',
-    '<b>"笑一笑，又往前走"——最轻的重量与最深的智慧</b>：整段文字最打动人的，是最后那六个字："便笑一笑，又往前走。"这不是那种历经沧桑后的"苦笑"，也不是自我安慰的"强颜欢笑"——而是一种对"生活本就是如此"的自然接纳。从积极心理学的视角看，这接近于"接纳与承诺疗法"（ACT）的核心理念：不是消除痛苦，而是带着痛苦继续前行；不是因为一切都好才微笑，而是微笑本身就是一种"继续前行"的力量。丰子恺在1929年写下这段文字时，中国正处于军阀混战的尾声，个人生活也充满不确定性。但正是在这样的背景下，"笑一笑又往前走"才显得尤为珍贵——它不是逃避现实，而是在认清现实后，依然选择以轻盈的姿态面对。',
-    '<b>给Emma的话</b>：你现在正处在一个充满"目标感"的人生阶段——雅思要考到几分、9月要入学、实习要投哪里、未来要不要读博……这些目标都很重要，但丰子恺提醒我们：如果永远只看"目的地"，就会错过路边的树、花和溪水。你的导师蒋建华老师曾在答辩时给你说过"做学问要松弛有度"——其实生活也是。当你焦虑的时候，不妨试着做一次"丰子恺式的散步"：不带目的，不赶时间，看到云就像云，看到花就像花，然后"笑一笑，又往前走"。这不是躺平，而是一种高级的心理弹性✨'
+    '<b>十五年的"呆"——被困之人的自我救赎</b>：史铁生21岁时双腿瘫痪，此后十五年间他几乎每天都在地坛公园里度过。这个"呆"字，初读是无所事事的廉价动词，细品却是极其沉重的。一个年轻人瘫痪后面对的不只是身体的困境，更是意义的崩塌——我还能做什么？我还值得活着吗？地坛成了他的"心理过渡空间"。从心理学角度看，这正是"丧失后的重建"过程：当一个人失去了以前身份认同的基础（"我是一个能走路的人"），他需要在废墟上重新建立一个新的"我是谁"。这个过程极其漫长、极其痛苦，而史铁生用了十五年。',
+    '<b>落叶上的字——模糊性与意义的张力</b>："像是有在上面写了什么字，又被风擦掉了"——这是整篇散文中最精妙的意象。落叶上"写了什么字"但看不清，这恰好映射了史铁生当时的内心状态：他隐约感到生命中有某种"意义"存在，但这个意义还没有足够清晰地显现。这与心理学中的"意义感觉知"（sense of coherence）概念相呼应——人在遭受重大挫折后，往往会感到世界是有意义的，但这个意义尚未被自己破译。史铁生没有急着去读懂那些"字"，而是躺在落叶上，等待它们自己显现。这种"不着急找答案"的姿态，本身就是一种深刻的心理智慧。',
+    '<b>"我也变成了其中的一片"——从分离到融合</b>：整段文字的精神拐点在最后这句话。注意史铁生的语态变化：开头是"我在这园子里"（"我"和"园子"是分离的，我是观察者），结尾却是"我也变成了其中的一片"（"我"融入了园子，我成为园子的一部分）。这是一个完整的心理转变过程：从"我在这里"到"我属于这里"，从"观察者"到"参与者"。用人本主义心理学的术语说，这是从"存在性孤独"走向"存在性归属"的过程。当一个人与某个场所、某种生活方式产生了"我属于这里"的感觉时，就找到了重新生活的支点。',
+    '<b>给Emma的话</b>：史铁生在地坛度过的十五年，本质上是一个"在废墟上重建意义"的过程。你现在也处在一个人生的过渡期——本科四年的结束、研究生阶段的开始、职业方向的探索。你也会有"像是有在前面写了什么字，但还看不清"的时刻。史铁生的智慧在于：他没有强迫自己立刻读懂那些字，而是允许自己呆在那里，躺在落叶上，等待时间。有时候，"耐心地呆着"本身就是最重要的事。✨'
   ]
 };
 
@@ -1509,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月16日 星期日',
+  date: '2026年8月17日 星期一',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '我国第二部法典《生态环境法典》施行后首案宣判', desc: '《中华人民共和国生态环境法典》8月15日正式施行当日，浙江衢州衢江区法院开庭并当庭宣判全国首例适用新法典的噪声污染案，商铺低频噪声扰民被判限期整改并赔偿，新法从文本直接走进社区生活。' },
-    { tag: '国内', cls: 'news-domestic', title: '河南贾鲁河堤坝溃口顺利合龙，防汛形势趋稳', desc: '经过多方应急抢险力量昼夜不停努力，8月15日晚8时29分，河南周口贾鲁河117米溃口成功合龙。但水利部提醒沙颍河周口段水位仍将维持超保水位，国家防总对江苏防汛应急响应提升至三级。' },
-    { tag: '国际', cls: 'news-intl', title: '印尼7.7级强震已致47人遇难，3名中国游客受轻伤', desc: '印尼弗洛勒斯岛附近海域发生7.7级地震，已造成47人死亡、2人重伤、11人轻伤，约2000名居民紧急撤离。中国驻登巴萨总领馆确认3名中国游客受轻伤，均无大碍。地震触发短暂海啸预警后已解除。' },
-    { tag: '国际', cls: 'news-intl', title: '日本战败投降81周年，政要参拜靖国神社引发强烈抗议', desc: '日本首相高市早苗向靖国神社供奉祭祀费，个别内阁成员前往参拜。中方强烈谴责并提出严正交涉，国防部警告日方若一意孤行必将再次受到正义审判和历史清算。韩国朝野也对此予以抨击。' },
-    { tag: '科技', cls: 'news-tech', title: '英伟达披露持有SpaceX股份估值约210亿美元', desc: '英伟达向SEC提交13F文件，披露持有SpaceX 1.228亿股A类股票。此前英伟达向xAI注资100亿美元，后因SpaceX以1.25万亿美元全股票交易收购xAI，英伟达持股自动转为SpaceX股份，账面浮盈超70亿美元。' },
-    { tag: '科技', cls: 'news-tech', title: '千问办公首发上线GLM-5.3与DeepSeek V4 Pro模型', desc: '阿里巴巴AI Agent产品"千问办公"正式首发上线两款国产大模型GLM-5.3和DeepSeek V4 Pro，标志着千问办公已兼容三款主流国产大模型，提升办公场景下的智能推理与多轮交互能力。' },
-    { tag: '国内', cls: 'news-domestic', title: '第38届国际信息学奥赛中国队3金1银夺团体第一', desc: '第38届国际信息学奥林匹克竞赛在塔什干落幕，中国队3金1银夺团体第一，许淇文以498.27分排名全球第一。2026软科世界大学学术排名同日出炉，中国内地16校跻身百强，清华列全球第18。' },
-    { tag: '国际', cls: 'news-intl', title: '厄瓜多尔总统诺沃亚抵达北京开启8天国事访问', desc: '应国家主席习近平邀请，厄瓜多尔总统诺沃亚8月16日抵达北京，开始对中国进行为期8天的国事访问。此访恰逢中厄建立全面战略伙伴关系十周年，是诺沃亚总统首次对中国进行国事访问。' }
+    { tag: '国内', cls: 'news-domestic', title: '纪念江泽民同志诞辰100周年大会今日在人民大会堂隆重举行', desc: '纪念江泽民同志诞辰100周年大会8月17日上午10时在人民大会堂隆重举行，中共中央总书记、国家主席习近平将出席大会并发表重要讲话。' },
+    { tag: '国际', cls: 'news-intl', title: '印尼7.7级强震遇难人数升至53人，救援队仍无法抵达震中', desc: '印尼弗洛勒斯岛附近海域7.7级地震遇难人数升至53人、135人受伤，累计995次余震。山体滑坡阻断主干道，救援队仍无法抵达震中的纳格凯奥地区，超5000名居民已被紧急转移。' },
+    { tag: '国际', cls: 'news-intl', title: '伊朗军方宣布驱逐美军，不得进入霍尔木兹海峡', desc: '伊朗伊斯兰共和国军队总司令哈塔米公开表示"美国被驱逐已成事实"，今后美军不再获得进入波斯湾、阿曼湾和霍尔木兹海峡的许可。中东局势再度升温。' },
+    { tag: '科技', cls: 'news-tech', title: '中国成功发射卫星互联网低轨24组卫星，在轨总数达228颗', desc: '8月16日12时10分，长征十二号运载火箭在海南商业航天发射场成功发射卫星互联网低轨24组卫星，进一步扩充我国低轨卫星互联网在轨规模，验证了高密度常态化商业发射能力。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普要求"大幅缩减"美韩军演规模，半岛对峙风险上升', desc: '美韩"乙支自由之盾"军演正式开启，投入4.6万兵力。朝鲜将軍演定性为侵略战争预演。特朗普随后表示已指示国防部"大幅缩减"军演规模，但韩方尚未正式回应。' },
+    { tag: '国内', cls: 'news-domestic', title: '国家防总启动防汛四级应急响应，北方新一轮强降雨来临', desc: '针对8月18-19日北方新一轮强降雨，国家防总对北京、天津、河北、山西等9省区市启动防汛四级应急响应，重点防范中小河流洪水、山洪与城市内涝风险。' },
+    { tag: '科技', cls: 'news-tech', title: '前阿里千问大模型技术负责人林俊旸创办Agent公司，红杉+腾讯投资', desc: '前阿里千问大模型技术负责人林俊旸官宣在上海创办Pragmatik Labs（语用科技），研究方向为横跨数字与物理世界的下一代智能体（Agent），由高榕创投和红杉中国共同领投。' },
+    { tag: '国际', cls: 'news-intl', title: '埃及等8国外长联合谴责以色列拒绝加沙和平计划及巴勒斯坦建国', desc: '埃及、沙特、约旦、阿联酋等8国外长发表联合声明，强烈谴责以色列拒绝加沙停火第二阶段和和平计划以及巴勒斯坦建国方案，警告这将进一步破坏中东和平进程。' }
   ]
 };
 
