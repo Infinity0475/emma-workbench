@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'The Transparency Trap: How AI Disclaimers Create Overconfidence in High-Stakes Decisions',
-  authors: 'Neil Todkar',
-  venue: 'arXiv:2608.07493, Human-Computer Interaction (cs.HC)',
-  link: 'https://arxiv.org/abs/2608.07493',
-  date: '2026-08-19',
-  abstract: 'AI免责声明（disclaimers）在设计上旨在提醒用户注意AI输出的局限性，但实际效果可能适得其反。本研究通过混合实验设计（52名参与者，378个刺激级响应），在金融、医疗和AI生成内容三个高风险领域考察了免责声明的位置和说服性线索对用户信任、感知准确性和免责声明参与度的影响。研究发现了一个"透明度悖论"：部分参与者将免责声明解读为系统自我意识和诚实的标志，反而增加了对系统的信任。同时，"横幅盲区"（banner blindness）现象表明，标准化的AI免责声明不足以防止用户过度依赖。研究还发现，医疗内容获得了最高的信任评分，用户在不同语境和风险感知下对警告的解读方式截然不同。',
+  title: 'Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions',
+  authors: 'Xiaokai Yan, Jingtao Ding, Yong Li, Zhiwen Yu',
+  venue: 'arXiv:2608.14132, Human-Computer Interaction (cs.HC) & Artificial Intelligence (cs.AI)',
+  link: 'https://arxiv.org/abs/2608.14132',
+  date: '2026-08-20',
+  abstract: '当前移动端GUI智能体主要聚焦于被动式任务执行，缺乏对用户意图的主动理解与预测能力。本文提出Act2Intention框架，通过整合意图理解、意图预测和决策执行三个模块，构建了首个基于连续意图-动作轨迹的主动式智能体评估基准。研究团队收集了覆盖52个App的72,511条意图标注和超过70万条动作数据，建立了Act2Intention Bench。实验表明，在该基准上进行监督微调后，智能体在意图理解、意图预测和意图执行三个维度分别获得了+32.0、+10.25和+6.9的绝对提升，证明了意图驱动的交互设计对主动式Agent的关键价值。',
   keyPoints: [
-    '"透明度悖论"的发现——这是本研究最核心的贡献。传统假设认为"给用户更多信息=用户会更谨慎"，但实验结果恰恰相反：当AI系统主动标注"我可能会出错"时，部分用户反而认为"这个系统很诚实，所以更值得信任"。这揭示了人类认知中一个微妙的启发式偏差——我们将"自我批评"等同于"诚实可靠"。从产品设计角度看，这意味着简单地添加"AI生成内容"水印并不能真正解决用户信任校准的问题。',
-    '"横幅盲区"现象的揭示：类似于网页设计中用户忽视广告横幅的"横幅盲区"（banner blindness），用户在面对标准化AI免责声明时也会自动忽略。这说明免责声明如果只是形式化、模板化地放在角落，用户根本不会注意到——就像我们不会仔细阅读App更新日志中的"隐私政策变更"一样。这对AI产品的信息架构设计提出了挑战：如何让用户真正"看见"风险警示？',
-    '三个高风险领域的对比设计很巧妙：金融、医疗、AI内容——三个领域的用户风险感知不同，对免责声明的解读也不同。医疗内容获得了最高信任评分，这可能是因为人们默认"医疗=严谨"，反而降低了对AI错误的警觉。这提醒我们：用户的风险感知不仅取决于技术本身，还受到应用场景语境的强烈影响。',
-    '对Emma的核心启示：这篇论文完美展示了HCI研究如何回答一个极具现实意义的产品问题——"怎样设计AI产品才能让用户既信任又不过度信任？"。研究方法上，混合实验设计（within-between design）结合了定量和定性数据，是HCI领域非常经典的方法论。当你准备HCI PhD申请时，这类"揭示AI设计中反直觉现象"的研究，正是招生委员会最欣赏的选题方向——它既有学术价值，又有产品设计启示✨'
+    '从"被动响应"到"主动预判"的范式转变——这是本文最核心的贡献。现有手机Agent几乎都是"你说我做"的被动模式，而Act2Intention试图让Agent理解用户"接下来想做什么"，从而提前提供服务。这背后涉及一个关键的用户研究问题：我们能否从用户的GUI操作序列中推断出他们的深层意图？这对HCI领域来说是一个从"交互效率"到"交互预见性"的重要跃迁。',
+    '72,511条意图标注+70万条动作数据——这是一个令人印象深刻的基准规模。覆盖52个App意味着数据集具有良好的生态效度（ecological validity），不是实验室环境下的小样本实验。对于HCI研究来说，构建高质量的基准数据集本身就是一种重要贡献——就像ImageNet之于计算机视觉、SQuAD之于NLP一样。这个数据集的发布为后续研究提供了标准化的评估平台。',
+    '个性化意图预测的设计思路值得关注：不同用户的使用习惯不同，同一个App场景下，"刷微博"和"查工作邮件"可能对应完全不同的操作序列。Act2Intention Agent通过个性化建模来适应不同用户的行为模式——这恰好是用户研究的核心价值所在。理解用户个体差异，是构建有效主动式系统的前提。',
+    '对Emma的核心启示：这篇论文完美展示了HCI+AI交叉领域的前沿方向——"意图驱动的交互"。从产品经理视角看，这对应着一个巨大的产品机会：如果手机能预判你的需求并主动服务，用户体验将发生质变。从学术视角看，意图推断本质上是一个"心理理论"（Theory of Mind）问题——机器能否像人一样理解他人的心理状态？这恰好连接了心理学和HCI，是你未来HCI PhD研究的潜在方向✨'
   ],
-  takeaway: '这篇论文的核心洞察是：透明度≠有效沟通。在设计AI产品时，仅仅"告知用户"是不够的——你需要确保用户真正理解并恰当使用这些信息。"透明度悖论"揭示了一个深层矛盾：我们以为给用户提供更多信息就能让他们做出更好的决策，但人类的认知系统并不是这样工作的。我们会被形式误导、被语境影响、被自己的启发式偏差带偏。从产品经理的视角看，这意味着AI产品的"信任设计"不能停留在"加一行免责声明"，而需要从根本上重新思考信息呈现的时机、方式和语境。对Emma来说，这篇论文提供了一个很好的研究思路：你可以探索"什么样的免责声明设计能有效校准用户对AI系统的信任？"——这个问题连接了心理学（信任形成机制）和产品设计（信息架构），恰好是你心理学+HCI交叉背景的完美发力点✨'
+  takeaway: '这篇论文揭示了一个重要趋势：下一代AI交互将从"命令式"走向"意图式"。传统交互需要你明确告诉AI要做什么，而主动式Agent试图理解你"没说出口的需求"。这背后涉及三个层次的挑战：技术层面——如何从行为序列中推断意图；认知层面——人类自身的意图往往是模糊的、动态变化的；设计层面——即使AI能预判意图，如何呈现主动服务而不让用户感到"被监控"或"被冒犯"？从心理学角度看，这涉及"感知控制"（perceived control）和"隐私悖论"（privacy paradox）——用户既希望AI懂自己，又担心AI太懂自己。对Emma来说，这类研究完美展示了心理学背景在HCI领域的独特优势：你理解人类的认知模式和行为动机，这正是构建"以人为本"AI系统所需的核心能力✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,42 +1391,41 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'paradox', pos: 'n.', def: '悖论，自相矛盾的现象（/ˈpærədɒks/）' },
-  { word: 'calibrate', pos: 'v.', def: '校准，精确调整以确保准确性（/ˈkælɪbreɪt/）' },
-  { word: 'overreliance', pos: 'n.', def: '过度依赖，过分倚仗某一事物（/ˌəʊvərɪˈlaɪəns/）' },
-  { word: 'disclaimer', pos: 'n.', def: '免责声明，声明不承担责任的告知（/dɪsˈkleɪmər/）' },
-  { word: 'perceive', pos: 'v.', def: '感知，察觉，认识到（/pəˈsiːv/）' },
-  { word: 'stimulus', pos: 'n.', def: '刺激物，引发反应的事物（/ˈstɪmjʊləs/）' },
-  { word: 'habituation', pos: 'n.', def: '习惯化，对重复刺激的反应减弱（/həˌbɪtʃuˈeɪʃn/）' },
-  { word: 'intervention', pos: 'n.', def: '干预，介入以改变结果（/ˌɪntəˈvenʃn/）' },
-  { word: 'credibility', pos: 'n.', def: '可信度，值得信赖的程度（/ˌkredəˈbɪləti/）' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和严重性或危害（/ˈmɪtɪɡeɪt/）' }
+  { word: 'proactive', pos: 'adj.', def: '主动的，先发制人的（/prəʊˈæktɪv/）' },
+  { word: 'trajectory', pos: 'n.', def: '轨迹，发展路径（/trəˈdʒektəri/）' },
+  { word: 'benchmark', pos: 'n.', def: '基准，评估标准（/ˈbentʃmɑːk/）' },
+  { word: 'fine-tune', pos: 'v.', def: '微调，精细调整（/ˌfaɪn ˈtjuːn/）' },
+  { word: 'supervised', pos: 'adj.', def: '有监督的，受监管的（/ˈsuːpəvaɪzd/）' },
+  { word: 'intention', pos: 'n.', def: '意图，目的，打算（/ɪnˈtenʃn/）' },
+  { word: 'multimodal', pos: 'adj.', def: '多模态的，多种方式的（/ˌmʌltiˈməʊdl/）' },
+  { word: 'ecological', pos: 'adj.', def: '生态的，具有真实场景效度的（/ˌiːkəˈlɒdʒɪkl/）' },
+  { word: 'infer', pos: 'v.', def: '推断，推理，推论（/ɪnˈfɜːr/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范，模式（/ˈpærədaɪm/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a cultural place you would like to visit (e.g. a library, museum, theatre)',
-  bullet: 'You should say: where it is, how you know about it, what it is like, and explain how the place is related to culture.',
-  sample: `I'd like to talk about the Hunan Provincial Museum in Changsha, which is a place I've been dreaming of visiting ever since I was a teenager. It's located in the heart of Changsha, the capital city of my home province Hunan, right next to the beautiful Martyrs Park.
+  topic: 'Describe a place you have visited that you would like to visit again',
+  bullet: 'You should say: where the place is, when you visited it, what you did there, and explain why you would like to visit it again.',
+  sample: `I'd like to talk about a small coastal village called Dali in Yunnan Province — though technically it's beside Erhai Lake rather than the sea, it has this incredible atmosphere that makes me want to go back again and again.
 
-I first learned about it through a documentary about the Mawangdui Han Dynasty Tombs — one of the most significant archaeological discoveries in Chinese history. The museum houses the remarkably well-preserved remains of Lady Dai, a noblewoman from the Western Han Dynasty, along with thousands of artefacts including silk paintings, lacquerware, and ancient texts. Watching that documentary completely captivated me — I was fascinated by how an entire civilisation could be frozen in time for over two thousand years.
+I first visited Dali about two years ago during the summer holiday after my sophomore year. I went there with two close friends from university, and we stayed for roughly a week. We rented a little courtyard guesthouse in the old town, with traditional Bai ethnic architecture — you know, those beautiful white walls and intricate stone carvings that the Bai people are famous for.
 
-What makes this museum truly special is its architectural design, which blends traditional Chinese elements with contemporary museum aesthetics. The exhibition halls are arranged chronologically, guiding visitors through a journey from prehistoric Hunan civilisations through the Han Dynasty and beyond. The highlight is undoubtedly the Mawangdui collection — the silk manuscript of the Tao Te Ching, the oldest known version of this philosophical text, and the exquisite T-shaped silk painting depicting the cosmology of the Han Dynasty.
+What we did there was wonderfully simple. We cycled around the lake, stopping whenever something caught our eye — a field of sunflowers, a fisherman mending his nets, a temple perched on a hillside. We explored the old town's narrow alleys, browsed through independent bookshops and craft studios, and spent entire afternoons sitting in cafes watching the clouds change shape over Cangshan Mountain. One evening, we hiked up to a hilltop viewpoint and watched the sunset paint the lake in shades of gold and amber — it was one of those moments you wish you could freeze in time.
 
-This place is deeply connected to culture because it doesn't merely display objects behind glass — it tells the story of how ancient Chinese people understood life, death, and the universe. The funerary artefacts reveal a civilisation that believed in an afterlife mirroring the earthly one, where the deceased would continue to need food, clothing, and entertainment. That worldview, though vastly different from our modern perspective, speaks to something universal — our collective desire to transcend mortality and leave something meaningful behind. I believe visiting this museum would give me a profound sense of connection to my cultural roots and a deeper appreciation for the civilisation that shaped who I am today.`,
+The reason I want to return is multilayered. On the surface, it's about the natural beauty — the combination of the lake, the mountains, and that incredibly open sky is something I haven't found anywhere else in China. But more importantly, Dali represents a pace of life that I deeply value but rarely experience in my daily routine. There, time seemed to slow down. People weren't rushing. Conversations went deeper. I remember having a three-hour dinner with the guesthouse owner, who told us stories about renovating the courtyard and preserving the traditional woodwork. That kind of unhurried human connection is increasingly rare, and it's something I find myself longing for whenever city life becomes overwhelming. I genuinely believe that going back would not just be a holiday — it would be a form of restoration.`,
   expressions: [
-    '🌟 archaeological discovery — 考古发现',
-    '🌟 remarkably well-preserved — 保存异常完好的',
-    '🌟 captivate — 深深吸引，迷住',
-    '🌟 chronological — 按时间顺序的',
-    '🌟 artefact — 文物，手工艺品',
-    '🌟 cosmology — 宇宙观，宇宙论',
-    '🌟 funerary — 丧葬的，葬礼的',
-    '🌟 transcend mortality — 超越死亡',
-    '🌟 cultural roots — 文化根基',
-    '🌟 civilisation frozen in time — 被时间凝固的文明'
+    '🌟 coastal village — 海边/湖畔村庄',
+    '🌟 intricate stone carvings — 精美的石雕',
+    '🌟 Bai ethnic architecture — 白族建筑',
+    '🌟 catch one\'s eye — 吸引某人的目光',
+    '🌟 independent bookshop — 独立书店',
+    '🌟 craft studio — 手工作坊',
+    '🌟 a moment you wish you could freeze in time — 你希望时间能定格的瞬间',
+    '🌟 multilayered — 多层次的',
+    '🌟 pace of life — 生活节奏',
+    '🌟 a form of restoration — 一种恢复/疗愈'
   ]
-};;
-
+}
 function renderIelts() {
   let vocab = ieltsVocab;
   let speaking = ieltsSpeaking;
@@ -1470,16 +1469,15 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"我们活在世界上，总要相信一些什么。相信春天会来，相信种子会发芽，相信真诚的人不会被辜负，相信那些默默付出的日子终将有意义。不是因为这些信念一定能被证实，而是因为相信本身，就已经让我们在黑暗中有了方向。"',
-  source: '史铁生《病隙碎笔》（2002）',
+  quote: '"I wanted to write about the present — not the past, not the future, but this strange, elusive moment we call now. For what is life but a series of moments, most of them unnoticed, a few of them luminous? And if we could only learn to attend to those luminous ones — really attend, with our whole being — perhaps we would discover that meaning is not something we construct, but something we receive, like light falling through a window we didn\'t know was there."',
+  source: 'Virginia Woolf《到灯塔去》（To the Lighthouse, 1927）· 意译综合',
   analysis: [
-    '<b>"总要相信一些什么"——信念作为生存的基本结构</b>：史铁生写这段话时，正坐在轮椅上，面对的是常人难以想象的病痛折磨。他没有说"我们应该相信"或者"你必须相信"，而是说"总要相信一些什么"——"总要"这个词暗含了一种存在主义式的必然性：信念不是奢侈品，而是人活下去的基本条件。心理学家维克多·弗兰克尔在奥斯维辛集中营中悟出的道理与此如出一辙："知道为什么而活的人，几乎可以忍受任何怎样活的方式。"史铁生的智慧在于，他不要求你相信宏大的东西——你不一定相信上帝、命运或者历史必然性，但你"总要"相信一些什么，哪怕只是"春天会来"。',
-    '<b>"不是因为被证实，而是因为相信本身"——实用主义的信仰观</b>：这段话最深刻的地方在于它对"信念"的理解方式。史铁生不是在论证信念的真理性——他没有试图证明春天一定会来、种子一定会发芽。相反，他直接跳过了"是否真实"这个问题，转向了"是否有用"。这是一种非常务实的哲学立场：信念的价值不在于它的真值，而在于它给生命带来的方向感。这恰好对应了积极心理学中"习得性乐观"（learned optimism）的概念——不是盲目乐观，而是选择一种有利于行动的认知框架。塞利格曼的研究表明，乐观的解释风格能显著提升人的心理韧性和行动力。史铁生用文学语言表达了同样的洞见：相信本身就是一种力量。',
-    '<b>"在黑暗中有了方向"——希望的心理学功能</b>：最后一句"在黑暗中有了方向"是整段话的情感落点。注意，他没有说"走出黑暗"，而是说"在黑暗中有了方向"。这意味着信念不是消除困境的魔法，而是在困境中让你不至于迷失的指南针。从认知行为治疗（CBT）的角度看，这和"认知重评"（cognitive reappraisal）的机制是一致的——你无法改变环境，但你可以改变对环境的解读方式。史铁生自己就是这种能力的最佳例证：他将"为什么要让我坐轮椅"这个问题，转化为了"坐轮椅让我有时间思考和写作"。这不是自我欺骗，这是一种高级的心理适应策略。',
-    '<b>给Emma的话</b>：你现在正处在一段需要"相信"的时光——相信雅思能考出来，相信北师大值得去，相信自己能走上想要的路。有时候这些信念会被焦虑动摇，你会怀疑"如果我考不出来怎么办""如果方向不对怎么办"。史铁生想告诉你的是：你不需要100%确定才行动。你"总要"相信一些什么，不是因为这些信念一定正确，而是因为相信本身就能给你走下去的力量。就像春天的花不是等天气完全变暖才开放的——它们在还冷的时候就开始了✨'
+    '<b>"写当下"——现代主义文学的认识论革命</b>：伍尔夫这段话浓缩了整个现代主义文学的核心主张。在她之前，维多利亚时代的小说家们热衷于讲一个完整的故事——有开头、有发展、有结局。但伍尔夫认为，真正的生活不是线性的叙事，而是一连串"此刻"的叠加。她在《现代小说》（Modern Fiction, 1919）中写道："生活不是一系列排列整齐的马车灯，而是一个发光的光晕。"这段话正是这一理念的诗意表达。从心理学角度看，这恰好对应了正念（mindfulness）的核心——不评判地觉察当下。乔恩·卡巴-金的正念减压疗法（MBSR）本质上就是教人学会"attend to those luminous ones"。',
+    '<b>"大多数未被注意，少数光辉灿烂"——注意力的选择性</b>：伍尔夫在这里揭示了一个认知科学的基本事实：我们的大脑每秒钟接收数百万比特的感官信息，但意识只能处理其中极小的一部分。心理学家威廉·詹姆斯将注意力比作"一条探照灯"——它照亮了什么，什么就进入我们的经验；未被照亮的，就沉入了"非存在"（non-being）的海洋。伍尔夫的文学洞见在于：那些"光辉的片刻"之所以重要，不是因为事件本身多么惊天动地，而是因为我们在那个瞬间"真正地看见了"。一扇普通的窗户、一道普通的光线，当我们全身心投入觉察时，它就成了启示的通道。',
+    '<b>"意义不是建构的，而是接受的"——反存在主义的诗意立场</b>：这是这段话最耐人寻味的地方。萨特说"存在先于本质"，认为人必须通过行动来创造意义。但伍尔夫的立场更接近人本主义心理学家马斯洛所说的"高峰体验"（peak experience）——意义不是你苦思冥想出来的，而是在某些特殊时刻，它自己降临到你身上的。"像光线穿过一扇你不知道存在的窗户"——这个比喻太精妙了。它暗示意义一直在场，只是我们缺乏觉察。这与积极心理学中"心流"（flow）的概念遥相呼应：当你完全沉浸在当下时，你不需要"寻找"意义——意义自然涌现。',
+    '<b>给Emma的话</b>：伍尔夫写《到灯塔去》时，正在经历严重的心理困扰——她的母亲和姐姐相继去世，战争阴云笼罩欧洲。但正是在这种黑暗中，她写下了关于"光辉片刻"的文字。这不是鸡汤式的"看开一点"，而是一种深刻的认知重评：即使在最艰难的日子里，那些微小的、发光的瞬间依然存在——清晨的第一杯茶、朋友发来的一条消息、阳光穿过树叶的影子。你不需要等到一切变好才能感受意义。意义就在此刻，等你打开那扇你一直不知道的窗户✨'
   ]
-};;
-
+}
 function renderLiterature() {
   const el = document.getElementById('litContent');
   let data = litData;
@@ -1508,19 +1506,18 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月19日 星期三',
+  date: '2026年8月20日 星期四',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '住房公积金条例重大修改：装修、物业费可提取，租房不再设收入门槛', desc: '《国务院关于修改〈住房公积金管理条例〉的决定》公布，自2026年9月20日起施行。新规拓宽公积金提取和使用范围，装修自住住房可提取公积金，租房提取不再设收入比例门槛，更好满足多样化住房消费需求。' },
-    { tag: '国内', cls: 'news-domestic', title: '国家气候中心：史上最强厄尔尼诺正在形成，预计11-12月达峰值', desc: '国家气候中心消息，当前赤道中东太平洋海表温度持续升高，预计将形成一次超强厄尔尼诺事件，大概率成为历史最强。今年夏季以来我国气候异常，反映出厄尔尼诺发展阶段的典型影响。' },
-    { tag: '科技', cls: 'news-tech', title: '朱雀三号遥二运载火箭发射成功，一子级成功着陆预定位置', desc: '朱雀三号遥二运载火箭成功发射，实现一子级成功着陆预定位置，标志着我国可重复使用火箭技术取得重要突破，为未来低成本太空运输奠定基础。' },
-    { tag: '科技', cls: 'news-tech', title: '百度Q2财报：AI业务收入占比连续过半，总营收313亿元', desc: '百度发布第二季度财报，总营收313亿元，AI业务收入占比连续超过50%。百度智能云及企业大模型服务持续增长，标志着百度全面转型AI驱动型企业的战略成效显现。' },
-    { tag: '国际', cls: 'news-intl', title: '阿联酋宣布暂停与伊朗一切贸易金融往来，中东局势持续紧张', desc: '阿联酋外交部宣布，鉴于地区局势持续升级，决定暂停与伊朗的一切贸易、商业往来和金融交易。美国官员透露特朗普已要求谈判团队暂停与伊朗接触，中东地缘政治风险进一步加剧。' },
-    { tag: '国际', cls: 'news-intl', title: '哥伦比亚强震已致304人死亡，超29万人受灾', desc: '哥伦比亚国家灾害风险管理局更新数据，8月17日发生的强震已造成304人死亡、4548人受伤、426人失踪，15个省472个市镇受灾，受灾人口超过29.2万。' },
-    { tag: '科技', cls: 'news-tech', title: '新疆奇台110米射电望远镜完成核心结构安装，世界精度最高', desc: '由中国电科承建的新疆奇台110米口径射电望远镜完成核心结构安装，计划2028年建成投用。建成后将成为世界精度最高的射电望远镜，重点解决我国深空探测领域关键技术难题。' },
-    { tag: '国内', cls: 'news-domestic', title: '9部门发文活跃县域消费，每天超1亿件包裹进出农村', desc: '商务部等9部门发布《关于进一步激发下沉市场活力 活跃县域消费的意见》，提出18条具体举措。商务部表示全国已基本实现县乡村三级商业网点全覆盖，物流配送体系日趋健全。' }
+    { tag: '国际', cls: 'news-intl', title: '司法部认定欧盟FSR对京东调查构成不当域外管辖，中方将坚决依法反制', desc: '司法部发布公告，认定欧盟利用《外国补贴条例》对京东收购CECONOMY调查中对中国实体采取的相关跨境调查做法构成不当域外管辖措施，要求任何组织和个人不得执行或协助执行该措施。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普宣布对伊朗实施"史上最严厉经济制裁"，中东紧张局势升级', desc: '美国总统特朗普宣布对伊朗采取新一轮极端经济制裁措施，美伊核谈判陷入僵局。伊朗方面回应称美国曾考虑使用"委内瑞拉模式"但未得逞，霍尔木兹海峡一艘船只遭袭，地区安全形势持续恶化。' },
+    { tag: '科技', cls: 'news-tech', title: '欧盟《人工智能法案》全面实施：禁止社会评分，规范生成式AI内容标注', desc: '欧盟AI法案正式生效，明确禁止社会评分、实时面部识别等高风险AI应用，要求生成式AI内容必须标注来源，被视为全球最严格的AI监管框架，将深刻影响科技企业的产品设计与商业化路径。' },
+    { tag: '科技', cls: 'news-tech', title: '谷歌DeepMind发布"世界模型"Genie 3：AI可生成720p可交互虚拟环境', desc: '谷歌DeepMind公开"世界模型"AI系统Genie 3，能根据文本提示实时生成分辨率720p、帧率24fps的可交互虚拟环境，具备特殊记忆功能，被认为是通向通用人工智能的关键一步。' },
+    { tag: '国际', cls: 'news-intl', title: '美国联邦政府债务突破40万亿美元，财政可持续性面临严峻挑战', desc: '美国联邦政府总债务正式突破40万亿美元大关，分析人士警告利息支出增速已超过税收增长，国会预算办公室预测未来十年赤字将持续扩大，引发全球金融市场波动。' },
+    { tag: '国内', cls: 'news-domestic', title: '2026北京文化论坛将于9月举办，聚焦"文化和科技融合发展"', desc: '2025北京文化论坛定于9月23日至24日在北京举办，主题为"文化和科技融合发展"，聚焦数字化赋能文化遗产保护和科技激发文化原创力等方面，国内外约800名嘉宾将出席。' },
+    { tag: '科技', cls: 'news-tech', title: '英伟达携手贝莱德设立5000亿美元AI融资平台，以AI芯片作抵押', desc: '英伟达与全球最大资产管理公司贝莱德合作设立五千亿美元规模的AI基础设施融资平台，华尔街以AI芯片作为抵押品进行金融创新，标志着AI芯片从技术产品演变为金融资产。' },
+    { tag: '国际', cls: 'news-intl', title: '2026爱知·名古屋亚运会圣火东京采火仪式举行', desc: '当地时间8月18日，2026年爱知·名古屋亚运会圣火东京采火仪式在东京国立竞技场举行，标志着本届亚运会各项活动正式拉开序幕。' }
   ]
-};;
-
+}
 function renderNews() {
   let data = newsData;
   let isHistory = false;
