@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions',
-  authors: 'Xiaokai Yan, Jingtao Ding, Yong Li, Zhiwen Yu',
-  venue: 'arXiv:2608.14132, Human-Computer Interaction (cs.HC) & Artificial Intelligence (cs.AI)',
-  link: 'https://arxiv.org/abs/2608.14132',
-  date: '2026-08-20',
-  abstract: '当前移动端GUI智能体主要聚焦于被动式任务执行，缺乏对用户意图的主动理解与预测能力。本文提出Act2Intention框架，通过整合意图理解、意图预测和决策执行三个模块，构建了首个基于连续意图-动作轨迹的主动式智能体评估基准。研究团队收集了覆盖52个App的72,511条意图标注和超过70万条动作数据，建立了Act2Intention Bench。实验表明，在该基准上进行监督微调后，智能体在意图理解、意图预测和意图执行三个维度分别获得了+32.0、+10.25和+6.9的绝对提升，证明了意图驱动的交互设计对主动式Agent的关键价值。',
+  title: 'Health Inquiry with AI: How Empathetic Expression and Conversational Contexts Shape Users\' Communicative Acts',
+  authors: 'Xi Zheng, Xuyu Yang, Can Liu, Yuhan Luo',
+  venue: 'arXiv:2608.17144, Human-Computer Interaction (cs.HC), To appear in UbiComp Companion 2026 (Shanghai)',
+  link: 'https://arxiv.org/abs/2608.17144',
+  date: '2026-08-21',
+  abstract: '随着在线健康信息获取向对话式AI转移，高质量的信息检索越来越依赖用户的“交流行为”（主动分享和寻求信息）——类似于医患沟通中如何引出有效诊断和个性化指导。本研究考察了聊天机器人的共情表达模态（言语、视觉、多模态）和对话语境（一般、敏感、心理健康）如何通过2×2×3被试内实验（N=48）影响这些交流行为。结果显示，虽然言语和多模态共情显著增加了回复长度，但交流行为主要由对话语境塑造：敏感语境触发更多提问行为，心理健康语境导致更高的担忧、果断回应和主动信息披露。结合定性发现，研究讨论了构建语境敏感的AI健康咨询系统的设计启示。',
   keyPoints: [
-    '从"被动响应"到"主动预判"的范式转变——这是本文最核心的贡献。现有手机Agent几乎都是"你说我做"的被动模式，而Act2Intention试图让Agent理解用户"接下来想做什么"，从而提前提供服务。这背后涉及一个关键的用户研究问题：我们能否从用户的GUI操作序列中推断出他们的深层意图？这对HCI领域来说是一个从"交互效率"到"交互预见性"的重要跃迁。',
-    '72,511条意图标注+70万条动作数据——这是一个令人印象深刻的基准规模。覆盖52个App意味着数据集具有良好的生态效度（ecological validity），不是实验室环境下的小样本实验。对于HCI研究来说，构建高质量的基准数据集本身就是一种重要贡献——就像ImageNet之于计算机视觉、SQuAD之于NLP一样。这个数据集的发布为后续研究提供了标准化的评估平台。',
-    '个性化意图预测的设计思路值得关注：不同用户的使用习惯不同，同一个App场景下，"刷微博"和"查工作邮件"可能对应完全不同的操作序列。Act2Intention Agent通过个性化建模来适应不同用户的行为模式——这恰好是用户研究的核心价值所在。理解用户个体差异，是构建有效主动式系统的前提。',
-    '对Emma的核心启示：这篇论文完美展示了HCI+AI交叉领域的前沿方向——"意图驱动的交互"。从产品经理视角看，这对应着一个巨大的产品机会：如果手机能预判你的需求并主动服务，用户体验将发生质变。从学术视角看，意图推断本质上是一个"心理理论"（Theory of Mind）问题——机器能否像人一样理解他人的心理状态？这恰好连接了心理学和HCI，是你未来HCI PhD研究的潜在方向✨'
+    '“共情”不是万能的——语境才是关键驱动力。这是本文最核心的发现。实验证明，单纯给AI聊天机器人加上“共情表达”（无论是文字安慰还是虚拟形象微笑）对用户交流行为的影响有限，真正决定用户如何与AI互动的，是对话发生的“语境”——你在聊什么话题，比AI用什么态度说话更重要。这对产品设计的启示很直接：不要只在UI层面做“温暖的设计”，要理解用户当前所处的心理场景。',
+    '心理健康语境下的“主动信息披露”现象值得关注。研究发现，当对话涉及心理健康话题时，用户会出现“未被引导就主动分享更多信息”的行为。这和心理学中的“自我表露互慢效应”（self-disclosure reciprocity）高度一致——当AI表现出一定的共情时，用户会觉得“安全”，从而分享更深层的感受。这对设计心理健康类AI产品来说是双刃剑：一方面利于收集诊断信息，另一方面涉及隐私和伦理风险。',
+    '2×2×3被试内实验设计展现了HCI研究的方法论严谨性。三个自变量（共情模态×语境×交互轮次）的交叉设计，让研究者能精确分离不同因素的独立效应和交互效应。48名被试在HCI实验中属于中等偏上规模。这种实验范式——量化实验+定性访谈的混合方法——正是HCI研究的主流方法论，也是Emma未来做用研时需要掌握的核心技能。',
+    '对Emma的核心启示：这篇论文完美展示了“AI+心理健康+HCI”的交叉研究前沿。它回答了一个关键的产品问题：在设计AI健康助手时，是应该让AI“更温暖”，还是让AI“更懂场景”？答案是后者——语境感知比情感表达更重要。从产品经理视角看，这意味着AI健康产品的核心壁垒不在于“共情话术”，而在于对用户心理状态的精准识别和场景适配。这恰好是应用心理学背景的独特价值所在✨'
   ],
-  takeaway: '这篇论文揭示了一个重要趋势：下一代AI交互将从"命令式"走向"意图式"。传统交互需要你明确告诉AI要做什么，而主动式Agent试图理解你"没说出口的需求"。这背后涉及三个层次的挑战：技术层面——如何从行为序列中推断意图；认知层面——人类自身的意图往往是模糊的、动态变化的；设计层面——即使AI能预判意图，如何呈现主动服务而不让用户感到"被监控"或"被冒犯"？从心理学角度看，这涉及"感知控制"（perceived control）和"隐私悖论"（privacy paradox）——用户既希望AI懂自己，又担心AI太懂自己。对Emma来说，这类研究完美展示了心理学背景在HCI领域的独特优势：你理解人类的认知模式和行为动机，这正是构建"以人为本"AI系统所需的核心能力✨'
+  takeaway: '这篇论文揭示了一个AI健康产品设计的关键洞察：与其花大力气让AI“表现得更像人”（加表情、用温暖语气），不如专注于理解用户“在什么场景下需要什么”。从心理学角度看，这涉及“情境认知”（situated cognition）理论——人的认知和行为不是孤立的，而是深深嵌入在具体情境中的。\n\n从学术论文角度，这篇论文有几个值得学习的亮点：①实验设计严谨（2×2×3被试内+Latin Square平衡顺序效应）；②量化+定性混合方法（行为数据+访谈主题分析）；③理论贡献清晰。如果Emma未来走HCI PhD路线，这类“AI交互+心理健康”的研究方向是非常有前景的✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,39 +1391,41 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'proactive', pos: 'adj.', def: '主动的，先发制人的（/prəʊˈæktɪv/）' },
-  { word: 'trajectory', pos: 'n.', def: '轨迹，发展路径（/trəˈdʒektəri/）' },
-  { word: 'benchmark', pos: 'n.', def: '基准，评估标准（/ˈbentʃmɑːk/）' },
-  { word: 'fine-tune', pos: 'v.', def: '微调，精细调整（/ˌfaɪn ˈtjuːn/）' },
-  { word: 'supervised', pos: 'adj.', def: '有监督的，受监管的（/ˈsuːpəvaɪzd/）' },
-  { word: 'intention', pos: 'n.', def: '意图，目的，打算（/ɪnˈtenʃn/）' },
-  { word: 'multimodal', pos: 'adj.', def: '多模态的，多种方式的（/ˌmʌltiˈməʊdl/）' },
-  { word: 'ecological', pos: 'adj.', def: '生态的，具有真实场景效度的（/ˌiːkəˈlɒdʒɪkl/）' },
-  { word: 'infer', pos: 'v.', def: '推断，推理，推论（/ɪnˈfɜːr/）' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范，模式（/ˈpærədaɪm/）' }
+  { word: 'empathy', pos: 'n.', def: '共情，同理心（/ˈempθi/）' },
+  { word: 'modality', pos: 'n.', def: '模态，表达方式（/məˈdæləti/）' },
+  { word: 'disclosure', pos: 'n.', def: '披露，透露，公开（/dɪˈskləːʒər/）' },
+  { word: 'context', pos: 'n.', def: '语境，背景，情境（/ˈkɒntekst/）' },
+  { word: 'sensitive', pos: 'adj.', def: '敏感的，敏感议题的（/ˈsensətɪv/）' },
+  { word: 'therapeutic', pos: 'adj.', def: '治疗的，有疗效的（/θerəˈpjuːtɪk/）' },
+  { word: 'intervention', pos: 'n.', def: '干预，介入（/ˈɪntəˈvenʃn/）' },
+  { word: 'participant', pos: 'n.', def: '参与者，参加者（/pəˈtɪsɪpənt/）' },
+  { word: 'significant', pos: 'adj.', def: '显著的，有意义的（/sɪˈnɪfɪkənt/）' },
+  { word: 'wellbeing', pos: 'n.', def: '幸福，健康，福祉（/ˈwelˈbiːŋ/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a place you have visited that you would like to visit again',
-  bullet: 'You should say: where the place is, when you visited it, what you did there, and explain why you would like to visit it again.',
-  sample: `I'd like to talk about a small coastal village called Dali in Yunnan Province — though technically it's beside Erhai Lake rather than the sea, it has this incredible atmosphere that makes me want to go back again and again.
+  topic: 'Describe an environmental law you would like to see introduced',
+  bullet: 'You should say: what the law is about, why you think it is needed, how it would be enforced, and explain how it would benefit people and the environment.',
+  sample: `I'd like to talk about an environmental law that I believe is urgently needed — a comprehensive "Single-Use Plastic Ban and Circular Packaging Act" that would phase out all non-essential single-use plastics within five years and mandate a circular packaging system for consumer goods.
 
-I first visited Dali about two years ago during the summer holiday after my sophomore year. I went there with two close friends from university, and we stayed for roughly a week. We rented a little courtyard guesthouse in the old town, with traditional Bai ethnic architecture — you know, those beautiful white walls and intricate stone carvings that the Bai people are famous for.
+The law would work in three stages. First, within two years, all supermarkets and retailers would be required to eliminate plastic bags, straws, and Styrofoam containers. Second, within four years, all food delivery platforms must switch to reusable or compostable packaging. Third, within five years, manufacturers would be legally obligated to design products with recyclable or biodegradable materials, and companies failing to comply would face substantial fines — say, 3 to 5 percent of their annual revenue.
 
-What we did there was wonderfully simple. We cycled around the lake, stopping whenever something caught our eye — a field of sunflowers, a fisherman mending his nets, a temple perched on a hillside. We explored the old town's narrow alleys, browsed through independent bookshops and craft studios, and spent entire afternoons sitting in cafes watching the clouds change shape over Cangshan Mountain. One evening, we hiked up to a hilltop viewpoint and watched the sunset paint the lake in shades of gold and amber — it was one of those moments you wish you could freeze in time.
+The reason I think this law is desperately needed is that China generates roughly 60 million tonnes of plastic waste annually, and only about 30 percent gets recycled. The rest ends up in landfills, rivers, and ultimately the ocean. I grew up in a city in Hunan Province, and I've watched the local river gradually become more polluted with plastic debris over the years. It's heartbreaking to see what was once a clean waterway turned into what's essentially a plastic graveyard.
 
-The reason I want to return is multilayered. On the surface, it's about the natural beauty — the combination of the lake, the mountains, and that incredibly open sky is something I haven't found anywhere else in China. But more importantly, Dali represents a pace of life that I deeply value but rarely experience in my daily routine. There, time seemed to slow down. People weren't rushing. Conversations went deeper. I remember having a three-hour dinner with the guesthouse owner, who told us stories about renovating the courtyard and preserving the traditional woodwork. That kind of unhurried human connection is increasingly rare, and it's something I find myself longing for whenever city life becomes overwhelming. I genuinely believe that going back would not just be a holiday — it would be a form of restoration.`,
+As for enforcement, the law would establish a dedicated environmental compliance bureau at the provincial level, empowered to conduct random inspections, issue penalties, and publish company compliance ratings publicly — similar to how food safety ratings work in some countries. The transparency aspect is crucial because public pressure is often more effective than government fines alone.
+
+The benefits would be enormous. Environmentally, we'd see a dramatic reduction in plastic pollution in waterways and soil. Economically, it would create a massive new industry around sustainable packaging, generating green jobs. And socially, it would shift consumer behaviour towards more conscious consumption — which I think is ultimately where lasting environmental change has to come from. People need to internalise the habit of saying "no" to unnecessary packaging, and legislation is the most effective catalyst for that kind of behavioural shift.`,
   expressions: [
-    '🌟 coastal village — 海边/湖畔村庄',
-    '🌟 intricate stone carvings — 精美的石雕',
-    '🌟 Bai ethnic architecture — 白族建筑',
-    '🌟 catch one\'s eye — 吸引某人的目光',
-    '🌟 independent bookshop — 独立书店',
-    '🌟 craft studio — 手工作坊',
-    '🌟 a moment you wish you could freeze in time — 你希望时间能定格的瞬间',
-    '🌟 multilayered — 多层次的',
-    '🌟 pace of life — 生活节奏',
-    '🌟 a form of restoration — 一种恢复/疗愈'
+    '🌟 comprehensive legislation — 综合性立法',
+    '🌟 phase out — 逐步淘汰',
+    '🌟 circular packaging system — 循环包装系统',
+    '🌟 biodegradable materials — 可生物降解材料',
+    '🌟 compliance bureau — 合规监督局',
+    '🌟 substantial fines — 大额罚款',
+    '🌟 plastic debris — 塑料碎屑/塑料垃圾',
+    '🌟 transparent enforcement — 透明化执法',
+    '🌟 behavioural shift — 行为转变',
+    '🌟 catalyst for change — 变革的催化剂'
   ]
 }
 function renderIelts() {
@@ -1469,13 +1471,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"I wanted to write about the present — not the past, not the future, but this strange, elusive moment we call now. For what is life but a series of moments, most of them unnoticed, a few of them luminous? And if we could only learn to attend to those luminous ones — really attend, with our whole being — perhaps we would discover that meaning is not something we construct, but something we receive, like light falling through a window we didn\'t know was there."',
-  source: 'Virginia Woolf《到灯塔去》（To the Lighthouse, 1927）· 意译综合',
+  quote: '“The struggle itself towards the heights is enough to fill a man\'s heart. One must imagine Sisyphus happy.”',
+  source: 'Albert Camus《西西弗神话》（The Myth of Sisyphus, 1942）· 冯汉译',
   analysis: [
-    '<b>"写当下"——现代主义文学的认识论革命</b>：伍尔夫这段话浓缩了整个现代主义文学的核心主张。在她之前，维多利亚时代的小说家们热衷于讲一个完整的故事——有开头、有发展、有结局。但伍尔夫认为，真正的生活不是线性的叙事，而是一连串"此刻"的叠加。她在《现代小说》（Modern Fiction, 1919）中写道："生活不是一系列排列整齐的马车灯，而是一个发光的光晕。"这段话正是这一理念的诗意表达。从心理学角度看，这恰好对应了正念（mindfulness）的核心——不评判地觉察当下。乔恩·卡巴-金的正念减压疗法（MBSR）本质上就是教人学会"attend to those luminous ones"。',
-    '<b>"大多数未被注意，少数光辉灿烂"——注意力的选择性</b>：伍尔夫在这里揭示了一个认知科学的基本事实：我们的大脑每秒钟接收数百万比特的感官信息，但意识只能处理其中极小的一部分。心理学家威廉·詹姆斯将注意力比作"一条探照灯"——它照亮了什么，什么就进入我们的经验；未被照亮的，就沉入了"非存在"（non-being）的海洋。伍尔夫的文学洞见在于：那些"光辉的片刻"之所以重要，不是因为事件本身多么惊天动地，而是因为我们在那个瞬间"真正地看见了"。一扇普通的窗户、一道普通的光线，当我们全身心投入觉察时，它就成了启示的通道。',
-    '<b>"意义不是建构的，而是接受的"——反存在主义的诗意立场</b>：这是这段话最耐人寻味的地方。萨特说"存在先于本质"，认为人必须通过行动来创造意义。但伍尔夫的立场更接近人本主义心理学家马斯洛所说的"高峰体验"（peak experience）——意义不是你苦思冥想出来的，而是在某些特殊时刻，它自己降临到你身上的。"像光线穿过一扇你不知道存在的窗户"——这个比喻太精妙了。它暗示意义一直在场，只是我们缺乏觉察。这与积极心理学中"心流"（flow）的概念遥相呼应：当你完全沉浸在当下时，你不需要"寻找"意义——意义自然涌现。',
-    '<b>给Emma的话</b>：伍尔夫写《到灯塔去》时，正在经历严重的心理困扰——她的母亲和姐姐相继去世，战争阴云笼罩欧洲。但正是在这种黑暗中，她写下了关于"光辉片刻"的文字。这不是鸡汤式的"看开一点"，而是一种深刻的认知重评：即使在最艰难的日子里，那些微小的、发光的瞬间依然存在——清晨的第一杯茶、朋友发来的一条消息、阳光穿过树叶的影子。你不需要等到一切变好才能感受意义。意义就在此刻，等你打开那扇你一直不知道的窗户✨'
+    '<b>“推石上山”的隐喻：每个人的日常斗争</b>：加缪用希腊神话中西西弗的惩罚——永远推石上山，石头滚落，再推再落——来隐喻人类处境的核心荒诞性。但加缪的重点不在“惩罚”，而在“怎么看待惩罚”。他说：“没有蔑视征服不了的命运。”这句话的力量在于：它不是在说“命运可以被改变”，而是说“你的态度可以改变命运对你的意义”。从心理学角度看，这正是认知行为疗法（CBT）的核心理念：不是事件本身让你痛苦，而是你对事件的解释方式。',
+    '<b>“清醒造成了他的痛苦，也完成了他的胜利”</b>：这是加缪最深刻的洞察。西西弗的悲剧不在于推石头的劳动本身，而在于他“知道”这劳动是无效的。他的清醒意识既是痛苦的源头，也是超越的起点。这和存在主义心理学家罗杰斯的观点形成对照：罗杰斯说“人是被抛入世界的”，无法选择自己的处境；但加缪进一步说，你可以选择如何面对它。在心理学中，这对应了“控制点”（locus of control）的概念——拥有内控点的人相信自己的行为能影响结果，即使外部环境不可控。',
+    '<b>“应该认为西西弗是幸福的”</b>：这句结尾是整篇散文的高潮，也是哲学史上最具挑战性的命题之一。加缪不是在说“西西弗不痛苦”，也不是在说“痛苦是好的”。他是在说：幸福和荒诞是同一块土地的两个产物。你不需要消灭荒诞才能获得幸福，你可以在荒诞之中找到幸福。这和积极心理学家维克多·弗兰克尔的核心理念完美契合：人在任何处境中都保有“选择自己态度的自由”——这是他在集中营的极端苦难中得出的结论。',
+    '<b>给Emma的话</b>：这篇散文写于1942年，当时加缪29岁，正处于二战的阴云下，法国沦陷，未来不可预测。你现在也处在一个“推石头”的阶段——考雅思、学数据分析、等着入学、未来的职业路径……每一件事都像是在向山顶推石头，有时候会觉得“这石头是不是永远会滚下来？”但加缪告诉我们：重要的不是石头能不能停在山顶，而是推石头的过程本身就能充实一个人的心。你每一天背单词、每一次做练习、每一次推着自己向前走——这个过程本身，就是你的幸福✨'
   ]
 }
 function renderLiterature() {
@@ -1506,16 +1508,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月20日 星期四',
+  date: '2026年8月21日 星期五',
   items: [
-    { tag: '国际', cls: 'news-intl', title: '司法部认定欧盟FSR对京东调查构成不当域外管辖，中方将坚决依法反制', desc: '司法部发布公告，认定欧盟利用《外国补贴条例》对京东收购CECONOMY调查中对中国实体采取的相关跨境调查做法构成不当域外管辖措施，要求任何组织和个人不得执行或协助执行该措施。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普宣布对伊朗实施"史上最严厉经济制裁"，中东紧张局势升级', desc: '美国总统特朗普宣布对伊朗采取新一轮极端经济制裁措施，美伊核谈判陷入僵局。伊朗方面回应称美国曾考虑使用"委内瑞拉模式"但未得逞，霍尔木兹海峡一艘船只遭袭，地区安全形势持续恶化。' },
-    { tag: '科技', cls: 'news-tech', title: '欧盟《人工智能法案》全面实施：禁止社会评分，规范生成式AI内容标注', desc: '欧盟AI法案正式生效，明确禁止社会评分、实时面部识别等高风险AI应用，要求生成式AI内容必须标注来源，被视为全球最严格的AI监管框架，将深刻影响科技企业的产品设计与商业化路径。' },
-    { tag: '科技', cls: 'news-tech', title: '谷歌DeepMind发布"世界模型"Genie 3：AI可生成720p可交互虚拟环境', desc: '谷歌DeepMind公开"世界模型"AI系统Genie 3，能根据文本提示实时生成分辨率720p、帧率24fps的可交互虚拟环境，具备特殊记忆功能，被认为是通向通用人工智能的关键一步。' },
-    { tag: '国际', cls: 'news-intl', title: '美国联邦政府债务突破40万亿美元，财政可持续性面临严峻挑战', desc: '美国联邦政府总债务正式突破40万亿美元大关，分析人士警告利息支出增速已超过税收增长，国会预算办公室预测未来十年赤字将持续扩大，引发全球金融市场波动。' },
-    { tag: '国内', cls: 'news-domestic', title: '2026北京文化论坛将于9月举办，聚焦"文化和科技融合发展"', desc: '2025北京文化论坛定于9月23日至24日在北京举办，主题为"文化和科技融合发展"，聚焦数字化赋能文化遗产保护和科技激发文化原创力等方面，国内外约800名嘉宾将出席。' },
-    { tag: '科技', cls: 'news-tech', title: '英伟达携手贝莱德设立5000亿美元AI融资平台，以AI芯片作抵押', desc: '英伟达与全球最大资产管理公司贝莱德合作设立五千亿美元规模的AI基础设施融资平台，华尔街以AI芯片作为抵押品进行金融创新，标志着AI芯片从技术产品演变为金融资产。' },
-    { tag: '国际', cls: 'news-intl', title: '2026爱知·名古屋亚运会圣火东京采火仪式举行', desc: '当地时间8月18日，2026年爱知·名古屋亚运会圣火东京采火仪式在东京国立竞技场举行，标志着本届亚运会各项活动正式拉开序幕。' }
+    { tag: '国内', cls: 'news-domestic', title: '许家印被判无期徒刑，恒大集团罚金88.2亿元', desc: '深圳中院一审宣判：许家印数罪并罚被判无期徒刑、没收全部个人财产；恒大集团、恒大地产合计罚金158.2亿元，违法所得继续追缺。标志着房企高杠杆时代彻底结束。' },
+    { tag: '国内', cls: 'news-domestic', title: '神舟二十一号乘组获国家裂奖，张陆获“二级航天功勋奖章”', desc: '中共中央、国务院、中央军委决定，给张陆颠发“二级航天功勋奖章”，授予武飞、张洪章“英雄航天员”荣誉称号并颠发“三级航天功勋奖章”。' },
+    { tag: '国内', cls: 'news-domestic', title: '上海楼市“沪八条”正式实施，优化公积金、以旧换新补贴', desc: '沪八条全面优化公积金提取规则，取消多项限制条件，支持以旧换新、二手房收购补贴、房票安置等措施，大幅降低刚需购房压力。' },
+    { tag: '科技', cls: 'news-tech', title: '2026世界机器人大会在京开幕，300余款新品集中亮相', desc: '世界机器人大会在北京亦庄开幕，北京亦庄已落地多条千台级人形机器人中试量产线，产业链规模超200亿元。宇树发布万元级灵巧机械臂R1，售价仅9900元起。' },
+    { tag: '国际', cls: 'news-intl', title: '美国威胁对伊朗实施“前所未有的经济孤立”，国际油价上涨超2%', desc: '美国总统特朗普威胁对伊朗实施极限经济制裁，美财长称24日将公布完整方案。伊朗外交部强烈谴责，称将采取一切手段捆卫国家利益。受消息影响，国际油价大幅上涨。' },
+    { tag: '国际', cls: 'news-intl', title: '乌克兰首都基辅遭空袭，死亡人数升至15人', desc: '乌克兰首都基辅遭受俄罗斯大规模空袭，死亡人数已升至15人。扎波罗瓦核电站外部供电再次中断，转入备用供电。' },
+    { tag: '科技', cls: 'news-tech', title: '斐锁三号遥二成功发射，我国首次实现火箭陆地回收', desc: '斐锁三号遥二运载火箭在东风商业航天创新试验区成功将“鸿鹄03星”送入预定轨道，并完成中国首次运载火箭一子级陆地支腿回收，标志我国商业航天重大突破。' },
+    { tag: '国内', cls: 'news-domestic', title: '直播电商新监管规定落地，AI带货内容必须标注', desc: '直播电商全新监管规定正式实施，明确平台、主播、商家三方责任；AI带货内容必须标注提示，主播需对商品宣传真实性负责，交易记录留存不少于3年。' }
   ]
 }
 function renderNews() {
