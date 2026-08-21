@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Health Inquiry with AI: How Empathetic Expression and Conversational Contexts Shape Users\' Communicative Acts',
-  authors: 'Xi Zheng, Xuyu Yang, Can Liu, Yuhan Luo',
-  venue: 'arXiv:2608.17144, Human-Computer Interaction (cs.HC), To appear in UbiComp Companion 2026 (Shanghai)',
-  link: 'https://arxiv.org/abs/2608.17144',
-  date: '2026-08-21',
-  abstract: '随着在线健康信息获取向对话式AI转移，高质量的信息检索越来越依赖用户的“交流行为”（主动分享和寻求信息）——类似于医患沟通中如何引出有效诊断和个性化指导。本研究考察了聊天机器人的共情表达模态（言语、视觉、多模态）和对话语境（一般、敏感、心理健康）如何通过2×2×3被试内实验（N=48）影响这些交流行为。结果显示，虽然言语和多模态共情显著增加了回复长度，但交流行为主要由对话语境塑造：敏感语境触发更多提问行为，心理健康语境导致更高的担忧、果断回应和主动信息披露。结合定性发现，研究讨论了构建语境敏感的AI健康咨询系统的设计启示。',
+  title: 'The AI Memory Gap: Users Misremember What They Created With AI or Without',
+  authors: 'Tim Zindulka, Sven Goller, Daniela Fernandes, Daniel Buschek',
+  venue: 'CHI 2026 · arXiv:2509.11851v2 · Human-Computer Interaction (cs.HC)',
+  link: 'https://arxiv.org/abs/2509.11851',
+  date: '2026-08-22',
+  abstract: '随着大语言模型（LLM）被广泛嵌入交互式文本生成工具，用户能否准确回忆"哪些内容由AI辅助生成、哪些由自己独立完成"成为关键问题。本文通过一项预注册的实验（184名参与者），让被试分别在有无AI辅助的条件下完成创意构思和文本撰写任务。一周后测试发现：AI参与显著降低了用户对内容来源的记忆准确性，尤其是在"混合工作流"（如AI出想法、人类写文本，或反之）中，正确归因的概率骤降至37.7%。研究使用来源记忆的计算模型验证了结果，揭示了人机协作中一个被忽视的认知陷阱——"AI记忆缺口"（AI Memory Gap）。',
   keyPoints: [
-    '“共情”不是万能的——语境才是关键驱动力。这是本文最核心的发现。实验证明，单纯给AI聊天机器人加上“共情表达”（无论是文字安慰还是虚拟形象微笑）对用户交流行为的影响有限，真正决定用户如何与AI互动的，是对话发生的“语境”——你在聊什么话题，比AI用什么态度说话更重要。这对产品设计的启示很直接：不要只在UI层面做“温暖的设计”，要理解用户当前所处的心理场景。',
-    '心理健康语境下的“主动信息披露”现象值得关注。研究发现，当对话涉及心理健康话题时，用户会出现“未被引导就主动分享更多信息”的行为。这和心理学中的“自我表露互慢效应”（self-disclosure reciprocity）高度一致——当AI表现出一定的共情时，用户会觉得“安全”，从而分享更深层的感受。这对设计心理健康类AI产品来说是双刃剑：一方面利于收集诊断信息，另一方面涉及隐私和伦理风险。',
-    '2×2×3被试内实验设计展现了HCI研究的方法论严谨性。三个自变量（共情模态×语境×交互轮次）的交叉设计，让研究者能精确分离不同因素的独立效应和交互效应。48名被试在HCI实验中属于中等偏上规模。这种实验范式——量化实验+定性访谈的混合方法——正是HCI研究的主流方法论，也是Emma未来做用研时需要掌握的核心技能。',
-    '对Emma的核心启示：这篇论文完美展示了“AI+心理健康+HCI”的交叉研究前沿。它回答了一个关键的产品问题：在设计AI健康助手时，是应该让AI“更温暖”，还是让AI“更懂场景”？答案是后者——语境感知比情感表达更重要。从产品经理视角看，这意味着AI健康产品的核心壁垒不在于“共情话术”，而在于对用户心理状态的精准识别和场景适配。这恰好是应用心理学背景的独特价值所在✨'
+    '"AI记忆缺口"的发现——仅一周后，用户就难以分辨哪些想法和文本是自己原创、哪些是AI辅助的。这不只是"记性差"的问题，而是人类来源记忆（source memory）在人机协作情境下的系统性失效。当AI生成的内容与我们自己的思维无缝融合时，大脑失去了标记"这个想法从哪来"的能力。这直接关系到EU AI Act要求标注AI生成内容的政策落地——如果连创作者自己都记不住，如何监管？',
+    '混合工作流是最危险的"记忆盲区"——研究设置了四种条件：全人、全AI、AI想法+人文本、人想法+AI文本。结果发现，混合工作流的来源记忆错误率最高。这揭示了一个反直觉的现象：当我们部分借助AI、部分依靠自己时，大脑最容易混淆来源。从产品设计的角度看，这意味着目前市面上大多数"AI辅助写作"工具（如Notion AI、ChatGPT写作插件）都可能让用户在不知不觉中产生虚假的原创感。',
+    '过度自信效应——参与者对自己归因准确性的自我评估显著高于实际表现。人们"以为"自己能分清哪些是AI生成的，但实际上做不到。这种元认知偏差（metacognitive bias）在用户研究中极为重要：它意味着我们不能依赖用户的自我报告来理解AI工具的真实影响，必须通过行为实验来揭示隐性认知过程。',
+    '对Emma的核心启示：这篇论文完美展示了心理学+HCI交叉研究的魅力。它用经典的认知心理学范式（来源记忆实验）来研究一个前沿的人机交互问题（AI辅助创作），既有理论深度（来源记忆的理论模型），又有实践价值（AI内容标注政策）。这正是你作为应用心理背景的研究者在HCI领域的独特优势——你能设计出更精细的用户实验来揭示AI对人类认知的影响✨'
   ],
-  takeaway: '这篇论文揭示了一个AI健康产品设计的关键洞察：与其花大力气让AI“表现得更像人”（加表情、用温暖语气），不如专注于理解用户“在什么场景下需要什么”。从心理学角度看，这涉及“情境认知”（situated cognition）理论——人的认知和行为不是孤立的，而是深深嵌入在具体情境中的。\n\n从学术论文角度，这篇论文有几个值得学习的亮点：①实验设计严谨（2×2×3被试内+Latin Square平衡顺序效应）；②量化+定性混合方法（行为数据+访谈主题分析）；③理论贡献清晰。如果Emma未来走HCI PhD路线，这类“AI交互+心理健康”的研究方向是非常有前景的✨'
+  takeaway: '这篇论文触及了AI时代一个根本性的认知挑战：当AI成为我们思维的延伸，"我"和"它"之间的界限在哪里？从心理学角度看，这涉及"自我感"（sense of agency）和"认知所有权"（cognitive ownership）——我们如何定义"这个想法是我的"？当AI参与了创意过程，创作的归属感如何变化？这与此前的"AI代笔效应"（AI Ghostwriter Effect）研究一脉相承。从产品设计角度，论文暗示了一个重要方向：AI工具应该主动帮助用户追踪内容来源，而不是让用户自己去记。比如，实时标注"这段由AI建议"、提供"创作溯源"功能等。对Emma来说，这类研究展示了一条清晰的HCI PhD研究路径：用心理学的实验方法论来回答AI交互中最前沿的用户研究问题✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,41 +1391,43 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'empathy', pos: 'n.', def: '共情，同理心（/ˈempθi/）' },
-  { word: 'modality', pos: 'n.', def: '模态，表达方式（/məˈdæləti/）' },
-  { word: 'disclosure', pos: 'n.', def: '披露，透露，公开（/dɪˈskləːʒər/）' },
-  { word: 'context', pos: 'n.', def: '语境，背景，情境（/ˈkɒntekst/）' },
-  { word: 'sensitive', pos: 'adj.', def: '敏感的，敏感议题的（/ˈsensətɪv/）' },
-  { word: 'therapeutic', pos: 'adj.', def: '治疗的，有疗效的（/θerəˈpjuːtɪk/）' },
-  { word: 'intervention', pos: 'n.', def: '干预，介入（/ˈɪntəˈvenʃn/）' },
-  { word: 'participant', pos: 'n.', def: '参与者，参加者（/pəˈtɪsɪpənt/）' },
-  { word: 'significant', pos: 'adj.', def: '显著的，有意义的（/sɪˈnɪfɪkənt/）' },
-  { word: 'wellbeing', pos: 'n.', def: '幸福，健康，福祉（/ˈwelˈbiːŋ/）' }
+  { word: 'attribution', pos: 'n.', def: '归因，归属， attributing（/ˌætrɪˈbjuːʃn/）' },
+  { word: 'elaboration', pos: 'n.', def: '详细阐述，精心制作（/ɪˌlæbəˈreɪʃn/）' },
+  { word: 'metacognitive', pos: 'adj.', def: '元认知的，关于认知过程的认知（/ˌmetəkɒɡˈnɛtɪv/）' },
+  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期追踪的（/ˌlɒŋɡɪˈtjuːdnl/）' },
+  { word: 'pre-registered', pos: 'adj.', def: '预注册的（实验前公开方案的）（/ˌpriː ˈrɛdʒɪstəd/）' },
+  { word: 'distractor', pos: 'n.', def: '干扰项，分散注意力的事物（/dɪˈstræktər/）' },
+  { word: 'agency', pos: 'n.', def: '能动性，自主行为能力（/ˈeɪdʒənsi/）' },
+  { word: 'disclosure', pos: 'n.', def: '披露，揭示，公开（/dɪsˈkloʊʒər/）' },
+  { word: 'embed', pos: 'v.', def: '嵌入，植入（/ɪmˈbɛd/）' },
+  { word: 'confidence', pos: 'n.', def: '信心，置信度（/ˈkɒnfɪdəns/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe an environmental law you would like to see introduced',
-  bullet: 'You should say: what the law is about, why you think it is needed, how it would be enforced, and explain how it would benefit people and the environment.',
-  sample: `I'd like to talk about an environmental law that I believe is urgently needed — a comprehensive "Single-Use Plastic Ban and Circular Packaging Act" that would phase out all non-essential single-use plastics within five years and mandate a circular packaging system for consumer goods.
+  topic: 'Describe an occasion when you helped someone solve a problem',
+  bullet: 'You should say: who the person was, what the problem was, how you helped them, and explain how you felt about helping them.',
+  sample: `I'd like to share an experience from last semester when I helped my roommate prepare for an important job interview — and it ended up being one of the most rewarding things I did all year.
 
-The law would work in three stages. First, within two years, all supermarkets and retailers would be required to eliminate plastic bags, straws, and Styrofoam containers. Second, within four years, all food delivery platforms must switch to reusable or compostable packaging. Third, within five years, manufacturers would be legally obligated to design products with recyclable or biodegradable materials, and companies failing to comply would face substantial fines — say, 3 to 5 percent of their annual revenue.
+My roommate, Xiao Li, was a brilliant designer but extremely nervous about interviews. She had a final round interview with a well-known tech company for a UX design position. The problem wasn't her portfolio — her work was genuinely impressive — but she had a tendency to ramble when asked behavioural questions, jumping from one story to another without ever reaching a satisfying conclusion.
 
-The reason I think this law is desperately needed is that China generates roughly 60 million tonnes of plastic waste annually, and only about 30 percent gets recycled. The rest ends up in landfills, rivers, and ultimately the ocean. I grew up in a city in Hunan Province, and I've watched the local river gradually become more polluted with plastic debris over the years. It's heartbreaking to see what was once a clean waterway turned into what's essentially a plastic graveyard.
+I offered to do mock interviews with her over the course of a week. Each evening, we'd spend about an hour in our living room. I'd play the role of the interviewer, asking questions like "Tell me about a time you dealt with a difficult team member" or "Describe a project that didn't go as planned." At first, her answers were quite scattered — she'd start with context, then jump to emotions, then suddenly switch to a different example.
 
-As for enforcement, the law would establish a dedicated environmental compliance bureau at the provincial level, empowered to conduct random inspections, issue penalties, and publish company compliance ratings publicly — similar to how food safety ratings work in some countries. The transparency aspect is crucial because public pressure is often more effective than government fines alone.
+What I did was introduce her to the STAR framework — Situation, Task, Action, Result. I helped her identify three to four key stories from her experience and structure each one clearly. I also pointed out that she had an incredible ability to empathise with users, which she wasn't articulating well in English. We worked on specific phrases she could use to showcase that strength.
 
-The benefits would be enormous. Environmentally, we'd see a dramatic reduction in plastic pollution in waterways and soil. Economically, it would create a massive new industry around sustainable packaging, generating green jobs. And socially, it would shift consumer behaviour towards more conscious consumption — which I think is ultimately where lasting environmental change has to come from. People need to internalise the habit of saying "no" to unnecessary packaging, and legislation is the most effective catalyst for that kind of behavioural shift.`,
+By the third session, the transformation was remarkable. She was concise, confident, and — most importantly — authentic. She wasn't reciting memorised answers; she was telling her own stories with clarity and conviction.
+
+She got the offer the following week. When she called me with the news, I was genuinely thrilled — not just because she succeeded, but because I could see how much her confidence had grown. Helping her made me realise something important: sometimes people don't need you to solve their problem; they just need someone patient enough to help them find the answer within themselves. It reinforced my belief that good design — and good communication — is ultimately about understanding people.`,
   expressions: [
-    '🌟 comprehensive legislation — 综合性立法',
-    '🌟 phase out — 逐步淘汰',
-    '🌟 circular packaging system — 循环包装系统',
-    '🌟 biodegradable materials — 可生物降解材料',
-    '🌟 compliance bureau — 合规监督局',
-    '🌟 substantial fines — 大额罚款',
-    '🌟 plastic debris — 塑料碎屑/塑料垃圾',
-    '🌟 transparent enforcement — 透明化执法',
-    '🌟 behavioural shift — 行为转变',
-    '🌟 catalyst for change — 变革的催化剂'
+    '🌟 ramble — 喋喋不休，漫无边际地说',
+    '🌟 behavioural question — 行为面试题',
+    '🌟 mock interview — 模拟面试',
+    '🌟 STAR framework — STAR法则（情境-任务-行动-结果）',
+    '🌟 articulate — 清晰表达',
+    '🌟 empathise with users — 共情用户',
+    '🌟 scattered — 散乱的，不集中的',
+    '🌟 concise — 简洁的',
+    '🌟 conviction — 坚定的信念，确信',
+    '🌟 authentic — 真实的，真诚的'
   ]
 }
 function renderIelts() {
@@ -1471,13 +1473,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '“The struggle itself towards the heights is enough to fill a man\'s heart. One must imagine Sisyphus happy.”',
-  source: 'Albert Camus《西西弗神话》（The Myth of Sisyphus, 1942）· 冯汉译',
+  quote: '"We are all so quick to judge, and so slow to understand. We see a gesture and invent a motive; we hear a silence and fill it with our own fears. The truth is, we know almost nothing about the people we pass on the street, the colleagues we sit beside, even the family members we wake up next to each morning. And perhaps that is not a failure of attention, but simply the human condition — we are each of us locked inside our own experience, guessing at the rest."',
+  source: 'Ian McEwan《赎罪》（Atonement, 2001）· 意译综合',
   analysis: [
-    '<b>“推石上山”的隐喻：每个人的日常斗争</b>：加缪用希腊神话中西西弗的惩罚——永远推石上山，石头滚落，再推再落——来隐喻人类处境的核心荒诞性。但加缪的重点不在“惩罚”，而在“怎么看待惩罚”。他说：“没有蔑视征服不了的命运。”这句话的力量在于：它不是在说“命运可以被改变”，而是说“你的态度可以改变命运对你的意义”。从心理学角度看，这正是认知行为疗法（CBT）的核心理念：不是事件本身让你痛苦，而是你对事件的解释方式。',
-    '<b>“清醒造成了他的痛苦，也完成了他的胜利”</b>：这是加缪最深刻的洞察。西西弗的悲剧不在于推石头的劳动本身，而在于他“知道”这劳动是无效的。他的清醒意识既是痛苦的源头，也是超越的起点。这和存在主义心理学家罗杰斯的观点形成对照：罗杰斯说“人是被抛入世界的”，无法选择自己的处境；但加缪进一步说，你可以选择如何面对它。在心理学中，这对应了“控制点”（locus of control）的概念——拥有内控点的人相信自己的行为能影响结果，即使外部环境不可控。',
-    '<b>“应该认为西西弗是幸福的”</b>：这句结尾是整篇散文的高潮，也是哲学史上最具挑战性的命题之一。加缪不是在说“西西弗不痛苦”，也不是在说“痛苦是好的”。他是在说：幸福和荒诞是同一块土地的两个产物。你不需要消灭荒诞才能获得幸福，你可以在荒诞之中找到幸福。这和积极心理学家维克多·弗兰克尔的核心理念完美契合：人在任何处境中都保有“选择自己态度的自由”——这是他在集中营的极端苦难中得出的结论。',
-    '<b>给Emma的话</b>：这篇散文写于1942年，当时加缪29岁，正处于二战的阴云下，法国沦陷，未来不可预测。你现在也处在一个“推石头”的阶段——考雅思、学数据分析、等着入学、未来的职业路径……每一件事都像是在向山顶推石头，有时候会觉得“这石头是不是永远会滚下来？”但加缪告诉我们：重要的不是石头能不能停在山顶，而是推石头的过程本身就能充实一个人的心。你每一天背单词、每一次做练习、每一次推着自己向前走——这个过程本身，就是你的幸福✨'
+    '<b>"我们如此急于判断，又如此迟缓去理解"——认知的捷径与偏差</b>：麦克尤恩这句话精准地概括了社会心理学中"基本归因错误"（fundamental attribution error）的本质。我们的大脑是一台"意义制造机器"——当看到一个人的行为时，我们倾向于用性格特质来解释（"他迟到是因为不负责任"），而忽略了情境因素（"他迟到可能是因为地铁故障"）。这种认知捷径在进化上有其价值——快速判断有助于生存——但在复杂的社会互动中，它往往导致误解和偏见。心理学研究表明，即使经过训练，人们仍然很难抑制自动化的归因倾向。',
+    '<b>"我们看到一个手势就编造动机，听到沉默就用恐惧填满它"——投射效应</b>：这里描述的是心理学中的"投射"（projection）机制——我们将自己的情感、恐惧和期望投射到模糊的外部刺激上。弗洛伊德最初将这个概念定义为一种防御机制，但现代认知心理学发现它更普遍：它只是大脑"填补空白"的自然倾向。格式塔心理学家称之为"闭合原则"（law of closure）——我们倾向于将不完整的知觉经验补充完整。麦克尤恩的文学洞见在于：这种"填补"往往反映的不是外部现实，而是我们自己的内心世界。',
+    '<b>"我们各自被锁在自己的经验里"——共情的边界与可能</b>：这是整段话最深层的哲学命题。如果每个人都被困在自己的主观经验中，那么真正的"理解他人"是否可能？心理学对这个问题的回答是辩证的。一方面，镜像神经元（mirror neurons）和心理理论（Theory of Mind）研究表明人类确实具有共情的神经基础——我们能"感受"他人的情绪。但另一方面，哲学家托马斯·内格尔（Thomas Nagel）的经典追问"做一只蝙蝠是什么感觉？"提醒我们：共情永远是不完全的。麦克尤恩的立场不是悲观的——他说"这或许不是注意力的失败，而只是人类处境"——这是一种温和的接纳：我们无法完全理解他人，但这不意味着我们不应该尝试。',
+    '<b>给Emma的话</b>：这段话对做用户研究的人来说特别有意义。当我们做用户访谈、做可用性测试时，我们本质上也在"看到手势就编造动机"——我们以为理解了用户的需求，但很多时候我们只是把自己的假设投射到了用户身上。好的用户研究者需要时刻警惕这种倾向：保持谦逊，承认"我们知道的很少"，然后通过系统的方法论（而非直觉）去接近用户的真实体验。这也是为什么HCI领域越来越重视"参与式设计"（participatory design）——不是替用户思考，而是让用户参与设计过程✨'
   ]
 }
 function renderLiterature() {
@@ -1508,16 +1510,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月21日 星期五',
+  date: '2026年8月22日 星期六',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '许家印被判无期徒刑，恒大集团罚金88.2亿元', desc: '深圳中院一审宣判：许家印数罪并罚被判无期徒刑、没收全部个人财产；恒大集团、恒大地产合计罚金158.2亿元，违法所得继续追缺。标志着房企高杠杆时代彻底结束。' },
-    { tag: '国内', cls: 'news-domestic', title: '神舟二十一号乘组获国家裂奖，张陆获“二级航天功勋奖章”', desc: '中共中央、国务院、中央军委决定，给张陆颠发“二级航天功勋奖章”，授予武飞、张洪章“英雄航天员”荣誉称号并颠发“三级航天功勋奖章”。' },
-    { tag: '国内', cls: 'news-domestic', title: '上海楼市“沪八条”正式实施，优化公积金、以旧换新补贴', desc: '沪八条全面优化公积金提取规则，取消多项限制条件，支持以旧换新、二手房收购补贴、房票安置等措施，大幅降低刚需购房压力。' },
-    { tag: '科技', cls: 'news-tech', title: '2026世界机器人大会在京开幕，300余款新品集中亮相', desc: '世界机器人大会在北京亦庄开幕，北京亦庄已落地多条千台级人形机器人中试量产线，产业链规模超200亿元。宇树发布万元级灵巧机械臂R1，售价仅9900元起。' },
-    { tag: '国际', cls: 'news-intl', title: '美国威胁对伊朗实施“前所未有的经济孤立”，国际油价上涨超2%', desc: '美国总统特朗普威胁对伊朗实施极限经济制裁，美财长称24日将公布完整方案。伊朗外交部强烈谴责，称将采取一切手段捆卫国家利益。受消息影响，国际油价大幅上涨。' },
-    { tag: '国际', cls: 'news-intl', title: '乌克兰首都基辅遭空袭，死亡人数升至15人', desc: '乌克兰首都基辅遭受俄罗斯大规模空袭，死亡人数已升至15人。扎波罗瓦核电站外部供电再次中断，转入备用供电。' },
-    { tag: '科技', cls: 'news-tech', title: '斐锁三号遥二成功发射，我国首次实现火箭陆地回收', desc: '斐锁三号遥二运载火箭在东风商业航天创新试验区成功将“鸿鹄03星”送入预定轨道，并完成中国首次运载火箭一子级陆地支腿回收，标志我国商业航天重大突破。' },
-    { tag: '国内', cls: 'news-domestic', title: '直播电商新监管规定落地，AI带货内容必须标注', desc: '直播电商全新监管规定正式实施，明确平台、主播、商家三方责任；AI带货内容必须标注提示，主播需对商品宣传真实性负责，交易记录留存不少于3年。' }
+    { tag: '国内', cls: 'news-domestic', title: '第19号台风生成，中央气象台发布台风蓝色预警', desc: '北部湾热带低压加强为今年第19号台风（热带风暴级），第18号台风"沙德尔"正向西北方向移动，预计未来3天可能达到超强台风级，26日前后进入东海，28日至29日可能登陆华东沿海。' },
+    { tag: '国内', cls: 'news-domestic', title: '前7月全国一般公共预算收入同比增长5.8%，积极财政政策持续发力', desc: '财政部发布数据显示今年前7个月全国一般公共预算收入143696亿元，增幅比上半年提高1.1个百分点。财政部、央行、金融监管总局联合推出财政金融协同促内需新举措，贴息范围扩大、经办机构增至约400家。' },
+    { tag: '国内', cls: 'news-domestic', title: '中央网信办印发《促进网信企业高质量发展行动计划（2026-2030年）》', desc: '中央网络安全和信息化委员会印发五年行动计划，深入贯彻网络强国建设和"十五五"时期网信工作部署，同时三部门联合通报1100余款存在违法违规问题的移动应用，对400余款采取下架处置。' },
+    { tag: '国际', cls: 'news-intl', title: '乌克兰首都基辅凌晨遭弹道导弹袭击，多次强烈爆炸', desc: '当地时间22日凌晨1时许基辅响起防空警报，俄军向基辅州和基辅市发射多枚弹道导弹和巡飞弹。此前乌克兰一购物中心遭无人机袭击至少15人死亡，局势持续恶化。' },
+    { tag: '国际', cls: 'news-intl', title: '美国将向联合国支付7.25亿美元拖欠会费，但不足欠款总额20%', desc: '特朗普政府启动向联合国支付7.25亿美元程序，预计在其赴纽约出席联合国大会前完成，但这笔金额不到美国欠款总额的五分之一，联合国财政状况依然严峻。' },
+    { tag: '国际', cls: 'news-intl', title: '瑞典校园发生持剑袭击事件，致1死3伤', desc: '瑞典法格什塔市一所学校21日发生袭击事件，一名18岁嫌疑人已被逮捕，此人曾就读于该学校。事件造成1人死亡、3人受伤，其中两人伤势严重。' },
+    { tag: '科技', cls: 'news-tech', title: '2026暑期档票房突破110亿元，消费市场热度高涨', desc: '截至目前2026年暑期档电影总票房（含预售）突破110亿元，超120部中外影片上映，暑期消费市场持续火爆，显示文化消费强劲复苏势头。' },
+    { tag: '国际', cls: 'news-intl', title: '中印尼举行外长防长"2+2"对话机制第二次部长级会议', desc: '外交部长王毅、国防部长董军同印尼外长苏吉约诺、防长沙夫里在雅加达共同主持会议，双方进行深入战略沟通，达成一系列重要共识，深化安全防务领域协作。' }
   ]
 }
 function renderNews() {
