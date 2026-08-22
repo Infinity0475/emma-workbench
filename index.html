@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'The AI Memory Gap: Users Misremember What They Created With AI or Without',
-  authors: 'Tim Zindulka, Sven Goller, Daniela Fernandes, Daniel Buschek',
-  venue: 'CHI 2026 · arXiv:2509.11851v2 · Human-Computer Interaction (cs.HC)',
-  link: 'https://arxiv.org/abs/2509.11851',
-  date: '2026-08-22',
-  abstract: '随着大语言模型（LLM）被广泛嵌入交互式文本生成工具，用户能否准确回忆"哪些内容由AI辅助生成、哪些由自己独立完成"成为关键问题。本文通过一项预注册的实验（184名参与者），让被试分别在有无AI辅助的条件下完成创意构思和文本撰写任务。一周后测试发现：AI参与显著降低了用户对内容来源的记忆准确性，尤其是在"混合工作流"（如AI出想法、人类写文本，或反之）中，正确归因的概率骤降至37.7%。研究使用来源记忆的计算模型验证了结果，揭示了人机协作中一个被忽视的认知陷阱——"AI记忆缺口"（AI Memory Gap）。',
+  title: 'Delegating or Doing? Understanding User Behavior in Hybrid Human-Agent Interfaces',
+  authors: 'Gavin Raine Dizon, Tyrone Justin Sta Maria, Jordan Aiko Deja, Yasuyuki Sumi',
+  venue: 'HAI 2026 · arXiv:2608.19551 · Human-Computer Interaction (cs.HC)',
+  link: 'https://arxiv.org/abs/2608.19551',
+  date: '2026-08-23',
+  abstract: '当大语言模型（LLM）被嵌入应用界面，用户既可以通过传统GUI直接操作，也可以将任务委托给对话式AI代理完成。但当两种交互模式同时可用时，用户如何在\"亲自做\"和\"委托AI做\"之间分配？本文通过MCP（Model Context Protocol）增强了一个Web内容管理系统，支持用户通过图形界面、对话代理或混合模式完成CRUD任务。实验采用被试间设计（N=73），比较三种交互模式：传统界面、AI优先、混合模式。结果发现AI辅助显著降低了点击、页面导航和滚动等交互操作量，但这种减少并未转化为更快的任务完成速度——任务耗时无显著差异。更有趣的是，用户是否委托AI更多取决于个体差异（ICC=0.50），而非任务类型。',
   keyPoints: [
-    '"AI记忆缺口"的发现——仅一周后，用户就难以分辨哪些想法和文本是自己原创、哪些是AI辅助的。这不只是"记性差"的问题，而是人类来源记忆（source memory）在人机协作情境下的系统性失效。当AI生成的内容与我们自己的思维无缝融合时，大脑失去了标记"这个想法从哪来"的能力。这直接关系到EU AI Act要求标注AI生成内容的政策落地——如果连创作者自己都记不住，如何监管？',
-    '混合工作流是最危险的"记忆盲区"——研究设置了四种条件：全人、全AI、AI想法+人文本、人想法+AI文本。结果发现，混合工作流的来源记忆错误率最高。这揭示了一个反直觉的现象：当我们部分借助AI、部分依靠自己时，大脑最容易混淆来源。从产品设计的角度看，这意味着目前市面上大多数"AI辅助写作"工具（如Notion AI、ChatGPT写作插件）都可能让用户在不知不觉中产生虚假的原创感。',
-    '过度自信效应——参与者对自己归因准确性的自我评估显著高于实际表现。人们"以为"自己能分清哪些是AI生成的，但实际上做不到。这种元认知偏差（metacognitive bias）在用户研究中极为重要：它意味着我们不能依赖用户的自我报告来理解AI工具的真实影响，必须通过行为实验来揭示隐性认知过程。',
-    '对Emma的核心启示：这篇论文完美展示了心理学+HCI交叉研究的魅力。它用经典的认知心理学范式（来源记忆实验）来研究一个前沿的人机交互问题（AI辅助创作），既有理论深度（来源记忆的理论模型），又有实践价值（AI内容标注政策）。这正是你作为应用心理背景的研究者在HCI领域的独特优势——你能设计出更精细的用户实验来揭示AI对人类认知的影响✨'
+    '\"减少操作量≠加快速度\"的反直觉发现——AI辅助确实减少了用户的交互成本（更少的点击、导航和滚动），但任务总时长并没有显著缩短。这揭示了一个深层问题：在混合人机界面中，用户可能将节省的时间用于\"思考是否要委托\"、\"检查AI的输出是否正确\"等隐性认知活动。从用户体验角度看，AI工具的价值可能不在于\"帮你做得更快\"，而在于\"让你花更少的体力去做\"——这两者是完全不同的体验维度。',
+    '个体差异远大于任务差异——研究发现，用户是否选择委托AI，与任务类型（如删除这种\"高风险\"操作vs浏览这种\"低风险\"操作）几乎无关。相反，个体差异解释了约50%的委托行为变异（ICC=0.50）。这意味着有些用户天然倾向于信任AI、有些则不信任——这与心理学中的\"技术接受模型\"（TAM）和\"自动化信任\"（automation trust）文献高度一致。对产品设计而言，\"一刀切\"的AI功能推广策略可能不如根据用户信任水平提供差异化引导。',
+    'MCP协议的实际应用价值——研究使用Model Context Protocol将LLM嵌入CMS系统，这是一个前沿的技术架构选择。MCP允许AI代理直接执行CRUD操作（创建、读取、更新、删除），而不是仅生成文本建议。这代表了一种从\"AI作为建议者\"到\"AI作为执行者\"的范式转变。从HCI研究方法论的角度，这种\"真实系统中的被试间实验\"比传统的Wizard-of-Oz实验更具生态效度。',
+    '对Emma的核心启示：这篇论文完美示范了如何将心理学理论（自动化信任、个体差异）与前沿HCI问题（AI代理交互）结合。它的方法论——真实系统+被试间设计+混合方法分析——是你未来做HCI PhD研究时可以借鉴的范式。同时，论文揭示的\"个体差异大于任务差异\"这一发现，对用户研究有深刻意义：我们在做用研时，不能只看\"用户怎么做任务\"，更要理解\"是什么样的用户\"在做这些任务✨'
   ],
-  takeaway: '这篇论文触及了AI时代一个根本性的认知挑战：当AI成为我们思维的延伸，"我"和"它"之间的界限在哪里？从心理学角度看，这涉及"自我感"（sense of agency）和"认知所有权"（cognitive ownership）——我们如何定义"这个想法是我的"？当AI参与了创意过程，创作的归属感如何变化？这与此前的"AI代笔效应"（AI Ghostwriter Effect）研究一脉相承。从产品设计角度，论文暗示了一个重要方向：AI工具应该主动帮助用户追踪内容来源，而不是让用户自己去记。比如，实时标注"这段由AI建议"、提供"创作溯源"功能等。对Emma来说，这类研究展示了一条清晰的HCI PhD研究路径：用心理学的实验方法论来回答AI交互中最前沿的用户研究问题✨'
+  takeaway: '这篇论文触及了人机交互领域一个核心张力：AI代理越来越强大，但用户并不总是愿意把控制权交给它。从心理学角度看，这涉及\"控制感\"（sense of control）和\"信任校准\"（trust calibration）——人们需要在\"效率提升\"和\"保持掌控\"之间找到平衡。研究揭示的一个有趣悖论是：AI降低了操作成本但没有降低任务时间，暗示\"认知成本\"可能替代了\"物理成本\"。这对AI产品经理有直接启示——设计AI功能时，不能只优化\"效率指标\"（操作时间、点击次数），更要关注\"认知负荷指标\"（用户需要花多少脑力去监控和验证AI的行为）。对Emma来说，这类研究展示了一个极具前景的HCI研究方向：理解用户在AI代理时代的认知模式变化，并用这些洞察来设计更好的AI产品✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,43 +1391,43 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'attribution', pos: 'n.', def: '归因，归属， attributing（/ˌætrɪˈbjuːʃn/）' },
-  { word: 'elaboration', pos: 'n.', def: '详细阐述，精心制作（/ɪˌlæbəˈreɪʃn/）' },
-  { word: 'metacognitive', pos: 'adj.', def: '元认知的，关于认知过程的认知（/ˌmetəkɒɡˈnɛtɪv/）' },
-  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期追踪的（/ˌlɒŋɡɪˈtjuːdnl/）' },
-  { word: 'pre-registered', pos: 'adj.', def: '预注册的（实验前公开方案的）（/ˌpriː ˈrɛdʒɪstəd/）' },
-  { word: 'distractor', pos: 'n.', def: '干扰项，分散注意力的事物（/dɪˈstræktər/）' },
-  { word: 'agency', pos: 'n.', def: '能动性，自主行为能力（/ˈeɪdʒənsi/）' },
-  { word: 'disclosure', pos: 'n.', def: '披露，揭示，公开（/dɪsˈkloʊʒər/）' },
-  { word: 'embed', pos: 'v.', def: '嵌入，植入（/ɪmˈbɛd/）' },
-  { word: 'confidence', pos: 'n.', def: '信心，置信度（/ˈkɒnfɪdəns/）' }
+  { word: 'proliferation', pos: 'n.', def: '激增，快速扩散（/prəˌlɪfəˈreɪʃn/）' },
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（负面影响的严重程度）（/ˈmɪtɪɡeɪt/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范，思维模式（/ˈpærədaɪm/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验性的，基于实验或观察的（/ɪmˈpɪrɪkl/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使…变得更容易（/fəˈsɪlɪteɪt/）' },
+  { word: 'discrepancy', pos: 'n.', def: '差异，不一致，矛盾（/dɪsˈkrɛpənsi/）' },
+  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
+  { word: 'contingent', pos: 'adj.', def: '视…而定的，取决于条件的（/kənˈtɪndʒənt/）' },
+  { word: 'inherent', pos: 'adj.', def: '固有的，内在的（/ɪnˈherənt/）' },
+  { word: 'substantiate', pos: 'v.', def: '证实，用证据支持（/səbˈstænʃieɪt/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe an occasion when you helped someone solve a problem',
-  bullet: 'You should say: who the person was, what the problem was, how you helped them, and explain how you felt about helping them.',
-  sample: `I'd like to share an experience from last semester when I helped my roommate prepare for an important job interview — and it ended up being one of the most rewarding things I did all year.
+  topic: 'Describe a historical town or city you have visited',
+  bullet: 'You should say: where it is, when you went there, what you saw and did there, and explain what impressed you most about this place.',
+  sample: `I'd like to talk about a trip I took to Xi'an last autumn — one of China's most iconic ancient capitals, and honestly a place that left an indelible mark on my memory.
 
-My roommate, Xiao Li, was a brilliant designer but extremely nervous about interviews. She had a final round interview with a well-known tech company for a UX design position. The problem wasn't her portfolio — her work was genuinely impressive — but she had a tendency to ramble when asked behavioural questions, jumping from one story to another without ever reaching a satisfying conclusion.
+I went there during the National Day holiday with two of my closest friends from university. We had been planning this trip for months because we're all fascinated by Chinese history, and Xi'an was at the top of our bucket list. We spent about four days there, which turned out to be just enough to scratch the surface of what the city has to offer.
 
-I offered to do mock interviews with her over the course of a week. Each evening, we'd spend about an hour in our living room. I'd play the role of the interviewer, asking questions like "Tell me about a time you dealt with a difficult team member" or "Describe a project that didn't go as planned." At first, her answers were quite scattered — she'd start with context, then jump to emotions, then suddenly switch to a different example.
+The highlight was obviously the Terracotta Warriors. Standing in that enormous pit, surrounded by thousands of life-sized soldiers — each with a unique facial expression — was genuinely awe-inspiring. I remember feeling this strange mixture of admiration for the craftsmanship and a kind of unease, knowing these figures were created to accompany an emperor into the afterlife. It made history feel incredibly tangible, not just something in a textbook.
 
-What I did was introduce her to the STAR framework — Situation, Task, Action, Result. I helped her identify three to four key stories from her experience and structure each one clearly. I also pointed out that she had an incredible ability to empathise with users, which she wasn't articulating well in English. We worked on specific phrases she could use to showcase that strength.
+Beyond the tourist attractions, what really captivated me was the city wall. We rented bicycles and cycled the entire 14-kilometre perimeter at sunset. The contrast was stunning — ancient stone walls on one side, modern city lights on the other. It felt like riding through two different eras simultaneously.
 
-By the third session, the transformation was remarkable. She was concise, confident, and — most importantly — authentic. She wasn't reciting memorised answers; she was telling her own stories with clarity and conviction.
+We also explored the Muslim Quarter in the evening, navigating through narrow alleys packed with street food vendors. I tried roujiamo — the so-called "Chinese hamburger" — and biangbiang noodles, which are as wide as a belt. The flavours were intense and completely different from anything I'd had before.
 
-She got the offer the following week. When she called me with the news, I was genuinely thrilled — not just because she succeeded, but because I could see how much her confidence had grown. Helping her made me realise something important: sometimes people don't need you to solve their problem; they just need someone patient enough to help them find the answer within themselves. It reinforced my belief that good design — and good communication — is ultimately about understanding people.`,
+What impressed me most, though, wasn't any single landmark — it was the way Xi'an layers its past and present so naturally. You'd turn a corner and stumble upon a 600-year-old temple nestled between modern shops, or hear the call to prayer from a centuries-old mosque while smartphones buzzed all around you. It taught me that a city doesn't have to choose between honouring its heritage and embracing modernity — it can do both, gracefully.`,
   expressions: [
-    '🌟 ramble — 喋喋不休，漫无边际地说',
-    '🌟 behavioural question — 行为面试题',
-    '🌟 mock interview — 模拟面试',
-    '🌟 STAR framework — STAR法则（情境-任务-行动-结果）',
-    '🌟 articulate — 清晰表达',
-    '🌟 empathise with users — 共情用户',
-    '🌟 scattered — 散乱的，不集中的',
-    '🌟 concise — 简洁的',
-    '🌟 conviction — 坚定的信念，确信',
-    '🌟 authentic — 真实的，真诚的'
+    '🌟 indelible mark — 不可磨灭的印象',
+    '🌟 bucket list — 人生愿望清单',
+    '🌟 scratch the surface — 略窥门径，仅了解皮毛',
+    '🌟 awe-inspiring — 令人敬畏的',
+    '🌟 tangible — 可感知的，触手可及的',
+    '🌟 captivate — 深深吸引，迷住',
+    '🌟 perimeter — 周长，外围',
+    '🌟 nestled between — 坐落于…之间',
+    '🌟 layer its past and present — 将过去与现在交叠',
+    '🌟 gracefully — 优雅地，从容地'
   ]
 }
 function renderIelts() {
