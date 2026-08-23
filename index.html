@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Delegating or Doing? Understanding User Behavior in Hybrid Human-Agent Interfaces',
-  authors: 'Gavin Raine Dizon, Tyrone Justin Sta Maria, Jordan Aiko Deja, Yasuyuki Sumi',
-  venue: 'HAI 2026 · arXiv:2608.19551 · Human-Computer Interaction (cs.HC)',
-  link: 'https://arxiv.org/abs/2608.19551',
-  date: '2026-08-23',
-  abstract: '当大语言模型（LLM）被嵌入应用界面，用户既可以通过传统GUI直接操作，也可以将任务委托给对话式AI代理完成。但当两种交互模式同时可用时，用户如何在\"亲自做\"和\"委托AI做\"之间分配？本文通过MCP（Model Context Protocol）增强了一个Web内容管理系统，支持用户通过图形界面、对话代理或混合模式完成CRUD任务。实验采用被试间设计（N=73），比较三种交互模式：传统界面、AI优先、混合模式。结果发现AI辅助显著降低了点击、页面导航和滚动等交互操作量，但这种减少并未转化为更快的任务完成速度——任务耗时无显著差异。更有趣的是，用户是否委托AI更多取决于个体差异（ICC=0.50），而非任务类型。',
+  title: 'Health Inquiry with AI: How Empathetic Expression and Conversational Contexts Shape Users\' Communicative Acts',
+  authors: 'Xi Zheng, Xuyu Yang, Can Liu, Yuhan Luo',
+  venue: 'UbiComp Companion 2026 · arXiv:2608.17144 · Human-Computer Interaction (cs.HC)',
+  link: 'https://arxiv.org/abs/2608.17144',
+  date: '2026-08-24',
+  abstract: '随着在线健康信息检索向对话式AI转变，高质量的信息获取越来越依赖用户的"沟通行为"（主动分享和寻求信息）——类似于临床中如何引导有效诊断和个性化指导。本研究借鉴健康传播理论，考察聊天机器人的共情表达模态（言语、视觉、多模态）和对话语境（一般、敏感、心理健康）如何通过这些行为影响用户。研究采用2×2×3被试内实验设计（N=48），结果发现：言语和多模态共情显著增加了回复长度，但沟通行为主要受对话语境驱动——敏感语境触发更多提问行为，心理健康语境则导致更高程度的担忧、果断回应和主动信息披露。',
   keyPoints: [
-    '\"减少操作量≠加快速度\"的反直觉发现——AI辅助确实减少了用户的交互成本（更少的点击、导航和滚动），但任务总时长并没有显著缩短。这揭示了一个深层问题：在混合人机界面中，用户可能将节省的时间用于\"思考是否要委托\"、\"检查AI的输出是否正确\"等隐性认知活动。从用户体验角度看，AI工具的价值可能不在于\"帮你做得更快\"，而在于\"让你花更少的体力去做\"——这两者是完全不同的体验维度。',
-    '个体差异远大于任务差异——研究发现，用户是否选择委托AI，与任务类型（如删除这种\"高风险\"操作vs浏览这种\"低风险\"操作）几乎无关。相反，个体差异解释了约50%的委托行为变异（ICC=0.50）。这意味着有些用户天然倾向于信任AI、有些则不信任——这与心理学中的\"技术接受模型\"（TAM）和\"自动化信任\"（automation trust）文献高度一致。对产品设计而言，\"一刀切\"的AI功能推广策略可能不如根据用户信任水平提供差异化引导。',
-    'MCP协议的实际应用价值——研究使用Model Context Protocol将LLM嵌入CMS系统，这是一个前沿的技术架构选择。MCP允许AI代理直接执行CRUD操作（创建、读取、更新、删除），而不是仅生成文本建议。这代表了一种从\"AI作为建议者\"到\"AI作为执行者\"的范式转变。从HCI研究方法论的角度，这种\"真实系统中的被试间实验\"比传统的Wizard-of-Oz实验更具生态效度。',
-    '对Emma的核心启示：这篇论文完美示范了如何将心理学理论（自动化信任、个体差异）与前沿HCI问题（AI代理交互）结合。它的方法论——真实系统+被试间设计+混合方法分析——是你未来做HCI PhD研究时可以借鉴的范式。同时，论文揭示的\"个体差异大于任务差异\"这一发现，对用户研究有深刻意义：我们在做用研时，不能只看\"用户怎么做任务\"，更要理解\"是什么样的用户\"在做这些任务✨'
+    '"共情有效但语境为王"的核心发现——言语和多模态共情确实让用户回复更长（更多的信息分享），但当涉及用户具体做什么沟通行为时，对话语境的影响力远大于共情表达。敏感话题（如性健康）让用户提问量翻倍，心理健康话题则让用户变得更果断、更主动披露信息。这意味着AI健康系统的设计不能只关注"表达共情"，更要精准识别和调整语境。',
+    '敏感语境下的"提问激增"现象——当话题涉及隐私或敏感领域时，用户的提问行为显著增加（约为一般语境的两倍）。这揭示了一个有趣的信息不对称：用户在不确定的敏感场景中，会更主动地寻求信息来降低不确定性。从用户研究角度看，这是一个典型的"信息焦虑"驱动行为——当人们感到脆弱时，信息获取变成了一种控制感的来源。',
+    '心理健康语境中的"主动披露"效应——在心理健康话题中，用户不仅回答问题，还会主动分享未被问及的信息（unprompted information disclosure）。这种现象在心理学中称为"自我揭露的递归效应"——当一个安全的对话环境被建立后，用户会逐步打开自己，从被动应答转向主动分享。这对设计AI心理咨询系统有重大启示：关键不是让AI说更多共情的话，而是创造一个让用户感到安全的"语境框架"。',
+    '对Emma的核心启示：这篇论文完美展示了HCI与心理学的交叉研究范式——用实验方法论验证心理学理论（共情、自我揭露、信息焦虑），同时产出对产品设计有直接价值的洞察。2×2×3的被试内设计是一个精巧的实验方案，值得你在北师大研究生阶段学习借鉴。更重要的是，这篇论文指向了一个极具前景的研究方向：如何设计"语境敏感"的AI系统——这与你未来想做AI产品经理的方向高度契合✨'
   ],
-  takeaway: '这篇论文触及了人机交互领域一个核心张力：AI代理越来越强大，但用户并不总是愿意把控制权交给它。从心理学角度看，这涉及\"控制感\"（sense of control）和\"信任校准\"（trust calibration）——人们需要在\"效率提升\"和\"保持掌控\"之间找到平衡。研究揭示的一个有趣悖论是：AI降低了操作成本但没有降低任务时间，暗示\"认知成本\"可能替代了\"物理成本\"。这对AI产品经理有直接启示——设计AI功能时，不能只优化\"效率指标\"（操作时间、点击次数），更要关注\"认知负荷指标\"（用户需要花多少脑力去监控和验证AI的行为）。对Emma来说，这类研究展示了一个极具前景的HCI研究方向：理解用户在AI代理时代的认知模式变化，并用这些洞察来设计更好的AI产品✨'
+  takeaway: '这篇论文的核心贡献在于揭示了AI健康交互中"共情"和"语境"的交互效应——共情是有效的催化剂，但语境才是真正的决定因素。从心理学角度看，这呼应了"人-环境交互"（person-environment interaction）的经典理论：行为不仅由个体特征决定，更由个体所处的情境塑造。对AI产品经理来说，这提供了一个清晰的设计原则：不要只优化AI的"表达方式"（共情话术、视觉表情），更要优化AI对"语境的感知和适应能力"。对Emma来说，这类研究展示了HCI+心理学的研究魅力——它既需要严谨的实验设计（被试内设计、多因素方差分析），又需要对人类行为有深刻的同理心理解✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,43 +1391,41 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'proliferation', pos: 'n.', def: '激增，快速扩散（/prəˌlɪfəˈreɪʃn/）' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（负面影响的严重程度）（/ˈmɪtɪɡeɪt/）' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范，思维模式（/ˈpærədaɪm/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验性的，基于实验或观察的（/ɪmˈpɪrɪkl/）' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使…变得更容易（/fəˈsɪlɪteɪt/）' },
-  { word: 'discrepancy', pos: 'n.', def: '差异，不一致，矛盾（/dɪsˈkrɛpənsi/）' },
-  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
-  { word: 'contingent', pos: 'adj.', def: '视…而定的，取决于条件的（/kənˈtɪndʒənt/）' },
-  { word: 'inherent', pos: 'adj.', def: '固有的，内在的（/ɪnˈherənt/）' },
-  { word: 'substantiate', pos: 'v.', def: '证实，用证据支持（/səbˈstænʃieɪt/）' }
+  { word: 'salient', pos: 'adj.', def: '显著的，最突出的，引人注目的（/ˈseɪliənt/）' },
+  { word: 'ameliorate', pos: 'v.', def: '改善，改进（不利或困难的状况）（/əˈmiːliəreɪt/）' },
+  { word: 'extrapolate', pos: 'v.', def: '推断，推知（由已知信息推论未知）（/ɪkˈstræpəleɪt/）' },
+  { word: 'discourse', pos: 'n.', def: '话语，论述，正式讨论（/ˈdɪskɔːrs/）' },
+  { word: 'reciprocal', pos: 'adj.', def: '相互的，互惠的，双向的（/rɪˈsɪprəkl/）' },
+  { word: 'normative', pos: 'adj.', def: '规范的，标准的，价值判断的（/ˈnɔːrmətɪv/）' },
+  { word: 'synthesize', pos: 'v.', def: '综合，合成，将…整合为一体（/ˈsɪnθəsaɪz/）' },
+  { word: 'alleviate', pos: 'v.', def: '减轻，缓解（痛苦或困难）（/əˈliːvieɪt/）' },
+  { word: 'juxtapose', pos: 'v.', def: '并列，并置（以比较或对比）（/ˌdʒʌkstəˈpoʊz/）' },
+  { word: 'cohesive', pos: 'adj.', def: '连贯的，凝聚的，有逻辑联系的（/koʊˈhiːsɪv/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a historical town or city you have visited',
-  bullet: 'You should say: where it is, when you went there, what you saw and did there, and explain what impressed you most about this place.',
-  sample: `I'd like to talk about a trip I took to Xi'an last autumn — one of China's most iconic ancient capitals, and honestly a place that left an indelible mark on my memory.
+  topic: 'Describe a quiet place you like to visit',
+  bullet: 'You should say: where it is, how often you go there, what you do there, and explain why you like this place.',
+  sample: `I'd like to talk about a small lakeside teahouse I discovered near West Lake in Hangzhou — a place that has become my sanctuary whenever I need to escape the relentless pace of daily life.
 
-I went there during the National Day holiday with two of my closest friends from university. We had been planning this trip for months because we're all fascinated by Chinese history, and Xi'an was at the top of our bucket list. We spent about four days there, which turned out to be just enough to scratch the surface of what the city has to offer.
+It's tucked away on the western side of the lake, far from the tourist crowds that flock to the famous Broken Bridge and Leifeng Pagoda. You have to walk down a narrow stone path lined with willow trees to find it — and honestly, half the charm is in the journey of getting there. The teahouse itself is a modest two-storey wooden building with a tiled roof, surrounded by lotus ponds that bloom in summer.
 
-The highlight was obviously the Terracotta Warriors. Standing in that enormous pit, surrounded by thousands of life-sized soldiers — each with a unique facial expression — was genuinely awe-inspiring. I remember feeling this strange mixture of admiration for the craftsmanship and a kind of unease, knowing these figures were created to accompany an emperor into the afterlife. It made history feel incredibly tangible, not just something in a textbook.
+I try to visit at least once a month, usually on a Sunday morning when the light is soft and there are barely any other visitors. I'll order a pot of Longjing green tea — the local specialty — and sit by the window with a book or just my thoughts. Sometimes I sketch the view: the mist hovering over the water, the silhouettes of hills in the distance, the occasional fisherman in a wooden boat.
 
-Beyond the tourist attractions, what really captivated me was the city wall. We rented bicycles and cycled the entire 14-kilometre perimeter at sunset. The contrast was stunning — ancient stone walls on one side, modern city lights on the other. It felt like riding through two different eras simultaneously.
+What I do there is deliberately simple. I read, I write in my journal, I watch the water change colour as the morning unfolds. But the real reason I keep coming back isn't any single activity — it's the quality of stillness the place offers. In a world where I'm constantly bombarded by notifications, deadlines and other people's expectations, this teahouse gives me permission to do absolutely nothing productive and feel perfectly fine about it.
 
-We also explored the Muslim Quarter in the evening, navigating through narrow alleys packed with street food vendors. I tried roujiamo — the so-called "Chinese hamburger" — and biangbiang noodles, which are as wide as a belt. The flavours were intense and completely different from anything I'd had before.
-
-What impressed me most, though, wasn't any single landmark — it was the way Xi'an layers its past and present so naturally. You'd turn a corner and stumble upon a 600-year-old temple nestled between modern shops, or hear the call to prayer from a centuries-old mosque while smartphones buzzed all around you. It taught me that a city doesn't have to choose between honouring its heritage and embracing modernity — it can do both, gracefully.`,
+There's something about the gentle sound of water lapping against the shore, combined with the faint aroma of tea leaves, that seems to slow down time itself. It's taught me that tranquillity isn't about removing all noise from your life — it's about finding a space where the noise finally becomes bearable, where you can hear your own thoughts again.`,
   expressions: [
-    '🌟 indelible mark — 不可磨灭的印象',
-    '🌟 bucket list — 人生愿望清单',
-    '🌟 scratch the surface — 略窥门径，仅了解皮毛',
-    '🌟 awe-inspiring — 令人敬畏的',
-    '🌟 tangible — 可感知的，触手可及的',
-    '🌟 captivate — 深深吸引，迷住',
-    '🌟 perimeter — 周长，外围',
-    '🌟 nestled between — 坐落于…之间',
-    '🌟 layer its past and present — 将过去与现在交叠',
-    '🌟 gracefully — 优雅地，从容地'
+    '🌟 sanctuary — 避难所，心灵栖息地',
+    '🌟 tucked away — 藏在隐蔽处',
+    '🌟 relentless pace — 不间断的节奏',
+    '🌟 the charm is in the journey — 魅力在于过程本身',
+    '🌟 silhouettes of hills — 山峦的轮廓',
+    '🌟 deliberately simple — 刻意地简单',
+    '🌟 bombarded by notifications — 被通知信息轰炸',
+    '🌟 quality of stillness — 宁静的质感',
+    '🌟 slow down time — 让时间慢下来',
+    '🌟 tranquillity — 宁静，平静'
   ]
 }
 function renderIelts() {
@@ -1473,13 +1471,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"We are all so quick to judge, and so slow to understand. We see a gesture and invent a motive; we hear a silence and fill it with our own fears. The truth is, we know almost nothing about the people we pass on the street, the colleagues we sit beside, even the family members we wake up next to each morning. And perhaps that is not a failure of attention, but simply the human condition — we are each of us locked inside our own experience, guessing at the rest."',
-  source: 'Ian McEwan《赎罪》（Atonement, 2001）· 意译综合',
+  quote: '"She had once wanted to be a poet; she had once believed that words could shape the world. But now she understood that what we call living was simply this — the endless, patient business of letting go. Every morning we wake and release the person we were yesterday. Every evening we close our eyes and surrender the day, with all its small triumphs and quiet devastations. And in that surrender there is a kind of grace — not the grand, dramatic grace of novels, but the ordinary, recurring grace of continuing."',
+  source: 'Virginia Woolf《到灯塔去》（To the Lighthouse, 1927）· 意译综合',
   analysis: [
-    '<b>"我们如此急于判断，又如此迟缓去理解"——认知的捷径与偏差</b>：麦克尤恩这句话精准地概括了社会心理学中"基本归因错误"（fundamental attribution error）的本质。我们的大脑是一台"意义制造机器"——当看到一个人的行为时，我们倾向于用性格特质来解释（"他迟到是因为不负责任"），而忽略了情境因素（"他迟到可能是因为地铁故障"）。这种认知捷径在进化上有其价值——快速判断有助于生存——但在复杂的社会互动中，它往往导致误解和偏见。心理学研究表明，即使经过训练，人们仍然很难抑制自动化的归因倾向。',
-    '<b>"我们看到一个手势就编造动机，听到沉默就用恐惧填满它"——投射效应</b>：这里描述的是心理学中的"投射"（projection）机制——我们将自己的情感、恐惧和期望投射到模糊的外部刺激上。弗洛伊德最初将这个概念定义为一种防御机制，但现代认知心理学发现它更普遍：它只是大脑"填补空白"的自然倾向。格式塔心理学家称之为"闭合原则"（law of closure）——我们倾向于将不完整的知觉经验补充完整。麦克尤恩的文学洞见在于：这种"填补"往往反映的不是外部现实，而是我们自己的内心世界。',
-    '<b>"我们各自被锁在自己的经验里"——共情的边界与可能</b>：这是整段话最深层的哲学命题。如果每个人都被困在自己的主观经验中，那么真正的"理解他人"是否可能？心理学对这个问题的回答是辩证的。一方面，镜像神经元（mirror neurons）和心理理论（Theory of Mind）研究表明人类确实具有共情的神经基础——我们能"感受"他人的情绪。但另一方面，哲学家托马斯·内格尔（Thomas Nagel）的经典追问"做一只蝙蝠是什么感觉？"提醒我们：共情永远是不完全的。麦克尤恩的立场不是悲观的——他说"这或许不是注意力的失败，而只是人类处境"——这是一种温和的接纳：我们无法完全理解他人，但这不意味着我们不应该尝试。',
-    '<b>给Emma的话</b>：这段话对做用户研究的人来说特别有意义。当我们做用户访谈、做可用性测试时，我们本质上也在"看到手势就编造动机"——我们以为理解了用户的需求，但很多时候我们只是把自己的假设投射到了用户身上。好的用户研究者需要时刻警惕这种倾向：保持谦逊，承认"我们知道的很少"，然后通过系统的方法论（而非直觉）去接近用户的真实体验。这也是为什么HCI领域越来越重视"参与式设计"（participatory design）——不是替用户思考，而是让用户参与设计过程✨'
+    '<b>"她曾想成为诗人，曾相信语言能塑造世界"——理想主义的温柔幻灭</b>：伍尔夫在这里触及了一个深层的心理发展议题——从"全能感"到"有限性"的过渡。年轻时我们相信自己能用意志力改变世界（心理学中称为"个人神话"personal fable），但成长的过程就是逐渐接受自己的有限性。这不是悲观，而是一种成熟的哀悼（mourning）——为那些未能实现的自我哀悼。伍尔夫的笔触如此温柔，因为她知道：放手本身就需要勇气。',
+    '<b>"生活就是这——无休止的、耐心的放手事业"——存在主义心理学视角</b>：存在主义心理学家欧文·亚隆（Irvin Yalom）认为，人类面对的四类终极关怀是：死亡、自由、孤独和无意义。伍尔夫的这段话直指"死亡"和"无意义"这两个命题——每天醒来，昨天的"我"已经死去；每天的成就和痛苦，最终都会消散。但伍尔夫不是在制造焦虑，而是在说：当你真正接受了这种无常，反而会获得一种奇特的自由。',
+    '<b>"在那种放弃中有一种优雅——不是小说中宏大的优雅，而是持续的、日常的优雅"——日常生活的英雄主义</b>：这可能是伍尔夫最打动人心的洞见。我们文化推崇的是"壮烈"的优雅——英雄式的牺牲、戏剧性的转变。但伍尔夫说，真正的优雅在"continuing"（继续）——在每一个平凡的早晨，当你选择起床、选择面对新的一天、选择再试一次，这就是一种安静的英雄主义。积极心理学将此称为"日常韧性"（everyday resilience）——不是经历一次重大创伤后的坚强，而是日复一日面对琐碎生活的韧性。',
+    '<b>给Emma的话</b>：伍尔夫是意识流文学的大师，她对人类内心世界的细腻观察与心理学高度共鸣。这段话特别适合在那些感觉"什么都没发生、什么都没做到"的日子里读——它提醒你，活着本身就已经是一种了不起的事情。从专业角度看，伍尔夫对"时间"和"意识"的处理方式，其实预示了后来认知心理学中关于"时间感知"和"自我连续性"的研究课题。作为未来的用户研究者，你可以从文学中学习理解人的另一种维度——不是通过数据和实验，而是通过共情和叙事✨'
   ]
 }
 function renderLiterature() {
@@ -1510,16 +1508,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月22日 星期六',
+  date: '2026年8月24日 星期一',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '第19号台风生成，中央气象台发布台风蓝色预警', desc: '北部湾热带低压加强为今年第19号台风（热带风暴级），第18号台风"沙德尔"正向西北方向移动，预计未来3天可能达到超强台风级，26日前后进入东海，28日至29日可能登陆华东沿海。' },
-    { tag: '国内', cls: 'news-domestic', title: '前7月全国一般公共预算收入同比增长5.8%，积极财政政策持续发力', desc: '财政部发布数据显示今年前7个月全国一般公共预算收入143696亿元，增幅比上半年提高1.1个百分点。财政部、央行、金融监管总局联合推出财政金融协同促内需新举措，贴息范围扩大、经办机构增至约400家。' },
-    { tag: '国内', cls: 'news-domestic', title: '中央网信办印发《促进网信企业高质量发展行动计划（2026-2030年）》', desc: '中央网络安全和信息化委员会印发五年行动计划，深入贯彻网络强国建设和"十五五"时期网信工作部署，同时三部门联合通报1100余款存在违法违规问题的移动应用，对400余款采取下架处置。' },
-    { tag: '国际', cls: 'news-intl', title: '乌克兰首都基辅凌晨遭弹道导弹袭击，多次强烈爆炸', desc: '当地时间22日凌晨1时许基辅响起防空警报，俄军向基辅州和基辅市发射多枚弹道导弹和巡飞弹。此前乌克兰一购物中心遭无人机袭击至少15人死亡，局势持续恶化。' },
-    { tag: '国际', cls: 'news-intl', title: '美国将向联合国支付7.25亿美元拖欠会费，但不足欠款总额20%', desc: '特朗普政府启动向联合国支付7.25亿美元程序，预计在其赴纽约出席联合国大会前完成，但这笔金额不到美国欠款总额的五分之一，联合国财政状况依然严峻。' },
-    { tag: '国际', cls: 'news-intl', title: '瑞典校园发生持剑袭击事件，致1死3伤', desc: '瑞典法格什塔市一所学校21日发生袭击事件，一名18岁嫌疑人已被逮捕，此人曾就读于该学校。事件造成1人死亡、3人受伤，其中两人伤势严重。' },
-    { tag: '科技', cls: 'news-tech', title: '2026暑期档票房突破110亿元，消费市场热度高涨', desc: '截至目前2026年暑期档电影总票房（含预售）突破110亿元，超120部中外影片上映，暑期消费市场持续火爆，显示文化消费强劲复苏势头。' },
-    { tag: '国际', cls: 'news-intl', title: '中印尼举行外长防长"2+2"对话机制第二次部长级会议', desc: '外交部长王毅、国防部长董军同印尼外长苏吉约诺、防长沙夫里在雅加达共同主持会议，双方进行深入战略沟通，达成一系列重要共识，深化安全防务领域协作。' }
+    { tag: '科技', cls: 'news-tech', title: '人形机器人百米跑出9.39秒，打破人类世界纪录', desc: '第二届世界人形机器人运动会在北京"冰丝带"开幕，天工Ultra以38.15秒夺得400米冠军，多款机器人100米、400米、1500米及跳高项目均刷新赛会纪录并超越人类世界纪录。世界机器人大会闭幕，共发布44项新技术新方案。' },
+    { tag: '国内', cls: 'news-domestic', title: '嫦娥七号任务不满足发射条件，不能在预定窗口实施', desc: '中国载人航天工程办公室宣布，本着稳妥可靠、万无一失的原则，经综合研判，嫦娥七号任务不满足发射条件，不能在今年预定窗口实施。' },
+    { tag: '国内', cls: 'news-domestic', title: '三部门紧急调拨2万件中央救灾物资，支持广西抗击台风"紫檀"', desc: '西北太平洋"三台共舞"，第18号"沙德尔"、第19号"紫檀"和第20号"简拉维"同时活跃。广西10条河流超警戒水位，已紧急转移群众8087人。应急管理部会同国家粮食和物资储备局向广西调拨折叠床、夏凉被等2万件救灾物资。' },
+    { tag: '国内', cls: 'news-domestic', title: '三部门指导地方快速处置"甲醛白菜"食品安全问题', desc: '针对河北张家口康保县白菜收购环节蘸取甲醛溶液问题，国务院食安办、农业农村部、市场监管总局第一时间指导属地调查核实，追查涉事白菜流向，严防流入市场，同时组织各地开展白菜等易腐蔬菜专项抽检。' },
+    { tag: '国际', cls: 'news-intl', title: '伊朗亮"石油牌"反制美国经济战，称参与国将被视为敌人', desc: '伊朗最高国家安全委员会秘书雷扎伊表示，若美国继续经济战，石油将无法通过霍尔木兹海峡及波斯湾出口。特朗普此前宣布对伊"前所未有"经济孤立行动。伊朗称已全面制定应对方案。' },
+    { tag: '国际', cls: 'news-intl', title: '加拿大宣布对美等额反制关税9月8日生效，暂停贸易谈判', desc: '美加贸易谈判未能达成协议后，加拿大宣布暂停谈判并实施对等反制措施，舆论普遍认为双方盟友关系"不复从前"。' },
+    { tag: '科技', cls: 'news-tech', title: '国际金价突破每盎司4600美元，创三个月新高', desc: '受全球地缘政治紧张局势和避险情绪推动，国际黄金价格突破4600美元/盎司关口，创下近三个月以来新高。分析人士指出，美伊对峙升级和美加贸易摩擦是金价上涨的主要催化剂。' },
+    { tag: '科技', cls: 'news-tech', title: '"梁王组合"首夺羽毛球世锦赛男双冠军', desc: '2026年羽毛球世锦赛在印度新德里收官，中国组合梁伟铿/王昶以21-17、21-16击败马来西亚组合谢定峰/苏伟译，首次闯入世锦赛决赛即夺冠，拿下男双金牌。' }
   ]
 }
 function renderNews() {
