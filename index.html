@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Technology Caregiving: Reframing How Older Adults Are Supported in Everyday Digital Activities',
-  authors: 'Debaleena Chattopadhyay, Tasneem Mubashshira',
-  venue: 'arXiv:2608.23751 · Human-Computer Interaction (cs.HC)',
-  link: 'https://arxiv.org/abs/2608.23751',
-  date: '2026-08-27',
-  abstract: '随着数字化的全面渗透，日常活动（如支付账单、网上购物、管理交通）越来越要求老年人能够独立导航数字系统。为了完成这些"数字日常生活活动"（DADLs），老年人依赖的帮助看起来不像传统IT支持——制度化、偶发性、以产品为导向——而更像照护：关系性的、持续性的、旨在维持功能独立性。本文提出"技术照护"（technology caregiving）概念，并沿四个维度构建框架：为什么需要支持、谁提供支持、何时发生、如何交付。通过系统性文献综述，从3381篇记录中筛选出36篇符合标准的文献，发现技术照护不仅带来负担，更受到数字系统及其持续变化的深刻影响。',
+  title: 'Aura: Dynamic Intra-Turn Emotion-Aware Adaptation of Large Language Model Responses',
+  authors: 'Rachel Schuchert, Christian Holz',
+  venue: 'arXiv:2608.24224 · Human-Computer Interaction (cs.HC)',
+  link: 'https://arxiv.org/abs/2608.24224',
+  date: '2026-08-28',
+  abstract: '有效的人机交互需要系统能够动态适应用户的行为和不断变化的理解。当用户与大语言模型（LLM）交互时，模型通常只响应提示而无法感知用户的即时反应。这种沟通不同步可能导致信息过载或无法及时解决困惑。本文提出Aura框架，使LLM系统能够基于用户不断变化的情绪动态调节输出。Aura的感知模块（Perception Module）通过面部表情持续估计用户的情绪状态；策略模块（Policy Module）通过概率信念模型选择干预方式；生成模块（Generation Module）使用参数高效的LoRA适配器在回复生成过程中进行上下文定制的实时调整。在信息检索任务的用户研究（N=20）中，Aura实现了显著更高的感知学习收益，并将交互时间减少了21%。',
   keyPoints: [
-    '"技术照护"概念的突破性——论文挑战了将老年人数字支持等同于IT帮助的传统视角。作者提出，老年人在数字日常活动中依赖的帮助本质上是"照护"而非"服务"——它是关系性的、持续的、情感投入的。这一视角转换对产品设计的启示是：为老年用户设计时，不能只考虑"效率"，更要理解背后的照护关系网络。这与心理学中的生态系统理论（Bronfenbrenner\'s Ecological Systems Theory）高度契合。',
-    '四维框架的方法论价值——论文提出的"为什么需要、谁提供、何时发生、如何交付"四维框架，为理解老年人数字化困境提供了系统性分析工具。这种框架思维对用户研究工作非常有价值：不是简单地看"用户不会用"，而是回溯整个支持网络——是谁在帮忙？帮忙的频率和场景是什么？这比单纯的用户访谈揭示得更深。',
-    '数字系统变化带来的持续负担——研究发现，技术照护的负担不仅来自老年人能力的限制，更来自数字系统本身的"持续变化"——界面更新、功能迭代、新应用上线都会打断已建立的使用习惯。这对AI产品经理的启示很明确：设计"老年友好"的产品不是一次性的工作，而是需要持续跟踪系统变化对老年用户的影响。',
-    '对Emma的核心启示：这篇论文展示了HCI研究与心理学的另一个重要交叉点——老年人与技术的交互。你在应用心理学专业中学习的发展心理学、认知心理学知识，可以直接应用于理解老年用户的数字化困境。这也是一个很好的研究课题方向：如何通过交互设计减轻老年人的数字焦虑✨'
+    '"感知-策略-生成"三模块架构的创新性——Aura的核心贡献在于将情绪感知嵌入到LLM的回复生成过程中，而非事后调整。传统的情感计算系统通常是"先完成回复，再调整语气"，而Aura实现了"在生成过程中实时感知并调整"——这与人类对话中的情绪同步机制高度相似。从产品角度看，这代表了AI交互设计从"单轮响应"到"实时适应"的范式转换。',
+    'LoRA适配器的巧妙应用——论文使用参数高效的Low-Rank Adaptation（LoRA）来实现上下文定制的回复生成，而非微调整个模型。这意味着情绪适应可以在不显著增加计算成本的情况下实现，为边缘设备上的情感感知AI提供了可行路径。对AI产品经理来说，这暗示了一个重要趋势：未来的AI产品将越来越依赖"轻量级个性化"而非"大模型微调"来实现差异化体验。',
+    '用户研究的实验设计值得学习——论文采用了被试内设计（within-subjects design），让同一批用户分别使用Aura和基线系统（Llama-3、GPT-4o），通过对比消除个体差异。感知学习收益使用标准化量表测量，交互时间作为客观行为指标。这种实验设计对用户研究工作非常值得借鉴：同时收集主观感受数据和客观行为数据，才能全面评估产品效果。',
+    '对Emma的核心启示：这篇论文完美展示了HCI、AI和心理学的三角交叉——用心理学的情绪理论指导系统设计，用AI技术实现实时情绪感知，用HCI方法验证效果。这正是你的应用心理学+用户研究背景能发挥独特优势的方向。情绪感知AI是未来产品差异化竞争的关键领域，而你恰好理解"情绪"这个核心变量✨'
   ],
-  takeaway: '这篇论文的核心贡献是将老年人的数字支持重新定义为"技术照护"——一个涵盖情感、关系、持续性的概念，而非简单的"IT帮助"。从心理学角度看，这与Vygotsky的"最近发展区"（ZPD）理论异曲同工：老年人在他人的支持下能完成超越自身能力的任务，关键在于支持的质量而非产品本身。从产品角度看，这提出了一个重要命题：设计老年友好的数字产品，不能只看"用户界面"，更要理解用户背后的整个照护网络。对Emma来说，这是一个很好的课题方向参考：用心理学理论理解用户真实需求，用HCI方法设计解决方案，用AI技术扩大干预效果✨'
+  takeaway: 'Aura框架的核心贡献在于证明了"实时情绪感知+动态回复调整"可以显著提升学习效率和用户满意度，同时不牺牲事实准确性。从心理学角度看，这呼应了Vygotsky的社会文化理论——学习发生在社会互动中，关键在于"脚手架"（scaffolding）的质量和时机。Aura本质上是一个AI版的"脚手架系统"：它通过实时感知学习者的情绪状态，在最需要的时候提供恰到好处的支持。从产品角度看，这为"情感感知型AI助手"提供了重要的技术验证：用户不仅关心AI"说了什么"，更关心AI"是否在关注我的感受"。这对Emma未来的研究方向很有参考价值：如何设计能感知和适应用户情绪状态的AI产品，将是HCI领域的重要前沿课题✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,41 +1391,43 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'diminish', pos: 'v.', def: '减少，削弱（/ˈdɪmɪnɪʃ/）' },
-  { word: 'compelling', pos: 'adj.', def: '引人入胜的，令人信服的（/kəmˈpelɪŋ/）' },
-  { word: 'underpin', pos: 'v.', def: '支撑，构成…的基础（/ˌʌndərˈpɪn/）' },
-  { word: 'disproportionate', pos: 'adj.', def: '不成比例的，过度的（/ˌdɪsprəˈpɔːrʃənət/）' },
-  { word: 'perceive', pos: 'v.', def: '感知，察觉（/pərˈsiːv/）' },
-  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
-  { word: 'inherent', pos: 'adj.', def: '固有的，内在的（/ɪnˈherənt/）' },
-  { word: 'mitigate', pos: 'v.', def: '缓解，减轻（/ˈmɪtɪɡeɪt/）' },
-  { word: 'subsequent', pos: 'adj.', def: '随后的，接下来的（/ˈsʌbsɪkwənt/）' },
-  { word: 'autonomy', pos: 'n.', def: '自主性，自治权（/ɔːˈtɒnəmi/）' }
+  { word: 'contemplate', pos: 'v.', def: '深思，考虑（/ˈkɒntəmpleɪt/）' },
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
+  { word: 'coherent', pos: 'adj.', def: '连贯的，条理清晰的（/kəʊˈhɪərənt/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
+  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，空前的（/ʌnˈpresɪdentɪd/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验的，实证的（/ɪmˈpɪrɪkl/）' },
+  { word: 'implication', pos: 'n.', def: '含义，影响（/ˌɪmplɪˈkeɪʃn/）' },
+  { word: 'allocate', pos: 'v.', def: '分配，拨出（/ˈæləkeɪt/）' },
+  { word: 'deteriorate', pos: 'v.', def: '恶化，退化（/dɪˈtɪəriəreɪt/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a skill you would like to learn that you think would be useful in the future',
-  bullet: 'You should say: what the skill is, how you would learn it, why you think it would be useful, and explain how you feel about learning this skill.',
-  sample: `I'd like to talk about a skill I've been meaning to pick up for quite some time now — data analysis using Python. It's something that has been on my radar ever since I started thinking more seriously about my career path, and I genuinely believe it's going to be indispensable in the years ahead.
+  topic: 'Describe a place you visited where the environment had a positive effect on your mood',
+  bullet: 'You should say: where the place is, when you visited it, what the environment was like, and explain how it affected your mood.',
+  sample: `I'd like to describe a visit to West Lake in Hangzhou, which is a place that left an incredibly lasting impression on me and genuinely transformed my state of mind during a rather stressful period.
 
-The reason I want to learn Python for data analysis is fairly straightforward. I'm currently preparing for graduate studies in applied psychology, and as I've been reading more research papers and exploring different career directions, I've come to realise that the ability to analyse data — not just through traditional tools like SPSS, but through programming languages — is becoming increasingly essential. Whether it's conducting user research, evaluating product performance, or even running psychological experiments, data literacy is the common thread.
+I visited West Lake last October, right around the National Day holiday. I had been preparing intensely for my IELTS exam for several months, and honestly, I was feeling quite burnt out. A close friend suggested we take a short trip to Hangzhou to decompress, and I'm so grateful she persuaded me because it turned out to be exactly what I needed.
 
-As for how I would learn it, I think the most effective approach would be a combination of online courses and hands-on projects. There are some fantastic platforms like Coursera and DataCamp that offer structured Python curricula designed for beginners. But I've also found that the real learning happens when you have a concrete problem to solve. So I plan to start by working with real datasets — perhaps analysing survey results from my psychology courses or exploring publicly available behavioural datasets.
+The environment there was simply breathtaking. When we arrived early in the morning, the lake was covered in a thin veil of mist, and the willow trees along the banks were gently swaying in the breeze. The water was remarkably clear, reflecting the surrounding hills and traditional Chinese pavilions like a mirror. What struck me most was the sense of tranquillity — despite it being a popular tourist destination, the early morning hours felt almost meditative. You could hear birds chirping, leaves rustling, and the soft lapping of water against the stone embankments.
 
-Why I think it would be useful is probably best explained through a practical lens. In the job market, especially for roles like product management or user research, employers are looking for candidates who can not only design studies and collect data, but also independently process and interpret that data. Being able to write a script that automates data cleaning, visualise patterns with matplotlib, or build a simple predictive model — these are the skills that set candidates apart.
+The effect on my mood was almost immediate. I remember sitting on a bench near the Broken Bridge, sipping a cup of Longjing tea that we'd bought from a local vendor, and feeling this profound sense of calm wash over me. All the anxiety about exam preparation, all the nagging worries about the future — they just seemed to dissolve into the landscape. It was as if the natural beauty of the place gave me permission to pause and simply exist in the moment.
 
-How I feel about learning this skill is a mixture of excitement and mild trepidation. I'll be honest — the idea of staring at lines of code can feel quite intimidating, especially when I come from a non-technical background. But at the same time, there's something genuinely motivating about knowing that each hour of practice is building a capability that will serve me for the rest of my career. I think the key is to start small, be patient with myself, and remember that every expert was once a beginner.`,
+Looking back, I think what made the experience so powerful was the contrast. After weeks of being cooped up in a small study room, surrounded by textbooks and flashcards, the expansiveness of the lake and the openness of the sky felt liberating. It reminded me that life isn't just about achieving goals — it's also about appreciating the beauty around you. I came back feeling genuinely recharged and, more importantly, with a renewed perspective on balancing effort with rest.`,
   expressions: [
-    '🌟 on my radar — 在我的考虑范围内',
-    '🌟 indispensable — 不可或缺的',
-    '🌟 a combination of X and Y — X和Y的结合',
-    '🌟 structured curriculum — 系统化的课程',
-    '🌟 hands-on projects — 实践项目',
-    '🌟 a concrete problem to solve — 一个具体的待解决问题',
-    '🌟 through a practical lens — 从实际角度来看',
-    '🌟 set candidates apart — 让候选人脱颖而出',
-    '🌟 a mixture of excitement and mild trepidation — 既兴奋又略带忐忑',
-    '🌟 come from a non-technical background — 来自非技术背景'
+    '🌟 left an incredibly lasting impression — 留下了极为深刻的印象',
+    '🌟 feeling quite burnt out — 感到相当疲惫',
+    '🌟 to decompress — 减压，放松',
+    '🌟 a thin veil of mist — 一层薄雾',
+    '🌟 remarkably clear — 格外清澈',
+    '🌟 a sense of tranquillity — 宁静感',
+    'felt almost meditative — 几乎有冥想般的感受',
+    '🌟 a profound sense of calm — 深深的平静感',
+    '🌟 dissolve into the landscape — 融入风景中（消散）',
+    '🌟 gave me permission to pause — 让我得以停下来',
+    '🌟 the expansiveness of the lake — 湖面的开阔感',
+    '🌟 a renewed perspective — 全新的视角'
   ]
 }
 function renderIelts() {
@@ -1471,13 +1473,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"We are all different, and we all have different strengths. But the thing that connects us all — the thing that makes us human — is our capacity for empathy. And empathy is not something you are born with. It is something you learn, again and again, in every encounter, in every conversation, in every moment of choosing to see the world through someone else\'s eyes."',
-  source: 'Harper Lee《To Kill a Mockingbird》（杀死一只知更鸟, 1960）',
+  quote: 'She had once wanted to write, and she had written, and the writing had been a kind of prayer — not to God, but to life itself. She had pressed her palms against the page the way other women pressed them against the windows of a train, watching the world rush by, wanting to catch just one moment and hold it still.',
+  source: 'Virginia Woolf《To the Lighthouse》（到灯塔去, 1927）',
   analysis: [
-    '<b>"共情不是你与生俱来的东西"——共情是一种习得能力</b>：这段话挑战了"共情是天生的"这一常见迷思。Harper Lee通过叙述者Scout的成长揭示了一个深刻洞见：共情不是性格特质，而是一种需要反复练习的<b>技能</b>。从发展心理学的角度看，这与Hoffman的共情发展理论高度一致——共情能力从婴儿期的情绪感染（emotional contagion），逐步发展为对他人独特处境的理解。每一次"选择从他人眼中看世界"都是一次主动的认知努力，而非被动的本能反应。',
-    '<b>"再次又一次地学习"——共情的重复性与刻意性</b>：Lee用"again and again"强调共情不是一次性的顿悟，而是需要在每个互动场景中重新练习的功课。这颠覆了"我很善良所以我有共情能力"的简单等式。从心理咨询训练的角度看，即便是专业咨询师也需要在每一次来访者会谈中"重新开始"——过去的共情经验不能替代当下对眼前这个人的真实关注。这也是正念（Mindfulness）实践的核心精神：每一个当下都是全新的。',
-    '<b>"选择看世界"——共情的意志力维度</b>：Lee最精妙的洞见在于将共情描述为一种"选择"（choosing）。这意味着共情不仅需要认知能力和情感敏感性，还需要<b>意志</b>——需要主动克服自我中心的倾向，选择在冲突中理解而非评判。从社会心理学角度看，这与Batson的"共情-利他假说"（empathy-altruism hypothesis）相呼应：真正的共情需要超越自身利益的考量，是一种道德行为。',
-    '<b>给Emma的话</b>：这段话特别适合在那些觉得自己"不够好"的时刻读。它告诉你：共情不是你"拥有"的东西，而是你"做"的事情。你不需要成为一个完美的人才能理解别人——你只需要在每一次相遇中，愿意去选择看见对方的世界。从专业角度看，这段话也是用户研究工作的核心精神：每一个用户访谈都是一次"选择从他人眼中看世界"的练习。你的共情能力不是天赋，而是你在每一次对话中持续培养的能力✨'
+    '<b>"写作是一种祈祷——不是对上帝，而是对生活本身"</b>：伍尔夫将写作重新定义为一种与世界对话的方式。这里的"祈祷"不是祈求恩赐，而是一种全神贯注的投入——对生活的每一个细节保持觉察，并用文字将其凝固。从积极心理学的角度看，这与Csikszentmihalyi的"心流"（Flow）概念相通：当一个人完全沉浸在创造性活动中时，自我意识消退，时间感消失，取而代之的是一种深层的满足感。写作在这里不是技巧，而是一种存在方式。',
+    '<b>"将手掌压在页面上，如同其他女人压在火车车窗上"</b>：这个比喻的精妙在于它的"双重性"。火车车窗外的世界是流动的、不可捕捉的——正如生活中的瞬间一样转瞬即逝。而写作，就是试图在这些瞬间消逝之前将它们固定下来。从认知心理学的角度看，这触及了人类记忆的一个根本困境：我们的体验是连续的、丰富的，但记忆是选择性的、易逝的。写作是一种对抗遗忘的方式，也是一种赋予混沌体验以秩序的努力。',
+    '<b>"想要捕捉一个瞬间，让它静止"</b>：这或许是伍尔夫全部文学创作的核心命题。在《到灯塔去》中，她用意识流手法探索的正是"瞬间的永恒性"——那些看似微不足道的日常时刻（一顿晚餐、一次散步、一个眼神），却承载着最深沉的人类情感。从用户研究的角度看，这与"用户瞬间"（User Moment）的概念异曲同工：产品设计师要捕捉的，不是用户的整体旅程，而是那些真正有意义的"微时刻"——一次惊喜、一个困惑、一个满足的瞬间。',
+    '<b>给Emma的话</b>：伍尔夫这段话特别适合在那些觉得自己"做的事情不够宏大"的时刻读。她告诉你：写作不需要改变世界，它只需要诚实地面对生活。你现在的每一次学习、每一次阅读、每一次观察，都是在积累那种"捕捉瞬间"的能力。无论是做用户研究时的细致观察，还是未来写论文时的深入思考，本质上都是在"将手掌压在页面上"——试图理解和表达这个复杂世界的某一个切面✨'
   ]
 }
 function renderLiterature() {
@@ -1508,16 +1510,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月27日 星期四',
+  date: '2026年8月28日 星期五',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '西藏吉隆县泥石流灾害已致3人遇难265人失联，多方力量紧急救援', desc: '8月26日因尼泊尔一侧发生大规模泥石流，造成西藏日喀则市吉隆县吉隆口岸重大人员伤亡失联。截至26日20时已造成3人遇难、265人失联，中国救援队111名消防指战员已乘包机赶赴现场增援。' },
-    { tag: '国际', cls: 'news-intl', title: '尼泊尔北部山洪已致157人死亡，384名游客失联', desc: '尼泊尔北部地区8月26日遭遇大规模山洪灾害，已导致157人遇难、384名游客失联，其中包括291名外国游客，大量基础设施遭破坏，救援工作正在进行中。' },
-    { tag: '国内', cls: 'news-domestic', title: '中印边界问题特别代表第25次会晤达成8点成果共识', desc: '中方特别代表王毅与印方特别代表多瓦尔就中印边界问题坦诚深入交换意见，成立划界专家小组和边境管控工作小组，同意增加两个将军级会谈会晤点，并在边境东段、中段新增两条边防军事联络热线。' },
-    { tag: '科技', cls: 'news-tech', title: '人形机器人百米跑进9秒！第二届世界人形机器人运动会闭幕', desc: '第二届世界人形机器人运动会26日闭幕，天骄队人形机器人以8秒64获大型组冠军，实现百米跑进10秒的突破。智元机器人共斩获18金16银12铜，参赛机型均为量产机。' },
-    { tag: '国际', cls: 'news-intl', title: '伊朗与阿曼就霍尔木兹海峡建立安全通道达成谅解', desc: '伊朗与阿曼宣布拟在霍尔木兹海峡建立双方共同商定的安全航运走廊，伊朗强调任何军舰不得通过，只允许商船通行，后续将在30至60天内就永久航线展开谈判。' },
-    { tag: '国内', cls: 'news-domestic', title: '三预警齐发！台风"沙德尔"逼近东南沿海，多地风力可达11级', desc: '中央气象台8月27日同时发布台风橙色预警、暴雨黄色预警、强对流天气蓝色预警，预计"沙德尔"将在浙江象山到福建福鼎一带沿海登陆，上海防汛指挥部提示影响"风大于雨"。' },
-    { tag: '国内', cls: 'news-domestic', title: '上海文学馆今日正式开放，集中展示大量上海文学史料', desc: '8月27日上海文学馆正式向公众开放，坐落于虹口区，由一座新建主馆和三栋优秀历史建筑组成，总建筑面积约1.4万平方米，成为上海全新文化地标。' },
-    { tag: '科技', cls: 'news-tech', title: '平陆运河全航段实船适航试验完成，里程碑式进展', desc: '8月26日由4艘货轮组成的试验编队平稳驶过龙门大桥海域，标志着平陆运河全航段实船适航试验达到终点，这条世纪运河即将迎来通航时刻。' }
+    { tag: '国内', cls: 'news-domestic', title: '三预警齐发！台风"沙德尔"逼近浙闽沿海，多地大暴雨', desc: '中央气象台8月28日同时发布台风红色预警、暴雨黄色预警、强对流天气蓝色预警，预计"沙德尔"将登陆浙江象山到福建连江一带沿海，东海西部、浙江沿海风力可达9-11级，多地出现大暴雨，局部特大暴雨。' },
+    { tag: '国内', cls: 'news-domestic', title: '西藏吉隆泥石流灾害救援持续：141名应急力量已抵达，道路通信仍中断', desc: '尼泊尔一侧泥石流导致的西藏日喀则吉隆口岸灾害救援紧张进行中，首批141名应急力量已抵达灾区，调运大量物资，但因道路通信中断仍面临巨大挑战，有可能发生次生灾害。' },
+    { tag: '国内', cls: 'news-domestic', title: '央行连续6天开展隔夜逆回购操作，匹配短期流动性需求', desc: '8月27日至9月1日，中国人民银行将开展隔夜逆回购操作，采用固定利率、数量招标方式，每日操作量不超过6000亿元，以更好匹配银行体系短期流动性需求。' },
+    { tag: '科技', cls: 'news-tech', title: '英伟达Q2营收962亿美元同比增106%，黄仁勋称AI迎来转折点', desc: '英伟达发布2027财年Q2财报，营收962亿美元远超市场预期，黄仁勋宣称AI已迈过商业化拐点进入"变现时代"。公司预计下一财年营收增幅将达70%，Vera Rubin平台全面量产。' },
+    { tag: '科技', cls: 'news-tech', title: 'OpenAI自研推理芯片Jalapeño首秀：性能超越英伟达GB300', desc: 'OpenAI与博通合作开发的首款自研推理芯片Jalapeño在公开测试中表现亮眼，每瓦吞吐量较英伟达GB300显著提升，端到端延迟低1.7至3.6倍，计划今年晚些时候投入使用。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普签署行政令将安大略湖更名为"美国湖"，加拿大坚决反对', desc: '特朗普签署行政令将北美第四大湖安大略湖更名为"美国湖"，加拿大总理卡尼回应称"加拿大永远称之为安大略湖"。此举引发外交争议，加拿大逾七成民意赞同对美采取强硬立场。' },
+    { tag: '国际', cls: 'news-intl', title: '乌克兰称俄乌谈判或可于9月重启，泽连斯基提出终战三条件', desc: '泽连斯基表示已向美方提交终战三条件，认为从今年12月美国G20峰会到明年夏天可能是终结俄乌战争的谈判窗口期。同时乌克兰打击了俄罗斯萨拉托夫地区一座重要燃料储存设施。' },
+    { tag: '国际', cls: 'news-intl', title: '尼泊尔山洪死亡人数升至389人，826人失踪含近600名外国人', desc: '尼泊尔北部山洪灾害已致389人遇难、826人失踪，其中近600名为外国人。中国外交部确认尼方一侧受灾地区失联中国公民近百人，多科研团队认为灾害源于冰川崩塌。' }
   ]
 }
 function renderNews() {
