@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Aura: Dynamic Intra-Turn Emotion-Aware Adaptation of Large Language Model Responses',
-  authors: 'Rachel Schuchert, Christian Holz',
-  venue: 'arXiv:2608.24224 · Human-Computer Interaction (cs.HC)',
-  link: 'https://arxiv.org/abs/2608.24224',
-  date: '2026-08-28',
-  abstract: '有效的人机交互需要系统能够动态适应用户的行为和不断变化的理解。当用户与大语言模型（LLM）交互时，模型通常只响应提示而无法感知用户的即时反应。这种沟通不同步可能导致信息过载或无法及时解决困惑。本文提出Aura框架，使LLM系统能够基于用户不断变化的情绪动态调节输出。Aura的感知模块（Perception Module）通过面部表情持续估计用户的情绪状态；策略模块（Policy Module）通过概率信念模型选择干预方式；生成模块（Generation Module）使用参数高效的LoRA适配器在回复生成过程中进行上下文定制的实时调整。在信息检索任务的用户研究（N=20）中，Aura实现了显著更高的感知学习收益，并将交互时间减少了21%。',
+  title: 'When AI "Works," When Does Help Begin?: Intergenerational Support Around Older Adults\' LLM Usage',
+  authors: 'Hyehyun Chu, Yuri Lee, Yeon Su Park, Saelyne Yang, Juho Kim',
+  venue: 'arXiv:2608.24297 · Human-Computer Interaction (cs.HC) · CSCW 2026 Workshop',
+  link: 'https://arxiv.org/abs/2608.24297',
+  date: '2026-08-29',
+  abstract: '大语言模型（LLM）正逐渐成为日常生活的一部分，包括老年人在内。老年人通常在与年轻家庭成员的协助下学习使用数字技术，这些家庭成员传统上充当"温暖专家"（warm experts），提供可信赖的个性化操作帮助。LLM扩展了这一角色：家庭支持者还需要帮助老年人判断适当的使用场景、考虑信息披露、评估输出可信度、以及决定何时可以安全地采纳AI建议。本研究通过对6名老年人和7名年轻人进行半结构化访谈和基于场景的出声思维实验，发现老年参与者描述使用LLM来减轻对家庭的依赖，同时将家庭保留为选择性调用的支持渠道。然而，由于LLM很少产生可见的操作故障，年轻人缺乏判断何时需要介入的信号，导致家庭支持往往只解决了眼前问题，而未能为未来积累可复用的使用知识。',
   keyPoints: [
-    '"感知-策略-生成"三模块架构的创新性——Aura的核心贡献在于将情绪感知嵌入到LLM的回复生成过程中，而非事后调整。传统的情感计算系统通常是"先完成回复，再调整语气"，而Aura实现了"在生成过程中实时感知并调整"——这与人类对话中的情绪同步机制高度相似。从产品角度看，这代表了AI交互设计从"单轮响应"到"实时适应"的范式转换。',
-    'LoRA适配器的巧妙应用——论文使用参数高效的Low-Rank Adaptation（LoRA）来实现上下文定制的回复生成，而非微调整个模型。这意味着情绪适应可以在不显著增加计算成本的情况下实现，为边缘设备上的情感感知AI提供了可行路径。对AI产品经理来说，这暗示了一个重要趋势：未来的AI产品将越来越依赖"轻量级个性化"而非"大模型微调"来实现差异化体验。',
-    '用户研究的实验设计值得学习——论文采用了被试内设计（within-subjects design），让同一批用户分别使用Aura和基线系统（Llama-3、GPT-4o），通过对比消除个体差异。感知学习收益使用标准化量表测量，交互时间作为客观行为指标。这种实验设计对用户研究工作非常值得借鉴：同时收集主观感受数据和客观行为数据，才能全面评估产品效果。',
-    '对Emma的核心启示：这篇论文完美展示了HCI、AI和心理学的三角交叉——用心理学的情绪理论指导系统设计，用AI技术实现实时情绪感知，用HCI方法验证效果。这正是你的应用心理学+用户研究背景能发挥独特优势的方向。情绪感知AI是未来产品差异化竞争的关键领域，而你恰好理解"情绪"这个核心变量✨'
+    '"温暖专家"概念的创新引入——论文将家庭成员定位为老年人与AI之间的"温暖专家"（warm experts），这一概念来自传播学，指的是那些提供可信赖的、个性化的建议的亲近之人。在LLM时代，这个角色的内涵被大大扩展了：不仅要帮老人"会用"，还要帮他们判断"该不该用"和"结果可不可信"。从用户研究角度看，这揭示了AI产品设计中的一个盲区——我们往往假设用户是独立个体，但现实中尤其是老年用户，他们的技术使用嵌入在家庭关系网络中。',
+    '"不可见的故障"带来的支持困境——论文发现一个有趣的悖论：LLM与传统软件不同，它很少出现明显的崩溃或报错，即使输出了错误信息，表面上看起来也"运作正常"。这导致年轻支持者无法像过去帮助老人解决"电脑死机"那样及时介入。老年人也不会主动暴露自己的困惑——他们倾向于"自己摸索"以维护自主性。这给AI产品的可解释性和透明度设计提出了新要求：如何让AI的"不确定性"变得可见？',
+    '代际支持的"校准缺失"问题——研究发现，当前的家庭支持模式存在一个关键缺陷：年轻人帮助老人解决了一个具体问题后，并没有留下可复用的"校准知识"（calibration knowledge）。每次帮助都是一次性的"救火"，而非积累性的"赋能"。从产品设计的角度，这暗示了一个重要的设计机会：AI系统能否主动记录和支持这种"学习时刻"，将一次性的帮助转化为长期的能力建构？',
+    '对Emma的核心启示：这篇论文完美融合了心理学（代际关系、自主性需求、认知负荷）、HCI（家庭 centered AI设计）和用户研究（质性访谈+出声思维法）。特别是它的研究方法论——结合半结构化访谈与场景化的出声思维实验（scenario-based think-aloud），是用户研究中非常经典又灵活的组合。对于你未来做用研工作，这种"让参与者在模拟场景中与系统互动并实时表达想法"的方法非常值得学习✨'
   ],
-  takeaway: 'Aura框架的核心贡献在于证明了"实时情绪感知+动态回复调整"可以显著提升学习效率和用户满意度，同时不牺牲事实准确性。从心理学角度看，这呼应了Vygotsky的社会文化理论——学习发生在社会互动中，关键在于"脚手架"（scaffolding）的质量和时机。Aura本质上是一个AI版的"脚手架系统"：它通过实时感知学习者的情绪状态，在最需要的时候提供恰到好处的支持。从产品角度看，这为"情感感知型AI助手"提供了重要的技术验证：用户不仅关心AI"说了什么"，更关心AI"是否在关注我的感受"。这对Emma未来的研究方向很有参考价值：如何设计能感知和适应用户情绪状态的AI产品，将是HCI领域的重要前沿课题✨'
+  takeaway: '这篇论文最打动人的地方在于它揭示了一个被技术设计忽视的真相：技术采用不是个体的孤立行为，而是嵌入在社会关系中的集体实践。老年人使用LLM不仅是"学会一个工具"，更是一次重新协商家庭关系的过程——他们既想保持自主性，又需要在关键时刻获得支持。从心理学角度看，这呼应了Erikson心理社会发展理论中"自主性vs依赖"的核心张力在老年期的重新上演。从产品设计角度，论文提出的"consentful help requests"（征询式帮助请求）和"learning-oriented support"（学习导向的支持）两个设计方向非常有价值——未来的AI产品不应该只考虑"如何帮助用户完成任务"，还应该考虑"如何在帮助用户的过程中保留他们的主体性和成长空间"。这对Emma的用户研究方向特别有启发：好的用研不仅要发现问题，更要理解问题背后的人际关系和心理动力✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,43 +1391,43 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'contemplate', pos: 'v.', def: '深思，考虑（/ˈkɒntəmpleɪt/）' },
-  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
-  { word: 'coherent', pos: 'adj.', def: '连贯的，条理清晰的（/kəʊˈhɪərənt/）' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
-  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，空前的（/ʌnˈpresɪdentɪd/）' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验的，实证的（/ɪmˈpɪrɪkl/）' },
-  { word: 'implication', pos: 'n.', def: '含义，影响（/ˌɪmplɪˈkeɪʃn/）' },
-  { word: 'allocate', pos: 'v.', def: '分配，拨出（/ˈæləkeɪt/）' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，退化（/dɪˈtɪəriəreɪt/）' }
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
+  { word: 'exacerbate', pos: 'v.', def: '使恶化，加剧（/ɪɡˈzæsəbeɪt/）' },
+  { word: 'substantial', pos: 'adj.', def: '大量的，实质性的（/səbˈstænʃl/）' },
+  { word: 'viable', pos: 'adj.', def: '可行的，切实可行的（/ˈvaɪəbl/）' },
+  { word: 'discourse', pos: 'n.', def: '话语，论述（/ˈdɪskɔːrs/）' },
+  { word: 'reinforce', pos: 'v.', def: '加强，强化（/ˌriːɪnˈfɔːrs/）' },
+  { word: 'inequality', pos: 'n.', def: '不平等，不均等（/ˌɪnɪˈkwɒləti/）' },
+  { word: 'circumvent', pos: 'v.', def: '规避，绕过（/ˌsɜːrkəmˈvent/）' },
+  { word: 'salient', pos: 'adj.', def: '显著的，突出的（/ˈseɪliənt/）' },
+  { word: 'ameliorate', pos: 'v.', def: '改善，改进（/əˈmiːliəreɪt/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a place you visited where the environment had a positive effect on your mood',
-  bullet: 'You should say: where the place is, when you visited it, what the environment was like, and explain how it affected your mood.',
-  sample: `I'd like to describe a visit to West Lake in Hangzhou, which is a place that left an incredibly lasting impression on me and genuinely transformed my state of mind during a rather stressful period.
+  topic: 'Describe a skill you would like to learn in the future',
+  bullet: 'You should say: what the skill is, how you would learn it, how long it would take, and explain why you want to learn this skill.',
+  sample: `I'd like to talk about a skill I've been genuinely excited about picking up, which is data visualization using Python — specifically, creating compelling, interactive charts and dashboards with libraries like Matplotlib, Plotly, and eventually D3.js.
 
-I visited West Lake last October, right around the National Day holiday. I had been preparing intensely for my IELTS exam for several months, and honestly, I was feeling quite burnt out. A close friend suggested we take a short trip to Hangzhou to decompress, and I'm so grateful she persuaded me because it turned out to be exactly what I needed.
+I first became interested in this when I was working on my undergraduate thesis, which involved analyzing audience feedback data for a documentary I made. I had all this rich qualitative and quantitative data, but when it came to presenting my findings, I struggled to make the numbers tell a story. My charts were basic bar graphs and pie charts, and honestly, they didn't do justice to the insights I'd uncovered. That frustration really planted a seed.
 
-The environment there was simply breathtaking. When we arrived early in the morning, the lake was covered in a thin veil of mist, and the willow trees along the banks were gently swaying in the breeze. The water was remarkably clear, reflecting the surrounding hills and traditional Chinese pavilions like a mirror. What struck me most was the sense of tranquillity — despite it being a popular tourist destination, the early morning hours felt almost meditative. You could hear birds chirping, leaves rustling, and the soft lapping of water against the stone embankments.
+My plan for learning this skill is fairly structured. I'm currently enrolled in an online course on data analytics that covers Python fundamentals, and once I'm comfortable with the basics, I'll move into more specialized visualization courses on platforms like Coursera and DataCamp. I also plan to work on real projects — for instance, visualizing survey data from my psychology graduate courses or creating infographics about user research findings. I think the best way to learn is by doing, so I'll be actively seeking opportunities to apply these skills in academic and eventually professional contexts.
 
-The effect on my mood was almost immediate. I remember sitting on a bench near the Broken Bridge, sipping a cup of Longjing tea that we'd bought from a local vendor, and feeling this profound sense of calm wash over me. All the anxiety about exam preparation, all the nagging worries about the future — they just seemed to dissolve into the landscape. It was as if the natural beauty of the place gave me permission to pause and simply exist in the moment.
+As for the timeline, I'd estimate about six to eight months to reach a competent level where I can independently create professional-quality visualizations. The first two or three months would focus on Python basics and core libraries, and then the following months would be about building a portfolio of real projects and learning more advanced techniques like interactive dashboards.
 
-Looking back, I think what made the experience so powerful was the contrast. After weeks of being cooped up in a small study room, surrounded by textbooks and flashcards, the expansiveness of the lake and the openness of the sky felt liberating. It reminded me that life isn't just about achieving goals — it's also about appreciating the beauty around you. I came back feeling genuinely recharged and, more importantly, with a renewed perspective on balancing effort with rest.`,
+The reason I'm so drawn to this skill is that it sits at the intersection of several things I care deeply about: storytelling, psychology, and technology. In user research, the ability to present data in a visually compelling way can make the difference between insights that get acted upon and insights that get ignored. I've always been a visual person — I studied film and documentary production as an undergraduate — and I see data visualization as a new medium for telling stories. Instead of using a camera to capture human experiences, I'd be using charts and graphics to reveal patterns in how people think, feel, and behave. It feels like a natural evolution of my skill set, and one that would make me significantly more effective in my future career as a product manager or user researcher.`,
   expressions: [
-    '🌟 left an incredibly lasting impression — 留下了极为深刻的印象',
-    '🌟 feeling quite burnt out — 感到相当疲惫',
-    '🌟 to decompress — 减压，放松',
-    '🌟 a thin veil of mist — 一层薄雾',
-    '🌟 remarkably clear — 格外清澈',
-    '🌟 a sense of tranquillity — 宁静感',
-    'felt almost meditative — 几乎有冥想般的感受',
-    '🌟 a profound sense of calm — 深深的平静感',
-    '🌟 dissolve into the landscape — 融入风景中（消散）',
-    '🌟 gave me permission to pause — 让我得以停下来',
-    '🌟 the expansiveness of the lake — 湖面的开阔感',
-    '🌟 a renewed perspective — 全新的视角'
+    '🌟 genuinely excited about — 真正感到兴奋的',
+    '🌟 picking up — 学习，掌握（技能）',
+    '🌟 do justice to — 充分展现…的价值',
+    '🌟 planted a seed — 播下种子（萌生想法）',
+    '🌟 fairly structured — 相当有条理的',
+    '🌟 the best way to learn is by doing — 最好的学习方式就是实践',
+    '🌟 reach a competent level — 达到胜任水平',
+    '🌟 sits at the intersection of — 处于…的交叉点',
+    '🌟 compelling — 引人入胜的，有说服力的',
+    '🌟 a natural evolution of my skill set — 技能组合的自然演进',
+    '🌟 make the difference between A and B — 成为A和B之间的关键差别',
+    '🌟 significantly more effective — 显著地更高效'
   ]
 }
 function renderIelts() {
@@ -1473,13 +1473,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'She had once wanted to write, and she had written, and the writing had been a kind of prayer — not to God, but to life itself. She had pressed her palms against the page the way other women pressed them against the windows of a train, watching the world rush by, wanting to catch just one moment and hold it still.',
-  source: 'Virginia Woolf《To the Lighthouse》（到灯塔去, 1927）',
+  quote: 'On ne voit bien qu\'avec le coeur. L\'essentiel est invisible pour les yeux.',
+  source: 'Antoine de Saint-Exupéry《Le Petit Prince》（小王子, 1943）',
   analysis: [
-    '<b>"写作是一种祈祷——不是对上帝，而是对生活本身"</b>：伍尔夫将写作重新定义为一种与世界对话的方式。这里的"祈祷"不是祈求恩赐，而是一种全神贯注的投入——对生活的每一个细节保持觉察，并用文字将其凝固。从积极心理学的角度看，这与Csikszentmihalyi的"心流"（Flow）概念相通：当一个人完全沉浸在创造性活动中时，自我意识消退，时间感消失，取而代之的是一种深层的满足感。写作在这里不是技巧，而是一种存在方式。',
-    '<b>"将手掌压在页面上，如同其他女人压在火车车窗上"</b>：这个比喻的精妙在于它的"双重性"。火车车窗外的世界是流动的、不可捕捉的——正如生活中的瞬间一样转瞬即逝。而写作，就是试图在这些瞬间消逝之前将它们固定下来。从认知心理学的角度看，这触及了人类记忆的一个根本困境：我们的体验是连续的、丰富的，但记忆是选择性的、易逝的。写作是一种对抗遗忘的方式，也是一种赋予混沌体验以秩序的努力。',
-    '<b>"想要捕捉一个瞬间，让它静止"</b>：这或许是伍尔夫全部文学创作的核心命题。在《到灯塔去》中，她用意识流手法探索的正是"瞬间的永恒性"——那些看似微不足道的日常时刻（一顿晚餐、一次散步、一个眼神），却承载着最深沉的人类情感。从用户研究的角度看，这与"用户瞬间"（User Moment）的概念异曲同工：产品设计师要捕捉的，不是用户的整体旅程，而是那些真正有意义的"微时刻"——一次惊喜、一个困惑、一个满足的瞬间。',
-    '<b>给Emma的话</b>：伍尔夫这段话特别适合在那些觉得自己"做的事情不够宏大"的时刻读。她告诉你：写作不需要改变世界，它只需要诚实地面对生活。你现在的每一次学习、每一次阅读、每一次观察，都是在积累那种"捕捉瞬间"的能力。无论是做用户研究时的细致观察，还是未来写论文时的深入思考，本质上都是在"将手掌压在页面上"——试图理解和表达这个复杂世界的某一个切面✨'
+    '<b>"只有用心才能看清，本质的东西用眼睛是看不见的"</b>：这可能是法国文学中最被广泛引用的一句话，也是整部《小王子》的灵魂所在。狐狸在即将与小王子分别时说出这句话，表面上是在解释为什么要为玫瑰花的付出赋予意义，深层却在揭示人类认知的一个根本限制：我们的感官只能捕捉事物的表象，而真正重要的东西——爱、信任、联结、意义——只能通过心灵的参与才能被感知。',
+    '<b>从认知心理学看"看见"</b>：这句话触及了认知科学中"自下而上加工"与"自上而下加工"的核心区分。眼睛代表的是自下而上的感官输入——我们看到颜色、形状、运动；而心代表的是自上而下的意义建构——我们赋予这些感官输入以情感、记忆和价值。现代认知心理学告诉我们，人类的"看见"从来都不是被动接收，而是主动建构。你看到的那朵玫瑰，和你祖母花园里的那朵玫瑰，在视网膜上的成像可能相似，但在你心中的意义却截然不同。',
+    '<b>从积极心理学看"本质"</b>：Seligman的PERMA模型告诉我们，人类的幸福来自五个维度：积极情绪（P）、投入（E）、人际关系（R）、意义（M）和成就（A）。这五个维度中，没有一个是可以用眼睛直接"看到"的——它们都是"本质的东西"，只能通过心灵的参与来体验。你可以看到两个人在一起微笑，但你"看到"不了他们之间的信任和爱。你可以看到一栋宏伟的建筑，但你"看到"不了设计者倾注的心血。',
+    '<b>给Emma的话</b>：你即将进入应用心理学的学习，这个学科最迷人的地方就在于它研究的就是那些"看不见的本质"——人类的情感、动机、认知偏差、行为模式，这些都是眼睛看不到但心灵可以感知的东西。而用户研究的核心技能，恰恰就是透过用户"表面的行为"（点击、停留、皱眉）去理解"深层的需求"（安全感、归属感、控制感）。小王子从狐狸那里学到的道理，其实就是每一个优秀研究者需要内化的信念：最重要的真相，永远藏在表象之下✨'
   ]
 }
 function renderLiterature() {
@@ -1510,16 +1510,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月28日 星期五',
+  date: '2026年8月29日 星期六',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '三预警齐发！台风"沙德尔"逼近浙闽沿海，多地大暴雨', desc: '中央气象台8月28日同时发布台风红色预警、暴雨黄色预警、强对流天气蓝色预警，预计"沙德尔"将登陆浙江象山到福建连江一带沿海，东海西部、浙江沿海风力可达9-11级，多地出现大暴雨，局部特大暴雨。' },
-    { tag: '国内', cls: 'news-domestic', title: '西藏吉隆泥石流灾害救援持续：141名应急力量已抵达，道路通信仍中断', desc: '尼泊尔一侧泥石流导致的西藏日喀则吉隆口岸灾害救援紧张进行中，首批141名应急力量已抵达灾区，调运大量物资，但因道路通信中断仍面临巨大挑战，有可能发生次生灾害。' },
-    { tag: '国内', cls: 'news-domestic', title: '央行连续6天开展隔夜逆回购操作，匹配短期流动性需求', desc: '8月27日至9月1日，中国人民银行将开展隔夜逆回购操作，采用固定利率、数量招标方式，每日操作量不超过6000亿元，以更好匹配银行体系短期流动性需求。' },
-    { tag: '科技', cls: 'news-tech', title: '英伟达Q2营收962亿美元同比增106%，黄仁勋称AI迎来转折点', desc: '英伟达发布2027财年Q2财报，营收962亿美元远超市场预期，黄仁勋宣称AI已迈过商业化拐点进入"变现时代"。公司预计下一财年营收增幅将达70%，Vera Rubin平台全面量产。' },
-    { tag: '科技', cls: 'news-tech', title: 'OpenAI自研推理芯片Jalapeño首秀：性能超越英伟达GB300', desc: 'OpenAI与博通合作开发的首款自研推理芯片Jalapeño在公开测试中表现亮眼，每瓦吞吐量较英伟达GB300显著提升，端到端延迟低1.7至3.6倍，计划今年晚些时候投入使用。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普签署行政令将安大略湖更名为"美国湖"，加拿大坚决反对', desc: '特朗普签署行政令将北美第四大湖安大略湖更名为"美国湖"，加拿大总理卡尼回应称"加拿大永远称之为安大略湖"。此举引发外交争议，加拿大逾七成民意赞同对美采取强硬立场。' },
-    { tag: '国际', cls: 'news-intl', title: '乌克兰称俄乌谈判或可于9月重启，泽连斯基提出终战三条件', desc: '泽连斯基表示已向美方提交终战三条件，认为从今年12月美国G20峰会到明年夏天可能是终结俄乌战争的谈判窗口期。同时乌克兰打击了俄罗斯萨拉托夫地区一座重要燃料储存设施。' },
-    { tag: '国际', cls: 'news-intl', title: '尼泊尔山洪死亡人数升至389人，826人失踪含近600名外国人', desc: '尼泊尔北部山洪灾害已致389人遇难、826人失踪，其中近600名为外国人。中国外交部确认尼方一侧受灾地区失联中国公民近百人，多科研团队认为灾害源于冰川崩塌。' }
+    { tag: '国内', cls: 'news-domestic', title: '西藏吉隆泥石流灾害已致7人遇难554人失联，救援力量持续搜救', desc: '截至29日凌晨，西藏日喀则吉隆县泥石流灾害已造成7人遇难，554人失联。应急管理部已调派1386名救援力量和570余台套装备抵达现场，开展人员搜救、风险监测和道路抢通等工作。' },
+    { tag: '国内', cls: 'news-domestic', title: '三台风相继登陆浙江创华东气象纪录，"沙德尔"为第18号台风', desc: '2026年夏秋，台风"巴威""白海豚""沙德尔"相继登陆浙江台州玉环，创下华东沿海三台风连续登陆的气象新纪录，多地出现特大暴雨。' },
+    { tag: '国内', cls: 'news-domestic', title: '2026世界斯诺克武汉公开赛：中国球员提前包揽冠亚军', desc: '赵心童6:2战胜肖国栋进入决赛，"黑马"常冰玉也将向个人首个排名赛冠军发起冲击。中国球员提前锁定本届武汉公开赛冠亚军。' },
+    { tag: '科技', cls: 'news-tech', title: '神舟二十三号乘组完成出舱活动：太阳翼维修、碎片防护装置安装成功', desc: '航天员朱杨柱、张志远、黎家盈密切协同，在空间站机械臂配合下完成太阳翼舱外维修和空间碎片防护装置安装等任务，出舱活动取得圆满成功。' },
+    { tag: '科技', cls: 'news-tech', title: '道交法修订草案首设"自动驾驶专章"，明确L3/L4量产责任边界', desc: '8月25日提请审议的道路交通法修订草案首次设立"自动驾驶专章"，明确自动驾驶激活状态下违法由车企或进口方担责，为L3/L4量产落地扫清法律障碍。' },
+    { tag: '科技', cls: 'news-tech', title: '长江存储科创板IPO受理拟募330亿，Q1全球NAND出货排名第三', desc: '长江存储科创板IPO申请已获受理，拟募资330亿元，其中208亿用于量产升级、122亿攻关HBM/MRAM。公司Q1毛利率达84.23%，为全球NAND市场新锐力量。' },
+    { tag: '国际', cls: 'news-intl', title: '伊朗持续控制霍尔木兹海峡，要求美国先履行解除制裁等义务', desc: '伊朗革命卫队声明称对霍尔木兹海峡控制权绝对稳固，所有未经协调的船只不得通行。伊朗总统表示开放海峡需美国先解除封锁制裁、解冻资金、停止以色列在黎巴嫩的敌对行动。' },
+    { tag: '国际', cls: 'news-intl', title: '俄罗斯成功试射固体燃料洲际弹道导弹，验证战术技术性能', desc: '俄军在普列谢茨克航天发射场进行固体燃料洲际弹道导弹战斗训练发射，训练弹头成功抵达堪察加半岛库拉靶场指定区域，旨在验证导弹系统飞行性能。' }
   ]
 }
 function renderNews() {
