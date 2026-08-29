@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'When AI "Works," When Does Help Begin?: Intergenerational Support Around Older Adults\' LLM Usage',
-  authors: 'Hyehyun Chu, Yuri Lee, Yeon Su Park, Saelyne Yang, Juho Kim',
-  venue: 'arXiv:2608.24297 · Human-Computer Interaction (cs.HC) · CSCW 2026 Workshop',
-  link: 'https://arxiv.org/abs/2608.24297',
-  date: '2026-08-29',
-  abstract: '大语言模型（LLM）正逐渐成为日常生活的一部分，包括老年人在内。老年人通常在与年轻家庭成员的协助下学习使用数字技术，这些家庭成员传统上充当"温暖专家"（warm experts），提供可信赖的个性化操作帮助。LLM扩展了这一角色：家庭支持者还需要帮助老年人判断适当的使用场景、考虑信息披露、评估输出可信度、以及决定何时可以安全地采纳AI建议。本研究通过对6名老年人和7名年轻人进行半结构化访谈和基于场景的出声思维实验，发现老年参与者描述使用LLM来减轻对家庭的依赖，同时将家庭保留为选择性调用的支持渠道。然而，由于LLM很少产生可见的操作故障，年轻人缺乏判断何时需要介入的信号，导致家庭支持往往只解决了眼前问题，而未能为未来积累可复用的使用知识。',
+  title: 'From Producing to Validating: How AI Is Deskilling Freelancers',
+  authors: 'Nakul Rajpal',
+  venue: 'arXiv:2608.26089 · Human-Computer Interaction (cs.HC) · August 2026',
+  link: 'https://arxiv.org/abs/2608.26089',
+  date: '2026-08-30',
+  abstract: '随着大语言模型和生成式AI工具的爆发，自由职业者的工作方式正在经历根本性变化。本研究通过半结构化访谈调查了24名使用AI辅助工具的自由职业者（包括设计师、写作者、开发者），发现AI工具正在引发一种"去技能化"（deskilling）现象：自由职业者的核心工作正从"创造性生产"转向"验证与修正"AI生成的输出。参与者报告，虽然AI显著提高了产出速度和数量，但他们的原创判断力、审美敏感度和深度专业技能正在逐渐弱化。研究进一步发现，自由职业者面临着"效率悖论"——为了保持竞争力必须使用AI，但过度依赖AI又使他们丧失差异化竞争优势。',
   keyPoints: [
-    '"温暖专家"概念的创新引入——论文将家庭成员定位为老年人与AI之间的"温暖专家"（warm experts），这一概念来自传播学，指的是那些提供可信赖的、个性化的建议的亲近之人。在LLM时代，这个角色的内涵被大大扩展了：不仅要帮老人"会用"，还要帮他们判断"该不该用"和"结果可不可信"。从用户研究角度看，这揭示了AI产品设计中的一个盲区——我们往往假设用户是独立个体，但现实中尤其是老年用户，他们的技术使用嵌入在家庭关系网络中。',
-    '"不可见的故障"带来的支持困境——论文发现一个有趣的悖论：LLM与传统软件不同，它很少出现明显的崩溃或报错，即使输出了错误信息，表面上看起来也"运作正常"。这导致年轻支持者无法像过去帮助老人解决"电脑死机"那样及时介入。老年人也不会主动暴露自己的困惑——他们倾向于"自己摸索"以维护自主性。这给AI产品的可解释性和透明度设计提出了新要求：如何让AI的"不确定性"变得可见？',
-    '代际支持的"校准缺失"问题——研究发现，当前的家庭支持模式存在一个关键缺陷：年轻人帮助老人解决了一个具体问题后，并没有留下可复用的"校准知识"（calibration knowledge）。每次帮助都是一次性的"救火"，而非积累性的"赋能"。从产品设计的角度，这暗示了一个重要的设计机会：AI系统能否主动记录和支持这种"学习时刻"，将一次性的帮助转化为长期的能力建构？',
-    '对Emma的核心启示：这篇论文完美融合了心理学（代际关系、自主性需求、认知负荷）、HCI（家庭 centered AI设计）和用户研究（质性访谈+出声思维法）。特别是它的研究方法论——结合半结构化访谈与场景化的出声思维实验（scenario-based think-aloud），是用户研究中非常经典又灵活的组合。对于你未来做用研工作，这种"让参与者在模拟场景中与系统互动并实时表达想法"的方法非常值得学习✨'
+    '"生产者→验证者"的角色转换——论文揭示了一个核心转变：自由职业者曾经的核心能力是"从无到有"的创造性生产，现在却变成了对AI输出的验证、筛选和微调。从HCI的角度看，这不仅仅是工具使用方式的变化，而是整个职业身份的重新定义。设计师不再"画"设计，而是"审"设计；写作者不再"写"文章，而是"改"文章。这种角色转换对从业者的心理满足感和职业认同产生了深远影响。',
+    '"效率悖论"的双刃剑效应——研究发现了一个深刻的矛盾：AI让自由职业者的效率大幅提升，但同质化的AI输出也削弱了他们的独特性。当所有人都用相同的AI工具时，差异化竞争从何而来？参与者描述了一种"追赶陷阱"——他们必须不断学习和适应新工具以保持效率优势，但这种追赶本身消耗了原本用于深度技能积累的精力。这与心理学中的"享乐适应"（hedonic adaptation）概念类似：效率提升带来的好处很快被新的竞争基线所消解。',
+    '认知负荷的转移而非减少——有趣的是，AI并未真正减少自由职业者的认知负荷，而是将其从"生产性认知"（如何解决问题）转移到了"评价性认知"（判断解决方案是否足够好）。后者实际上更难——评估一个你不曾亲手创造的东西需要更高的元认知能力和审美标准。这对AI产品设计的启示是：好的AI工具不仅要能"生成"，还要帮助用户"理解为什么这样生成"，保持用户的认知参与度。',
+    '对Emma的核心启示：这篇论文对于你未来做AI产品经理至关重要✨它揭示了一个行业级的问题——当AI成为所有产品的基础能力时，如何帮助用户保持"人类不可替代性"？从用户研究角度，这篇论文的方法论也值得学习：半结构化访谈+主题分析（thematic analysis），是质性研究中非常成熟且可信的组合。特别是论文从"deskilling"这个经典社会学概念切入，赋予了研究发现更深层的理论意义。'
   ],
-  takeaway: '这篇论文最打动人的地方在于它揭示了一个被技术设计忽视的真相：技术采用不是个体的孤立行为，而是嵌入在社会关系中的集体实践。老年人使用LLM不仅是"学会一个工具"，更是一次重新协商家庭关系的过程——他们既想保持自主性，又需要在关键时刻获得支持。从心理学角度看，这呼应了Erikson心理社会发展理论中"自主性vs依赖"的核心张力在老年期的重新上演。从产品设计角度，论文提出的"consentful help requests"（征询式帮助请求）和"learning-oriented support"（学习导向的支持）两个设计方向非常有价值——未来的AI产品不应该只考虑"如何帮助用户完成任务"，还应该考虑"如何在帮助用户的过程中保留他们的主体性和成长空间"。这对Emma的用户研究方向特别有启发：好的用研不仅要发现问题，更要理解问题背后的人际关系和心理动力✨'
+  takeaway: '这篇论文最深刻的洞见在于：AI时代的"去技能化"不是简单的技能丧失，而是一种技能结构的重组——低端执行技能被替代，高端判断技能被强化，但中间层的"手艺感"正在消失。从心理学角度看，这触及了Csikszentmihalyi"心流"理论的核心：当人们亲手创造某样东西时，那种全身心投入的状态（flow state）是幸福感的重要来源。如果AI把所有"创造过程"都接管了，自由职业者可能不仅面临经济风险，更面临存在性焦虑——"我还是一个创作者吗？"从产品设计的角度，这篇论文暗示了一个重要的设计方向：AI产品应该设计"有意义的参与点"（meaningful involvement points），让用户在关键环节保持主动决策和创造性投入，而不是沦为AI输出的被动验证者。这对Emma未来的AI产品经理之路是一个重要提醒：好的AI产品不应该让用户变得多余，而应该让用户变得更强大✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,43 +1391,45 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
-  { word: 'exacerbate', pos: 'v.', def: '使恶化，加剧（/ɪɡˈzæsəbeɪt/）' },
-  { word: 'substantial', pos: 'adj.', def: '大量的，实质性的（/səbˈstænʃl/）' },
-  { word: 'viable', pos: 'adj.', def: '可行的，切实可行的（/ˈvaɪəbl/）' },
-  { word: 'discourse', pos: 'n.', def: '话语，论述（/ˈdɪskɔːrs/）' },
-  { word: 'reinforce', pos: 'v.', def: '加强，强化（/ˌriːɪnˈfɔːrs/）' },
-  { word: 'inequality', pos: 'n.', def: '不平等，不均等（/ˌɪnɪˈkwɒləti/）' },
-  { word: 'circumvent', pos: 'v.', def: '规避，绕过（/ˌsɜːrkəmˈvent/）' },
-  { word: 'salient', pos: 'adj.', def: '显著的，突出的（/ˈseɪliənt/）' },
-  { word: 'ameliorate', pos: 'v.', def: '改善，改进（/əˈmiːliəreɪt/）' }
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
+  { word: 'proliferate', pos: 'v.', def: '激增，扩散（/prəˈlɪfəreɪt/）' },
+  { word: 'cohesion', pos: 'n.', def: '凝聚力，团结（/koʊˈhiːʒn/）' },
+  { word: 'alleviate', pos: 'v.', def: '减轻，缓解（/əˈliːvieɪt/）' },
+  { word: 'contemplate', pos: 'v.', def: '深思，考虑（/ˈkɒntəmpleɪt/）' },
+  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
+  { word: 'paradox', pos: 'n.', def: '悖论，矛盾的事物（/ˈpærədɒks/）' },
+  { word: 'perpetuate', pos: 'v.', def: '使永久化，使持续（/pərˈpetʃueɪt/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验的，实证的（/ɪmˈpɪrɪkl/）' },
+  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，空前的（/ʌnˈpresɪdentɪd/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a skill you would like to learn in the future',
-  bullet: 'You should say: what the skill is, how you would learn it, how long it would take, and explain why you want to learn this skill.',
-  sample: `I'd like to talk about a skill I've been genuinely excited about picking up, which is data visualization using Python — specifically, creating compelling, interactive charts and dashboards with libraries like Matplotlib, Plotly, and eventually D3.js.
+  topic: 'Describe a person who solved a problem in a clever way',
+  bullet: 'You should say: who this person is, what the problem was, how he or she solved it, and explain why you think it was a clever solution.',
+  sample: `I'd like to talk about my university roommate, Xiao Lin, who came up with an incredibly creative solution to a problem that had been bugging our entire dormitory for months.
 
-I first became interested in this when I was working on my undergraduate thesis, which involved analyzing audience feedback data for a documentary I made. I had all this rich qualitative and quantitative data, but when it came to presenting my findings, I struggled to make the numbers tell a story. My charts were basic bar graphs and pie charts, and honestly, they didn't do justice to the insights I'd uncovered. That frustration really planted a seed.
+The issue was about noise. We lived on the third floor right above the student common room, and every evening around 8 or 9 o'clock, a group of students would gather downstairs to play table tennis. The constant banging and shouting made it nearly impossible for anyone on our floor to concentrate on studying or sleep early. We'd complained to the dormitory management, but they said the common room was officially available until 10 p.m., so there wasn't much they could do.
 
-My plan for learning this skill is fairly structured. I'm currently enrolled in an online course on data analytics that covers Python fundamentals, and once I'm comfortable with the basics, I'll move into more specialized visualization courses on platforms like Coursera and DataCamp. I also plan to work on real projects — for instance, visualizing survey data from my psychology graduate courses or creating infographics about user research findings. I think the best way to learn is by doing, so I'll be actively seeking opportunities to apply these skills in academic and eventually professional contexts.
+What made this particularly frustrating was that we had midterms coming up, and several of us needed quiet hours to prepare. Some of my neighbours were considering confrontational approaches — writing aggressive notes or even going downstairs to argue — but I could tell that would only create tension and probably make things worse in the long run.
 
-As for the timeline, I'd estimate about six to eight months to reach a competent level where I can independently create professional-quality visualizations. The first two or three months would focus on Python basics and core libraries, and then the following months would be about building a portfolio of real projects and learning more advanced techniques like interactive dashboards.
+That's when Xiao Lin came up with her brilliant idea. Instead of trying to stop the noise, she decided to redirect it. She designed a simple one-page survey asking the table tennis players about their preferred playing times and whether they'd be interested in forming an official club. She then helped them draft a proposal to the student union to convert the common room into a designated sports activity zone with proper sound insulation. In exchange, she suggested that the sports club members volunteer to maintain the space.
 
-The reason I'm so drawn to this skill is that it sits at the intersection of several things I care deeply about: storytelling, psychology, and technology. In user research, the ability to present data in a visually compelling way can make the difference between insights that get acted upon and insights that get ignored. I've always been a visual person — I studied film and documentary production as an undergraduate — and I see data visualization as a new medium for telling stories. Instead of using a camera to capture human experiences, I'd be using charts and graphics to reveal patterns in how people think, feel, and behave. It feels like a natural evolution of my skill set, and one that would make me significantly more effective in my future career as a product manager or user researcher.`,
+The beauty of her approach was that she didn't fight against the noise-makers — she worked with them. By giving the players a sense of ownership and legitimacy, they actually became more considerate about timing and volume. The student union approved the proposal within two weeks, and the room was renovated with basic acoustic panels funded by the club's membership fees. The noise dropped dramatically because the players now self-regulated their hours, and we gained a well-maintained sports facility instead of a noisy nuisance.
+
+What I found so clever about this solution was its psychological insight. Xiao Lin understood that simply asking people to stop doing something they enjoy rarely works — you need to offer them something better. She turned adversaries into collaborators by reframing the problem as a shared opportunity rather than a zero-sum conflict. It was a masterclass in win-win negotiation, and honestly, it taught me more about conflict resolution than any textbook ever could.`,
   expressions: [
-    '🌟 genuinely excited about — 真正感到兴奋的',
-    '🌟 picking up — 学习，掌握（技能）',
-    '🌟 do justice to — 充分展现…的价值',
-    '🌟 planted a seed — 播下种子（萌生想法）',
-    '🌟 fairly structured — 相当有条理的',
-    '🌟 the best way to learn is by doing — 最好的学习方式就是实践',
-    '🌟 reach a competent level — 达到胜任水平',
-    '🌟 sits at the intersection of — 处于…的交叉点',
-    '🌟 compelling — 引人入胜的，有说服力的',
-    '🌟 a natural evolution of my skill set — 技能组合的自然演进',
-    '🌟 make the difference between A and B — 成为A和B之间的关键差别',
-    '🌟 significantly more effective — 显著地更高效'
+    '🌟 had been bugging — 一直困扰着',
+    '🌟 nearly impossible — 几乎不可能',
+    '🌟 confrontational approaches — 对抗性的方式',
+    '🌟 create tension — 制造紧张关系',
+    '🌟 came up with her brilliant idea — 想出了一个绝妙的点子',
+    '🌟 instead of trying to — 与其尝试…不如…',
+    '🌟 redirect — 重新引导',
+    '🌟 a sense of ownership and legitimacy — 主人翁意识和正当性',
+    '🌟 self-regulated — 自我约束',
+    '🌟 reframing the problem — 重新定义问题',
+    '🌟 a zero-sum conflict — 零和博弈',
+    '🌟 a masterclass in — …的大师级示范'
   ]
 }
 function renderIelts() {
@@ -1473,13 +1475,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'On ne voit bien qu\'avec le coeur. L\'essentiel est invisible pour les yeux.',
-  source: 'Antoine de Saint-Exupéry《Le Petit Prince》（小王子, 1943）',
+  quote: 'We do not see things as they are, we see things as we are.',
+  source: 'Anaïs Nin（阿娜伊斯·宁）《The Diary of Anaïs Nin》（阿娜伊斯日记, 1966）',
   analysis: [
-    '<b>"只有用心才能看清，本质的东西用眼睛是看不见的"</b>：这可能是法国文学中最被广泛引用的一句话，也是整部《小王子》的灵魂所在。狐狸在即将与小王子分别时说出这句话，表面上是在解释为什么要为玫瑰花的付出赋予意义，深层却在揭示人类认知的一个根本限制：我们的感官只能捕捉事物的表象，而真正重要的东西——爱、信任、联结、意义——只能通过心灵的参与才能被感知。',
-    '<b>从认知心理学看"看见"</b>：这句话触及了认知科学中"自下而上加工"与"自上而下加工"的核心区分。眼睛代表的是自下而上的感官输入——我们看到颜色、形状、运动；而心代表的是自上而下的意义建构——我们赋予这些感官输入以情感、记忆和价值。现代认知心理学告诉我们，人类的"看见"从来都不是被动接收，而是主动建构。你看到的那朵玫瑰，和你祖母花园里的那朵玫瑰，在视网膜上的成像可能相似，但在你心中的意义却截然不同。',
-    '<b>从积极心理学看"本质"</b>：Seligman的PERMA模型告诉我们，人类的幸福来自五个维度：积极情绪（P）、投入（E）、人际关系（R）、意义（M）和成就（A）。这五个维度中，没有一个是可以用眼睛直接"看到"的——它们都是"本质的东西"，只能通过心灵的参与来体验。你可以看到两个人在一起微笑，但你"看到"不了他们之间的信任和爱。你可以看到一栋宏伟的建筑，但你"看到"不了设计者倾注的心血。',
-    '<b>给Emma的话</b>：你即将进入应用心理学的学习，这个学科最迷人的地方就在于它研究的就是那些"看不见的本质"——人类的情感、动机、认知偏差、行为模式，这些都是眼睛看不到但心灵可以感知的东西。而用户研究的核心技能，恰恰就是透过用户"表面的行为"（点击、停留、皱眉）去理解"深层的需求"（安全感、归属感、控制感）。小王子从狐狸那里学到的道理，其实就是每一个优秀研究者需要内化的信念：最重要的真相，永远藏在表象之下✨'
+    '<b>"我们看到的不是事物本身的样子，而是我们自己的样子"</b>：这句话虽然简短，却浓缩了认知心理学、建构主义哲学和文学美学的精髓。它最初常被误引自犹太教经典《塔木德》，但实际上最准确的出处是Anaïs Nin在日记中写下的这段话。这位以大胆探索女性内心世界著称的法裔美籍作家，用一句话道出了人类认知的根本局限：我们永远无法真正"客观"地观察世界，因为观察本身就被观察者的经验、情感、偏见和期望所塑造。',
+    '<b>从认知心理学看"知觉的建构性"</b>：这句话完美呼应了心理学中"自上而下加工"（top-down processing）的核心概念。我们的感知不是照相机式的被动记录，而是大脑基于已有知识、记忆和期望主动"建构"出来的。格式塔心理学家早就发现，同样的视觉刺激，不同的人会看到完全不同的东西——因为知觉是大脑的一种"最佳猜测"。而更深层的是，这种"建构"不仅发生在视觉层面，还发生在我们对人际关系、社会事件、甚至自我评价的理解中。',
+    '<b>从积极心理学看"投射"</b>：心理学中的"投射"（projection）概念与这句话密切相关。当我们说"他是一个很冷漠的人"时，这可能更多反映了我们自己的情感状态，而非对方的真实特质。积极心理学进一步指出，一个人的"解释风格"（explanatory style）——即习惯于乐观还是悲观地解释事件——深刻影响着他们的心理健康和幸福感。Seligman的研究表明，改变你对事件的"解读方式"，比改变事件本身更能改善你的情绪状态。',
+    '<b>给Emma的话</b>：你正在学习应用心理学，这个学科最重要的训练之一就是意识到"我们看到的不是真相，而是我们的真相"。在用户研究中，这意味着当你看到用户在界面上"犯错"时，不要急于判断"用户不会用"——也许那个"错误"恰恰暴露了界面设计的问题。在人际交往中，这意味着当你觉得某个人"让你不舒服"时，先问问自己：这种不舒服有多少来自对方，有多少来自你自己的投射？这句话不是让你怀疑一切，而是邀请你保持一种谦逊的好奇心：我看到的，真的是全部吗？✨'
   ]
 }
 function renderLiterature() {
@@ -1510,16 +1512,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月29日 星期六',
+  date: '2026年8月30日 星期日',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '西藏吉隆泥石流灾害已致7人遇难554人失联，救援力量持续搜救', desc: '截至29日凌晨，西藏日喀则吉隆县泥石流灾害已造成7人遇难，554人失联。应急管理部已调派1386名救援力量和570余台套装备抵达现场，开展人员搜救、风险监测和道路抢通等工作。' },
-    { tag: '国内', cls: 'news-domestic', title: '三台风相继登陆浙江创华东气象纪录，"沙德尔"为第18号台风', desc: '2026年夏秋，台风"巴威""白海豚""沙德尔"相继登陆浙江台州玉环，创下华东沿海三台风连续登陆的气象新纪录，多地出现特大暴雨。' },
-    { tag: '国内', cls: 'news-domestic', title: '2026世界斯诺克武汉公开赛：中国球员提前包揽冠亚军', desc: '赵心童6:2战胜肖国栋进入决赛，"黑马"常冰玉也将向个人首个排名赛冠军发起冲击。中国球员提前锁定本届武汉公开赛冠亚军。' },
-    { tag: '科技', cls: 'news-tech', title: '神舟二十三号乘组完成出舱活动：太阳翼维修、碎片防护装置安装成功', desc: '航天员朱杨柱、张志远、黎家盈密切协同，在空间站机械臂配合下完成太阳翼舱外维修和空间碎片防护装置安装等任务，出舱活动取得圆满成功。' },
-    { tag: '科技', cls: 'news-tech', title: '道交法修订草案首设"自动驾驶专章"，明确L3/L4量产责任边界', desc: '8月25日提请审议的道路交通法修订草案首次设立"自动驾驶专章"，明确自动驾驶激活状态下违法由车企或进口方担责，为L3/L4量产落地扫清法律障碍。' },
-    { tag: '科技', cls: 'news-tech', title: '长江存储科创板IPO受理拟募330亿，Q1全球NAND出货排名第三', desc: '长江存储科创板IPO申请已获受理，拟募资330亿元，其中208亿用于量产升级、122亿攻关HBM/MRAM。公司Q1毛利率达84.23%，为全球NAND市场新锐力量。' },
-    { tag: '国际', cls: 'news-intl', title: '伊朗持续控制霍尔木兹海峡，要求美国先履行解除制裁等义务', desc: '伊朗革命卫队声明称对霍尔木兹海峡控制权绝对稳固，所有未经协调的船只不得通行。伊朗总统表示开放海峡需美国先解除封锁制裁、解冻资金、停止以色列在黎巴嫩的敌对行动。' },
-    { tag: '国际', cls: 'news-intl', title: '俄罗斯成功试射固体燃料洲际弹道导弹，验证战术技术性能', desc: '俄军在普列谢茨克航天发射场进行固体燃料洲际弹道导弹战斗训练发射，训练弹头成功抵达堪察加半岛库拉靶场指定区域，旨在验证导弹系统飞行性能。' }
+    { tag: '国内', cls: 'news-domestic', title: '西藏吉隆泥石流救援进入关键期，216国道已抢通超2.6公里', desc: '西藏日喀则吉隆县泥石流灾害抢险救援进入第4天，各方力量全力挺进受灾核心区。被泥石流冲毁的216国道已抢通超2.6公里，中方隧道救援专家赴尼泊尔水电站隧道实施救援。' },
+    { tag: '国内', cls: 'news-domestic', title: '我国首次实现地月双向高速激光通信，下行速率达每秒100兆', desc: '我国科研团队首次实现地球和月球之间的双向高速激光通信，测得下行速率约每秒100兆，传输一幅8K月面高清图像仅需约12秒，标志着空间激光通信正式迈入地月空间。' },
+    { tag: '国内', cls: 'news-domestic', title: '14家央国企发起国内首个"数据开放月"，免费开放超60亿条数据', desc: '14家央国企发起国内首个"数据开放月"活动，面向全社会免费开放超60亿条高价值数据资源，覆盖电力、油气管网、物流、汽车、农机等十余个行业。' },
+    { tag: '科技', cls: 'news-tech', title: '国家数据局：20余家算力调度主体入驻全国一体化算力网平台', desc: '20余家算力调度主体正式入驻全国一体化算力网监测调度试验验证平台，将全面提升算力调度运营服务能力，推动算力资源高效配置。' },
+    { tag: '科技', cls: 'news-tech', title: '上半年数字产业收入超20万亿元，利润同比增长19.3%', desc: '工信部数据显示，今年上半年我国数字产业实现收入20.71万亿元，同比增长13.6%；实现利润总额1.79万亿元，同比增长19.3%，数字经济发展势头强劲。' },
+    { tag: '国际', cls: 'news-intl', title: '伊朗重申霍尔木兹海峡完全关闭，美发起"航母车轮战"', desc: '伊朗副外长表示霍尔木兹海峡目前完全关闭，任何船只通过均需伊朗协调许可。美军"罗斯福"号航母将前往中东接替"华盛顿"号，执行至少7个月部署任务。' },
+    { tag: '国际', cls: 'news-intl', title: '冰岛举行全民公投，表决是否重启加入欧盟谈判', desc: '冰岛约40万人口于29日举行全民公投，就是否重启加入欧盟谈判进行表决。冰岛2009年曾申请入盟，2013年被疑欧立场政府搁置谈判。' },
+    { tag: '国际', cls: 'news-intl', title: '联合国欧洲经济委员会警告：欧盟约半数领土面临干旱威胁', desc: '联合国欧洲经济委员会警告称，欧盟国家及英国约半数领土正面临干旱威胁，降水严重不足已危及土壤湿度和森林健康，可能引发粮食安全风险。' }
   ]
 }
 function renderNews() {
