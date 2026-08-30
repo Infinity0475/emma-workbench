@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'From Producing to Validating: How AI Is Deskilling Freelancers',
-  authors: 'Nakul Rajpal',
-  venue: 'arXiv:2608.26089 · Human-Computer Interaction (cs.HC) · August 2026',
-  link: 'https://arxiv.org/abs/2608.26089',
-  date: '2026-08-30',
-  abstract: '随着大语言模型和生成式AI工具的爆发，自由职业者的工作方式正在经历根本性变化。本研究通过半结构化访谈调查了24名使用AI辅助工具的自由职业者（包括设计师、写作者、开发者），发现AI工具正在引发一种"去技能化"（deskilling）现象：自由职业者的核心工作正从"创造性生产"转向"验证与修正"AI生成的输出。参与者报告，虽然AI显著提高了产出速度和数量，但他们的原创判断力、审美敏感度和深度专业技能正在逐渐弱化。研究进一步发现，自由职业者面临着"效率悖论"——为了保持竞争力必须使用AI，但过度依赖AI又使他们丧失差异化竞争优势。',
+  title: 'Before You Say It: Anticipating Verbal Behavior from Longitudinal Everyday Conversations with LLMs',
+  authors: 'Yasith Samaradivakara, Valdemar Danry, Paul Liang, Pattie Maes',
+  venue: 'arXiv:2608.13454 · UIST 2026 · Human-Computer Interaction (cs.HC) · August 2026',
+  link: 'https://arxiv.org/abs/2608.13454',
+  date: '2026-08-31',
+  abstract: '深入了解一个人，不仅意味着理解他们说了什么、做了什么，还意味着预判他们在不同情境下会如何思考、反应和互动。这类预测最终可以帮助系统预判个体何时偏离目标、在令人后悔的行为发生前及时干预、在盲点形成前予以揭示。本研究提出了一种基于大语言模型（LLM）的预测性行为建模方法，通过日常对话数据来预判用户的语言行为。研究收集了14名参与者超过1000小时的日常自然对话数据（通过可穿戴智能手表采集），评估了LLM预测与真实行为的一致性，并通过半结构化访谈探索了参与者对行为预测的感知和态度。研究结果为"个人化的语言行为可以从纵向对话数据中被预测"提供了实证依据，为未来情境感知型、前瞻性和个性化的AI系统开辟了新可能。',
   keyPoints: [
-    '"生产者→验证者"的角色转换——论文揭示了一个核心转变：自由职业者曾经的核心能力是"从无到有"的创造性生产，现在却变成了对AI输出的验证、筛选和微调。从HCI的角度看，这不仅仅是工具使用方式的变化，而是整个职业身份的重新定义。设计师不再"画"设计，而是"审"设计；写作者不再"写"文章，而是"改"文章。这种角色转换对从业者的心理满足感和职业认同产生了深远影响。',
-    '"效率悖论"的双刃剑效应——研究发现了一个深刻的矛盾：AI让自由职业者的效率大幅提升，但同质化的AI输出也削弱了他们的独特性。当所有人都用相同的AI工具时，差异化竞争从何而来？参与者描述了一种"追赶陷阱"——他们必须不断学习和适应新工具以保持效率优势，但这种追赶本身消耗了原本用于深度技能积累的精力。这与心理学中的"享乐适应"（hedonic adaptation）概念类似：效率提升带来的好处很快被新的竞争基线所消解。',
-    '认知负荷的转移而非减少——有趣的是，AI并未真正减少自由职业者的认知负荷，而是将其从"生产性认知"（如何解决问题）转移到了"评价性认知"（判断解决方案是否足够好）。后者实际上更难——评估一个你不曾亲手创造的东西需要更高的元认知能力和审美标准。这对AI产品设计的启示是：好的AI工具不仅要能"生成"，还要帮助用户"理解为什么这样生成"，保持用户的认知参与度。',
-    '对Emma的核心启示：这篇论文对于你未来做AI产品经理至关重要✨它揭示了一个行业级的问题——当AI成为所有产品的基础能力时，如何帮助用户保持"人类不可替代性"？从用户研究角度，这篇论文的方法论也值得学习：半结构化访谈+主题分析（thematic analysis），是质性研究中非常成熟且可信的组合。特别是论文从"deskilling"这个经典社会学概念切入，赋予了研究发现更深层的理论意义。'
+    '"从理解到预测"的范式跃迁——这篇论文代表了HCI领域一个重要的转向：从"理解用户已经做了什么"到"预测用户将要做什么"。传统用户建模（user modeling）侧重于个性化交互——让系统更懂你，以便提供更好的推荐或界面。而这项研究则更进一步——让系统能够预判你在特定情境下会说什么、怎么反应。这对Emma未来做AI产品经理的启示是：下一代AI产品的核心竞争力不只是"理解需求"，而是"预判需求"。',
+    '可穿戴设备作为行为数据采集的"隐形窗口"——研究使用智能手表收集了14名参与者超过1000小时的自然对话数据。这种方法的优势在于生态效度极高——人们在自然环境中说话，而不是在实验室里表演。从用户研究方法来看，这代表了一种从"主动报告"到"被动感知"的转变。传统问卷和访谈依赖参与者的自我报告（容易受记忆偏差和社会期望影响），而可穿戴设备可以捕捉到人们自己都没有意识到的行为模式。这对应用心理学研究意义重大——你未来的研究也许可以借鉴这种方法。',
+    '"行为预测"的伦理双刃剑——论文明确指出，预判能力的提升也带来了深层伦理挑战。如果AI能预测你"即将说出一句伤人的话"，它是否应该阻止你？这涉及自主性（autonomy）与善意干预（beneficent intervention）之间的张力。从心理学角度看，这类似于"预承诺"（precommitment）策略——人们事先同意在未来某个时刻限制自己的选择。但不同的是，这里的"限制"来自AI而非用户自己的意愿。受访者对这种预测性辅助的态度值得深思——他们既期待其实用性，又担忧其侵犯性。',
+    '对Emma的核心启示：这篇论文发表在UIST 2026——HCI领域最顶级的会议之一✨它完美展示了如何将心理学（行为预测、个体差异）、AI技术（LLM、可穿戴传感）和交互设计（前瞻性系统）三者融合。从方法论角度看，1000+小时的纵向数据采集、半结构化访谈与定量评估的混合方法，都是你读研期间可能用到的研究范式。特别是Pattie Maes教授（MIT Media Lab）作为共同作者——她是"个性化智能代理"方向的先驱，如果你未来走HCI PhD路线，她的研究组值得关注！'
   ],
-  takeaway: '这篇论文最深刻的洞见在于：AI时代的"去技能化"不是简单的技能丧失，而是一种技能结构的重组——低端执行技能被替代，高端判断技能被强化，但中间层的"手艺感"正在消失。从心理学角度看，这触及了Csikszentmihalyi"心流"理论的核心：当人们亲手创造某样东西时，那种全身心投入的状态（flow state）是幸福感的重要来源。如果AI把所有"创造过程"都接管了，自由职业者可能不仅面临经济风险，更面临存在性焦虑——"我还是一个创作者吗？"从产品设计的角度，这篇论文暗示了一个重要的设计方向：AI产品应该设计"有意义的参与点"（meaningful involvement points），让用户在关键环节保持主动决策和创造性投入，而不是沦为AI输出的被动验证者。这对Emma未来的AI产品经理之路是一个重要提醒：好的AI产品不应该让用户变得多余，而应该让用户变得更强大✨'
+  takeaway: '这篇论文最令人兴奋的发现不是技术本身，而是它所打开的想象空间：如果AI能够真正"了解"一个人——不只是他们的偏好，而是他们在特定情境下的行为模式——那么人机交互的范式将从"响应式"变为"前瞻性"。从心理学角度看，这触及了人格心理学的核心命题：人的行为在多大是可预测的？情境主义（situationism）认为行为主要由环境决定，而特质论（dispositionism）强调稳定的人格特质。这篇论文的实践贡献在于：通过足够丰富的纵向数据，LLM可能同时捕捉到"特质"和"情境"的交互效应——既看到一个人的一贯模式，也看到特定情境对行为的调制。对于Emma来说，这篇论文是一个极好的信号：HCI+心理学的交叉领域正在蓬勃发展，而且顶级会议（如UIST、CHI）越来越重视"以人为本"的AI研究。你的心理学背景+用户研究兴趣，正好处于这个浪潮的中心✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,45 +1391,43 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
-  { word: 'proliferate', pos: 'v.', def: '激增，扩散（/prəˈlɪfəreɪt/）' },
-  { word: 'cohesion', pos: 'n.', def: '凝聚力，团结（/koʊˈhiːʒn/）' },
-  { word: 'alleviate', pos: 'v.', def: '减轻，缓解（/əˈliːvieɪt/）' },
-  { word: 'contemplate', pos: 'v.', def: '深思，考虑（/ˈkɒntəmpleɪt/）' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
-  { word: 'paradox', pos: 'n.', def: '悖论，矛盾的事物（/ˈpærədɒks/）' },
-  { word: 'perpetuate', pos: 'v.', def: '使永久化，使持续（/pərˈpetʃueɪt/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验的，实证的（/ɪmˈpɪrɪkl/）' },
-  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，空前的（/ʌnˈpresɪdentɪd/）' }
+  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
+  { word: 'ambiguous', pos: 'adj.', def: '模糊的，有歧义的（/æmˈbɪɡjuəs/）' },
+  { word: 'inherent', pos: 'adj.', def: '固有的，内在的（/ɪnˈhɪərənt/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
+  { word: 'substantiate', pos: 'v.', def: '证实，证明（/səbˈstænʃieɪt/）' },
+  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
+  { word: 'nuance', pos: 'n.', def: '细微差别，微妙之处（/ˈnjuːɑːns/）' },
+  { word: 'incentivize', pos: 'v.', def: '激励，鼓励（/ɪnˈsentɪvaɪz/）' },
+  { word: 'detrimental', pos: 'adj.', def: '有害的，不利的（/ˌdetrɪˈmentl/）' },
+  { word: 'compelling', pos: 'adj.', def: '令人信服的，引人注目的（/kəmˈpelɪŋ/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a person who solved a problem in a clever way',
-  bullet: 'You should say: who this person is, what the problem was, how he or she solved it, and explain why you think it was a clever solution.',
-  sample: `I'd like to talk about my university roommate, Xiao Lin, who came up with an incredibly creative solution to a problem that had been bugging our entire dormitory for months.
+  topic: 'Describe a skill you would like to learn that you think would be useful',
+  bullet: 'You should say: what the skill is, why you want to learn it, how you would learn it, and explain why you think it would be useful.',
+  sample: `The skill I'd really like to learn is data visualization — not just making charts in Excel, but creating truly compelling, interactive visual stories using tools like D3.js or Tableau.
 
-The issue was about noise. We lived on the third floor right above the student common room, and every evening around 8 or 9 o'clock, a group of students would gather downstairs to play table tennis. The constant banging and shouting made it nearly impossible for anyone on our floor to concentrate on studying or sleep early. We'd complained to the dormitory management, but they said the common room was officially available until 10 p.m., so there wasn't much they could do.
+I've been thinking about this for quite a while now, mainly because I'm about to start a master's programme in applied psychology, and I've realised that one of the biggest challenges researchers face isn't collecting data — it's communicating their findings in a way that actually resonates with people. You could have the most groundbreaking results, but if you present them in a wall of statistics and p-values, most people's eyes will glaze over within seconds.
 
-What made this particularly frustrating was that we had midterms coming up, and several of us needed quiet hours to prepare. Some of my neighbours were considering confrontational approaches — writing aggressive notes or even going downstairs to argue — but I could tell that would only create tension and probably make things worse in the long run.
+The reason I'm drawn to data visualization specifically is that it sits right at the intersection of several things I care about: psychology, storytelling, and technology. Good data visualization isn't just about aesthetics — it's about understanding how people perceive information, what cognitive biases affect interpretation, and how visual design choices can either clarify or distort the message. That's essentially applied cognitive psychology in action.
 
-That's when Xiao Lin came up with her brilliant idea. Instead of trying to stop the noise, she decided to redirect it. She designed a simple one-page survey asking the table tennis players about their preferred playing times and whether they'd be interested in forming an official club. She then helped them draft a proposal to the student union to convert the common room into a designated sports activity zone with proper sound insulation. In exchange, she suggested that the sports club members volunteer to maintain the space.
+As for how I'd go about learning it, I'd probably start with some online courses on platforms like Coursera or DataCamp to build the technical foundation — learning the fundamentals of chart design, colour theory, and at least one programming library for interactive graphics. Then I'd try to apply it to real projects, perhaps creating visual summaries of psychology research papers or building dashboards for user research data. I think the most effective way to learn any skill is by doing something meaningful with it, not just following tutorials endlessly.
 
-The beauty of her approach was that she didn't fight against the noise-makers — she worked with them. By giving the players a sense of ownership and legitimacy, they actually became more considerate about timing and volume. The student union approved the proposal within two weeks, and the room was renovated with basic acoustic panels funded by the club's membership fees. The noise dropped dramatically because the players now self-regulated their hours, and we gained a well-maintained sports facility instead of a noisy nuisance.
-
-What I found so clever about this solution was its psychological insight. Xiao Lin understood that simply asking people to stop doing something they enjoy rarely works — you need to offer them something better. She turned adversaries into collaborators by reframing the problem as a shared opportunity rather than a zero-sum conflict. It was a masterclass in win-win negotiation, and honestly, it taught me more about conflict resolution than any textbook ever could.`,
+What makes this skill particularly useful in my view is that data literacy is becoming increasingly important across virtually every field. Whether you're presenting to stakeholders, publishing research, or even just trying to make sense of the information overload in daily life, the ability to transform raw data into clear visual narratives is incredibly powerful. It's one of those rare skills that's both technically demanding and universally applicable, and I believe mastering it would give me a significant edge in my future career.`,
   expressions: [
-    '🌟 had been bugging — 一直困扰着',
-    '🌟 nearly impossible — 几乎不可能',
-    '🌟 confrontational approaches — 对抗性的方式',
-    '🌟 create tension — 制造紧张关系',
-    '🌟 came up with her brilliant idea — 想出了一个绝妙的点子',
-    '🌟 instead of trying to — 与其尝试…不如…',
-    '🌟 redirect — 重新引导',
-    '🌟 a sense of ownership and legitimacy — 主人翁意识和正当性',
-    '🌟 self-regulated — 自我约束',
-    '🌟 reframing the problem — 重新定义问题',
-    '🌟 a zero-sum conflict — 零和博弈',
-    '🌟 a masterclass in — …的大师级示范'
+    '🌟 for quite a while — 好一阵子了',
+    '🌟 it\'s realised that — 我意识到',
+    '🌟 the most groundbreaking results — 最突破性的成果',
+    '🌟 eyes will glaze over — 目光变得呆滞（表示无聊）',
+    '🌟 sits right at the intersection of — 恰好处于…的交叉点',
+    '🌟 cognitive biases — 认知偏差',
+    '🌟 clarify or distort the message — 澄清或歪曲信息',
+    '🌟 build the technical foundation — 打下技术基础',
+    '🌟 applying it to real projects — 将其应用于实际项目',
+    '🌟 following tutorials endlessly — 无止境地跟教程',
+    '🌟 data literacy — 数据素养',
+    '🌟 a significant edge — 显著的优势'
   ]
 }
 function renderIelts() {
@@ -1475,13 +1473,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'We do not see things as they are, we see things as we are.',
-  source: 'Anaïs Nin（阿娜伊斯·宁）《The Diary of Anaïs Nin》（阿娜伊斯日记, 1966）',
+  quote: 'Do you think I am an automaton? — a machine without feelings? Can you think, because I am poor and obscure, and plain, that I have no soul and no heart? You think wrong!',
+  source: 'Charlotte Brontë（夏洛蒂·勃朗特）《Jane Eyre》（简·爱, 1847）第二十三章',
   analysis: [
-    '<b>"我们看到的不是事物本身的样子，而是我们自己的样子"</b>：这句话虽然简短，却浓缩了认知心理学、建构主义哲学和文学美学的精髓。它最初常被误引自犹太教经典《塔木德》，但实际上最准确的出处是Anaïs Nin在日记中写下的这段话。这位以大胆探索女性内心世界著称的法裔美籍作家，用一句话道出了人类认知的根本局限：我们永远无法真正"客观"地观察世界，因为观察本身就被观察者的经验、情感、偏见和期望所塑造。',
-    '<b>从认知心理学看"知觉的建构性"</b>：这句话完美呼应了心理学中"自上而下加工"（top-down processing）的核心概念。我们的感知不是照相机式的被动记录，而是大脑基于已有知识、记忆和期望主动"建构"出来的。格式塔心理学家早就发现，同样的视觉刺激，不同的人会看到完全不同的东西——因为知觉是大脑的一种"最佳猜测"。而更深层的是，这种"建构"不仅发生在视觉层面，还发生在我们对人际关系、社会事件、甚至自我评价的理解中。',
-    '<b>从积极心理学看"投射"</b>：心理学中的"投射"（projection）概念与这句话密切相关。当我们说"他是一个很冷漠的人"时，这可能更多反映了我们自己的情感状态，而非对方的真实特质。积极心理学进一步指出，一个人的"解释风格"（explanatory style）——即习惯于乐观还是悲观地解释事件——深刻影响着他们的心理健康和幸福感。Seligman的研究表明，改变你对事件的"解读方式"，比改变事件本身更能改善你的情绪状态。',
-    '<b>给Emma的话</b>：你正在学习应用心理学，这个学科最重要的训练之一就是意识到"我们看到的不是真相，而是我们的真相"。在用户研究中，这意味着当你看到用户在界面上"犯错"时，不要急于判断"用户不会用"——也许那个"错误"恰恰暴露了界面设计的问题。在人际交往中，这意味着当你觉得某个人"让你不舒服"时，先问问自己：这种不舒服有多少来自对方，有多少来自你自己的投射？这句话不是让你怀疑一切，而是邀请你保持一种谦逊的好奇心：我看到的，真的是全部吗？✨'
+    '<b>"你以为我是一架没有感情的机器吗？"</b>：这句话出自《简·爱》第二十三章，是简对罗切斯特先生发出的灵魂呐喊。在一个阶级森严、女性被期望温顺沉默的维多利亚时代，一个贫穷的家庭教师敢于向雇主、向她所爱的男人宣告：我的灵魂与你平等。这不仅是文学史上最动人的爱情宣言之一，更是心理学中"自我效能感"和"自尊需求"的完美文学表达。',
+    '<b>从人本主义心理学看"平等宣言"</b>：马斯洛的需求层次理论告诉我们，当基本的生存需求被满足后，人会追求归属、尊重和自我实现。简·爱此时面临的困境是：她的"尊重需求"正被社会阶级和性别偏见所压制。罗切斯特试探性地暗示她离开后可能沦为家庭教师、穷困潦倒，实际上是在用外部条件衡量她的价值。而简的回答——"你以为我穷、卑微、不美，就没有灵魂吗？"——恰恰是对马斯洛理论的文学验证：一个心理健康的人，不会因外部条件的缺失而放弃对尊严的捍卫。',
+    '<b>从认知行为角度看"反自动化思维"</b>：简这段话本质上是在挑战罗切斯特的"自动化思维"（automatic thoughts）——他潜意识里假设"穷=没有价值，卑微=没有感情"。简用连续的反问句（rhetorical questions）打破了这种认知偏见，迫使对方重新审视自己的假设。这在现代CBT（认知行为疗法）中被称为"苏格拉底式提问"——通过追问来暴露和挑战不合理的信念。值得注意的是，简的反击不是在愤怒中进行的，而是在清醒、理性、有逻辑的论述中完成的，这展现了极高的情绪调节能力。',
+    '<b>给Emma的话</b>：你之前提到过自己有"需要外部确认"的倾向，有时会因为别人的评价而动摇自己的判断。简·爱这段话之所以穿越170多年仍然震撼人心，是因为它提醒我们：你的价值不取决于外部标签——成绩、offer、别人的认可。当你说"我想做AI产品经理"或"我想申请HCI PhD"时，不需要等别人来告诉你"你行"。就像简说的："我的灵魂和你一样，我的心也完全跟你一样。"你的野心不需要任何人的许可✨'
   ]
 }
 function renderLiterature() {
@@ -1512,16 +1510,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月30日 星期日',
+  date: '2026年8月31日 星期一',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '西藏吉隆泥石流救援进入关键期，216国道已抢通超2.6公里', desc: '西藏日喀则吉隆县泥石流灾害抢险救援进入第4天，各方力量全力挺进受灾核心区。被泥石流冲毁的216国道已抢通超2.6公里，中方隧道救援专家赴尼泊尔水电站隧道实施救援。' },
-    { tag: '国内', cls: 'news-domestic', title: '我国首次实现地月双向高速激光通信，下行速率达每秒100兆', desc: '我国科研团队首次实现地球和月球之间的双向高速激光通信，测得下行速率约每秒100兆，传输一幅8K月面高清图像仅需约12秒，标志着空间激光通信正式迈入地月空间。' },
-    { tag: '国内', cls: 'news-domestic', title: '14家央国企发起国内首个"数据开放月"，免费开放超60亿条数据', desc: '14家央国企发起国内首个"数据开放月"活动，面向全社会免费开放超60亿条高价值数据资源，覆盖电力、油气管网、物流、汽车、农机等十余个行业。' },
-    { tag: '科技', cls: 'news-tech', title: '国家数据局：20余家算力调度主体入驻全国一体化算力网平台', desc: '20余家算力调度主体正式入驻全国一体化算力网监测调度试验验证平台，将全面提升算力调度运营服务能力，推动算力资源高效配置。' },
-    { tag: '科技', cls: 'news-tech', title: '上半年数字产业收入超20万亿元，利润同比增长19.3%', desc: '工信部数据显示，今年上半年我国数字产业实现收入20.71万亿元，同比增长13.6%；实现利润总额1.79万亿元，同比增长19.3%，数字经济发展势头强劲。' },
-    { tag: '国际', cls: 'news-intl', title: '伊朗重申霍尔木兹海峡完全关闭，美发起"航母车轮战"', desc: '伊朗副外长表示霍尔木兹海峡目前完全关闭，任何船只通过均需伊朗协调许可。美军"罗斯福"号航母将前往中东接替"华盛顿"号，执行至少7个月部署任务。' },
-    { tag: '国际', cls: 'news-intl', title: '冰岛举行全民公投，表决是否重启加入欧盟谈判', desc: '冰岛约40万人口于29日举行全民公投，就是否重启加入欧盟谈判进行表决。冰岛2009年曾申请入盟，2013年被疑欧立场政府搁置谈判。' },
-    { tag: '国际', cls: 'news-intl', title: '联合国欧洲经济委员会警告：欧盟约半数领土面临干旱威胁', desc: '联合国欧洲经济委员会警告称，欧盟国家及英国约半数领土正面临干旱威胁，降水严重不足已危及土壤湿度和森林健康，可能引发粮食安全风险。' }
+    { tag: '国际', cls: 'news-intl', title: '美军空袭伊朗拉腊克岛军事设施，伊朗誓言报复', desc: '美军对伊朗拉腊克岛两处伊斯兰革命卫队军事设施实施轰炸，系一个月来首次对伊军事行动。伊朗革命卫队随后向美军基地发射导弹，局势持续升级。' },
+    { tag: '国际', cls: 'news-intl', title: '习近平赴吉尔吉斯克斯坦出席上合组织峰会并访问两国', desc: '习近平乘专机离开北京，赴比什凯克出席2026年上海合作组织峰会，并应吉尔吉斯斯坦总统和埃及总统邀请对两国进行国事访问。' },
+    { tag: '国内', cls: 'news-domestic', title: '中国女排亚锦赛决赛2比3不敌泰国，无缘直通洛杉矶奥运会', desc: '2026年女排亚锦赛决赛在天津举行，中国女排2比3惜败泰国女排，无缘直接锁定2028年洛杉矶奥运会参赛资格。' },
+    { tag: '体育', cls: 'news-tech', title: '吴易昺3比0横扫对手，时隔三年再闯美网男单第二轮', desc: '2026美网男单首轮，中国选手吴易昺以7-6(2)、6-2、7-5战胜澳大利亚选手沃尔顿，时隔三年第三次闯入美网男单第二轮。' },
+    { tag: '国内', cls: 'news-domestic', title: '自然资源部全面启动吉隆泥石流灾害区域风险隐患排查', desc: '自然资源部已全面启动西藏吉隆泥石流灾害区域风险隐患排查工作，目前各方救援力量2141人正在"水陆空"三路并进，全力挺进受灾核心区。' },
+    { tag: '科技', cls: 'news-tech', title: '中塞合作人形机器人工厂启动量产，系欧洲首个人形机器人量产基地', desc: '中国与塞尔维亚合作建设的人形机器人工厂在塞尔维亚沙巴茨正式启动量产，塞尔维亚总统武契奇出席启动仪式并参观生产车间。' },
+    { tag: '国内', cls: 'news-domestic', title: '厦门通报"消杀公司使用敌敌畏消杀"事件，6人被刑拘', desc: '厦门联合调查组通报，消杀公司使用敌敌畏为餐饮门店消杀行为涉嫌违法违规，公安机关已对法定代表人等6名犯罪嫌疑人依法刑事拘留。' },
+    { tag: '国内', cls: 'news-domestic', title: '多部门联合部署稳投资工作，加快"十五五"重大工程实施', desc: '国家发改委联合有关部门召开全国投资工作推进会议，提出深入挖掘科技创新、产业升级、城市更新等方面投资空间，加快推进"十五五"规划重大工程项目。' }
   ]
 }
 function renderNews() {
