@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Before You Say It: Anticipating Verbal Behavior from Longitudinal Everyday Conversations with LLMs',
-  authors: 'Yasith Samaradivakara, Valdemar Danry, Paul Liang, Pattie Maes',
-  venue: 'arXiv:2608.13454 · UIST 2026 · Human-Computer Interaction (cs.HC) · August 2026',
-  link: 'https://arxiv.org/abs/2608.13454',
-  date: '2026-08-31',
-  abstract: '深入了解一个人，不仅意味着理解他们说了什么、做了什么，还意味着预判他们在不同情境下会如何思考、反应和互动。这类预测最终可以帮助系统预判个体何时偏离目标、在令人后悔的行为发生前及时干预、在盲点形成前予以揭示。本研究提出了一种基于大语言模型（LLM）的预测性行为建模方法，通过日常对话数据来预判用户的语言行为。研究收集了14名参与者超过1000小时的日常自然对话数据（通过可穿戴智能手表采集），评估了LLM预测与真实行为的一致性，并通过半结构化访谈探索了参与者对行为预测的感知和态度。研究结果为"个人化的语言行为可以从纵向对话数据中被预测"提供了实证依据，为未来情境感知型、前瞻性和个性化的AI系统开辟了新可能。',
+  title: 'User Preferences for UI Anchoring in MR: Effects of Task Mobility and Interface Properties',
+  authors: 'João Belo, Sina Elahimanesh, Anna Maria Feit',
+  venue: 'arXiv:2608.28064 · IEEE ISMR 2026 · Human-Computer Interaction (cs.HC) · August 2026',
+  link: 'https://arxiv.org/abs/2608.28064',
+  date: '2026-09-01',
+  abstract: '锚定（Anchoring）——即混合现实（MR）界面元素所选择的参考坐标系——是一个关键的设计决策，涉及可及性、交互舒适度和视觉干扰之间的权衡。尽管其重要性不言而喻，用户对不同移动场景和界面属性下锚定策略的偏好仍未被充分理解。本研究通过一项混合方法用户实验，让参与者在不同移动条件和界面类型下配置锚定策略。结合行为分析与结构化质性探究，研究揭示了参与者如何选择和推理锚定模式。结果表明：在静止场景中用户明显偏好世界锚定，而在运动中则转向身体锚定。然而，没有任何一种身体锚定方式持续占据主导地位，凸显了锚定策略的个人化特征。质性分析揭示了用户在锚定决策中考虑的因素，包括界面可及性、交互过程中的稳定性、视觉杂乱感以及个体心智模型。',
   keyPoints: [
-    '"从理解到预测"的范式跃迁——这篇论文代表了HCI领域一个重要的转向：从"理解用户已经做了什么"到"预测用户将要做什么"。传统用户建模（user modeling）侧重于个性化交互——让系统更懂你，以便提供更好的推荐或界面。而这项研究则更进一步——让系统能够预判你在特定情境下会说什么、怎么反应。这对Emma未来做AI产品经理的启示是：下一代AI产品的核心竞争力不只是"理解需求"，而是"预判需求"。',
-    '可穿戴设备作为行为数据采集的"隐形窗口"——研究使用智能手表收集了14名参与者超过1000小时的自然对话数据。这种方法的优势在于生态效度极高——人们在自然环境中说话，而不是在实验室里表演。从用户研究方法来看，这代表了一种从"主动报告"到"被动感知"的转变。传统问卷和访谈依赖参与者的自我报告（容易受记忆偏差和社会期望影响），而可穿戴设备可以捕捉到人们自己都没有意识到的行为模式。这对应用心理学研究意义重大——你未来的研究也许可以借鉴这种方法。',
-    '"行为预测"的伦理双刃剑——论文明确指出，预判能力的提升也带来了深层伦理挑战。如果AI能预测你"即将说出一句伤人的话"，它是否应该阻止你？这涉及自主性（autonomy）与善意干预（beneficent intervention）之间的张力。从心理学角度看，这类似于"预承诺"（precommitment）策略——人们事先同意在未来某个时刻限制自己的选择。但不同的是，这里的"限制"来自AI而非用户自己的意愿。受访者对这种预测性辅助的态度值得深思——他们既期待其实用性，又担忧其侵犯性。',
-    '对Emma的核心启示：这篇论文发表在UIST 2026——HCI领域最顶级的会议之一✨它完美展示了如何将心理学（行为预测、个体差异）、AI技术（LLM、可穿戴传感）和交互设计（前瞻性系统）三者融合。从方法论角度看，1000+小时的纵向数据采集、半结构化访谈与定量评估的混合方法，都是你读研期间可能用到的研究范式。特别是Pattie Maes教授（MIT Media Lab）作为共同作者——她是"个性化智能代理"方向的先驱，如果你未来走HCI PhD路线，她的研究组值得关注！'
+    '"从静止到运动"的锚定偏好迁移——这是论文最核心的发现：当用户从静止状态进入运动状态时，他们的界面锚定偏好会从"世界锚定"（界面固定在空间中某个位置）转向"身体锚定"（界面跟随身体部位移动）。57.9%的用户在移动场景中偏好手臂锚定。这对MR产品设计的启示是：界面不能只针对一种使用姿态设计，必须考虑用户在真实场景中的动态切换。',
+    '"没有银弹"的个性化设计启示——研究发现，即使在同一移动条件下，不同用户也表现出显著差异的锚定偏好。有人偏好手腕，有人偏好手臂，有人偏好躯干。这意味着"最佳锚定方案"并不存在——好的MR产品应该支持用户自定义锚定策略，或者开发能根据用户行为动态调整的自适应系统。',
+    '界面属性影响锚定选择——研究还发现，界面的交互方式（如手部输入 vs 视觉观察）会显著影响用户选择的锚定位置。当需要直接操控时，用户更倾向于将界面锚定在手部附近以保持空间一致性；当只需观察时，则偏好更稳定的位置。这揭示了MR设计中"输入模态"与"锚定策略"之间尚未被充分认识的耦合关系。',
+    '对Emma的启示：这篇论文发表在IEEE ISMR 2026（混合现实领域顶会），完美展示了HCI研究的核心方法论——混合方法（mixed-methods）：既有定量的行为数据分析，又有定性的用户访谈和主题编码。这种研究范式在北师大的应用心理研究生阶段你会大量接触。从产品经理角度看，论文揭示的"用户偏好因人而异"这一结论，正是做用户研究的价值所在——不能靠假设，要靠数据✨'
   ],
-  takeaway: '这篇论文最令人兴奋的发现不是技术本身，而是它所打开的想象空间：如果AI能够真正"了解"一个人——不只是他们的偏好，而是他们在特定情境下的行为模式——那么人机交互的范式将从"响应式"变为"前瞻性"。从心理学角度看，这触及了人格心理学的核心命题：人的行为在多大是可预测的？情境主义（situationism）认为行为主要由环境决定，而特质论（dispositionism）强调稳定的人格特质。这篇论文的实践贡献在于：通过足够丰富的纵向数据，LLM可能同时捕捉到"特质"和"情境"的交互效应——既看到一个人的一贯模式，也看到特定情境对行为的调制。对于Emma来说，这篇论文是一个极好的信号：HCI+心理学的交叉领域正在蓬勃发展，而且顶级会议（如UIST、CHI）越来越重视"以人为本"的AI研究。你的心理学背景+用户研究兴趣，正好处于这个浪潮的中心✨'
+  takeaway: '这篇论文最让我兴奋的不是技术细节，而是它所揭示的MR设计哲学："无缝体验"不是一个可达的状态，而是一个持续移动的目标。研究者的建议是：与其试图消除系统局限性的感知，不如将这些局限性设计成交互本身的可辨识组成部分。从心理学角度看，这触及了"心智模型"（mental model）理论的核心——用户如何理解一个系统的运作方式，直接决定了他们的使用体验和满意度。对于Emma来说，MR/AR/VR是人机交互的前沿领域，而心理学在其中的角色至关重要：理解用户的空间认知、身体感知和注意力分配，是设计好的MR体验的基础。这也是为什么HCI PhD项目越来越欢迎有心理学背景的研究者——你正处在这个交叉点的最佳位置✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,43 +1391,41 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
-  { word: 'ambiguous', pos: 'adj.', def: '模糊的，有歧义的（/æmˈbɪɡjuəs/）' },
-  { word: 'inherent', pos: 'adj.', def: '固有的，内在的（/ɪnˈhɪərənt/）' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
-  { word: 'substantiate', pos: 'v.', def: '证实，证明（/səbˈstænʃieɪt/）' },
-  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
-  { word: 'nuance', pos: 'n.', def: '细微差别，微妙之处（/ˈnjuːɑːns/）' },
-  { word: 'incentivize', pos: 'v.', def: '激励，鼓励（/ɪnˈsentɪvaɪz/）' },
-  { word: 'detrimental', pos: 'adj.', def: '有害的，不利的（/ˌdetrɪˈmentl/）' },
-  { word: 'compelling', pos: 'adj.', def: '令人信服的，引人注目的（/kəmˈpelɪŋ/）' }
+  { word: 'continuity', pos: 'n.', def: '连续性，连贯性（/ˌkɒntɪˈnjuːɪti/）' },
+  { word: 'multitude', pos: 'n.', def: '大量，众多（/ˈmʌltɪtjuːd/）' },
+  { word: 'refrain', pos: 'v.', def: '克制，避免做（/rɪˈfreɪn/）' },
+  { word: 'testament', pos: 'n.', def: '证明，证据（/ˈtestəmənt/）' },
+  { word: 'ubiquitous', pos: 'adj.', def: '无所不在的，十分普遍的（/juːˈbɪkwɪtəs/）' },
+  { word: 'enigmatic', pos: 'adj.', def: '神秘的，高深莫测的（/ˌenɪɡˈmætɪk/）' },
+  { word: 'heritage', pos: 'n.', def: '遗产，传统（/ˈherɪtɪdʒ/）' },
+  { word: 'substantial', pos: 'adj.', def: '大量的，实质性的（/səbˈstænʃl/）' },
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
+  { word: 'fluctuate', pos: 'v.', def: '波动，起伏不定（/ˈflʌktʃueɪt/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a skill you would like to learn that you think would be useful',
-  bullet: 'You should say: what the skill is, why you want to learn it, how you would learn it, and explain why you think it would be useful.',
-  sample: `The skill I'd really like to learn is data visualization — not just making charts in Excel, but creating truly compelling, interactive visual stories using tools like D3.js or Tableau.
+  topic: 'Describe a historical period or event that you find interesting',
+  bullet: 'You should say: what the period or event is, when it happened, what happened during this period, and explain why you find it interesting.',
+  sample: `The historical period I'd like to talk about is the Renaissance, which roughly spanned from the 14th to the 17th century in Europe. It's a period that has always fascinated me, not just because of the stunning artwork it produced, but because of the profound shift in how people understood themselves and their place in the world.
 
-I've been thinking about this for quite a while now, mainly because I'm about to start a master's programme in applied psychology, and I've realised that one of the biggest challenges researchers face isn't collecting data — it's communicating their findings in a way that actually resonates with people. You could have the most groundbreaking results, but if you present them in a wall of statistics and p-values, most people's eyes will glaze over within seconds.
+What makes the Renaissance particularly captivating is that it represented a fundamental break from the medieval worldview. Before this period, European thought was largely dominated by religious authority — the Church dictated what was true, what was valuable, and how people should live. The Renaissance introduced what we now call humanism: the idea that human beings have inherent worth, that reason and observation matter, and that individual achievement deserves recognition.
 
-The reason I'm drawn to data visualization specifically is that it sits right at the intersection of several things I care about: psychology, storytelling, and technology. Good data visualization isn't just about aesthetics — it's about understanding how people perceive information, what cognitive biases affect interpretation, and how visual design choices can either clarify or distort the message. That's essentially applied cognitive psychology in action.
+The most visible legacy of this period is, of course, the art. Think of Leonardo da Vinci's meticulous anatomical drawings, which combined scientific inquiry with aesthetic beauty. Or Michelangelo's Sistine Chapel ceiling, which took four years of painstaking work lying on his back on scaffolding. These weren't just paintings — they were statements about human potential.
 
-As for how I'd go about learning it, I'd probably start with some online courses on platforms like Coursera or DataCamp to build the technical foundation — learning the fundamentals of chart design, colour theory, and at least one programming library for interactive graphics. Then I'd try to apply it to real projects, perhaps creating visual summaries of psychology research papers or building dashboards for user research data. I think the most effective way to learn any skill is by doing something meaningful with it, not just following tutorials endlessly.
-
-What makes this skill particularly useful in my view is that data literacy is becoming increasingly important across virtually every field. Whether you're presenting to stakeholders, publishing research, or even just trying to make sense of the information overload in daily life, the ability to transform raw data into clear visual narratives is incredibly powerful. It's one of those rare skills that's both technically demanding and universally applicable, and I believe mastering it would give me a significant edge in my future career.`,
+What I find most thought-provoking about the Renaissance is how it parallels some of the changes we're experiencing today with artificial intelligence. Just as Renaissance thinkers questioned long-held assumptions about knowledge and authority, we're now questioning what it means to be creative, to think, to be human — in an age when machines can produce art, write essays, and hold conversations. The Renaissance teaches us that periods of great upheaval can also be periods of extraordinary flourishing, provided we have the courage to ask new questions.`,
   expressions: [
-    '🌟 for quite a while — 好一阵子了',
-    '🌟 it\'s realised that — 我意识到',
-    '🌟 the most groundbreaking results — 最突破性的成果',
-    '🌟 eyes will glaze over — 目光变得呆滞（表示无聊）',
-    '🌟 sits right at the intersection of — 恰好处于…的交叉点',
-    '🌟 cognitive biases — 认知偏差',
-    '🌟 clarify or distort the message — 澄清或歪曲信息',
-    '🌟 build the technical foundation — 打下技术基础',
-    '🌟 applying it to real projects — 将其应用于实际项目',
-    '🌟 following tutorials endlessly — 无止境地跟教程',
-    '🌟 data literacy — 数据素养',
-    '🌟 a significant edge — 显著的优势'
+    '🌟 has always fascinated me — 一直让我着迷',
+    '🌟 a profound shift — 深刻的转变',
+    '🌟 a fundamental break from — 与…的根本决裂',
+    '🌟 dominated by religious authority — 受宗教权威支配',
+    '🌟 inherent worth — 内在价值',
+    '🌟 the most visible legacy — 最显眼的遗产',
+    '🌟 meticulous anatomical drawings — 精密的解剖图',
+    '🌟 painstaking work — 艰苦的工作',
+    '0 statements about human potential — 对人类潜力的宣言',
+    '🌟 thought-provoking — 发人深省的',
+    '🌟 periods of great upheaval — 巨大变革的时期',
+    '🌟 extraordinary flourishing — 非凡的繁荣'
   ]
 }
 function renderIelts() {
@@ -1473,13 +1471,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'Do you think I am an automaton? — a machine without feelings? Can you think, because I am poor and obscure, and plain, that I have no soul and no heart? You think wrong!',
-  source: 'Charlotte Brontë（夏洛蒂·勃朗特）《Jane Eyre》（简·爱, 1847）第二十三章',
+  quote: 'The truth is that every intelligent man, as you know, dreams of being a gangster and of ruling over society by force alone. As it is not so easy as the detective novels might lead one to believe, one generally relies on politics and joins the cruelest party. What does it matter, after all, if by humiliating one\'s mind one succeeds in dominating every one? I discovered in myself sweet dreams of oppression.',
+  source: 'Albert Camus（阿尔贝·加缪）《The Fall》（堕落, 1956）',
   analysis: [
-    '<b>"你以为我是一架没有感情的机器吗？"</b>：这句话出自《简·爱》第二十三章，是简对罗切斯特先生发出的灵魂呐喊。在一个阶级森严、女性被期望温顺沉默的维多利亚时代，一个贫穷的家庭教师敢于向雇主、向她所爱的男人宣告：我的灵魂与你平等。这不仅是文学史上最动人的爱情宣言之一，更是心理学中"自我效能感"和"自尊需求"的完美文学表达。',
-    '<b>从人本主义心理学看"平等宣言"</b>：马斯洛的需求层次理论告诉我们，当基本的生存需求被满足后，人会追求归属、尊重和自我实现。简·爱此时面临的困境是：她的"尊重需求"正被社会阶级和性别偏见所压制。罗切斯特试探性地暗示她离开后可能沦为家庭教师、穷困潦倒，实际上是在用外部条件衡量她的价值。而简的回答——"你以为我穷、卑微、不美，就没有灵魂吗？"——恰恰是对马斯洛理论的文学验证：一个心理健康的人，不会因外部条件的缺失而放弃对尊严的捍卫。',
-    '<b>从认知行为角度看"反自动化思维"</b>：简这段话本质上是在挑战罗切斯特的"自动化思维"（automatic thoughts）——他潜意识里假设"穷=没有价值，卑微=没有感情"。简用连续的反问句（rhetorical questions）打破了这种认知偏见，迫使对方重新审视自己的假设。这在现代CBT（认知行为疗法）中被称为"苏格拉底式提问"——通过追问来暴露和挑战不合理的信念。值得注意的是，简的反击不是在愤怒中进行的，而是在清醒、理性、有逻辑的论述中完成的，这展现了极高的情绪调节能力。',
-    '<b>给Emma的话</b>：你之前提到过自己有"需要外部确认"的倾向，有时会因为别人的评价而动摇自己的判断。简·爱这段话之所以穿越170多年仍然震撼人心，是因为它提醒我们：你的价值不取决于外部标签——成绩、offer、别人的认可。当你说"我想做AI产品经理"或"我想申请HCI PhD"时，不需要等别人来告诉你"你行"。就像简说的："我的灵魂和你一样，我的心也完全跟你一样。"你的野心不需要任何人的许可✨'
+    '<b>一段关于权力欲的"不舒服的坦白"</b>：这段话出自加缪1956年的哲学小说《堕落》（又译《堕入深渊》），主人公让-巴蒂斯特·克拉芒斯在阿姆斯特丹的一家酒吧里，向一个陌生人进行漫长的自我忏悔。这段话之所以震撼，是因为它揭示了一个我们都不愿承认的真相：智识与权力欲之间存在着隐秘的联系。聪明人不是不渴望控制别人，而是更善于为自己的控制欲找到"正当"的理由。',
+    '<b>从社会心理学看"合理化"机制</b>：加缪这段话精彩地预见了后来社会心理学中的"合理化"（rationalization）概念。弗洛伊德将其定义为一种防御机制——人们为自己的真实动机编造看似合理的解释。克拉芒斯说"加入最残酷的政党"——他指的是：当一个人无法直接成为暴徒时，他会通过意识形态来获取支配他人的权力，同时用"崇高理想"来掩盖自己的支配欲。这在斯坦利·米尔格拉姆的服从实验中得到了验证：普通人可以在"为了科学"的名义下施加致命电击。',
+    '<b>"我发现了自己内心对压迫的甜蜜幻想"</b>：这是整段话中最令人不安的一句。加缪不是在描述一个恶棍的自白，而是在描述一个"体面的"知识分子对自己阴暗面的发现。从荣格心理学的角度看，这正是"阴影"（Shadow）概念的核心——每个人都有不愿面对的黑暗面，而真正的自我认知需要直面而非压抑它。克拉芒斯的忏悔之所以有力量，恰恰在于他的诚实——他承认了自己的虚伪。',
+    '<b>给Emma的话</b>：这段话表面上很"暗黑"，但它其实传递了一个温暖的信息：承认自己的不完美，是成长的起点。你之前提到自己有"完美主义导致放弃"的倾向——加缪的哲学告诉我们，人本来就是复杂的、矛盾的、不完美的，而这恰恰是人之为人的魅力所在。不需要等到"完全准备好"才开始行动，不需要等到"完美"才被认可。就像加缪在《西西弗神话》中说的：想象西西弗是幸福的——推石上山的过程本身，就是意义✨'
   ]
 }
 function renderLiterature() {
@@ -1510,16 +1508,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年8月31日 星期一',
+  date: '2026年9月1日 星期二',
   items: [
-    { tag: '国际', cls: 'news-intl', title: '美军空袭伊朗拉腊克岛军事设施，伊朗誓言报复', desc: '美军对伊朗拉腊克岛两处伊斯兰革命卫队军事设施实施轰炸，系一个月来首次对伊军事行动。伊朗革命卫队随后向美军基地发射导弹，局势持续升级。' },
-    { tag: '国际', cls: 'news-intl', title: '习近平赴吉尔吉斯克斯坦出席上合组织峰会并访问两国', desc: '习近平乘专机离开北京，赴比什凯克出席2026年上海合作组织峰会，并应吉尔吉斯斯坦总统和埃及总统邀请对两国进行国事访问。' },
-    { tag: '国内', cls: 'news-domestic', title: '中国女排亚锦赛决赛2比3不敌泰国，无缘直通洛杉矶奥运会', desc: '2026年女排亚锦赛决赛在天津举行，中国女排2比3惜败泰国女排，无缘直接锁定2028年洛杉矶奥运会参赛资格。' },
-    { tag: '体育', cls: 'news-tech', title: '吴易昺3比0横扫对手，时隔三年再闯美网男单第二轮', desc: '2026美网男单首轮，中国选手吴易昺以7-6(2)、6-2、7-5战胜澳大利亚选手沃尔顿，时隔三年第三次闯入美网男单第二轮。' },
-    { tag: '国内', cls: 'news-domestic', title: '自然资源部全面启动吉隆泥石流灾害区域风险隐患排查', desc: '自然资源部已全面启动西藏吉隆泥石流灾害区域风险隐患排查工作，目前各方救援力量2141人正在"水陆空"三路并进，全力挺进受灾核心区。' },
-    { tag: '科技', cls: 'news-tech', title: '中塞合作人形机器人工厂启动量产，系欧洲首个人形机器人量产基地', desc: '中国与塞尔维亚合作建设的人形机器人工厂在塞尔维亚沙巴茨正式启动量产，塞尔维亚总统武契奇出席启动仪式并参观生产车间。' },
-    { tag: '国内', cls: 'news-domestic', title: '厦门通报"消杀公司使用敌敌畏消杀"事件，6人被刑拘', desc: '厦门联合调查组通报，消杀公司使用敌敌畏为餐饮门店消杀行为涉嫌违法违规，公安机关已对法定代表人等6名犯罪嫌疑人依法刑事拘留。' },
-    { tag: '国内', cls: 'news-domestic', title: '多部门联合部署稳投资工作，加快"十五五"重大工程实施', desc: '国家发改委联合有关部门召开全国投资工作推进会议，提出深入挖掘科技创新、产业升级、城市更新等方面投资空间，加快推进"十五五"规划重大工程项目。' }
+    { tag: '国际', cls: 'news-intl', title: '习近平在比什凯克会见俄罗斯总统普京', desc: '当地时间8月31日下午，国家主席习近平在比什凯克出席2026年上海合作组织峰会期间会见俄罗斯总统普京，双方就中俄关系及共同关心的国际和地区问题深入交换意见。' },
+    { tag: '国内', cls: 'news-domestic', title: '四所高校雄安校区将于明年9月正式开门办学', desc: '教育部表示，北京交通大学、北京科技大学、北京林业大学、中国地质大学(北京)四所高校雄安校区将于2027年9月正式开门办学，所需164栋建筑已完成主体结构封顶156栋。' },
+    { tag: '国际', cls: 'news-intl', title: '尼泊尔泥石流灾害已致951人遇难', desc: '据尼泊尔警方公布的最新数据，截至当地时间8月31日17时，尼泊尔泥石流灾害造成的遇难人数升至951人。26日尼泊尔北部热索瓦地区发生大规模泥石流灾害。' },
+    { tag: '国内', cls: 'news-domestic', title: '《医疗保障法》正式公布，2027年1月1日起施行', desc: '《中华人民共和国医疗保障法》正式公布，我国医保事业迎来专门的基础性法律保障，将进一步规范医保基金监管、兜牢群众看病就医底线。' },
+    { tag: '科技', cls: 'news-tech', title: '8月PMI回升至49.8%，景气水平改善', desc: '国家统计局发布数据，2026年8月份制造业采购经理指数为49.8%，比上月上升0.6个百分点，景气水平回升。' },
+    { tag: '体育', cls: 'news-tech', title: '梅西宣布从阿根廷国家队退役', desc: '8月31日消息，梅西在社交平台上发文宣布从阿根廷国家队退役，结束了辉煌的国际足球生涯。' },
+    { tag: '国内', cls: 'news-domestic', title: '国常会研究促进招商引资高质量发展有关工作', desc: '李强主持召开国务院常务会议，明确招商引资鼓励和禁止的具体行为，进一步优化营商环境、培育产业生态，主动帮助企业解决现实困难。' },
+    { tag: '科技', cls: 'news-tech', title: '商务部等9部门发布13条措施推动航空保税维修发展', desc: '商务部等9部门联合印发意见，聚焦航空维修产业发展需求，提出六方面13条政策措施，全国37个航空保税维修项目以12%的项目数贡献了85%的进出口货值。' }
   ]
 }
 function renderNews() {
