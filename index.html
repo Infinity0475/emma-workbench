@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Designing Proactive Thought Partners for Writing',
-  authors: 'Chao Zhang, Abe Davis, Chih-Wei Chen, Chin-Chia Hsu',
-  venue: 'arXiv:2609.01588 · Human-Computer Interaction (cs.HC) · September 2026',
-  link: 'https://arxiv.org/abs/2609.01588',
-  date: '2026-09-03',
-  abstract: '写作涉及从构思到修改的多种认知活动，不同写作者在不同时刻的需求各不相同。主动式AI有望在恰当时机提供精准支持，但现有工具大多停留在自动补全等通用文本辅助层面。本文研究了"主动式思维伙伴"的设计空间——这类AI智能体能在写作过程中主动提供可定制的高阶认知支持。研究团队开发了一个技术探针（technology probe），让16名参与者使用一周。探针允许用户通过配置AI伙伴的角色和主动程度来创建个性化助手。研究发现：参与者通过前瞻性规划来配置主动支持，将AI建议同时用于创意激发和自我监控，并看重轻量化的视觉呈现与非指导性的修辞框架，以实现不打扰的介入方式。论文围绕定制化、时机把握、参与度和表征方式提出了主动式写作助手的设计启示。',
+  title: 'AI emotional support is better only when chosen, but shifts preferences even when it is not',
+  authors: 'Yaoxi Shi, Cathy Mengying Fang, Guy Laban, Pattie Maes, Amit Goldenberg',
+  venue: 'arXiv:2608.23196 · cs.AI + cs.HC · August 2026',
+  link: 'https://arxiv.org/abs/2608.23196',
+  date: '2026-09-04',
+  abstract: '人们在寻求情感支持时面临着一个全新的选择：人类还是AI？现有研究中，AI的共情消息被评为与人类一样好甚至更好，但这些研究要么直接分配了支持来源，要么尊重了参与者的选择。然而在现实生活中，获得的支持往往与个人偏好不一致——你想要人类倾听，却收到了AI回复。本研究通过三项实验（N=1,951）发现：参与者先选择向人类还是AI倾诉情感经历，然后被随机分配到与选择一致或不一致的伙伴。只有在主动选择AI的参与者中，AI支持才被评价为更优。但关键发现是：无论是否匹配初始偏好，与AI互动都会增加再次选择AI的意愿。在与OpenAI合作的28天纵向研究（N=981）中，日常对话将偏好从人类转向AI，但仅当对话涉及个人化内容时。研究揭示了一个令人深思的结论：情感支持的选择具有路径依赖性，正在逐渐将人们从人际连接中引向AI。',
   keyPoints: [
-    '"主动式思维伙伴"而非"被动工具"——论文的核心创新在于重新定义了AI写作助手的角色。它不是等你提问才回答的ChatGPT，而是一个会主动观察你在写什么、什么时候需要你、以什么方式介入你的写作过程的"思维伙伴"。这就像从"图书馆"变成了"导师"——不是你去查资料，而是导师在恰当时机轻轻敲一下你的肩膀说"你有没有考虑过这个角度？"。',
-    '用户通过"前瞻性规划"配置AI——研究发现参与者不是随机使用AI建议，而是在写作前就有策略地设置不同角色的AI伙伴（比如"批判者""创意激发者""结构顾问"），然后在写作过程中让对应角色在合适时机介入。这揭示了一个重要洞察：好的AI协作需要人类主动设计协作模式，而不是被动接受AI的默认行为。',
-    '"非指导性修辞框架"是不打扰的关键——参与者最看重的不是AI建议的内容质量，而是它的"介入方式"。他们偏好轻量化的视觉提示（而不是弹窗打断），以及用提问而非断言的方式呈现建议（比如"这里是否缺少一个过渡段？"而非"你应该加一段过渡"）。这与心理学中的"自主性支持"（autonomy support）理念高度一致——最好的帮助是让人感觉"是我自己想到了这个"。',
-    '对Emma的启示：这篇论文直接连接了你三个方向——HCI（如何设计人机交互界面）、心理学（如何支持人的认知过程而不损害自主性）、产品设计（如何让AI工具真正好用而非只是"能用"）。你未来做AI产品经理时，一定会面对"AI该在什么时候、以什么方式介入用户工作流"的设计决策。这篇论文提供了一个优雅的框架：让AI成为主动但克制的思维伙伴，而非替代思考的自动化工具。在北师大的学习中，你可以深入探索"主动式AI"与"认知负荷"之间的关系——这也是HCI领域正在热议的前沿课题✨'
+    '"选择的悖论"揭示了AI情感支持的核心矛盾——论文最重要的发现不是"AI比人好"或"AI不如人"，而是"选择"本身决定了体验质量。当你主动选择和AI聊天时，你会觉得它很好；但当你是"被迫"接受AI而非人类时，评价就大幅下降。这和心理学中的"自我决定理论"（Self-Determination Theory）高度一致：自主性（autonomy）是内在动机的核心——同样是帮助，"我选择接受"和"我没有别的选择"带来的体验天差地别。',
+    '"偏好漂移"（preference shift）现象值得警惕——纵向实验发现，每天和AI进行个人化对话，会让用户逐渐更偏好AI、更不偏好人类支持。这不是一次性的效果，而是一个渐进的、路径依赖的过程。论文用"path-dependent"来描述这个机制：每一次选择AI，都让你下次更可能选AI。这类似于行为经济学中的"棘轮效应"——某些变化一旦发生就很难逆转。对于产品设计者来说，这意味着AI情感产品的用户留存可能不需要"做得越来越好"，只需要让用户形成习惯。',
+    '"个人化对话"是关键触发条件——并非所有AI对话都会改变偏好，只有当对话变得personal（涉及私人情感、个人经历）时，偏好才会从人类转向AI。这暗示了一个深层机制：当AI能够承接你的脆弱和隐私时，你对"被人类理解"的需求会被重新定义。这不是AI"更懂你"，而是你调整了对"理解"的期望标准。',
+    '对Emma的启示：这篇论文直接触及了你未来职业方向的核心议题。作为应用心理（用户研究）方向的学生和未来的AI产品经理，你会不断面对这个问题：AI情感支持的边界在哪里？论文暗示了一个产品设计中的伦理困境——最优的用户留存策略（让用户逐渐依赖AI）恰恰可能损害用户的社会连接能力。这正是"科技向善"不应该是口号、而应该成为设计约束的领域。你在北师大学习期间，可以深入研究：如何设计"增强而非替代人际连接"的AI产品？这个问题的答案，可能定义你整个职业生涯的价值✨'
   ],
-  takeaway: '这篇论文让我想到了一个核心命题：AI时代最重要的设计能力不是"如何让AI更聪明"，而是"如何让AI更懂人"。论文中的"technology probe"方法论也值得注意——它不是做大规模A/B测试，而是让少量用户在真实场景中深度使用一周，收集丰富的质性数据。这恰恰是心理学训练带来的独特优势：对"人的体验"的敏感度，不是写几行代码就能替代的。对于正在准备走向HCI/UX研究方向的Emma来说，这篇论文展示了如何将心理学洞见（自主性、认知负荷、元认知）转化为具体的产品设计决策（何时介入、如何呈现、给用户多大控制权）。这正是你"应用心理学+产品思维"复合背景的核心竞争力所在✨'
+  takeaway: '读完这篇论文，我想到一个比喻：AI情感支持就像甜食——当你主动选择时很美味，但如果你逐渐只吃甜食而不再吃正餐（真实的人际关系），营养就会失衡。论文最有价值的洞见是揭示了这种"失衡"是渐进的、不易察觉的——用户不会意识到自己正在减少对人类的依赖。对于Emma来说，这篇论文的价值在于：它同时展示了HCI研究方法论（纵向实验设计、大样本RCT）和心理学理论（自主性、路径依赖、社会连接）如何结合来回答一个既学术又现实的问题。当你将来设计AI产品时，请记住这个发现：最好的AI支持不是让用户离不开你，而是让他们在需要你的时候选择你，在需要人的时候仍然有力量走向人✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,41 +1391,41 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'contemplate', pos: 'v.', def: '深思，考虑（/ˈkɒntəmpleɪt/）' },
-  { word: 'prevalent', pos: 'adj.', def: '普遍的，流行的（/ˈprevələnt/）' },
-  { word: 'undermine', pos: 'v.', def: '逐渐削弱，破坏（/ˌʌndəˈmaɪn/）' },
-  { word: 'substantial', pos: 'adj.', def: '大量的，实质性的（/səbˈstænʃəl/）' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
-  { word: 'perceive', pos: 'v.', def: '察觉，感知（/pəˈsiːv/）' },
-  { word: 'implication', pos: 'n.', def: '含义，影响（/ˌɪmplɪˈkeɪʃən/）' },
-  { word: 'coherent', pos: 'adj.', def: '连贯的，一致的（/kəʊˈhɪərənt/）' },
-  { word: 'reinforce', pos: 'v.', def: '加强，强化（/ˌriːɪnˈfɔːs/）' },
-  { word: 'notion', pos: 'n.', def: '概念，观念（/ˈnəʊʃən/）' }
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
+  { word: 'inevitable', pos: 'adj.', def: '不可避免的，必然的（/ɪnˈevɪtəbl/）' },
+  { word: 'distinguish', pos: 'v.', def: '区分，辨别（/dɪˈstɪŋɡwɪʃ/）' },
+  { word: 'elaborate', pos: 'v.', def: '详细阐述（/ɪˈlæbərət/）' },
+  { word: 'perspective', pos: 'n.', def: '视角，观点（/pəˈspektɪv/）' },
+  { word: 'phenomenon', pos: 'n.', def: '现象（/fəˈnɒmɪnən/）' },
+  { word: 'emerge', pos: 'v.', def: '出现，浮现（/ɪˈmɜːdʒ/）' },
+  { word: 'fluctuate', pos: 'v.', def: '波动，起伏（/ˈflʌktʃueɪt/）' },
+  { word: 'cohesion', pos: 'n.', def: '凝聚力，团结（/kəʊˈhiːʒən/）' },
+  { word: 'empower', pos: 'v.', def: '授权，使有能力（/ɪmˈpaʊər/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 \xb7 Cue Card',
-  topic: 'Describe a skill you learned that was not taught in school but has been very useful',
-  bullet: 'You should say: what the skill is, how you learned it, why you decided to learn it, and explain in what situations you use this skill.',
-  sample: `A skill I learned outside of formal education that has been incredibly useful is time-blocking — a personal productivity technique where you divide your day into dedicated blocks of time for specific tasks.
+  topic: 'Describe a place you visited on holiday that made a strong impression on you',
+  bullet: 'You should say: where the place is, what it looks like, what you did there, and explain why it made such a strong impression on you.',
+  sample: `I'd like to talk about a trip I took to Dali in Yunnan Province about two years ago. It was during the summer after my sophomore year, and I went there with two of my closest friends from university.
 
-I first encountered this concept about two years ago when I was struggling to balance my graduation project, IELTS preparation, and part-time internship simultaneously. A senior student who had just been admitted to a top graduate programme mentioned it casually over coffee. She said, "I don't use to-do lists anymore. I use time blocks." That immediately caught my attention because I had always been a list person, and yet my lists kept growing longer while my actual productivity stayed flat.
+Dali is a city in southwestern China, nestled between the Cangshan Mountains and Erhai Lake. What struck me immediately was the quality of light — the sky was this unbelievable shade of blue that you just don't see in cities, and the clouds seemed to sit right on top of the mountain peaks, almost touchable. The old town has these traditional Bai minority houses with white walls and grey tiles, and flowers everywhere — bougainvillea climbing over every surface.
 
-The way I learned it was largely self-directed. I read a few articles, watched some YouTube videos by productivity researchers, and then — this is the important part — I experimented. I started with rigid 30-minute blocks, which felt suffocating within a week. Then I shifted to 90-minute "deep work" sessions inspired by Cal Newport's research, with shorter blocks for administrative tasks. I also learned to include buffer time between blocks, because in reality, things always take longer than you expect.
+We spent about five days there. One day we cycled around the entire lake, which took nearly eight hours but the scenery made it completely worth it — rice paddies, fishing boats, and these incredible sunsets reflecting off the water. Another day we hiked up Cangshan through these misty forest trails and came across a small temple where an elderly monk was brewing tea. He invited us to sit and talk, and despite the language barrier, there was something profoundly peaceful about that moment. We also wandered through the night markets, tried the local Xizhou flatbread, and just absorbed the slower pace of life.
 
-What makes this skill so useful is its versatility. I use it daily — for studying, for managing projects, even for ensuring I have dedicated time for exercise and rest. The key insight I've gained is that time-blocking isn't really about time management at all. It's about attention management. When you assign a specific purpose to each block, you eliminate the exhausting decision-making of "what should I work on next?" and you give your brain permission to fully focus on one thing. It's essentially applying the psychological principle of "implementation intentions" — you're not just setting goals, you're pre-committing to specific actions at specific times.`,
+The reason this place left such a deep impression on me goes beyond the physical beauty. At that point in my life, I was feeling quite overwhelmed — caught between thinking about graduate school applications, internship rejections, and this general anxiety about what I wanted to do with my life. Dali gave me physical and mental distance from all that pressure. Being somewhere where time moves differently, where people seemed content with simplicity, helped me realize that I'd been measuring my worth by entirely the wrong metrics. That week didn't solve all my problems, but it gave me the clarity to start thinking about what actually matters to me, rather than what I thought should matter.`,
   expressions: [
-    '\u{1f31f} caught my attention — 引起了我的注意',
-    '\u{1f31f} a list person — 习惯列清单的人',
-    '\u{1f31f} self-directed — 自主的，自我导向的',
-    '\u{1f31f} rigid 30-minute blocks — 严格的30分钟时间块',
-    '\u{1f31f} felt suffocating — 让人感到窒息',
-    '\u{1f31f} deep work sessions — 深度工作时段',
-    '\u{1f31f} buffer time — 缓冲时间',
-    '\u{1f31f} its versatility — 它的通用性',
-    '\u{1f31f} attention management — 注意力管理',
-    '\u{1f31f} eliminate the exhausting decision-making — 消除令人疲惫的决策过程',
-    '\u{1f31f} give your brain permission to — 让你的大脑允许自己……',
-    '\u{1f31f} implementation intentions — 执行意图（心理学术语）'
+    '\u{1f31f} nestled between — 坐落于……之间',
+    '\u{1f31f} what struck me immediately — 让我立刻印象深刻的是',
+    '\u{1f31f} almost touchable — 几乎触手可及',
+    '\u{1f31f} the scenery made it completely worth it — 风景让一切都值得了',
+    '\u{1f31f} absorbed the slower pace of life — 沉浸于更慢的生活节奏',
+    '\u{1f31f} feeling quite overwhelmed — 感到不堪重负',
+    '\u{1f31f} caught between — 在……之间左右为难',
+    '\u{1f31f} gave me physical and mental distance — 给了我身体和心理上的距离',
+    '\u{1f31f} measuring my worth by the wrong metrics — 用错误的标准衡量自己的价值',
+    '\u{1f31f} gave me the clarity to — 给了我清晰的认知去……',
+    '\u{1f31f} profoundly peaceful — 极其宁静的',
+    '\u{1f31f} beyond the physical beauty — 超越了外在的美'
   ]
 }
 function renderIelts() {
@@ -1471,13 +1471,13 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'We are all in the gutter, but some of us are looking at the stars.',
-  source: 'Oscar Wilde（奥斯卡·王尔德）《Lady Windermere\'s Fan》（温德米尔夫人的扇子, 1892）',
+  quote: 'It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way.',
+  source: 'Charles Dickens（查尔斯·狄更斯）《A Tale of Two Cities》（双城记, 1859）',
   analysis: [
-    '<b>一句话里的整个宇宙观</b>：王尔德用13个英文单词构建了一整套人生态度。"gutter"（阴沟）和"stars"（星星）的对比，不是简单的"悲观vs乐观"——它更深的含义是：所有人都身处困境（这是普遍的人类处境），但面对困境的姿态不同。有人低头看泥水，有人抬头看星空。王尔德没有说"看星星的人更好"，而是说"some of us"——这意味着选择仰望是一种主动的姿态，而不是天生的禀赋。',
-    '<b>积极心理学视角：同一处境，不同的解释风格</b>：Martin Seligman（积极心理学之父）提出的"解释风格"（explanatory style）理论与这句话形成精妙的呼应。面对同样的逆境，有人采用"永久化、普遍化、个人化"的消极解释（"一切都完了，什么都做不好，都是我的错"），有人则能看到暂时性、局部性和外部因素。王尔德在1892年就凭文学直觉捕捉到了这个心理学核心命题：决定我们命运的不是处境本身，而是我们如何看待处境。',
-    '<b>王尔德的"唯美主义"与心理韧性</b>：这句话常被误解为浪漫的空想主义，但结合王尔德的人生轨迹——他后来因社会偏见入狱、身败名裂、流亡巴黎——你会发现"looking at the stars"不是一种天真的乐观，而是一种深刻的精神选择。在《自深深处》（De Profundis）中，王尔德写道："Even in prison里，一个人也可以仰望窗户外的星空。"这不是鸡汤，而是一个经历过极端困境的人对"精神自由"的证词。心理学称之为"意义聚焦应对"（meaning-focused coping）——当外部处境无法改变时，人仍然可以选择赋予它什么样的意义。',
-    '<b>给Emma的话</b>：你即将进入北师大开始新的阶段，身边会有很多优秀的同学，压力和挑战都不小。王尔德这句话的温柔之处在于：他承认所有人都在"gutter"里——包括那些看起来光鲜的人。区别只是你有没有给自己保留一点仰望的空间。不需要每天都元气满满，但你可以在疲惫的时候记得：抬头看看窗外，今天的月亮好不好看，就够了✨'
+    '<b>文学史上最伟大的开篇：矛盾修辞的极致运用</b>：狄更斯用14组对立的意象（最好/最坏、智慧/愚蠢、信仰/怀疑、光明/黑暗、希望/绝望、天堂/另一个方向）构建了一幅时代的全景图。这不是简单的排比，而是一种文学技法叫做"antithesis"（对照法）——通过并置完全相反的概念，他创造了一种张力：每一个"最好"都暗含着"最坏"的种子，每一种"希望"都拖着"绝望"的影子。这种写法本身就在传达主题：你所处的时代是什么样的，取决于你站在哪一边看。',
+    '<b>认知心理学视角："框架效应"在19世纪就已经被文学捕捉</b>：Daniel Kahneman的"框架效应"（framing effect）告诉我们，同一件事用不同方式描述，会引发截然不同的判断。狄更斯在1859年就凭直觉掌握了这个道理——法国大革命是"最好的时代"还是"最坏的时代"？取决于你是贵族还是平民，是既得利益者还是被压迫者。他不是在描述一个客观现实，而是在揭示：<b>时代的面貌取决于观察者的位置</b>。这和应用心理学中的"认知重构"（cognitive reframing）异曲同工——改变你看待处境的框架，就改变了那个处境对你的意义。',
+    '<b>为什么这个开篇在167年后仍然震撼人心</b>：因为每一代人都能在其中看到自己。1859年的读者看到的是法国大革命的动荡，2020年代的我们看到的是AI革命、地缘冲突、气候危机下的时代焦虑。狄更斯的天才在于他没有给出答案——他没有说"这是最好的时代"或"这是最坏的时代"，而是让矛盾并存。这种"与不确定性共处"的能力，恰恰是心理学中"心理韧性"（resilience）的核心——不是非此即彼地判断好坏，而是承认复杂性、在矛盾中找到自己的位置。',
+    '<b>给Emma的话</b>：你现在正处在一个充满矛盾的时期——刚经历实习挫折，即将开始研究生新阶段；想要进大厂但面临激烈竞争；对AI方向充满热情但又担心被替代。狄更斯167年前写下的这句话，像是专门写给你现在的状态：这是最好的时代（你有北师大平台、心理学+AI的稀缺组合、年轻的时间资本），也是最坏的时代（就业市场卷、方向不确定、同辈压力无处不在）。关键不是判断"现在到底好不好"，而是记住：<b>我们拥有一切，也一无所有——而选择权始终在你手里</b>✨'
   ]
 }
 function renderLiterature() {
@@ -1508,16 +1508,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月3日 星期四',
+  date: '2026年9月4日 星期五',
   items: [
-    { tag: '国际', cls: 'news-intl', title: '美伊冲突持续升级：特朗普威胁"随时"再袭伊朗，伊朗称新战略将"摧毁敌方根基"', desc: '美军1日对伊朗发动新一轮打击后，特朗普2日在白宫表示"随时准备再次打击"。伊朗最高国家安全委员会秘书雷扎伊回应称已制定新战略，将"摧毁敌方根基"。伊朗革命卫队袭击科威特美军基地，称造成多名美方人员死亡。' },
-    { tag: '国际', cls: 'news-intl', title: '尼泊尔泥石流灾害遇难人数升至1222人，中国派出DNA鉴定专家驰援', desc: '尼泊尔泥石流灾害已致1222人遇难、4216人失联。中国紧急援助物资已抵达加德满都，5名DNA鉴定专家随机抵达协助救援。西藏吉隆口岸核心区域陆路救援通道已实现畅通。' },
-    { tag: '国内', cls: 'news-domestic', title: '台风"沙德尔"三次登陆福建，漳州多地发布暴雨红色预警', desc: '今年第18号台风"沙德尔"（热带风暴级）于9月3日上午在福建漳州漳浦古雷沿海第三次登陆，最大风力9级。漳州、宁德、汕头等多地发布暴雨红色预警。中国气象局预计2026年秋季还有2至4个台风影响中国。' },
-    { tag: '国内', cls: 'news-domestic', title: '中央网信办深入整治AI应用乱象，累计查处违规账号4.9万余个', desc: '截至目前，中央网信办已累计清理AI相关违法违规信息561万余条，查处账号4.9万余个，处置违规网站和应用程序2400余个，持续净化网络空间。' },
-    { tag: '国内', cls: 'news-domestic', title: '央行：全国30.56万家科技型中小企业获信贷支持，获贷率50.8%', desc: '截至6月末，全国有30.56万家科技型中小企业获得信贷支持，获贷率达50.8%，比上年末提高0.6个百分点。信贷资金加速流向科创企业，以更大力度支持新质生产力发展。' },
-    { tag: '科技', cls: 'news-tech', title: '全球首个太空算力云常态化运行，大模型推理能效达10词元/焦耳', desc: '北京邮电大学牵头建设的全球首个对外提供在轨试验服务的太空算力云正式常态化运行。基于国产原生软硬件生态，大模型推理能效比达到10词元/焦耳，已累计完成数百次太空算力调用，服务用户超过百家。' },
-    { tag: '科技', cls: 'news-tech', title: '我国在高端遥感动态成像关键技术领域取得重要突破', desc: '中国计量大学联合北京航空航天大学等机构，实现了小型低功耗约束下厘米级超高分辨率三维成像，突破了低空经济和智能视觉产业对场景信息精准捕捉的核心瓶颈，部分技术处于国际领先水平。' },
-    { tag: '国际', cls: 'news-intl', title: '美法官叫停特朗普政府"出生公民权"行政令，IMF警告全球经济高不确定性', desc: '美国联邦法官叫停特朗普政府关于"出生公民权"的最新行政令。与此同时，国际货币基金组织总裁表示全球经济前景仍面临高度不确定性，美国8月私营部门就业增幅创年初以来新低。' }
+    { tag: '科技', cls: 'news-tech', title: 'OpenAI发布GPT-6 Astra旗舰模型，多项基准测试刷新纪录', desc: 'OpenAI于9月4日正式发布新一代旗舰模型GPT-6 Astra，称其为全球最智能且对齐程度最高的AI系统。该模型在计算机使用、软件工程、网络安全等领域达到顶尖水平，FrontierMath测试得分98%，ARC-AGI-3得分99.9%。安全方面，在无生产防护下越权率为0%，较前代大幅改善。将逐步向ChatGPT Plus、Pro及API用户推出。' },
+    { tag: '国际', cls: 'news-intl', title: '美伊冲突持续：万斯称正调查伊朗婚礼遭袭事件，霍尔木兹海峡局势紧张', desc: '美国副总统万斯3日表示正在调查伊朗南部婚礼活动遭美军袭击事件（致4死50伤），同时称只要霍尔木兹海峡船只遇袭继续发生就不会与伊朗谈判。此前美军曾对伊朗发动多轮打击，伊朗则使用导弹和无人机反击科威特美军基地，局势持续升级。' },
+    { tag: '国内', cls: 'news-domestic', title: '台风"沙德尔"三次登陆我国，福建平潭全区停课', desc: '今年第18号台风"沙德尔"已在福建漳州三次登陆，持续影响南方多地。9月4日平潭发布紧急通知，全区中小学、幼儿园、培训机构停止一切教育教学活动。漳州、宁德等多地仍维持暴雨预警，南方强降雨天气预计持续。' },
+    { tag: '国际', cls: 'news-intl', title: '丁薛祥出席第十一届东方经济论坛全会并致辞，中埃元首续写文明交流佳话', desc: '丁薛祥出席在俄罗斯符拉迪沃斯托克举行的第十一届东方经济论坛全会并致辞。与此同时，习近平主席圆满结束对埃及的国事访问，与塞西总统共同参观大埃及博物馆，两大古老文明续写交流互鉴新篇章。' },
+    { tag: '国内', cls: 'news-domestic', title: '各地纪念抗战胜利81周年，"十五五"体育强国建设全面推进', desc: '全国各地举行纪念中国人民抗日战争暨世界反法西斯战争胜利81周年活动。国家体育总局发布"十五五"时期体育强国建设规划。广东打通粤港澳三地跨境协同创新要素流动堵点，推动大湾区打造全球科技创新高地。' },
+    { tag: '科技', cls: 'news-tech', title: '谷歌发布WeatherNext 3 AI天气模型，NVIDIA推出PAIR本地设备协同推理技术', desc: '谷歌DeepMind发布新一代AI天气模型WeatherNext 3，接入实时卫星数据实现每小时刷新和更精确降水预报。NVIDIA在IFA展会上宣布推出PAIR技术，可自动连接本地多设备并路由AI推理请求，提升Agent运行效率。' },
+    { tag: '国际', cls: 'news-intl', title: '尼日利亚非法装卸石油制品爆炸致约40人死亡', desc: '尼日利亚发生一起因非法装卸石油制品导致的爆炸事故，造成约40人死亡。事故发生在石油产品非法转运过程中，具体原因正在调查中。尼日利亚近年来多次发生类似事件，凸显了石油产区安全管理面临的严峻挑战。' },
+    { tag: '科技', cls: 'news-tech', title: '2026世界动力电池大会在宜宾开幕，多款AI硬件产品发布', desc: '9月3日世界动力电池大会在四川宜宾开幕，8家企业发布覆盖智能机器人、AI可穿戴设备、智慧显示等领域的AI硬件产品。其中包括支持70余种语言实时互译、准确率98%的AI录音背夹，以及面向家庭场景的AI桌面机器人等创新产品。' }
   ]
 }
 function renderNews() {
