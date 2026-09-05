@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'AI emotional support is better only when chosen, but shifts preferences even when it is not',
-  authors: 'Yaoxi Shi, Cathy Mengying Fang, Guy Laban, Pattie Maes, Amit Goldenberg',
-  venue: 'arXiv:2608.23196 · cs.AI + cs.HC · August 2026',
-  link: 'https://arxiv.org/abs/2608.23196',
-  date: '2026-09-04',
-  abstract: '人们在寻求情感支持时面临着一个全新的选择：人类还是AI？现有研究中，AI的共情消息被评为与人类一样好甚至更好，但这些研究要么直接分配了支持来源，要么尊重了参与者的选择。然而在现实生活中，获得的支持往往与个人偏好不一致——你想要人类倾听，却收到了AI回复。本研究通过三项实验（N=1,951）发现：参与者先选择向人类还是AI倾诉情感经历，然后被随机分配到与选择一致或不一致的伙伴。只有在主动选择AI的参与者中，AI支持才被评价为更优。但关键发现是：无论是否匹配初始偏好，与AI互动都会增加再次选择AI的意愿。在与OpenAI合作的28天纵向研究（N=981）中，日常对话将偏好从人类转向AI，但仅当对话涉及个人化内容时。研究揭示了一个令人深思的结论：情感支持的选择具有路径依赖性，正在逐渐将人们从人际连接中引向AI。',
+  title: 'GazeTune: Facilitating Precise Gaze-Driven Interactions with Cascaded Touch Input',
+  authors: 'Jina Kim, Eric J. Gonzalez, Yang Zhang, Sang Ho Yoon',
+  venue: 'arXiv:2609.00716 · cs.HC · September 2026 · Accepted to UIST\'26',
+  link: 'https://arxiv.org/abs/2609.00716',
+  date: '2026-09-05',
+  abstract: '视觉注视（eye gaze）已成为空间计算的核心输入方式，但其粗糙的定位精度和跳视（saccadic）特性限制了精确操控，尤其在用户运动状态下的拖拽等连续交互中表现不佳。gaze+pinch（注视+捏合）虽因便捷性成为XR标准交互，但空中手势存在精度低、易疲劳、社交不合宜等问题。本文提出GazeTune——一种级联式多模态交互技术，将注视与触摸相结合来精化注视驱动的选择与操控。触摸作为注视定位内的精调通道，实现精确的光标和目标控制。研究（N=20）对比了GazeTune与纯注视、注视+捏合在2D拖拽任务中的表现，结果表明GazeTune在保持执行时间相当的前提下显著降低了错误率，验证了其在时间-精度权衡中的有效性。',
   keyPoints: [
-    '"选择的悖论"揭示了AI情感支持的核心矛盾——论文最重要的发现不是"AI比人好"或"AI不如人"，而是"选择"本身决定了体验质量。当你主动选择和AI聊天时，你会觉得它很好；但当你是"被迫"接受AI而非人类时，评价就大幅下降。这和心理学中的"自我决定理论"（Self-Determination Theory）高度一致：自主性（autonomy）是内在动机的核心——同样是帮助，"我选择接受"和"我没有别的选择"带来的体验天差地别。',
-    '"偏好漂移"（preference shift）现象值得警惕——纵向实验发现，每天和AI进行个人化对话，会让用户逐渐更偏好AI、更不偏好人类支持。这不是一次性的效果，而是一个渐进的、路径依赖的过程。论文用"path-dependent"来描述这个机制：每一次选择AI，都让你下次更可能选AI。这类似于行为经济学中的"棘轮效应"——某些变化一旦发生就很难逆转。对于产品设计者来说，这意味着AI情感产品的用户留存可能不需要"做得越来越好"，只需要让用户形成习惯。',
-    '"个人化对话"是关键触发条件——并非所有AI对话都会改变偏好，只有当对话变得personal（涉及私人情感、个人经历）时，偏好才会从人类转向AI。这暗示了一个深层机制：当AI能够承接你的脆弱和隐私时，你对"被人类理解"的需求会被重新定义。这不是AI"更懂你"，而是你调整了对"理解"的期望标准。',
-    '对Emma的启示：这篇论文直接触及了你未来职业方向的核心议题。作为应用心理（用户研究）方向的学生和未来的AI产品经理，你会不断面对这个问题：AI情感支持的边界在哪里？论文暗示了一个产品设计中的伦理困境——最优的用户留存策略（让用户逐渐依赖AI）恰恰可能损害用户的社会连接能力。这正是"科技向善"不应该是口号、而应该成为设计约束的领域。你在北师大学习期间，可以深入研究：如何设计"增强而非替代人际连接"的AI产品？这个问题的答案，可能定义你整个职业生涯的价值✨'
+    '"级联交互"（cascaded interaction）的设计理念——这篇论文最核心的贡献不在于发明了新的输入方式，而在于提出了一种"粗调→精调"的分层交互范式。视觉注视负责快速定位（gross selection），触摸负责精确调整（fine control）。这和人类自然的视觉-运动协调机制高度一致：我们总是先用眼睛"扫"到目标区域，再用手去精确触碰。GazeTune的设计正是模仿了这种自然的感知-运动耦合（perception-action coupling），让技术适应人，而非让人适应技术。',
+    '"运动诱导不稳定"（Motion-Induced instability）问题的解决——论文关注了一个经常被忽视的实际场景：用户在移动中使用XR设备。当你走路、转头、甚至只是微微晃动时，纯注视输入的精度会急剧下降。GazeTune通过引入触摸作为"稳定锚点"来解决这个问题——这本质上是一种"多通道冗余"设计思路。当单一通道（注视）因外部干扰变得不可靠时，系统自动引入第二通道（触摸）来补偿。这和认知心理学中的"多感官整合"（multisensory integration）理论相呼应：大脑在面对不确定输入时，会加权整合多个感觉通道的信息来提高判断准确性。',
+    '"社交可接受性"（social acceptability）作为交互设计的隐性约束——论文提到空中手势"socially unacceptable"，这是一个被严重低估的设计维度。好的交互设计不仅要在实验室里表现好，还要在真实社会环境中让用户感到自在。GazeTune选择触摸作为精调通道，恰恰因为它是一种社交上"隐形"的操作——我们每天都在触摸屏上滑动，这完全不会引起他人注意。这提醒我们：好的交互设计不仅是技术上的突破，还要考虑社会心理因素。',
+    '对Emma的启示：这篇论文是HCI研究方法论的一个优秀范例——它展示了如何系统性地评估一种新的交互技术。实验设计包含了三种条件的被试内对比（within-subject design），测量了错误率和执行时间两个核心指标，还考虑了生态效度（用户在运动中的表现）。作为未来想做AI产品经理的你，这篇论文的价值在于：它展示了"理解人类感知和运动的局限性"如何直接转化为更好的产品设计。你的心理学背景+产品思维的组合，正好适合做这种"以人为中心"的技术设计✨'
   ],
-  takeaway: '读完这篇论文，我想到一个比喻：AI情感支持就像甜食——当你主动选择时很美味，但如果你逐渐只吃甜食而不再吃正餐（真实的人际关系），营养就会失衡。论文最有价值的洞见是揭示了这种"失衡"是渐进的、不易察觉的——用户不会意识到自己正在减少对人类的依赖。对于Emma来说，这篇论文的价值在于：它同时展示了HCI研究方法论（纵向实验设计、大样本RCT）和心理学理论（自主性、路径依赖、社会连接）如何结合来回答一个既学术又现实的问题。当你将来设计AI产品时，请记住这个发现：最好的AI支持不是让用户离不开你，而是让他们在需要你的时候选择你，在需要人的时候仍然有力量走向人✨'
+  takeaway: '读完这篇论文，我想到一个类比：GazeTune就像是用毛笔写字——先用眼睛锁定要写的位置（注视定位），然后用手指精细控制笔锋（触摸精调）。单独用眼睛写，太粗糙；单独用手指在空中写，太累且不稳。两者结合，才是最优解。论文给我的最大启发是：最好的交互设计往往不是发明全新的交互方式，而是找到一种优雅的方式来组合已有的输入通道，让它们各自发挥所长。对Emma来说，这篇论文的意义在于：它完美展示了HCI研究的核心逻辑——从人类的认知和感知特性出发，发现现有技术的局限，设计新的解决方案，再用严格的实验来验证。这正是你未来在做用户研究时会用的思维方式：理解人→发现问题→设计方案→验证效果✨'
 };
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1391,41 +1391,41 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
-  { word: 'inevitable', pos: 'adj.', def: '不可避免的，必然的（/ɪnˈevɪtəbl/）' },
-  { word: 'distinguish', pos: 'v.', def: '区分，辨别（/dɪˈstɪŋɡwɪʃ/）' },
-  { word: 'elaborate', pos: 'v.', def: '详细阐述（/ɪˈlæbərət/）' },
-  { word: 'perspective', pos: 'n.', def: '视角，观点（/pəˈspektɪv/）' },
-  { word: 'phenomenon', pos: 'n.', def: '现象（/fəˈnɒmɪnən/）' },
-  { word: 'emerge', pos: 'v.', def: '出现，浮现（/ɪˈmɜːdʒ/）' },
-  { word: 'fluctuate', pos: 'v.', def: '波动，起伏（/ˈflʌktʃueɪt/）' },
-  { word: 'cohesion', pos: 'n.', def: '凝聚力，团结（/kəʊˈhiːʒən/）' },
-  { word: 'empower', pos: 'v.', def: '授权，使有能力（/ɪmˈpaʊər/）' }
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
+  { word: 'unprecedented', pos: 'adj.', def: '前所未有的，空前的（/ʌnˈpresɪdentɪd/）' },
+  { word: 'constitute', pos: 'v.', def: '构成，组成（/ˈkɒnstɪtjuːt/）' },
+  { word: 'exacerbate', pos: 'v.', def: '加剧，使恶化（/ɪɡˈzæsəbeɪt/）' },
+  { word: 'prevalent', pos: 'adj.', def: '普遍的，流行的（/ˈprevələnt/）' },
+  { word: 'undermine', pos: 'v.', def: '逐渐削弱，损害（/ˌʌndəˈmaɪn/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
+  { word: 'substantial', pos: 'adj.', def: '大量的，实质性的（/səbˈstænʃəl/）' },
+  { word: 'reinforce', pos: 'v.', def: '加强，强化（/ˌriːɪnˈfɔːs/）' },
+  { word: 'implication', pos: 'n.', def: '含义，影响，暗示（/ˌɪmplɪˈkeɪʃən/）' }
 ]
 const ieltsSpeaking = {
   part: 'Part 2 \xb7 Cue Card',
-  topic: 'Describe a place you visited on holiday that made a strong impression on you',
-  bullet: 'You should say: where the place is, what it looks like, what you did there, and explain why it made such a strong impression on you.',
-  sample: `I'd like to talk about a trip I took to Dali in Yunnan Province about two years ago. It was during the summer after my sophomore year, and I went there with two of my closest friends from university.
+  topic: 'Describe a person who has inspired you to do something interesting',
+  bullet: 'You should say: who the person is, how you know them, what interesting thing they inspired you to do, and explain how they inspired you.',
+  sample: `I'd like to talk about my university documentary filmmaking teacher, Professor Jiang, who inspired me to pick up podcasting as a creative outlet.
 
-Dali is a city in southwestern China, nestled between the Cangshan Mountains and Erhai Lake. What struck me immediately was the quality of light — the sky was this unbelievable shade of blue that you just don't see in cities, and the clouds seemed to sit right on top of the mountain peaks, almost touchable. The old town has these traditional Bai minority houses with white walls and grey tiles, and flowers everywhere — bougainvillea climbing over every surface.
+I met Professor Jiang during my final year of undergraduate studies when she was supervising my graduation project — a documentary about a traditional Chinese craftswoman. She wasn't just technically brilliant; she had this extraordinary ability to listen — really listen — to people's stories without imposing her own narrative onto them. During filming, she taught me to sit in silence and let my interviewee find their own rhythm, rather than rushing to fill every pause with questions.
 
-We spent about five days there. One day we cycled around the entire lake, which took nearly eight hours but the scenery made it completely worth it — rice paddies, fishing boats, and these incredible sunsets reflecting off the water. Another day we hiked up Cangshan through these misty forest trails and came across a small temple where an elderly monk was brewing tea. He invited us to sit and talk, and despite the language barrier, there was something profoundly peaceful about that moment. We also wandered through the night markets, tried the local Xizhou flatbread, and just absorbed the slower pace of life.
+What she inspired me to do was start a podcast exploring the intersection of psychology and technology. One afternoon, we were discussing how people open up differently when they're not making eye contact — she pointed out that some of the most powerful documentary interviews happen when the camera isn't directly facing the subject. That observation completely shifted my perspective. I realised that the medium through which we communicate shapes the depth of what people are willing to share. So I started a small podcast where I interviewed graduate students about their experiences with anxiety, imposter syndrome, and career uncertainty — topics that people rarely discuss openly in face-to-face settings but would pour their hearts out about through a microphone.
 
-The reason this place left such a deep impression on me goes beyond the physical beauty. At that point in my life, I was feeling quite overwhelmed — caught between thinking about graduate school applications, internship rejections, and this general anxiety about what I wanted to do with my life. Dali gave me physical and mental distance from all that pressure. Being somewhere where time moves differently, where people seemed content with simplicity, helped me realize that I'd been measuring my worth by entirely the wrong metrics. That week didn't solve all my problems, but it gave me the clarity to start thinking about what actually matters to me, rather than what I thought should matter.`,
+What made Professor Jiang so inspiring wasn't just her expertise — it was her genuine curiosity about how people think and feel. She never lectured; instead, she asked questions that made you rethink your own assumptions. She taught me that the most interesting things happen when you create the right conditions for people to be themselves. That single insight has shaped not just my creative work, but how I approach every conversation in my daily life.`,
   expressions: [
-    '\u{1f31f} nestled between — 坐落于……之间',
-    '\u{1f31f} what struck me immediately — 让我立刻印象深刻的是',
-    '\u{1f31f} almost touchable — 几乎触手可及',
-    '\u{1f31f} the scenery made it completely worth it — 风景让一切都值得了',
-    '\u{1f31f} absorbed the slower pace of life — 沉浸于更慢的生活节奏',
-    '\u{1f31f} feeling quite overwhelmed — 感到不堪重负',
-    '\u{1f31f} caught between — 在……之间左右为难',
-    '\u{1f31f} gave me physical and mental distance — 给了我身体和心理上的距离',
-    '\u{1f31f} measuring my worth by the wrong metrics — 用错误的标准衡量自己的价值',
-    '\u{1f31f} gave me the clarity to — 给了我清晰的认知去……',
-    '\u{1f31f} profoundly peaceful — 极其宁静的',
-    '\u{1f31f} beyond the physical beauty — 超越了外在的美'
+    '\u{1f31f} supervising my graduation project — 指导我的毕业项目',
+    '\u{1f31f} imposing her own narrative onto them — 将自己的叙事强加于人',
+    '\u{1f31f} let my interviewee find their own rhythm — 让受访者找到自己的节奏',
+    '\u{1f31f} rushing to fill every pause — 急于填满每一个停顿',
+    '\u{1f31f} a creative outlet — 一种创造性的表达途径',
+    '\u{1f31f} completely shifted my perspective — 完全改变了我的视角',
+    '\u{1f31f} the medium shapes the depth of sharing — 媒介影响分享的深度',
+    '\u{1f31f} rarely discuss openly in face-to-face settings — 在面对面场景中很少公开讨论',
+    '\u{1f31f} pour their hearts out — 倾吐心声',
+    '\u{1f31f} genuine curiosity — 真诚的好奇心',
+    '\u{1f31f} rethink your own assumptions — 重新审视自己的假设',
+    '\u{1f31f} create the right conditions for — 为……创造合适的条件'
   ]
 }
 function renderIelts() {
@@ -1471,15 +1471,15 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: 'It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way.',
-  source: 'Charles Dickens（查尔斯·狄更斯）《A Tale of Two Cities》（双城记, 1859）',
+  quote: 'We are all in the gutter, but some of us are looking at the stars.',
+  source: 'Oscar Wilde（奥斯卡·王尔德）《Lady Windermere\'s Fan》（温德米尔夫人的扇子, 1892）',
   analysis: [
-    '<b>文学史上最伟大的开篇：矛盾修辞的极致运用</b>：狄更斯用14组对立的意象（最好/最坏、智慧/愚蠢、信仰/怀疑、光明/黑暗、希望/绝望、天堂/另一个方向）构建了一幅时代的全景图。这不是简单的排比，而是一种文学技法叫做"antithesis"（对照法）——通过并置完全相反的概念，他创造了一种张力：每一个"最好"都暗含着"最坏"的种子，每一种"希望"都拖着"绝望"的影子。这种写法本身就在传达主题：你所处的时代是什么样的，取决于你站在哪一边看。',
-    '<b>认知心理学视角："框架效应"在19世纪就已经被文学捕捉</b>：Daniel Kahneman的"框架效应"（framing effect）告诉我们，同一件事用不同方式描述，会引发截然不同的判断。狄更斯在1859年就凭直觉掌握了这个道理——法国大革命是"最好的时代"还是"最坏的时代"？取决于你是贵族还是平民，是既得利益者还是被压迫者。他不是在描述一个客观现实，而是在揭示：<b>时代的面貌取决于观察者的位置</b>。这和应用心理学中的"认知重构"（cognitive reframing）异曲同工——改变你看待处境的框架，就改变了那个处境对你的意义。',
-    '<b>为什么这个开篇在167年后仍然震撼人心</b>：因为每一代人都能在其中看到自己。1859年的读者看到的是法国大革命的动荡，2020年代的我们看到的是AI革命、地缘冲突、气候危机下的时代焦虑。狄更斯的天才在于他没有给出答案——他没有说"这是最好的时代"或"这是最坏的时代"，而是让矛盾并存。这种"与不确定性共处"的能力，恰恰是心理学中"心理韧性"（resilience）的核心——不是非此即彼地判断好坏，而是承认复杂性、在矛盾中找到自己的位置。',
-    '<b>给Emma的话</b>：你现在正处在一个充满矛盾的时期——刚经历实习挫折，即将开始研究生新阶段；想要进大厂但面临激烈竞争；对AI方向充满热情但又担心被替代。狄更斯167年前写下的这句话，像是专门写给你现在的状态：这是最好的时代（你有北师大平台、心理学+AI的稀缺组合、年轻的时间资本），也是最坏的时代（就业市场卷、方向不确定、同辈压力无处不在）。关键不是判断"现在到底好不好"，而是记住：<b>我们拥有一切，也一无所有——而选择权始终在你手里</b>✨'
+    '<b>极简主义中的无限张力：一句话构建整个世界观</b>：王尔德用仅仅18个英文单词，就完成了一次哲学上的"哥白尼式革命"。前半句"We are all in the gutter"把人拉入最卑微的处境——gutter（阴沟）是伦敦街头最肮脏的排水沟，象征着贫困、卑微、被社会遗忘的处境。然而后半句"but some of us are looking at the stars"瞬间将视角从地面抬升到星空。这个转折的惊人之处在于：它没有否认前半句的真实性（我们确实都在阴沟里），而是引入了一个全新的维度——<b>你看向哪里，决定了你是谁</b>。这不是鸡汤式的乐观主义，而是一种深刻的存在主义宣言。',
+    '<b>心理学视角："注意力选择"决定主观现实</b>：积极心理学创始人Martin Seligman提出的"习得性乐观"（learned optimism）认为，面对同样的困境，个体的解释风格（explanatory style）决定了心理健康水平。王尔德在130多年前就用文学语言捕捉了这个心理学洞见：阴沟是客观现实（无法选择的处境），但仰望星空是一种主观选择（注意力的方向）。更精妙的是"some of us"这个表述——王尔德没有说"所有人都应该看星星"，而是承认有些人选择只盯着阴沟。这和Carol Dweck的"成长型思维"（growth mindset）异曲同工：重要的不是你在哪里，而是你的目光朝向何方。',
+    '<b>为什么王尔德的句子比任何心灵鸡汤都有力</b>：因为它包含了诚实。"We are ALL in the gutter"——这个"all"承认了困境的普遍性，没有回避、没有美化。王尔德首先是一个诚实的人，他知道生活的残酷。然后他在这个残酷之上加了一个"but"，这个转折之所以有力，恰恰因为它建立在对现实的充分承认之上。这和心理学中的"接纳与承诺疗法"（ACT）的核心理念一致：不是否认痛苦，而是在接纳痛苦的同时选择有意义的行动方向。',
+    '<b>给Emma的话</b>：你现在正处在一个人生的"gutter"时刻——刚被实习辞退、即将进入一个新环境、前方充满不确定性。但这句话提醒我们：处境不等于命运。你选择在备考雅思、学习数据分析、规划PhD申请——这些都是"仰望星空"的姿态。不是因为你已经脱离了困境，而是因为你选择在困境中仍然看向更高处。王尔德自己的一生就是这句话的注脚：他在社会地位跌入谷底时（入狱、流放），仍然写出了《自深深处》（De Profundis）这样美丽的文字。阴沟是暂时的，但仰望星空的习惯，会让你永远保持向上的力量✨'
   ]
-}
+};
 function renderLiterature() {
   const el = document.getElementById('litContent');
   let data = litData;
@@ -1508,18 +1508,18 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月4日 星期五',
+  date: '2026年9月5日 星期五',
   items: [
-    { tag: '科技', cls: 'news-tech', title: 'OpenAI发布GPT-6 Astra旗舰模型，多项基准测试刷新纪录', desc: 'OpenAI于9月4日正式发布新一代旗舰模型GPT-6 Astra，称其为全球最智能且对齐程度最高的AI系统。该模型在计算机使用、软件工程、网络安全等领域达到顶尖水平，FrontierMath测试得分98%，ARC-AGI-3得分99.9%。安全方面，在无生产防护下越权率为0%，较前代大幅改善。将逐步向ChatGPT Plus、Pro及API用户推出。' },
-    { tag: '国际', cls: 'news-intl', title: '美伊冲突持续：万斯称正调查伊朗婚礼遭袭事件，霍尔木兹海峡局势紧张', desc: '美国副总统万斯3日表示正在调查伊朗南部婚礼活动遭美军袭击事件（致4死50伤），同时称只要霍尔木兹海峡船只遇袭继续发生就不会与伊朗谈判。此前美军曾对伊朗发动多轮打击，伊朗则使用导弹和无人机反击科威特美军基地，局势持续升级。' },
-    { tag: '国内', cls: 'news-domestic', title: '台风"沙德尔"三次登陆我国，福建平潭全区停课', desc: '今年第18号台风"沙德尔"已在福建漳州三次登陆，持续影响南方多地。9月4日平潭发布紧急通知，全区中小学、幼儿园、培训机构停止一切教育教学活动。漳州、宁德等多地仍维持暴雨预警，南方强降雨天气预计持续。' },
-    { tag: '国际', cls: 'news-intl', title: '丁薛祥出席第十一届东方经济论坛全会并致辞，中埃元首续写文明交流佳话', desc: '丁薛祥出席在俄罗斯符拉迪沃斯托克举行的第十一届东方经济论坛全会并致辞。与此同时，习近平主席圆满结束对埃及的国事访问，与塞西总统共同参观大埃及博物馆，两大古老文明续写交流互鉴新篇章。' },
-    { tag: '国内', cls: 'news-domestic', title: '各地纪念抗战胜利81周年，"十五五"体育强国建设全面推进', desc: '全国各地举行纪念中国人民抗日战争暨世界反法西斯战争胜利81周年活动。国家体育总局发布"十五五"时期体育强国建设规划。广东打通粤港澳三地跨境协同创新要素流动堵点，推动大湾区打造全球科技创新高地。' },
-    { tag: '科技', cls: 'news-tech', title: '谷歌发布WeatherNext 3 AI天气模型，NVIDIA推出PAIR本地设备协同推理技术', desc: '谷歌DeepMind发布新一代AI天气模型WeatherNext 3，接入实时卫星数据实现每小时刷新和更精确降水预报。NVIDIA在IFA展会上宣布推出PAIR技术，可自动连接本地多设备并路由AI推理请求，提升Agent运行效率。' },
-    { tag: '国际', cls: 'news-intl', title: '尼日利亚非法装卸石油制品爆炸致约40人死亡', desc: '尼日利亚发生一起因非法装卸石油制品导致的爆炸事故，造成约40人死亡。事故发生在石油产品非法转运过程中，具体原因正在调查中。尼日利亚近年来多次发生类似事件，凸显了石油产区安全管理面临的严峻挑战。' },
-    { tag: '科技', cls: 'news-tech', title: '2026世界动力电池大会在宜宾开幕，多款AI硬件产品发布', desc: '9月3日世界动力电池大会在四川宜宾开幕，8家企业发布覆盖智能机器人、AI可穿戴设备、智慧显示等领域的AI硬件产品。其中包括支持70余种语言实时互译、准确率98%的AI录音背夹，以及面向家庭场景的AI桌面机器人等创新产品。' }
+    { tag: '科技', cls: 'news-tech', title: 'IFA 2026柏林开幕：机器人与AI成绝对主角', desc: '全球最大消费电子展IFA 2026于9月5日在柏林开幕，本届展会以机器人与人工智能为绝对核心主题。中国机器人企业大规模亮相，展示了从家庭服务到人机协作的多种产品。NVIDIA推出PAIR技术实现本地多设备AI推理协同，标志着边缘智能进入新阶段。' },
+    { tag: '国内', cls: 'news-domestic', title: '我国启动国际地月立方星座大科学计划', desc: '记者从2026年深空探测国际会议获悉，我国正式启动国际地月立方星座大科学计划，拟联合多国在地月空间部署卫星群，开展空间环境监测、伽马射线暴探测和月球资源勘探，计划2030年左右完成全部卫星发射，填补全球地月空间系统性观测空白。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普证实美特使将访问俄乌，称可能很快打击伊朗核设施', desc: '美国总统特朗普证实特使威特科夫和库什纳将前往莫斯科和基辅斡旋俄乌冲突，并表示将向俄方提交结束冲突的方案。同时特朗普称美国"可能很快"对伊朗核设施实施打击，中东紧张局势持续升级。' },
+    { tag: '国内', cls: 'news-domestic', title: '受台风"沙德尔"影响福建转移近60万人，多地灾后恢复中', desc: '台风"沙德尔"带来的强降雨已促使福建全省转移群众约59.93万人。目前强降雨基本停歇，各地正全力开展灾后恢复工作。气象部门提醒北方6日起降雨将明显增多，大部地区降温显著。' },
+    { tag: '科技', cls: 'news-tech', title: '美国8月非农大超预期，美联储9月加息概率升至58%', desc: '美国劳工统计局公布8月非农就业新增16.2万人，远超市场预期的5.6万人，失业率维持4.1%。数据公布后美债收益率大幅上行，市场将美联储9月加息概率从此前不足30%上调至58%，劳动力市场韧性令降息预期彻底逆转。' },
+    { tag: '国际', cls: 'news-intl', title: '美国麻疹病例突破3100例，疫苗接种率持续下降引发公共卫生担忧', desc: '美国2026年已记录超过3100例麻疹病例，公共卫生专家警告疫苗接种覆盖率的持续下降正在导致曾经被控制的传染病重新抬头。夏威夷因飓风洛厄尔进入紧急状态，多重危机考验美国应急体系。' },
+    { tag: '国际', cls: 'news-intl', title: '韩国考虑向霍尔木兹海峡派兵，青瓦台称仍在研究审议阶段', desc: '应美国要求，韩国政府正考虑向霍尔木兹海峡派遣兵力，包括海上巡逻机、爆炸物处理小组及海军军需支援舰。青瓦台表示按程序研究审议中，尚未作出最终决定。分析认为此举与特朗普施压缩减美韩联合军演有关。' },
+    { tag: '国内', cls: 'news-domestic', title: '教育部：规范涉师争议投诉处理，对不实举报"零容忍"', desc: '教育部9月4日举行发布会表示，将规范涉师争议投诉处理程序，畅通教师法律咨询和援助渠道。对捏造事实、恶意诽谤教师的行为将联合相关部门依法严肃处理。同时我国积极推进动力电池热管理等国际标准研制，为全球产业协同发展提供标准化支撑。' }
   ]
-}
+};
 function renderNews() {
   let data = newsData;
   let isHistory = false;
