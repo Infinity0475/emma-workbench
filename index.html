@@ -1341,20 +1341,21 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'The Policy Deficit in AI x Social-Emotional Learning Research',
-  authors: 'Tran Van Cuong, Liu Yihan, Nguyen Van Tuong',
-  venue: "arXiv:2608.29950 · cs.HC; cs.AI · August 2026 · Journal Submission",
-  link: 'https://arxiv.org/abs/2608.29950',
-  date: '2026-09-07',
-  abstract: '随着人工智能（AI）越来越多地融入社会情感学习（SEL）项目，对循证政策的需求变得至关重要。本文系统综述了65篇探讨AI与SEL交叉领域的同行评审论文，分析这些研究如何阐述政策启示。研究发现当前AI×SEL文献存在显著的"政策赤字"：近四分之三的研究完全没有提及政策启示。通过"WH-问题"框架（Who、What、Why、When/Where、How），研究绘制了现有文献中政策启示的叙事地图，发现它们往往缺乏有效循证决策所需的具体性和行动导向性。研究还发现发表场域与政策参与度之间存在显著关联，表明当前学术激励结构可能优先考虑技术创新和教学可行性，而非对治理与监管的明确参与。',
+  title: 'Grounding GUI Design in Computational Psychology',
+  authors: 'Xianni Wang, Javier Romero Davila, Saku Sourulahti, Torsten Schaub, Jussi P. P. Jokinen',
+  venue: 'arXiv:2609.03918 · cs.HC · September 2026 · Submitted to IJHCS',
+  link: 'https://arxiv.org/abs/2609.03918',
+  date: '2026-09-08',
+  abstract: '创建视觉上吸引人的用户界面通常需要大量手动迭代。本文提出了一种应用答案集编程（ASP）方法，自动生成和优化UI布局，同时满足网格对齐、分组、色彩和谐、留白等设计目标以及设计师的指定偏好。该方法对元素属性和相对位置编码约束，生成兼顾功能性与美学目标的布局。研究通过三项实验评估该方法：在两项用户研究中，参与者对完整ASP模型生成的布局评分显著高于随机设计和基于简单启发式规则的设计。设计师反馈ASP生成的布局能够有效支持早期阶段的草图绘制和探索性设计。',
   keyPoints: [
-    '"政策赤字"这个概念直击要害：65篇AI×SEL论文中，近75%完全没有讨论政策启示。这意味着技术研究者在开发AI教育工具时，几乎没有考虑"谁来监管、如何落地、怎样评估"等关键治理问题。对Emma的启示是：未来AI产品经理的核心竞争力之一，就是能把技术能力翻译成政策语言——你的心理学背景让你天然理解"什么情况下AI会伤害用户"。',
-    '论文提出的"WH-问题"框架（Who应行动、What行动被推荐、Why需要这些行动、When/Where适用、How强烈地被框定）非常实用。它本质上是一种"利益相关者分析法"——和产品设计中的stakeholder mapping异曲同工。做AI产品时，我们不仅要问"技术能做什么"，更要问"谁该负责、在哪里部署、何时介入"。',
-    '研究揭示了"技术解决主义陷阱"（techno-solutionist trap）：学术界倾向于强调技术潜力，却忽视负责实施所需的制度条件。这和产品设计中的"功能堆砌"问题类似——做了很多功能却没有想清楚用户场景和落地路径。对HCI研究者和产品经理来说，这是一个重要的警示：创新不等于价值。',
-    '论文提出的从"implication-as-afterthought"（政策启示作为事后补充）到"implication-as-methodology"（政策启示作为方法论）的转变，对Emma特别有启发：你在北师大学习用户研究方法时，可以把"政策影响评估"纳入你的研究框架设计，这会让你在未来的HCI研究中具备独特的系统性视角✨'
+    '这篇论文直接站在心理学与HCI的交叉点上——用计算心理学原理（格式塔原则、色彩理论、视觉层次）来驱动UI自动生成。对Emma的启示是：你的应用心理学训练不是"锦上添花"，而是AI时代产品设计的核心竞争力。当工程师在调参数时，你能从认知心理学角度说出"为什么用户觉得这个布局舒服"。',
+    '方法论层面很有意思：ASP（答案集编程）本质上是一种约束满足问题求解器——把设计规则编码为逻辑约束（如"标题必须在视觉层级最上方""相关元素间距<20px"），然后让求解器自动搜索最优解。这和产品经理做需求分析的思路很像：先把所有约束条件列清楚（用户目标、技术限制、商业需求），再找最优方案。区别在于，产品经理用直觉和经验，ASP用数学保证。',
+    '用户研究结果显示，设计师认为ASP生成的布局"最适合早期探索阶段"——注意不是最终交付阶段。这暗示了一个重要的产品洞察：AI设计工具的最佳定位不是"替代设计师"，而是"帮设计师快速发散思路"。就像头脑风暴时你需要一个不断给你出主意的搭档，而不是一个比你画得更好的机器。这个定位对Emma思考AI产品经理方向很有参考价值。',
+    '论文发表在IJHCS（International Journal of Human-Computer Studies）投稿中，这是HCI领域最顶级的期刊之一。研究方向"计算心理学+设计自动化"正好是Emma未来HCI PhD申请中可能涉及的课题领域——如果读研期间能做类似方向的课题，会是非常强的学术背景提升✨'
   ],
-  takeaway: '这篇论文最打动我的观点是：AI教育产品不能只问"能不能做"，更要问"该不该做、谁来做、怎么做才对"。作者用65篇论文的数据证明，大多数AI×SEL研究都在"自说自话"——技术创新写得很漂亮，但对政策制定者、学校管理者、家长这些真正需要行动指南的人，几乎没有提供有用信息。这让我想到一个比喻：就像一个人拼命研究怎么做出一道完美的菜，却不考虑食客有没有食物过敏、厨房有没有灭火器。Emma的心理学训练恰恰能填补这个空白——你能看到"技术之外的人"，这是HCI领域最稀缺的能力✨'
+  takeaway: '今天这篇论文让我想到一个很有趣的问题：设计的本质到底是"创造美"还是"解决约束"？ASP方法的思路是后者——把所有设计问题变成约束满足问题，然后用计算求解。但这恰恰揭示了设计中最难被计算化的部分：哪些约束是重要的？当"色彩和谐"和"信息层级"冲突时，谁优先？这些判断背后是人类对"好设计"的直觉理解，而这种直觉恰恰来自心理学。Emma正在走的路——心理学+用户研究+HCI——正好站在"告诉机器什么才算好设计"这个最关键的位置上✨'
 };
+
 function renderPaper() {
   const el = document.getElementById('paperContent');
   let data = paperData;
@@ -1391,43 +1392,42 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'culminate', pos: 'v.', def: '达到顶点，以…告终（/ˈkʌlmɪneɪt/）' },
-  { word: 'prevalent', pos: 'adj.', def: '普遍的，流行的（/ˈprevələnt/）' },
-  { word: 'undermine', pos: 'v.', def: '逐渐削弱，破坏…的基础（/ˌʌndəˈmaɪn/）' },
-  { word: 'substantial', pos: 'adj.', def: '大量的，实质性的（/səbˈstænʃl/）' },
-  { word: 'inherent', pos: 'adj.', def: '固有的，内在的（/ɪnˈhɪərənt/）' },
-  { word: 'fluctuate', pos: 'v.', def: '波动，起伏不定（/ˈflʌktʃueɪt/）' },
-  { word: 'reinforce', pos: 'v.', def: '加强，强化（/ˌriːɪnˈfɔːs/）' },
-  { word: 'viable', pos: 'adj.', def: '可行的，切实可行的（/ˈvaɪəbl/）' },
-  { word: 'attribute', pos: 'v.', def: '把…归因于（/əˈtrɪbjuːt/）' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' }
+  { word: 'comprehensive', pos: 'adj.', def: '全面的，综合的（/\u02cckɒmpr\u026a\u02c8hens\u026av/）' },
+  { word: 'phenomenon', pos: 'n.', def: '现象，非凡的人或事物（/f\u026a\u02c8nɒm\u026an\u0259n/）' },
+  { word: 'hypothesis', pos: 'n.', def: '假说，假设（/ha\u026a\u02c8pɒθ\u0259s\u026as/）' },
+  { word: 'allocate', pos: 'v.', def: '分配，拨出（/\u02c8\u00e6ləke\u026at/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验主义的，实证的（/\u026am\u02c8p\u026ar\u026akl/）' },
+  { word: 'diminish', pos: 'v.', def: '减少，缩小（/d\u026a\u02c8m\u026an\u026a\u0283/）' },
+  { word: 'perspective', pos: 'n.', def: '视角，观点，透视法（/p\u0259\u02c8spekt\u026av/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/f\u0259\u02c8s\u026al\u026ate\u026at/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/\u02c8p\u00e6r\u0259da\u026am/）' },
+  { word: 'derive', pos: 'v.', def: '源于，推导出（/d\u026a\u02c8ra\u026av/）' }
 ]
 const ieltsSpeaking = {
-  part: 'Part 2 · Cue Card',
-  topic: 'Describe a quiet place you like to go to',
-  bullet: 'You should say: where it is, how you found it, what you do there, and explain why you like this quiet place.',
-  sample: `I'd like to talk about a small reading room on the third floor of my university library — it's probably the quietest place I've ever been to, and it has become somewhat of a sanctuary for me over the past year.
+  part: 'Part 2 \u00b7 Cue Card',
+  topic: 'Describe a skill you would like to learn in the future',
+  bullet: 'You should say: what the skill is, why you want to learn it, how you would learn it, and explain how you think this skill would be useful to you.',
+  sample: `I\u2019d like to talk about a skill I\u2019ve been thinking about picking up seriously, which is data visualisation \u2014 specifically, using tools like Python with libraries such as Matplotlib or Tableau to turn raw data into compelling visual stories.
 
-I stumbled upon it almost by accident during my first week at university. I was wandering around the library trying to find a seat, and I took a wrong turn down a corridor. At the end of it, there was this tiny room with floor-to-ceiling windows overlooking a courtyard full of bamboo. There were only about eight seats, and hardly anyone seemed to know about it.
+The reason I want to learn this goes back to my graduate studies. I\u2019m about to start a master\u2019s programme in applied psychology with a focus on user research, and I\u2019ve realised that one of the biggest challenges in this field isn\u2019t collecting data \u2014 it\u2019s communicating what the data actually means to people who aren\u2019t researchers. A beautifully designed chart can make a hundred-page report obsolete because it lets stakeholders grasp the key insight in seconds.
 
-Now I go there at least three or four times a week, usually in the late afternoon. I don't always read — sometimes I just sit and journal, or work through ideas for essays. The thing about that room is that it forces you to slow down. There's no WiFi signal in that corner of the building, which initially frustrated me, but I've come to realise it's actually a blessing. Without the constant ping of notifications, I can actually think in complete sentences again.
+As for how I\u2019d learn it, I\u2019ve already started with some online courses on Coursera and YouTube. But I think the most effective way will be learning by doing \u2014 taking real datasets from my research projects and trying to visualise them in ways that are both accurate and aesthetically pleasing. I also plan to study the work of designers like Edward Tufte, who wrote extensively about the visual display of quantitative information.
 
-The reason I love this place so much is precisely because it's quiet in a way that feels intentional, not empty. The bamboo outside sways gently, and you can hear birds occasionally. It's the kind of silence that doesn't feel lonely — it feels like the room is holding space for you to be with your own thoughts. In a world where we're constantly bombarded with information and social stimuli, having a place where you can just… be… is incredibly valuable.
-
-I think this is also why I've started to become more interested in environmental psychology — how the spaces we inhabit shape our mental states. That reading room taught me that sometimes the best thing you can do for your mind is to remove stimulation rather than add it.`,
+I believe this skill would be incredibly useful for me because it sits right at the intersection of my interests: psychology, design, and technology. In user research, you\u2019re constantly synthesising qualitative and quantitative findings \u2014 interview quotes, survey results, behavioural metrics \u2014 and you need to present them in a way that tells a coherent story. Being able to do that visually would make me a much more effective communicator, whether I\u2019m presenting to a product team or writing an academic paper. It\u2019s the kind of skill that compounds over time: the better you get at showing data clearly, the more influence your research has on actual decisions.`,
   expressions: [
-    '🌟 somewhat of a sanctuary — 算是某种避风港',
-    '🌟 stumbled upon it — 偶然发现',
-    '🌟 floor-to-ceiling windows — 落地窗',
-    '🌟 forces you to slow down — 迫使你慢下来',
-    '🌟 think in complete sentences — 完整地思考（不被打断）',
-    '🌟 holding space for you — 为你留出一段空间',
-    '🌟 bombarded with information — 被信息轰炸',
-    '🌟 environmental psychology — 环境心理学',
-    '🌟 the spaces we inhabit shape our mental states — 我们所处的空间塑造我们的心理状态',
-    '🌟 remove stimulation rather than add it — 减少刺激而非增加刺激'
+    '\u{1f31f} picking up seriously \u2014 \u8ba4\u771f\u5730\u5b66\u4e60\uff08\u67d0\u9879\u6280\u80fd\uff09',
+    '\u{1f31f} turn raw data into compelling visual stories \u2014 \u628a\u539f\u59cb\u6570\u636e\u8f6c\u5316\u4e3a\u5f15\u4eba\u5165\u80dc\u7684\u89c6\u89c9\u53d9\u4e8b',
+    '\u{1f31f} communicating what the data actually means \u2014 \u4f20\u8fbe\u6570\u636e\u7684\u771f\u6b63\u542b\u4e49',
+    '\u{1f31f} learning by doing \u2014 \u5728\u5b9e\u8df5\u4e2d\u5b66\u4e60',
+    '\u{1f31f} aesthetically pleasing \u2014 \u7f8e\u89c2\u7684\uff0c\u4ee4\u4eba\u6109\u60a6\u7684',
+    '\u{1f31f} the visual display of quantitative information \u2014 \u5b9a\u91cf\u4fe1\u606f\u7684\u89c6\u89c9\u5316\u5448\u73b0',
+    '\u{1f31f} sits right at the intersection of \u2014 \u6b63\u597d\u4f4d\u4e8e\u2026\u7684\u4ea4\u53c9\u70b9',
+    '\u{1f31f} synthesising qualitative and quantitative findings \u2014 \u7efc\u5408\u5b9a\u6027\u4e0e\u5b9a\u91cf\u7814\u7a76\u53d1\u73b0',
+    '\u{1f31f} tells a coherent story \u2014 \u8bb2\u8ff0\u4e00\u4e2a\u8fde\u8d2f\u7684\u6545\u4e8b',
+    '\u{1f31f} compounds over time \u2014 \u968f\u65f6\u95f4\u590d\u5408\u589e\u957f'
   ]
 }
+
 function renderIelts() {
   let vocab = ieltsVocab;
   let speaking = ieltsSpeaking;
@@ -1471,15 +1471,16 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '她有一种感觉，虽然从未用言语表达过，那就是：生活不仅仅是一连串赛马场短马鞍袋式的马鞍和马鞍袋。生命有更深的意义。人不能被当作赛马场上的赌注，不能只被当作一匹快马，虽然它跑得飞快。',
-  source: '弗吉尼亚·伍尔夫《达洛维夫人》（1925年）· 朱虹桥译',
+  quote: '凡事都有偶然的凑巧，结果却又如宿命的必然。两个人在一起谈着话，不说话的时候，也仍然觉得不寂寞。',
+  source: '沈从文《边城》（1934年）',
   analysis: [
-    '<b>"意识流"技法的精髓：捕捉那些"尚未被说出"的东西</b>：伍尔夫是意识流文学的巅峰代表。这段文字不是在描述一个角色的行为或外貌，而是在捕捉她"从未用言语表达过"的感觉——这正是意识流的核心追求：写出思维在语言之前的状态。伍尔夫相信，人的真实体验往往发生在语言之前，是一种模糊的、尚未成形的"预感"。这种写法对心理学的启示是：人类最深层次的需求和感受，往往无法通过直接提问获取——这也是为什么用户研究中"观察"比"问卷"更有价值。',
-    '<b>"赛马场短马鞍袋"：伍尔夫式的日常反抗</b>：Clarissa用"赛马场短马鞍袋"（saddle-bags）来比喻那种被压缩的、功利化的生活。这个意象极其精妙——赛马场代表着速度、竞争、结果导向，马鞍袋则是赛马的附属品，只为了装东西而存在。Clarissa拒绝被这样定义：她不想成为别人眼中的"有用之物"，而想探寻生命"更深的意义"。这段话写于1925年，但读起来像是对当代"内卷文化"的回应——当你被KPI、deadline、绩效考核包围时，伍尔夫提醒你：你不是工具，你有更深的意义。',
-    '<b>"生命有更深的意义"：一个存在主义命题的文学表达</b>：这句话是整部小说的精神核心。Clarissa表面上是一位上流社会的家庭主妇，正在筹备一场晚宴，但伍尔夫通过意识流手法，让我们看到她内心深处的存在主义追问：生命的意义到底是什么？这个问题在心理学中对应着Victor Frankl所说的"意义意志"（will to meaning）——人类最根本的驱动力不是追求快乐或权力，而是追求意义。',
-    '<b>给Emma的话</b>：你现在也站在某种"赛马场"的边缘——即将进入研究生阶段、面对未来的职业选择、在大城市和理想之间拉扯。伍尔夫的Clarissa提醒你：不要只看到"有用的"那条路——考研、实习、进大厂。这些当然重要，但生命的"更深的意义"往往藏在你真正热爱的事情里——也许是用纪录片记录被遗忘的手艺人，也许是研究如何让AI更好地理解人的情感。在忙碌中，记得偶尔停下来问问自己：我生命中那个"更深的意义"是什么？✨'
+    '<b>"偶然的凑巧"与"宿命的必然"：沈从文的东方宿命美学</b>：这句话是《边城》全书精神内核的浓缩。翠翠和傩送的爱情、爷爷的离世、渡口的守候——一切看似巧合叠加，却仿佛冥冥中自有安排。沈从文不写"命运弄人"的悲愤，而是写一种温润的接受：生活就是这样，偶然的背后藏着某种更深的秩序。这种态度和心理学中的"接纳承诺疗法"（ACT）有异曲同工之妙——不是对抗命运，而是学会与之共处。',
+    '<b>"不说话的时候，也仍然觉得不寂寞"：最高级的亲密关系</b>：这句话写的是翠翠和爷爷之间那种不需要语言的默契。心理学上，这被称为"安全的沉默"（comfortable silence）——两个人之间有足够的信任和连接，以至于沉默不会引发焦虑，反而成为一种温暖的陪伴。Donald Winnicott所说的"独处能力"（capacity to be alone）正是建立在这种早期安全关系之上：因为曾经被温柔地陪伴过，所以即使独处也不会感到空虚。',
+    '<b>语言的极简与情感的极丰：沈从文的叙事克制</b>：整段话没有一个华丽辞藻，没有一个感叹号，却让人读完眼眶发热。这就是沈从文的力量——他用最少的文字承载最深的情感。这种写法对写作的启示是：好的文字不是堆砌修辞，而是在精准的位置放上精准的句子。"不寂寞"三个字比任何华丽的比喻都更有力量。对于Emma的纪录片创作和学术写作来说，这是一个重要的提醒：真实感来自克制，不来自渲染。',
+    '<b>给Emma的话</b>：《边城》写的是一个湘西小城的故事，但它真正想说的是：世界上最美好的东西往往带着遗憾——翠翠等到了渡口，却没有等到那个人。这和你之前拍《伞缘流年》时的感受也许有共鸣：那些非遗手艺人的坚持里，也有一种"明知不可为而为之"的美。进入研究生阶段后，你可能会遇到很多"不确定"的时刻——不确定研究方向、不确定职业路径、不确定自己做得够不够好。沈从文的翠翠告诉你：有些东西急不来，守住你自己的渡口就好✨'
   ]
 };
+
 function renderLiterature() {
   const el = document.getElementById('litContent');
   let data = litData;
@@ -1508,18 +1509,19 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月7日 星期一',
+  date: '2026\u5e749\u67088\u65e5 \u661f\u671f\u4e8c',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '8家中央金融企业共计划增资3600亿元，财政部将发行3000亿元特别国债支持', desc: '工商银行、农业银行、进出口银行等8家中央金融企业分别发布增资计划，将补充核心一级资本。财政部将于近期发行3000亿元特别国债支持此次增资，有助于增强稳健经营能力和服务实体经济能力。' },
-    { tag: '科技', cls: 'news-tech', title: 'OpenAI发布GPT-6 Astra全量开放，ARC-AGI-3基准测试从7.8%跃升至99.9%', desc: 'GPT-6 Astra面向所有付费用户推送，在高阶数学FrontierMath Tier 4上得分97.6%。发布后A股AI硬件股集体跳水，浪潮信息跌停，三家千亿硬件公司蒸发超290亿市值，"算力见顶"叙事开始松动。' },
-    { tag: '科技', cls: 'news-tech', title: '我国正式启动国际地月立方星座大科学计划，2030年完成卫星部署', desc: '我国联合多国在地月空间部署卫星群，开展空间环境监测、伽马射线暴探测、月球资源勘探等工作。30颗12U立方星将分6批部署至地月共振轨道，推动地月空间探测从单点模式向网络化连续观测转变。' },
-    { tag: '国内', cls: 'news-domestic', title: '瑞金至延安高铁通车，约11小时连接两座红色地标', desc: 'G3998次复兴号列车从瑞金站驶向延安，标志着中央红军长征出发地与落脚点实现高铁直达。90多年前的万里长征路如今用约11小时即可连通，将信仰的力量注入时代发展的速度。' },
-    { tag: '科技', cls: 'news-tech', title: 'AI短剧市场爆发：预计2026年国内规模超400亿元，海外突破40亿美元', desc: 'AI短剧制作价格大幅"跳水"，每分钟报价从5000元跌至几百元。定制短剧仍可达每分钟1万至2万元。预计2026年国内AI剧漫剧市场规模有望超400亿元，同比增速138%，海外市场占海外微短剧整体规模近70%。' },
-    { tag: '国内', cls: 'news-domestic', title: '江西遂川山体开裂存在滑坡风险，169名群众连夜全部安全转移', desc: '受连日持续强降雨影响，江西遂川县大汾镇和坪村有山体开裂。当地连夜对存在隐患的三个村民小组87户169名群众进行紧急转移，已统一安置并配齐生活物资。' },
-    { tag: '国际', cls: 'news-intl', title: '印尼8座机场因喀拉喀托之子火山喷发临时关闭，数百航班受影响', desc: '印尼交通部长表示，受喀拉喀托之子火山喷发影响，印尼8座机场临时关闭，数百个航班受到直接影响。相关部门正密切监测火山活动态势，视情况调整机场运营。' },
-    { tag: '国际', cls: 'news-intl', title: '中企技术成果亮相利雅得通信科技与信息技术展，人形机器人备受关注', desc: '第五届利雅得通信科技与信息技术展举行，1800多家企业参展。荣耀展示人形机器人及机器人手机，智元展示多款机器人产品，文远知行展出自动驾驶车辆。中国驻沙特大使表示"一带一路"与沙特"2030愿景"高度契合。' }
+    { tag: '\u56fd\u5185', cls: 'news-domestic', title: '\u5e73\u9646\u8fd0\u6cb3\u5c06\u4e8e9\u670816\u65e5\u5efa\u6210\u901a\u822a\uff0c\u65b0\u4e2d\u56fd\u9996\u6761\u901a\u6c5f\u8fbe\u6d77\u5927\u8fd0\u6cb3\u8bde\u751f', desc: '\u5e73\u9646\u8fd0\u6cb3\u5168\u957f134.2\u516c\u91cc\uff0c\u5317\u8d77\u5357\u5b81\u6a2a\u5dde\u5e02\u5e73\u5858\u6c5f\u53e3\uff0c\u5357\u7ecf\u94a6\u5dde\u7075\u5c71\u53bf\u9646\u5c4b\u9547\uff0c\u6cbf\u94a6\u6c5f\u76f4\u901a\u5317\u90e8\u6e7e\u3002\u8fd9\u662f\u65b0\u4e2d\u56fd\u6210\u7acb\u4ee5\u6765\u9996\u6761\u901a\u6c5f\u8fbe\u6d77\u7684\u5927\u8fd0\u6cb3\uff0c\u5c06\u663e\u8457\u964d\u4f4e\u897f\u5357\u5730\u533a\u7269\u6d41\u6210\u672c\u3002' },
+    { tag: '\u79d1\u6280', cls: 'news-tech', title: '\u5de5\u4fe1\u90e8\u53d1\u5e03\u4fe1\u606f\u901a\u4fe1\u4e1a\u201c\u5341\u4e94\u4e94\u201d\u89c4\u5212\uff1a\u9002\u65f6\u542f\u52a86G\u5546\u7528\uff0c2030\u5e74\u667a\u80fd\u7b97\u529b\u89c4\u6a21\u8fbe9800 EFLOPS', desc: '\u5de5\u4fe1\u90e8\u63d0\u51fa\u5230\u0032\u0030\u0033\u0030\u5e74\u5168\u9762\u5efa\u6210\u65b0\u4e00\u4ee3\u901a\u4fe1\u7f51\uff0c\u4fe1\u606f\u901a\u4fe1\u884c\u4e1a\u6536\u5165\u8fbe4.1\u4e07\u4ebf\u5143\uff0c\u6bcf\u4e07\u4eba\u62e5\u67095G\u57fa\u7ad550\u4e2a\uff0c5G\u7528\u6237\u666e\u53ca\u7387\u8fbe95%\u3002' },
+    { tag: '\u79d1\u6280', cls: 'news-tech', title: '\u5c0f\u7c7318 Fold\u53d1\u5e0610999\u5143\u8d77\uff0c\u534e\u4e3aMate XT 2\u4e09\u6298\u53e0\u624b\u673a\u8d77\u552e19999\u5143\uff0c\u6298\u53e0\u5c4f\u65d7\u8230\u5927\u6218\u5f00\u542f', desc: '\u5c0f\u7c73\u9996\u6b3e\u201c\u4e2d\u6298\u53e0\u201d\u65d7\u8230\u624b\u673a\u4eae\u76f8\uff0c\u96f7\u519b\u62ab\u9732\u9020\u82af\u7d2f\u8ba1\u6295\u5165210\u4ebf\u5143\u3002\u534e\u4e3a\u540c\u65e5\u53d1\u5e03\u642d\u8f7d\u9e92\u9e9f9050 Pro\u82af\u7247\u7684\u4e09\u6298\u53e0\u624b\u673a\u3002\u957f\u946bLPDDR6\u82af\u7247\u7387\u5148\u5b9e\u73b0\u65d7\u8230\u624b\u673a\u7aef\u9996\u53d1\u91cf\u4ea7\u3002' },
+    { tag: '\u56fd\u5185', cls: 'news-domestic', title: '\u6700\u9ad8\u6cd5\u53d1\u5e03\u6d89\u4eba\u5de5\u667a\u80fd\u7ea0\u7eb7\u6848\u4ef6\u5ba1\u7406\u610f\u89c1\uff0c\u805a\u7126AI\u6362\u8138\u3001\u5927\u6570\u636e\u6740\u719f\u3001\u81ea\u52a8\u9a7e\u9a76\u7b49\u95ee\u9898', desc: '\u660e\u786e\u76f8\u5e94\u88c1\u5224\u89c4\u5219\uff0c\u5398\u6e05\u884c\u4e3a\u8fb9\u754c\u548c\u6cd5\u5f8b\u8d23\u4efb\u3002\u8fd9\u662f\u6211\u56fd\u9996\u4e2a\u9488\u5bf9AI\u7ea0\u7eb7\u7684\u7cfb\u7edf\u6027\u53f8\u6cd5\u6587\u4ef6\uff0c\u5bf9\u89c4\u8303AI\u4ea7\u54c1\u5f00\u53d1\u5177\u6709\u91cd\u8981\u6307\u5bfc\u610f\u4e49\u3002' },
+    { tag: '\u56fd\u5185', cls: 'news-domestic', title: '\u90d1\u94a6\u6587\u7f8e\u7f51\u6218\u80dc\u65af\u74e6\u6cf0\u514b\u91cd\u8fd4\u516b\u5f3a\uff0c\u4ece0\u6bd45\u843d\u540e\u5230\u518d\u6b21\u5927\u9006\u8f6c', desc: '\u5317\u4eac\u65f6\u95f4\u6628\u665a\u7f8e\u7f51\u5973\u5355\u7b2c\u56db\u8f6e\uff0c\u90d1\u94a6\u6587\u4ee52\u6bd40\u6218\u80dc\u516d\u5c4a\u5927\u6ee1\u8d2f\u519b\u65af\u74e6\u6cf0\u514b\uff0c\u66fe\u5728\u7b2c\u4e8c\u76d80\u6bd45\u843d\u540e\uff0c\u6700\u7ec8\u5b9e\u73b0\u60ca\u5929\u9006\u8f6c\u664b\u7ea7\u516b\u5f3a\u3002' },
+    { tag: '\u56fd\u9645', cls: 'news-intl', title: '\u5c3c\u6cca\u5c14\u6ce5\u77f3\u6d41\u707e\u5bb3\u9047\u96be\u4eba\u6570\u5347\u81f31355\u4eba\uff0c\u5931\u8e2a4996\u4eba', desc: '\u622a\u81f3\u5f53\u5730\u65f6\u95f49\u67087\u65e511\u65f6\uff0c\u5c3c\u6cca\u5c14\u6ce5\u77f3\u6d41\u707e\u5bb3\u5df2\u9020\u62101355\u4eba\u9047\u96be\u30014996\u4eba\u5931\u8054\u3002\u4e2d\u56fd\u4f7f\u9986\u8bc1\u5b9e\u4e00\u540d\u4e2d\u56fd\u516c\u6c11\u4ece\u53d7\u707e\u6c34\u7535\u7ad9\u83b7\u6551\u3002' },
+    { tag: '\u56fd\u9645', cls: 'news-intl', title: '\u5fb7\u56fd\u6781\u53f3\u7ffc\u53e6\u7c7b\u9009\u62e9\u515aAfD\u4ee543.8%\u9996\u80dc\u5dde\u9009\uff0c\u4e8c\u6218\u540e\u6781\u53f3\u7ffc\u9996\u6b21\u63a5\u8fd1\u6267\u653f', desc: '\u5fb7\u56fd\u56fe\u6784\u6797\u683c\u5dde\u9009\u4e3e\u4e2d\uff0c\u6781\u53f3\u7ffc\u7684\u5fb7\u56fd\u53e6\u7c7b\u9009\u62e9\u515a\uff08AfD\uff09\u4ee543.8%\u5f97\u7968\u7387\u83b7\u80dc\u3002\u8fd9\u662f\u4e8c\u6218\u540e\u5fb7\u56fd\u6781\u53f3\u7ffc\u653f\u515a\u9996\u6b21\u5728\u5dde\u7ea7\u5c42\u9762\u63a5\u8fd1\u6267\u653f\uff0c\u6b27\u6d32\u653f\u6cbb\u98ce\u9669\u6ea2\u4ef7\u5347\u6e29\u3002' },
+    { tag: '\u56fd\u5185', cls: 'news-domestic', title: '\u4e2d\u56fd\u592e\u884c\u8fde\u7eed22\u4e2a\u6708\u589e\u6301\u9ec4\u91d1\uff0c8\u6708\u8d2d\u91d1\u8282\u594f\u8fdb\u4e00\u6b65\u52a0\u5feb', desc: '\u622a\u81f32026\u5e748\u6708\u672b\uff0c\u4e2d\u56fd\u592e\u884c\u9ec4\u91d1\u50a8\u5907\u8fbe7673\u4e07\u76ce\u53f8\u30026\u81f38\u6708\u5355\u6708\u589e\u6301\u91cf\u5206\u522b\u4e3a48\u4e07\u300164\u4e07\u300165\u4e07\u76ce\u53f8\uff0c\u8fd1\u4e24\u6708\u5747\u8d6560\u4e07\u76ce\u53f8\uff0c\u8d2d\u91d1\u8282\u594f\u660e\u663e\u52a0\u5feb\u3002' }
   ]
 };
+
 function renderNews() {
   let data = newsData;
   let isHistory = false;
