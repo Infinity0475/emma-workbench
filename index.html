@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Decreasing Digital Distraction in College Students: Associated Online Learning Strategies Identified by Unsupervised Data Mining Approaches',
-  authors: 'Hui Shi, Ran Bi, Xi Lin, Yan Dai',
-  venue: 'Journal of Educational Computing Research · arXiv:2609.04125 · September 2026',
-  link: 'https://arxiv.org/abs/2609.04125',
-  date: '2026-09-14',
-  abstract: '数字工具在教育中的普及带来了显著优势，但也引入了严重的数字分心问题，尤其在在线学习场景中影响学业表现。本研究运用无监督数据挖掘技术（关联规则挖掘与聚类分析），识别了与大学生较低数字分心水平相关的有效学习策略。530名参与者的数据显示，自我调节学习策略（目标设定、环境结构化、时间管理）与较低分心水平最为一致地共现。',
+  title: 'When Does AI Augment Work? A Workflow-Level Framework for Human-Agent Collaboration',
+  authors: 'Jiaying Wu, Caleb Ziems, Raymond Chan, Nancy F. Chen et al. (CIVIC-AI Collaboration)',
+  venue: 'CIVIC-AI 2026 Workshop · arXiv:2609.12482 · September 2026',
+  link: 'https://arxiv.org/abs/2609.12482',
+  date: '2026-09-15',
+  abstract: '当前关于AI工作价值的研究大多局限于"任务自动化"层面，忽略了人机协作对工作本质的深层变革。本研究提出从"工作流"而非"任务"层面重新审视AI增强，建立了包含六大条件的AI增强定义框架：持久净价值、有意义的人类控制、问责与恢复机制、以及通过学习和职业发展实现的长期人类成长。研究以AI辅助社会调查为案例，验证了该框架的实用性。',
   keyPoints: [
-    '核心发现：自我调节学习策略（self-regulated learning strategies）是抵御数字分心的关键——包括目标设定、学习环境结构化、以及时间管理。这三者经常同时出现在低分心学习者的行为模式中，说明它们是一个协同运作的"策略组合"。',
-    '方法论亮点：研究使用无监督学习（unsupervised learning），不预设结论，让数据自己"说话"。这避免了传统问卷研究中的确认偏误（confirmation bias），对用户研究来说是很好的方法论参考。',
-    '一个有趣的反直觉发现：同伴求助（peer help-seeking）和学习者间互动策略反而较少出现在低分心profile中。这说明"社交学习"在在线场景下可能带来额外分心风险——产品设计时需要区分"有效协作"和"无效社交干扰"。',
-    '对Emma的启示：这篇论文完美融合了教育心理学、HCI和用户研究方法。它展示了如何用数据挖掘技术来发现学习行为模式，是"计算心理学"方向的一个很好案例。Emma未来做用户研究时，可以考虑类似的聚类分析方法✨'
+    '核心概念："工作流级别"分析——不应只看AI能否替代某个原子任务，而要看它是否增强了整个工作流。这对产品经理来说是一个思维范式的转变：评估AI产品不能只看效率和准确率，要看它是否重塑了用户的工作方式。',
+    'AI增强的六大条件：持久净价值（durable net value）、有意义的人类控制（meaningful human control）、问责与恢复（accountability and recovery）、通过学习促进发展（learning）、职业路径支持（career pathways）、工作意义感（job purpose）。这六个维度可以作为评估AI产品的系统性框架。',
+    '以AI辅助社会调查为案例：论文展示了AI如何从问卷设计、数据收集到分析解读全流程参与社会调查，但强调必须保留研究者的判断空间——AI可以建议，但不能替代研究者的专业直觉和伦理判断。',
+    '对Emma的启示：这个框架特别适合有应用心理学背景的产品经理。"有意义的人类控制"直接关联到用户体验中的"自主感"——当AI系统剥夺了用户的控制感，就会产生"自动化焦虑"。Emma在学HCI时可以重点关注AI如何在"辅助"和"替代"之间找到平衡点✨'
   ],
-  takeaway: '这篇论文让我想到一个很有意思的问题：我们总是说"专注力"是个人的事，但其实它是被环境和工具设计深刻塑造的。数字工具的设计者有责任创造减少分心的体验，而不是让用户独自对抗诱惑。对Emma来说，这篇论文的价值在于它展示了一种研究范式——用无监督学习方法从大量用户行为数据中发现模式，而不是依赖主观报告。这正是"计算社会科学"和用户研究交叉的前沿方向✨'
+  takeaway: '这篇论文最打动我的一个观点是：AI增强的最终标准不是"做得更快"，而是"人是否在成长"。如果一个AI工具让用户越用越依赖、越用越退化，那就不是"增强"而是"替代"。论文提到的两个关键风险特别值得Emma思考：一是"去技能化"（de-skilling），即长期使用AI导致自身能力退化；二是"意义流失"，即工作本身的成长性和意义感被AI掏空。作为即将学习应用心理学的人，Emma对"人的发展"这个议题有天然的理解深度，这正是你做AI产品经理时区别于纯技术背景同行的核心竞争力✨'
 };;
 
 function renderPaper() {
@@ -1392,40 +1392,40 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'contemplate', pos: 'v.', def: '深思，沉思（/ˈkɒntəmpleɪt/）' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，退化（/dɪˈtɪəriəreɪt/）' },
-  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用的（/præɡˈmætɪk/）' },
-  { word: 'discrepancy', pos: 'n.', def: '差异，矛盾（/dɪsˈkrepənsi/）' },
-  { word: 'intrinsic', pos: 'adj.', def: '固有的，内在的（/ɪnˈtrɪnzɪk/）' },
-  { word: 'scrutinise', pos: 'v.', def: '仔细审查，细察（/ˈskruːtɪnaɪz/）' },
-  { word: 'autonomous', pos: 'adj.', def: '自主的，自治的（/ɔːˈtɒnəməs/）' },
-  { word: 'proliferate', pos: 'v.', def: '激增，扩散（/prəˈlɪfəreɪt/）' },
-  { word: 'ambiguous', pos: 'adj.', def: '模糊的，有歧义的（/æmˈbɪɡjuəs/）' },
-  { word: 'synthesize', pos: 'v.', def: '综合，合成（/ˈsɪnθəsaɪz/）' }
+  { word: 'augment', pos: 'v.', def: '增强， augment（/ɔːɡˈment/）' },
+  { word: 'hierarchy', pos: 'n.', def: '等级制度，层次结构（/ˈhaɪərɑːki/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验主义的，实证的（/ɪmˈpɪrɪkl/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'substantiate', pos: 'v.', def: '证实，证明…真实（/səbˈstænʃieɪt/）' },
+  { word: 'disseminate', pos: 'v.', def: '传播，散布（/dɪˈsemɪneɪt/）' },
+  { word: 'coherent', pos: 'adj.', def: '连贯的，一致的（/kəʊˈhɪərənt/）' },
+  { word: 'alleviate', pos: 'v.', def: '减轻，缓和（/əˈliːvieɪt/）' },
+  { word: 'preliminary', pos: 'adj.', def: '初步的，预备的（/prɪˈlɪmɪnəri/）' }
 ]
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a book that had a major influence on you',
-  bullet: 'You should say: what the book is, who wrote it, how you came across it, and explain why it influenced you so deeply.',
-  sample: `One book that profoundly shaped my worldview is "The Old Man and the Sea" by Ernest Hemingway. I first encountered it during the summer before my final year of undergraduate study, when I was feeling quite anxious about my future career direction and uncertain about what path to take next.
+  topic: 'Describe a piece of technology that has significantly changed your daily life',
+  bullet: 'You should say: what the technology is, when you started using it, how you use it in your everyday life, and explain how it has changed your routine or behaviour.',
+  sample: `The piece of technology I'd like to talk about is noise-cancelling headphones, specifically the Sony WH-1000XM series. I first got my pair about eighteen months ago, when I was preparing for my graduate entrance examination and needed to study in a rather noisy shared living environment.
 
-The novella tells the story of Santiago, an ageing Cuban fisherman who has gone 84 days without catching a single fish. Despite overwhelming odds, he ventures far out into the Gulf Stream and hooks a colossal marlin. After an exhausting three-day battle, he finally catches it, only to have sharks devour the carcass on the way home. He returns with nothing but the skeleton.
+What makes this technology remarkable is its ability to create an immersive acoustic bubble wherever you are. The headphones use microphones to detect ambient sounds and then generate anti-phase sound waves to neutralise them — a principle called destructive interference. In practice, this means the hum of air conditioning, chatter in a café, or even construction noise outside essentially disappears.
 
-What struck me most was Hemingway's spare, economical prose. Every sentence carries enormous weight, and there is an almost meditative quality to the narrative. The central theme — that human dignity lies not in success but in the struggle itself — resonated deeply with me at a time when I was consumed by worries about whether I could succeed in my career ambitions.
+I use them virtually every day. During my morning commute on the subway, they transform a cramped, noisy journey into a surprisingly pleasant experience. When I'm studying or working, they help me enter a state of deep concentration that would have been nearly impossible without them. I've also found that listening to audiobooks and podcasts through them feels remarkably intimate, almost as if the narrator is speaking directly to you.
 
-The famous line "A man is not made for defeat. A man can be destroyed but not defeated" gave me a new perspective on resilience. It taught me that perseverance and grace under pressure are more important than the outcome itself. This book helped me understand that the journey of learning and growing matters far more than any single achievement.
+The most significant change they've brought to my daily life is arguably psychological rather than practical. Before having them, I was constantly — almost subconsciously — irritated by background noise, which drained my mental energy throughout the day. Now, with the simple press of a button, I can create a controlled acoustic environment, and this sense of control over my surroundings has genuinely reduced my daily stress levels.
 
-I have since re-read it twice, and each time I discover new layers of meaning. It is a book I would recommend to anyone facing uncertainty, because it reminds us that our struggles define us far more than our successes ever could.`,
+Admittedly, there is a slight downside: I've noticed I'm sometimes less aware of my surroundings when wearing them, which can be a safety concern when crossing busy streets. But overall, I'd say these headphones have fundamentally altered the way I interact with urban environments.`,
   expressions: [
-    '🌟 profoundly shaped my worldview — 深刻塑造了我的世界观',
-    '🌟 uncertain about what path to take — 不确定该走哪条路',
-    '🌟 despite overwhelming odds — 尽管胜算极其渺茫',
-    '🌟 spare, economical prose — 简洁精炼的文笔',
-    '🌟 resonate deeply with — 与…产生深刻共鸣',
-    '🌟 consumed by worries — 被忧虑所吞噬',
-    '🌟 grace under pressure — 压力下的从容',
-    '🌟 discover new layers of meaning — 发现新的深层含义'
+    '🌟 an immersive acoustic bubble — 沉浸式的声音气泡',
+    '🌟 destructive interference — 相消干涉（物理原理）',
+    '🌟 in practice, this means — 在实际使用中，这意味着',
+    '🌟 essentially disappears — 基本上消失了',
+    '🌟 enter a state of deep concentration — 进入深度专注状态',
+    '🌟 arguably psychological rather than practical — 可以说是心理层面的而非实用层面的',
+    '🌟 drained my mental energy — 消耗了我的心理能量',
+    '🌟 fundamentally altered the way I interact with — 从根本上改变了我与…互动的方式'
   ]
 }
 
@@ -1472,12 +1472,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '我们曾如此渴望命运的波澜，到最后才发现：人生最曼妙的风景，竟是内心的淡定与从容。',
-  source: '杨绛《一百岁感言》',
+  quote: '凡事都有偶然的凑巧，结果却又如宿命的必然。凡事贵在坚持，不在乎一时的得失。日头是不等人的，它不晓得人心里有什么苦楚。',
+  source: '沈从文《边城》',
   analysis: [
-    '<b>从"波澜"到"从容"的生命辩证</b>：杨绛先生经历了中国近百年的动荡——抗战、文革、丧女、丧夫。她的文字没有激烈的控诉，也没有廉价的乐观，而是一种经历了极端苦难之后沉淀出的"淡"。这种"淡"不是冷漠，而是看透世事之后的温柔。心理学中，这与"创伤后成长"（post-traumatic growth）的概念高度吻合：不是苦难本身让人成长，而是人在面对苦难时选择的态度——接纳、理解、然后继续前行。',
-    '<b>"淡定与从容"的心理学内核</b>：杨绛所说的"淡定"，其实对应着积极心理学中的"心理韧性"（psychological resilience）和"情绪调节"（emotion regulation）能力。它不是天生的性格特质，而是一种可以培养的内在力量。她的写作方式本身就是一种疗愈——用文字整理记忆、梳理情感，这正是叙事治疗（narrative therapy）的核心理念：通过重新讲述自己的故事，找到痛苦中的意义。',
-    '<b>给Emma的话</b>：你即将开始应用心理学的研究生学习，未来可能会帮助很多人面对他们的困境。杨绛告诉我们：真正有力量的陪伴，不是替别人解决问题，而是在那里，安静地、从容地，像一面镜子一样帮助对方看到自己的光。这种"淡定与从容"，也是你作为未来用户研究者最重要的品质——不急着下结论，不急着评判，先看见，再理解✨'
+    '<b>"偶然"与"必然"的生命哲学</b>：沈从文在《边城》中用极简的笔触勾勒了湘西茶峒的山水人物，但字里行间藏着极为深邃的生命感悟。翠翠与傩送的爱情，因为一连串阴差阳错的"偶然"——爷爷的误解、天保的意外、渡船老人的去世——最终走向了看似"必然"的遗憾结局。沈从文没有控诉命运的不公，只是平静地叙述，仿佛在说：人生的走向，往往就藏在那些不起眼的"偶然"里。这种叙事态度本身就是一种心理学智慧——接纳不确定性，而非执念于控制。',
+    '<b>沈从文的"贴着人物写"</b>：沈从文曾说"我实在是个乡下人"，他的创作方法是"贴着人物来写"——不站在人物之上去评判，不站在人物之外去描写，而是贴近人物的心灵，让读者感受到人物自身的喜怒哀乐。这恰恰是用户研究中最核心的能力：共情（empathy）。不是替用户下定义，而是真正走进他们的生活世界，理解他们的处境和选择。翠翠的等待、爷爷的忧虑、傩送的纠结，每个人都有自己的理由，没有谁是"坏人"——这正是好的用户研究应该做到的：理解行为背后的动机，而非简单地评判对错。',
+    '<b>给Emma的话</b>：《边城》写于1934年，但其中的情感至今仍然打动人——因为沈从文写的不是某个特定时代的故事，而是人类共同的处境：面对不确定性时的等待与坚守。你即将学习应用心理学，无论是做用户研究还是未来的心理咨询，最重要的品质就是像沈从文那样"贴着人来"——不急着给标签、不急着开药方，先安安静静地看见一个人、理解一个人✨'
   ]
 };;
 
@@ -1509,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月14日 星期日',
+  date: '2026年9月15日 星期一',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '2026服贸会闭幕：达成1200余项成果，入场近42万人次', desc: '2026年中国国际服务贸易交易会在北京首钢园闭幕，5天会期达成7类共1200余项成果，核心活动区入场近42万人次，同比增长36.6%，232家企业已提前预订明年展位。' },
-    { tag: '国内', cls: 'news-domestic', title: '中国2027年接任金砖主席国，承办第十九次领导人会晤', desc: '金砖国家领导人第十八次会晤第二阶段会议在新德里举行，官宣中国将于2027年接任金砖主席国，持续推动金砖务实合作，壮大全球南方力量。' },
-    { tag: '科技', cls: 'news-tech', title: '苹果发布首款折叠屏iPhone Duo，起售价1999美元', desc: '苹果新任CEO特努斯发布iPhone Duo折叠屏手机，配备7.6英寸内屏和5.4英寸外屏，搭载A20 Pro芯片，iOS 27专为折叠形态适配，分析师预计首年拿下全球折叠屏市场25%份额。' },
-    { tag: '科技', cls: 'news-tech', title: '中国算力平台实现全国一体化算力统筹监测', desc: '工信部消息，国家级算力平台已汇聚超万家企业用户，上架算力产品2000余项，接入大模型超300个，实现全国算力"一张网、一盘棋、一体化"发展格局。' },
-    { tag: '国际', cls: 'news-intl', title: '印尼爪哇海客轮倾覆：6人遇难，仍有百余人失踪', desc: '印尼"Virgo Transport 8"号客轮确认倾覆沉没，已造成6人死亡、107人获救，仍有130人下落不明。中国驻泗水总领馆确认船上没有中国公民。' },
-    { tag: '国内', cls: 'news-domestic', title: '三部门印发数字乡村高质量发展行动计划', desc: '中央网信办等三部门发布行动计划，设置农村互联网普及率等8项核心指标，部署24项重点任务，依靠数字化赋能现代农业和乡村治理。' },
-    { tag: '科技', cls: 'news-tech', title: '服贸会具身AI成亮点：130余家企业展示人形机器人全链条', desc: '2026服贸会上，具身人工智能成为最大亮点，超130家企业在电信和信息服务展区展示从整机运动到数据采集训练的全产业链，国产机器人电子架构平台保障网络安全。' },
-    { tag: '国际', cls: 'news-intl', title: '乌克兰准备10月举行新一轮三方谈判', desc: '俄总统新闻秘书佩斯科夫表示不排除10月恢复乌克兰问题三方谈判。同日，阿曼宣布推迟原定举行的讨论霍尔木兹海峡通航问题的地区会议。' }
+    { tag: '国内', cls: 'news-domestic', title: '第十三届北京香山论坛今日开幕：近100个国家参会，60余位部级代表出席', desc: '北京香山论坛9月15日至17日在北京国际会议中心举行，近100个国家、地区和国际组织的官方代表团及专家学者参会，主题为"共护和平、共建安全"，体现论坛开放包容的价值理念。' },
+    { tag: '科技', cls: 'news-tech', title: '全球首个AI+脑机接口医疗器械标准在我国发布', desc: '国家药监局批准发布我国第三个脑机接口医疗器械标准，也是全球首个采用人工智能技术处理脑电数据的脑机接口产品标准，将于2027年9月1日起正式实施，为研发生产提供统一"质量标尺"。' },
+    { tag: '国内', cls: 'news-domestic', title: '《退役军人服务和保障"十五五"规划》正式发布', desc: '中办、国办、中央军委办公厅印发规划，对推进退役军人高质量安置就业、提升服务保障效能等方面作出系统部署，为"十五五"时期退役军人工作擘画蓝图。' },
+    { tag: '国内', cls: 'news-domestic', title: '商务部等8部门发文促进智能家居消费', desc: '行动方案提出扩大优质智能家居供给、完善标准体系、支持消费、发展适老化智能家居等7条举措，推动智能家居产业高质量发展。' },
+    { tag: '国内', cls: 'news-domestic', title: '国家卫健委：今年新增1000家基层机构提供儿科诊疗服务', desc: '预计到年底95%以上乡镇卫生院和社区卫生服务中心可提供儿科诊疗，进一步推进分级诊疗和生育友好环境建设。' },
+    { tag: '国际', cls: 'news-intl', title: '塞尔维亚总统武契奇宣布将于9月27日辞职', desc: '武契奇在接受采访时宣布辞职决定。此前他已执政多年，塞尔维亚政治格局即将迎来重要变化。' },
+    { tag: '国际', cls: 'news-intl', title: '日本首相高市早苗将于17日改组内阁', desc: '自民党干事长铃木俊一透露，首相将于16日进行自民党高层人事调整，17日正式改组内阁，引发政坛广泛关注。' },
+    { tag: '国际', cls: 'news-intl', title: '法国正式禁止15岁以下未成年人使用社交媒体', desc: '法国政府已向欧盟委员会通报新版法案，禁止15岁以下未成年人使用社交媒体平台，成为全球在未成年人网络保护领域力度最大的立法之一。' }
   ]
 };;
 
