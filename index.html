@@ -1341,20 +1341,20 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'PeerPen: AI-Assisted Writing for Online Mental Health Peer Support',
-  authors: 'Jiwon Kim, Sherry Gong, Maya Ajit, Soorya Ram Shimgekar, Yunhao Yuan, Dong Whi Yoo, Eshwar Chandrasekharan, Koustuv Saha',
-  venue: 'arXiv:2609.14886 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.14886',
-  date: '2026-09-16',
-  abstract: '在线心理健康社区依赖同伴支持运转，但志愿者往往缺乏专业训练，难以写出有质量的回应。AI辅助写作可以降低这个门槛，但同伴支持的核心价值在于"真实性"——这引发了关于作者身份、所有权和信任的深层问题。研究团队构建了PeerPen，一个嵌入Reddit式界面的AI写作辅助工具，支持草稿生成和修改两大功能。通过对15名用户的半结构化访谈，发现PeerPen显著降低了撰写回应的认知负担，提升了提供支持的信心，但用户担心AI会模糊"谁在说话"的边界，动摇社区信任基础。',
+  title: 'Beyond "ChatGPT Can Make Mistakes": Designing Interventions to Support Metacognitive Monitoring in AI-Assisted Work',
+  authors: 'Manuel A. D. Santos, Paul Thiesse, Steeven Villa, Daniela Fernandes, Albrecht Schmidt, Verena Distler, Robin Welsch',
+  venue: 'arXiv:2609.17065 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.17065',
+  date: '2026-09-17',
+  abstract: 'AI辅助工具对用户提出了元认知层面的要求：用户必须同时评估自己的能力和AI系统的能力。然而，设计者缺乏关于"应该选择哪种干预方式、放在哪里、如何判断是否有效"的比较性证据。研究团队从11位专家那里征集了30种干预策略，并结合已有文献，构建了一个包含时间（干预何时起作用）、层次（评估谁的能力）和信息来源（谁提供监控线索）三个维度的设计空间。通过一项917名被试的组间实验（12道计划-组织类任务），对比了任务可靠性卡片、对比回复、暂停点和任务后反思四种干预方式与基线LLM助手的效果。结果表明，可靠性卡片和对比回复显著降低了估计误差和过度自信，提高了总体置信度辨别力。',
   keyPoints: [
-    '核心张力：AI辅助 vs. 真实性困境。同伴支持的力量来自"这也是一个真实的人在理解你"，一旦AI介入写作，即使只是辅助，也会让读者怀疑"这段话到底是不是你自己想的"。更微妙的是，即使没有使用AI的回应，也可能因为怀疑链而被打上"可能是AI写的"标签——这是一种系统性的信任侵蚀。',
-    '设计发现："辅助但不替代"是关键平衡点。用户希望AI帮助他们组织语言、提供表达建议，但最终的文字必须经过自己的判断和修改。这与心理学中的"自主性需求"高度一致——人们需要感受到"这是我在做决定"，而非"AI替我做了决定"。',
-    '方法论启示：半结构化访谈 + Reddit式原型。研究采用质性与原型结合的方法，先构建可用的交互原型，再通过深度访谈挖掘用户的真实顾虑。这种"做出来再聊"的研究策略，比纯问卷或纯访谈更能触达用户对AI产品的深层态度。',
-    '对Emma的启示：这篇论文完美融合了HCI、AI和心理学三个领域。"真实性感知"是用户体验研究中的重要课题——当AI越来越融入产品，用户如何判断"什么是真的"？这个问题在心理健康场景下尤为关键。Emma可以用"信任校准"（trust calibration）作为切入点，研究用户对AI辅助内容的信任边界✨'
+    '核心框架：元认知监控的设计空间。论文提出了时间×层次×来源的三维框架——"时间"指干预发生在AI输出前还是输出后；"层次"指干预是帮助用户评估自己的能力还是AI的能力；"来源"指监控线索来自系统自身、用户自己还是外部参照。这个框架对Emma做AI产品设计非常有参考价值，因为它提供了一个系统化的思路：不是简单加一个"提醒"功能，而是要精确地决定在哪个时间节点、针对哪个评估维度、利用什么信息源来干预。',
+    '关键发现：监控能力和任务表现是可分离的设计目标。虽然可靠性卡片和对比回复改善了用户的元认知准确性（即用户更清楚自己什么时候答对了、什么时候答错了），但并未直接提升任务表现。这意味着"让用户更清醒"和"让用户做得更好"是两件不同的事，产品设计需要明确到底要解决哪个问题。这一发现挑战了"只要用户足够警觉，表现自然就会好"的朴素假设。',
+    '实验规模与方法论亮点：917名被试的大规模在线实验，采用12道计划-组织类任务，这在HCI领域是相当扎实的实验设计。研究先通过专家访谈生成干预方案，再通过大规模实验验证，这种"专家知识+实证检验"的组合方法论值得Emma在自己的研究中借鉴。',
+    '对Emma的启示：这篇论文直接关系到Emma未来做AI产品的核心问题——当AI越来越强大，如何帮助用户保持自己的判断力？"元认知监控"这个概念对AI产品经理特别重要：好的AI产品不是让用户"更懒"，而是帮助用户"更清醒地使用AI"。Emma可以将这个框架应用到她关心的注意、情绪与认知交互研究中——比如，AI辅助下的情绪调节训练，是否也在削弱用户的元认知能力？'
   ],
-  takeaway: '这篇论文最触动我的一点是：AI辅助的价值不仅在于"降低门槛"，更在于它揭示了一个被忽视的问题——我们以为"写"只是表达，其实"写"本身就是思考的过程。当AI帮我们写的时候，它可能在帮我们省去了"想清楚"的那段痛苦，而那段痛苦恰恰是成长发生的地方。这和Emma正在学习的心理学高度相关：认知行为疗法（CBT）中"书写表达"本身就有疗愈作用，因为写的过程就是整理情绪、重建认知的过程。如果AI替代了这个过程，短期效率提升了，长期却可能削弱用户自我反思的能力。这个视角对Emma未来做AI心理产品非常重要：不是"AI能帮用户做什么"，"AI帮用户做的过程中，用户自己有没有在成长"✨'
-};;
+  takeaway: '这篇论文最打动我的一个洞察是：AI辅助设计中，"让用户知道AI可能出错"和"让用户知道自己可能出错"是两个完全不同层次的干预。大多数AI产品选择前者（加一个免责声明），但研究证明后者（帮助用户反思自己的判断）才更有效地减少了过度自信。这让我想到一个更深层的问题：我们一直说"AI要有透明度"，但真正的透明不是"告诉用户AI的信息"，而是"帮助用户理解自己的理解"。这和心理学中的"元认知训练"高度一致——好的治疗师不会直接给答案，而是帮助来访者学会观察自己的思维模式。Emma未来做AI心理产品时，可以思考：产品到底是在帮用户"解决问题"，还是在帮用户"发展解决问题的能力"？这两条路线会导向截然不同的产品设计✨'
+};
 
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1392,40 +1392,40 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'authenticity', pos: 'n.', def: '真实性，可靠性（/ˌɔːθenˈtɪsəti/）' },
-  { word: 'scaffold', pos: 'v.', def: '搭建支架，辅助引导（/ˈskæfəld/）' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
-  { word: 'perceive', pos: 'v.', def: '感知，察觉（/pəˈsiːv/）' },
-  { word: 'autonomy', pos: 'n.', def: '自主性，自治权（/ɔːˈtɒnəmi/）' },
-  { word: 'stigma', pos: 'n.', def: '污名，耻辱（/ˈstɪɡmə/）' },
-  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
-  { word: 'intervene', pos: 'v.', def: '干预，介入（/ˌɪntəˈviːn/）' },
-  { word: 'compelling', pos: 'adj.', def: '引人注目的，令人信服的（/kəmˈpelɪŋ/）' },
-  { word: 'discrepancy', pos: 'n.', def: '差异，不一致（/dɪsˈkrepənsi/）' }
+  { word: 'metacognitive', pos: 'adj.', def: '元认知的，关于认知过程的（/ˌmetəˈkɒɡnətɪv/）' },
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
+  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
+  { word: 'ambiguous', pos: 'adj.', def: '模棱两可的，有歧义的（/æmˈbɪɡjuəs/）' },
+  { word: 'contemplate', pos: 'v.', def: '深思，考虑（/ˈkɒntəmpleɪt/）' },
+  { word: 'prevalent', pos: 'adj.', def: '流行的，普遍的（/ˈprevələnt/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验主义的，以实证为依据的（/ɪmˈpɪrɪkl/）' },
+  { word: 'bolster', pos: 'v.', def: '支持，增强（/ˈbəʊlstə(r)/）' },
+  { word: 'paradox', pos: 'n.', def: '悖论，自相矛盾的事物（/ˈpærədɒks/）' },
+  { word: 'feasible', pos: 'adj.', def: '可行的，行得通的（/ˈfiːzəbl/）' }
 ]
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a time when you helped someone with a problem',
-  bullet: 'You should say: who the person was, what the problem was, how you helped them, and explain how you felt about the experience.',
-  sample: `I'd like to talk about a time last semester when I helped a classmate who was struggling with a statistics assignment. We were both enrolled in a research methods course, and she found the concept of regression analysis particularly challenging.
+  topic: 'Describe a place you visited where you felt a strong sense of peace and relaxation',
+  bullet: 'You should say: where the place was, when you visited it, what you did there, and explain why you felt peaceful and relaxed.',
+  sample: `I'd like to describe a visit to West Lake in Hangzhou, which is arguably one of the most iconic scenic spots in China. I went there last autumn, during the Mid-Autumn Festival holiday, when the weather was exceptionally mild and the tourist crowds were slightly thinner than during peak summer season.
 
-The situation arose during a group study session in the library. I noticed she was staring at the same SPSS output for nearly an hour, looking increasingly frustrated. I'd already grasped the material fairly well, partly because I'd spent extra time practising with sample datasets the previous weekend, so I offered to walk her through it.
+I arrived in the early morning, around six o'clock, before most visitors had gathered. The lake was enveloped in a delicate mist, and the willow trees along the causeway dipped their branches into the still water. I decided to walk along the Su Causeway from end to end — it's roughly three kilometres long — and I deliberately left my phone in my bag for the entire walk.
 
-What I found most effective was breaking the process down into smaller, more digestible steps. Rather than jumping straight into the technical procedure, I started by explaining the logic behind regression — why we use it, what the coefficients actually represent, and how to interpret them in plain language. Then I used a real-world example that she could relate to: predicting exam scores based on hours of study. Once she understood the underlying intuition, the software mechanics became much less intimidating.
+What struck me most was the interplay between natural beauty and human design. The lake itself is entirely artificial — it was dredged and landscaped over centuries — yet it feels utterly organic. Ancient poets composed verses sitting where I was walking, and that historical continuity gave the experience a depth that a purely natural landscape might not have offered.
 
-We spent about two hours together that afternoon, and I continued to check in with her over the following week. By the time the assignment was due, she had not only completed it successfully but told me she actually felt confident about the topic for the first time.
+I spent about two hours walking, then sat on a bench near the Leifeng Pagoda, drinking a cup of Longjing tea I'd bought from a nearby tea house. The combination of the warm tea, the gentle breeze, and the soft lapping of water against the shore created a sense of calm that I hadn't experienced in months.
 
-Looking back, the experience was genuinely rewarding for me as well. Teaching someone else forced me to articulate my own understanding more clearly, which deepened my grasp of the material. It also reminded me of something my psychology lecturer once said — that the best way to truly learn something is to explain it to someone else. The sense of accomplishment I felt was less about being "smart" and more about knowing I'd made a tangible difference to someone's day.`,
+The reason this place made me feel so peaceful, I think, was that it demanded nothing of me. Unlike a workplace or even a classroom, where there's always an expectation of performance, West Lake simply existed — and invited me to exist alongside it. In that moment, I wasn't a student, a daughter, or a future professional; I was just a person breathing in the same air that countless others had breathed for a thousand years. That sense of smallness, paradoxically, was deeply comforting.`,
   expressions: [
-    '🌟 struggling with — 在…方面很吃力',
-    '🌟 offered to walk her through it — 主动提出一步步带她过一遍',
-    '🌟 breaking the process down into smaller steps — 把过程拆解成更小的步骤',
-    '🌟 the underlying intuition — 背后的直觉理解',
-    '🌟 less intimidating — 不那么令人畏惧了',
-    '🌟 checked in with her — 跟进关心她的情况',
-    '🌟 genuinely rewarding — 真正有成就感的',
-    '🌟 made a tangible difference — 产生了切实可见的影响'
+    '🌟 enveloped in a delicate mist — 笼罩在一层薄雾中',
+    '🌟 the interplay between natural beauty and human design — 自然美与人工设计的交融',
+    '🌟 historical continuity — 历史的延续感',
+    '🌟 it demanded nothing of me — 它不对我有任何要求',
+    '🌟 an expectation of performance — 对表现的期待',
+    '🌟 I was just a person breathing in the same air — 我只是一个呼吸着同样空气的人',
+    '🌟 a sense of smallness — 一种渺小感',
+    '🌟 paradoxically, was deeply comforting — 矛盾地令人深感安慰'
   ]
 }
 
@@ -1472,14 +1472,14 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '我们生活在浩瀚的宇宙里，随时都在承受着来自四面八方的冲击。但人的可贵在于，无论经历了什么，内心深处总有一个声音在说：再试一次。',
-  source: '路遥《平凡的世界》',
+  quote: '穿过县界长长的隧道，便是雪国。夜空下一片白茫茫。火车在信号所前停了下来。',
+  source: '川端康成《雪国》（叶渭渠、唐月梅 译）',
   analysis: [
-    '<b>"再试一次"的心理学意涵</b>：路遥用孙少平的成长故事，书写了一种极为朴素的韧性（resilience）。少平从一个吃黑馍馍的贫困农村青年，到在煤矿深处日复一日承受超负荷的体力劳动，他的人生从来没有"容易"二字。但路遥没有把他写成一个"逆袭"的爽文主角——少平的每一次前进，都伴随着巨大的不确定性和代价。这正是心理学所说的"创伤后成长"（post-traumatic growth）：不是痛苦消失了，而是人在痛苦中找到了新的意义。",再试一次"不是盲目乐观，而是在认清现实之后，仍然选择行动。',
-    '<b>路遥的叙事方法：用细节堆叠真实感</b>：《平凡的世界》之所以打动几代读者，不在于情节多么跌宕，而在于路遥对日常生活的极度忠实。他写少平在雨中啃馒头、写晓霞在洪水中的身影、写孙玉厚老汉蹲在门槛上抽烟——这些细节没有一个是"戏剧化"的，但组合在一起，就构成了中国农村最真实的生命图景。这种写法对Emma做用户研究有直接启发：好的观察不需要花哨的技巧，需要的是"愿意看下去"的耐心。用户说的每一句话、做的每一个动作，背后都有他的生活脉络，研究者要做的是像路遥那样——把细节当作生命本身来尊重。',
-    '<b>给Emma的话</b>：《平凡的世界》写于1980年代，但"再试一次"这个命题永远不会过时。你从广播电视编导跨到应用心理学，从湖南到北京，每一步都是在"再试一次"。路遥告诉我们：平凡不等于平庸。平凡是在不确定中仍然行动，是承认自己的局限但不放弃成长。这种品质，无论做研究还是做产品，都是最宝贵的底色✨'
+    '<b>开头的叙事魔力：用空间转换完成时间切换</b>：川端康成只用了一句话——"穿过县界长长的隧道"——就完成了从世俗世界到"雪国"这个异质空间的切换。隧道在这里不仅是物理空间，更是心理阈值：穿过它，日常逻辑暂时失效，一种更纯粹的感知模式开始运作。这和心理学中的"情境转换"（context shift）概念惊人地一致——当我们从一个环境进入另一个环境，认知框架也会随之切换。川端用一个简单的物理动作，暗示了主人公岛村即将进入一种完全不同的情感和道德状态。',
+    '<b>"白茫茫"的极简美学与心理投射</b>： "夜空下一片白茫茫"——六个字构建了一个纯粹的视觉场域。没有具体的物体、没有人物、没有故事，只有颜色和空间。这种极度简洁的描写，恰恰为读者的心理投射提供了最大的空间。格式塔心理学告诉我们，人类面对模糊刺激时会自动赋予意义——"白茫茫"的空白画布让每个读者都把自己的情感和理解投射其中。对Emma做用户研究来说，这是一种重要的启示：有时候"留白"比"填满"更能触达用户的内心世界。好的产品设计也是如此——给用户留下想象和参与的空间，而不是把一切都填满。',
+    '<b>给Emma的话</b>：《雪国》是川端康成获得诺贝尔文学奖的代表作，全书都在书写"徒劳之美"——爱情是徒劳的，追求是徒劳的，甚至连雪本身也在融化。但这种"徒劳"不是消极的虚无，而是一种对生命本质的诚实凝视。Emma正在学习应用心理学，而心理学的核心任务之一，就是帮助人们直面那些"看似徒劳"的现实——无法改变的过去、无法控制的情绪、无法预知的未来。川端康成教会我们：直面本身，就已经是一种美✨'
   ]
-};;
+};
 
 function renderLiterature() {
   const el = document.getElementById('litContent');
@@ -1509,18 +1509,18 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月16日 星期三',
+  date: '2026年9月17日 星期四',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '平陆运河今日正式通航：全长134.2公里，可通航5000吨级船舶', desc: '西部陆海新通道骨干工程平陆运河今日通航，按内河Ⅰ级航道建设，连通西江与北部湾，大幅缩短西南地区货物出海距离，是新中国成立以来建设的第一条江海连通大运河。' },
-    { tag: '科技', cls: 'news-tech', title: '《电子信息制造业发展"十五五"规划》发布：2030年营收目标突破30万亿', desc: '工信部、国家发改委联合发布规划，提出到2030年规模以上电子信息制造业企业营业收入突破30万亿元，进一步凸显电子信息制造业在工业中的重要地位。' },
-    { tag: '科技', cls: 'news-tech', title: '国产最大直径盾构机"中铁1662号"在郑州下线', desc: '开挖直径16.68米、整机长125米、重约4800吨，是我国迄今自主研制的最大直径泥水平衡盾构机，标志着国产超大直径盾构机研制能力达到新高度。' },
-    { tag: '国内', cls: 'news-domestic', title: '嫦娥六号月背月壤样品正式赠送联合国永久展出', desc: '中国将嫦娥六号采集的人类首批月背月壤样品正式赠予联合国，样品将在维也纳联合国总部外空展区永久展出，彰显中国航天开放合作的姿态。' },
-    { tag: '国内', cls: 'news-domestic', title: '8月70城房价数据出炉：一线城市环比转涨，上海领跑全国', desc: '国家统计局数据显示，8月份一线城市商品住宅销售价格环比上涨，二三线城市环比降幅总体收窄，一、二、三线城市同比降幅继续收窄，楼市呈现企稳信号。' },
-    { tag: '国内', cls: 'news-domestic', title: '共享单车服务规范新国标发布：一车一码，11月起实施', desc: '新标准要求运营企业在用户注册时告知收费标准、退款流程等信息，重点整治乱停放问题，推动共享单车行业规范化发展。' },
-    { tag: '国际', cls: 'news-intl', title: '塞尔维亚总统武契奇宣布将于9月27日辞去总统职务', desc: '武契奇宣布辞职后将以普通公民身份参加竞选活动，塞尔维亚政治格局即将迎来重大变化。' },
-    { tag: '国际', cls: 'news-intl', title: '美国10年期国债收益率突破5.02%，创2007年以来新高', desc: '美国长期国债收益率持续走高，市场对美联储利率政策走向及财政赤字规模的担忧加剧，全球金融市场承压。' }
+    { tag: '国内', cls: 'news-domestic', title: '第23届中国—东盟博览会今日在南宁开幕', desc: '本届东博会展览面积约2.7万平方米，吸引全球40多个国家超700家企业参展。今年是中國东盟建立全面战略伙伴关系5周年，丁薛祥出席开幕式并致辞。' },
+    { tag: '国内', cls: 'news-domestic', title: '国家医保局首次制定全国统一医保医疗服务项目目录', desc: '首批将覆盖心血管、呼吸等13个类别，标志着我国医保标准化建设迈出关键一步，有望减少各地医保报销范围差异。' },
+    { tag: '国内', cls: 'news-domestic', title: '全国夏粮收购超1亿吨，四大海域全面开渔', desc: '全国累计收购小麦超1亿吨、早籼稻1200万吨；16日12时起，黄海、东海结束伏季休渔，渤海、黄海、东海、南海四大海域全面开渔。' },
+    { tag: '科技', cls: 'news-tech', title: '华为郭平：目标成为"中国英伟达"，明确不做卫星和飞船', desc: '华为监事会主席郭平在内部社区披露公司战略方向，将在AI、算力、半导体等领域持续发力，打造全国产算力生态。' },
+    { tag: '科技', cls: 'news-tech', title: '空中客车天津第二条总装线交付首架飞机', desc: '自2008年空客天津总装线投入运营以来，已累计交付超800架A320系列飞机，第二条总装线的投产将进一步扩大在华产能。' },
+    { tag: '国际', cls: 'news-intl', title: '香港特区公布首个五年规划（2026-2030年）', desc: '规划包括经济发展取得新突破、持续提升国际竞争力、加速建设北部都会区等五大目标，是香港回归以来首份经济社会发展五年规划。' },
+    { tag: '国际', cls: 'news-intl', title: '欧盟向加拿大抛出"准成员国"橄榄枝引发热议', desc: '欧盟委员会主席冯德莱恩表示愿为加拿大成为欧盟首个"准成员国"打开大门，这一前所未有的提议引发国际关系学界广泛讨论。' },
+    { tag: '国内', cls: 'news-domestic', title: '南京博物院受赠文物事件处理结果公布：原院长获刑3年', desc: '多个相关责任人已被依规依纪依法处理，事件暴露出文博领域文物管理的系统性漏洞。' }
   ]
-};;
+};
 
 function renderNews() {
   let data = newsData;
