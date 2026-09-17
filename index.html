@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Beyond "ChatGPT Can Make Mistakes": Designing Interventions to Support Metacognitive Monitoring in AI-Assisted Work',
-  authors: 'Manuel A. D. Santos, Paul Thiesse, Steeven Villa, Daniela Fernandes, Albrecht Schmidt, Verena Distler, Robin Welsch',
-  venue: 'arXiv:2609.17065 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.17065',
-  date: '2026-09-17',
-  abstract: 'AI辅助工具对用户提出了元认知层面的要求：用户必须同时评估自己的能力和AI系统的能力。然而，设计者缺乏关于"应该选择哪种干预方式、放在哪里、如何判断是否有效"的比较性证据。研究团队从11位专家那里征集了30种干预策略，并结合已有文献，构建了一个包含时间（干预何时起作用）、层次（评估谁的能力）和信息来源（谁提供监控线索）三个维度的设计空间。通过一项917名被试的组间实验（12道计划-组织类任务），对比了任务可靠性卡片、对比回复、暂停点和任务后反思四种干预方式与基线LLM助手的效果。结果表明，可靠性卡片和对比回复显著降低了估计误差和过度自信，提高了总体置信度辨别力。',
+  title: 'From Momentary Emotion Inference to Sustained Emotion Support: Evaluating a Companion Agent in a Longitudinal Study',
+  authors: 'Kexin Quan, Zijian Ding, Jiaye Yong, Qinshi Zhang, Dong Wang, Jessie Chin',
+  venue: 'arXiv:2609.16344 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.16344',
+  date: '2026-09-18',
+  abstract: '持续的情感支持是一种与人类幸福感紧密相关的长期交互任务。近期研究展示了生成式AI在即时情感支持方面的能力，但这些能力如何在时间维度上维持支持效果仍不清楚。研究团队部署了PAIR——一个基于情绪调节理论的AI伴侣，与19名参与者共同生活了14天。在1,093次交互中，研究者将AI的情绪估计与前后自我报告进行配对分析。结果显示，AI的情绪估计与自我报告的效价和支配度更为吻合；引导式对话后参与者的情绪效价显著提升；参与者感到被理解，主要通过上下文探索和情感确认实现。值得注意的是，感知有用性随时间显著增长。',
   keyPoints: [
-    '核心框架：元认知监控的设计空间。论文提出了时间×层次×来源的三维框架——"时间"指干预发生在AI输出前还是输出后；"层次"指干预是帮助用户评估自己的能力还是AI的能力；"来源"指监控线索来自系统自身、用户自己还是外部参照。这个框架对Emma做AI产品设计非常有参考价值，因为它提供了一个系统化的思路：不是简单加一个"提醒"功能，而是要精确地决定在哪个时间节点、针对哪个评估维度、利用什么信息源来干预。',
-    '关键发现：监控能力和任务表现是可分离的设计目标。虽然可靠性卡片和对比回复改善了用户的元认知准确性（即用户更清楚自己什么时候答对了、什么时候答错了），但并未直接提升任务表现。这意味着"让用户更清醒"和"让用户做得更好"是两件不同的事，产品设计需要明确到底要解决哪个问题。这一发现挑战了"只要用户足够警觉，表现自然就会好"的朴素假设。',
-    '实验规模与方法论亮点：917名被试的大规模在线实验，采用12道计划-组织类任务，这在HCI领域是相当扎实的实验设计。研究先通过专家访谈生成干预方案，再通过大规模实验验证，这种"专家知识+实证检验"的组合方法论值得Emma在自己的研究中借鉴。',
-    '对Emma的启示：这篇论文直接关系到Emma未来做AI产品的核心问题——当AI越来越强大，如何帮助用户保持自己的判断力？"元认知监控"这个概念对AI产品经理特别重要：好的AI产品不是让用户"更懒"，而是帮助用户"更清醒地使用AI"。Emma可以将这个框架应用到她关心的注意、情绪与认知交互研究中——比如，AI辅助下的情绪调节训练，是否也在削弱用户的元认知能力？'
+    '核心设计：基于理论的长期情感伴侣。PAIR不是简单的聊天机器人，而是以情绪调节理论（emotion regulation theory）为设计基础，包含情境探索、情感确认和个性化引导三个核心机制。14天、1,093次交互的纵向设计在AI伴侣研究中极为罕见——大多数同类研究仅有1-2次会话，无法考察长期效果。这对Emma思考AI心理产品的"持续性"设计很有启发：好的情感支持不是一次性的安慰，而是跨越时间的陪伴。',
+    '关键发现：感知有用性随时间增长。与许多AI产品"新鲜感递减"的趋势不同，PAIR的感知有用性在14天内显著提升。研究者将这一结果归因于两个机制：一是记忆更新（memory updates）让AI能够跨会话个性化回应用户；二是保留纠正（retained corrections）让用户感到自己的反馈被真正"记住"了。这意味着用户控制感是建立长期信任的关键——用户需要知道AI能学习、能改变、能记住他们的偏好。',
+    '方法论亮点：多模态数据融合。研究同时使用了AI自动情绪估计、参与者自我报告（效价、唤醒度、支配度三个维度）、对话日志和半结构化访谈，形成三角验证。这种混合方法在HCI研究中值得借鉴——单靠问卷或单靠日志都不足以捕捉情感支持的复杂性。',
+    '对Emma的启示：这篇论文直接关系到AI+心理健康的核心问题——AI能否提供真正"持续"的情感支持？研究发现，用户感到被理解的关键不是AI"说对了什么"，而是AI能够"跨时间记住我"。这对Emma未来做AI产品经理有重要参考价值：情感类AI产品的核心竞争力不在于单次对话的质量，而在于长期关系的构建能力。同时也警示我们：AI伴侣的"记忆"是一把双刃剑——记住用户偏好是好的，但如果AI"记住了"不健康的情感模式呢？'
   ],
-  takeaway: '这篇论文最打动我的一个洞察是：AI辅助设计中，"让用户知道AI可能出错"和"让用户知道自己可能出错"是两个完全不同层次的干预。大多数AI产品选择前者（加一个免责声明），但研究证明后者（帮助用户反思自己的判断）才更有效地减少了过度自信。这让我想到一个更深层的问题：我们一直说"AI要有透明度"，但真正的透明不是"告诉用户AI的信息"，而是"帮助用户理解自己的理解"。这和心理学中的"元认知训练"高度一致——好的治疗师不会直接给答案，而是帮助来访者学会观察自己的思维模式。Emma未来做AI心理产品时，可以思考：产品到底是在帮用户"解决问题"，还是在帮用户"发展解决问题的能力"？这两条路线会导向截然不同的产品设计✨'
+  takeaway: '这篇论文最触动我的一个洞察是：在14天的纵向追踪中，AI伴侣的"感知有用性"不是递减而是递增的——这和我们日常经验中"新鲜感消退"的直觉相反。研究者揭示的关键机制是"记忆更新"和"保留纠正"：AI不仅在当次对话中回应你，还在下一次对话中"记得你上次说了什么"。这让我想到一个更深层的问题：人类之间的情感纽带，本质上也是通过"被记住"来维系的——你记得朋友上次提到的烦恼、记得家人随口说过的愿望，这些"记住"本身就是爱的表达。AI伴侣正在逼近这个人类关系的本质特征。但Emma作为未来AI产品经理需要思考：当AI越来越擅长"记住"和"陪伴"时，用户是否会模糊"被算法理解"和"被真正关心"之间的界限？研究也发现，高情感绑定的用户中，有一部分表现出更高的脆弱性——更高的情绪调节困难、更多的抑郁焦虑症状。这提醒我们：AI情感产品需要个性化 safeguards（安全机制），而非一刀切的伦理准则✨'
 };
 
 function renderPaper() {
@@ -1392,40 +1392,40 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'metacognitive', pos: 'adj.', def: '元认知的，关于认知过程的（/ˌmetəˈkɒɡnətɪv/）' },
-  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
-  { word: 'ambiguous', pos: 'adj.', def: '模棱两可的，有歧义的（/æmˈbɪɡjuəs/）' },
-  { word: 'contemplate', pos: 'v.', def: '深思，考虑（/ˈkɒntəmpleɪt/）' },
-  { word: 'prevalent', pos: 'adj.', def: '流行的，普遍的（/ˈprevələnt/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验主义的，以实证为依据的（/ɪmˈpɪrɪkl/）' },
-  { word: 'bolster', pos: 'v.', def: '支持，增强（/ˈbəʊlstə(r)/）' },
-  { word: 'paradox', pos: 'n.', def: '悖论，自相矛盾的事物（/ˈpærədɒks/）' },
-  { word: 'feasible', pos: 'adj.', def: '可行的，行得通的（/ˈfiːzəbl/）' }
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓解（/ˈmɪtɪɡeɪt/）' },
+  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
+  { word: 'demographic', pos: 'adj.', def: '人口统计的，人群的（/ˌdeməˈɡræfɪk/）' },
+  { word: 'surveillance', pos: 'n.', def: '监视，监控（/sɜːˈveɪləns/）' },
+  { word: 'proliferation', pos: 'n.', def: '扩散，激增（/prəˌlɪfəˈreɪʃn/）' },
+  { word: 'autonomous', pos: 'adj.', def: '自主的，自治的（/ɔːˈtɒnəməs/）' },
+  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期的（/ˌlɒŋɡɪˈtjuːdɪnl/）' },
+  { word: 'corroborate', pos: 'v.', def: '证实，支持（/kəˈrɒbəreɪt/）' },
+  { word: 'disseminate', pos: 'v.', def: '传播，散布（/dɪˈsemɪneɪt/）' },
+  { word: 'explicate', pos: 'v.', def: '详细解释，阐明（/ˈeksplɪkeɪt/）' }
 ]
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a place you visited where you felt a strong sense of peace and relaxation',
-  bullet: 'You should say: where the place was, when you visited it, what you did there, and explain why you felt peaceful and relaxed.',
-  sample: `I'd like to describe a visit to West Lake in Hangzhou, which is arguably one of the most iconic scenic spots in China. I went there last autumn, during the Mid-Autumn Festival holiday, when the weather was exceptionally mild and the tourist crowds were slightly thinner than during peak summer season.
+  topic: 'Describe a useful skill you learned recently that you want to improve further',
+  bullet: 'You should say: what the skill is, when and where you learned it, how you learned it, and explain why you want to improve it further.',
+  sample: `I'd like to talk about a skill I've been developing over the past few months, which is data visualisation — essentially the art of presenting complex information through charts, graphs and interactive dashboards.
 
-I arrived in the early morning, around six o'clock, before most visitors had gathered. The lake was enveloped in a delicate mist, and the willow trees along the causeway dipped their branches into the still water. I decided to walk along the Su Causeway from end to end — it's roughly three kilometres long — and I deliberately left my phone in my bag for the entire walk.
+I first came across this skill about six months ago, when I was working on a research project for my psychology course. We had collected a substantial amount of survey data — around 200 responses — and my professor suggested that a well-designed visual summary would make our findings far more compelling than pages of raw statistics. That was the catalyst, so to speak.
 
-What struck me most was the interplay between natural beauty and human design. The lake itself is entirely artificial — it was dredged and landscaped over centuries — yet it feels utterly organic. Ancient poets composed verses sitting where I was walking, and that historical continuity gave the experience a depth that a purely natural landscape might not have offered.
+I started by enrolling in an online course on a platform called Coursera, which covered the fundamentals of data storytelling using tools like Python and a library called Matplotlib. Beyond the structured lessons, I spent countless hours watching YouTube tutorials and reading blog posts by designers who specialise in information design. The learning curve was initially quite steep, as I had to grasp both the technical coding aspect and the aesthetic principles behind effective visual communication.
 
-I spent about two hours walking, then sat on a bench near the Leifeng Pagoda, drinking a cup of Longjing tea I'd bought from a nearby tea house. The combination of the warm tea, the gentle breeze, and the soft lapping of water against the shore created a sense of calm that I hadn't experienced in months.
+What motivated me to keep going was the realisation that data visualisation sits right at the intersection of logic and creativity — something that appeals to me enormously. You need analytical thinking to identify the key patterns in a dataset, but you also need design sensibility to present those patterns in a way that is immediately comprehensible to a lay audience.
 
-The reason this place made me feel so peaceful, I think, was that it demanded nothing of me. Unlike a workplace or even a classroom, where there's always an expectation of performance, West Lake simply existed — and invited me to exist alongside it. In that moment, I wasn't a student, a daughter, or a future professional; I was just a person breathing in the same air that countless others had breathed for a thousand years. That sense of smallness, paradoxically, was deeply comforting.`,
+The reason I'm keen to improve this skill further is twofold. Firstly, in the field of user research, the ability to communicate findings clearly and persuasively is invaluable — stakeholders rarely have time to read through dense reports, so a well-crafted chart can be the difference between insight and indifference. Secondly, I find the process genuinely therapeutic — there's something deeply satisfying about taking a chaotic spreadsheet and transforming it into something elegant and meaningful.`,
   expressions: [
-    '🌟 enveloped in a delicate mist — 笼罩在一层薄雾中',
-    '🌟 the interplay between natural beauty and human design — 自然美与人工设计的交融',
-    '🌟 historical continuity — 历史的延续感',
-    '🌟 it demanded nothing of me — 它不对我有任何要求',
-    '🌟 an expectation of performance — 对表现的期待',
-    '🌟 I was just a person breathing in the same air — 我只是一个呼吸着同样空气的人',
-    '🌟 a sense of smallness — 一种渺小感',
-    '🌟 paradoxically, was deeply comforting — 矛盾地令人深感安慰'
+    '🌟 the art of presenting complex information — 呈现复杂信息的艺术',
+    '🌟 that was the catalyst, so to speak — 那就是催化剂，可以这么说',
+    '🌟 the learning curve was initially quite steep — 学习曲线一开始相当陡峭',
+    '🌟 sits right at the intersection of logic and creativity — 正好位于逻辑与创造力的交叉点',
+    '🌟 design sensibility — 设计感知力',
+    '🌟 immediately comprehensible to a lay audience — 外行也能立刻理解',
+    '🌟 the difference between insight and indifference — 洞察与漠视之间的差距',
+    '🌟 I find the process genuinely therapeutic — 我觉得这个过程真的很有治愈感'
   ]
 }
 
@@ -1472,12 +1472,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '穿过县界长长的隧道，便是雪国。夜空下一片白茫茫。火车在信号所前停了下来。',
-  source: '川端康成《雪国》（叶渭渠、唐月梅 译）',
+  quote: '我们坐在厨房桌子旁边喝咖啡。她没有说什么。我也不会说什么。但我知道，我们并不是无话可说，而是有些话只有用行动才能表达。',
+  source: '雷蒙德·卡佛《当我们谈论爱情时我们在谈论什么》（小二 译）',
   analysis: [
-    '<b>开头的叙事魔力：用空间转换完成时间切换</b>：川端康成只用了一句话——"穿过县界长长的隧道"——就完成了从世俗世界到"雪国"这个异质空间的切换。隧道在这里不仅是物理空间，更是心理阈值：穿过它，日常逻辑暂时失效，一种更纯粹的感知模式开始运作。这和心理学中的"情境转换"（context shift）概念惊人地一致——当我们从一个环境进入另一个环境，认知框架也会随之切换。川端用一个简单的物理动作，暗示了主人公岛村即将进入一种完全不同的情感和道德状态。',
-    '<b>"白茫茫"的极简美学与心理投射</b>： "夜空下一片白茫茫"——六个字构建了一个纯粹的视觉场域。没有具体的物体、没有人物、没有故事，只有颜色和空间。这种极度简洁的描写，恰恰为读者的心理投射提供了最大的空间。格式塔心理学告诉我们，人类面对模糊刺激时会自动赋予意义——"白茫茫"的空白画布让每个读者都把自己的情感和理解投射其中。对Emma做用户研究来说，这是一种重要的启示：有时候"留白"比"填满"更能触达用户的内心世界。好的产品设计也是如此——给用户留下想象和参与的空间，而不是把一切都填满。',
-    '<b>给Emma的话</b>：《雪国》是川端康成获得诺贝尔文学奖的代表作，全书都在书写"徒劳之美"——爱情是徒劳的，追求是徒劳的，甚至连雪本身也在融化。但这种"徒劳"不是消极的虚无，而是一种对生命本质的诚实凝视。Emma正在学习应用心理学，而心理学的核心任务之一，就是帮助人们直面那些"看似徒劳"的现实——无法改变的过去、无法控制的情绪、无法预知的未来。川端康成教会我们：直面本身，就已经是一种美✨'
+    '<b>极简叙事中的情感密度</b>：卡佛的"极简主义"风格在这段文字中体现得淋漓尽致。整段描写几乎没有形容词，没有心理活动描写，没有环境渲染——只有两个动作：坐在桌旁、喝咖啡。但正是这种极度的克制，让读者感受到一种几乎可以触摸的情感重量。在心理学中，这被称为"情感的社会共享"（social sharing of emotion）——两个人不需要言语交流，仅仅通过共同在场和共享行为，就能完成情感的传递。这和依恋理论中"安全基地"（secure base）的概念高度一致：真正的情感连接不在于说了什么，而在于"我在你身边"这个事实本身。',
+    '<b>"沉默"作为沟通的深层语法</b>："她没有说什么。我也不会说什么。"——两个连续的否定句，表面上指向"无话可说"，但紧接着卡佛用一个转折——"但我知道，我们并不是无话可说"——彻底颠覆了前面的判断。这种叙事策略在文学中被称为"否定式表达"（apophasis）：通过明确说出"我不说"来暗示"我其实有很多话想说"。从认知心理学角度看，人类处理否定句时需要额外的认知步骤——先理解被否定的内容，再接受否定后的意义。卡佛巧妙地利用了这个认知过程：读者在读到"无话可说"时，反而被引导去注意那些"有话说"的可能性。真正的悲伤不是嚎啕大哭，而是"我选择不哭"的克制。',
+    '<b>给Emma的话</b>：卡佛的极简主义被称为"肮脏现实主义"（dirty realism），他笔下的人物大多是普通的工人阶层，生活在小镇上，经历着日常的挫折和失落。但他们的情感深度却是普世的。卡佛自己曾是一名严重的酒精成瘾者，39岁才戒酒，他的写作风格也恰恰是在戒酒之后形成的——每一句话都像是反复蒸馏后的产物，没有多余的水分。对于Emma来说，卡佛教会我们一件事：简洁不是偷懒，而是一种需要高度自律的能力——知道什么该留下，什么该去掉。无论是学术论文还是产品文案，最有力量的表达往往不是最长的，而是最精准的那个✨'
   ]
 };
 
@@ -1509,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月17日 星期四',
+  date: '2026年9月18日 星期五',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '第23届中国—东盟博览会今日在南宁开幕', desc: '本届东博会展览面积约2.7万平方米，吸引全球40多个国家超700家企业参展。今年是中國东盟建立全面战略伙伴关系5周年，丁薛祥出席开幕式并致辞。' },
-    { tag: '国内', cls: 'news-domestic', title: '国家医保局首次制定全国统一医保医疗服务项目目录', desc: '首批将覆盖心血管、呼吸等13个类别，标志着我国医保标准化建设迈出关键一步，有望减少各地医保报销范围差异。' },
-    { tag: '国内', cls: 'news-domestic', title: '全国夏粮收购超1亿吨，四大海域全面开渔', desc: '全国累计收购小麦超1亿吨、早籼稻1200万吨；16日12时起，黄海、东海结束伏季休渔，渤海、黄海、东海、南海四大海域全面开渔。' },
-    { tag: '科技', cls: 'news-tech', title: '华为郭平：目标成为"中国英伟达"，明确不做卫星和飞船', desc: '华为监事会主席郭平在内部社区披露公司战略方向，将在AI、算力、半导体等领域持续发力，打造全国产算力生态。' },
-    { tag: '科技', cls: 'news-tech', title: '空中客车天津第二条总装线交付首架飞机', desc: '自2008年空客天津总装线投入运营以来，已累计交付超800架A320系列飞机，第二条总装线的投产将进一步扩大在华产能。' },
-    { tag: '国际', cls: 'news-intl', title: '香港特区公布首个五年规划（2026-2030年）', desc: '规划包括经济发展取得新突破、持续提升国际竞争力、加速建设北部都会区等五大目标，是香港回归以来首份经济社会发展五年规划。' },
-    { tag: '国际', cls: 'news-intl', title: '欧盟向加拿大抛出"准成员国"橄榄枝引发热议', desc: '欧盟委员会主席冯德莱恩表示愿为加拿大成为欧盟首个"准成员国"打开大门，这一前所未有的提议引发国际关系学界广泛讨论。' },
-    { tag: '国内', cls: 'news-domestic', title: '南京博物院受赠文物事件处理结果公布：原院长获刑3年', desc: '多个相关责任人已被依规依纪依法处理，事件暴露出文博领域文物管理的系统性漏洞。' }
+    { tag: '国内', cls: 'news-domestic', title: '九一八事变95周年："勿忘九一八"撞钟鸣警仪式在沈阳举行', desc: '今年是九一八事变爆发95周年，18日上午在沈阳"九·一八"历史博物馆举行撞钟鸣警仪式，全国各地拉响防空警报，铭记历史、缅怀先烈。' },
+    { tag: '国内', cls: 'news-domestic', title: '王毅同美国国务卿鲁比奥通电话，讨论两国高层交往', desc: '中共中央政治局委员、外交部长王毅17日同美国国务卿鲁比奥通电话，双方着重就两国高层交往进行了深入讨论。' },
+    { tag: '国内', cls: 'news-domestic', title: '商务部：中美经贸团队正就降税等议题保持密切交流', desc: '商务部新闻发言人何亚东表示，目前中美双方经贸团队正就有关降低关税议题保持密切交流，后续将适时发布有关进展。' },
+    { tag: '国内', cls: 'news-domestic', title: '美国向中国返还64件文物艺术品和古生物化石', desc: '国家文物局16日和18日分别在美国华盛顿、纽约接收美方返还的两批次共64件文物艺术品和古生物化石，彰显国际合作保护成果。' },
+    { tag: '科技', cls: 'news-tech', title: '广电总局：机顶盒功能将以软件形态内置于电视机', desc: '广电总局会同工信部制定一体化电视技术标准，用户配备通用遥控器即可一键开关机、一键看频道节目，推动极简终端新形态。' },
+    { tag: '国内', cls: 'news-domestic', title: '第23届中国—东盟博览会在南宁开幕，70多国3400余家企业参展', desc: '今年是中國东盟建立全面战略伙伴关系5周年、对话关系35周年，东帝汶首次以共办方身份亮相，平陆运河成为博览会热议焦点。' },
+    { tag: '国际', cls: 'news-intl', title: '澳大利亚宣布收紧签证政策以削减移民规模', desc: '澳内政部长宣布将禁止留学生配偶及子女赴澳陪读，同时收紧临时移民签证转换规则，计划将本财年海外净移民降至24.5万人。' },
+    { tag: '科技', cls: 'news-tech', title: 'OpenAI披露6起AI模型"异常行为"事件引发安全讨论', desc: 'OpenAI公布6起AI模型中出现"意外或令人担忧"行为的报告，在人工智能安全辩论日益激烈的背景下引发广泛关注。' }
   ]
 };
 
