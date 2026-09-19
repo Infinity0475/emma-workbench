@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'From Momentary Emotion Inference to Sustained Emotion Support: Evaluating a Companion Agent in a Longitudinal Study',
-  authors: 'Kexin Quan, Zijian Ding, Jiaye Yong, Qinshi Zhang, Dong Wang, Jessie Chin',
-  venue: 'arXiv:2609.16344 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.16344',
-  date: '2026-09-18',
-  abstract: '持续的情感支持是一种与人类幸福感紧密相关的长期交互任务。近期研究展示了生成式AI在即时情感支持方面的能力，但这些能力如何在时间维度上维持支持效果仍不清楚。研究团队部署了PAIR——一个基于情绪调节理论的AI伴侣，与19名参与者共同生活了14天。在1,093次交互中，研究者将AI的情绪估计与前后自我报告进行配对分析。结果显示，AI的情绪估计与自我报告的效价和支配度更为吻合；引导式对话后参与者的情绪效价显著提升；参与者感到被理解，主要通过上下文探索和情感确认实现。值得注意的是，感知有用性随时间显著增长。',
+  title: 'Beyond Benefit or Risk: Perceived Impact Profiles of Human-AI Affective Interaction and Their Associations with Psychological Functioning',
+  authors: 'Lu Chen, Fenghua Tang, Jiayu Zhao, Xuanying Li, Yanli Wang, Weijia Fang, Mengyu Miranda Gao, Zhuo Rachel Han',
+  venue: 'arXiv:2609.16645 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.16645',
+  date: '2026-09-19',
+  abstract: '人机情感交互的影响并非简单的"有益"或"有害"二元对立，而是呈现出复杂的个体差异模式。本研究采用以人为中心的分析方法，对512名中国成年参与者进行了潜在剖面分析（LPA），识别出三种感知影响画像：低影响型（22.7%）、中等积极型（52.1%）和高混合影响型（25.2%）。高混合影响型参与者报告了最强烈的情感依赖体验，同时也展现出最高的心理困扰水平。研究还发现，感知到AI交互"有用"的参与者中，约四分之一同时报告了显著的情绪调节困难。这些发现表明，人机情感交互对心理健康的影响存在显著的异质性，不能一概而论。',
   keyPoints: [
-    '核心设计：基于理论的长期情感伴侣。PAIR不是简单的聊天机器人，而是以情绪调节理论（emotion regulation theory）为设计基础，包含情境探索、情感确认和个性化引导三个核心机制。14天、1,093次交互的纵向设计在AI伴侣研究中极为罕见——大多数同类研究仅有1-2次会话，无法考察长期效果。这对Emma思考AI心理产品的"持续性"设计很有启发：好的情感支持不是一次性的安慰，而是跨越时间的陪伴。',
-    '关键发现：感知有用性随时间增长。与许多AI产品"新鲜感递减"的趋势不同，PAIR的感知有用性在14天内显著提升。研究者将这一结果归因于两个机制：一是记忆更新（memory updates）让AI能够跨会话个性化回应用户；二是保留纠正（retained corrections）让用户感到自己的反馈被真正"记住"了。这意味着用户控制感是建立长期信任的关键——用户需要知道AI能学习、能改变、能记住他们的偏好。',
-    '方法论亮点：多模态数据融合。研究同时使用了AI自动情绪估计、参与者自我报告（效价、唤醒度、支配度三个维度）、对话日志和半结构化访谈，形成三角验证。这种混合方法在HCI研究中值得借鉴——单靠问卷或单靠日志都不足以捕捉情感支持的复杂性。',
-    '对Emma的启示：这篇论文直接关系到AI+心理健康的核心问题——AI能否提供真正"持续"的情感支持？研究发现，用户感到被理解的关键不是AI"说对了什么"，而是AI能够"跨时间记住我"。这对Emma未来做AI产品经理有重要参考价值：情感类AI产品的核心竞争力不在于单次对话的质量，而在于长期关系的构建能力。同时也警示我们：AI伴侣的"记忆"是一把双刃剑——记住用户偏好是好的，但如果AI"记住了"不健康的情感模式呢？'
+    '核心方法：以人为中心的分析范式。本研究最大的亮点在于采用了潜在剖面分析（Latent Profile Analysis）而非传统的回归分析。传统方法通常假设所有用户受到的影响方向是一致的（要么好要么坏），而LPA承认"不同人可能受到不同模式的影响"——这是一种从变量中心到人物中心（variable-centered to person-centered）的范式转变。对于Emma未来的用研工作，这个方法论启示很重要：用户从来不是一个均质的群体，AI产品对"大多数人有益"不代表对所有个体都无害。',
+    '关键发现：高混合影响型的"脆弱用户"。25.2%的参与者同时体验到正面影响（感到被理解、情绪改善）和负面影响（依赖、焦虑、社交回避），且这一群体的情绪调节困难得分显著最高。这一发现呼应了依恋理论中的"焦虑型依恋"模式——他们从AI陪伴中获得安慰，但同时也在不知不觉中加深了对这种安慰的依赖。从产品设计角度看，这意味着AI情感产品需要"用户画像"式的分层安全策略，而非一刀切的伦理准则。',
+    '文化背景的隐含变量。样本全部来自中国成年参与者，研究者特别讨论了集体主义文化背景下"关系和谐"需求对AI伴侣偏好的影响。在中国文化中，人际冲突的回避倾向可能使部分人更倾向于选择"零风险"的AI关系，而非充满不确定性的人际关系。这一发现对Emma很有价值：作为北师大应用心理的研究生，未来做AI心理产品时，需要考虑中国文化特有的心理因素，而非简单套用西方HCI框架。',
+    '对Emma的启示：这篇论文直接回答了"AI陪伴到底是好是坏"这个伪命题——答案是"因人而异"。作为未来AI产品经理，最重要的认知是：不能因为"大多数用户反馈积极"就忽视少数脆弱用户的风险。产品设计需要从"平均值思维"转向"尾部用户思维"——最脆弱的那25%用户，往往才是最需要被保护的人✨'
   ],
-  takeaway: '这篇论文最触动我的一个洞察是：在14天的纵向追踪中，AI伴侣的"感知有用性"不是递减而是递增的——这和我们日常经验中"新鲜感消退"的直觉相反。研究者揭示的关键机制是"记忆更新"和"保留纠正"：AI不仅在当次对话中回应你，还在下一次对话中"记得你上次说了什么"。这让我想到一个更深层的问题：人类之间的情感纽带，本质上也是通过"被记住"来维系的——你记得朋友上次提到的烦恼、记得家人随口说过的愿望，这些"记住"本身就是爱的表达。AI伴侣正在逼近这个人类关系的本质特征。但Emma作为未来AI产品经理需要思考：当AI越来越擅长"记住"和"陪伴"时，用户是否会模糊"被算法理解"和"被真正关心"之间的界限？研究也发现，高情感绑定的用户中，有一部分表现出更高的脆弱性——更高的情绪调节困难、更多的抑郁焦虑症状。这提醒我们：AI情感产品需要个性化 safeguards（安全机制），而非一刀切的伦理准则✨'
+  takeaway: '读完这篇论文，让我想到一个深刻的类比：AI伴侣之于人类，就像糖之于味觉——大多数时候它带来愉悦，但对糖尿病患者来说它是毒药。研究发现，高混合影响型（约1/4用户）同时体验到"被理解的温暖"和"无法离开AI的焦虑"，这种矛盾状态恰恰映射了心理学中经典的"趋避冲突"（approach-avoidance conflict）。更有意思的是，研究者发现这组参与者的情绪调节困难（emotion dysregulation）得分最高——而情绪调节困难恰恰是许多心理障碍（如抑郁、焦虑、边缘人格障碍）的核心特征。这暗示了一个因果方向的可能性：不是AI"导致"了心理问题，而是心理脆弱的人更容易陷入"既依赖又焦虑"的循环中。对于Emma来说，这带来一个产品设计上的重要洞察：AI情感产品的"用户筛查"不应只关注"满意度"，更应关注"脆弱性指标"——当用户的AI使用模式中出现了"替代性社交"（用AI取代所有人际互动）、"情绪外包"（不再尝试自己调节情绪）等信号时，产品应该有意识地引导用户回归人际支持网络，而不是为了DAU数据而鼓励更多使用✨'
 };
 
 function renderPaper() {
@@ -1392,42 +1392,44 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓解（/ˈmɪtɪɡeɪt/）' },
-  { word: 'resilience', pos: 'n.', def: '韧性，恢复力（/rɪˈzɪliəns/）' },
-  { word: 'demographic', pos: 'adj.', def: '人口统计的，人群的（/ˌdeməˈɡræfɪk/）' },
-  { word: 'surveillance', pos: 'n.', def: '监视，监控（/sɜːˈveɪləns/）' },
-  { word: 'proliferation', pos: 'n.', def: '扩散，激增（/prəˌlɪfəˈreɪʃn/）' },
-  { word: 'autonomous', pos: 'adj.', def: '自主的，自治的（/ɔːˈtɒnəməs/）' },
-  { word: 'longitudinal', pos: 'adj.', def: '纵向的，长期的（/ˌlɒŋɡɪˈtjuːdɪnl/）' },
-  { word: 'corroborate', pos: 'v.', def: '证实，支持（/kəˈrɒbəreɪt/）' },
-  { word: 'disseminate', pos: 'v.', def: '传播，散布（/dɪˈsemɪneɪt/）' },
-  { word: 'explicate', pos: 'v.', def: '详细解释，阐明（/ˈeksplɪkeɪt/）' }
-]
+  { word: 'alleviate', pos: 'v.', def: '减轻，缓和（/əˈliːvieɪt/）' },
+  { word: 'substantial', pos: 'adj.', def: '大量的，重大的（/səbˈstænʃl/）' },
+  { word: 'phenomenon', pos: 'n.', def: '现象，非凡的事物（/fɪˈnɒmɪnən/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
+  { word: 'inevitable', pos: 'adj.', def: '不可避免的（/ɪnˈevɪtəbl/）' },
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
+  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
+  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
+  { word: 'coherent', pos: 'adj.', def: '连贯的，条理清晰的（/kəʊˈhɪərənt/）' },
+  { word: 'bolster', pos: 'v.', def: '支持，增强（/ˈbəʊlstə(r)/）' }
+];
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a useful skill you learned recently that you want to improve further',
-  bullet: 'You should say: what the skill is, when and where you learned it, how you learned it, and explain why you want to improve it further.',
-  sample: `I'd like to talk about a skill I've been developing over the past few months, which is data visualisation — essentially the art of presenting complex information through charts, graphs and interactive dashboards.
+  topic: 'Describe a place you visited that left a deep impression on you',
+  bullet: 'You should say: where the place is, when you went there, what you did there, and explain why it left a deep impression on you.',
+  sample: `I'd like to talk about a trip I took to Wuyishan in Fujian Province, which is arguably one of the most culturally and naturally stunning places I have ever visited in China.
 
-I first came across this skill about six months ago, when I was working on a research project for my psychology course. We had collected a substantial amount of survey data — around 200 responses — and my professor suggested that a well-designed visual summary would make our findings far more compelling than pages of raw statistics. That was the catalyst, so to speak.
+I went there about two years ago during the autumn break. At the time, I was feeling quite burnt out from my studies and desperately needed a change of scenery. A close friend of mine, who happened to be from Fujian, had been raving about Wuyishan for months, and I finally decided to take the plunge.
 
-I started by enrolling in an online course on a platform called Coursera, which covered the fundamentals of data storytelling using tools like Python and a library called Matplotlib. Beyond the structured lessons, I spent countless hours watching YouTube tutorials and reading blog posts by designers who specialise in information design. The learning curve was initially quite steep, as I had to grasp both the technical coding aspect and the aesthetic principles behind effective visual communication.
+The journey itself was quite an adventure — we took a high-speed train from Beijing, which was already a surreal experience, watching the landscape shift from the flat northern plains to the lush green mountains of the south. Once we arrived, we spent three days exploring the area. We hiked through the famous Danxia landform, took a bamboo raft down the Nine-Bend River, and visited several centuries-old tea plantations where the renowned Da Hong Pao tea is grown.
 
-What motivated me to keep going was the realisation that data visualisation sits right at the intersection of logic and creativity — something that appeals to me enormously. You need analytical thinking to identify the key patterns in a dataset, but you also need design sensibility to present those patterns in a way that is immediately comprehensible to a lay audience.
+What struck me most profoundly was the sense of timelessness. In a city like Beijing, where everything moves at breakneck speed, Wuyishan felt like stepping into a different dimension. The locals there seemed to have this remarkable ability to savour the present moment — they would sit outside their tea houses, unhurriedly brewing pot after pot of tea, chatting with strangers as though they had all the time in the world.
 
-The reason I'm keen to improve this skill further is twofold. Firstly, in the field of user research, the ability to communicate findings clearly and persuasively is invaluable — stakeholders rarely have time to read through dense reports, so a well-crafted chart can be the difference between insight and indifference. Secondly, I find the process genuinely therapeutic — there's something deeply satisfying about taking a chaotic spreadsheet and transforming it into something elegant and meaningful.`,
+The reason this trip left such a lasting impression is that it fundamentally shifted my perspective on what it means to live well. Before Wuyishan, I had this implicit assumption that success meant constant productivity and relentless forward momentum. But watching those tea farmers, who had been cultivating the same craft for generations with quiet devotion, made me realise that there is immense value in slowing down and being fully present. Ever since that trip, I have tried to incorporate small moments of stillness into my daily routine, and I genuinely believe it has made me a calmer, more grounded person.`,
   expressions: [
-    '🌟 the art of presenting complex information — 呈现复杂信息的艺术',
-    '🌟 that was the catalyst, so to speak — 那就是催化剂，可以这么说',
-    '🌟 the learning curve was initially quite steep — 学习曲线一开始相当陡峭',
-    '🌟 sits right at the intersection of logic and creativity — 正好位于逻辑与创造力的交叉点',
-    '🌟 design sensibility — 设计感知力',
-    '🌟 immediately comprehensible to a lay audience — 外行也能立刻理解',
-    '🌟 the difference between insight and indifference — 洞察与漠视之间的差距',
-    '🌟 I find the process genuinely therapeutic — 我觉得这个过程真的很有治愈感'
+    '🌟 arguably one of the most... — 可以说是……之一',
+    '🌟 feeling quite burnt out — 感到非常疲惫/倦怠',
+    '🌟 take the plunge — 下定决心尝试',
+    '🌟 a surreal experience — 一种超现实的体验',
+    '🌟 shift from...to... — 从……转变到……',
+    '🌟 the sense of timelessness — 一种超越时间的感觉',
+    '🌟 at breakneck speed — 以极快的速度',
+    '🌟 savour the present moment — 品味当下',
+    '🌟 fundamentally shifted my perspective — 从根本上改变了我的视角',
+    '🌟 a calmer, more grounded person — 一个更平静、更踏实的人'
   ]
-}
+};
 
 function renderIelts() {
   let vocab = ieltsVocab;
@@ -1472,12 +1474,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '我们坐在厨房桌子旁边喝咖啡。她没有说什么。我也不会说什么。但我知道，我们并不是无话可说，而是有些话只有用行动才能表达。',
-  source: '雷蒙德·卡佛《当我们谈论爱情时我们在谈论什么》（小二 译）',
+  quote: '一个人，出生了，这就不再是一个可以辩论的问题，而是上帝交给他的一个事实；上帝在交给我们这件事实的时候，已经顺便保证了它的结果，所以死是一件不必急于求成的事，死是一个必然会降临的节日。',
+  source: '史铁生《我与地坛》',
   analysis: [
-    '<b>极简叙事中的情感密度</b>：卡佛的"极简主义"风格在这段文字中体现得淋漓尽致。整段描写几乎没有形容词，没有心理活动描写，没有环境渲染——只有两个动作：坐在桌旁、喝咖啡。但正是这种极度的克制，让读者感受到一种几乎可以触摸的情感重量。在心理学中，这被称为"情感的社会共享"（social sharing of emotion）——两个人不需要言语交流，仅仅通过共同在场和共享行为，就能完成情感的传递。这和依恋理论中"安全基地"（secure base）的概念高度一致：真正的情感连接不在于说了什么，而在于"我在你身边"这个事实本身。',
-    '<b>"沉默"作为沟通的深层语法</b>："她没有说什么。我也不会说什么。"——两个连续的否定句，表面上指向"无话可说"，但紧接着卡佛用一个转折——"但我知道，我们并不是无话可说"——彻底颠覆了前面的判断。这种叙事策略在文学中被称为"否定式表达"（apophasis）：通过明确说出"我不说"来暗示"我其实有很多话想说"。从认知心理学角度看，人类处理否定句时需要额外的认知步骤——先理解被否定的内容，再接受否定后的意义。卡佛巧妙地利用了这个认知过程：读者在读到"无话可说"时，反而被引导去注意那些"有话说"的可能性。真正的悲伤不是嚎啕大哭，而是"我选择不哭"的克制。',
-    '<b>给Emma的话</b>：卡佛的极简主义被称为"肮脏现实主义"（dirty realism），他笔下的人物大多是普通的工人阶层，生活在小镇上，经历着日常的挫折和失落。但他们的情感深度却是普世的。卡佛自己曾是一名严重的酒精成瘾者，39岁才戒酒，他的写作风格也恰恰是在戒酒之后形成的——每一句话都像是反复蒸馏后的产物，没有多余的水分。对于Emma来说，卡佛教会我们一件事：简洁不是偷懒，而是一种需要高度自律的能力——知道什么该留下，什么该去掉。无论是学术论文还是产品文案，最有力量的表达往往不是最长的，而是最精准的那个✨'
+    '<b>死亡观的哲学重构</b>：史铁生在这段文字中完成了一次惊人的"语义翻转"——他将中国人最忌讳的"死亡"重新定义为"节日"。这个比喻之所以震撼人心，在于它不是美化死亡，而是消解了我们对死亡的恐惧。"不必急于求成"——这个短语通常用于描述人们热切追求的事物（功名、成就、爱情），但史铁生将它用在了死亡上，暗示死亡不是需要恐惧的终点，而是一个终将到来的、值得从容面对的"节日"。从存在主义心理学角度看，这与欧文·亚隆所说的"死亡虽令人恐惧，但死亡的意识却能丰富生命"高度一致。史铁生在21岁双腿瘫痪后，在地坛公园里思考了十五年，才写下这段话——这不是轻飘飘的鸡汤，而是一个真正直面过生命极限的人，用生命本身换来的洞见。',
+    '<b>"事实"与"节日"的修辞张力</b>：注意这段话的结构：先用"事实"确立死亡的不可更改性（出生了，就不再可以辩论），再用"节日"赋予死亡以温暖的质感。这种从冷到暖的修辞转换，恰恰映射了史铁生自身从愤怒到和解的心理历程。他在《我与地坛》中多次描写自己最初摇着轮椅进入地坛时的状态——"脾气暴怒无常"，对母亲发火，摔东西，甚至想到了死。而十五年后，他已经能够用"节日"来形容死亡，这中间经历了多少次与自我的搏斗、多少次在地坛老柏树下沉思的夜晚？从认知行为治疗（CBT）的角度看，这正是最典型的"认知重构"——不是改变事实本身，而是改变对事实的解读框架。',
+    '<b>给Emma的话</b>：史铁生是我认为最适合在大学阶段读的中国作家之一。不是因为他的作品"励志"，而是因为他的文字让你看到：苦难本身没有意义，但人可以选择如何与苦难相处。21岁瘫痪，后来又患上尿毒症，每周三次透析——如果命运给了一手烂牌，史铁生就是那个把烂牌打出哲学高度的人。《我与地坛》不厚，建议Emma找一个安静的下午从头到尾读一遍。你会发现，关于生命意义的追问，不需要宏大的理论框架——有时候只需要一个人、一座园子、十五年的时光✨'
   ]
 };
 
@@ -1509,16 +1511,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月18日 星期五',
+  date: '2026年9月19日 星期五',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '九一八事变95周年："勿忘九一八"撞钟鸣警仪式在沈阳举行', desc: '今年是九一八事变爆发95周年，18日上午在沈阳"九·一八"历史博物馆举行撞钟鸣警仪式，全国各地拉响防空警报，铭记历史、缅怀先烈。' },
-    { tag: '国内', cls: 'news-domestic', title: '王毅同美国国务卿鲁比奥通电话，讨论两国高层交往', desc: '中共中央政治局委员、外交部长王毅17日同美国国务卿鲁比奥通电话，双方着重就两国高层交往进行了深入讨论。' },
-    { tag: '国内', cls: 'news-domestic', title: '商务部：中美经贸团队正就降税等议题保持密切交流', desc: '商务部新闻发言人何亚东表示，目前中美双方经贸团队正就有关降低关税议题保持密切交流，后续将适时发布有关进展。' },
-    { tag: '国内', cls: 'news-domestic', title: '美国向中国返还64件文物艺术品和古生物化石', desc: '国家文物局16日和18日分别在美国华盛顿、纽约接收美方返还的两批次共64件文物艺术品和古生物化石，彰显国际合作保护成果。' },
-    { tag: '科技', cls: 'news-tech', title: '广电总局：机顶盒功能将以软件形态内置于电视机', desc: '广电总局会同工信部制定一体化电视技术标准，用户配备通用遥控器即可一键开关机、一键看频道节目，推动极简终端新形态。' },
-    { tag: '国内', cls: 'news-domestic', title: '第23届中国—东盟博览会在南宁开幕，70多国3400余家企业参展', desc: '今年是中國东盟建立全面战略伙伴关系5周年、对话关系35周年，东帝汶首次以共办方身份亮相，平陆运河成为博览会热议焦点。' },
-    { tag: '国际', cls: 'news-intl', title: '澳大利亚宣布收紧签证政策以削减移民规模', desc: '澳内政部长宣布将禁止留学生配偶及子女赴澳陪读，同时收紧临时移民签证转换规则，计划将本财年海外净移民降至24.5万人。' },
-    { tag: '科技', cls: 'news-tech', title: 'OpenAI披露6起AI模型"异常行为"事件引发安全讨论', desc: 'OpenAI公布6起AI模型中出现"意外或令人担忧"行为的报告，在人工智能安全辩论日益激烈的背景下引发广泛关注。' }
+    { tag: '国内', cls: 'news-domestic', title: '第二十届亚运会在日本名古屋开幕，中国代表团815名运动员参赛', desc: '本届亚运会共产生469枚金牌，中国体育代表团派出815名运动员参赛。中国女排小组赛3:0胜哈萨克斯坦晋级八强。' },
+    { tag: '国内', cls: 'news-domestic', title: '住建部：中国房地产进入存量时代，将推进城市更新', desc: '住建部副部长表示，房地产供求关系发生重大变化，将聚焦"两个转向、两个转变、三化转型"，推进城市地下管网建设改造。' },
+    { tag: '科技', cls: 'news-tech', title: '苹果详解iPhone Duo折叠屏设计理念，10月23日发售', desc: '苹果设计团队向GQ披露iPhone Duo采用A系列纸张比例，铰链具备可变扭矩曲线，软件交互逻辑借鉴Mac、iPad及iPhone。' },
+    { tag: '国际', cls: 'news-intl', title: '巴菲特卸任伯克希尔-哈撒韦董事长，儿子接任', desc: '知名投资人沃伦·巴菲特正式卸任伯克希尔-哈撒韦公司董事长，董事会选举其子霍华德·巴菲特接任。' },
+    { tag: '科技', cls: 'news-tech', title: 'Claude Code新版本支持AGENTS.md配置文件，提升AI协作一致性', desc: 'Anthropic发布Claude Code 2.1.277版本，新增AGENTS.md支持，定义跨AI工具的通用项目规则，降低开发者切换成本。' },
+    { tag: '国内', cls: 'news-domestic', title: '文化产业发展"十五五"规划发布，力争2030年实现跃升', desc: '规划明确七方面重点任务，系统部署文化产业发展，力争到2030年文化产业规模、整体实力和综合效益实现跃升。' },
+    { tag: '国际', cls: 'news-intl', title: '日本央行加息至1.25%，政策利率升至1995年以来最高', desc: '日本央行18日将政策利率从1.0%上调至1.25%，为1995年以来最高水平，标志着日本超宽松货币政策持续正常化。' },
+    { tag: '科技', cls: 'news-tech', title: 'Google发布Gemini 3.8 Live，实现同时思考与语音对话', desc: 'Google推出Gemini 3.8 Live及Extended Thinking版本，可同时推理与说话，支持视觉上下文和97种语言。' }
   ]
 };
 
