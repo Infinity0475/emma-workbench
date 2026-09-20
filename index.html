@@ -1341,20 +1341,20 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Beyond Benefit or Risk: Perceived Impact Profiles of Human-AI Affective Interaction and Their Associations with Psychological Functioning',
-  authors: 'Lu Chen, Fenghua Tang, Jiayu Zhao, Xuanying Li, Yanli Wang, Weijia Fang, Mengyu Miranda Gao, Zhuo Rachel Han',
-  venue: 'arXiv:2609.16645 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.16645',
-  date: '2026-09-19',
-  abstract: '人机情感交互的影响并非简单的"有益"或"有害"二元对立，而是呈现出复杂的个体差异模式。本研究采用以人为中心的分析方法，对512名中国成年参与者进行了潜在剖面分析（LPA），识别出三种感知影响画像：低影响型（22.7%）、中等积极型（52.1%）和高混合影响型（25.2%）。高混合影响型参与者报告了最强烈的情感依赖体验，同时也展现出最高的心理困扰水平。研究还发现，感知到AI交互"有用"的参与者中，约四分之一同时报告了显著的情绪调节困难。这些发现表明，人机情感交互对心理健康的影响存在显著的异质性，不能一概而论。',
+  title: 'Ownership in AI-Assisted Everyday Tasks',
+  authors: 'Megan Wei, Melanie Subbiah, Audrey Lee, Annya Dahmani, Dave Edwards, Helen Edwards, Ellie Pavlick',
+  venue: 'arXiv:2609.20658 \xb7 cs.AI, cs.HC \xb7 September 2026',
+  link: 'https://arxiv.org/abs/2609.20658',
+  date: '2026-09-20',
+  abstract: '当AI参与到我们的日常任务中时，工作成果还是"我的"吗？本研究通过探索性质性调查，让参与者描述两项最近使用AI完成的任务——一项感觉像自己的作品，另一项则不然。研究发现，"心理所有权"（felt ownership）取决于协作过程而非结果：当人们仅仅"审批"AI的建议时，会产生强烈的"去所有权感"；而当人们主导、迭代或重写时，所有权感得以保留。更有趣的是，即使任务的执行完全依赖AI，只要人们"拥有愿景"（own the vision），仍然会报告很高的所有权感。此外，个人声音的丧失和对输出内容缺乏理解都会侵蚀所有权感，而是否愿意公开AI使用往往与真正的主人翁感无关，更多受社群规范和对"功劳被抹去"的恐惧影响。',
   keyPoints: [
-    '核心方法：以人为中心的分析范式。本研究最大的亮点在于采用了潜在剖面分析（Latent Profile Analysis）而非传统的回归分析。传统方法通常假设所有用户受到的影响方向是一致的（要么好要么坏），而LPA承认"不同人可能受到不同模式的影响"——这是一种从变量中心到人物中心（variable-centered to person-centered）的范式转变。对于Emma未来的用研工作，这个方法论启示很重要：用户从来不是一个均质的群体，AI产品对"大多数人有益"不代表对所有个体都无害。',
-    '关键发现：高混合影响型的"脆弱用户"。25.2%的参与者同时体验到正面影响（感到被理解、情绪改善）和负面影响（依赖、焦虑、社交回避），且这一群体的情绪调节困难得分显著最高。这一发现呼应了依恋理论中的"焦虑型依恋"模式——他们从AI陪伴中获得安慰，但同时也在不知不觉中加深了对这种安慰的依赖。从产品设计角度看，这意味着AI情感产品需要"用户画像"式的分层安全策略，而非一刀切的伦理准则。',
-    '文化背景的隐含变量。样本全部来自中国成年参与者，研究者特别讨论了集体主义文化背景下"关系和谐"需求对AI伴侣偏好的影响。在中国文化中，人际冲突的回避倾向可能使部分人更倾向于选择"零风险"的AI关系，而非充满不确定性的人际关系。这一发现对Emma很有价值：作为北师大应用心理的研究生，未来做AI心理产品时，需要考虑中国文化特有的心理因素，而非简单套用西方HCI框架。',
-    '对Emma的启示：这篇论文直接回答了"AI陪伴到底是好是坏"这个伪命题——答案是"因人而异"。作为未来AI产品经理，最重要的认知是：不能因为"大多数用户反馈积极"就忽视少数脆弱用户的风险。产品设计需要从"平均值思维"转向"尾部用户思维"——最脆弱的那25%用户，往往才是最需要被保护的人✨'
+    '核心发现：过程决定所有权，而非结果。这是本研究最深刻的洞察。人们并非因为"谁写了最终文字"来判断所有权，而是根据协作过程中的角色分配。当你只是点击"接受"AI的建议时，你会觉得那不是你的作品；但当你以AI为工具、按照自己的意图反复修改时，即使最终产物与AI的初稿差异很大，你仍然觉得"这是我的"。从心理学角度看，这与Deci和Ryan的自我决定理论（Self-Determination Theory）高度一致——自主性（autonomy）是人类体验"这是我的行为"的核心需求。对Emma未来做AI产品设计的启示是：产品设计应该让用户保持"主导感"，而不是把用户变成AI输出的审批机器。',
+    '关键洞察："拥有愿景"就够了。研究中最反直觉的发现是，参与者在报告"没有AI就无法完成"的任务时，仍然有强烈的所有权感——只要他们提供了创意方向和最终判断标准。这意味着所有权不等于执行力（execution），而更接近于"意图的所有权"（ownership of intent）。这一发现对AI产品经理有重大意义：好的AI工具不应该让用户觉得自己被替代了，而应该让用户觉得"AI帮我把想法变成了现实"——用户是导演，AI是演员。',
+    '"去所有权"的两种机制：声音丧失与理解缺失。研究发现两个侵蚀所有权的关键因素：（1）输出不再像"我说的话"——个人风格、用语习惯被AI的通用表达取代；（2）用户不理解AI输出的内容——当AI生成了一段你无法解释的文字时，你自然无法声称它属于你。这为AI产品设计提供了两条具体的设计原则：一是保持用户的"声音指纹"（voice fingerprint），让AI输出风格匹配用户的表达习惯；二是确保输出可解释性，让用户能够理解并复述AI生成内容的逻辑。',
+    '对Emma的启示：这篇论文直接回答了AI时代一个核心的产品哲学问题——"AI产品应该让用户感到强大还是感到被替代？"答案是明确的：让用户保持主导感、保持个人声音、保持对输出的理解——这三点决定了用户是否会觉得AI是自己的工具，还是自己是AI的工具。作为未来的AI产品经理，Emma需要牢记：最好的AI产品不是"替用户做事"的产品，而是"帮用户成为更好的自己"的产品✨'
   ],
-  takeaway: '读完这篇论文，让我想到一个深刻的类比：AI伴侣之于人类，就像糖之于味觉——大多数时候它带来愉悦，但对糖尿病患者来说它是毒药。研究发现，高混合影响型（约1/4用户）同时体验到"被理解的温暖"和"无法离开AI的焦虑"，这种矛盾状态恰恰映射了心理学中经典的"趋避冲突"（approach-avoidance conflict）。更有意思的是，研究者发现这组参与者的情绪调节困难（emotion dysregulation）得分最高——而情绪调节困难恰恰是许多心理障碍（如抑郁、焦虑、边缘人格障碍）的核心特征。这暗示了一个因果方向的可能性：不是AI"导致"了心理问题，而是心理脆弱的人更容易陷入"既依赖又焦虑"的循环中。对于Emma来说，这带来一个产品设计上的重要洞察：AI情感产品的"用户筛查"不应只关注"满意度"，更应关注"脆弱性指标"——当用户的AI使用模式中出现了"替代性社交"（用AI取代所有人际互动）、"情绪外包"（不再尝试自己调节情绪）等信号时，产品应该有意识地引导用户回归人际支持网络，而不是为了DAU数据而鼓励更多使用✨'
-};
+  takeaway: '读完这篇论文，我联想到心理学中一个经典概念——"内生性"（internality）。当我们说"这是我做的"时，本质上是在表达一种因果关系的主观归属：我的意图导致了这个结果。AI协作的微妙之处在于，它打破了这种简单的因果链——结果不完全来自我的执行，但意图确实是我的。研究发现最有趣的一点是：人们愿意对自己"无法独立完成"的任务声称所有权，只要愿景是自己的。这与维果茨基的"最近发展区"（Zone of Proximal Development）不谋而合——最好的学习发生在"有人帮助但仍靠自己能力达成"的区间。AI产品设计也应该遵循这个原则：让用户始终处于"有AI帮助但仍靠自己完成"的心理区间，而不是滑入"AI完成了大部分，我只是签字"的去权区间。对Emma来说，这篇论文最有价值的洞察是——AI产品成功的标准不是"用户用了多少"，而是"用户在多大程度上觉得这是自己的作品"✨'
+};;
 
 function renderPaper() {
   const el = document.getElementById('paperContent');
@@ -1392,44 +1392,46 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'alleviate', pos: 'v.', def: '减轻，缓和（/əˈliːvieɪt/）' },
-  { word: 'substantial', pos: 'adj.', def: '大量的，重大的（/səbˈstænʃl/）' },
-  { word: 'phenomenon', pos: 'n.', def: '现象，非凡的事物（/fɪˈnɒmɪnən/）' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
-  { word: 'inevitable', pos: 'adj.', def: '不可避免的（/ɪnˈevɪtəbl/）' },
-  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
-  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
-  { word: 'coherent', pos: 'adj.', def: '连贯的，条理清晰的（/kəʊˈhɪərənt/）' },
-  { word: 'bolster', pos: 'v.', def: '支持，增强（/ˈbəʊlstə(r)/）' }
-];
+  { word: 'ambiguous', pos: 'adj.', def: '模棱两可的，含糊不清的（/æmˈbɪɡjuəs/）' },
+  { word: 'consolidate', pos: 'v.', def: '巩固，合并（/kənˈsɒlɪdeɪt/）' },
+  { word: 'elaborate', pos: 'adj.', def: '精心制作的，详尽的（/ɪˈlæbərət/）' },
+  { word: 'fluctuate', pos: 'v.', def: '波动，起伏不定（/ˈflʌktʃueɪt/）' },
+  { word: 'implicit', pos: 'adj.', def: '含蓄的，暗示的（/ɪmˈplɪsɪt/）' },
+  { word: 'juxtapose', pos: 'v.', def: '并列，并置对比（/ˌdʒʌkstəˈpəʊz/）' },
+  { word: 'meticulous', pos: 'adj.', def: '一丝不苟的，细致的（/məˈtɪkjələs/）' },
+  { word: 'nuanced', pos: 'adj.', def: '有细微差别的，微妙的（/ˈnjuːɑːnst/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'resilient', pos: 'adj.', def: '有韧性的，能恢复的（/rɪˈzɪliənt/）' }
+];;
 
 const ieltsSpeaking = {
-  part: 'Part 2 · Cue Card',
-  topic: 'Describe a place you visited that left a deep impression on you',
-  bullet: 'You should say: where the place is, when you went there, what you did there, and explain why it left a deep impression on you.',
-  sample: `I'd like to talk about a trip I took to Wuyishan in Fujian Province, which is arguably one of the most culturally and naturally stunning places I have ever visited in China.
+  part: 'Part 2 \xb7 Cue Card',
+  topic: 'Describe a book that had a major influence on you',
+  bullet: 'You should say: what the book was, when you read it, what it was about, and explain how it influenced you.',
+  sample: `I'd like to talk about a book that profoundly shaped the way I think about life and priorities — it's called "The Little Prince" (Le Petit Prince), written by the French aviator and author Antoine de Saint-Exupéry.
 
-I went there about two years ago during the autumn break. At the time, I was feeling quite burnt out from my studies and desperately needed a change of scenery. A close friend of mine, who happened to be from Fujian, had been raving about Wuyishan for months, and I finally decided to take the plunge.
+I first read it when I was about fourteen, during a particularly stressful period in my life. I had just transferred to a new school and was struggling to fit in. My Chinese literature teacher recommended it to me after class, saying something along the lines of "this isn't a children's book — it just looks like one." That immediately piqued my curiosity, so I borrowed a copy from the school library.
 
-The journey itself was quite an adventure — we took a high-speed train from Beijing, which was already a surreal experience, watching the landscape shift from the flat northern plains to the lush green mountains of the south. Once we arrived, we spent three days exploring the area. We hiked through the famous Danxia landform, took a bamboo raft down the Nine-Bend River, and visited several centuries-old tea plantations where the renowned Da Hong Pao tea is grown.
+The story follows a pilot who crashes in the Sahara Desert and encounters a little prince who has travelled from asteroid to asteroid. Each planet he visits is inhabited by a single adult who embodies some human flaw — a king who craves authority over nothing, a conceited man who wants only admiration, a businessman obsessed with counting stars he believes he owns. The little prince finds each of them baffling, and through his innocent questions, Saint-Exupéry delivers some of the most piercing commentary on adult behaviour I have ever read.
 
-What struck me most profoundly was the sense of timelessness. In a city like Beijing, where everything moves at breakneck speed, Wuyishan felt like stepping into a different dimension. The locals there seemed to have this remarkable ability to savour the present moment — they would sit outside their tea houses, unhurriedly brewing pot after pot of tea, chatting with strangers as though they had all the time in the world.
+What influenced me most was the fox's secret: "One sees clearly only with the heart. What is essential is invisible to the eye." At fourteen, I didn't fully grasp its depth, but it lodged itself somewhere in my mind. Over the years, I have returned to that sentence countless times — during moments of stress, when I was chasing grades obsessively, when I found myself valuing appearances over substance. It always brought me back to what actually matters.
 
-The reason this trip left such a lasting impression is that it fundamentally shifted my perspective on what it means to live well. Before Wuyishan, I had this implicit assumption that success meant constant productivity and relentless forward momentum. But watching those tea farmers, who had been cultivating the same craft for generations with quiet devotion, made me realise that there is immense value in slowing down and being fully present. Ever since that trip, I have tried to incorporate small moments of stillness into my daily routine, and I genuinely believe it has made me a calmer, more grounded person.`,
+The book also taught me the concept of "taming" — the idea that establishing connections takes time, patience, and vulnerability, but it is precisely those bonds that give life meaning. The fox tells the prince: "You become responsible, forever, for what you have tamed." This resonated with me so deeply that it fundamentally changed how I approach relationships — I stopped trying to be popular and started focusing on being genuinely present for the people who matter.
+
+Looking back, "The Little Prince" is arguably the most influential book I have ever read, precisely because its lessons are deceptively simple yet endlessly profound. I genuinely believe it is a book you can read at every stage of life and discover something new each time.`,
   expressions: [
-    '🌟 arguably one of the most... — 可以说是……之一',
-    '🌟 feeling quite burnt out — 感到非常疲惫/倦怠',
-    '🌟 take the plunge — 下定决心尝试',
-    '🌟 a surreal experience — 一种超现实的体验',
-    '🌟 shift from...to... — 从……转变到……',
-    '🌟 the sense of timelessness — 一种超越时间的感觉',
-    '🌟 at breakneck speed — 以极快的速度',
-    '🌟 savour the present moment — 品味当下',
-    '🌟 fundamentally shifted my perspective — 从根本上改变了我的视角',
-    '🌟 a calmer, more grounded person — 一个更平静、更踏实的人'
+    '\ud83c\udf1f profoundly shaped the way I think — 深刻地塑造了我的思维方式',
+    '\ud83c\udf1f piqued my curiosity — 激发了我的好奇心',
+    '\ud83c\udf1f embodies some human flaw — 体现了某种人性的缺陷',
+    '\ud83c\udf1f piercing commentary — 犀利的评述',
+    '\ud83c\udf1f lodged itself somewhere in my mind — 深深印在我的脑海中',
+    '\ud83c\udf1f valuing appearances over substance — 重外表轻实质',
+    '\ud83c\udf1f establishing connections takes time, patience, and vulnerability — 建立联系需要时间、耐心和脆弱性',
+    '\ud83c\udf1f genuinely present for the people who matter — 真正陪伴在乎的人',
+    '\ud83c\udf1f deceptively simple yet endlessly profound — 看似简单却意味深长',
+    '\ud83c\udf1f discover something new each time — 每次阅读都有新发现'
   ]
-};
+};;
 
 function renderIelts() {
   let vocab = ieltsVocab;
@@ -1474,14 +1476,14 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '一个人，出生了，这就不再是一个可以辩论的问题，而是上帝交给他的一个事实；上帝在交给我们这件事实的时候，已经顺便保证了它的结果，所以死是一件不必急于求成的事，死是一个必然会降临的节日。',
-  source: '史铁生《我与地坛》',
+  quote: '凡事都有偶然的凑巧，结果却又如宿命的必然。日子在风里飘着，过了端午，过了中秋，过了重阳。一切都在不知不觉中变化着，变化得叫人无法相信。',
+  source: '沈从文《边城》',
   analysis: [
-    '<b>死亡观的哲学重构</b>：史铁生在这段文字中完成了一次惊人的"语义翻转"——他将中国人最忌讳的"死亡"重新定义为"节日"。这个比喻之所以震撼人心，在于它不是美化死亡，而是消解了我们对死亡的恐惧。"不必急于求成"——这个短语通常用于描述人们热切追求的事物（功名、成就、爱情），但史铁生将它用在了死亡上，暗示死亡不是需要恐惧的终点，而是一个终将到来的、值得从容面对的"节日"。从存在主义心理学角度看，这与欧文·亚隆所说的"死亡虽令人恐惧，但死亡的意识却能丰富生命"高度一致。史铁生在21岁双腿瘫痪后，在地坛公园里思考了十五年，才写下这段话——这不是轻飘飘的鸡汤，而是一个真正直面过生命极限的人，用生命本身换来的洞见。',
-    '<b>"事实"与"节日"的修辞张力</b>：注意这段话的结构：先用"事实"确立死亡的不可更改性（出生了，就不再可以辩论），再用"节日"赋予死亡以温暖的质感。这种从冷到暖的修辞转换，恰恰映射了史铁生自身从愤怒到和解的心理历程。他在《我与地坛》中多次描写自己最初摇着轮椅进入地坛时的状态——"脾气暴怒无常"，对母亲发火，摔东西，甚至想到了死。而十五年后，他已经能够用"节日"来形容死亡，这中间经历了多少次与自我的搏斗、多少次在地坛老柏树下沉思的夜晚？从认知行为治疗（CBT）的角度看，这正是最典型的"认知重构"——不是改变事实本身，而是改变对事实的解读框架。',
-    '<b>给Emma的话</b>：史铁生是我认为最适合在大学阶段读的中国作家之一。不是因为他的作品"励志"，而是因为他的文字让你看到：苦难本身没有意义，但人可以选择如何与苦难相处。21岁瘫痪，后来又患上尿毒症，每周三次透析——如果命运给了一手烂牌，史铁生就是那个把烂牌打出哲学高度的人。《我与地坛》不厚，建议Emma找一个安静的下午从头到尾读一遍。你会发现，关于生命意义的追问，不需要宏大的理论框架——有时候只需要一个人、一座园子、十五年的时光✨'
+    '<b>"偶然"与"必然"的哲学悖论</b>：沈从文在《边城》中构建了一个精妙的命运辩证法——所有的相遇都是"偶然的凑巧"，所有的结局都是"宿命的必然"。这句话表面上是一个矛盾修辞（oxymoron），但它精确地捕捉了湘西世界中人与命运的关系：翠翠与傩送的相遇是偶然的，老船夫去世的那个夜晚是偶然的，白塔在那个风雨夜倒塌也是偶然的——但所有这些偶然叠加在一起，却导向了一个似乎早已注定的结局。从心理学角度看，这恰恰映射了人类认知中的一种基本倾向——"叙事谬误"（narrative fallacy），即我们倾向于在事后为随机事件构建因果链条，赋予生活以故事性。但沈从文不是在批判这种倾向，而是在温柔地提醒我们：生活中确实存在一种"说不清道不明"的秩序感，它不是宿命论，而是一种对生命节律的敬畏。',
+    '<b>沈从文的"时间美学"</b>：注意这段话的时间节奏——"过了端午，过了中秋，过了重阳"——三个节日像三个标点，把流逝的时间切分成可感知的段落。这种写法与普鲁斯特的"非自主记忆"（involuntary memory）有异曲同工之妙：时间不是线性的、均匀的流逝，而是由一个个具体的感官时刻串联起来的。端午的粽子味、中秋的月光、重阳的菊花——每个节日都是一个"时间的容器"，承载着翠翠在那个特定时刻的情感状态。更值得注意的是最后一句"变化得叫人无法相信"——这是一种回望式的感叹，暗示叙述者已经站在时间之外回望过去。这种时间视角的切换赋予了文本一种淡淡的哀愁：不是对具体事件的悲伤，而是对"时间本身不可逆转"这一事实的惆怅。',
+    '<b>给Emma的话</b>：《边城》是我推荐给你的又一本"慢慢读"的书。沈从文的文字表面上看起来很简单——没有复杂的句式，没有晦涩的隐喻——但正是这种"简单"构成了他最大的力量。他写翠翠等傩送的那段结尾："这个人也许永远不回来了，也许\'明天\'回来！"——这句话之所以成为中国文学史上最经典的结尾之一，不是因为它的技巧，而是因为它精确地捕捉了等待的本质：在希望与绝望之间的永恒摇摆。作为学应用心理的Emma，你会发现《边城》中对人物内心世界的描写方式与心理学有惊人的相通之处——沈从文不直接描写情感，而是通过环境、节奏、细节让读者自己"感受到"情感，这恰恰是好的用户研究所追求的效果：不是告诉用户"你应该感到什么"，而是创造一种体验让用户自己产生感受✨'
   ]
-};
+};;
 
 function renderLiterature() {
   const el = document.getElementById('litContent');
@@ -1511,18 +1513,18 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月19日 星期五',
+  date: '2026年9月20日 星期六',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '第二十届亚运会在日本名古屋开幕，中国代表团815名运动员参赛', desc: '本届亚运会共产生469枚金牌，中国体育代表团派出815名运动员参赛。中国女排小组赛3:0胜哈萨克斯坦晋级八强。' },
-    { tag: '国内', cls: 'news-domestic', title: '住建部：中国房地产进入存量时代，将推进城市更新', desc: '住建部副部长表示，房地产供求关系发生重大变化，将聚焦"两个转向、两个转变、三化转型"，推进城市地下管网建设改造。' },
-    { tag: '科技', cls: 'news-tech', title: '苹果详解iPhone Duo折叠屏设计理念，10月23日发售', desc: '苹果设计团队向GQ披露iPhone Duo采用A系列纸张比例，铰链具备可变扭矩曲线，软件交互逻辑借鉴Mac、iPad及iPhone。' },
-    { tag: '国际', cls: 'news-intl', title: '巴菲特卸任伯克希尔-哈撒韦董事长，儿子接任', desc: '知名投资人沃伦·巴菲特正式卸任伯克希尔-哈撒韦公司董事长，董事会选举其子霍华德·巴菲特接任。' },
-    { tag: '科技', cls: 'news-tech', title: 'Claude Code新版本支持AGENTS.md配置文件，提升AI协作一致性', desc: 'Anthropic发布Claude Code 2.1.277版本，新增AGENTS.md支持，定义跨AI工具的通用项目规则，降低开发者切换成本。' },
-    { tag: '国内', cls: 'news-domestic', title: '文化产业发展"十五五"规划发布，力争2030年实现跃升', desc: '规划明确七方面重点任务，系统部署文化产业发展，力争到2030年文化产业规模、整体实力和综合效益实现跃升。' },
-    { tag: '国际', cls: 'news-intl', title: '日本央行加息至1.25%，政策利率升至1995年以来最高', desc: '日本央行18日将政策利率从1.0%上调至1.25%，为1995年以来最高水平，标志着日本超宽松货币政策持续正常化。' },
-    { tag: '科技', cls: 'news-tech', title: 'Google发布Gemini 3.8 Live，实现同时思考与语音对话', desc: 'Google推出Gemini 3.8 Live及Extended Thinking版本，可同时推理与说话，支持视觉上下文和97种语言。' }
+    { tag: '国际', cls: 'news-intl', title: '中美将举行新一轮经贸磋商，何立峰率团赴美', desc: '经中美双方商定，中共中央政治局委员、国务院副总理何立峰将于9月19日至23日率团赴美国与美方举行经贸磋商，双方将以两国元首重要共识为引领展开讨论。' },
+    { tag: '国内', cls: 'news-domestic', title: '第二十届亚洲运动会在日本名古屋盛大开幕', desc: '本届亚运会于9月19日至10月4日举行，中国体育代表团由815名运动员组成，参加38个大项369个小项比赛。开幕后首个比赛日将产生31枚金牌。' },
+    { tag: '国内', cls: 'news-domestic', title: '新修订《住房公积金管理条例》今日起正式实施', desc: '公积金提取情形扩至9种，新增支持装修、支付物业费提取等，服务全生命周期住房消费，"十五五"时期将重点推进扩大灵活就业群体制度覆盖。' },
+    { tag: '科技', cls: 'news-tech', title: '特朗普宣布将组建"人工智能部队"，任命AI事务总管', desc: '美国总统特朗普发文称将组建"人工智能部队"并任命AI事务总管，称AI代表下一场工业革命，可能占美国GDP的25%。' },
+    { tag: '国际', cls: 'news-intl', title: '欧盟拟推社媒年龄禁令：13岁以下禁用，15岁以下不得开号', desc: '欧盟委员会公布《欧盟儿童法案》提案，冯德莱恩宣布将加强对未成年人网络保护，提出分年龄段限制使用社交媒体。' },
+    { tag: '科技', cls: 'news-tech', title: '长征二号丁一箭四星成功发射PIESAT-2卫星组', desc: '9月19日18时50分，长征二号丁在太原卫星发射中心成功将4颗商业遥感卫星送入预定轨道，为长征系列第668次飞行。' },
+    { tag: '国内', cls: 'news-domestic', title: '四川盐边县突发泥石流致2人遇难3人失联，启动四级响应', desc: '9月19日凌晨四川攀枝花盐边县格萨拉乡突发泥石流，应急管理部启动国家地质灾害四级应急响应并派出工作组。' },
+    { tag: '国际', cls: 'news-intl', title: '沙特首都利雅得遭胡塞武装导弹空袭', desc: '胡塞武装向沙特首都利雅得发射弹道导弹，并声称攻击了阿美石油设施。中国驻沙特使馆提醒在沙中资机构和公民加强防范。' }
   ]
-};
+};;
 
 function renderNews() {
   let data = newsData;
