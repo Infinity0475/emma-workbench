@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Ownership in AI-Assisted Everyday Tasks',
-  authors: 'Megan Wei, Melanie Subbiah, Audrey Lee, Annya Dahmani, Dave Edwards, Helen Edwards, Ellie Pavlick',
-  venue: 'arXiv:2609.20658 \xb7 cs.AI, cs.HC \xb7 September 2026',
-  link: 'https://arxiv.org/abs/2609.20658',
-  date: '2026-09-20',
-  abstract: '当AI参与到我们的日常任务中时，工作成果还是"我的"吗？本研究通过探索性质性调查，让参与者描述两项最近使用AI完成的任务——一项感觉像自己的作品，另一项则不然。研究发现，"心理所有权"（felt ownership）取决于协作过程而非结果：当人们仅仅"审批"AI的建议时，会产生强烈的"去所有权感"；而当人们主导、迭代或重写时，所有权感得以保留。更有趣的是，即使任务的执行完全依赖AI，只要人们"拥有愿景"（own the vision），仍然会报告很高的所有权感。此外，个人声音的丧失和对输出内容缺乏理解都会侵蚀所有权感，而是否愿意公开AI使用往往与真正的主人翁感无关，更多受社群规范和对"功劳被抹去"的恐惧影响。',
+  title: 'Beyond "ChatGPT Can Make Mistakes": Designing Interventions to Support Metacognitive Monitoring in AI-Assisted Work',
+  authors: 'Manuel A. D. Santos, Paul Thiesse, Steeven Villa, Daniela Fernandes, Albrecht Schmidt, Verena Distler, Robin Welsch',
+  venue: 'arXiv:2609.17065 \xb7 cs.HC, cs.AI \xb7 September 2026',
+  link: 'https://arxiv.org/abs/2609.17065',
+  date: '2026-09-21',
+  abstract: 'AI辅助将元认知需求置于用户身上——他们必须判断自己的能力和系统的能力。然而，设计者缺乏比较证据来选择干预措施、确定放置位置以及评估效果。本研究从11位专家那里收集了30种干预措施，并将其组织成设计空间：时间（干预何时起作用）、层级（判断谁的能力）和来源（谁提供监控线索）。一项被试间实验（N=917；12个计划与组织问题）比较了任务可靠性卡片、对比回复、暂停点和任务后反思与基线LLM助手的效果。可靠性卡片和对比回复减少了估计误差和过度自信，并提高了总体自信区分度。研究贡献了共享词汇表、设计空间，以及证明监控测量和任务表现是可分离的设计目标。',
   keyPoints: [
-    '核心发现：过程决定所有权，而非结果。这是本研究最深刻的洞察。人们并非因为"谁写了最终文字"来判断所有权，而是根据协作过程中的角色分配。当你只是点击"接受"AI的建议时，你会觉得那不是你的作品；但当你以AI为工具、按照自己的意图反复修改时，即使最终产物与AI的初稿差异很大，你仍然觉得"这是我的"。从心理学角度看，这与Deci和Ryan的自我决定理论（Self-Determination Theory）高度一致——自主性（autonomy）是人类体验"这是我的行为"的核心需求。对Emma未来做AI产品设计的启示是：产品设计应该让用户保持"主导感"，而不是把用户变成AI输出的审批机器。',
-    '关键洞察："拥有愿景"就够了。研究中最反直觉的发现是，参与者在报告"没有AI就无法完成"的任务时，仍然有强烈的所有权感——只要他们提供了创意方向和最终判断标准。这意味着所有权不等于执行力（execution），而更接近于"意图的所有权"（ownership of intent）。这一发现对AI产品经理有重大意义：好的AI工具不应该让用户觉得自己被替代了，而应该让用户觉得"AI帮我把想法变成了现实"——用户是导演，AI是演员。',
-    '"去所有权"的两种机制：声音丧失与理解缺失。研究发现两个侵蚀所有权的关键因素：（1）输出不再像"我说的话"——个人风格、用语习惯被AI的通用表达取代；（2）用户不理解AI输出的内容——当AI生成了一段你无法解释的文字时，你自然无法声称它属于你。这为AI产品设计提供了两条具体的设计原则：一是保持用户的"声音指纹"（voice fingerprint），让AI输出风格匹配用户的表达习惯；二是确保输出可解释性，让用户能够理解并复述AI生成内容的逻辑。',
-    '对Emma的启示：这篇论文直接回答了AI时代一个核心的产品哲学问题——"AI产品应该让用户感到强大还是感到被替代？"答案是明确的：让用户保持主导感、保持个人声音、保持对输出的理解——这三点决定了用户是否会觉得AI是自己的工具，还是自己是AI的工具。作为未来的AI产品经理，Emma需要牢记：最好的AI产品不是"替用户做事"的产品，而是"帮用户成为更好的自己"的产品✨'
+    '核心发现：元认知监控干预有效，但不直接提升任务表现。这是本研究最重要的区分——帮助用户更准确地评估自己"知道什么"和"不知道什么"，并不自动转化为更好的任务完成质量。从认知心理学角度看，这印证了Flavell的元认知理论：元认知知识（knowing that you don\'t know）和元认知调节（regulating your learning behavior）是两个相关但独立的构念。对Emma的启示：在设计AI辅助学习产品时，不要假设"让用户意识到问题"就等于"帮用户解决问题"。好的设计需要在元认知监控和任务支持之间建立桥梁。',
+    '设计空间的三个维度：时间、层级、来源。"时间"维度区分了干预发生在决策前（planning）、决策中（monitoring）还是决策后（reflection）；"层级"维度区分了干预针对的是用户能力（helping users calibrate their self-assessment）还是系统能力（helping users understand AI limitations）；"来源"维度区分了线索来自系统（如可靠性评分）、用户自我反思还是外部对比。这个三维框架对AI产品经理极具价值——它提供了一个系统化的方式来思考"在哪里、什么时候、用什么方式帮助用户更好地使用AI"。',
+    '最有效的两种干预：可靠性卡片和对比回复。可靠性卡片（per-task reliability card）在每个任务前展示系统在该类任务上的历史准确率，帮助用户建立合理的期望；对比回复（contrasting replies）让AI提供多个可能的答案并标注各自的不确定性，促使用户主动思考和判断。这两种干预都显著降低了用户的过度自信和估计误差。从行为经济学角度看，这是对"锚定效应"和"自动化偏差"的有效干预——用户不再盲目信任AI的第一个答案，而是主动校准自己的判断。',
+    '对Emma的启示：这篇论文直接回应了AI产品设计中的核心挑战——如何在"帮助用户"和"让用户过度依赖"之间找到平衡。研究证明，简单的元认知提示（如"AI可能犯错"）效果有限，真正有效的是提供具体的、结构化的校准线索。作为未来的AI产品经理，Emma应该思考：如何让AI系统不仅"给出答案"，还"帮助用户理解答案的可靠性边界"？这正是从"AI替代人"到"AI增强人"的关键转变✨'
   ],
-  takeaway: '读完这篇论文，我联想到心理学中一个经典概念——"内生性"（internality）。当我们说"这是我做的"时，本质上是在表达一种因果关系的主观归属：我的意图导致了这个结果。AI协作的微妙之处在于，它打破了这种简单的因果链——结果不完全来自我的执行，但意图确实是我的。研究发现最有趣的一点是：人们愿意对自己"无法独立完成"的任务声称所有权，只要愿景是自己的。这与维果茨基的"最近发展区"（Zone of Proximal Development）不谋而合——最好的学习发生在"有人帮助但仍靠自己能力达成"的区间。AI产品设计也应该遵循这个原则：让用户始终处于"有AI帮助但仍靠自己完成"的心理区间，而不是滑入"AI完成了大部分，我只是签字"的去权区间。对Emma来说，这篇论文最有价值的洞察是——AI产品成功的标准不是"用户用了多少"，而是"用户在多大程度上觉得这是自己的作品"✨'
+  takeaway: '读完这篇论文，我想到了心理学中的"达克效应"（Dunning-Kruger effect）——能力不足的人往往高估自己的能力，而能力强的人则倾向于低估自己。AI辅助场景中，这种元认知偏差被放大了：用户既可能过度信任AI（"AI说的肯定对"），也可能过度怀疑AI（"AI不可靠，我还是自己来"）。研究的贡献在于，它不是简单地告诉设计师"AI会犯错"，而是提供了一个系统化的设计空间，让设计师能够精确地选择"在什么时候、针对什么、用什么方式"来帮助用户建立更准确的元认知判断。这与维果茨基的"脚手架"（scaffolding）理念高度一致——好的AI辅助应该像好的老师一样，在用户需要的时候提供恰到好处的支持，而不是包办代替或放任自流。对Emma来说，这篇论文最有价值的方法是那个三维设计空间框架——它可以直接用于指导AI产品的交互设计，确保用户在AI辅助下既能高效完成任务，又能保持批判性思维和元认知意识✨'
 };;
 
 function renderPaper() {
@@ -1392,44 +1392,42 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'ambiguous', pos: 'adj.', def: '模棱两可的，含糊不清的（/æmˈbɪɡjuəs/）' },
-  { word: 'consolidate', pos: 'v.', def: '巩固，合并（/kənˈsɒlɪdeɪt/）' },
-  { word: 'elaborate', pos: 'adj.', def: '精心制作的，详尽的（/ɪˈlæbərət/）' },
-  { word: 'fluctuate', pos: 'v.', def: '波动，起伏不定（/ˈflʌktʃueɪt/）' },
-  { word: 'implicit', pos: 'adj.', def: '含蓄的，暗示的（/ɪmˈplɪsɪt/）' },
-  { word: 'juxtapose', pos: 'v.', def: '并列，并置对比（/ˌdʒʌkstəˈpəʊz/）' },
-  { word: 'meticulous', pos: 'adj.', def: '一丝不苟的，细致的（/məˈtɪkjələs/）' },
-  { word: 'nuanced', pos: 'adj.', def: '有细微差别的，微妙的（/ˈnjuːɑːnst/）' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
-  { word: 'resilient', pos: 'adj.', def: '有韧性的，能恢复的（/rɪˈzɪliənt/）' }
+  { word: 'ubiquitous', pos: 'adj.', def: '无所不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
+  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
+  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，空前的（/ʌnˈpresɪdentɪd/）' },
+  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
+  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
+  { word: 'exacerbate', pos: 'v.', def: '加剧，使恶化（/ɪɡˈzæsəbeɪt/）' },
+  { word: 'sustainable', pos: 'adj.', def: '可持续的，可维持的（/səˈsteɪnəbl/）' },
+  { word: 'controversy', pos: 'n.', def: '争论，争议（/ˈkɒntrəvɜːsi/）' },
+  { word: 'discrepancy', pos: 'n.', def: '差异，不一致（/dɪˈskrepənsi/）' },
+  { word: 'advocate', pos: 'v.', def: '提倡，倡导（/ˈædvəkeɪt/）' }
 ];;
 
 const ieltsSpeaking = {
   part: 'Part 2 \xb7 Cue Card',
-  topic: 'Describe a book that had a major influence on you',
-  bullet: 'You should say: what the book was, when you read it, what it was about, and explain how it influenced you.',
-  sample: `I'd like to talk about a book that profoundly shaped the way I think about life and priorities — it's called "The Little Prince" (Le Petit Prince), written by the French aviator and author Antoine de Saint-Exupéry.
+  topic: 'Describe a place where you like to study or work',
+  bullet: 'You should say: where the place is, what it looks like, what you do there, and explain why you enjoy studying or working in this place.',
+  sample: `I'd like to talk about a place that has become my absolute sanctuary for deep work — it's a small independent bookstore-cafe tucked away on a quiet side street near my university campus. It's called "Ink & Bean," and honestly, I stumbled upon it completely by accident during my first week of semester.
 
-I first read it when I was about fourteen, during a particularly stressful period in my life. I had just transferred to a new school and was struggling to fit in. My Chinese literature teacher recommended it to me after class, saying something along the lines of "this isn't a children's book — it just looks like one." That immediately piqued my curiosity, so I borrowed a copy from the school library.
+The space itself is remarkably intimate — not much larger than a modest living room. Wooden bookshelves line every wall, crammed with second-hand novels, poetry collections, and academic texts that previous customers have donated. There are maybe eight or nine tables, each one different: some are round marble tops, others are reclaimed oak with visible scratches and coffee ring stains that add character rather than detract from it. The lighting is warm and dim, coming mostly from vintage pendant lamps with amber bulbs, and there's always a soft jazz playlist playing in the background — nothing intrusive, just enough to create a cocoon of ambient sound.
 
-The story follows a pilot who crashes in the Sahara Desert and encounters a little prince who has travelled from asteroid to asteroid. Each planet he visits is inhabited by a single adult who embodies some human flaw — a king who craves authority over nothing, a conceited man who wants only admiration, a businessman obsessed with counting stars he believes he owns. The little prince finds each of them baffling, and through his innocent questions, Saint-Exupéry delivers some of the most piercing commentary on adult behaviour I have ever read.
+I typically go there three or four times a week, usually in the late afternoon. I'll order a flat white — they make genuinely excellent coffee — and settle into my favourite corner seat by the window. That spot has a perfect vantage point: I can watch the autumn leaves drifting past while still being far enough from the door that foot traffic doesn't distract me. I usually spend two to three hours there, alternating between reading academic papers and writing essays or research notes.
 
-What influenced me most was the fox's secret: "One sees clearly only with the heart. What is essential is invisible to the eye." At fourteen, I didn't fully grasp its depth, but it lodged itself somewhere in my mind. Over the years, I have returned to that sentence countless times — during moments of stress, when I was chasing grades obsessively, when I found myself valuing appearances over substance. It always brought me back to what actually matters.
+The reason I'm so drawn to this place is probably counterintuitive — it's not silent, and it's not minimalist or designed with productivity in mind. But that's precisely what makes it work for me. The gentle hum of conversation, the occasional clink of cups, the faint smell of old books mixing with fresh espresso — all of these create what I'd call "productive cosiness." In environmental psychology, there's a concept called "stimulus screening" — the ability to filter out irrelevant background noise while focusing on a primary task. For whatever reason, this environment seems to engage my screening ability perfectly. I feel simultaneously relaxed and alert, which is a combination I've never been able to replicate in a sterile library or a noisy chain coffee shop.
 
-The book also taught me the concept of "taming" — the idea that establishing connections takes time, patience, and vulnerability, but it is precisely those bonds that give life meaning. The fox tells the prince: "You become responsible, forever, for what you have tamed." This resonated with me so deeply that it fundamentally changed how I approach relationships — I stopped trying to be popular and started focusing on being genuinely present for the people who matter.
-
-Looking back, "The Little Prince" is arguably the most influential book I have ever read, precisely because its lessons are deceptively simple yet endlessly profound. I genuinely believe it is a book you can read at every stage of life and discover something new each time.`,
+I also think there's something about the social dimension that helps. Seeing other people absorbed in their own work creates a sense of shared purpose — a subtle, unspoken accountability that keeps me from pulling out my phone every five minutes. It's like a gentle form of what researchers call "social facilitation" — the presence of others actually enhances performance on tasks we find moderately challenging.`,
   expressions: [
-    '\ud83c\udf1f profoundly shaped the way I think — 深刻地塑造了我的思维方式',
-    '\ud83c\udf1f piqued my curiosity — 激发了我的好奇心',
-    '\ud83c\udf1f embodies some human flaw — 体现了某种人性的缺陷',
-    '\ud83c\udf1f piercing commentary — 犀利的评述',
-    '\ud83c\udf1f lodged itself somewhere in my mind — 深深印在我的脑海中',
-    '\ud83c\udf1f valuing appearances over substance — 重外表轻实质',
-    '\ud83c\udf1f establishing connections takes time, patience, and vulnerability — 建立联系需要时间、耐心和脆弱性',
-    '\ud83c\udf1f genuinely present for the people who matter — 真正陪伴在乎的人',
-    '\ud83c\udf1f deceptively simple yet endlessly profound — 看似简单却意味深长',
-    '\ud83c\udf1f discover something new each time — 每次阅读都有新发现'
+    '\ud83c\udf1f absolute sanctuary for deep work — 深度工作的绝对圣所',
+    '\ud83c\udf1f tucked away on a quiet side street — 隐藏在安静的小街上',
+    '\ud83c\udf1f reclaimed oak with visible scratches — 回收的橡木，可见划痕',
+    '\ud83c\udf1f create a cocoon of ambient sound — 营造环境音的茧',
+    '\ud83c\udf1f a perfect vantage point — 完美的观察位置',
+    '\ud83c\udf1f productive cosiness — 高效 cozy 感',
+    '\ud83c\udf1f stimulus screening — 刺激过滤能力',
+    '\ud83c\udf1f relaxed and alert — 放松而警觉',
+    '\ud83c\udf1f shared purpose — 共同的目标感',
+    '\ud83c\udf1f social facilitation — 社会促进效应'
   ]
 };;
 
@@ -1476,12 +1474,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '凡事都有偶然的凑巧，结果却又如宿命的必然。日子在风里飘着，过了端午，过了中秋，过了重阳。一切都在不知不觉中变化着，变化得叫人无法相信。',
-  source: '沈从文《边城》',
+  quote: '人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。',
+  source: '余华《活着》',
   analysis: [
-    '<b>"偶然"与"必然"的哲学悖论</b>：沈从文在《边城》中构建了一个精妙的命运辩证法——所有的相遇都是"偶然的凑巧"，所有的结局都是"宿命的必然"。这句话表面上是一个矛盾修辞（oxymoron），但它精确地捕捉了湘西世界中人与命运的关系：翠翠与傩送的相遇是偶然的，老船夫去世的那个夜晚是偶然的，白塔在那个风雨夜倒塌也是偶然的——但所有这些偶然叠加在一起，却导向了一个似乎早已注定的结局。从心理学角度看，这恰恰映射了人类认知中的一种基本倾向——"叙事谬误"（narrative fallacy），即我们倾向于在事后为随机事件构建因果链条，赋予生活以故事性。但沈从文不是在批判这种倾向，而是在温柔地提醒我们：生活中确实存在一种"说不清道不明"的秩序感，它不是宿命论，而是一种对生命节律的敬畏。',
-    '<b>沈从文的"时间美学"</b>：注意这段话的时间节奏——"过了端午，过了中秋，过了重阳"——三个节日像三个标点，把流逝的时间切分成可感知的段落。这种写法与普鲁斯特的"非自主记忆"（involuntary memory）有异曲同工之妙：时间不是线性的、均匀的流逝，而是由一个个具体的感官时刻串联起来的。端午的粽子味、中秋的月光、重阳的菊花——每个节日都是一个"时间的容器"，承载着翠翠在那个特定时刻的情感状态。更值得注意的是最后一句"变化得叫人无法相信"——这是一种回望式的感叹，暗示叙述者已经站在时间之外回望过去。这种时间视角的切换赋予了文本一种淡淡的哀愁：不是对具体事件的悲伤，而是对"时间本身不可逆转"这一事实的惆怅。',
-    '<b>给Emma的话</b>：《边城》是我推荐给你的又一本"慢慢读"的书。沈从文的文字表面上看起来很简单——没有复杂的句式，没有晦涩的隐喻——但正是这种"简单"构成了他最大的力量。他写翠翠等傩送的那段结尾："这个人也许永远不回来了，也许\'明天\'回来！"——这句话之所以成为中国文学史上最经典的结尾之一，不是因为它的技巧，而是因为它精确地捕捉了等待的本质：在希望与绝望之间的永恒摇摆。作为学应用心理的Emma，你会发现《边城》中对人物内心世界的描写方式与心理学有惊人的相通之处——沈从文不直接描写情感，而是通过环境、节奏、细节让读者自己"感受到"情感，这恰恰是好的用户研究所追求的效果：不是告诉用户"你应该感到什么"，而是创造一种体验让用户自己产生感受✨'
+    '<b>"活着"的极简哲学</b>：余华在《活着》的序言中写下了这句看似同义反复的话——"人是为活着本身而活着的"。表面上，这是一个毫无信息量的句子：A等于A，活着等于活着。但正是这种极简的表达，构成了对中国传统文化中"意义焦虑"的一次深刻解构。从孔子"朝闻道，夕死可矣"到范仲淹"先天下之忧而忧"，中国人的生命叙事长期被一种"超越性追求"所主导——活着必须为了某种更高的目的：道德、功名、家国。余华说：不是。活着本身就是目的。这不是虚无主义，而是一种历经劫难后的生存智慧。从心理学角度看，这恰好呼应了维克多·弗兰克尔（Viktor Frankl）在《活出生命的意义》中的核心洞见：意义不是被"发明"的，而是被"发现"的——它不需要宏大叙事，可以藏在最朴素的生存本身之中。',
+    '<b>福贵的"反英雄"叙事</b>：小说的主人公福贵，从一个地主家的败家子，到经历内战、土改、大跃进、文革，亲人一个个死去——儿子、女儿、妻子、女婿、外孙——最终只剩下一头老牛相伴。按照传统文学标准，福贵是一个彻底的失败者：没有成就、没有尊严、没有"意义"。但余华正是通过这个角色告诉我们：生命的力量不在于你拥有多少，而在于你能承受多少。这与积极心理学中的"心理韧性"（psychological resilience）概念高度契合——韧性不是"不被击倒"，而是"被击倒后还能站起来继续走"。福贵的韧性不是英雄式的壮烈，而是一种近乎本能的、大地一般的承受力：他哭过、痛过、绝望过，但第二天太阳升起时，他依然牵着老牛走向田野。',
+    '<b>给Emma的话</b>：我知道你现在正处在一个充满不确定性的人生阶段——读研、求职、未来的方向——这些都很容易让人陷入"我活着到底是为了什么"的焦虑循环中。《活着》给我的最大触动是：你不需要在22岁就回答这个问题。生命的意义不是一个需要被"解决"的问题，而是一个需要被"经历"的过程。余华写福贵的故事，不是为了让你同情他，而是让你看到：即使生活剥夺了几乎所有东西，"活着"本身仍然具有一种无法被剥夺的力量。这和应用心理学中"接纳承诺疗法"（ACT）的理念不谋而合——不是消除痛苦，而是学会带着痛苦继续前行。当你觉得压力大、迷茫的时候，想想福贵牵着老牛在夕阳下走过的那个画面：没有宏大的意义，只有活着本身的尊严✨'
   ]
 };;
 
@@ -1513,16 +1511,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月20日 星期六',
+  date: '2026年9月21日 星期一',
   items: [
-    { tag: '国际', cls: 'news-intl', title: '中美将举行新一轮经贸磋商，何立峰率团赴美', desc: '经中美双方商定，中共中央政治局委员、国务院副总理何立峰将于9月19日至23日率团赴美国与美方举行经贸磋商，双方将以两国元首重要共识为引领展开讨论。' },
-    { tag: '国内', cls: 'news-domestic', title: '第二十届亚洲运动会在日本名古屋盛大开幕', desc: '本届亚运会于9月19日至10月4日举行，中国体育代表团由815名运动员组成，参加38个大项369个小项比赛。开幕后首个比赛日将产生31枚金牌。' },
-    { tag: '国内', cls: 'news-domestic', title: '新修订《住房公积金管理条例》今日起正式实施', desc: '公积金提取情形扩至9种，新增支持装修、支付物业费提取等，服务全生命周期住房消费，"十五五"时期将重点推进扩大灵活就业群体制度覆盖。' },
-    { tag: '科技', cls: 'news-tech', title: '特朗普宣布将组建"人工智能部队"，任命AI事务总管', desc: '美国总统特朗普发文称将组建"人工智能部队"并任命AI事务总管，称AI代表下一场工业革命，可能占美国GDP的25%。' },
-    { tag: '国际', cls: 'news-intl', title: '欧盟拟推社媒年龄禁令：13岁以下禁用，15岁以下不得开号', desc: '欧盟委员会公布《欧盟儿童法案》提案，冯德莱恩宣布将加强对未成年人网络保护，提出分年龄段限制使用社交媒体。' },
-    { tag: '科技', cls: 'news-tech', title: '长征二号丁一箭四星成功发射PIESAT-2卫星组', desc: '9月19日18时50分，长征二号丁在太原卫星发射中心成功将4颗商业遥感卫星送入预定轨道，为长征系列第668次飞行。' },
-    { tag: '国内', cls: 'news-domestic', title: '四川盐边县突发泥石流致2人遇难3人失联，启动四级响应', desc: '9月19日凌晨四川攀枝花盐边县格萨拉乡突发泥石流，应急管理部启动国家地质灾害四级应急响应并派出工作组。' },
-    { tag: '国际', cls: 'news-intl', title: '沙特首都利雅得遭胡塞武装导弹空袭', desc: '胡塞武装向沙特首都利雅得发射弹道导弹，并声称攻击了阿美石油设施。中国驻沙特使馆提醒在沙中资机构和公民加强防范。' }
+    { tag: '国内', cls: 'news-domestic', title: '亚运首日中国队豪取11金暂列金牌榜第一', desc: '第二十届名古屋亚运会开幕后首个比赛日，中国代表团夺得11金6银3铜。游泳队单日摘6金五次打破四项赛会纪录，潘展乐男子100米自由泳47秒61卫冕成功，创赛季亚洲最好成绩。' },
+    { tag: '国际', cls: 'news-intl', title: '中美经贸磋商在纽约正式开启', desc: '当地时间9月20日，中美两国经贸团队在纽约开始举行经贸磋商。双方将以两国元首重要共识为引领，就彼此关心的经贸问题展开讨论。' },
+    { tag: '国内', cls: 'news-domestic', title: '中办国办印发《关于分类推进高校改革的意见》', desc: '意见要求科学构建高校分类发展体系，区分综合性、特色化基本方向，确立高校分类框架，根据隶属关系建立多元适配的高校分类模式。' },
+    { tag: '科技', cls: 'news-tech', title: '长鑫科技第五代技术平台正式量产，内存半间距达11.95nm', desc: '长鑫科技在2026世界制造业大会上宣布第五代技术平台量产，存储密度大幅提升，每张晶圆产出较上代提升50%以上，24GB LPDDR5X已全面进入国产旗舰手机。' },
+    { tag: '科技', cls: 'news-tech', title: '全球最复杂分子计算机诞生，实现100比特连续25次运算', desc: '爱尔兰梅努斯大学研究团队在《自然》发表成果，研制出利用DNA分子完成加法、乘法、除法等运算的分子计算机，为低能耗计算和长期数据存储提供新路径。' },
+    { tag: '国内', cls: 'news-domestic', title: '国家卫健委：2026年底前全国省级层面均应开设罕见病门诊', desc: '通知要求各省至少依托1家省属及以上医院开设罕见病门诊，300万人口以上地市均须至少依托1家医院开设罕见病门诊，安排专科医师坐诊。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普称将对伊朗作出重大决定，不排除联大会面', desc: '特朗普表示正在对伊朗问题作出决定，称不久将有"非常重大的事情"发生。伊朗总统本周将赴纽约出席联合国大会，双方不排除会面可能。' },
+    { tag: '科技', cls: 'news-tech', title: '力箭一号成功发射9颗卫星，在手订单排至2027年下半年', desc: '力箭一号遥十八运载火箭在东风商业航天创新试验区成功发射秦岭卫星01/02星等9颗卫星，现阶段年产能力达30发。' }
   ]
 };;
 
