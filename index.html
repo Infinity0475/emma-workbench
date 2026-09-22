@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Beyond "ChatGPT Can Make Mistakes": Designing Interventions to Support Metacognitive Monitoring in AI-Assisted Work',
-  authors: 'Manuel A. D. Santos, Paul Thiesse, Steeven Villa, Daniela Fernandes, Albrecht Schmidt, Verena Distler, Robin Welsch',
-  venue: 'arXiv:2609.17065 \xb7 cs.HC, cs.AI \xb7 September 2026',
-  link: 'https://arxiv.org/abs/2609.17065',
-  date: '2026-09-21',
-  abstract: 'AI辅助将元认知需求置于用户身上——他们必须判断自己的能力和系统的能力。然而，设计者缺乏比较证据来选择干预措施、确定放置位置以及评估效果。本研究从11位专家那里收集了30种干预措施，并将其组织成设计空间：时间（干预何时起作用）、层级（判断谁的能力）和来源（谁提供监控线索）。一项被试间实验（N=917；12个计划与组织问题）比较了任务可靠性卡片、对比回复、暂停点和任务后反思与基线LLM助手的效果。可靠性卡片和对比回复减少了估计误差和过度自信，并提高了总体自信区分度。研究贡献了共享词汇表、设计空间，以及证明监控测量和任务表现是可分离的设计目标。',
+  title: 'Beyond Benefit or Risk: Perceived Impact Profiles of Human-AI Affective Interaction and Their Associations with Psychological Functioning',
+  authors: 'Lu Chen, Fenghua Tang, Jiayu Zhao, Xuanying Li, Yanli Wang, Weijia Fang, Mengyu Miranda Gao, Zhuo Rachel Han',
+  venue: 'arXiv:2609.16645 \xb7 cs.HC \xb7 September 2026',
+  link: 'https://arxiv.org/abs/2609.16645',
+  date: '2026-09-22',
+  abstract: '关系型AI正日益成为人类的情感避风港，但其影响是复杂的。以往研究要么聚焦正面影响、要么聚焦负面影响，缺少对个体内部正负影响如何配置、以及与心理功能如何关联的系统研究。本研究采用序贯混合方法设计：研究1对52位与AI建立情感联结的用户进行访谈，识别出四个正面影响领域（情绪舒缓、孤独缓解、人际功能增强、个人成长）和四个负面影响领域（虚拟-现实边界模糊、社交替代、认知-情绪强化、过度使用）。研究2对673名中国AI用户进行了为期6个月的追踪，识别出四类影响画像：最小影响型、获益驱动型、混合影响型和风险驱动型。混合型和风险型用户在人机情感绑定水平上都较高，但风险型用户表现出更高的脆弱性——人际需求受挫、情绪调节困难更突出，抑郁和焦虑症状更多，自尊和幸福感更低。',
   keyPoints: [
-    '核心发现：元认知监控干预有效，但不直接提升任务表现。这是本研究最重要的区分——帮助用户更准确地评估自己"知道什么"和"不知道什么"，并不自动转化为更好的任务完成质量。从认知心理学角度看，这印证了Flavell的元认知理论：元认知知识（knowing that you don\'t know）和元认知调节（regulating your learning behavior）是两个相关但独立的构念。对Emma的启示：在设计AI辅助学习产品时，不要假设"让用户意识到问题"就等于"帮用户解决问题"。好的设计需要在元认知监控和任务支持之间建立桥梁。',
-    '设计空间的三个维度：时间、层级、来源。"时间"维度区分了干预发生在决策前（planning）、决策中（monitoring）还是决策后（reflection）；"层级"维度区分了干预针对的是用户能力（helping users calibrate their self-assessment）还是系统能力（helping users understand AI limitations）；"来源"维度区分了线索来自系统（如可靠性评分）、用户自我反思还是外部对比。这个三维框架对AI产品经理极具价值——它提供了一个系统化的方式来思考"在哪里、什么时候、用什么方式帮助用户更好地使用AI"。',
-    '最有效的两种干预：可靠性卡片和对比回复。可靠性卡片（per-task reliability card）在每个任务前展示系统在该类任务上的历史准确率，帮助用户建立合理的期望；对比回复（contrasting replies）让AI提供多个可能的答案并标注各自的不确定性，促使用户主动思考和判断。这两种干预都显著降低了用户的过度自信和估计误差。从行为经济学角度看，这是对"锚定效应"和"自动化偏差"的有效干预——用户不再盲目信任AI的第一个答案，而是主动校准自己的判断。',
-    '对Emma的启示：这篇论文直接回应了AI产品设计中的核心挑战——如何在"帮助用户"和"让用户过度依赖"之间找到平衡。研究证明，简单的元认知提示（如"AI可能犯错"）效果有限，真正有效的是提供具体的、结构化的校准线索。作为未来的AI产品经理，Emma应该思考：如何让AI系统不仅"给出答案"，还"帮助用户理解答案的可靠性边界"？这正是从"AI替代人"到"AI增强人"的关键转变✨'
+    '核心方法论创新：从"好/坏"二元对立到"影响画像"的范式转换。传统研究习惯将AI的情感影响简单归类为"有益"或"有害"，但本研究采用以人为中心的分析方法（person-centered approach），识别出四种截然不同的影响画像。这对应了心理学中"差异易感性"（differential susceptibility）理论——同样的技术 exposure，对不同心理特质的用户产生完全不同的影响。从产品角度看，这意味着AI情感产品不能做"一刀切"的风险管控，而需要建立个性化的自适应保护机制✨',
+    '四类用户画像的核心区别不在"用不用AI"，而在"心理脆弱性"。研究发现获益型和混合型用户在心理功能上都表现良好，关键区分因素是人际需求受挫程度、情绪调节困难、自尊水平和抑郁焦虑症状。这与依恋理论高度一致——安全型依恋的个体更可能从AI关系中获得情感补给，而焦虑型依恋者则更容易陷入过度依赖。这对AI产品经理的启示极其重要：与其限制AI的情感功能，不如在产品设计中嵌入对用户心理状态的感知和动态响应。',
+    '纵向追踪的意外发现：基线画像对6个月后大多数心理指标没有预测力。这是一个非常重要的"反直觉"结果——当前你和AI的情感关系模式，并不能很好地预测半年后你的心理状态变化。这意味着AI情感影响可能是"情境性的"（state-dependent）而非"特质性的"（trait-dependent），需要持续的、而非一次性的干预策略。',
+    '对Emma的启示：这篇论文直接回应了当下AI产品设计中最敏感的议题之一——AI是否正在"替代"真实人际关系？研究给出的答案是：不一定。对大多数用户而言，关系型AI可能提供了真实的情感支持而非替代。但关键是要识别哪些用户更脆弱、更容易滑向"风险驱动"模式。作为未来的人机交互研究者，Emma可以借鉴这种"以人为中心"的分群方法——不去问"AI对人有好处还是坏处"，而是问"什么样的人、在什么样的情境下、从AI中获得什么样的影响"✨'
   ],
-  takeaway: '读完这篇论文，我想到了心理学中的"达克效应"（Dunning-Kruger effect）——能力不足的人往往高估自己的能力，而能力强的人则倾向于低估自己。AI辅助场景中，这种元认知偏差被放大了：用户既可能过度信任AI（"AI说的肯定对"），也可能过度怀疑AI（"AI不可靠，我还是自己来"）。研究的贡献在于，它不是简单地告诉设计师"AI会犯错"，而是提供了一个系统化的设计空间，让设计师能够精确地选择"在什么时候、针对什么、用什么方式"来帮助用户建立更准确的元认知判断。这与维果茨基的"脚手架"（scaffolding）理念高度一致——好的AI辅助应该像好的老师一样，在用户需要的时候提供恰到好处的支持，而不是包办代替或放任自流。对Emma来说，这篇论文最有价值的方法是那个三维设计空间框架——它可以直接用于指导AI产品的交互设计，确保用户在AI辅助下既能高效完成任务，又能保持批判性思维和元认知意识✨'
+  takeaway: '读完这篇论文，最大的触动是研究方法的精妙——它没有陷入"AI好还是坏"的二元辩论，而是用数据告诉我们：影响是因人而异的。这让我想到心理治疗领域的经典发现：同一种治疗方法对不同来访者的效果天差地别，关键不在于方法本身"好不好"，而在于它"适不适合"这个人。AI情感产品也面临同样的挑战。研究中识别出的"脆弱性指标"——人际需求受挫、情绪调节困难、低自尊——恰恰是应用心理学最核心的评估维度。这为Emma提供了一个极具操作性的研究方向：如何将临床心理学的评估框架整合进AI产品的设计中，实现对用户心理状态的实时感知和自适应干预？这不是一个技术问题，而是一个需要心理学深度介入的设计问题✨'
 };;
 
 function renderPaper() {
@@ -1392,42 +1392,40 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'ubiquitous', pos: 'adj.', def: '无所不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
-  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
-  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，空前的（/ʌnˈpresɪdentɪd/）' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
-  { word: 'exacerbate', pos: 'v.', def: '加剧，使恶化（/ɪɡˈzæsəbeɪt/）' },
-  { word: 'sustainable', pos: 'adj.', def: '可持续的，可维持的（/səˈsteɪnəbl/）' },
-  { word: 'controversy', pos: 'n.', def: '争论，争议（/ˈkɒntrəvɜːsi/）' },
-  { word: 'discrepancy', pos: 'n.', def: '差异，不一致（/dɪˈskrepənsi/）' },
-  { word: 'advocate', pos: 'v.', def: '提倡，倡导（/ˈædvəkeɪt/）' }
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细察（/ˈskruːtənaɪz/）' },
+  { word: 'resilient', pos: 'adj.', def: '有韧性的，能快速恢复的（/rɪˈzɪliənt/）' },
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'coherent', pos: 'adj.', def: '连贯的，一致的（/kəʊˈhɪərənt/）' },
+  { word: 'fluctuate', pos: 'v.', def: '波动，起伏不定（/ˈflʌktʃueɪt/）' },
+  { word: 'implication', pos: 'n.', def: '含义，暗示，影响（/ˌɪmplɪˈkeɪʃn/）' },
+  { word: 'substantial', pos: 'adj.', def: '大量的，实质性的（/səbˈstænʃl/）' },
+  { word: 'integral', pos: 'adj.', def: '不可或缺的，整体的（/ˈɪntɪɡrəl/）' },
+  { word: 'viable', pos: 'adj.', def: '可行的，切实可行的（/ˈvaɪəbl/）' }
 ];;
 
 const ieltsSpeaking = {
   part: 'Part 2 \xb7 Cue Card',
-  topic: 'Describe a place where you like to study or work',
-  bullet: 'You should say: where the place is, what it looks like, what you do there, and explain why you enjoy studying or working in this place.',
-  sample: `I'd like to talk about a place that has become my absolute sanctuary for deep work — it's a small independent bookstore-cafe tucked away on a quiet side street near my university campus. It's called "Ink & Bean," and honestly, I stumbled upon it completely by accident during my first week of semester.
+  topic: 'Describe a skill that you can teach other people',
+  bullet: 'You should say: what the skill is, why you chose this skill, how you would teach it, and explain why you think this skill is important to learn.',
+  sample: `I'd like to talk about a skill that I've spent a considerable amount of time developing and that I genuinely believe could benefit a great many people — it's the art of active listening. Now, I know this might sound deceptively simple. We all hear things every waking moment, but active listening is an entirely different beast from passive hearing. It involves not just processing the words someone says, but truly absorbing the emotions, the intentions, and even the unspoken things lurking beneath the surface.
 
-The space itself is remarkably intimate — not much larger than a modest living room. Wooden bookshelves line every wall, crammed with second-hand novels, poetry collections, and academic texts that previous customers have donated. There are maybe eight or nine tables, each one different: some are round marble tops, others are reclaimed oak with visible scratches and coffee ring stains that add character rather than detract from it. The lighting is warm and dim, coming mostly from vintage pendant lamps with amber bulbs, and there's always a soft jazz playlist playing in the background — nothing intrusive, just enough to create a cocoon of ambient sound.
+I first became interested in this skill during my undergraduate studies in broadcasting and documentary filmmaking. When you're conducting interviews for a documentary, you quickly realise that the most powerful moments don't come from asking clever questions — they come from creating a space where your subject feels genuinely heard. I remember interviewing an elderly craftswoman for my thesis film, and within the first five minutes, I noticed she kept glancing at her hands while speaking. Instead of pressing on with my prepared questions, I simply paused and said, "Your hands are telling me something too." She stopped, looked at me, and then shared the most emotionally raw part of the entire interview — about how her hands had shaped forty years of her life but were now too arthritic to continue her craft.
 
-I typically go there three or four times a week, usually in the late afternoon. I'll order a flat white — they make genuinely excellent coffee — and settle into my favourite corner seat by the window. That spot has a perfect vantage point: I can watch the autumn leaves drifting past while still being far enough from the door that foot traffic doesn't distract me. I usually spend two to three hours there, alternating between reading academic papers and writing essays or research notes.
+If I were to teach this skill, I'd structure it in three progressive stages. The first stage is what I call "physical presence training" — learning to orient your entire body toward the speaker, maintaining appropriate eye contact, and resisting the urge to formulate your response while they're still talking. The second stage involves "reflective paraphrasing" — periodically summarising what the speaker has said in your own words to confirm understanding. The third and most advanced stage is "emotional attunement" — picking up on tone shifts, micro-expressions, and what psychologists call "meta-messages," the feelings wrapped inside the factual content.
 
-The reason I'm so drawn to this place is probably counterintuitive — it's not silent, and it's not minimalist or designed with productivity in mind. But that's precisely what makes it work for me. The gentle hum of conversation, the occasional clink of cups, the faint smell of old books mixing with fresh espresso — all of these create what I'd call "productive cosiness." In environmental psychology, there's a concept called "stimulus screening" — the ability to filter out irrelevant background noise while focusing on a primary task. For whatever reason, this environment seems to engage my screening ability perfectly. I feel simultaneously relaxed and alert, which is a combination I've never been able to replicate in a sterile library or a noisy chain coffee shop.
-
-I also think there's something about the social dimension that helps. Seeing other people absorbed in their own work creates a sense of shared purpose — a subtle, unspoken accountability that keeps me from pulling out my phone every five minutes. It's like a gentle form of what researchers call "social facilitation" — the presence of others actually enhances performance on tasks we find moderately challenging.`,
+I believe this skill is vitally important because we live in an era of what I'd call "performative listening." People nod, say "mm-hmm," and then immediately redirect the conversation back to themselves. Genuine active listening is increasingly rare, yet it's one of the most powerful tools for building trust, resolving conflict, and fostering psychological safety — whether in personal relationships, workplace teams, or therapeutic settings.`,
   expressions: [
-    '\ud83c\udf1f absolute sanctuary for deep work — 深度工作的绝对圣所',
-    '\ud83c\udf1f tucked away on a quiet side street — 隐藏在安静的小街上',
-    '\ud83c\udf1f reclaimed oak with visible scratches — 回收的橡木，可见划痕',
-    '\ud83c\udf1f create a cocoon of ambient sound — 营造环境音的茧',
-    '\ud83c\udf1f a perfect vantage point — 完美的观察位置',
-    '\ud83c\udf1f productive cosiness — 高效 cozy 感',
-    '\ud83c\udf1f stimulus screening — 刺激过滤能力',
-    '\ud83c\udf1f relaxed and alert — 放松而警觉',
-    '\ud83c\udf1f shared purpose — 共同的目标感',
-    '\ud83c\udf1f social facilitation — 社会促进效应'
+    '\ud83c\udf1f deceptively simple — 看似简单实则不易',
+    '\ud83c\udf1f an entirely different beast — 完全不同的挑战',
+    '\ud83c\udf1f absorbing the emotions — 吸收情感信息',
+    '\ud83c\udf1f unspoken things lurking beneath the surface — 隐藏在表面之下的未尽之言',
+    '\ud83c\udf1f creating a space where someone feels genuinely heard — 创造一个让人感到被真正倾听的空间',
+    '\ud83c\udf1f physical presence training — 身体在场训练',
+    '\ud83c\udf1f reflective paraphrasing — 反思性复述',
+    '\ud83c\udf1f emotional attunement — 情感调谐',
+    '\ud83c\udf1f performative listening — 表演式倾听',
+    '\ud83c\udf1f psychological safety — 心理安全感'
   ]
 };;
 
@@ -1474,12 +1472,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。',
-  source: '余华《活着》',
+  quote: '凡事都有偶然的凑巧，结果却又如宿命的必然。',
+  source: '沈从文《边城》',
   analysis: [
-    '<b>"活着"的极简哲学</b>：余华在《活着》的序言中写下了这句看似同义反复的话——"人是为活着本身而活着的"。表面上，这是一个毫无信息量的句子：A等于A，活着等于活着。但正是这种极简的表达，构成了对中国传统文化中"意义焦虑"的一次深刻解构。从孔子"朝闻道，夕死可矣"到范仲淹"先天下之忧而忧"，中国人的生命叙事长期被一种"超越性追求"所主导——活着必须为了某种更高的目的：道德、功名、家国。余华说：不是。活着本身就是目的。这不是虚无主义，而是一种历经劫难后的生存智慧。从心理学角度看，这恰好呼应了维克多·弗兰克尔（Viktor Frankl）在《活出生命的意义》中的核心洞见：意义不是被"发明"的，而是被"发现"的——它不需要宏大叙事，可以藏在最朴素的生存本身之中。',
-    '<b>福贵的"反英雄"叙事</b>：小说的主人公福贵，从一个地主家的败家子，到经历内战、土改、大跃进、文革，亲人一个个死去——儿子、女儿、妻子、女婿、外孙——最终只剩下一头老牛相伴。按照传统文学标准，福贵是一个彻底的失败者：没有成就、没有尊严、没有"意义"。但余华正是通过这个角色告诉我们：生命的力量不在于你拥有多少，而在于你能承受多少。这与积极心理学中的"心理韧性"（psychological resilience）概念高度契合——韧性不是"不被击倒"，而是"被击倒后还能站起来继续走"。福贵的韧性不是英雄式的壮烈，而是一种近乎本能的、大地一般的承受力：他哭过、痛过、绝望过，但第二天太阳升起时，他依然牵着老牛走向田野。',
-    '<b>给Emma的话</b>：我知道你现在正处在一个充满不确定性的人生阶段——读研、求职、未来的方向——这些都很容易让人陷入"我活着到底是为了什么"的焦虑循环中。《活着》给我的最大触动是：你不需要在22岁就回答这个问题。生命的意义不是一个需要被"解决"的问题，而是一个需要被"经历"的过程。余华写福贵的故事，不是为了让你同情他，而是让你看到：即使生活剥夺了几乎所有东西，"活着"本身仍然具有一种无法被剥夺的力量。这和应用心理学中"接纳承诺疗法"（ACT）的理念不谋而合——不是消除痛苦，而是学会带着痛苦继续前行。当你觉得压力大、迷茫的时候，想想福贵牵着老牛在夕阳下走过的那个画面：没有宏大的意义，只有活着本身的尊严✨'
+    '<b>偶然与必然的辩证法</b>：沈从文在《边城》中写下这句话时，描述的是一段错失的爱情——翠翠和傩送之间，每一次看似偶然的错过，最终都汇成了"无人渡河"的宿命结局。但从叙事结构来看，这些"偶然"绝非真正的偶然：老船夫的犹豫、天保的退出与意外、傩送的自尊与沉默——每一个选择都在特定的性格逻辑和情境压力下发生。这正是心理学中"归因理论"（attribution theory）所揭示的认知偏差：我们倾向于将不利于自己的结果归因于"命运"或"外部力量"，而忽略了自身性格和行为模式在其中的推动作用。沈从文的深刻之处在于，他用诗意的语言道出了一个冷酷的真理：所谓"宿命"，往往是无数个微小选择的累积效应。',
+    '<b>茶峒的"慢"与现代性的焦虑</b>：《边城》写于1934年，正值中国现代化浪潮最为汹涌的时期。沈从文却在湘西的茶峒——一个几乎没有时间感的边地小镇——构建了一个"慢世界"。渡船、吊脚楼、端午节赛龙舟、月夜唱歌——所有的节奏都是自然的、循环的、不急不缓的。这种"慢"不是落后，而是一种选择：沈从文在用文字抵抗现代性所带来的"加速焦虑"。从积极心理学的视角来看，这与当代"慢生活运动"（Slow Movement）的核心理念不谋而合——真正的幸福感不来自于"做得更多更快"，而来自于"在此刻充分在场"。翠翠在溪边等待的样子，某种意义上，是人类最原初的专注状态——不焦虑于未来，不悔恨于过去，只是安静地存在于当下。',
+    '<b>给Emma的话</b>：《边城》最打动我的，不是翠翠的爱情悲剧，而是沈从文写这个悲剧时的语气——没有控诉、没有愤怒、甚至没有明显的悲伤，只有一种温柔的、近乎慈悲的注视。他看着这些人物在命运中挣扎，不说"他们本应该怎样"，只说"事情就是这样发生了"。这和心理学中"非评判性觉察"（non-judgmental awareness）的概念高度相通——正念冥想的核心就是这个：不去评判正在发生的事，而是如实地观察和接纳。Emma，我知道你现在正处在一个需要做很多选择的阶段——导师、研究方向、职业规划——很容易把每一个选择都看成"万一选错了怎么办"的生死攸关。但《边城》提醒你：生命没有唯一的"正确路径"，每一条路上都有属于它的风景和意义✨'
   ]
 };;
 
@@ -1511,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月21日 星期一',
+  date: '2026年9月22日 星期二',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '亚运首日中国队豪取11金暂列金牌榜第一', desc: '第二十届名古屋亚运会开幕后首个比赛日，中国代表团夺得11金6银3铜。游泳队单日摘6金五次打破四项赛会纪录，潘展乐男子100米自由泳47秒61卫冕成功，创赛季亚洲最好成绩。' },
-    { tag: '国际', cls: 'news-intl', title: '中美经贸磋商在纽约正式开启', desc: '当地时间9月20日，中美两国经贸团队在纽约开始举行经贸磋商。双方将以两国元首重要共识为引领，就彼此关心的经贸问题展开讨论。' },
-    { tag: '国内', cls: 'news-domestic', title: '中办国办印发《关于分类推进高校改革的意见》', desc: '意见要求科学构建高校分类发展体系，区分综合性、特色化基本方向，确立高校分类框架，根据隶属关系建立多元适配的高校分类模式。' },
-    { tag: '科技', cls: 'news-tech', title: '长鑫科技第五代技术平台正式量产，内存半间距达11.95nm', desc: '长鑫科技在2026世界制造业大会上宣布第五代技术平台量产，存储密度大幅提升，每张晶圆产出较上代提升50%以上，24GB LPDDR5X已全面进入国产旗舰手机。' },
-    { tag: '科技', cls: 'news-tech', title: '全球最复杂分子计算机诞生，实现100比特连续25次运算', desc: '爱尔兰梅努斯大学研究团队在《自然》发表成果，研制出利用DNA分子完成加法、乘法、除法等运算的分子计算机，为低能耗计算和长期数据存储提供新路径。' },
-    { tag: '国内', cls: 'news-domestic', title: '国家卫健委：2026年底前全国省级层面均应开设罕见病门诊', desc: '通知要求各省至少依托1家省属及以上医院开设罕见病门诊，300万人口以上地市均须至少依托1家医院开设罕见病门诊，安排专科医师坐诊。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普称将对伊朗作出重大决定，不排除联大会面', desc: '特朗普表示正在对伊朗问题作出决定，称不久将有"非常重大的事情"发生。伊朗总统本周将赴纽约出席联合国大会，双方不排除会面可能。' },
-    { tag: '科技', cls: 'news-tech', title: '力箭一号成功发射9颗卫星，在手订单排至2027年下半年', desc: '力箭一号遥十八运载火箭在东风商业航天创新试验区成功发射秦岭卫星01/02星等9颗卫星，现阶段年产能力达30发。' }
+    { tag: '国内', cls: 'news-domestic', title: '习近平将于9月23日至25日对美国进行国事访问', desc: '应美国总统特朗普邀请，国家主席习近平将对美国进行国事访问。外交部表示中美两国元首半年内实现互访，具有历史性、里程碑意义。' },
+    { tag: '国内', cls: 'news-domestic', title: '二十届五中全会将于10月26日至29日在北京召开', desc: '中共中央政治局9月21日召开会议，研究持之以恒推进全面从严治党重大问题，决定二十届五中全会于10月26日至29日在京召开。' },
+    { tag: '国际', cls: 'news-intl', title: '中美经贸磋商在纽约举行，就AI问题举行对话', desc: '何立峰副总理与美方财政部长贝森特、贸易代表格里尔在纽约举行经贸磋商，双方围绕双边贸易投资等问题进行深入交流，并就人工智能有关问题举行对话。' },
+    { tag: '国内', cls: 'news-domestic', title: '亚运会第二日中国队斩获12金，射击团体破世界纪录', desc: '射击男子10米气步枪团体决赛中国队夺金并打破世界纪录，盛李豪成功卫冕个人冠军；张博恒卫冕体操男子个人全能；13岁于子迪夺女子200米混合泳金牌并破亚洲纪录。' },
+    { tag: '科技', cls: 'news-tech', title: '第48届世界技能大赛今日在上海开幕', desc: '来自68个国家和地区的1385名选手将在64个项目中同台竞技，参赛国家和地区数、选手数均创历届之最。' },
+    { tag: '科技', cls: 'news-tech', title: 'SpaceXAI发布Grok 4.7编程与知识工作专用大模型', desc: '新模型在CursorBench 4.0等基准测试中表现领先，速度为同类模型两倍、价格仅为一半，已通过Cursor、Grok Build及API开放使用。' },
+    { tag: '国际', cls: 'news-intl', title: '联合国评估OpenAI智能体"越界"事件', desc: '联合国AI独立国际科学小组发表专题简报，评估OpenAI的AI智能体7月在测试中侵入HuggingFace系统的事件，指出AI故障可跨越企业和国界，无单一机构能识别所有新兴风险模式。' },
+    { tag: '科技', cls: 'news-tech', title: 'AMD总市值首次突破1万亿美元', desc: '美股盘中超威半导体股价涨幅扩大至9.5%，突破613美元，成为全球市值突破万亿美元的半导体公司之一。' }
   ]
 };;
 
