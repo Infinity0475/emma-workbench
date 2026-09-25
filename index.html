@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Think Before You Accept: Can Written Justification Reduce Uncritical Uptake of AI Writing Suggestions?',
-  authors: 'Yan Tao, Jennifer Meyer, Rene F. Kizilcec',
-  venue: 'arXiv:2609.23936 \xb7 cs.HC \xb7 September 2026',
-  link: 'https://arxiv.org/abs/2609.23936',
-  date: '2026-09-24',
-  abstract: '生成式AI能为学生提供有用的写作反馈，但其价值取决于学生能否判断哪些建议是准确和相关的。已有研究表明，在人机交互中引入策略性摩擦（strategic friction）可以促进批判性采纳，但如何在学术场景中有效实施这种摩擦尚不清楚。本研究检验了要求学生在接受或拒绝AI建议时提供书面论证（written justification）能否减少非批判性采纳。在一项嵌入课程活动的随机实验（N=129）中，学生撰写数据分析提案，收到混合质量的AI修改建议，然后决定接受或拒绝。被要求提供书面论证的学生采纳有缺陷建议的概率降低了24个百分点（65% vs 41%），且对合理建议的接受率没有降低（81% vs 86%）。然而，主题分析显示学生在论证任务中的参与仍然表面化，且存在元认知监控和领域知识的缺口。',
+  title: 'Does AI Save Time on Product Design? A Randomized Controlled Experiment of AI Prompt-to-Design Workflows',
+  authors: 'Remy Stewart, Olabode Anise, Andrew Hogan, Augustus Griffin',
+  venue: 'arXiv:2609.26725 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.26725',
+  date: '2026-09-25',
+  abstract: 'AI设计工具如今已具备"提示词生成设计"（prompt-to-design）的能力，允许设计师及其非设计岗同事通过与大语言模型（LLM）对话来创建原型。虽然这些工具承诺节省时间，但产品设计领域的实验证据相比软件工程仍然有限。研究者对50位产品设计师和50位产品经理进行了一项随机对照试验（RCT），评估Figma Make在设计工作中的潜在时间节省效果。参与者在有或无Figma Make的条件下完成三项标准化设计任务。在完成研究的参与者中，使用Figma Make与约20%的完成时间缩短相关，且产品经理获益更大。研究结果表明，提示词生成设计工具可能使产品经理进一步参与设计工作，而对专业设计师的收益可能因任务而异。',
   keyPoints: [
-    '核心概念——"策略性摩擦"与"批判性采纳"：这篇论文延续昨天"认知卸载"论文的主题，但从另一个角度切入——不是阻止你用AI，而是在你采纳AI建议前增加一个"思考步骤"。研究中的"书面论证"要求就是一种"策略性摩擦"（strategic friction）：让学生在点击"接受"之前，先写下为什么接受或拒绝。这与心理学中的"系统2思维"（System 2 thinking）高度相关——通过增加认知负荷来激活慢思考，抑制冲动性的"系统1"反应。关键发现是：这种摩擦让错误建议的采纳率从65%降到41%，但合理建议的接受率几乎不受影响（86% vs 81%），说明这种摩擦是"精准"的。',
-    '实验设计的精妙之处——"混合质量建议"范式：研究最聪明的设计是给AI建议刻意"掺水"——提供混合质量的修改建议（有些正确、有些有缺陷）。这模拟了现实世界中AI输出质量参差不齐的真实情况。N=129的规模虽然不大，但嵌入真实课程活动增强了生态效度。24个百分点的效应量在教育干预研究中属于中大效应，且"不伤及合理建议接受率"意味着这种摩擦不会过度抑制AI使用——它只过滤掉了不假思索的采纳，保留了有判断力的采纳。',
-    '对AI产品设计的启示——"有益摩擦"的设计谱系：连续两天的论文展示了两种不同的"有益摩擦"设计——昨天的"元认知反馈"（让你看见卸载的后果）和今天的"书面论证"（让你在采纳前说出理由）。它们共享同一个设计哲学：不是禁止AI使用，而是在关键决策节点增加用户的认知参与。但今天的研究也揭示了一个关键挑战——"表面化参与"：学生虽然写了论证，但很多只是敷衍了事。这说明摩擦设计不是"加了就好"，而是需要设计得足够深入，能真正触发元认知监控，而不仅仅是形式合规。',
-    '对Emma的启示——从"摩擦设计"到"认知增强设计"：这两天的论文构成了一个完整的研究框架——如何在AI时代设计"让人变得更好"的交互。作为未来的AI产品经理/用户研究员，Emma可以从这个框架中学到：好的AI产品设计需要在"效率"和"赋能"之间找到平衡点。摩擦设计不是反对效率，而是确保用户在享受AI便利的同时，保持和发展自己的判断力。这种"赋能型设计"理念，正是AI时代产品差异化竞争的关键方向✨'
+    'RCT实验设计与方法论价值：这项研究采用了随机对照试验（RCT）——心理学和医学研究的"金标准"方法——来评估AI工具在设计工作中的实际效果。50名设计师+50名产品经理的样本量、三项标准化设计任务、有/无AI工具的对照设计，使结论具有较高的内部效度。对Emma来说，这种"用实验方法验证AI工具实际效果"的研究范式，正是AI产品经理需要掌握的核心方法论——不要只靠直觉判断AI工具好不好用，而要用RCT来量化其影响。',
+    '"提示词生成设计"改变协作格局：研究发现AI设计工具对产品经理的时间节省显著大于对专业设计师的节省。这意味着prompt-to-design工具正在模糊"设计师"与"非设计师"的角色边界——产品经理可以通过对话式工作流直接生成原型，降低设计参与门槛。但研究也指出，对专业设计师而言，收益是"task dependent"（因任务而异）的，说明AI工具不是万能替代，而是在特定任务类型上提供差异化价值。',
+    '20%时间节省的实际意义：约20%的完成时间缩短是一个有实际意义的效应量。在产品开发中，设计阶段的效率提升可以加速整个产品迭代周期。但研究的关键洞察不在于"快了多少"，而在于"谁获益更多"——产品经理作为非设计专业人员，通过AI工具获得了接近专业设计师的部分能力，这深刻改变了团队协作的权力结构。',
+    '对Emma的双重启示——产品视角与研究视角：从产品经理角度，这预示着"AI赋能非专业人员参与专业工作"的趋势，Emma可以思考如何设计更好的prompt-to-design交互，降低用户的专业门槛。从用户研究角度，这个研究本身就是"如何用实验方法评估AI产品价值"的优秀范例——RCT+标准化任务+多角色对照组的设计，完全可以迁移到Emma未来在追星社交平台HCI研究中，用来评估不同界面设计对用户行为的影响。'
   ],
-  takeaway: '连续两天的论文构成了一个令人兴奋的对话：昨天讲"认知卸载"的危险，今天讲"如何设计摩擦来对抗它"。这项研究最让我深思的是"表面化参与"问题——学生虽然按要求写了论证，但很多只是走过场。这揭示了一个深层的设计悖论：我们可以用制度要求用户"思考"，但无法用制度保证用户"真正思考"。真正的批判性思维不是被外部要求触发的，而是来自内在的认知动机和领域知识储备。这对AI产品设计的启示是：摩擦设计需要超越"形式合规"层面，深入到真正能激活元认知监控的设计——比如提供对比反馈（让用户看到自己判断的准确率）、渐进式提示（先让用户独立判断，再揭示AI建议的依据），或者情境化训练（在真实任务中培养判断力）。对Emma来说，这个"从摩擦到赋能"的设计谱系非常值得深入研究——它连接了心理学（元认知、批判性思维）、HCI（交互设计、用户体验）和教育（学习科学）三个领域，是一个可以做用户研究又有实际产品价值的方向✨'
+  takeaway: '这篇论文对Emma来说是一份"双重礼物"：既是一篇AI产品设计的前沿研究，又是一个RCT方法论的优秀教学案例。最值得深思的是"产品经理获益大于设计师"这一发现——它揭示了AI工具的真正价值可能不在于替代专家，而在于赋能非专家。这与Emma正在研究的"追星群体社交平台信息呈现优化"有深层呼应：好的信息呈现设计也应该像prompt-to-design工具一样，降低用户获取和理解信息的门槛，让非专业用户也能高效参与。而从研究方法角度，这项研究的RCT设计——标准化任务、对照组、多角色样本——为Emma提供了可直接借鉴的实验范式：在自己的HCI研究中，同样可以用RCT来验证不同界面设计方案对用户认知负荷、信息检索效率的影响。这正是一个将"产品实践"与"学术研究"完美结合的方向✨'
 };;;
 
 function renderPaper() {
@@ -1392,40 +1392,40 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'facilitate', pos: 'v.', def: '促进，使便利（/fəˈsɪlɪteɪt/）' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
-  { word: 'unprecedented', pos: 'adj.', def: '史无前例的，空前的（/ʌnˈpresɪdentɪd/）' },
-  { word: 'detrimental', pos: 'adj.', def: '有害的，不利的（/ˌdetrɪˈmentl/）' },
-  { word: 'feasible', pos: 'adj.', def: '可行的，可实现的（/ˈfiːzəbl/）' },
-  { word: 'inevitable', pos: 'adj.', def: '不可避免的，必然的（/ɪnˈevɪtəbl/）' },
-  { word: 'prevalent', pos: 'adj.', def: '普遍的，盛行的（/ˈprevələnt/）' },
-  { word: 'profound', pos: 'adj.', def: '深刻的，意义深远的（/prəˈfaʊnd/）' },
-  { word: 'ramification', pos: 'n.', def: '后果，衍生影响（/ˌræmɪfɪˈkeɪʃn/）' },
-  { word: 'advocate', pos: 'v.', def: '提倡，主张，拥护（/ˈædvəkeɪt/）' }
+  { word: 'leverage', pos: 'v.', def: '利用，发挥…的作用（/ˈlevərɪdʒ/）' },
+  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
+  { word: 'resilient', pos: 'adj.', def: '有韧性的，能快速恢复的（/rɪˈzɪliənt/）' },
+  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
+  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细查（/ˈskruːtənaɪz/）' },
+  { word: 'indispensable', pos: 'adj.', def: '不可或缺的，必需的（/ˌɪndɪˈspensəbl/）' },
+  { word: 'contentious', pos: 'adj.', def: '有争议的，引起争论的（/kənˈtenʃəs/）' },
+  { word: 'viable', pos: 'adj.', def: '可行的，能成功的（/ˈvaɪəbl/）' },
+  { word: 'inherent', pos: 'adj.', def: '内在的，固有的（/ɪnˈherənt/）' },
+  { word: 'exacerbate', pos: 'v.', def: '使恶化，加剧（/ɪɡˈzæsəbeɪt/）' }
 ];;;
 
 const ieltsSpeaking = {
-  part: 'Part 2 \xb7 Cue Card',
-  topic: 'Describe a time when you felt proud of yourself',
-  bullet: 'You should say: what you did, when it happened, how you achieved it, and explain why you felt proud of yourself.',
-  sample: `I would like to talk about a moment that stands out as one of my proudest achievements — it was when I presented my first independent research project at an academic symposium last spring. I had been working on a study examining how interface design choices affect users cognitive load during information retrieval tasks, and this presentation was the culmination of three months of intense work.
+  part: 'Part 2 · Cue Card',
+  topic: 'Describe a traditional festival that you celebrate in your country',
+  bullet: 'You should say: what the festival is, when and how it is celebrated, what you usually do during this festival, and explain why this festival is meaningful to you.',
+  sample: `I would like to talk about the Mid-Autumn Festival, which is one of the most cherished traditional festivals in Chinese culture. It falls on the fifteenth day of the eighth month in the lunar calendar, which usually corresponds to September or October in the Gregorian calendar. This year, it happens to be today, so I am feeling particularly connected to this topic.
 
-The project had its origins in a simple observation: I noticed that students in my psychology cohort struggled with our department research database interface, often abandoning searches before finding relevant literature. I became curious about whether specific design elements — like the placement of search filters and the granularity of result categorisation — were contributing to this frustration. With my supervisor guidance, I designed a small-scale study with 30 participants, using eye-tracking software and a cognitive load questionnaire.
+The festival is fundamentally about family reunion and expressing gratitude. The most iconic symbol is the mooncake — a round pastry filled with various sweet or savoury fillings, symbolising completeness and unity. Families gather together in the evening to share mooncakes, appreciate the full moon, and enjoy each other's company. In many households, children also carry colourful lanterns, adding a playful and festive atmosphere to the night.
 
-The path to the presentation was far from smooth. My initial data analysis showed no significant results, and I was ready to abandon the project entirely. But something in me refused to let it go. I spent an entire weekend re-examining my methodology and discovered that I had overlooked a confounding variable — the participants prior experience with academic databases. Once I controlled for this factor, the patterns became clear and compelling.
+What makes this festival deeply meaningful to me goes beyond the delicious food or the beautiful moon. It is about the emotional resonance of a famous line from the Song Dynasty poet Su Shi: "May we all be blessed with longevity, and share the moonlight across a thousand miles." Even when family members are separated by distance, the shared moonlight connects them. This sentiment has become even more poignant in our modern era of migration and urbanisation, where many young people study or work far from home.
 
-When I finally stood at the podium, I remember looking out at the audience — professors, fellow students, even a few industry researchers — and feeling a profound sense of accomplishment. It was not just that the presentation went well, though the questions from the floor were genuinely engaging. It was the knowledge that I had persevered through self-doubt, methodological setbacks, and the temptation to settle for an easier topic. That experience taught me that true pride comes not from achieving something effortlessly, but from pushing through difficulty and emerging stronger on the other side.`,
+On a personal level, the Mid-Autumn Festival reminds me to pause in my busy life and reconnect with what truly matters — family, gratitude, and the simple beauty of nature. It is a gentle invitation to slow down and appreciate the present moment, which I find increasingly precious in our fast-paced, technology-driven world.`,
   expressions: [
-    '🌟 stand out — 突出，引人注目',
-    '🌟 culmination — 顶点，最终成果',
-    '🌟 far from smooth — 远非一帆风顺',
-    '🌟 abandon the project — 放弃项目',
-    '🌟 refused to let it go — 不肯放弃',
-    '🌟 confounding variable — 混淆变量',
-    '🌟 compelling — 令人信服的',
-    '🌟 profound sense of accomplishment — 深厚的成就感',
-    '🌟 persevere through self-doubt — 在自我怀疑中坚持',
-    '🌟 emerge stronger on the other side — 在困境后变得更强'
+    '🌟 cherished — 珍视的，深爱的',
+    '🌟 falls on — 适逢（某日）',
+    '🌟 iconic symbol — 标志性象征',
+    '🌟 emotional resonance — 情感共鸣',
+    '🌟 poignant — 令人心酸的，意味深长的',
+    '🌟 migration and urbanisation — 人口迁移与城市化',
+    '🌟 reconnect with — 重新与…建立联系',
+    '🌟 increasingly precious — 愈发珍贵',
+    '🌟 fast-paced — 快节奏的',
+    '🌟 technology-driven — 技术驱动的'
   ]
 };;;
 
@@ -1472,12 +1472,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '一天早晨，格里高尔·萨姆沙从不安的睡梦中醒来，发现自己躺在床上变成了一只巨大的甲虫。他仰卧着，那背硬得像铁甲一样，他稍稍一抬头，便看见自己那穹顶似的棕色肚子分成了好多块弧形的硬片。',
-  source: '弗兰茨·卡夫卡《变形记》（李文俊译）',
+  quote: '人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。',
+  source: '苏轼《水调歌头·明月几时有》（北宋·1076年中秋）',
   analysis: [
-    '<b>"变形"作为存在主义隐喻</b>：卡夫卡用一个荒诞的变形——人变成虫——来呈现现代人最深层的存在焦虑。格里高尔的变形不是科幻意义上的"基因突变"，而是存在主义意义上的"异化具象化"：一个被工作压榨、被家庭利用、被社会物化的普通人，终于在某个早晨"变成"了他一直被当作的东西——一个无用的、令人厌恶的工具。从心理学角度看，这个变形可以理解为"自我认知"与"社会角色"之间的断裂——格里高尔内心深处仍然是自己，但外界已经完全将他视为异物。这种断裂正是心理学中"自我差异理论"（self-discrepancy theory）的极端呈现：当"实际自我"与"他人眼中的自我"之间的鸿沟无法弥合时，心理崩溃就以物理变形的方式外化了。',
-    '<b>叙事冷静与情感荒诞的张力</b>：卡夫卡最独特的叙事策略是"冷漠叙述"（deadpan narration）——用最平静、最日常的语气描述最荒诞、最恐怖的事件。格里高尔醒来发现自己变成了甲虫，他的第一反应不是恐惧或崩溃，而是担心"上班要迟到了"。这种叙事策略产生了一种奇特的阅读体验——读者比角色更恐惧、更焦虑。从认知心理学的角度看，这是一种精妙的"预期违背"（expectation violation）：读者预期变形会引发恐慌，但文本提供了日常琐碎的反应，这种落差迫使读者思考——什么才是真正恐怖的？不是变形本身，而是一个人已经习惯了被异化到连变成虫子都不如上班重要。',
-    '<b>给Emma的话</b>：卡夫卡写的不只是一个变成虫子的故事，他写的是每一个在系统里被物化的人。格里高尔是推销员，他的价值完全被他的"有用性"定义——当他不再能工作时，家人从依赖变成嫌弃，从感激变成厌恶。这和心理学中的"条件性自尊"（contingent self-esteem）高度相关：当一个人的自我价值完全建立在外部效用上，一旦效用消失，自我也就崩塌了。Emma，你在追求产品经理、学术成就、职业发展的路上，卡夫卡提醒你：不要把自己的价值完全绑定在"有用"上。你的价值不取决于你能产出什么，而在于你是一个完整的人——有思想、有感受、有超越效用的存在意义。这种"无条件自我价值"（unconditional self-worth）的建立，才是对抗"变形"的根本力量✨'
+    '<b>"以月喻人"的哲理升华</b>：苏轼将人间的悲欢离合与月亮的阴晴圆缺并置，构成了一种宇宙级的对照隐喻。月亮不是夜空中的装饰，而是人类情感的镜子——它的圆缺映射着人世的聚散，它的永恒照见个体的短暂。从心理学角度看，这是一种精妙的"认知重评"（cognitive reappraisal）策略：不是否认悲伤的存在，而是将个人的离别之苦放入更宏大的自然规律中去理解，从而获得释然。当你说"此事古难全"时，你并不是在放弃，而是在接纳——接纳不完美本身就是人生常态，这种接纳反而带来内心的平静。',
+    '<b>"但愿人长久"——从私人思念到普世祝愿的升华</b>：这首词最动人的转折在于结尾。苏轼本是思念七年未见的弟弟苏辙，但他没有停留在个人的感伤中，而是将这份思念升华为对天下所有人的祝愿。"千里共婵娟"打破空间的阻隔——纵使相隔万里，只要共享同一轮明月，便是另一种团圆。这种从"我"到"我们"、从"此刻"到"永恒"的升华，体现了苏轼旷达通透的精神境界。在今天这个中秋佳节，当Emma或许远离家人在异乡求学，这五个字依然是最温柔的慰藉：团圆不必是物理上的相聚，心灵的联结同样完整。',
+    '<b>给Emma的话</b>：苏轼写这首词时39岁，仕途失意，外放密州，与弟弟七年未见。人生的不如意他一样不少地经历了。但他没有沉溺于苦闷，而是用一首词完成了自我疗愈——把个人的悲欢融入万古山河与千里月色之中。Emma，在追求产品经理梦想、读研、准备雅思的路上，你也会经历"高处不胜寒"的时刻——可能是选题的迷茫、求职的焦虑、或远离家乡的孤独。苏轼告诉你：不必事事圆满，不必执着于朝夕相伴。接纳无常，方得安然；学东坡胸襟，不困于别离，不扰于得失。今夜月圆，愿你与所爱之人，千里共此清辉✨'
   ]
 };;;
 
@@ -1509,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月24日 星期三',
+  date: '2026年9月25日 星期四',
   items: [
-    { tag: '国际', cls: 'news-intl', title: '习近平抵达华盛顿，开始对美国进行国事访问', desc: '应美国总统特朗普邀请，国家主席习近平于当地时间9月23日下午抵达华盛顿，开始为期三天的国事访问。特朗普夫妇亲自到安德鲁斯空军基地迎接，此访是两国元首半年内第二次会面，具有历史性里程碑意义。' },
-    { tag: '国内', cls: 'news-domestic', title: '教育部：将在全国推行每周至少半天校外实践教学', desc: '教育部基础教育司司长23日表示，将在全国推行每周至少半天校外实践教学，指导各地各校因地制宜分学段合理安排，纳入学校教育教学计划，推动理论与实践深度融合。' },
-    { tag: '科技', cls: 'news-tech', title: '我国成功发射卫星互联网低轨26组卫星', desc: '9月23日21时32分，我国在海南商业航天发射场使用长征八号甲运载火箭，成功将卫星互联网低轨26组卫星发射升空，卫星顺利进入预定轨道，发射任务获得圆满成功。' },
-    { tag: '科技', cls: 'news-tech', title: '"中国天眼"FAST落成十周年，将继续推进二期工程', desc: 'FAST团队历经十年耕耘，推动我国射电天文领域实现从跟跑到世界领跑的跨越式发展。9月22日至24日举办的学术交流会上，团队宣布将继续推进FAST二期工程，巩固国际领先地位。' },
-    { tag: '国际', cls: 'news-intl', title: '联合国大会呼吁加强前沿AI全球治理与合作', desc: '在第81届联大期间，多国领导人和国际组织呼吁加强人工智能全球治理，强调需要建立包容性的AI安全框架，确保前沿AI技术惠及全人类而非加剧不平等。' },
-    { tag: '国内', cls: 'news-domestic', title: '名古屋亚运会：中国队体操女团14连冠，游泳项目单日夺六金', desc: '体操女团决赛中国队夺冠，实现自1974年以来14连冠。游泳项目中国队单日揽六金，张展硕破男子200米自由泳亚洲纪录。截至第4个比赛日，中国代表团以48金位列金牌榜第一。' },
-    { tag: '国际', cls: 'news-intl', title: '经合组织上调2026年全球经济增速预期至2.9%', desc: '经合组织23日发布最新经济展望报告，将2026年全球经济增速预期由6月份估算的2.8%上调至2.9%，反映出全球主要经济体复苏势头好于预期。' },
-    { tag: '科技', cls: 'news-tech', title: '利用AI批量生成软文"搭车"引流被判侵权', desc: '法院近日判决一起利用AI批量生成竞争对手产品软文进行"搭车"引流的案件，认定此类行为构成不正当竞争侵权。这是AI批量生成内容侵权领域的典型案例。' }
+    { tag: '国内', cls: 'news-domestic', title: '习近平同美国总统特朗普在白宫举行会谈', desc: '当地时间9月24日上午，国家主席习近平同美国总统特朗普在白宫举行会谈。习近平指出，构建中美建设性战略稳定关系不是权宜之计，两国各部门各领域各层级都要动起来，落实好双方达成的共识。' },
+    { tag: '国内', cls: 'news-domestic', title: '中美第八轮经贸磋商达成多项共识，首次就AI进行对话', desc: '商务部介绍，中美两国经贸团队在美国举行第八轮经贸磋商，围绕共同关注的经贸问题进行坦诚深入交流，达成多项共识。中美各自牵头人在经贸磋商机制下就人工智能进行了首次对话。' },
+    { tag: '国内', cls: 'news-domestic', title: '国乒女团亚运六连冠，中国代表团80金稳居金牌榜第一', desc: '乒乓球女子团体决赛中国队3比0战胜日本队夺得冠军，实现亚运六连冠。截至第5个比赛日，中国代表团以80金30银20铜位列金牌榜第一。游泳项目张展硕夺男子800米自由泳金牌刷新赛会纪录。' },
+    { tag: '国内', cls: 'news-domestic', title: '教育部：2027年考研初试时间定为12月19日至20日', desc: '教育部发布通知，2027年全国硕士研究生招生初试时间为2026年12月19日至20日，报名时间为2026年10月15日至10月24日。' },
+    { tag: '国际', cls: 'news-intl', title: '也门胡塞武装袭击沙特多地目标，包括石油设施', desc: '也门胡塞武装24日宣布对沙特首都利雅得敏感目标、延布沙特阿美石油设施及吉赞军事目标发动袭击，使用弹道导弹、巡航导弹和无人机。沙特主导联军称拦截6枚胡塞弹道导弹。' },
+    { tag: '国际', cls: 'news-intl', title: '法国拟召集G7商讨释放战略石油储备以稳定油价', desc: '法国总统马克龙表示拟召集七国集团成员国开会商讨释放战略石油储备以降低国际油价。近期美欧多国柴油价格创历史新高，伊朗局势和俄乌冲突是油价飙升的主要原因。' },
+    { tag: '科技', cls: 'news-tech', title: '谷歌下周发射搭载自研TPU芯片卫星，启动太空数据中心在轨验证', desc: '谷歌宣布计划下周将搭载4颗自研TPU芯片的卫星送入轨道，启动太阳捕手项目首次在轨验证测试。卫星算力与一台数据中心服务器相当，将检验TPU在太空辐射和真空散热环境下的生存能力。' },
+    { tag: '科技', cls: 'news-tech', title: '我国首个规模化应用18兆瓦海上风机项目实现全容量投运', desc: '我国首个规模化应用18兆瓦海上风机项目实现全容量投运，将推动海上风电向大容量、低成本方向加快发展。中国天眼FAST也完成了运行十年来首次大规模停机检修。' }
   ]
 };;
 
