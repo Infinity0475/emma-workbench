@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Does AI Save Time on Product Design? A Randomized Controlled Experiment of AI Prompt-to-Design Workflows',
-  authors: 'Remy Stewart, Olabode Anise, Andrew Hogan, Augustus Griffin',
-  venue: 'arXiv:2609.26725 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.26725',
-  date: '2026-09-25',
-  abstract: 'AI设计工具如今已具备"提示词生成设计"（prompt-to-design）的能力，允许设计师及其非设计岗同事通过与大语言模型（LLM）对话来创建原型。虽然这些工具承诺节省时间，但产品设计领域的实验证据相比软件工程仍然有限。研究者对50位产品设计师和50位产品经理进行了一项随机对照试验（RCT），评估Figma Make在设计工作中的潜在时间节省效果。参与者在有或无Figma Make的条件下完成三项标准化设计任务。在完成研究的参与者中，使用Figma Make与约20%的完成时间缩短相关，且产品经理获益更大。研究结果表明，提示词生成设计工具可能使产品经理进一步参与设计工作，而对专业设计师的收益可能因任务而异。',
+  title: 'Elicitive User Interfaces: Designing How Users Shape Generative Interfaces',
+  authors: 'Eunhye Kim, Bryan Min, Haijun Xia, Juho Kim',
+  venue: 'arXiv:2609.23642 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.23642',
+  date: '2026-09-26',
+  abstract: '生成式用户界面（GenUI）承诺为用户的任务和需求提供个性化界面。然而，用户需求往往是隐性的——系统难以推断、用户难以表达，使得用户难以到达理想界面。本文提出"诱导式用户界面"（Elicitive UIs），一种将诱导技术作为界面本身一部分生成的GenUI设计方法。诱导式UI根据用户、任务和界面调整这些技术，以引导出用户偏好。为指导诱导式UI的设计，研究者综合出一个六轴设计空间，塑造界面如何诱导用户偏好。通过两项用户研究和设计探针实验，研究发现诱导式UI能够浮现用户尚未形成的偏好，且不同用户对诱导方式的反应差异大于不同任务之间的差异——用户逐渐发展出关于"希望被如何诱导"的一致偏好，暗示着"个性化诱导本身"的机会。',
   keyPoints: [
-    'RCT实验设计与方法论价值：这项研究采用了随机对照试验（RCT）——心理学和医学研究的"金标准"方法——来评估AI工具在设计工作中的实际效果。50名设计师+50名产品经理的样本量、三项标准化设计任务、有/无AI工具的对照设计，使结论具有较高的内部效度。对Emma来说，这种"用实验方法验证AI工具实际效果"的研究范式，正是AI产品经理需要掌握的核心方法论——不要只靠直觉判断AI工具好不好用，而要用RCT来量化其影响。',
-    '"提示词生成设计"改变协作格局：研究发现AI设计工具对产品经理的时间节省显著大于对专业设计师的节省。这意味着prompt-to-design工具正在模糊"设计师"与"非设计师"的角色边界——产品经理可以通过对话式工作流直接生成原型，降低设计参与门槛。但研究也指出，对专业设计师而言，收益是"task dependent"（因任务而异）的，说明AI工具不是万能替代，而是在特定任务类型上提供差异化价值。',
-    '20%时间节省的实际意义：约20%的完成时间缩短是一个有实际意义的效应量。在产品开发中，设计阶段的效率提升可以加速整个产品迭代周期。但研究的关键洞察不在于"快了多少"，而在于"谁获益更多"——产品经理作为非设计专业人员，通过AI工具获得了接近专业设计师的部分能力，这深刻改变了团队协作的权力结构。',
-    '对Emma的双重启示——产品视角与研究视角：从产品经理角度，这预示着"AI赋能非专业人员参与专业工作"的趋势，Emma可以思考如何设计更好的prompt-to-design交互，降低用户的专业门槛。从用户研究角度，这个研究本身就是"如何用实验方法评估AI产品价值"的优秀范例——RCT+标准化任务+多角色对照组的设计，完全可以迁移到Emma未来在追星社交平台HCI研究中，用来评估不同界面设计对用户行为的影响。'
+    '"隐性需求"难题的破局思路：用户研究中最棘手的问题之一是——用户不知道自己要什么，直到看到它。传统做法是访谈、问卷、A/B测试来"猜"用户需求，而本文提出的"诱导式UI"将需求探索嵌入界面本身：界面不再只是被动呈现，而是主动"提问"——通过调整诱导策略（六轴设计空间）来引导用户表达偏好。这与Emma在追星社交平台研究中可以结合：如何设计界面让用户自然表达对信息呈现方式的偏好。',
+    '六轴设计空间的方法论价值：论文综合了一个六轴设计空间来刻画"界面如何诱导用户偏好"。这种将模糊的设计直觉转化为结构化设计空间的方法，正是HCI研究的核心方法论。对Emma而言，在自己研究信息呈现优化时，也可以借鉴这种"维度化思考"——把"信息呈现"拆解为可操作的设计轴（如信息密度、排序逻辑、视觉层级），每个轴都有可调节的参数，从而形成系统化的实验设计框架。',
+    '"个性化诱导本身"的元层洞察：研究发现用户对"如何被诱导"的偏好比"对不同任务的反应"更一致——这意味着"诱导方式的个性化"本身是一个值得设计的新层。用户不仅需要个性化内容，还需要个性化的"交互引导方式"。这一发现对AI产品经理极具启发：好的产品不只是给用户想要的东西，更是用用户喜欢的方式引导他们发现自己想要的东西。',
+    '两项用户研究的实验设计：论文通过两项用户研究+设计探针验证假设，这种"设计探针（design probe）+用户研究"的混合方法在HCI领域非常常见。设计探针不是最终产品，而是一种"可交互的假设"——用最小可行的原型来测试设计理念。Emma在研究中也可以使用设计探针来快速验证不同信息呈现方案的效果，降低研究成本。'
   ],
-  takeaway: '这篇论文对Emma来说是一份"双重礼物"：既是一篇AI产品设计的前沿研究，又是一个RCT方法论的优秀教学案例。最值得深思的是"产品经理获益大于设计师"这一发现——它揭示了AI工具的真正价值可能不在于替代专家，而在于赋能非专家。这与Emma正在研究的"追星群体社交平台信息呈现优化"有深层呼应：好的信息呈现设计也应该像prompt-to-design工具一样，降低用户获取和理解信息的门槛，让非专业用户也能高效参与。而从研究方法角度，这项研究的RCT设计——标准化任务、对照组、多角色样本——为Emma提供了可直接借鉴的实验范式：在自己的HCI研究中，同样可以用RCT来验证不同界面设计方案对用户认知负荷、信息检索效率的影响。这正是一个将"产品实践"与"学术研究"完美结合的方向✨'
+  takeaway: '这篇论文对Emma有三重启发。第一，"诱导式"思维可迁移到追星社交平台研究：与其问用户"你想怎么看信息"，不如设计不同诱导方式的界面，让用户在交互中自然表达偏好——这正是"行为数据优于自我报告"的HCI研究哲学。第二，六轴设计空间提供了将模糊设计直觉结构化的范式，Emma可以为"追星信息呈现"构建自己的设计空间，每个轴对应一个可实验的变量。第三，"个性化诱导本身"的发现对AI产品经理极具价值——好的AI产品不应只个性化内容，还应个性化"引导用户的方式"。一个用户喜欢被直接推荐，另一个喜欢被引导探索，这种"交互风格的个性化"可能是下一代AI产品的差异化方向✨'
 };;;
 
 function renderPaper() {
@@ -1392,40 +1392,40 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'leverage', pos: 'v.', def: '利用，发挥…的作用（/ˈlevərɪdʒ/）' },
-  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
-  { word: 'resilient', pos: 'adj.', def: '有韧性的，能快速恢复的（/rɪˈzɪliənt/）' },
-  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用主义的（/præɡˈmætɪk/）' },
-  { word: 'scrutinize', pos: 'v.', def: '仔细审查，细查（/ˈskruːtənaɪz/）' },
-  { word: 'indispensable', pos: 'adj.', def: '不可或缺的，必需的（/ˌɪndɪˈspensəbl/）' },
-  { word: 'contentious', pos: 'adj.', def: '有争议的，引起争论的（/kənˈtenʃəs/）' },
-  { word: 'viable', pos: 'adj.', def: '可行的，能成功的（/ˈvaɪəbl/）' },
-  { word: 'inherent', pos: 'adj.', def: '内在的，固有的（/ɪnˈherənt/）' },
-  { word: 'exacerbate', pos: 'v.', def: '使恶化，加剧（/ɪɡˈzæsəbeɪt/）' }
+  { word: 'curriculum', pos: 'n.', def: '课程，课程体系（/kəˈrɪkjələm/）' },
+  { word: 'autonomous', pos: 'adj.', def: '自主的，自治的（/ɔːˈtɒnəməs/）' },
+  { word: 'disseminate', pos: 'v.', def: '传播，散布（/dɪˈsemɪneɪt/）' },
+  { word: 'proliferation', pos: 'n.', def: '激增，扩散（/prəˌlɪfəˈreɪʃn/）' },
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓解（/ˈmɪtɪɡeɪt/）' },
+  { word: 'unprecedented', pos: 'adj.', def: '前所未有的（/ʌnˈpresɪdentɪd/）' },
+  { word: 'detrimental', pos: 'adj.', def: '有害的，不利的（/ˌdetrɪˈmentl/）' },
+  { word: 'feasible', pos: 'adj.', def: '可行的，可实现的（/ˈfiːzəbl/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærədaɪm/）' },
+  { word: 'prevalence', pos: 'n.', def: '普遍，流行（/ˈprevələns/）' }
 ];;;
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a traditional festival that you celebrate in your country',
-  bullet: 'You should say: what the festival is, when and how it is celebrated, what you usually do during this festival, and explain why this festival is meaningful to you.',
-  sample: `I would like to talk about the Mid-Autumn Festival, which is one of the most cherished traditional festivals in Chinese culture. It falls on the fifteenth day of the eighth month in the lunar calendar, which usually corresponds to September or October in the Gregorian calendar. This year, it happens to be today, so I am feeling particularly connected to this topic.
+  topic: 'Describe a skill that you would like to learn',
+  bullet: 'You should say: what the skill is, why you want to learn it, how you plan to learn it, and explain whether you think it will be useful for your future.',
+  sample: `I would like to talk about a skill I have been eager to learn for quite some time now, which is data analysis using Python. As someone transitioning into the field of AI product management, I have come to realise that the ability to work with data is no longer optional — it is absolutely essential.
 
-The festival is fundamentally about family reunion and expressing gratitude. The most iconic symbol is the mooncake — a round pastry filled with various sweet or savoury fillings, symbolising completeness and unity. Families gather together in the evening to share mooncakes, appreciate the full moon, and enjoy each other's company. In many households, children also carry colourful lanterns, adding a playful and festive atmosphere to the night.
+The reason I want to learn this skill is closely tied to my career aspirations. In the world of product management, particularly in AI-driven products, decisions should be grounded in evidence rather than intuition. Being able to write Python scripts to clean datasets, run statistical tests, and visualise patterns would allow me to evaluate user behaviour, measure feature impact, and communicate findings to engineering teams with credibility. I have noticed that product managers who can speak the language of data tend to earn more respect from developers and make more persuasive arguments in roadmap discussions.
 
-What makes this festival deeply meaningful to me goes beyond the delicious food or the beautiful moon. It is about the emotional resonance of a famous line from the Song Dynasty poet Su Shi: "May we all be blessed with longevity, and share the moonlight across a thousand miles." Even when family members are separated by distance, the shared moonlight connects them. This sentiment has become even more poignant in our modern era of migration and urbanisation, where many young people study or work far from home.
+My plan is to start with online courses that cover Python fundamentals and then progress to libraries like pandas and matplotlib. I also intend to apply what I learn to real datasets — perhaps analysing user engagement metrics from a small project. Learning by doing, I believe, is the most effective approach for a practical skill like this.
 
-On a personal level, the Mid-Autumn Festival reminds me to pause in my busy life and reconnect with what truly matters — family, gratitude, and the simple beauty of nature. It is a gentle invitation to slow down and appreciate the present moment, which I find increasingly precious in our fast-paced, technology-driven world.`,
+As for its usefulness, I have no doubt it will be invaluable. The technology landscape is shifting towards data-informed decision-making at every level. Whether I end up working on user research, product strategy, or HCI experiments in my graduate studies, the ability to extract insights from data will be a transferable asset that compounds in value over time.`,
   expressions: [
-    '🌟 cherished — 珍视的，深爱的',
-    '🌟 falls on — 适逢（某日）',
-    '🌟 iconic symbol — 标志性象征',
-    '🌟 emotional resonance — 情感共鸣',
-    '🌟 poignant — 令人心酸的，意味深长的',
-    '🌟 migration and urbanisation — 人口迁移与城市化',
-    '🌟 reconnect with — 重新与…建立联系',
-    '🌟 increasingly precious — 愈发珍贵',
-    '🌟 fast-paced — 快节奏的',
-    '🌟 technology-driven — 技术驱动的'
+    '🌟 transitioning into — 转型进入',
+    '🌟 grounded in evidence — 基于证据',
+    '🌟 earn respect — 赢得尊重',
+    '🌟 persuasive arguments — 有说服力的论点',
+    '🌟 roadmap discussions — 路线图讨论',
+    '🌟 progress to — 进阶到',
+    '🌟 learning by doing — 在实践中学习',
+    '🌟 data-informed — 数据驱动的',
+    '🌟 transferable asset — 可迁移的资产',
+    '🌟 compounds in value — 价值不断积累'
   ]
 };;;
 
@@ -1472,12 +1472,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共婵娟。',
-  source: '苏轼《水调歌头·明月几时有》（北宋·1076年中秋）',
+  quote: '譬如黑夜里两条船相迎擦过，一个在这条船上，瞥见对面船舱的灯光里正是自己梦寐不忘的脸，没来得及叫唤，彼此早距离远了。这一刹那的接近，反见得暌隔的渺茫。',
+  source: '钱锺书《围城》（1947年）',
   analysis: [
-    '<b>"以月喻人"的哲理升华</b>：苏轼将人间的悲欢离合与月亮的阴晴圆缺并置，构成了一种宇宙级的对照隐喻。月亮不是夜空中的装饰，而是人类情感的镜子——它的圆缺映射着人世的聚散，它的永恒照见个体的短暂。从心理学角度看，这是一种精妙的"认知重评"（cognitive reappraisal）策略：不是否认悲伤的存在，而是将个人的离别之苦放入更宏大的自然规律中去理解，从而获得释然。当你说"此事古难全"时，你并不是在放弃，而是在接纳——接纳不完美本身就是人生常态，这种接纳反而带来内心的平静。',
-    '<b>"但愿人长久"——从私人思念到普世祝愿的升华</b>：这首词最动人的转折在于结尾。苏轼本是思念七年未见的弟弟苏辙，但他没有停留在个人的感伤中，而是将这份思念升华为对天下所有人的祝愿。"千里共婵娟"打破空间的阻隔——纵使相隔万里，只要共享同一轮明月，便是另一种团圆。这种从"我"到"我们"、从"此刻"到"永恒"的升华，体现了苏轼旷达通透的精神境界。在今天这个中秋佳节，当Emma或许远离家人在异乡求学，这五个字依然是最温柔的慰藉：团圆不必是物理上的相聚，心灵的联结同样完整。',
-    '<b>给Emma的话</b>：苏轼写这首词时39岁，仕途失意，外放密州，与弟弟七年未见。人生的不如意他一样不少地经历了。但他没有沉溺于苦闷，而是用一首词完成了自我疗愈——把个人的悲欢融入万古山河与千里月色之中。Emma，在追求产品经理梦想、读研、准备雅思的路上，你也会经历"高处不胜寒"的时刻——可能是选题的迷茫、求职的焦虑、或远离家乡的孤独。苏轼告诉你：不必事事圆满，不必执着于朝夕相伴。接纳无常，方得安然；学东坡胸襟，不困于别离，不扰于得失。今夜月圆，愿你与所爱之人，千里共此清辉✨'
+    '<b>"黑夜行船"的隐喻精度</b>：钱锺书用两条在黑夜中相迎擦过的船，比喻人生中转瞬即逝的相遇。这个隐喻的精确之处在于——它不是在说"错过"，而是在说"擦肩而过时的那一瞥"。两条船、两扇船舱的灯光、一张梦寐不忘的脸——所有元素都指向同一个悖论：距离最近的那一刻，恰恰是离别的开始。钱氏比喻的厉害之处，在于他从不满足于"像"，而是追求"像且准"——每一条喻体与本体之间的每一个对应点都严丝合缝，船的移动性对应人生的不可逆转，黑夜对应命运的不可知，灯光的短暂对应机缘的转瞬即逝。',
+    '<b>"暌隔的渺茫"——错失心理学</b>：方鸿渐刚听闻唐小姐的消息，心中燃起一丝希望，却因赵辛楣的糊涂使这希望迅速熄灭。"这一刹那的接近，反见得暌隔的渺茫"——钱锺书在此揭示了一个深刻的心理真相：短暂的接近不是安慰，而是对永久分离的放大。从心理学角度看，这契合了"对比效应"——当希望被短暂激发后迅速落空，痛苦程度远超从未有过希望。方鸿渐的心理状态是典型的"反事实思维"：他不断想象"如果当时叫了会怎样"，而这种"如果"的虚幻性恰恰加深了现实的残酷。',
+    '<b>给Emma的话</b>：钱锺书写《围城》时37岁，蛰居上海，"忧世伤生"。他用学者之笔写世俗之情，每一个比喻都是一枚精密的齿轮。Emma，在你追求AI产品经理的路上，也会遇到"两条船擦肩而过"的时刻——可能是一个没有抓住的实习机会，一段来不及深入的对话，一个犹豫片刻就消失的灵感。钱锺书告诉你：不必为擦肩而过的遗憾所困，因为人生的丰富恰恰来自于这些"暌隔的渺茫"。学会在两条船擦肩的瞬间多看一眼，但不必执着于叫唤——有些相遇的意义不在于停留，而在于照亮你前行的航程。围城之内也好，围城之外也罢，真正重要的是你始终在航行✨'
   ]
 };;;
 
@@ -1509,16 +1509,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月25日 星期四',
+  date: '2026年9月26日 星期五',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '习近平同美国总统特朗普在白宫举行会谈', desc: '当地时间9月24日上午，国家主席习近平同美国总统特朗普在白宫举行会谈。习近平指出，构建中美建设性战略稳定关系不是权宜之计，两国各部门各领域各层级都要动起来，落实好双方达成的共识。' },
-    { tag: '国内', cls: 'news-domestic', title: '中美第八轮经贸磋商达成多项共识，首次就AI进行对话', desc: '商务部介绍，中美两国经贸团队在美国举行第八轮经贸磋商，围绕共同关注的经贸问题进行坦诚深入交流，达成多项共识。中美各自牵头人在经贸磋商机制下就人工智能进行了首次对话。' },
-    { tag: '国内', cls: 'news-domestic', title: '国乒女团亚运六连冠，中国代表团80金稳居金牌榜第一', desc: '乒乓球女子团体决赛中国队3比0战胜日本队夺得冠军，实现亚运六连冠。截至第5个比赛日，中国代表团以80金30银20铜位列金牌榜第一。游泳项目张展硕夺男子800米自由泳金牌刷新赛会纪录。' },
-    { tag: '国内', cls: 'news-domestic', title: '教育部：2027年考研初试时间定为12月19日至20日', desc: '教育部发布通知，2027年全国硕士研究生招生初试时间为2026年12月19日至20日，报名时间为2026年10月15日至10月24日。' },
-    { tag: '国际', cls: 'news-intl', title: '也门胡塞武装袭击沙特多地目标，包括石油设施', desc: '也门胡塞武装24日宣布对沙特首都利雅得敏感目标、延布沙特阿美石油设施及吉赞军事目标发动袭击，使用弹道导弹、巡航导弹和无人机。沙特主导联军称拦截6枚胡塞弹道导弹。' },
-    { tag: '国际', cls: 'news-intl', title: '法国拟召集G7商讨释放战略石油储备以稳定油价', desc: '法国总统马克龙表示拟召集七国集团成员国开会商讨释放战略石油储备以降低国际油价。近期美欧多国柴油价格创历史新高，伊朗局势和俄乌冲突是油价飙升的主要原因。' },
-    { tag: '科技', cls: 'news-tech', title: '谷歌下周发射搭载自研TPU芯片卫星，启动太空数据中心在轨验证', desc: '谷歌宣布计划下周将搭载4颗自研TPU芯片的卫星送入轨道，启动太阳捕手项目首次在轨验证测试。卫星算力与一台数据中心服务器相当，将检验TPU在太空辐射和真空散热环境下的生存能力。' },
-    { tag: '科技', cls: 'news-tech', title: '我国首个规模化应用18兆瓦海上风机项目实现全容量投运', desc: '我国首个规模化应用18兆瓦海上风机项目实现全容量投运，将推动海上风电向大容量、低成本方向加快发展。中国天眼FAST也完成了运行十年来首次大规模停机检修。' }
+    { tag: '国内', cls: 'news-domestic', title: '习近平圆满结束对美国国事访问，中美同意构建建设性战略稳定关系', desc: '当地时间9月25日下午，国家主席习近平结束对美国国事访问返回北京。访问期间，中美两国元首就贸易、AI安全、台湾等议题深入交换意见，同意共同构建基于尊重、公平、对等的建设性战略稳定关系，并就AI领域合作与风险管控进行首次专门对话。' },
+    { tag: '国内', cls: 'news-domestic', title: '四条高铁9月28日集中开通，全国高铁网络再扩容', desc: '国铁集团消息，9月28日京港高铁雄安至商丘段、西渝高铁西安至安康段、宜昌至兴山高铁、哈尔滨至伊春高铁将集中开通运营，进一步织密八纵八横高速铁路网。' },
+    { tag: '国内', cls: 'news-domestic', title: '中国游泳队亚运30金收官创历史最佳，陈妤颉百米破赛会纪录', desc: '中国游泳队以30金13银11铜圆满收官，创造参赛历史最好成绩。17岁小将陈妤颉以11秒06打破赛会纪录夺得田径女子100米金牌。截至第6个比赛日，中国代表团以98金37银24铜位列金牌榜第一。' },
+    { tag: '国际', cls: 'news-intl', title: '伊朗提出七天方案重开霍尔木兹海峡，美伊探讨阶段性协议', desc: '伊朗外长表示霍尔木兹海峡可在满足条件后7天内重新开放。美官员称美伊正就重新开放霍尔木兹海峡进行讨论，伊方愿在国际法框架内降低铀浓缩水平并接受核查，推进与美方谈判。伊拉克纳杰夫机场已暂停所有往返伊朗航班。' },
+    { tag: '国际', cls: 'news-intl', title: '哥伦比亚宣布与伊朗断交，全球地缘格局持续重塑', desc: '哥伦比亚宣布与伊朗断交。与此同时，巴沙土三国外长会晤谴责对沙特民用和经济设施袭击，胡塞武装持续打击沙特石油设施致出口下降，英法拟提供军事支持。' },
+    { tag: '国际', cls: 'news-intl', title: '全球掀起未成年人社媒禁令潮，封禁思路面临现实挑战', desc: '多国相继出台限制未成年人使用社交媒体的政策，但封禁思路在执行层面面临现实挑战——技术甄别困难、青少年规避手段多样、平台配合意愿不一等问题待解。' },
+    { tag: '科技', cls: 'news-tech', title: '第48届世界技能大赛新增3个AI相关赛项，数量创历届之最', desc: '第48届世界技能大赛在上海收官，本届新增3个人工智能相关赛项，创历届之最，反映全球技能人才培养正加速向AI领域倾斜。中国代表团在多个赛项中表现突出。' },
+    { tag: '科技', cls: 'news-tech', title: '中国天眼FAST运行十周年，将升级为阵列分辨率提升200倍', desc: '中国天眼FAST已运行十年，突发现象没有错过一分一秒。未来将从单眼升级为阵列，分辨率将提升200倍。该项目持续为天文学研究提供重要观测数据支撑。' }
   ]
 };;
 
