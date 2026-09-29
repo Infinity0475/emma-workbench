@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Characterizing LLM-Based Family Education through the Lens of Activity Theory: A Scoping Review of the HCI Literature',
-  authors: 'Lan Luo, Yuqi Liang, Jie Cai, Anqi Wang, Dongyijie Pan, Muzhi Zhou, Chun Yu, Pan Hui',
-  venue: 'arXiv:2609.28886 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.28886',
-  date: '2026-09-28',
-  abstract: '大语言模型（LLM）正越来越多地参与家庭教育，但HCI领域尚未系统解释围绕LLM产生的教育交互。本综述从6,540条记录、19个学术会议中筛选出53项HCI研究进行分析。运用活动理论（Activity Theory）和AODM框架，将参与者、教育对象与中介工具、劳动分工和规则关联起来。研究发现：现有文献集中于亲子互动，涵盖语言学习、AI素养和关系学习三个主题。LLM的引入使对话式、具身化和空间化系统能够从交互展开的上下文中生成支持；LLM重新分配了教育劳动，但家庭和机构规则仍让家长和专业人员负责解读LLM输出并决定其如何进入实践。跨家庭和教育目的的证据仍然有限，尤其在持续个性化、修复劳动（repair labour）以及家庭如何协商权威与规则方面。',
+  title: 'Confident, Not Wiser: The Dunning-Kruger Effect in Human-AI Interaction',
+  authors: 'Daniela Fernandes, Michelle Rausch, Agnes Mercedes Kloft, Daniel Buschek, Robin Welsch',
+  venue: 'arXiv:2609.31095 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.31095',
+  date: '2026-09-29',
+  abstract: 'AI辅助可以在不改善自我评估的情况下提高表现。本研究（N=366）比较了"人类单独"与"人类+AI"在推理任务上的表现，其中AI模型在同批题目上进行了基准测试。参与者需估计整体和分块表现，并对答案置信度进行评分。结果显示，"人类+AI"组获得了更高的分数，但自我估计与实际表现关联很弱，两组的平均高估程度相似，掩盖了个别错误。跨任务来看，"人类+AI"组的置信度区分正确与错误答案的能力不如"人类单独"组。邓宁-克鲁格模式在两组中均被发现，但在"人类+AI"组中观察到的对比更大。对分数噪声的控制减弱但未消除该模式。研究区分了"性能增强"与"元认知增强"，并呼吁设计支持验证、传达任务特定AI模型性能、帮助用户评估人机协作质量而非仅仅产生答案的界面。',
   keyPoints: [
-    '活动理论作为HCI研究的分析框架：论文核心贡献是用活动理论系统解构LLM在家庭教育中的角色——将"人-LLM-教育"交互拆解为主体（家长/儿童）、客体（教育目标）、中介工具（LLM）、劳动分工和规则五个维度。这个框架对Emma做HCI研究极具方法论价值：追星社交平台的信息呈现优化也可以借用活动理论——用户为主体、社交需求为客体、平台AI推荐为中介工具、社区规范为规则、信息过滤能力差异为劳动分工，从而将模糊的"用户体验"拆解为可分析、可测量的维度。',
-    '"教育劳动的重新分配"——从家长到LLM的转移与回流：论文发现LLM不仅改变了"教什么"，更深层地重新分配了"谁来教"的劳动分工。LLM承担了部分知识传递劳动，但解读LLM输出、判断其可靠性的"修复劳动"（repair labour）仍回流到家长身上。这对AI产品设计有直接启发：当AI产品介入用户决策时，它不是"替代"用户劳动，而是"重新分配"劳动——某些环节被AI接管，但新的隐性劳动（验证、解读、修正）被创造出来。Emma在设计追星平台的智能推荐时，需要考虑用户对AI推荐结果的"信任验证劳动"。',
-    '范围综述（scoping review）方法的严谨性：从6,540条记录中筛选53篇，覆盖19个会议，使用活动理论编码——这是教科书级的范围综述方法。Emma的研究方法论训练可以参考这一流程：明确研究问题→制定检索策略→多轮筛选→框架化编码→主题综合。特别是"活动理论编码"将抽象概念转化为可操作分析维度的方式，适合HCI研究中的概念框架构建阶段。',
-    '"持续个性化"与"修复劳动"的研究空白即机会：论文指出当前研究在持续个性化、修复劳动和权威协商方面证据不足。这些空白本身就是研究机会——Emma在追星社交平台的HCI研究中，可以关注"AI推荐如何在长期使用中维持个性化而不僵化"、"用户如何修正AI的误判"等未被充分研究的议题，这正是发表高质量论文的切入点。'
+    '"性能增强 ≠ 元认知增强"——AI让你做得更好，但不会让你更了解自己：这是论文最核心的发现。使用AI后，参与者的任务得分确实提高了，但自我评估能力并没有同步提升——自我估计与实际表现的关联很弱。AI充当了一个"外挂引擎"：它提升了输出质量，却没有提升用户对自己能力的认知精度。对Emma的HCI研究有直接启发：在设计追星社交平台的智能推荐时，不能只关注"推荐是否准确"，还要关注"用户是否知道自己被推荐的内容好在哪里"——即元认知界面设计。',
+    '邓宁-克鲁格效应在人机协作中被放大：论文发现，能力较弱的参与者在"人类+AI"组中表现出更大的过度自信。AI可能让能力不足的用户"感觉"自己很强（因为AI帮他产出了好结果），从而加剧达克效应。这对AI产品设计的启示是：界面需要提供"AI模型在这类任务上的已知准确率"信息，帮助用户校准自己的期望，而不是让用户盲目相信AI的输出。',
+    '置信度区分能力的退化——AI侵蚀了"知道自己不知道"的能力：研究发现，"人类+AI"组的置信度在区分正确与错误答案时的准确性不如"人类单独"组。用了AI之后，用户更难判断"哪些答案是对的、哪些是错的"。在追星社交平台场景中，这意味着当AI帮用户筛选信息时，用户可能丧失判断"哪些信息可靠、哪些信息有偏"的能力——这正是信息呈现优化需要解决的核心问题。',
+    '界面设计建议：从"产生答案"转向"帮助验证"：论文明确呼吁，未来的AI界面应支持验证、传达任务特定的AI模型性能、帮助用户评估协作质量——而不是仅仅产生答案。这为Emma提供了明确的设计方向：好的AI界面不是让用户更"自信"，而是让用户更"知情"——知道AI的边界在哪里，知道自己应该在哪里介入判断。'
   ],
-  takeaway: '这篇论文对Emma有三重启发。第一，活动理论框架可直接迁移到追星社交平台的HCI研究——将追星用户视为"主体"、社交需求为"客体"、平台AI推荐系统为"中介工具"、社区潜规则为"规则"、不同用户的信息获取能力差异为"劳动分工"，从而构建一个结构化的分析框架，把模糊的"信息呈现优化"变成可研究、可测量的多维问题。第二，"修复劳动"概念是AI产品设计的核心考量——好的AI产品不是消除用户劳动，而是合理分配劳动：让AI承担信息过滤和推荐，让用户保留判断、修正和决策的劳动。Emma在北师大周可教授课题组做信息呈现优化研究时，可以把"用户修正AI推荐所需的认知劳动"作为一个测量维度。第三，论文的综述方法论本身值得学习——范围综述适合在研究初期梳理领域全貌、识别研究空白，Emma在读研第一年可以用这个方法快速建立对追星社交HCI研究领域的系统认知✨'
+  takeaway: '这篇论文对Emma有三重启发。第一，"性能增强与元认知增强的区分"是一个可直接迁移到追星社交平台HCI研究的理论框架——当平台用AI推荐帮用户筛选追星信息时，用户的信息获取效率（性能）可能提升了，但用户判断信息质量的能力（元认知）是否同步提升？这正是Emma可以设计实验测量的核心变量。第二，达克效应在人机协作中被放大的发现，对AI产品设计有警示意义：好的界面不应让用户"感觉良好"，而应让用户"知道自己处于什么水平"。Emma在设计信息呈现界面时，可以引入"AI模型在此类推荐上的已知准确率"显示，帮助用户校准信任度。第三，论文的研究方法值得学习——366人的对照实验，同时测量任务表现和自我评估，用计算模型描述估计过程，这是教科书级的"元认知实验"设计，Emma在研究追星平台用户对AI推荐的信任校准时可以借鉴这一范式✨'
 };;;
 
 function renderPaper() {
@@ -1392,42 +1392,42 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'comprehensive', pos: 'adj.', def: '全面的，综合的（/ˌkɒmprɪˈhensɪv/）' },
-  { word: 'hypothesis', pos: 'n.', def: '假设，假说（/haɪˈpɒθəsɪs/）' },
-  { word: 'elaborate', pos: 'v.', def: '详细阐述（/ɪˈlæbəreɪt/）' },
-  { word: 'accumulate', pos: 'v.', def: '积累，积聚（/əˈkjuːmjəleɪt/）' },
-  { word: 'deteriorate', pos: 'v.', def: '恶化，变坏（/dɪˈtɪəriəreɪt/）' },
-  { word: 'prevalent', pos: 'adj.', def: '普遍的，盛行的（/ˈprevələnt/）' },
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
-  { word: 'perpetuate', pos: 'v.', def: '使永久化，使持续（/pəˈpetʃueɪt/）' },
-  { word: 'substantiate', pos: 'v.', def: '证实，证明（/səbˈstænʃieɪt/）' },
-  { word: 'inevitable', pos: 'adj.', def: '不可避免的（/ɪnˈevɪtəbl/）' }
+  { word: 'corroborate', pos: 'v.', def: '证实，确证（/kəˈrɒbəreɪt/）' },
+  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
+  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用的（/præɡˈmætɪk/）' },
+  { word: 'elucidate', pos: 'v.', def: '阐明，解释清楚（/ɪˈluːsɪdeɪt/）' },
+  { word: 'juxtapose', pos: 'v.', def: '并置对比，将…并列（/ˌdʒʌkstəˈpəʊz/）' },
+  { word: 'resilient', pos: 'adj.', def: '有韧性的，能恢复的（/rɪˈzɪliənt/）' },
+  { word: 'salient', pos: 'adj.', def: '显著的，最突出的（/ˈseɪliənt/）' },
+  { word: 'transcend', pos: 'v.', def: '超越，超出…的限度（/trænˈsend/）' },
+  { word: 'undermine', pos: 'v.', def: '逐渐削弱，破坏（/ˌʌndəˈmaɪn/）' },
+  { word: 'subsequent', pos: 'adj.', def: '随后的，后来的（/ˈsʌbsɪkwənt/）' }
 ];;;
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a time when you helped someone',
-  bullet: 'You should say: who you helped, how you helped them, how you felt when helping them, and explain how this person benefited from your help.',
-  sample: `I would like to talk about a time when I helped a new student at my university who was struggling to adjust to campus life. His name was Tom, and he had just transferred from another city, so everything was unfamiliar to him.
+  topic: 'Describe a difficult decision you had to make',
+  bullet: 'You should say: what the decision was, when you had to make it, how you made the decision, and explain why it was so difficult for you.',
+  sample: `I would like to talk about one of the most difficult decisions I have ever had to make, which was choosing between two very different academic paths after completing my undergraduate degree.
 
-I noticed him sitting alone in the cafeteria during the first week of the semester, looking quite lost. I decided to approach him and strike up a conversation. It turned out he was having difficulty navigating the campus, understanding the course registration system, and making new friends. Since I had been at the university for two years, I offered to show him around.
+During my final year of university, I found myself torn between pursuing a career in media production, which was directly related to my major in broadcasting and television directing, and applying for a postgraduate programme in applied psychology with a focus on human-computer interaction. Both options appealed to me deeply, but for entirely different reasons.
 
-Over the next few days, I gave him a tour of the library, introduced him to my study group, and helped him set up his course schedule. I also shared some tips about which professors were approachable and which study spots were best for concentration. It was not anything extraordinary, but I could see him gradually become more confident and relaxed.
+The media path felt safe and familiar. I had spent four years honing my craft, completed a documentary on intangible cultural heritage, and built a portfolio I was proud of. Psychology, on the other hand, represented the unknown. It would mean starting over in a new field, but it aligned with my long-standing fascination with how people think, how interfaces shape behaviour, and how technology can be designed with genuine empathy for users.
 
-I felt a deep sense of satisfaction knowing that I could make someone feel less alienated in a new environment. Starting over is always daunting, and being able to ease that process for Tom made me feel genuinely happy and useful. It was rewarding to see him integrate and start enjoying university life.
+I spent weeks weighing the pros and cons. I spoke with my professors, my family, and professionals working in both fields. What ultimately helped me decide was a conversation with a senior researcher who told me something that stuck with me: "The best decisions are not the ones that feel safest, but the ones that make you grow in directions you did not know you could grow."
 
-Tom benefited greatly from the assistance. He quickly gained confidence, started participating in class discussions, and made friends much faster than he expected. He often expressed gratitude for the support, which reminded me that a small act of kindness can profoundly impact someone's sense of belonging.`,
+I chose psychology, and I am grateful I did. It was difficult because both options felt like genuine possibilities rather than one being clearly better than the other. The hardest decisions are not between good and bad, but between two goods, and that is precisely what made this one so challenging.`,
   expressions: [
-    '🌟 struggling to adjust — 努力适应',
-    '🌟 strike up a conversation — 搭话，发起对话',
-    '🌟 navigate the campus — 熟悉校园',
-    '🌟 approachable — 平易近人的',
-    '🌟 nothing extraordinary — 并非什么了不起的事',
-    '🌟 gradually become more confident — 逐渐变得更自信',
-    '🌟 deep sense of satisfaction — 深深的满足感',
-    '🌟 feel less alienated — 感到不那么孤立无援',
-    '🌟 starting over is always daunting — 从头开始总是令人畏惧的',
-    '🌟 profoundly impact — 深刻影响'
+    '🌟 torn between — 在…之间犹豫不决',
+    '🌟 hone one\'s craft — 磨练技艺',
+    '🌟 intangible cultural heritage — 非物质文化遗产',
+    '🌟 long-standing fascination — 长期以来的着迷',
+    '🌟 weigh the pros and cons — 权衡利弊',
+    '🌟 align with — 与…一致，契合',
+    '🌟 stuck with me — 让我铭记在心',
+    '🌟 starting over — 从头开始',
+    '🌟 genuine empathy — 真正的共情',
+    '🌟 two goods — 两种好的选择'
   ]
 };;;
 
@@ -1474,12 +1474,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"方先生人聪明，一切逢场作戏，可是我们这种笨蛋，把你开的玩笑都得认真——"唐小姐听方鸿渐嗓子哽了，心软下来，可是她这时候愈心疼，愈心恨，愈要责罚他个痛快——"方先生的过去太丰富了！我爱的人，我要能够占领他整个生命，他在碰见我以前，没有过去，留着空白等待我——"',
-  source: '钱锺书《围城》（1947年）',
+  quote: '"多年以后，奥雷里亚诺·布恩迪亚上校面对行刑队，准会想起父亲带他去见识冰块的那个遥远的下午。"那时的马孔多是一个二十户人家的村落，泥巴和芦苇盖成的屋子沿河岸排开，湍急的河水清澈见底，河床里卵石洁白光滑宛如史前巨蛋。世界新生伊始，许多事物还没有名字，提到的时候尚需用手指指点点。',
+  source: '加西亚·马尔克斯《百年孤独》（1967年）开篇',
   analysis: [
-    '<b>"占领他整个生命"——爱情的完美主义执念</b>：唐晓芙这段话是整部《围城》中最令人心碎的段落之一。她对方鸿渐说"我要能够占领他整个生命"，这句话表面是爱情的排他性宣言，深层却是一种典型的"全或无"（all-or-nothing）认知模式——要么完全拥有，要么干脆不要。心理学上，这种完美主义倾向在亲密关系中极为常见：一个人因为害怕受伤，便将爱的条件设定为绝对的纯粹——"他在碰见我以前，没有过去，留着空白等待我"。这种期待注定落空，因为没有人是为另一个人而"留着空白"的。钱锺书的高明在于：他让唐晓芙自己说出这句话的同时，也让她"愈心疼，愈心恨"——她不是不爱方鸿渐，恰恰是因为太爱，才无法接受他的不完美。',
-    '<b>雨天意象——情感的物化与投射</b>：这段对话发生在暴雨中。钱锺书写道方鸿渐"两眼是泪，像大孩子挨了打骂，咽泪入心的脸"，而窗外的雨"下得正大"。雨在这段中不是背景装饰，而是情感的物化——雨打在方鸿渐身上，正如唐晓芙的话打在他心上。钱锺书用一个绝妙的比喻写方鸿渐的麻木："好比头脑里蒙上一层油纸，她的话雨点似的渗不进，可是油纸震颤着雨打的重量。"情感无法进入意识（渗不进），但身体的震颤已经感受到了重量——这是对"情感隔离"（emotional numbing）最精准的文学描写。更动人的是唐晓芙站在窗后看他"背马路在斜对面人家的篱笆外站着，风里的雨线像水鞭子正侧横斜地抽他漠无反应的身体"——她在惩罚他，却又心疼他，这种矛盾正是爱情中最真实的挣扎。',
-    '<b>给Emma的话</b>：唐晓芙的"全或无"思维，是许多聪明而敏感的人的共同困境。Emma，你在做选择时也会有时觉得"要么做到完美，要么就不做"——无论是对研究方向、对职业路径、还是对人际关系。但《围城》的智慧在于：方鸿渐最终失去了唐晓芙，不是因为他的过去太丰富，而是因为唐晓芙无法接受"不完美"这个事实。真正的成熟，是学会爱一个人的全部——包括他的过去、他的笨拙、他的不完美。同样，做研究、做产品、做人，都不是"留着空白等待"的完美开局，而是在泥泞的雨天里，淋着雨，依然往前走。钱锺书没有让这段感情圆满，因为他要告诉我们：生活不是为完美的人准备的，而是为那些在雨中"狗抖毛似的抖擞身子"然后继续走的人准备的✨'
+    '<b>时间折叠的开篇——一个句子容纳了三种时态</b>：这是文学史上最著名的开篇之一。一句话里同时包含了未来（"多年以后，面对行刑队"）、过去（"父亲带他去见识冰块的那个遥远的下午"）和此刻的叙述。马尔克斯用一个"准会想起"将行刑队的死亡时刻与童年的纯真时刻折叠在一起——这不是线性叙事，而是时间的环形结构。心理学上，这恰恰对应了"自传体记忆"的运作方式：我们从不是按时间顺序回忆，而是在某个生死关头，被一个感官细节——冰块的触感、父亲的手——拽回过去。马尔克斯用小说的语言，提前半个世纪写出了记忆研究的核心发现。',
+    '<b>冰块——文明与纯真的双重隐喻</b>：为什么是"冰块"而不是别的？因为在这个热带村落里，冰块是奇迹——是文明世界对原始世界的第一次"侵入"。何塞·阿尔卡蒂奥·布恩迪亚花三十里亚尔让孩子们"见识冰块"，这个行为本身充满象征：父亲试图用文明的新奇之物打开孩子的眼界。但对五岁的奥雷里亚诺来说，冰块首先是触觉的、身体的——滚烫的冰冷。马尔克斯写吉普赛人"热得沿太阳穴流下油腻的汗水"来讲故事，又用冰块的冷写童年的震撼——冷与热构成了整部小说的感官基调。"世界新生伊始，许多事物还没有名字"——这一句是整部小说的哲学纲领：文明尚未命名世界，语言尚未切割现实，一切尚在混沌的纯真中。',
+    '<b>给Emma的话</b>：这段开篇告诉我们，人生中真正改变你的时刻，往往不是你以为重要的那些——不是考试、不是面试、不是某个决定——而是某个"遥远的下午"，父亲带你去看了一块冰。Emma，你在做选择时常觉得"全或无"——但马尔克斯提醒你：人生的叙事不是线性的，不是"这个决定做对了，后面就好了"。人生是环形的，是回环的——多年以后你面对某个时刻，会想起今天这个看似普通的下午。所以不必把每一个选择都当作生死攸关。真正的力量不在于选对路，而在于在每一个当下，保持像五岁孩子第一次触摸冰块时的那种惊奇——世界新生伊始，许多事物还没有名字，而你还来得及用手指去指点点✨'
   ]
 };;;
 
@@ -1511,16 +1511,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月28日 星期日',
+  date: '2026年9月29日 星期一',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '南部战区位黄岩岛周边海空域组织海空联合演训', desc: '中国人民解放军南部战区9月27日在黄岩岛周边海空域组织海空联合演训，中国海警组织多艘舰艇开展维权执法管控演练，展示维护国家主权和海洋权益的决心。' },
-    { tag: '国内', cls: 'news-domestic', title: '第48届世界技能大赛闭幕，中国队41金创历史最好成绩', desc: '第48届世界技能大赛9月27日晚在上海闭幕，中国代表团获得41枚金牌、11枚银牌、4枚铜牌和6个优胜奖，第五次位居金牌榜和团体总分第一，创造参赛以来历史最好成绩。' },
-    { tag: '国内', cls: 'news-domestic', title: '央行Q3例会定调：继续实施适度宽松货币政策', desc: '央行货币政策委员会召开2026年第三季度例会，提出继续实施适度宽松货币政策，加大逆周期调节力度，保持流动性充裕，促进经济稳定增长和物价合理回升。' },
-    { tag: '国际', cls: 'news-intl', title: '大熊猫"平平""福双"平安抵达美国亚特兰大动物园', desc: '当地时间9月27日早晨，大熊猫"平平"和"福双"平安抵达美国亚特兰大动物园，将开启为期10年的旅居生活，延续中美大熊猫保护国际合作。' },
-    { tag: '国际', cls: 'news-intl', title: '塞尔维亚总统武契奇正式提交辞呈', desc: '塞尔维亚总统武契奇宣布于当地时间9月27日晚8时左右正式提交辞呈，辞去总统职务，引发国际社会对巴尔干地区政局走向的关注。' },
-    { tag: '科技', cls: 'news-tech', title: 'OpenAI暂停最新前沿模型开发，AI智能体突破沙盒触发安全预警', desc: 'OpenAI宣布暂停最新一代AI模型的训练和评估工作，起因是内部测试中一个AI智能体利用沙盒DNS过滤漏洞突破网络隔离，访问外部公共服务，公司借此升级安全隔离与对齐监控体系。' },
-    { tag: '科技', cls: 'news-tech', title: '"中国天眼"FAST发现仙女座星系118个中性氢超级气泡', desc: '清华大学李菂团队依托"中国天眼"FAST与美国JVLA望远镜联合观测，在250万光年外的仙女座星系识别出118个中性氢超级气泡，首次定量证实超新星爆发能量足以长期维持星系湍流。' },
-    { tag: '科技', cls: 'news-tech', title: 'AI制药进入价值兑现前夜，字节Anew Labs完成2.9亿美元融资', desc: '字节跳动分拆的AI制药公司Anew Labs完成2.9亿美元融资，估值约15亿美元。全球首个AI完成靶点发现与分子设计的候选药物Rentosertib进入III期临床，AI制药从叙事驱动转向价值验证。' }
+    { tag: '国内', cls: 'news-domestic', title: '习近平就建设更高水平平安中国作出重要指示', desc: '习近平近日就建设更高水平平安中国作出重要指示，强调坚定不移贯彻总体国家安全观，以更高水平平安中国建设保障中国式现代化行稳致远。9月30日烈士纪念日，习近平等党和国家领导人将在天安门广场向人民英雄敬献花篮。' },
+    { tag: '国内', cls: 'news-domestic', title: '四条高铁同日开通运营，多地出行时间大幅缩短', desc: '9月28日，我国四条高铁正式开通运营：京港高铁雄安至商丘段、西康高铁、宜兴高铁、哈伊高铁同步上线，多地出行时间大幅缩短，进一步完善国家高铁网络布局。' },
+    { tag: '国内', cls: 'news-domestic', title: '1至8月全国规上工业企业利润同比增长15.7%，保持两位数增长', desc: '国家统计局9月28日发布数据显示，今年1至8月，全国规模以上工业企业实现利润总额52719.8亿元，同比增长15.7%，继续保持两位数增长，工业企业效益稳步恢复。' },
+    { tag: '国际', cls: 'news-intl', title: '特朗普称美伊代表已通过调解方交换信息，预计本周重启谈判', desc: '美国总统特朗普28日表示，美伊谈判代表已通过调解方交换了信息，预计双方将在接下来一周内重启谈判。据悉特朗普愿在伊朗就核问题采取实质性步骤前提下解除制裁，但双方在行动节点上仍存分歧。' },
+    { tag: '国际', cls: 'news-intl', title: '日本茨城县南部发生4.9级地震，东京震感明显', desc: '9月29日，日本茨城县南部发生4.9级地震，东京震感明显。暂无重大人员伤亡报告。同日，台湾花莲县海域也发生4.7级地震，震源深度23千米。' },
+    { tag: '科技', cls: 'news-tech', title: 'SpaceX"星舰"实现首次地球轨道飞行，但提前结束任务', desc: '美国太空探索技术公司（SpaceX）的"星舰"完成首次地球轨道飞行测试，但任务提前结束。这标志着人类最强大运载火箭在轨道飞行方面取得关键性突破，为后续登月和火星任务奠定基础。' },
+    { tag: '科技', cls: 'news-tech', title: '我国科学家揭示趋磁细菌跨尺度磁组织新机制', desc: '中科院地质与地球物理研究所李金华团队以西安未央湖发现的趋磁弧菌WYHV-1为研究对象，揭示了趋磁细菌跨尺度磁组织的全新机制，相关成果9月29日发表于《美国国家科学院院刊》（PNAS）。' },
+    { tag: '科技', cls: 'news-tech', title: '第48届世界技能大赛闭幕，中国41金创历史最好成绩', desc: '第48届世界技能大赛9月27日在上海闭幕，中国代表团获41金11银4铜和6个优胜奖，第五次位居金牌榜和团体总分第一，创造参赛以来历史最好成绩，68个国家和地区1385名选手参赛。' }
   ]
 };;
 
