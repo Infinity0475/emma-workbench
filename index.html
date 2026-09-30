@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Confident, Not Wiser: The Dunning-Kruger Effect in Human-AI Interaction',
-  authors: 'Daniela Fernandes, Michelle Rausch, Agnes Mercedes Kloft, Daniel Buschek, Robin Welsch',
-  venue: 'arXiv:2609.31095 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.31095',
-  date: '2026-09-29',
-  abstract: 'AI辅助可以在不改善自我评估的情况下提高表现。本研究（N=366）比较了"人类单独"与"人类+AI"在推理任务上的表现，其中AI模型在同批题目上进行了基准测试。参与者需估计整体和分块表现，并对答案置信度进行评分。结果显示，"人类+AI"组获得了更高的分数，但自我估计与实际表现关联很弱，两组的平均高估程度相似，掩盖了个别错误。跨任务来看，"人类+AI"组的置信度区分正确与错误答案的能力不如"人类单独"组。邓宁-克鲁格模式在两组中均被发现，但在"人类+AI"组中观察到的对比更大。对分数噪声的控制减弱但未消除该模式。研究区分了"性能增强"与"元认知增强"，并呼吁设计支持验证、传达任务特定AI模型性能、帮助用户评估人机协作质量而非仅仅产生答案的界面。',
+  title: 'Alignment Games: A Framework for Conceptual Repair in Human-AI Collaboration',
+  authors: 'Hari Subramonyam, Maneesh Agrawala, Sean Follmer',
+  venue: 'arXiv:2609.35197 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.35197',
+  date: '2026-09-30',
+  abstract: '概念在具体使用中的意义由情境、任务、目标和先验知识共同塑造。例如，让AI"为五岁孩子做一张视觉上吸引人的海报"，一个协作者可能想到鲜艳色彩和卡通图像，另一个则想到少文字、粗线条和视觉简洁。论文将这种任务相关的差异称为"概念错位"（conceptual misalignment）。作者提出"对齐博弈"（Alignment Games）框架，使这些差异在人机交互中变得可见且可修复。基于情境化概念理论，论文将任务特定的概念框架分解为相关属性、值、关系、约束和优先级，并定义了"对齐操作"——可以干预情境本身、干预用于解释情境的推理过程，或干预最终形成的概念框架。通过教育内容生成、创意编程和议论文写作三个场景，论文展示了如何将对齐操作组合为"修复序列"，并推导出支持运行时任务充分概念对齐的设计原则。',
   keyPoints: [
-    '"性能增强 ≠ 元认知增强"——AI让你做得更好，但不会让你更了解自己：这是论文最核心的发现。使用AI后，参与者的任务得分确实提高了，但自我评估能力并没有同步提升——自我估计与实际表现的关联很弱。AI充当了一个"外挂引擎"：它提升了输出质量，却没有提升用户对自己能力的认知精度。对Emma的HCI研究有直接启发：在设计追星社交平台的智能推荐时，不能只关注"推荐是否准确"，还要关注"用户是否知道自己被推荐的内容好在哪里"——即元认知界面设计。',
-    '邓宁-克鲁格效应在人机协作中被放大：论文发现，能力较弱的参与者在"人类+AI"组中表现出更大的过度自信。AI可能让能力不足的用户"感觉"自己很强（因为AI帮他产出了好结果），从而加剧达克效应。这对AI产品设计的启示是：界面需要提供"AI模型在这类任务上的已知准确率"信息，帮助用户校准自己的期望，而不是让用户盲目相信AI的输出。',
-    '置信度区分能力的退化——AI侵蚀了"知道自己不知道"的能力：研究发现，"人类+AI"组的置信度在区分正确与错误答案时的准确性不如"人类单独"组。用了AI之后，用户更难判断"哪些答案是对的、哪些是错的"。在追星社交平台场景中，这意味着当AI帮用户筛选信息时，用户可能丧失判断"哪些信息可靠、哪些信息有偏"的能力——这正是信息呈现优化需要解决的核心问题。',
-    '界面设计建议：从"产生答案"转向"帮助验证"：论文明确呼吁，未来的AI界面应支持验证、传达任务特定的AI模型性能、帮助用户评估协作质量——而不是仅仅产生答案。这为Emma提供了明确的设计方向：好的AI界面不是让用户更"自信"，而是让用户更"知情"——知道AI的边界在哪里，知道自己应该在哪里介入判断。'
+    '"概念错位"概念——人机协作中的隐含分歧：论文指出，当人类与AI协同时，双方对同一个概念的理解往往不同——不是错误，而是"情境化认知"的差异。例如"视觉吸引力"对AI可能意味着色彩丰富，对设计师可能意味着留白和层次。Emma在追星社交平台的HCI研究中可以引入这一框架：当平台用AI推荐"相似兴趣的追星搭子"时，"相似"对AI（标签匹配）和对用户（情感共鸣、线下距离、活动偏好）可能意味着完全不同的东西——这正是"概念错位"在信息呈现中的具体体现。',
+    '"对齐操作"——三类干预策略，从修bug转向修理解：论文定义了三类"对齐操作"：（1）干预情境——改变任务描述或上下文，让双方的概念框架更接近；（2）干预推理——改变解释情境的推理过程；（3）干预框架——直接修改最终形成的概念框架。这是一个直接可用于AI产品设计的方法论：不是简单地说"AI错了"，而是系统性地识别错位发生在了哪一层，并用对应层的操作去修复。对Emma的启示是：好的信息呈现界面不应只展示结果，而应展示"AI是如何理解你的需求的"，让用户能对齐理解。',
+    '"修复序列"——对齐不是一步到位，而是迭代过程：论文最重要的贡献是将单个对齐操作组合为"修复序列"——对齐不是一次性的"纠正错误"，而是一个迭代的、多步的协商过程。在教育内容生成、创意编程和议论文写作三个场景中，作者展示了典型的修复序列模式。这对追星社交平台的设计有直接启发：AI推荐不是"一次推送、用户接受或拒绝"的单次交互，而应该是一个多轮对话式的"概念协商"过程——用户第一次推荐不满意，系统不应该直接换一批，而应该理解"不满意"背后的概念错位在哪里，进行针对性修复。',
+    '设计原则——"任务充分对齐"而非"完美对齐"：论文推导出的设计原则强调task-sufficient conceptual alignment——不追求完美对齐，而追求任务充分的对齐。这是一个非常务实的工程哲学：在资源有限的真实场景中，不需要完全消除概念差异，只需确保差异不会导致任务失败。对Emma的产品实践有直接指导意义：在追星社交平台上，AI不需要完全理解用户对"理想追星搭子"的定义，只需要理解到足以做出"用户可接受"的推荐即可——这种"够用就好"的哲学反而能降低系统复杂度。'
   ],
-  takeaway: '这篇论文对Emma有三重启发。第一，"性能增强与元认知增强的区分"是一个可直接迁移到追星社交平台HCI研究的理论框架——当平台用AI推荐帮用户筛选追星信息时，用户的信息获取效率（性能）可能提升了，但用户判断信息质量的能力（元认知）是否同步提升？这正是Emma可以设计实验测量的核心变量。第二，达克效应在人机协作中被放大的发现，对AI产品设计有警示意义：好的界面不应让用户"感觉良好"，而应让用户"知道自己处于什么水平"。Emma在设计信息呈现界面时，可以引入"AI模型在此类推荐上的已知准确率"显示，帮助用户校准信任度。第三，论文的研究方法值得学习——366人的对照实验，同时测量任务表现和自我评估，用计算模型描述估计过程，这是教科书级的"元认知实验"设计，Emma在研究追星平台用户对AI推荐的信任校准时可以借鉴这一范式✨'
+  takeaway: '这篇论文对Emma有三重价值。第一，"概念错位"是一个可以直接迁移到追星社交平台HCI研究的理论工具——当平台用标签推荐追星搭子时，"相似兴趣"在AI层面（标签匹配）、用户层面（情感共鸣）和场景层面（线下活动可行性）可能有完全不同的含义，这正是概念错位的典型案例。Emma可以设计实验测量用户对不同推荐结果的"概念对齐感知"。第二，"对齐操作"的三层分类——干预情境、干预推理、干预框架——提供了AI交互设计的可操作方法论。Emma在设计信息呈现界面时，可以问自己：当推荐不满意时，是情境描述不够清晰、还是AI的推理方式需要调整、还是概念框架本身需要重构？这三种修复策略对应三种不同的界面设计。第三，"任务充分对齐"的务实哲学对产品决策有直接启发：不需要追求AI完全理解用户，而需要确保AI的理解"够用"到能完成任务——这在降低技术复杂度的同时提高了用户体验。这篇论文将认知科学的理论与AI产品设计紧密结合，是Emma跨"应用心理+HCI+AI产品"三个领域做研究的理想范本✨'
 };;;
 
 function renderPaper() {
@@ -1392,42 +1392,42 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'corroborate', pos: 'v.', def: '证实，确证（/kəˈrɒbəreɪt/）' },
-  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
-  { word: 'pragmatic', pos: 'adj.', def: '务实的，实用的（/præɡˈmætɪk/）' },
-  { word: 'elucidate', pos: 'v.', def: '阐明，解释清楚（/ɪˈluːsɪdeɪt/）' },
-  { word: 'juxtapose', pos: 'v.', def: '并置对比，将…并列（/ˌdʒʌkstəˈpəʊz/）' },
-  { word: 'resilient', pos: 'adj.', def: '有韧性的，能恢复的（/rɪˈzɪliənt/）' },
-  { word: 'salient', pos: 'adj.', def: '显著的，最突出的（/ˈseɪliənt/）' },
-  { word: 'transcend', pos: 'v.', def: '超越，超出…的限度（/trænˈsend/）' },
-  { word: 'undermine', pos: 'v.', def: '逐渐削弱，破坏（/ˌʌndəˈmaɪn/）' },
-  { word: 'subsequent', pos: 'adj.', def: '随后的，后来的（/ˈsʌbsɪkwənt/）' }
+  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
+  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærəˌdaɪm/）' },
+  { word: 'empirical', pos: 'adj.', def: '经验主义的，基于实验观察的（/ɪmˈpɪrɪkəl/）' },
+  { word: 'intrinsic', pos: 'adj.', def: '内在的，固有的（/ɪnˈtrɪnzɪk/）' },
+  { word: 'disparate', pos: 'adj.', def: '迥然不同的，不相干的（/ˈdɪspərət/）' },
+  { word: 'viable', pos: 'adj.', def: '可行的，能存活的（/ˈvaɪəbl/）' },
+  { word: 'precarious', pos: 'adj.', def: '不稳定的，脆弱的（/prɪˈkeəriəs/）' },
+  { word: 'multifaceted', pos: 'adj.', def: '多层面的，多角度的（/ˌmʌltɪˈfæsɪtɪd/）' },
+  { word: 'ascertain', pos: 'v.', def: '查明，确定（/ˌæsəˈteɪn/）' },
+  { word: 'conducive', pos: 'adj.', def: '有助于…的，有益的（/kənˈdjuːsɪv/）' }
 ];;;
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a difficult decision you had to make',
-  bullet: 'You should say: what the decision was, when you had to make it, how you made the decision, and explain why it was so difficult for you.',
-  sample: `I would like to talk about one of the most difficult decisions I have ever had to make, which was choosing between two very different academic paths after completing my undergraduate degree.
+  topic: 'Describe a goal you set and tried hard to achieve',
+  bullet: 'You should say: what the goal was, when you set it, what you did to achieve it, and explain why it was important to you.',
+  sample: `I would like to talk about a goal that has profoundly shaped the past year of my life: achieving a Band 7 on the IELTS examination.
 
-During my final year of university, I found myself torn between pursuing a career in media production, which was directly related to my major in broadcasting and television directing, and applying for a postgraduate programme in applied psychology with a focus on human-computer interaction. Both options appealed to me deeply, but for entirely different reasons.
+I set this goal during my final year of undergraduate studies, when I realised that pursuing a postgraduate programme in applied psychology would require a strong IELTS score. As someone with a background in broadcasting and television directing rather than English literature, I knew this would be a formidable challenge.
 
-The media path felt safe and familiar. I had spent four years honing my craft, completed a documentary on intangible cultural heritage, and built a portfolio I was proud of. Psychology, on the other hand, represented the unknown. It would mean starting over in a new field, but it aligned with my long-standing fascination with how people think, how interfaces shape behaviour, and how technology can be designed with genuine empathy for users.
+To achieve this goal, I completely restructured my daily routine. I began waking up at six every morning to memorise academic vocabulary from the Academic Word List. I dedicated my afternoons to reading articles from journals such as Nature and The Lancet, not only to improve my reading speed but also to familiarise myself with the kind of academic prose that frequently appears in IELTS Reading passages. In the evenings, I recorded myself answering speaking prompts and listened back critically, noting where my pronunciation, fluency, or lexical range fell short.
 
-I spent weeks weighing the pros and cons. I spoke with my professors, my family, and professionals working in both fields. What ultimately helped me decide was a conversation with a senior researcher who told me something that stuck with me: "The best decisions are not the ones that feel safest, but the ones that make you grow in directions you did not know you could grow."
+What made this goal particularly meaningful was that it was not merely about passing an examination. It was about proving to myself that I could transition from a humanities background into a more research-oriented field without being limited by my past. The process taught me that progress is rarely linear — there were weeks when my mock test scores plateaued or even dipped, and I had to remind myself that setbacks are an intrinsic part of any worthwhile pursuit.
 
-I chose psychology, and I am grateful I did. It was difficult because both options felt like genuine possibilities rather than one being clearly better than the other. The hardest decisions are not between good and bad, but between two goods, and that is precisely what made this one so challenging.`,
+In the end, I achieved my target score. But looking back, I realise the goal itself mattered less than the discipline and resilience I cultivated along the way. Those qualities, I believe, will serve me far beyond any single examination.`,
   expressions: [
-    '🌟 torn between — 在…之间犹豫不决',
-    '🌟 hone one\'s craft — 磨练技艺',
-    '🌟 intangible cultural heritage — 非物质文化遗产',
-    '🌟 long-standing fascination — 长期以来的着迷',
-    '🌟 weigh the pros and cons — 权衡利弊',
-    '🌟 align with — 与…一致，契合',
-    '🌟 stuck with me — 让我铭记在心',
-    '🌟 starting over — 从头开始',
-    '🌟 genuine empathy — 真正的共情',
-    '🌟 two goods — 两种好的选择'
+    '🌟 profoundly shape — 深远地塑造',
+    '🌟 restructure daily routine — 重构日常作息',
+    '🌟 formidable challenge — 艰巨的挑战',
+    '🌟 familiarise oneself with — 使自己熟悉',
+    '🌟 fall short — 未达到标准',
+    '🌟 plateau — 停滞不前',
+    '🌟 intrinsic part — 内在的、固有的部分',
+    '🌟 worthwhile pursuit — 值得追求的事',
+    '🌟 linear progress — 线性进步',
+    '🌟 serve well beyond — 远超…持续发挥作用'
   ]
 };;;
 
@@ -1474,12 +1474,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '"多年以后，奥雷里亚诺·布恩迪亚上校面对行刑队，准会想起父亲带他去见识冰块的那个遥远的下午。"那时的马孔多是一个二十户人家的村落，泥巴和芦苇盖成的屋子沿河岸排开，湍急的河水清澈见底，河床里卵石洁白光滑宛如史前巨蛋。世界新生伊始，许多事物还没有名字，提到的时候尚需用手指指点点。',
-  source: '加西亚·马尔克斯《百年孤独》（1967年）开篇',
+  quote: '天生人是教他们孤独的，一个个该各归各的，老死不相往来。身体里容不下的东西，或消化，或排泄，是个人的事；为什么心里容不下的情感，要找同伴来分摊？聚在一起，动不动自己冒犯人，或者人开罪自己，好像一只只刺猬，只好保持着彼此间的距离，要亲密团结，不是你刺痛我的肉，就是我擦破你的皮。',
+  source: '钱锺书《围城》（1947年）',
   analysis: [
-    '<b>时间折叠的开篇——一个句子容纳了三种时态</b>：这是文学史上最著名的开篇之一。一句话里同时包含了未来（"多年以后，面对行刑队"）、过去（"父亲带他去见识冰块的那个遥远的下午"）和此刻的叙述。马尔克斯用一个"准会想起"将行刑队的死亡时刻与童年的纯真时刻折叠在一起——这不是线性叙事，而是时间的环形结构。心理学上，这恰恰对应了"自传体记忆"的运作方式：我们从不是按时间顺序回忆，而是在某个生死关头，被一个感官细节——冰块的触感、父亲的手——拽回过去。马尔克斯用小说的语言，提前半个世纪写出了记忆研究的核心发现。',
-    '<b>冰块——文明与纯真的双重隐喻</b>：为什么是"冰块"而不是别的？因为在这个热带村落里，冰块是奇迹——是文明世界对原始世界的第一次"侵入"。何塞·阿尔卡蒂奥·布恩迪亚花三十里亚尔让孩子们"见识冰块"，这个行为本身充满象征：父亲试图用文明的新奇之物打开孩子的眼界。但对五岁的奥雷里亚诺来说，冰块首先是触觉的、身体的——滚烫的冰冷。马尔克斯写吉普赛人"热得沿太阳穴流下油腻的汗水"来讲故事，又用冰块的冷写童年的震撼——冷与热构成了整部小说的感官基调。"世界新生伊始，许多事物还没有名字"——这一句是整部小说的哲学纲领：文明尚未命名世界，语言尚未切割现实，一切尚在混沌的纯真中。',
-    '<b>给Emma的话</b>：这段开篇告诉我们，人生中真正改变你的时刻，往往不是你以为重要的那些——不是考试、不是面试、不是某个决定——而是某个"遥远的下午"，父亲带你去看了一块冰。Emma，你在做选择时常觉得"全或无"——但马尔克斯提醒你：人生的叙事不是线性的，不是"这个决定做对了，后面就好了"。人生是环形的，是回环的——多年以后你面对某个时刻，会想起今天这个看似普通的下午。所以不必把每一个选择都当作生死攸关。真正的力量不在于选对路，而在于在每一个当下，保持像五岁孩子第一次触摸冰块时的那种惊奇——世界新生伊始，许多事物还没有名字，而你还来得及用手指去指点点✨'
+    '<b>刺猬困境——叔本华的哲学隐喻在钱锺书笔下的中国化</b>：钱锺书这段话直接化用了叔本华著名的"刺猬困境"（Igel-Dilemma）哲学寓言——寒冬中，刺猬们为了取暖而靠近彼此，却被对方的刺扎痛，只好分开；分开后又觉得冷，再次靠近……如此反复，最终找到一段"刚好不刺痛又不太冷"的距离。钱锺书将这个西方哲学寓言融入了中国式的人际观察——"天生人是教他们孤独的"这一句判词，比叔本华更决绝：孤独不是偶然的困境，而是人的"出厂设置"。对学心理学的Emma来说，这段话精准描述了人际交往中的"亲密-自主"张力（attachment theory中的approach-avoidance conflict）：我们既渴望联结（靠近取暖），又恐惧被伤害（被刺扎痛），这种根本性的矛盾构成了所有人际关系的底层动力。',
+    '<b>消化或排泄——情感的身体隐喻与拒绝分担</b>：钱锺书用了一个极为大胆的类比——身体容不下的东西可以"消化或排泄"，是个人的事；那为什么心里容不下的情感要找同伴分摊？这个类比的力量在于它揭示了一个被忽视的不对称：我们接受身体的内耗是私密的，却期待情感的消化可以外包。但钱锺书说"为什么"——为什么情感就该分担？这不是在说人不该倾诉，而是在质疑一种隐含的逻辑：以为找人分担就能减轻，殊不知"聚在一起，动不动自己冒犯人"——倾诉的过程本身就可能制造新的伤口。在社交媒体时代，这段话尤其尖锐：我们比任何时候都更容易"找人分摊"，但也比任何时候都更容易"互相擦破皮"。好的社交平台设计不应只追求"连接更多"，而应关注"连接的质量"——如何让刺猬们在取暖时不被扎痛，这正是信息呈现优化要解决的核心问题。',
+    '<b>给Emma的话</b>：这段话写给每一个在人际关系中摇摆的你。钱锺书说人天生是孤独的——这不是悲观，而是清醒。接受孤独是默认状态，你反而能更从容地处理人际关系：靠近时不恐慌失去自我，分开时不恐惧被抛弃。你在追星社交平台的研究中会发现，追星群体线下社交的"搭子"关系恰恰是一种"刺猬距离"——基于共同兴趣的适度亲密，既满足了情感需求，又不需要承担深度的情感劳动。钱锺书的洞察提醒你：好的社交不是"零距离"，而是"恰好的距离"。在设计追星搭子匹配时，重要的不是让两个最相似的人贴得最近，而是让他们的"刺"恰好不扎到对方——这正是平台信息呈现需要优化的方向✨'
   ]
 };;;
 
@@ -1511,16 +1511,16 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月29日 星期一',
+  date: '2026年9月30日 星期二',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '习近平就建设更高水平平安中国作出重要指示', desc: '习近平近日就建设更高水平平安中国作出重要指示，强调坚定不移贯彻总体国家安全观，以更高水平平安中国建设保障中国式现代化行稳致远。9月30日烈士纪念日，习近平等党和国家领导人将在天安门广场向人民英雄敬献花篮。' },
-    { tag: '国内', cls: 'news-domestic', title: '四条高铁同日开通运营，多地出行时间大幅缩短', desc: '9月28日，我国四条高铁正式开通运营：京港高铁雄安至商丘段、西康高铁、宜兴高铁、哈伊高铁同步上线，多地出行时间大幅缩短，进一步完善国家高铁网络布局。' },
-    { tag: '国内', cls: 'news-domestic', title: '1至8月全国规上工业企业利润同比增长15.7%，保持两位数增长', desc: '国家统计局9月28日发布数据显示，今年1至8月，全国规模以上工业企业实现利润总额52719.8亿元，同比增长15.7%，继续保持两位数增长，工业企业效益稳步恢复。' },
-    { tag: '国际', cls: 'news-intl', title: '特朗普称美伊代表已通过调解方交换信息，预计本周重启谈判', desc: '美国总统特朗普28日表示，美伊谈判代表已通过调解方交换了信息，预计双方将在接下来一周内重启谈判。据悉特朗普愿在伊朗就核问题采取实质性步骤前提下解除制裁，但双方在行动节点上仍存分歧。' },
-    { tag: '国际', cls: 'news-intl', title: '日本茨城县南部发生4.9级地震，东京震感明显', desc: '9月29日，日本茨城县南部发生4.9级地震，东京震感明显。暂无重大人员伤亡报告。同日，台湾花莲县海域也发生4.7级地震，震源深度23千米。' },
-    { tag: '科技', cls: 'news-tech', title: 'SpaceX"星舰"实现首次地球轨道飞行，但提前结束任务', desc: '美国太空探索技术公司（SpaceX）的"星舰"完成首次地球轨道飞行测试，但任务提前结束。这标志着人类最强大运载火箭在轨道飞行方面取得关键性突破，为后续登月和火星任务奠定基础。' },
-    { tag: '科技', cls: 'news-tech', title: '我国科学家揭示趋磁细菌跨尺度磁组织新机制', desc: '中科院地质与地球物理研究所李金华团队以西安未央湖发现的趋磁弧菌WYHV-1为研究对象，揭示了趋磁细菌跨尺度磁组织的全新机制，相关成果9月29日发表于《美国国家科学院院刊》（PNAS）。' },
-    { tag: '科技', cls: 'news-tech', title: '第48届世界技能大赛闭幕，中国41金创历史最好成绩', desc: '第48届世界技能大赛9月27日在上海闭幕，中国代表团获41金11银4铜和6个优胜奖，第五次位居金牌榜和团体总分第一，创造参赛以来历史最好成绩，68个国家和地区1385名选手参赛。' }
+    { tag: '国内', cls: 'news-domestic', title: '习近平给四川大学全体师生回信，强调发挥交叉融合优势', desc: '近日，习近平给四川大学全体师生回信，强调发挥文理工医交叉融合优势，努力在服务新时代国家战略中当先锋、作表率。回信勉励师生为建设教育强国、科技强国贡献力量。' },
+    { tag: '国内', cls: 'news-domestic', title: '10月1日起我国将对居民购房实施贷款贴息政策', desc: '财政部等三部门联合发布通知，明确自10月1日起实施居民购房贷款贴息政策。可享受贴息的贷款规模最高100万元，财政部门给予年化1个百分点贴息，贴息期限最长5年，切实减轻居民房贷负担。' },
+    { tag: '科技', cls: 'news-tech', title: '我国生成式人工智能用户规模突破7亿人，普及率超50%', desc: '《生成式人工智能应用发展报告（2026）》发布。截至2026年上半年，我国生成式AI用户规模突破7亿人，普及率超50%，标志着生成式AI已从探索期进入大规模应用阶段。' },
+    { tag: '科技', cls: 'news-tech', title: '中国互联网基础资源大会举行，智能体标识与安全技术成果发布', desc: '2026中国互联网基础资源大会在北京举行，发布RPKI服务平台、智能体标识与安全保障技术北京市重点实验室和智能体可信基础设施平台（ATI）三项重要成果，推动互联网路由安全和智能体身份认证。' },
+    { tag: '国际', cls: 'news-intl', title: '美国正式实施针对加拿大部分商品进口禁令', desc: '美国正式实施针对加拿大部分商品的进口禁令，涉及酒类、乳制品和摩托车等，预计涉及约9.67亿美元，美加贸易摩擦持续升级。' },
+    { tag: '国际', cls: 'news-intl', title: '俄罗斯图-95战略轰炸机训练飞行时坠毁，6人死亡', desc: '俄罗斯一架图-95战略轰炸机在执行训练飞行任务时坠毁，造成6人死亡。事故原因正在调查中。同日，美国艾森豪威尔号航母发生舰载机着舰事故，两名飞行员弹射逃生。' },
+    { tag: '科技', cls: 'news-tech', title: '我国梦想号刷新深海钻探纪录，达4929.17米', desc: '我国梦想号大洋钻探船刷新我国深海钻探纪录，钻探深度达4929.17米，标志着我国在深海科学钻探领域取得重大突破。同时，新型装置实现海水制氢与海洋战略元素协同联产。' },
+    { tag: '国内', cls: 'news-domestic', title: '第33届中国电视金鹰奖揭晓，于和伟宋佳分获最佳男女主角', desc: '第33届中国电视金鹰奖揭晓，于和伟、宋佳分获最佳男女主角奖，多部精品剧集斩获重要奖项。亚运会第10个比赛日，中国代表团以143金62银49铜列金牌榜第一。' }
   ]
 };;
 
