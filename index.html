@@ -1341,19 +1341,19 @@ function navigateNewsHistory(date) {
 
 // ===== PAPER MODULE =====
 const paperData = {
-  title: 'Alignment Games: A Framework for Conceptual Repair in Human-AI Collaboration',
-  authors: 'Hari Subramonyam, Maneesh Agrawala, Sean Follmer',
-  venue: 'arXiv:2609.35197 · cs.HC · September 2026',
-  link: 'https://arxiv.org/abs/2609.35197',
-  date: '2026-09-30',
-  abstract: '概念在具体使用中的意义由情境、任务、目标和先验知识共同塑造。例如，让AI"为五岁孩子做一张视觉上吸引人的海报"，一个协作者可能想到鲜艳色彩和卡通图像，另一个则想到少文字、粗线条和视觉简洁。论文将这种任务相关的差异称为"概念错位"（conceptual misalignment）。作者提出"对齐博弈"（Alignment Games）框架，使这些差异在人机交互中变得可见且可修复。基于情境化概念理论，论文将任务特定的概念框架分解为相关属性、值、关系、约束和优先级，并定义了"对齐操作"——可以干预情境本身、干预用于解释情境的推理过程，或干预最终形成的概念框架。通过教育内容生成、创意编程和议论文写作三个场景，论文展示了如何将对齐操作组合为"修复序列"，并推导出支持运行时任务充分概念对齐的设计原则。',
+  title: 'The Interviewer\'s Perspective: Unpacking the Impact of Real-Time AI Interviewing Assistance on Social Dynamics',
+  authors: 'Zhe Liu, Jiamin Dai, Joanna McGrenere',
+  venue: 'arXiv:2609.30388 · cs.HC · September 2026',
+  link: 'https://arxiv.org/abs/2609.30388',
+  date: '2026-10-01',
+  abstract: '在半结构化访谈中获取丰富数据需要极高的认知负荷，这促使研究者开始探索为访谈者提供实时AI辅助。然而，将AI引入访谈者与受访者的互动后，形成了一种全新的"三方情境"（triadic context），其社会动力学至今鲜有研究。本文调查了访谈者在半结构化访谈中使用AI辅助进行追问（probing）的体验。研究者开发了一个高保真原型ProbeAssist，实现了两种不同启动方式和粒度的AI辅助变体，并开展了一项以质性分析为主的比较结构化观察研究——18名参与者每人完成三次模拟访谈：一次无AI、两次使用不同AI变体。研究发现，参与者将AI作为支持性工具加以利用，但抗拒其充当评估者或竞争者。在权衡AI的收益与交互成本时，围绕能动性（agency）、归属感（ownership）、创造力和人际沟通产生了张力。论文提出了AI辅助人际互动的三项设计启示：管理社会压力、平衡想法对齐与灵感激发、以及维护人际在场感。',
   keyPoints: [
-    '"概念错位"概念——人机协作中的隐含分歧：论文指出，当人类与AI协同时，双方对同一个概念的理解往往不同——不是错误，而是"情境化认知"的差异。例如"视觉吸引力"对AI可能意味着色彩丰富，对设计师可能意味着留白和层次。Emma在追星社交平台的HCI研究中可以引入这一框架：当平台用AI推荐"相似兴趣的追星搭子"时，"相似"对AI（标签匹配）和对用户（情感共鸣、线下距离、活动偏好）可能意味着完全不同的东西——这正是"概念错位"在信息呈现中的具体体现。',
-    '"对齐操作"——三类干预策略，从修bug转向修理解：论文定义了三类"对齐操作"：（1）干预情境——改变任务描述或上下文，让双方的概念框架更接近；（2）干预推理——改变解释情境的推理过程；（3）干预框架——直接修改最终形成的概念框架。这是一个直接可用于AI产品设计的方法论：不是简单地说"AI错了"，而是系统性地识别错位发生在了哪一层，并用对应层的操作去修复。对Emma的启示是：好的信息呈现界面不应只展示结果，而应展示"AI是如何理解你的需求的"，让用户能对齐理解。',
-    '"修复序列"——对齐不是一步到位，而是迭代过程：论文最重要的贡献是将单个对齐操作组合为"修复序列"——对齐不是一次性的"纠正错误"，而是一个迭代的、多步的协商过程。在教育内容生成、创意编程和议论文写作三个场景中，作者展示了典型的修复序列模式。这对追星社交平台的设计有直接启发：AI推荐不是"一次推送、用户接受或拒绝"的单次交互，而应该是一个多轮对话式的"概念协商"过程——用户第一次推荐不满意，系统不应该直接换一批，而应该理解"不满意"背后的概念错位在哪里，进行针对性修复。',
-    '设计原则——"任务充分对齐"而非"完美对齐"：论文推导出的设计原则强调task-sufficient conceptual alignment——不追求完美对齐，而追求任务充分的对齐。这是一个非常务实的工程哲学：在资源有限的真实场景中，不需要完全消除概念差异，只需确保差异不会导致任务失败。对Emma的产品实践有直接指导意义：在追星社交平台上，AI不需要完全理解用户对"理想追星搭子"的定义，只需要理解到足以做出"用户可接受"的推荐即可——这种"够用就好"的哲学反而能降低系统复杂度。'
+    '"三方情境"——AI介入后访谈社会动力学的重构：论文最核心的概念贡献是识别出AI辅助访谈创造了一种全新的"三方情境"——传统访谈是访谈者与受访者之间的二元互动，而AI的介入使得访谈者必须在"倾听受访者、理解AI建议、决定是否采纳"之间频繁切换注意力。这直接关联到Emma在追星社交平台HCI研究中关注的信息呈现优化：当平台引入AI推荐或AI辅助功能时，用户也面临类似的"三方注意力分配"挑战。论文发现参与者在这种三方情境中产生了围绕"能动性"的张力——他们想利用AI但不希望AI替自己做决定。对平台设计的启示是：AI辅助应定位为"支持"而非"替代"，保持用户对交互的主导权。',
+    '"工具vs评估者"——用户对AI角色的心理抗拒机制：研究发现一个关键心理现象：参与者乐于将AI作为"支持性工具"，但强烈抗拒AI充当"评估者"或"竞争者"。当AI的建议让访谈者感觉自己在被"评价"时，会产生明显的心理抗拒。这与心理学中的"自主性动机"（autonomy motivation）高度吻合——当人感觉自己的能动性受到威胁时，即使外部帮助客观上有益，也会产生抵触情绪。对Emma的AI产品设计实践有直接启示：在追星社交平台中，AI推荐不应以"评判者"姿态出现，而应以"协作者"姿态呈现，后者更容易被用户接受。',
+    '"能动性、归属感与创造力"的三重张力：论文揭示了AI辅助交互中的三重核心张力：（1）能动性张力——用户既想要AI的帮助，又不想失去控制感；（2）归属感张力——当访谈中出现精彩追问，是归功于自己还是AI？（3）创造力张力——AI的建议是启发灵感还是限制想象？这三重张力框架可以迁移到Emma的产品设计思考中：在追星社交平台上，AI推荐"相似兴趣的搭子"时，用户可能产生类似的归属感困惑——好的信息呈现设计应该让用户感受到"AI辅助了我的决策，但最终选择是我做的"。',
+    '三项设计启示——社会压力、想法对齐与人际在场：论文提出的三项设计启示对Emma有直接的产品设计价值。（1）管理社会压力——AI辅助不应在他人面前突兀弹出，增加用户的社交焦虑感；在追星社交场景中，AI推荐应在低压力情境下呈现。（2）平衡想法对齐与灵感激发——AI不应只推荐用户"已经想到的"，也不应完全偏离用户意图，而应在"熟悉感"和"新鲜感"之间找到平衡。（3）维护人际在场感——AI辅助不应打断用户之间的真实社交连接，AI是"媒人"而非"参与者"，应促成连接后退到幕后。'
   ],
-  takeaway: '这篇论文对Emma有三重价值。第一，"概念错位"是一个可以直接迁移到追星社交平台HCI研究的理论工具——当平台用标签推荐追星搭子时，"相似兴趣"在AI层面（标签匹配）、用户层面（情感共鸣）和场景层面（线下活动可行性）可能有完全不同的含义，这正是概念错位的典型案例。Emma可以设计实验测量用户对不同推荐结果的"概念对齐感知"。第二，"对齐操作"的三层分类——干预情境、干预推理、干预框架——提供了AI交互设计的可操作方法论。Emma在设计信息呈现界面时，可以问自己：当推荐不满意时，是情境描述不够清晰、还是AI的推理方式需要调整、还是概念框架本身需要重构？这三种修复策略对应三种不同的界面设计。第三，"任务充分对齐"的务实哲学对产品决策有直接启发：不需要追求AI完全理解用户，而需要确保AI的理解"够用"到能完成任务——这在降低技术复杂度的同时提高了用户体验。这篇论文将认知科学的理论与AI产品设计紧密结合，是Emma跨"应用心理+HCI+AI产品"三个领域做研究的理想范本✨'
+  takeaway: '这篇论文对Emma的价值是多维度的。作为即将就读北师大应用心理的研究生，论文的"三方情境"概念为她提供了一个全新的研究视角：在追星社交平台中引入AI推荐后，用户、AI、社交内容之间也形成了类似的三方互动结构，信息呈现优化的核心挑战正是如何在三者之间合理分配用户的注意力和能动性。论文的质性研究方法论（comparative structured observation）也为Emma的用研实践提供了参考——18名参与者每人完成三次访谈的比较设计，兼顾了深度和可比较性，这种研究设计思路可以直接迁移到追星搭子匹配的用户研究中。从AI产品设计角度，"工具vs评估者"的发现尤为关键：用户对AI角色的感知决定了接受度，平台在呈现AI推荐时应精心设计语言框架，让AI以"支持者"而非"评判者"的姿态出现。此外，"归属感张力"的发现对追星社交平台有独特启示——用户需要感受到"是我选择了这个搭子"，这种心理归属感直接影响用户的平台黏性和满意度。这篇论文完美融合了HCI、社会心理学和AI设计三个领域，是Emma跨学科研究的理想参考范本✨'
 };;;
 
 function renderPaper() {
@@ -1392,42 +1392,42 @@ function renderPaper() {
 
 // ===== IELTS MODULE =====
 const ieltsVocab = [
-  { word: 'mitigate', pos: 'v.', def: '减轻，缓和（/ˈmɪtɪɡeɪt/）' },
-  { word: 'paradigm', pos: 'n.', def: '范式，典范（/ˈpærəˌdaɪm/）' },
-  { word: 'empirical', pos: 'adj.', def: '经验主义的，基于实验观察的（/ɪmˈpɪrɪkəl/）' },
-  { word: 'intrinsic', pos: 'adj.', def: '内在的，固有的（/ɪnˈtrɪnzɪk/）' },
-  { word: 'disparate', pos: 'adj.', def: '迥然不同的，不相干的（/ˈdɪspərət/）' },
-  { word: 'viable', pos: 'adj.', def: '可行的，能存活的（/ˈvaɪəbl/）' },
-  { word: 'precarious', pos: 'adj.', def: '不稳定的，脆弱的（/prɪˈkeəriəs/）' },
-  { word: 'multifaceted', pos: 'adj.', def: '多层面的，多角度的（/ˌmʌltɪˈfæsɪtɪd/）' },
-  { word: 'ascertain', pos: 'v.', def: '查明，确定（/ˌæsəˈteɪn/）' },
-  { word: 'conducive', pos: 'adj.', def: '有助于…的，有益的（/kənˈdjuːsɪv/）' }
+  { word: 'ubiquitous', pos: 'adj.', def: '无处不在的，普遍存在的（/juːˈbɪkwɪtəs/）' },
+  { word: 'hypothesis', pos: 'n.', def: '假说，待验证的推测性解释（/haɪˈpɒθɪsɪs/）' },
+  { word: 'methodology', pos: 'n.', def: '研究方法论，方法体系（/ˌmeθəˈdɒlədʒi/）' },
+  { word: 'pedagogy', pos: 'n.', def: '教学法，教育理论与实践（/ˈpedəɡɒdʒi/）' },
+  { word: 'proliferate', pos: 'v.', def: '激增，迅速繁殖扩散（/prəˈlɪfəreɪt/）' },
+  { word: 'surveillance', pos: 'n.', def: '监控，持续监视（/sərˈveɪləns/）' },
+  { word: 'inevitable', pos: 'adj.', def: '不可避免的，必然发生的（/ɪnˈevɪtəbəl/）' },
+  { word: 'resilience', pos: 'n.', def: '韧性，从挫折中恢复的能力（/rɪˈzɪliəns/）' },
+  { word: 'correlate', pos: 'v.', def: '相关，相互关联（/ˈkɒrəleɪt/）' },
+  { word: 'synthesis', pos: 'n.', def: '综合，将各部分整合为新整体（/ˈsɪnθɪsɪs/）' }
 ];;;
 
 const ieltsSpeaking = {
   part: 'Part 2 · Cue Card',
-  topic: 'Describe a goal you set and tried hard to achieve',
-  bullet: 'You should say: what the goal was, when you set it, what you did to achieve it, and explain why it was important to you.',
-  sample: `I would like to talk about a goal that has profoundly shaped the past year of my life: achieving a Band 7 on the IELTS examination.
+  topic: 'Describe a skill you learned that was useful',
+  bullet: 'You should say: what the skill was, how you learned it, when you use it, and explain why it is useful.',
+  sample: `I'd like to talk about a skill that has transformed the way I approach both my studies and my daily life: data analysis using Python.
 
-I set this goal during my final year of undergraduate studies, when I realised that pursuing a postgraduate programme in applied psychology would require a strong IELTS score. As someone with a background in broadcasting and television directing rather than English literature, I knew this would be a formidable challenge.
+I first encountered this skill during the final year of my undergraduate studies, when I realised that pursuing a career in user research and product management would require more than just theoretical knowledge. I needed to be able to analyse user behaviour data, draw meaningful insights, and present findings persuasively. So I enrolled in an online course and began dedicating roughly two hours each evening to learning Python from scratch.
 
-To achieve this goal, I completely restructured my daily routine. I began waking up at six every morning to memorise academic vocabulary from the Academic Word List. I dedicated my afternoons to reading articles from journals such as Nature and The Lancet, not only to improve my reading speed but also to familiarise myself with the kind of academic prose that frequently appears in IELTS Reading passages. In the evenings, I recorded myself answering speaking prompts and listened back critically, noting where my pronunciation, fluency, or lexical range fell short.
+The learning process was far from smooth. I started with basic syntax and gradually progressed to libraries like pandas and matplotlib. What helped me most was applying each new concept to a real project — I analysed survey data from a campus event, which made the abstract syntax suddenly feel concrete and purposeful. I also joined an online community where beginners could ask questions without feeling embarrassed, which significantly accelerated my progress.
 
-What made this goal particularly meaningful was that it was not merely about passing an examination. It was about proving to myself that I could transition from a humanities background into a more research-oriented field without being limited by my past. The process taught me that progress is rarely linear — there were weeks when my mock test scores plateaued or even dipped, and I had to remind myself that setbacks are an intrinsic part of any worthwhile pursuit.
+I use this skill almost every day now. Whether I'm cleaning survey data for my research, visualising trends for a class presentation, or simply automating repetitive tasks, Python has become an indispensable part of my workflow.
 
-In the end, I achieved my target score. But looking back, I realise the goal itself mattered less than the discipline and resilience I cultivated along the way. Those qualities, I believe, will serve me far beyond any single examination.`,
+What makes this skill so valuable is not just the technical capability it provides, but the way it has reshaped my thinking. It has taught me to approach problems methodically — to break them down into smaller, manageable steps, to question my assumptions, and to let evidence guide my conclusions. These are qualities that extend far beyond coding and that I believe will serve me throughout my career.`,
   expressions: [
-    '🌟 profoundly shape — 深远地塑造',
-    '🌟 restructure daily routine — 重构日常作息',
-    '🌟 formidable challenge — 艰巨的挑战',
-    '🌟 familiarise oneself with — 使自己熟悉',
-    '🌟 fall short — 未达到标准',
-    '🌟 plateau — 停滞不前',
-    '🌟 intrinsic part — 内在的、固有的部分',
-    '🌟 worthwhile pursuit — 值得追求的事',
-    '🌟 linear progress — 线性进步',
-    '🌟 serve well beyond — 远超…持续发挥作用'
+    '🌟 transform the way — 彻底改变方式',
+    '🌟 from scratch — 从零开始',
+    '🌟 far from smooth — 远非一帆风顺',
+    '🌟 gradually progress to — 逐步进阶到',
+    '🌟 abstract feel concrete — 抽象变得具体',
+    '🌟 indispensable part — 不可或缺的部分',
+    '🌟 approach methodically — 有条理地处理',
+    '🌟 break down into — 拆解为',
+    '🌟 question assumptions — 质疑假设',
+    '🌟 let evidence guide — 让证据引导结论'
   ]
 };;;
 
@@ -1474,12 +1474,12 @@ function renderIelts() {
 
 // ===== LITERATURE MODULE =====
 const litData = {
-  quote: '天生人是教他们孤独的，一个个该各归各的，老死不相往来。身体里容不下的东西，或消化，或排泄，是个人的事；为什么心里容不下的情感，要找同伴来分摊？聚在一起，动不动自己冒犯人，或者人开罪自己，好像一只只刺猬，只好保持着彼此间的距离，要亲密团结，不是你刺痛我的肉，就是我擦破你的皮。',
-  source: '钱锺书《围城》（1947年）',
+  quote: '我注视着眼前的雨水，心里想着，下吧，下吧，随便你下到哪一天，你总要过去的，这种日子总有停住的一天，大地要再度绚丽光彩起来，经过了无尽的雨水之后。我再不要做一个河童了，我不会永远这样沉在河底的，雨季终将过去。总有一日，我要在一个充满阳光的早晨醒来，那时我要躺在床上，静静地听听窗外如洗的鸟声，那是多么安适而又快乐的一种苏醒。到时候，我早晨起来，对着镜子，我会再度看见阳光驻留在我的脸上，我会一遍遍地告诉自己，雨季过了，雨季将不再来。',
+  source: '三毛《雨季不再来》（1976年）',
   analysis: [
-    '<b>刺猬困境——叔本华的哲学隐喻在钱锺书笔下的中国化</b>：钱锺书这段话直接化用了叔本华著名的"刺猬困境"（Igel-Dilemma）哲学寓言——寒冬中，刺猬们为了取暖而靠近彼此，却被对方的刺扎痛，只好分开；分开后又觉得冷，再次靠近……如此反复，最终找到一段"刚好不刺痛又不太冷"的距离。钱锺书将这个西方哲学寓言融入了中国式的人际观察——"天生人是教他们孤独的"这一句判词，比叔本华更决绝：孤独不是偶然的困境，而是人的"出厂设置"。对学心理学的Emma来说，这段话精准描述了人际交往中的"亲密-自主"张力（attachment theory中的approach-avoidance conflict）：我们既渴望联结（靠近取暖），又恐惧被伤害（被刺扎痛），这种根本性的矛盾构成了所有人际关系的底层动力。',
-    '<b>消化或排泄——情感的身体隐喻与拒绝分担</b>：钱锺书用了一个极为大胆的类比——身体容不下的东西可以"消化或排泄"，是个人的事；那为什么心里容不下的情感要找同伴分摊？这个类比的力量在于它揭示了一个被忽视的不对称：我们接受身体的内耗是私密的，却期待情感的消化可以外包。但钱锺书说"为什么"——为什么情感就该分担？这不是在说人不该倾诉，而是在质疑一种隐含的逻辑：以为找人分担就能减轻，殊不知"聚在一起，动不动自己冒犯人"——倾诉的过程本身就可能制造新的伤口。在社交媒体时代，这段话尤其尖锐：我们比任何时候都更容易"找人分摊"，但也比任何时候都更容易"互相擦破皮"。好的社交平台设计不应只追求"连接更多"，而应关注"连接的质量"——如何让刺猬们在取暖时不被扎痛，这正是信息呈现优化要解决的核心问题。',
-    '<b>给Emma的话</b>：这段话写给每一个在人际关系中摇摆的你。钱锺书说人天生是孤独的——这不是悲观，而是清醒。接受孤独是默认状态，你反而能更从容地处理人际关系：靠近时不恐慌失去自我，分开时不恐惧被抛弃。你在追星社交平台的研究中会发现，追星群体线下社交的"搭子"关系恰恰是一种"刺猬距离"——基于共同兴趣的适度亲密，既满足了情感需求，又不需要承担深度的情感劳动。钱锺书的洞察提醒你：好的社交不是"零距离"，而是"恰好的距离"。在设计追星搭子匹配时，重要的不是让两个最相似的人贴得最近，而是让他们的"刺"恰好不扎到对方——这正是平台信息呈现需要优化的方向✨'
+    '<b>雨季隐喻——抑郁体验的诗性转译</b>：三毛将人生中的低谷期比作"雨季"，这不是文学修辞，而是对抑郁心境极为精准的现象学描述。"湿的"、"被人遗忘"、"鞭笞"——这些词语传达的是一种弥漫性的、无法抗拒的灰暗感，正是心理学中描述的"dysphoric mood"的核心特征。值得注意的是，三毛没有否认雨季的存在，她说"下吧，下吧，随便你下到哪一天"——这种"允许"本身就是一种心理接纳（psychological acceptance）。在接纳承诺疗法（ACT）的框架中，接纳不适感而非对抗它，恰恰是走出困境的第一步。对学心理学的Emma来说，三毛的写法提供了一个将临床概念转化为文学表达的范本——她可以在追星社交平台的研究中，用类似的叙事方式来理解用户在"追星低谷期"（如偶像淡出、群体解散）的心理体验。',
+    '<b>"河童"意象——沉没感与自我重构</b>：三毛说自己"不要做一个河童"、"不会永远这样沉在河底的"——"河童"是日本传说中的水中精灵，暗示一种被淹没、无法呼吸的生存状态。这个意象精准地传达了抑郁状态下的"自我溶解感"（self-dissolution）：当人长期处于低谷时，会感觉自己的边界在模糊，仿佛正在被环境吞没。而"我不会永远这样沉在河底"这一句的转折，是整段文字的力量所在——它不是空洞的乐观，而是基于对时间性的深刻理解："雨季终将过去"不是愿望，而是对自然规律的认知。这种"将痛苦置于时间维度中审视"的能力，正是心理韧性（resilience）的核心构成要素。Emma在研究追星群体的情感波动时，可以关注用户如何在"低谷期"进行自我叙事重构——从"被淹没"到"终将浮出水面"的叙事转变，本身就是心理康复的标志。',
+    '<b>给Emma的话</b>：三毛的文字写给每一个曾经或正在经历"雨季"的人。她没有说"振作起来"，没有说"别难过"——她说的是"你总要过去的"。这种语言方式比任何鸡汤都更有力量，因为它承认痛苦的合理性，同时指向痛苦的有限性。在追星社交平台的信息呈现设计中，这段话有一个直接的产品设计启示：当用户处于情感低谷时，平台推送的内容不应是"快看这个开心的事！"（否认情绪），而应是一种"温柔的在场"——告诉用户"这段感受会过去的"，同时提供低压力的陪伴选项。三毛的叙事方式提醒Emma：好的产品不是消除用户的负面情绪，而是帮用户在情绪中找到方向感——"雨季将不再来"不是一个承诺，而是一种方向。在信息呈现优化中，这种"方向感"比"即时快乐"更具有长期价值✨'
   ]
 };;;
 
@@ -1511,18 +1511,18 @@ function renderLiterature() {
 
 // ===== NEWS MODULE =====
 const newsData = {
-  date: '2026年9月30日 星期二',
+  date: '2026年10月1日 星期三',
   items: [
-    { tag: '国内', cls: 'news-domestic', title: '习近平给四川大学全体师生回信，强调发挥交叉融合优势', desc: '近日，习近平给四川大学全体师生回信，强调发挥文理工医交叉融合优势，努力在服务新时代国家战略中当先锋、作表率。回信勉励师生为建设教育强国、科技强国贡献力量。' },
-    { tag: '国内', cls: 'news-domestic', title: '10月1日起我国将对居民购房实施贷款贴息政策', desc: '财政部等三部门联合发布通知，明确自10月1日起实施居民购房贷款贴息政策。可享受贴息的贷款规模最高100万元，财政部门给予年化1个百分点贴息，贴息期限最长5年，切实减轻居民房贷负担。' },
-    { tag: '科技', cls: 'news-tech', title: '我国生成式人工智能用户规模突破7亿人，普及率超50%', desc: '《生成式人工智能应用发展报告（2026）》发布。截至2026年上半年，我国生成式AI用户规模突破7亿人，普及率超50%，标志着生成式AI已从探索期进入大规模应用阶段。' },
-    { tag: '科技', cls: 'news-tech', title: '中国互联网基础资源大会举行，智能体标识与安全技术成果发布', desc: '2026中国互联网基础资源大会在北京举行，发布RPKI服务平台、智能体标识与安全保障技术北京市重点实验室和智能体可信基础设施平台（ATI）三项重要成果，推动互联网路由安全和智能体身份认证。' },
-    { tag: '国际', cls: 'news-intl', title: '美国正式实施针对加拿大部分商品进口禁令', desc: '美国正式实施针对加拿大部分商品的进口禁令，涉及酒类、乳制品和摩托车等，预计涉及约9.67亿美元，美加贸易摩擦持续升级。' },
-    { tag: '国际', cls: 'news-intl', title: '俄罗斯图-95战略轰炸机训练飞行时坠毁，6人死亡', desc: '俄罗斯一架图-95战略轰炸机在执行训练飞行任务时坠毁，造成6人死亡。事故原因正在调查中。同日，美国艾森豪威尔号航母发生舰载机着舰事故，两名飞行员弹射逃生。' },
-    { tag: '科技', cls: 'news-tech', title: '我国梦想号刷新深海钻探纪录，达4929.17米', desc: '我国梦想号大洋钻探船刷新我国深海钻探纪录，钻探深度达4929.17米，标志着我国在深海科学钻探领域取得重大突破。同时，新型装置实现海水制氢与海洋战略元素协同联产。' },
-    { tag: '国内', cls: 'news-domestic', title: '第33届中国电视金鹰奖揭晓，于和伟宋佳分获最佳男女主角', desc: '第33届中国电视金鹰奖揭晓，于和伟、宋佳分获最佳男女主角奖，多部精品剧集斩获重要奖项。亚运会第10个比赛日，中国代表团以143金62银49铜列金牌榜第一。' }
+    { tag: '国内', cls: 'news-domestic', title: '庆祝中华人民共和国成立77周年招待会在京举行', desc: '9月30日晚，庆祝中华人民共和国成立77周年招待会在人民大会堂举行。习近平出席招待会并发表重要讲话。同日，烈士纪念日向人民英雄敬献花篮仪式在天安门广场隆重举行。' },
+    { tag: '国内', cls: 'news-domestic', title: '全年2500亿元消费品以旧换新资金已全部下达', desc: '国家发展改革委会同财政部下达第四批625亿元超长期特别国债支持消费品以旧换新资金，至此全年2500亿元以旧换新资金已全部下达到地方，有力提振消费市场信心。' },
+    { tag: '科技', cls: 'news-tech', title: '华为Mate 90系列10月1日正式发布并开售', desc: '华为年度旗舰Mate 90系列于10月1日10:00正式发布、12:08开售。Pro Max典藏版采用多彩拼色设计和原生"巨炮"外挂相机模组，另有睿影Z10模块相机配件，科技感拉满。' },
+    { tag: '科技', cls: 'news-tech', title: 'OpenAI发布GPT-6.1 Sol模型及全天候智能体Dots', desc: 'OpenAI在DevDay推出GPT-6.1 Sol模型，性能接近Astra但价格仅五分之一。同时发布自主智能体Dots，可接入4000+应用，拥有独立云端电脑和浏览器，但敏感操作需走审批流程。' },
+    { tag: '国际', cls: 'news-intl', title: '美国主导联盟结束在伊拉克打击"伊斯兰国"军事任务', desc: '美国国防部9月30日宣布，美国主导的打击"伊斯兰国"国际联盟部队于当日正式结束在伊拉克的军事任务，标志着长达多年的反恐军事行动进入新阶段。' },
+    { tag: '科技', cls: 'news-tech', title: '中国AI大模型调用量连续二十周领跑全球', desc: '数据显示，全球AI大模型总调用量达127万亿Token，中国占61.17万亿，连续二十周超过美国稳居全球首位，AI应用生态持续高速发展。' },
+    { tag: '国际', cls: 'news-intl', title: '中美达成300亿美元对等降税框架，开启AI对话通道', desc: '中美两国达成"300亿对300亿"对等降税框架，并同意建立AI沟通渠道，为双边贸易和科技合作注入新动力。此举被视为两国关系回暖的重要信号。' },
+    { tag: '国内', cls: 'news-domestic', title: '中央网信办专项整治短视频虚假人设乱象', desc: '中央网信办开展为期2个月的"清朗·整治短视频虚假人设乱象"专项行动，重点整治假扮弱势群体、虚构职业资质、利用AI仿冒人物、编造冲突剧情等问题。' }
   ]
-};;
+};;;
 
 function renderNews() {
   let data = newsData;
